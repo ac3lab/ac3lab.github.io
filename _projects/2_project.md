@@ -4,7 +4,7 @@ title: Glauco Fiorott Amorim
 description: Associate Professor - Cefet/RJ
 img: assets/img/ft_Glauco_Fiorott_Amorim.jpg
 importance: 2
-category: Permanent
+category: "Permanent"
 giscus_comments:
 ---
 
