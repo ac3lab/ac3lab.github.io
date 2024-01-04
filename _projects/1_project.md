@@ -5,6 +5,7 @@ description: Assistant Professor - PESC/COPPE/UFRJ
 img: assets/img/ft_Pedro_Henrique_Gonzalez.jpg
 importance: 1
 category: "Permanent Members"
+redirect: http://lattes.cnpq.br/5349830056087028
 ---
 
 Every project has a beautiful feature showcase page.
