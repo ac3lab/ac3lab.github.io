@@ -4,7 +4,7 @@ title: Pedro Henrique González
 description: Assistant Professor - PESC/COPPE/UFRJ
 img: assets/img/ft_Pedro_Henrique_Gonzalez.jpg
 importance: 1
-category: "Permanent"
+category: "Permanent Members"
 related_publications:
 ---
 
