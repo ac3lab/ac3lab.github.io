@@ -1,11 +1,11 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: Pedro Henrique González
+description: Assistant Professor - PESC/COPPE/UFRJ
+img: assets/img/ft_Pedro_Henrique_Gonzalez.jpg
 importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
+category: permanent
+related_publications:
 ---
 
 Every project has a beautiful feature showcase page.
