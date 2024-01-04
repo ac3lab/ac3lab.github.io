@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ac3lab.github.io/al-folio/sitemap.xml
