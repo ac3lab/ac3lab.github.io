@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 <!--subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.-->
 
@@ -21,9 +21,3 @@ social: false  # includes social icons at the bottom of the page
 
 <p align="justify">
 The ACE Laboratory is a collaborative initiative between PESC/COPPE/UFRJ and Cefet/RJ, dedicated to advancing the field of sports analytics through research and education. Our mission is to utilize data analysis and computational methods to improve performance and strategy in sports. We serve athletes, teams, and the academic community by offering insights, tools, and learning opportunities. With an interdisciplinary team of experts, we are setting new standards in sports analytics, marrying academic rigor with practical applications to benefit the sports industry.</p>
-
-
-
-
-
-
