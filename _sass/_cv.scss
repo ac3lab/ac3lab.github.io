@@ -190,6 +190,14 @@ ul.timeline li::before {
   top: -0.5rem;
 }
 
+.circular-cut {
+    border-radius: 50%; /* This creates the circular shape */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the image covers the circular area */
+}
+
+
 /*ul.timeline::before {
      content: "●";
      font-size: 1em;

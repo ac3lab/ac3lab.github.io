@@ -1071,3 +1071,10 @@ nav[data-toggle="toc"] {
 #toc-sidebar {
   z-index: 1;
 }
+
+.circular-cut {
+    border-radius: 50%; /* This creates the circular shape */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the image covers the circular area */
+}
