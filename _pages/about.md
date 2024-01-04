@@ -7,7 +7,7 @@ permalink: /
 profile:
   align: justify
   image: ACE_Logo.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <!--<p>555 your office number</p>
     <p>123 your address street</p>
