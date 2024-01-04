@@ -5,7 +5,6 @@ description: Associate Professor - Cefet/RJ
 img: assets/img/ft_Glauco_Fiorott_Amorim.jpg
 importance: 2
 category: "Permanent Members"
-giscus_comments:
 ---
 
 Every project has a beautiful feature showcase page.
