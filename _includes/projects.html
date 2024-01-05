@@ -10,7 +10,9 @@
         {%- if project.img %}
         {%- include figure.html
           path=project.img
-          sizes = "150px"
+          width = "100"
+          height = "100"
+          class = "circular-cut"
           alt="project thumbnail" -%}
         {%- endif %}
         <div class="card-body">

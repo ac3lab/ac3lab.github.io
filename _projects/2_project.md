@@ -3,9 +3,6 @@ layout: page
 title: Glauco Fiorott Amorim
 description: Associate Professor <br> Cefet/RJ
 img: assets/img/ft_Glauco_Fiorott_Amorim.jpg
-width: "100"
-height: "100"
-class: "circular-cut"
 importance: 2
 category: "Permanent Members"
 redirect: http://lattes.cnpq.br/6165050515463973
