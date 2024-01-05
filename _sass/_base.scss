@@ -33,7 +33,7 @@ table {
 
 a,
 table.table a {
-  color: white;
+  color: var(--global-theme-color);
 
   &:hover {
     color: var(--global-theme-color);
