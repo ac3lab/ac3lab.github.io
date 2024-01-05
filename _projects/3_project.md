@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Balthazar Paixão
-description: PPCIC <br> Cefet/RJ
+description: Computer Science <br> Cefet/RJ
 img: assets/img/ft_Balthazar_Paixao.jpeg
 importance: 1
 category: "Master Students"
