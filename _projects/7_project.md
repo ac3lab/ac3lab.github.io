@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Eduardo Bezerra
+title: Eduardo Bezerra <br>
 description: Full Professor <br> Cefet/RJ
 img: assets/img/ft_Eduardo_Bezerra.jpg
 importance: 3
