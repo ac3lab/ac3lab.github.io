@@ -5,7 +5,7 @@ permalink: /profile/
 description:
 nav: true
 nav_order: 3
-display_categories: ["Permanent Members", "PhD Students", "Master Students"]
+display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
 ---
 
