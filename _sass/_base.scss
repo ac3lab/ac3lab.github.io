@@ -1078,3 +1078,10 @@ nav[data-toggle="toc"] {
     height: 50px; /* Adjust the height as needed */
     object-fit: cover; /* This ensures the image covers the circular area */
 }
+
+.circular-cut-2 {
+    border-radius: 50%; /* This creates the circular shape */
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
+    object-fit: cover; /* This ensures the image covers the circular area */
+}
