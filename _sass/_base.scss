@@ -24,14 +24,10 @@ hr {
 }
 
 table {
+  background-color: transparent;
   color: white;
-  td,
-  th {
-    font-size: 1rem;
-  }
-
-  th {
-    font-weight: bold;
+  &.table-bordered{
+    border: 1px solid var(--global-divider-color) !important;
   }
 }
 
