@@ -24,9 +24,13 @@ hr {
 }
 
 table {
-  background-color: transparent;
-  &.table-bordered{
-    border: 1px solid var(--global-divider-color) !important;
+  td,
+  th {
+    font-size: 1rem;
+  }
+
+  th {
+    font-weight: bold;
   }
 }
 
@@ -46,7 +50,6 @@ table.table a {
 
 .table-dark {
   background-color: transparent;
-  color: white;
   &.table-bordered{
     border: 1px solid var(--global-divider-color) !important;
   }
