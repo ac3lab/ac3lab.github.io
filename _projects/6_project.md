@@ -1,10 +1,11 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
+title: Claudio Miceli
+description: Associate Professor <br> PESC/COPPE/UFRJ
+img: assets/img/ft_Claudio_Miceli.jpg
 importance: 4
-category: fun
+category: "Permanent Members"
+redirect: http://lattes.cnpq.br/6243465206463403
 ---
 
 Every project has a beautiful feature showcase page.
