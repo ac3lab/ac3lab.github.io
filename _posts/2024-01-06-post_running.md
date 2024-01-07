@@ -78,7 +78,7 @@ O gráfico acima mostra a evolução das distâncias percorridas nas minhas corr
 
 Quando cruzados os dados de pace médio com a distância, temos o seguinte:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/0.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/10.webp" class="img-fluid rounded z-depth-1" %}
 
 A distribuição do meu pace nos 5km é bem variada, o que não me surpreende, já que comecei nessa faixa e até hoje corro por ali. Outra coisa que confirmei olhando a imagem acima foi o aumento do meu pace na medida que aumento a distância. Tá aí outra coisa que preciso melhorar.
 
