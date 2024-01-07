@@ -5,6 +5,7 @@ date: 2024-01-06 11:12:00
 description: Como utilizei métodos de data science para avaliar meu desempenho na corrida
 tags: Running
 categories: sample-posts
+thumbnail: assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp
 ---
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp" class="img-fluid rounded z-depth-1" %}
