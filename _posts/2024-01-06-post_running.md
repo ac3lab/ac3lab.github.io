@@ -7,7 +7,7 @@ tags: Running
 categories: sample-posts
 ---
 
-{% include figure.html path= site.baseurl"/assets/img/Posts_Images/2024-01-06-post_running-Images/1.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.jpg" class="img-fluid rounded z-depth-1" %}
 
 Quem me conhece sabe que eu amo esporte. Desde pequena, sempre fui influenciada a praticar algum e nunca fiquei muito tempo sem. Já passei por alguns deles: natação, futsal, handebol (ainda jogo) e agora corrida, meu mais recente amor.
 
