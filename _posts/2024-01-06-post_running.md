@@ -8,12 +8,15 @@ categories: sample-posts
 ---
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp" class="img-fluid rounded z-depth-1" %}
-
+<p align="justify">
 Quem me conhece sabe que eu amo esporte. Desde pequena, sempre fui influenciada a praticar algum e nunca fiquei muito tempo sem. Já passei por alguns deles: natação, futsal, handebol (ainda jogo) e agora corrida, meu mais recente amor.
-
+</p>
+<p align="justify">
 De uns meses pra cá, a corrida tem se tornado parte da minha rotina. Toda semana eu tenho tentado correr de 2 a 3 vezes, e sempre ao ar livre (detesto esteira com todas as minhas forças). Pra mensurar meu desempenho, nos últimos meses tenho corrido com o aplicativo Nike Run Club (NRC), e gravado minhas corridas nele. Olhando esses dados no app, senti a necessidade de fazer uma análise mais, digamos que, elaborada, sobre a minha performance. Foi aí que outra paixão entrou na jogada: data science.
-
+</p>
+<p align="justify">
 Quem também me conhece sabe que sou cientista de dados e que dificilmente acredito em algo ou tomo alguma decisão sem evidência. É meio clichê, mas analisar tudo também é parte da minha rotina, e sendo assim, por que não trazer os dados ao meu favor, para que, quem sabe, eles possam me ajudar a tomar decisões que melhorem minhas corridas? É isso que quero começar a testar. Let’s code!
+</p>
 
 Extração dos dados
 
