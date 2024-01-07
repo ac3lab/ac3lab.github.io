@@ -7,7 +7,7 @@ tags: Running
 categories: sample-posts
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/1.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.jpg" class="img-fluid rounded z-depth-1" %}
 
 Quem me conhece sabe que eu amo esporte. Desde pequena, sempre fui influenciada a praticar algum e nunca fiquei muito tempo sem. Já passei por alguns deles: natação, futsal, handebol (ainda jogo) e agora corrida, meu mais recente amor.
 
@@ -24,7 +24,7 @@ Utilizei um programinha chamado nrc-exporter (criado por algum programador curio
 1) Entrar no site da Nike e realizar login normalmente;
 2) Abrir as ferramentas do desenvolvedor > Application. Daí basta copiar o token conforme essa imagem aqui:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/2.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/2.jpg" class="img-fluid rounded z-depth-1" %}
 
 Agora de novo no terminal, basta executar o nrc-exporter com o token, bem assim:
 
@@ -32,7 +32,7 @@ nrc-exporter -t token
 
 Você verá essa execução:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/3.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/3.jpg" class="img-fluid rounded z-depth-1" %}
 
 E pronto! Todos os dados serão baixados para uma pasta chamada activities que ficará dentro da pasta onde você executa o script. Os dados de cada corrida estarão em arquivos no formato .json.
 
@@ -44,11 +44,11 @@ Carreguei os arquivos em um jupyter notebook para fazer as análises. Como todos
 
 Depois do tratamento, criação, seleção e tranformação das variáveis — como pace médio, por exemplo, que vem em total minuto e não em minutos'segundos'' como estamos habituados a olhar — , que queria analisar, meu dataframe final ficou assim:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/4.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/4.jpg" class="img-fluid rounded z-depth-1" %}
 
 Pra contextualizar, algumas estatísticas descritivas:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/5.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/5.jpg" class="img-fluid rounded z-depth-1" %}
 
 Analisei um período de 137 dias (pouco mais de 4 meses), que foi o período em que comecei a registrar minhas corridas no NRC. Nesse período, realizei 31 corridas que totalizaram 180km! Calculei também a média do intervalo em dias entre uma corrida e outra. Tirando o período que fiquei impossibilitada de correr (20 dias), que entendi como um outlier que não deveria ser levado em consideração, vi que esse intervalo é de 4 dias.
 
@@ -56,46 +56,46 @@ Considerando essas 31 corridas, a distância média foi de 5,81km e meu pace mé
 
 Vamos para as análises gráficas:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/6.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/6.jpg" class="img-fluid rounded z-depth-1" %}
 
 O gráfico acima ilustra a evolução do meu pace médio no decorrer das corridas e a média de todos eles. Vemos que nas minhas últimas corridas meu pace tem ficado acima dessa média.
 
 Como mencionado acima, criei uma variável chamada “dias sem correr” que nada mais é que o intervalo em dias entre uma corrida e outra, na tentativa de entender se meu pace subia conforme ficava muitos dias sem a corrida. Veja que os picos na linha cinza meio que acompanham a os picos da linha roxa no gráfico abaixo, confirmando o que eu já suspeitava: muito tempo sem o esporte pode ser uma das variáveis que impactam meu tempo.
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/7.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/7.jpg" class="img-fluid rounded z-depth-1" %}
 
 Uma coisa meio óbvia, mas que também fica legal de visualizar: a trajetória oposta do pace médio e da velocidade média.
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/8.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/8.jpg" class="img-fluid rounded z-depth-1" %}
 
 Gostaria muito de ter conseguido analisar o tempo por km dentro das corridas, na tentativa de entender se existe um momento específico em que eu fique mais lenta ou mais rápida. Aparentemente existe essa informação dentro do .json em formato timestamp, mas após a conversão, achei essa informação um tanto quanto duvidosa — não batia com a realidade — então preferi não usar. Pois é! o ds também deve fazer um trabalho de data quality!
 
 Sigamos:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/9.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/9.jpg" class="img-fluid rounded z-depth-1" %}
 
 O gráfico acima mostra a evolução das distâncias percorridas nas minhas corridas. Veja que a maioria das minhas corridas ficam ali na faixa dos 5km e que quando corro mais do que isso, corro logo o dobro. Isso que puxou a média um pouquinho mais pra cima.
 
 Quando cruzados os dados de pace médio com a distância, temos o seguinte:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/0.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/0.jpg" class="img-fluid rounded z-depth-1" %}
 
 A distribuição do meu pace nos 5km é bem variada, o que não me surpreende, já que comecei nessa faixa e até hoje corro por ali. Outra coisa que confirmei olhando a imagem acima foi o aumento do meu pace na medida que aumento a distância. Tá aí outra coisa que preciso melhorar.
 
 Pra olhar para as calorias, plotei dois gráficos:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/11.jpg" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images//12.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/11.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images//12.jpg" class="img-fluid rounded z-depth-1" %}
 
 O primeiro deixa clara a correlação positiva entre calorias e distância percorrida, ou seja, quer perder mais, corre mais (lembrando que correlação não significa causalidade, mas nesse caso eu sei que sim haha)! Já o segundo não evidencia uma correlação entre calorias e velocidade. Vejam que muitas vezes perdi quase que a mesma quantidade de calorias, correndo em velocidades médias diferentes (provavelmente foram os vários 5km).
 
 Outro feeling que eu tinha era que em dias nublados meu desempenho era um pouco melhor. Sem sol, sem calor, ventinho, sabe como é né… Mas não foi o que os dados me mostraram. O boxplot abaixo sugere que em “dias limpos” a distribuição da minha velocidade é a “melhor”:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/13.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/13.jpg" class="img-fluid rounded z-depth-1" %}
 
 Por fim, a distribuição de elevação e descensão nos meu percursos:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-images/14.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/14.jpg" class="img-fluid rounded z-depth-1" %}
 
 Tentei correlacionar essas variáveis com outras, para tentar checar se tinham relação com velocidade e calorias, por exemplo, mas não encontrei nada muito significativo para abordar aqui.
 
