@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Running — Parte 1: Extraindo meus dados do Nike Run Club e explorando em Python para avaliar minha performance
-date: 2024-01-06 11:12:00-0400
+date: 2024-01-06 11:12:00
 description: Como utilizei métodos de data science para avaliar meu desempenho na corrida
 tags: Running
 categories: sample-posts
