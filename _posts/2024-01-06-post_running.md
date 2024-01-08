@@ -1,124 +1,160 @@
 ---
 layout: post
-title: "Running — Parte 1: Extraindo meus dados do Nike Run Club e explorando em Python para avaliar minha performance"
+title: "Running — Part 1: Extracting my Nike Run Club data and exploring in python to evaluate my performance"
 date: 2024-01-06 11:12:00
-description: Como utilizei métodos de data science para avaliar meu desempenho na corrida
+description: How I used data science methods to evaluate my running performance
 tags: Running
 categories: sample-posts
 thumbnail: assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp
 ---
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp" class="img-fluid rounded z-depth-1" %}
+
 <p align="justify">
-Quem me conhece sabe que eu amo esporte. Desde pequena, sempre fui influenciada a praticar algum e nunca fiquei muito tempo sem. Já passei por alguns deles: natação, futsal, handebol (ainda jogo) e agora corrida, meu mais recente amor.
-</p>
-<p align="justify">
-De uns meses pra cá, a corrida tem se tornado parte da minha rotina. Toda semana eu tenho tentado correr de 2 a 3 vezes, e sempre ao ar livre (detesto esteira com todas as minhas forças). Pra mensurar meu desempenho, nos últimos meses tenho corrido com o aplicativo Nike Run Club (NRC), e gravado minhas corridas nele. Olhando esses dados no app, senti a necessidade de fazer uma análise mais, digamos que, elaborada, sobre a minha performance. Foi aí que outra paixão entrou na jogada: data science.
-</p>
-<p align="justify">
-Quem também me conhece sabe que sou cientista de dados e que dificilmente acredito em algo ou tomo alguma decisão sem evidência. É meio clichê, mas analisar tudo também é parte da minha rotina, e sendo assim, por que não trazer os dados ao meu favor, para que, quem sabe, eles possam me ajudar a tomar decisões que melhorem minhas corridas? É isso que quero começar a testar. Let’s code!
+Anyone who knows me knows that I love sport. Since I was a kid, I always was influenced to practice something and never went long without it. Some sports I've played: swimming, futsal, handball (I still play) and now running, my most recent addiction.
 </p>
 
-Extração dos dados
+<p align="justify">
+A few months ago, running has become part of my routine. Every week I try to run 2 or 3 times, and always outdoors (I hate treadmills with all my might). To measure my performance, I have been running with the Nike Run Club (NRC) app and recording my runs on it. Looking my data in the app, I felt the need to do more, some analysis of my performance. And is here that another passion comes into to play: data science.
+</p>
 
-Primeiramente eu precisava dos dados das minhas corridas. Fazendo uma pesquisa rápida, percebi que a Nike não fornecia a exportação dos dados de maneira oficial, e que pra isso era necessário tomar caminhos alternativos.
+<p align="justify">
+Anyone who also knows me knows that I am a data scientist and rarely believe in anything or make any decision without evidence. It's a bit of cliche, but analyzing everything is also part of my routine, and so, why not bring the data to my side, and like this, who knows, it can help me make decisions that get better my results? This is what I want to start to test. Let's code!
+</p>
 
-Utilizei um programinha chamado nrc-exporter (criado por algum programador curioso), que exporta os dados para um diretório local de maneira fácil e rápida. Como primeiro passo, devemos executar no terminal a instalação com pip install nrc-exporter. A parte chatinha é que precisamos fornecer ao programa tokens de autenticação que a Nike gera quando você faz login, o que é simples, porém manual:
+Data extraction
 
-1) Entrar no site da Nike e realizar login normalmente;
-2) Abrir as ferramentas do desenvolvedor > Application. Daí basta copiar o token conforme essa imagem aqui:
+<p align="justify">
+Firstly, I needed the data from my runs. Doing a quick research, I realized that Nike didn't officially instrument to data export, and for get it would be necessary to take alternative paths.
+</p>
+
+<p align="justify">
+I used a program called nrc-exporter (created by some curious programmer), and it exports data to a local directory easily and quickly. As a first step, we need to install the program in the terminal using pip install nrc-exporter. The annoying part is that we need to provide the program with authentication tokens that Nike generates when you do a login, what is simple but so manual.
+</p>
+
+<p align="justify">
+1) Go to the Nike website and do a login normally; 
+2) Open Developer tools > Application. Then just copy the token like this image:
+</p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/2.webp" class="img-fluid rounded z-depth-1" %}
 
-Agora de novo no terminal, basta executar o nrc-exporter com o token, bem assim:
+<p align="justify">
+Now, back in the terminal, just run nrc-exporter with the token, like this:  
 
+</p>
 nrc-exporter -t token
 
-Você verá essa execução:
+You will see this execution:  
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/3.webp" class="img-fluid rounded z-depth-1" %}
 
-E pronto! Todos os dados serão baixados para uma pasta chamada activities que ficará dentro da pasta onde você executa o script. Os dados de cada corrida estarão em arquivos no formato .json.
+<p align="justify">
+It's ready! All data will be downloaded to a folder called activities and will be inside the folder where you run the script. The file's format will be .json.
+</p>
 
-Caso esse processo não funcione, existem outros meios. Vou deixar o link aqui caso queiram saber mais sobre o nrc-exporter.
+<p align="justify">
+If this process doesn't work, there are other ways. I'll leave the link [here](https://pypi.org/project/nrc-exporter/) if you want to know more about nrc-exporter.
+</p>
 
-Exploratória
+Exploratory
+<p align="justify">
+I loaded the files in a jupyter notebook to do the analysis. As all files are .json format, using the pandas json_normalize() function helps a lot.
+</p>
 
-Carreguei os arquivos em um jupyter notebook para fazer as análises. Como todos eles estão em formato .json, utilizar a função json_normalize() do pandas ajuda bastante.
-
-Depois do tratamento, criação, seleção e tranformação das variáveis — como pace médio, por exemplo, que vem em total minuto e não em minutos'segundos'' como estamos habituados a olhar — , que queria analisar, meu dataframe final ficou assim:
+<p align="justify">
+After the preprocessing, creating, selecting and transforming the variables — as the average pace, for example, which comes in total minutes and not in minutes'seconds' how we normally use —, I wanted to analyze, my final dataframe looked like this:
+</p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/4.webp" class="img-fluid rounded z-depth-1" %}
 
-Pra contextualizar, algumas estatísticas descritivas:
+To contextualize, some descriptive statistics:
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/5.webp" class="img-fluid rounded z-depth-1" %}
 
-Analisei um período de 137 dias (pouco mais de 4 meses), que foi o período em que comecei a registrar minhas corridas no NRC. Nesse período, realizei 31 corridas que totalizaram 180km! Calculei também a média do intervalo em dias entre uma corrida e outra. Tirando o período que fiquei impossibilitada de correr (20 dias), que entendi como um outlier que não deveria ser levado em consideração, vi que esse intervalo é de 4 dias.
+<p align="justify">
+I analyzed a sample of races in the period of 137 days (a little over 4 months). During this period, I ran 31 races totaling 180km! I also calculated the interval average in days between one race and another. Excluding the period that I was unable to run (20 days), that I understood as an outlier that shouldn't be taken in consideration, this interval was 4 days.
+</p>
 
-Considerando essas 31 corridas, a distância média foi de 5,81km e meu pace médio foi de 6'24'' por km. Também com essas corridas totalizei uma perda de 9981 calorias!
+<p align="justify">
+Considering these 31 races, the average distance was 5.81km and my average pace was 6'24'' per km. Additionally, with these runs, I burned a total of 9981 calories!
+</p>
 
-Vamos para as análises gráficas:
+Let's to the graphical analyses:
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/6.webp" class="img-fluid rounded z-depth-1" %}
 
-O gráfico acima ilustra a evolução do meu pace médio no decorrer das corridas e a média de todos eles. Vemos que nas minhas últimas corridas meu pace tem ficado acima dessa média.
+<p align="justify">
+The graph above illustrates the evolution of my average pace throughout the runs and the overall average. We can observe that in my recent runs, my pace has been above this average.
+</p>
 
-Como mencionado acima, criei uma variável chamada “dias sem correr” que nada mais é que o intervalo em dias entre uma corrida e outra, na tentativa de entender se meu pace subia conforme ficava muitos dias sem a corrida. Veja que os picos na linha cinza meio que acompanham a os picos da linha roxa no gráfico abaixo, confirmando o que eu já suspeitava: muito tempo sem o esporte pode ser uma das variáveis que impactam meu tempo.
+<p align="justify">
+As I mentioned above, I created a variable called "days without running" to try to understand if my pace increased with many days without running. The peaks on the gray line follow the peaks on the purple line in the graph below, confirming what I already suspected: an extended period without exercise may be one of the variables affecting my time.
+</p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/7.webp" class="img-fluid rounded z-depth-1" %}
 
-Uma coisa meio óbvia, mas que também fica legal de visualizar: a trajetória oposta do pace médio e da velocidade média.
+<p align="justify">
+Something a little obvious, but it's also cool to visualize: the opposite trajectory of the average pace and average speed.
+</p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/8.webp" class="img-fluid rounded z-depth-1" %}
 
-Gostaria muito de ter conseguido analisar o tempo por km dentro das corridas, na tentativa de entender se existe um momento específico em que eu fique mais lenta ou mais rápida. Aparentemente existe essa informação dentro do .json em formato timestamp, mas após a conversão, achei essa informação um tanto quanto duvidosa — não batia com a realidade — então preferi não usar. Pois é! o ds também deve fazer um trabalho de data quality!
-
-Sigamos:
+Let's follow:  
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/9.webp" class="img-fluid rounded z-depth-1" %}
 
-O gráfico acima mostra a evolução das distâncias percorridas nas minhas corridas. Veja que a maioria das minhas corridas ficam ali na faixa dos 5km e que quando corro mais do que isso, corro logo o dobro. Isso que puxou a média um pouquinho mais pra cima.
+<p align="justify">
+The graph above shows the progression of distances in my runs. The majority of my runs are in the range of 5km, and when I run more than that, I run the double. This is what pushes the average up.
+</p>
 
-Quando cruzados os dados de pace médio com a distância, temos o seguinte:
+When crossing the average pace data with the distance, we have:
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/10.webp" class="img-fluid rounded z-depth-1" %}
 
-A distribuição do meu pace nos 5km é bem variada, o que não me surpreende, já que comecei nessa faixa e até hoje corro por ali. Outra coisa que confirmei olhando a imagem acima foi o aumento do meu pace na medida que aumento a distância. Tá aí outra coisa que preciso melhorar.
+<p align="justify">
+The distribution of my pace in the 5km runs is varied, which doesn't surprise me. Another thing I confirmed looking the image above was the increase in my pace as I increase the distance. There's another aspect that I need to work on.
+</p>
 
-Pra olhar para as calorias, plotei dois gráficos:
+To analyze calories, I plotted two graphs:
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/11.webp" class="img-fluid rounded z-depth-1" %}
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images//12.webp" class="img-fluid rounded z-depth-1" %}
 
-O primeiro deixa clara a correlação positiva entre calorias e distância percorrida, ou seja, quer perder mais, corre mais (lembrando que correlação não significa causalidade, mas nesse caso eu sei que sim haha)! Já o segundo não evidencia uma correlação entre calorias e velocidade. Vejam que muitas vezes perdi quase que a mesma quantidade de calorias, correndo em velocidades médias diferentes (provavelmente foram os vários 5km).
+<p align="justify">
+The first one makes clear the positive correlation between calories and distance, meaning if you want to burn more calories, run more (remembering that correlation doesn't imply causality, but in this case, I know it does). The second one doesn't show a correlation between calories and speed. Note that many times I burned almost the same amount of calories, running at different average speeds (probably during the many 5km runs).
+</p>
 
-Outro feeling que eu tinha era que em dias nublados meu desempenho era um pouco melhor. Sem sol, sem calor, ventinho, sabe como é né… Mas não foi o que os dados me mostraram. O boxplot abaixo sugere que em “dias limpos” a distribuição da minha velocidade é a “melhor”:
+<p align="justify">
+Another feeling I had was that on cloudy days, my performance was a bit better. No sun, and a little breeze, you know how it is... But that's not what the data showed me. The boxplot below suggests that on "clear days," the distribution of my speed is the "best":
+</p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/13.webp" class="img-fluid rounded z-depth-1" %}
 
-Por fim, a distribuição de elevação e descensão nos meu percursos:
+Finally, the distribution of elevation and descent on my routes:
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/14.webp" class="img-fluid rounded z-depth-1" %}
 
-Tentei correlacionar essas variáveis com outras, para tentar checar se tinham relação com velocidade e calorias, por exemplo, mas não encontrei nada muito significativo para abordar aqui.
+Relevant insights
 
-Principais insights
+<p align="justify">
+1) Always run to try to keep/lower my pace for distances that I'm already used to running and consequently be able to improve for longer distances;
+2) I need to run longer distances, even with a bad time, if I want to lose more calories;
+3) The weather, apparently, doesn't have impact on my performance;
+4) Apparently elevation gain doesn't have great correlations with running time and calories. Therefore, I can keep my usual routes if I wanted to change some of these variables.
+</p>
 
-1) Correr sempre para tentar de manter/abaixar meu pace para distâncias que já estou habituada a correr e consequentemente conseguir melhorar para distâncias maiores;
-2) Preciso correr distâncias maiores, mesmo que com um tempo não tão “bom”, caso queira perder mais calorias;
-3) O clima, aparentemente, não tem grandes impactos no meu desempenho;
-4) Aparentemente ganho de elevação não tem grandes correlações com tempo de corrida e calorias. Sendo assim, posso manter sem problemas meus percursos habituais caso queria alterar algumas dessas variáveis.
+Some observations for who want to replicate the analysis:
+<p align="justify">
+1) It's possible to find the latitude and longitude of the routes in the data, making it possible to georeference the races. In my case I didn't think it was relevant to use, since I almost always run in the same place.  
+2) As wrote above, the average pace data comes in total minutes, so if like me, you want to look at this more friendly and usual — minutes'seconds'' — it is necessary to treat this variable.  
+3) Also as wrote above, I didn't find the time information per section, so I preferred not to use it.
+</p>
 
-Algumas observações que valem pontuar pra quem quer replicar a análise:
+<p align="justify">
+There are a lot of people entering/wanting to enter the data analytics/data science area and who need data to train programming or even to build their portfólios. The message I would also share with this post is that there is nothing cooler than using our data for this. In addition to using them for our benefit, generating insights that help us make better decisions (for running in my case), we address topics as treatment and transformation of variables, outliers, data quality and others, clarifying how all of this works in the real life.
+</p>
 
-1) Não encontrei no .json a data das corridas. Como é uma informação indispensável para a análise, nomeei todas elas com suas respectivas datas, já que existe o campo “nome” no .json. Caso achem esse campo, adoraria saber.
-2) É possível encontrar no dado a latitude e longitude dos percursos, tornando possível georreferenciar as corridas. No meu caso não achei relevante usar, já que quase sempre corro no mesmo lugar.
-3) Como dito lá em cima, o dado de pace médio vem em total minutos, então se assim como eu, você deseja olhar esse tempo de forma mais amigável e como é o habitual — minutos'segundos'' — é necessário um tratamento nessa variável.
-4) Também como dito lá em cima, não achei confiável a informação de tempo por trecho dentro das corridas, daí preferi não usar. Caso dê certo pra você, também adoraria saber!
-
-Vou continuar correndo, aumentando cada vez mais a minha base, para que os insights fiquem cada vez mais sólidos. Qualquer evolução e/ou atualização da análise eu volto a postar aqui!
-
-Hoje, existem muitas pessoas entrando/querendo entrar na área de data analytics/data science e que precisam de dados para treinar programação ou até mesmo para construir seus portfólios. A mensagem que também gostaria de passar com esse post, é que nada mais legal que utilizar nossos próprios dados pra isso. Além usá-los para benefício próprio gerando insights que nos ajudem a tomar melhores decisões (que no meu caso, foi com a corrida), abordamos tópicos como tratamento e transformação de variáveis, outliers, data quality e outros, clareando como tudo isso funciona na vida real!
-
-Qualquer sugestão é bem vinda! O código completo da análise se encontra no meu GitHub.
+<p align="justify">
+Any suggestions are welcome! The complete analysis code can be found on my [github](https://github.com/nathaliatito).
+</p>
