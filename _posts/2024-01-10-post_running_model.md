@@ -118,7 +118,7 @@ On Postman:
 At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.
 </p>
 
-Referências
+References
 
 https://scikit-learn.org/stable/modules/clustering.html#k-means
 https://realpython.com/k-means-clustering-python/
