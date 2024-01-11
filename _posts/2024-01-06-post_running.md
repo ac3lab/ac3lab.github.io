@@ -33,7 +33,7 @@ I used a program called nrc-exporter (created by some curious programmer), and i
 </p>
 
 <p align="justify">
-1) Go to the Nike website and do a login normally;
+1) Go to the Nike website and do a login normally;<br>
 2) Open Developer tools > Application. Then just copy the token like this image:
 </p>
 
@@ -41,8 +41,8 @@ I used a program called nrc-exporter (created by some curious programmer), and i
 
 <p align="justify">
 Now, back in the terminal, just run nrc-exporter with the token, like this:  
-
 </p>
+
 nrc-exporter -t token
 
 You will see this execution:  
@@ -54,10 +54,11 @@ It's ready! All data will be downloaded to a folder called activities and will b
 </p>
 
 <p align="justify">
-If this process doesn't work, there are other ways. I'll leave the link [here](https://pypi.org/project/nrc-exporter/) if you want to know more about nrc-exporter.
+If this process doesn't work, there are other ways. I'll leave the link <a href="https://pypi.org/project/nrc-exporter/">here</a> if you want to know more about nrc-exporter.
 </p>
 
 Exploratory
+
 <p align="justify">
 I loaded the files in a jupyter notebook to do the analysis. As all files are .json format, using the pandas json_normalize() function helps a lot.
 </p>
@@ -138,16 +139,16 @@ Finally, the distribution of elevation and descent on my routes:
 Relevant insights
 
 <p align="justify">
-1) Always run to try to keep/lower my pace for distances that I'm already used to running and consequently be able to improve for longer distances;
-2) I need to run longer distances, even with a bad time, if I want to lose more calories;
-3) The weather, apparently, doesn't have impact on my performance;
+1) Always run to try to keep/lower my pace for distances that I'm already used to running and consequently be able to improve for longer distances;<br>
+2) I need to run longer distances, even with a bad time, if I want to lose more calories;<br>
+3) The weather, apparently, doesn't have impact on my performance;<br>
 4) Apparently elevation gain doesn't have great correlations with running time and calories. Therefore, I can keep my usual routes if I wanted to change some of these variables.
 </p>
 
 Some observations for who want to replicate the analysis:
 <p align="justify">
-1) It's possible to find the latitude and longitude of the routes in the data, making it possible to georeference the races. In my case I didn't think it was relevant to use, since I almost always run in the same place.  
-2) As wrote above, the average pace data comes in total minutes, so if like me, you want to look at this more friendly and usual — minutes'seconds'' — it is necessary to treat this variable.  
+1) It's possible to find the latitude and longitude of the routes in the data, making it possible to georeference the races. In my case I didn't think it was relevant to use, since I almost always run in the same place.<br>
+2) As wrote above, the average pace data comes in total minutes, so if like me, you want to look at this more friendly and usual — minutes'seconds'' — it is necessary to treat this variable.<br>
 3) Also as wrote above, I didn't find the time information per section, so I preferred not to use it.
 </p>
 
@@ -156,5 +157,5 @@ There are a lot of people entering/wanting to enter the data analytics/data scie
 </p>
 
 <p align="justify">
-Any suggestions are welcome! The complete analysis code can be found on my [github](https://github.com/nathaliatito).
+Any suggestions are welcome! The complete analysis code can be found on my <a href="https://github.com/nathaliatito">github</a>.
 </p>

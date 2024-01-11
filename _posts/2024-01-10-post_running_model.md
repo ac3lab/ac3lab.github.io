@@ -17,28 +17,38 @@ Recently, I did an exploratory analysis of my runs using data exported from the 
 Introducing  
 
 <p align="justify">
-As I already knew my data because the EDA I had done, the first step was to train the model. My goal was to find patterns in my runs, and once I found these patterns, I wanted to segment them in groups with different characteristics, so that, with each new run, I could identify which of these groups it would be included in.<br>
+As I already knew my data because the EDA I had done, the first step was to train the model. My goal was to find patterns in my runs, and once I found these patterns, I wanted to segment them in groups with different characteristics, so that, with each new run, I could identify which of these groups it would be included in.
+</p>
 
-There are many clustering algorithms, and like any other machine learning problem, there isn't the best approach. To simplify the selection process, in addition to experimentation, we must take in consideration some factors, as the characteristics of the clusters, the features of the dataset, and possible outliers.<br>
+<p align="justify">
+There are many clustering algorithms, and like any other machine learning problem, there isn't the best approach. To simplify the selection process, in addition to experimentation, we must take in consideration some factors, as the characteristics of the clusters, the features of the dataset, and possible outliers.
+</p>
 
-In this case, I was familiar with my data in space and believed that one of the famous clustering algorithm could work well: [K-Means](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html). Without going in too much details, K-Means is an algorithm that groups data in k clusters with same variance, minimizing inertia (sum of squared distances of samples to the nearest cluster center). However, like any other algorithm, it also has its limitations, and we need understand them in the evaluation process.<br>
+<p align="justify">
+In this case, I was familiar with my data in space and believed that one of the famous clustering algorithm could work well: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html">K-Means</a>. Without going in too much details, K-Means is an algorithm that groups data in k clusters with same variance, minimizing inertia (sum of squared distances of samples to the nearest cluster center). However, like any other algorithm, it also has its limitations, and we need understand them in the evaluation process.
+</p>
 
+<p align="justify">
 In short, the algorithm begins randomly generating k centroids (central points of clusters), to which each record is assigned based on the centroid with the smallest distance (forming a cluster). After that, the model calculates the average values of the points in each cluster and uses this value to reposition the centroids. This process is repeated until the positions of the centroids converge or a specified stopping criterion is met. In other words, as I wrote above, the goal of this task is to choose centroids that the inertia is minimized. It's important to note that as the initialization step is random (a non-deterministic algorithm), we should to execute multiple initializations with different centroid seeds to find the best result.
 </p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/16.gif" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-As it's not the purpose of this post to address deeply about clustering algorithm, I take this opportunity to provide the entire [documentation](https://scikit-learn.org/stable/modules/clustering.html) in scikit-learn. Additionally, you can find a great post on some of these algorithms in practice at this [link](https://machinelearningmastery.com/clustering-algorithms-with-python/).
+As it's not the purpose of this post to address deeply about clustering algorithm, I take this opportunity to provide the entire <a href="https://scikit-learn.org/stable/modules/clustering.html">documentation</a> in scikit-learn. Additionally, you can find a great post on some of these algorithms in practice at this <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">link</a>.
 </p>
 
 The model
 
 <p align="justify">
-As I have already realized data [exploration](https://ac3lab.github.io/blog/2024/post_running/) step, I will go straight to training the model.<br>
+As I have already realized data <a href="https://ac3lab.github.io/blog/2024/post_running/">exploration</a> step, I will go straight to training the model.
+</p>
 
-Always remembering that in the preprocessing step, the features need to be resized to the same scale, what we call standardization. This process rescales the data to the set has a mean close to 0 and a standard deviation close to 1, optimizing the learning of distance-based algorithms. For this, I used the StandardScaler() function.<br>
+<p align="justify">
+Always remembering that in the preprocessing step, the features need to be resized to the same scale, what we call standardization. This process rescales the data to the set has a mean close to 0 and a standard deviation close to 1, optimizing the learning of distance-based algorithms. For this, I used the StandardScaler() function.
+</p>
 
+<p align="justify">
 Regarding the algorithm, the K-Means doesn't "decide" the ideal number of clusters. We need to do that, and I used a simple technique: Elbow Method. When we increase the number of clusters, the inertia decreases, meaning the distance from each point to its nearest centroid becomes smaller. What we need is this distance as small as possible, as we need the optimal point that minimizes the number of clusters and the variance in each cluster.
 </p>
 
@@ -57,7 +67,7 @@ According to the documentation, inertia can be recognized as a measure of how in
 </p>
 
 <blockquote>
-    Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.<br>
+    Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.<br><br>
 
     Inertia is not a normalized metric: we just know that lower values are better and zero is optimal. But in very high-dimensional spaces, Euclidean distances tend to become inflated (this is an instance of the so-called “curse of dimensionality”). Running a dimensionality reduction algorithm such as Principal component analysis (PCA) prior to k-means clustering can alleviate this problem and speed up the computations.
 </blockquote>
@@ -115,9 +125,11 @@ On Postman:
 {% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/22.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.<br>
+At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.
+</p>
 
-The complete analysis code can be found on my [github](https://github.com/nathaliatito).
+<p align="justify">
+The complete analysis code can be found on my <a href="https://github.com/nathaliatito">github</a>.
 </p>
 
 References
