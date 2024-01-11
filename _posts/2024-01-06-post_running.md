@@ -4,7 +4,7 @@ title: "Running — Part 1: Extracting my Nike Run Club data and exploring in py
 date: 2024-01-06 11:12:00
 description: How I used data science methods to evaluate my running performance
 tags: Running
-categories: sample-posts
+categories: Running; Machine Learning; Python
 thumbnail: assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp
 ---
 
@@ -33,7 +33,7 @@ I used a program called nrc-exporter (created by some curious programmer), and i
 </p>
 
 <p align="justify">
-1) Go to the Nike website and do a login normally; 
+1) Go to the Nike website and do a login normally;
 2) Open Developer tools > Application. Then just copy the token like this image:
 </p>
 

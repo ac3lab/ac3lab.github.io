@@ -4,7 +4,7 @@ title: "Running — Part 2: How a Machine Learning model allows me, through an A
 date: 2024-01-10 11:12:00
 description: Deployed! Construction of an API for querying and evaluating the level of new races based on a previously trained clustering model
 tags: Running
-categories: sample-posts
+categories: Running, Python
 thumbnail: assets/img/Posts_Images/2024-01-01-post_running_model_Images/15.webp
 ---
 
