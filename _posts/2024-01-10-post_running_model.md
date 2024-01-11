@@ -17,11 +17,11 @@ Recently, I did an exploratory analysis of my runs using data exported from the 
 Introducing  
 
 <p align="justify">
-As I already knew my data because the EDA I had done, the first step was to train the model. My goal was to find patterns in my runs, and once I found these patterns, I wanted to segment them in groups with different characteristics, so that, with each new run, I could identify which of these groups it would be included in.  
+As I already knew my data because the EDA I had done, the first step was to train the model. My goal was to find patterns in my runs, and once I found these patterns, I wanted to segment them in groups with different characteristics, so that, with each new run, I could identify which of these groups it would be included in.<br>
 
-There are many clustering algorithms, and like any other machine learning problem, there isn't the best approach. To simplify the selection process, in addition to experimentation, we must take in consideration some factors, as the characteristics of the clusters, the features of the dataset, and possible outliers.  
+There are many clustering algorithms, and like any other machine learning problem, there isn't the best approach. To simplify the selection process, in addition to experimentation, we must take in consideration some factors, as the characteristics of the clusters, the features of the dataset, and possible outliers.<br>
 
-In this case, I was familiar with my data in space and believed that one of the famous clustering algorithm could work well: [K-Means](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html). Without going in too much details, K-Means is an algorithm that groups data in k clusters with same variance, minimizing inertia (sum of squared distances of samples to the nearest cluster center). However, like any other algorithm, it also has its limitations, and we need understand them in the evaluation process.  
+In this case, I was familiar with my data in space and believed that one of the famous clustering algorithm could work well: [K-Means](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html). Without going in too much details, K-Means is an algorithm that groups data in k clusters with same variance, minimizing inertia (sum of squared distances of samples to the nearest cluster center). However, like any other algorithm, it also has its limitations, and we need understand them in the evaluation process.<br>
 
 In short, the algorithm begins randomly generating k centroids (central points of clusters), to which each record is assigned based on the centroid with the smallest distance (forming a cluster). After that, the model calculates the average values of the points in each cluster and uses this value to reposition the centroids. This process is repeated until the positions of the centroids converge or a specified stopping criterion is met. In other words, as I wrote above, the goal of this task is to choose centroids that the inertia is minimized. It's important to note that as the initialization step is random (a non-deterministic algorithm), we should to execute multiple initializations with different centroid seeds to find the best result.
 </p>
@@ -35,9 +35,9 @@ As it's not the purpose of this post to address deeply about clustering algorith
 The model
 
 <p align="justify">
-As I have already realized data [exploration](https://ac3lab.github.io/blog/2024/post_running/) step, I will go straight to training the model.
+As I have already realized data [exploration](https://ac3lab.github.io/blog/2024/post_running/) step, I will go straight to training the model.<br>
 
-Always remembering that in the preprocessing step, the features need to be resized to the same scale, what we call standardization. This process rescales the data to the set has a mean close to 0 and a standard deviation close to 1, optimizing the learning of distance-based algorithms. For this, I used the StandardScaler() function.
+Always remembering that in the preprocessing step, the features need to be resized to the same scale, what we call standardization. This process rescales the data to the set has a mean close to 0 and a standard deviation close to 1, optimizing the learning of distance-based algorithms. For this, I used the StandardScaler() function.<br>
 
 Regarding the algorithm, the K-Means doesn't "decide" the ideal number of clusters. We need to do that, and I used a simple technique: Elbow Method. When we increase the number of clusters, the inertia decreases, meaning the distance from each point to its nearest centroid becomes smaller. What we need is this distance as small as possible, as we need the optimal point that minimizes the number of clusters and the variance in each cluster.
 </p>
@@ -49,7 +49,7 @@ The plot above is a plot of inertia (within-clusters sum-of-squares - wcss) when
 </p>
 
 ```python
-cknl = KneeLocator(n_cluster, wcss, curve="convex", direction="decreasing")
+knl = KneeLocator(n_cluster, wcss, curve="convex", direction="decreasing")
 knl.elbow
 ```
 <p align="justify">
@@ -57,7 +57,7 @@ According to the documentation, inertia can be recognized as a measure of how in
 </p>
 
 <blockquote>
-    Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.
+    Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.<br>
 
     Inertia is not a normalized metric: we just know that lower values are better and zero is optimal. But in very high-dimensional spaces, Euclidean distances tend to become inflated (this is an instance of the so-called “curse of dimensionality”). Running a dimensionality reduction algorithm such as Principal component analysis (PCA) prior to k-means clustering can alleviate this problem and speed up the computations.
 </blockquote>
@@ -91,10 +91,10 @@ To build the API I used Flask, a micro framework for web development and written
 Creating the file.py
 
 <p align="justify">
-1) Import of the necessary libraries and modules. I also imported the data_preparing.py file that I created in class format, which contains all the necessary transformations that the data needs for prediction;   
-2) Loading of the model and labels that were exported in the training process;  
-3) Assigning Flask in the variable app;
-4) Creation of the endpoint that bring the prediction using the data passed through POST, which has been added to the variable 'data_json';
+1) Import of the necessary libraries and modules. I also imported the data_preparing.py file that I created in class format, which contains all the necessary transformations that the data needs for prediction;<br>
+2) Loading of the model and labels that were exported in the training process;<br>
+3) Assigning Flask in the variable app;<br>
+4) Creation of the endpoint that bring the prediction using the data passed through POST, which has been added to the variable 'data_json';<br>
 5) Initializing the Flask that will receive requests on port 5000, running locally.
 </p>
 
@@ -115,11 +115,13 @@ On Postman:
 {% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/22.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.
+At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.<br>
+
+The complete analysis code can be found on my [github](https://github.com/nathaliatito).
 </p>
 
 References
 
-https://scikit-learn.org/stable/modules/clustering.html#k-means
-https://realpython.com/k-means-clustering-python/
+https://scikit-learn.org/stable/modules/clustering.html#k-means<br>
+https://realpython.com/k-means-clustering-python/<br>
 https://medium.com/data-hackers/como-fazer-uma-api-rest-para-modelos-de-m-l-com-flask-e-documenta%C3%A7%C3%A3o-swagger-7e74bfa19137
