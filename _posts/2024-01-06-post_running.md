@@ -4,7 +4,7 @@ title: "Running — Part 1: Extracting my Nike Run Club data and exploring in py
 date: 2024-01-06 11:12:00
 description: How I used data science methods to evaluate my running performance
 tags: Running; Python
-categories: Running; "Machine Learning"; Python
+categories: Running; Python
 thumbnail: assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp
 ---
 
