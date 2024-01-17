@@ -3,7 +3,7 @@ layout: post
 title: "Analyzing Complex Network metrics from the 1958 World Cup final"
 date: 2024-01-17 16:00:00
 description: Investigating the 1958 World Cup final match between Brazil and Sweden using Complex Network metrics.
-tags: Football; World Cup; Python
+tags: Football; World_Cup; Python
 categories: Football; Python
 thumbnail: assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/pele1958.jpg
 author: Balthazar Paixão
