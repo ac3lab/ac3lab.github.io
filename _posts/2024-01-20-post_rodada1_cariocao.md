@@ -53,7 +53,7 @@ In dissecting the radar plot that encapsulates a performance in the 2024 Campeon
 After this analysis, we focused on the second and third best player of the round.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarJeffinho.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/RadarJeffinho.png" class="img-fluid rounded z-depth-1" %}
 {% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarLeandro.png" class="img-fluid rounded z-depth-1" %}
 
 <strong>Duels and Possession Losses</strong>
