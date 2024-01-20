@@ -5,7 +5,7 @@ date: 2024-01-20 12:00:00
 description: Analysing players and teams of the 2024 Campeonato Carioca first-round matches
 tags: Football; Carioca; Python
 categories: Football; Python
-thumbnail: assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png
+thumbnail: assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/Logo_Carioca.jpg
 author: Leticia Maia
 ---
 
@@ -28,45 +28,45 @@ Three radar charts were employed to visually represent key performance metrics o
 In dissecting the radar plot that encapsulates a performance in the 2024 Campeonato Carioca matches, we focus on several pivotal metrics, each providing a unique insight into your skills and contributions on the field.
 {% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
 
-**1. xAssist (Expected Assists):**
+1. **xAssist (Expected Assists):**
    - The representation of xAssists in the radar plot serves as an indicator of your ability to create goal-scoring opportunities. This metric evaluates the likelihood of an assist based on the quality of your passes.
 
-**2. xGoals (Expected Goals):**
+2. **xGoals (Expected Goals):**
    - xGoals offer a glimpse into your goal-scoring potential. This metric considers the quality and positions of your shots, providing a predictive measure of the likelihood of scoring.
 
-**3. Pass Accuracy:**
+3. **Pass Accuracy:**
    - Your pass accuracy is a fundamental aspect of your playmaking ability. A high pass accuracy percentage suggests precision in distributing the ball, contributing to team possession and strategic build-up.
 
-**4. Key Passes:**
+4. **Key Passes:**
    - Key passes quantify your ability to make impactful passes that directly lead to goal-scoring opportunities. This metric highlights your creativity and vision on the field.
 
-**5. Cross Accuracy:**
+5. **Cross Accuracy:**
    - Cross accuracy assesses your effectiveness in delivering accurate crosses into the box. A high cross accuracy percentage indicates proficiency in providing goal-scoring opportunities from wide positions.
 
-**6. Long Ball Accuracy:**
+6. **Long Ball Accuracy:**
    - Long ball accuracy measures your success in executing long-range passes. This skill is valuable for quickly transitioning from defense to attack and unlocking opposing defenses.
 
-**7. Dribble Accuracy:**
+7. **Dribble Accuracy:**
    - Dribble accuracy reflects your success rate in one-on-one dribbling situations. A high dribble accuracy showcases your ability to navigate through opposition players, creating space and advancing play.
 
-**8. Won Ground Duels %:**
+8. **Won Ground Duels %:**
    - This metric evaluates your success rate in ground duels, showcasing your ability to secure possession in contested situations on the ground.
 
-**9. Won Aerial Duels %:**
+9. **Won Aerial Duels %:**
    - The percentage of won aerial duels highlights your effectiveness in aerial challenges. This skill is crucial in both defensive and offensive situations, particularly during set-piece plays.
 
 Analyzing the radar plot based on these diverse metrics provides a comprehensive view of your multifaceted contributions on the field. Recognizing strengths and identifying areas for refinement allows for targeted skill development, ultimately enhancing your overall performance.
 
 After this Analysis, we focused on the second and third best player of the round
-{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarJeffinho.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarLeandro.png" class="img-fluid rounded z-depth-1" %}
 </p>
 
 Duels and Possession Losses
 <p align="justify">
 Turning our attention to the insightful scatter plot, this visualization provides a detailed examination of players performance in the 2024 Campeonato Carioca, with a specific focus on duels won and possession losses. Let's explore the significance of this scatter plot and draw key insights from the depicted data.
 
-**Scatter Plot: Duels Won vs. Possession Losses**
+###Scatter Plot: Duels Won vs. Possession Losses
 
 The scatter plot illustrates a nuanced relationship between two critical aspects of your gameplay:
 
@@ -125,7 +125,7 @@ To base our analysis, we bring a shoot graph of the two best shooters of the fir
 {% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/cebolinhashot.jpg" class="img-fluid rounded z-depth-1" %}
 {% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/jeffinhoshot.jpg" class="img-fluid rounded z-depth-1" %}
 
-**Comparative Analysis:**
+###Comparative Analysis:
 
 - Both players showcased an impressive conversion of goal-scoring opportunities, as reflected in their high G and xG metrics. This consistency highlights their reliability as key contributors in the attacking phase.
 
