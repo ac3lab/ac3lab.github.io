@@ -36,15 +36,17 @@ In dissecting the radar plot that encapsulates a performance in the 2024 Campeon
 {% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-1. <strong>xAssist (Expected Assists):</strong> The representation of xAssists in the radar plot serves as an indicator of your ability to create goal-scoring opportunities. This metric evaluates the likelihood of an assist based on the quality of your passes.
-2. <strong>xGoals (Expected Goals):</strong> xGoals offer a glimpse into your goal-scoring potential. This metric considers the quality and positions of your shots, providing a predictive measure of the likelihood of scoring.
-3. <strong>Pass Accuracy:</strong> Your pass accuracy is a fundamental aspect of your playmaking ability. A high pass accuracy percentage suggests precision in distributing the ball, contributing to team possession and strategic build-up.
-4. <strong>Key Passes:</strong> Key passes quantify your ability to make impactful passes that directly lead to goal-scoring opportunities. This metric highlights your creativity and vision on the field.
-5. <strong>Cross Accuracy:</strong> Cross accuracy assesses your effectiveness in delivering accurate crosses into the box. A high cross accuracy percentage indicates proficiency in providing goal-scoring opportunities from wide positions.
-6. <strong>Long Ball Accuracy:</strong> Long ball accuracy measures your success in executing long-range passes. This skill is valuable for quickly transitioning from defense to attack and unlocking opposing defenses.
-7. <strong>Dribble Accuracy:</strong> Dribble accuracy reflects your success rate in one-on-one dribbling situations. A high dribble accuracy showcases your ability to navigate through opposition players, creating space and advancing play.
-8. <strong>Won Ground Duels %:</strong> This metric evaluates your success rate in ground duels, showcasing your ability to secure possession in contested situations on the ground.
-9. <strong>Won Aerial Duels %:</strong> The percentage of won aerial duels highlights your effectiveness in aerial challenges. This skill is crucial in both defensive and offensive situations, particularly during set-piece plays.
+<ol>
+    <li><strong>xAssist (Expected Assists):</strong> The representation of xAssists in the radar plot serves as an indicator of your ability to create goal-scoring opportunities. This metric evaluates the likelihood of an assist based on the quality of your passes.</li>
+    <li><strong>xGoals (Expected Goals):</strong> xGoals offer a glimpse into your goal-scoring potential. This metric considers the quality and positions of your shots, providing a predictive measure of the likelihood of scoring.</li>
+    <li><strong>Pass Accuracy:</strong> Your pass accuracy is a fundamental aspect of your playmaking ability. A high pass accuracy percentage suggests precision in distributing the ball, contributing to team possession and strategic build-up.</li>
+    <li><strong>Key Passes:</strong> Key passes quantify your ability to make impactful passes that directly lead to goal-scoring opportunities. This metric highlights your creativity and vision on the field.</li>
+    <li><strong>Cross Accuracy:</strong> Cross accuracy assesses your effectiveness in delivering accurate crosses into the box. A high cross accuracy percentage indicates proficiency in providing goal-scoring opportunities from wide positions.</li>
+    <li><strong>Long Ball Accuracy:</strong> Long ball accuracy measures your success in executing long-range passes. This skill is valuable for quickly transitioning from defense to attack and unlocking opposing defenses.</li>
+    <li><strong>Dribble Accuracy:</strong> Dribble accuracy reflects your success rate in one-on-one dribbling situations. A high dribble accuracy showcases your ability to navigate through opposition players, creating space and advancing play.</li>
+    <li><strong>Won Ground Duels %:</strong> This metric evaluates your success rate in ground duels, showcasing your ability to secure possession in contested situations on the ground.</li>
+    <li><strong>Won Aerial Duels %:</strong> The percentage of won aerial duels highlights your effectiveness in aerial challenges. This skill is crucial in both defensive and offensive situations, particularly during set-piece plays.</li>
+</ol>
 </p>
 
 <p align="justify">
