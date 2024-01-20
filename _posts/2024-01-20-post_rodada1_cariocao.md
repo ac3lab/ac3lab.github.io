@@ -76,24 +76,24 @@ The scatter plot illustrates a nuanced relationship between two critical aspects
 2. **Possession Losses:**
    - Possession losses indicate instances where you may have ceded control of the ball to the opposing team. This can occur due to factors such as interceptions by opponents or unsuccessful attempts at maintaining possession.
 
-**Key Observations:**
+ ### Key Observations:
 
-- **Quadrant Analysis:**
-  - Quadrant analysis allows us to categorize your performance into four distinct quadrants. Players in the top-right quadrant excel in both duels won and minimizing possession losses, showcasing a well-rounded and efficient playing style.
+ - **Quadrant Analysis:**
+   - Quadrant analysis allows us to categorize your performance into four distinct quadrants. Players in the top-right quadrant excel in both duels won and minimizing possession losses, showcasing a well-rounded and efficient playing style.
 
-- **Optimal Performance:**
-  - Your position in the scatter plot provides insights into your optimal performance zone. Striving to consistently operate in the quadrant associated with high duels won and low possession losses is indicative of a strong and impactful presence on the field.
+ - **Optimal Performance:**
+   - Your position in the scatter plot provides insights into your optimal performance zone. Striving to consistently operate in the quadrant associated with high duels won and low possession losses is indicative of a strong and impactful presence on the field.
 
-- **Areas for Improvement:**
-  - If the scatter plot indicates a concentration in the bottom-left quadrant (low duels won and low possession losses), it may signify a potential area for improvement in terms of assertiveness and ball retention.
+ - **Areas for Improvement:**
+   - If the scatter plot indicates a concentration in the bottom-left quadrant (low duels won and high possession losses), it may signify a potential area for improvement in terms of assertiveness and ball retention.
 
-**Strategic Implications:**
+ ### Strategic Implications:
 
-- **Defensive Contribution:**
-  - A higher concentration in the top-left quadrant suggests a focus on defensive duels, contributing to a solid defensive foundation. Evaluating the types of possession losses in this context can inform tactical adjustments for enhanced defensive stability.
+ - **Defensive Contribution:**
+   - A higher concentration in the top-left quadrant suggests a focus on defensive duels, contributing to a solid defensive foundation. Evaluating the types of possession losses in this context can inform tactical adjustments for enhanced defensive stability.
 
-- **Attacking Dynamism:**
-  - Players situated in the top-right quadrant demonstrate a potent combination of duels won and minimal possession losses, showcasing an ability to transition from defense to attack effectively.
+ - **Attacking Dynamism:**
+   - Players situated in the top-right quadrant demonstrate a potent combination of duels won and minimal possession losses, showcasing an ability to transition from defense to attack effectively.
 
 In conclusion, the scatter plot offers valuable insights into the dynamics of your duels and possession retention. Analyzing your position on the plot and understanding the strategic implications can guide targeted improvements in your playing style.
 
@@ -108,16 +108,16 @@ And least but not less important we have an analysis about players shoots.
 <p align="justify">
 In our analysis of the goal-scoring prowess of the two standout performers in the recent round of the 2024 Campeonato Carioca, we've focused on key metrics such as goals scored (G), expected goals (xG), total shots taken, and the xG per shot ratio. Let's delve into the performance metrics of the top two performers and draw insights from their impressive displays.
 
-**1. Goals Scored (G):**
+1. **Goals Scored (G):**
    - The G metric serves as a testament to the players' effectiveness in converting goal-scoring opportunities into tangible results. It reflects their ability to deliver in crucial moments and make significant contributions to their team's success.
 
-**2. Expected Goals (xG):**
+2. **Expected Goals (xG):**
    - The xG metric provides valuable insights into the quality of chances created and taken by each player. A high xG suggests that their goal-scoring prowess is not merely a result of chance but rather a product of consistently creating high-quality opportunities. This metric underlines their strategic positioning and finishing abilities.
 
-**3. Total Shots Taken:**
+3. **Total Shots Taken:**
    - An analysis of the total shots taken by both players sheds light on their assertiveness in front of goal. A high shot count, when coupled with a high conversion rate, indicates a clinical and prolific goal-scoring performance. The players' offensive contributions are evident in their willingness to take on goal-scoring responsibilities.
 
-**4. xG per Shot:**
+4. **xG per Shot:**
    - The xG per shot ratio is a crucial metric that gauges the efficiency of each player in converting goal-scoring opportunities. A high xG per shot indicates a player's ability to maximize the quality of chances, making each shot count. It reflects their precision and effectiveness in front of goal.
 
 To base our analysis, we bring a shoot graph of the two best shooters of the first round:
@@ -135,10 +135,6 @@ To base our analysis, we bring a shoot graph of the two best shooters of the fir
 
 In summary, the goal-scoring performances of these two players stand out prominently in the recent round of the Campeonato Carioca. Their ability to convert chances, strategic decision-making, and offensive contributions underline their importance as key figures in the pursuit of success. As we bring forth this comparative analysis, it becomes evident that these two players have been at the forefront of goal-scoring excellence in the competition.
 </p>
-
-
-
-
 
 In conclusion, the recent Campeonato Carioca round is a testament to their offensive impact. The combination of clinical finishing, strategic shot selection, and consistent creation of high-quality chances solidifies their positions as key contributors in the pursuit of success.
 
