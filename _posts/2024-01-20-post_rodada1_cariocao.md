@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Carioca Championship - Round 1 - analysis"
+title: "Carioca Championship - Round 1 - Analysis"
 date: 2024-01-20 12:00:00
 description: Analysing players and teams of the 2024 Campeonato Carioca first-round matches
 tags: Football; Carioca; Python
