@@ -26,7 +26,7 @@ Three radar charts were employed to visually represent key performance metrics o
 
 <p align="justify">
 In dissecting the radar plot that encapsulates a performance in the 2024 Campeonato Carioca matches, we focus on several pivotal metrics, each providing a unique insight into your skills and contributions on the field.
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
 
 **1. xAssist (Expected Assists):**
    - The representation of xAssists in the radar plot serves as an indicator of your ability to create goal-scoring opportunities. This metric evaluates the likelihood of an assist based on the quality of your passes.
@@ -58,8 +58,8 @@ In dissecting the radar plot that encapsulates a performance in the 2024 Campeon
 Analyzing the radar plot based on these diverse metrics provides a comprehensive view of your multifaceted contributions on the field. Recognizing strengths and identifying areas for refinement allows for targeted skill development, ultimately enhancing your overall performance.
 
 After this Analysis, we focused on the second and third best player of the round
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/radarCebolinha.png" class="img-fluid rounded z-depth-1" %}
 </p>
 
 Duels and Possession Losses
@@ -98,7 +98,7 @@ The scatter plot illustrates a nuanced relationship between two critical aspects
 In conclusion, the scatter plot offers valuable insights into the dynamics of your duels and possession retention. Analyzing your position on the plot and understanding the strategic implications can guide targeted improvements in your playing style.
 
 So, the analysis above were used to make a scatter plot about a chosen team. We chose to start with Flamengo and analyze it's players perfomance during the game againd Audax. These are the results:
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\possexduelospng.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/possexduelospng.png" class="img-fluid rounded z-depth-1" %}
 
 </p>
 
@@ -122,8 +122,8 @@ In our analysis of the goal-scoring prowess of the two standout performers in th
 
 To base our analysis, we bring a shoot graph of the two best shooters of the first round:
 
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\cebolinhashot.jpg" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets\img\Posts_Images\2024-01-20-post_59_carioca_round1-Images\jeffinhoshot.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/cebolinhashot.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/jeffinhoshot.jpg" class="img-fluid rounded z-depth-1" %}
 
 **Comparative Analysis:**
 
