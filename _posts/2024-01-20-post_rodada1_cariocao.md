@@ -105,10 +105,12 @@ In our analysis of the goal-scoring prowess of the two standout performers in th
 </p>
 
 <p align="justify">
-1. <strong>Goals Scored (G):</strong> The G metric serves as a testament to the players' effectiveness in converting goal-scoring opportunities into tangible results. It reflects their ability to deliver in crucial moments and make significant contributions to their team's success.
-2. <strong>Expected Goals (xG):</strong> The xG metric provides valuable insights into the quality of chances created and taken by each player. A high xG suggests that their goal-scoring prowess is not merely a result of chance but rather a product of consistently creating high-quality opportunities. This metric underlines their strategic positioning and finishing abilities.
-3. <strong>Total Shots Taken:</strong> An analysis of the total shots taken by both players sheds light on their assertiveness in front of goal. A high shot count, when coupled with a high conversion rate, indicates a clinical and prolific goal-scoring performance. The players' offensive contributions are evident in their willingness to take on goal-scoring responsibilities.
-4. <strong>xG per Shot:</strong> The xG per shot ratio is a crucial metric that gauges the efficiency of each player in converting goal-scoring opportunities. A high xG per shot indicates a player's ability to maximize the quality of chances, making each shot count. It reflects their precision and effectiveness in front of goal.
+<ol>
+    <li><strong>Goals Scored (G):</strong> The G metric serves as a testament to the players' effectiveness in converting goal-scoring opportunities into tangible results. It reflects their ability to deliver in crucial moments and make significant contributions to their team's success.</li>
+    <li><strong>Expected Goals (xG):</strong> The xG metric provides valuable insights into the quality of chances created and taken by each player. A high xG suggests that their goal-scoring prowess is not merely a result of chance but rather a product of consistently creating high-quality opportunities. This metric underlines their strategic positioning and finishing abilities.</li>
+    <li><strong>Total Shots Taken:</strong> An analysis of the total shots taken by both players sheds light on their assertiveness in front of goal. A high shot count, when coupled with a high conversion rate, indicates a clinical and prolific goal-scoring performance. The players' offensive contributions are evident in their willingness to take on goal-scoring responsibilities.</li>
+    <li><strong>xG per Shot:</strong> The xG per shot ratio is a crucial metric that gauges the efficiency of each player in converting goal-scoring opportunities. A high xG per shot indicates a player's ability to maximize the quality of chances, making each shot count. It reflects their precision and effectiveness in front of goal.</li>
+</ol>
 </p>
 
 <p align="justify">
