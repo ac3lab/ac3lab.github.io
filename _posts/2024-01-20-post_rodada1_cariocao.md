@@ -21,7 +21,7 @@ The analysis relies on data extracted from the <a href="https://www.sofascore.co
 <strong>Matches</strong><br>
 The following matches were part of the first round:<br>
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/Matches.png" alt="Image" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/Matches.jpg" alt="Image" />
 </p>
 <h3>Decoding Football Dynamics</h3>
 <h2>Ground Duels x Aerial Duels</h2>
@@ -32,7 +32,7 @@ In the riveting clash between Flamengo and Audax, the statistical tapestry provi
 
 <strong>Ground Duels and Aerial Battles: Patrick's Dominance and Audax's Aerial Struggle</strong><br>
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/flamengoxaud_01.png" alt="Image" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/flamengoxaud_01.jpg" alt="Image" />
 </p>
 
 <p align="justify">
@@ -56,7 +56,7 @@ The stark contrast in the defensive numbers between Audax and Flamengo is reflec
 <p align="justify">
 The clash between Fluminense and Volta Redonda unraveled a tale of strategic duels and defensive fortitude, painting a picture of a hard-fought match that ended in a closely contested result.  </p>
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/fluminensexvre_01.png" alt="Image" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/fluminensexvre_01.jpg" alt="Image" />
 </p>
 
 <strong>Ground Duels and Aerial Battles: Wellington Silva's Impact for Volta Redonda</strong><br>
@@ -83,7 +83,7 @@ The equilibrium in defensive actions, coupled with individual brilliance in duel
 <p align="justify">
 Vasco and Boa Vista unfolded as a testament to Vasco's strategic prowess, securing a 2-0 victory. Let's delve into the tactical nuances revealed by the ground duels, aerial battles, interceptions, and clearances, highlighting key players and their impactful contributions.  </p>
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/vasxboa_01.png" alt="Image" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/vasxboa_01.jpg" alt="Image" />
 </p>
 
 <strong>Ground Duels and Aerial Battles: Matheus Alessandro's Resilience and Vasco's Aerial Dominance</strong><br>
@@ -108,7 +108,7 @@ The comprehensive victory for Vasco is reflected in the tactical statistics.<br>
 <p align="justify">
 In a hard-fought encounter, Botafogo clinched a narrow 1-0 victory over Madureira.  This analysis aims to spotlight key players and their pivotal contributions that shaped the outcome of this closely contested duel.  </p>
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/botafogoxmadu_01.png" alt="Image" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/botafogoxmadu_01.jpg" alt="Image" />
 </p>
 
 <strong>Ground Duels: Arthur Santos and Segovia's Battle</strong><br>
@@ -135,7 +135,7 @@ The closely contested 1-0 victory for Botafogo finds its roots in the tactical b
 <h1>Best Players of each team</h1><br>
 As we delve into the realm of sports analysis, our focus shifts to the standout performers, the engines that propel their teams to greatness. <br>Join us on a journey to unravel the stories behind the best players of each team, dissecting their contributions, highlighting their key strengths, and celebrating the impact they bring to the beautiful game. <br>This analysis aims to showcase and appreciate the skills, dedication, and moments of brilliance that make these players the heartbeat of their respective squads.
 <p align="center">
-    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/combined_plot.png" alt="Image" width="80%" />
+    <img src="./assets/img/Posts_Images/2024-01-20-post_rodada1_cariocao-Images/combined_plot.jpg" alt="Image" width="80%" />
 </p>
 
 
