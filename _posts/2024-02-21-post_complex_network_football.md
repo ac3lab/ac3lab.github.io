@@ -12,7 +12,7 @@ author: Balthazar Paixão
 {% include figure.html path="assets/img/Posts_Images/2024-02-21-post_complex_network_football-Images/data-analysis-pass-network.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-Complex networks, or science networks, is the areas of computer science that study objects and their interactions. The objects are usually called nodes, and the interactions are edges. The area has been used to investigate various subjects, such as social networks, biological networks, and transportation networks. This post will show how to use this area to analyze football matches.
+Complex networks, or science networks, is a concept in computer science that study objects and their interactions. The objects are usually called nodes, and the interactions are edges. The area has been used to investigate various subjects, such as social networks, biological networks, and transportation networks. This post will show how to use this area to analyze football matches.
 </p>
 
 <p align="justify">
@@ -29,7 +29,7 @@ To model your network, you must have an event dataset from the match. The event 
 </p>
 
 
-Modeling the network
+## Modeling the network
 <p align="justify">
 To model a pass network, you must follow some steps:
 <ol>
@@ -51,9 +51,9 @@ One observation is that your network must be directional. This means that the ed
 After you have the data for your network, you can use a package like NetworkX to model your network. NetworkX is a Python package for the creation, manipulation, and study of the structure, dynamics, and functions of complex networks. The package provides tools to create and analyze the network.
 </p>
 
-Analyzing the network
+## Analyzing the network
 <p align="justify">
-With these steps done, you can start the analysis of your network. The first thing you can do is plot the network to observe how the objects (players) are connected. After that, you can use some metrics to understand some concepts of the match and team you are analyzing. The metrics we will describe here are:
+With these steps done, you can start the analysis of your network. After that, one thing you can do is plot the network to observe how the objects (players) are connected. After that, you can use some metrics to understand some concepts of the match and team you are analyzing. The metrics we will describe here are:
 <ol>
   <li>Degree</li>
   <li>Clustering Coefficient</li>
@@ -72,7 +72,7 @@ With these steps done, you can start the analysis of your network. The first thi
 So, let's go!
 </p>
 
-Metrics
+## Metrics
 <p align="justify">
 Before everything, it is essential to realize that when analyzing a game, you must bring some subjectives of the team to have a complete understanding of the match. The metrics can give you some insights, but the final analysis must consider how the team plays, the players' characteristics, and the match context.
 </p>
