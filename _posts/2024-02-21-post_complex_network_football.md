@@ -23,7 +23,7 @@ The first thing we need to do is to define what we want to analyze in the footba
 This post will focus on the theoretical aspects of Complex Networks and how to use it to analyze football matches. We will not show the code to analyze the matches. In a future post, we will demonstrate step-by-step how to analyze a football match using Complex Networks.
 </p>
 
-The Data
+## The Data
 <p align="justify">
 To model your network, you must have an event dataset from the match. The event dataset is a dataset that contains all the events that occurred during the match, such as passes, shots, and fouls. Some sources for this type of dataset are StatsBomb, Wyscout, and Opta. Statsbomb provides these datasets for free in their <a href="https://github.com/statsbomb/open-data" target="_blank">github repository</a>.
 </p>
@@ -76,11 +76,16 @@ So, let's go!
 <p align="justify">
 Before everything, it is essential to realize that when analyzing a game, you must bring some subjectives of the team to have a complete understanding of the match. The metrics can give you some insights, but the final analysis must consider how the team plays, the players' characteristics, and the match context.
 </p>
+<p align="justify">
+Having a high or low value in a metric can mean different things depending on the team's strategy and the players' behaviour. You should explore the differences between the players, compare with the players' positions, and compare with the team's performance. Remember, it is a network, everything is connected.
 
 ### Degree 
 <p align="justify">
-The degree of a node is the number of edges connected to it (the number of passes). The degree can inform you how much that player was involved in the match. A player with a high degree can be considered a key player in the match. A player with a low degree can be viewed as a player who was not involved in the team's plays (can also be a strategy).
+The degree of a node is the number of edges connected to it (the number of passes). The degree can inform you how much that player was involved in the match. A player with a high degree can be considered a key player in the match. A player with a low degree can be viewed as a player who was not involved in the team's plays (can also be a strategy). Nowadays, we can consider the player who pivots the game as a key player with this metric, usually the midfielder. Kevin De Bruyne, for example, is a player with a high degree in the matches.
 </p>
+<p align="justify">
+Degrees can be in and out. The in-degree is the number of passes received by the player, and the out-degree is the number of passes made by the player.
+
 <p align="justify">
 In summary, the degree can inform you about the players' involvement in the match.
 </p>
@@ -102,7 +107,7 @@ Briefly, the Clustering Coefficient can give you an understanding of how the tea
 The Closeness Centrality measures the average shortest distance path between every player on the network. Regarding a pass network it can give you information about how the player is close to the other players in terms of passes. In other words, a player with a higher closeness centrality is a player that is more connected to the other players in the network.
 </p>
 <p align="justify">
-An example can be a midfielder who constructs the plays and tends to have a higher closeness centrality. Another one is a center-forward can have a lower closeness centrality because he tends to be more isolated from the other players.
+An example can be a midfielder who constructs the plays and tends to have a higher closeness centrality. Another one is a center-forward can have a lower closeness centrality because he tends to be more isolated from the other players. We can say that Jorginho in Italy's national team has a high closeness centrality, he is always very near of every play.
 </p>
 <p align="justify">
 In a nutshell, the Closeness Centrality can give you information about how the player is connected to the other players in the network.
@@ -113,7 +118,7 @@ In a nutshell, the Closeness Centrality can give you information about how the p
 The Betweenness Centrality is a metric that measures the number of times a node acts as a bridge along the shortest path between two other nodes. Bringing it to our context can give you information about how the player connects to the other players in the network.
 </p>
 <p align="justify">
-It is like the role that Busquets had in the Barcelona team. He was the player that connected the defense to the attack. He was the bridge between the two sectors of the team. Amazing player, by the way!
+It is like the role that Busquets had in the Barcelona team. He was the player that connected the defense to the attack. He was the bridge between the two sectors of the team.
 </p>
 <p align="justify">
 Short, Betweeness shows how the player is in the middle of the plays, connecting the other players.
@@ -121,7 +126,7 @@ Short, Betweeness shows how the player is in the middle of the plays, connecting
 
 ### Hubs and Authorities
 <p align="justify">
-Hubs and Authorities are much more exciting metrics for understanding the role of the players in the network. The Hubs are the players that make a lot of passes, and the Authorities are the players that receive a lot of passes. The concepts are simple, but the insights you can get from them can be unique.
+Hubs and Authorities are much exciting metrics for understanding the role of the players in the network. The Hubs are the players that make a lot of passes, and the Authorities are the players that receive a lot of passes. The concepts are simple, but the insights you can get from them can be unique.
 </p>
 <p align="justify">
 Hubs are the players that are the source of the plays. In other words, they are the ones who create the plays and make passes.
@@ -133,18 +138,22 @@ Authorities are the players that are the target of the plays. They are the ones 
 You can combine those two metrics and compare them with the team's performance. What does it mean if you have a defender as a hub? What does it mean if you have a forward as an authority? The insights can be amazing.
 </p>
 
+<p align="justify">
+An intuitive example is: back in the golden days of Barcelona, Messi was absolutely an authority in the Barcelona team meanwhile Xavi was a hub. Messi receives a lot of passes and finishes the plays, and Xavi is the source of the plays.
+</p>
+
 ### Pagerank
 <p align="justify">
 Pagerank is an impressive algorithm created by Larry Page and Sergey Brin, the founders of Google. The algorithm was developed to rank web pages in the search engine. The algorithm is based on the idea that the importance of a web page can be measured by the number of pages that link to it. The more important the pages that link to a page, the more important the page is.
 </p>
 <p align="justify">
-Bringing it to the football context, you can use the algorithm to rank the players in the network. Intuitively, the players showing a higher Pagerank are the most important players in the network. It can give you information that could be clearer just by looking at the passes network.
+Bringing it to the football context, you can use the algorithm to rank the players in the network. Intuitively, the players showing a higher Pagerank are the most important players in the network. It can give you information that could be clearer just by looking at the passes network. 
 </p>
 <p align="justify">
 To sum things up, the Pagerank can give you information about the importance of the players in the network.
 </p>
 
-Conclusion
+### Conclusion
 <p align="justify">
 In this post, we showed how to use Complex Networks to analyze football matches. We showed the steps to model the network and the metrics you can use to analyze the network. The metrics can give you information about the players' involvement in the match, the team's strategy, and the players' importance in the network. The analysis can give you insights that could be clearer just by looking at the match. In a future post, we will show how to analyze a football match using Complex Networks.
 </p>
