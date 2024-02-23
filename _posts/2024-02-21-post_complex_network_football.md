@@ -80,7 +80,7 @@ Before everything, it is essential to realize that when analyzing a game, you mu
 Having a high or low value in a metric can mean different things depending on the team's strategy and the players' behaviour. You should explore the differences between the players, compare with the players' positions, and compare with the team's performance. Remember, it is a network, everything is connected.
 
 
-<h3>Degree</h3>
+<h4>Degree</h4>
 <p align="justify">
 The degree of a node is the number of edges connected to it (the number of passes). The degree can inform you how much that player was involved in the match. A player with a high degree can be considered a key player in the match. A player with a low degree can be viewed as a player who was not involved in the team's plays (can also be a strategy). Nowadays, we can consider the player who pivots the game as a key player with this metric, usually the midfielder. Kevin De Bruyne, for example, is a player with a high degree in the matches.
 </p>
@@ -91,7 +91,7 @@ Degrees can be in and out. The in-degree is the number of passes received by the
 In summary, the degree can inform you about the players' involvement in the match.
 </p>
 
-<h3>Clustering Coefficient</h3>
+<h4>Clustering Coefficient</h4>
 <p align="justify">
 The Clustering Coefficient is an interesting one. When playing football, you learn the importance of creating triangles between the players, appearing in the game, receiving the ball, and having options to pass.
 </p>
@@ -103,7 +103,7 @@ It will give this information to you. It measures the degree to which nodes in a
 Briefly, the Clustering Coefficient can give you an understanding of how the team creates options to pass and triangulates the plays.
 </p>
 
-<h3>Closeness Centrality</h3>
+<h4>Closeness Centrality</h4>
 <p align="justify">
 The Closeness Centrality measures the average shortest distance path between every player on the network. Regarding a pass network it can give you information about how the player is close to the other players in terms of passes. In other words, a player with a higher closeness centrality is a player that is more connected to the other players in the network.
 </p>
@@ -114,7 +114,7 @@ An example can be a midfielder who constructs the plays and tends to have a high
 In a nutshell, the Closeness Centrality can give you information about how the player is connected to the other players in the network.
 </p>
 
-<h3>Betweenness Centrality</h3>
+<h4>Betweenness Centrality</h4>
 <p align="justify">
 The Betweenness Centrality is a metric that measures the number of times a node acts as a bridge along the shortest path between two other nodes. Bringing it to our context can give you information about how the player connects to the other players in the network.
 </p>
@@ -125,7 +125,7 @@ It is like the role that Busquets had in the Barcelona team. He was the player t
 Short, Betweeness shows how the player is in the middle of the plays, connecting the other players.
 </p>
 
-<h3>Hubs and Authorities</h3>
+<h4>Hubs and Authorities</h4>
 <p align="justify">
 Hubs and Authorities are much exciting metrics for understanding the role of the players in the network. The Hubs are the players that make a lot of passes, and the Authorities are the players that receive a lot of passes. The concepts are simple, but the insights you can get from them can be unique.
 </p>
@@ -143,7 +143,7 @@ You can combine those two metrics and compare them with the team's performance. 
 An intuitive example is: back in the golden days of Barcelona, Messi was absolutely an authority in the Barcelona team meanwhile Xavi was a hub. Messi receives a lot of passes and finishes the plays, and Xavi is the source of the plays.
 </p>
 
-<h3>Pagerank</h3>
+<h4>Pagerank</h4>
 <p align="justify">
 Pagerank is an impressive algorithm created by Larry Page and Sergey Brin, the founders of Google. The algorithm was developed to rank web pages in the search engine. The algorithm is based on the idea that the importance of a web page can be measured by the number of pages that link to it. The more important the pages that link to a page, the more important the page is.
 </p>
