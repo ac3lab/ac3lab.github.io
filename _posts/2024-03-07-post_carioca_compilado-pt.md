@@ -5,7 +5,7 @@ date: 2024-03-07 10:00:00
 description: 
 tags: Football; Carioca; Analysis;
 categories: Football; Analysis
-thumbnail: assets/img/Posts_Images/2024-03-06-post_carioca_compilado/Carioca_2024_FERJ.jpg
+thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
 ## Introdução
@@ -14,11 +14,11 @@ author: Ace Laboratory Football Team
 O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz uma análise compilada dos quatro grandes do Rio e do Nova Iguaçu que fez uma grande campanha e se classificou para a fase final da competição. O Flamengo, que liderou a fase de pontos corridos, o Nova Iguaçu, que surpreendeu a todos, o Vasco, que teve um meio campo de qualidade, o Fluminense, que teve uma defesa sólida, e o Botafo, que teve um desempenho abaixo do esperado. Vamos analisar o desempenho de cada um dos times e os destaques individuais da competição.
 </div>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-06-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 
 ## Flamengo
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-06-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 
 <div style="text-align: justify"> 
 Podemos afirmar que o destaque do Flamengo nesse campeonato foi o seu setor defensivo. O time tomou apenas 1 gol nas 11 partidas da competição, sendo o 3° time com melhor taxa de duelos ganhos (**40.1%**) e o 2° melhor se considerarmos  apenas os duelos aéreos (**49.4%**). Essa segurança nos duelos, somado à qualidade dos jogadores, fez o Flamengo ser o clube que menos cometeu erros que levaram a chutes (**31**) e o que menos levou chutes (**79**) dos adversários, com mais de 15 chutes de diferença do 2° colocado.
@@ -36,7 +36,7 @@ O meio campista Bill foi o destaque do time na competição. O atleta foi o 1º 
 
 Conquistando 24 pontos, com sete vitórias, três empates e apenas uma única derrota, a laranja mecânica da baixada se classifica para as semifinais e deixa um dos grandes do Rio para fora. Assim como nos pontos corridos, o Nova Iguaçu terá que aproveitar as chances que tiver para surpreender o Vasco e chegar a final do Carioca 2024.
 </div>
-{% include figure.html path="assets/img/Posts_Images/2024-03-06-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 
 ## Vasco
 <div style="text-align: justify"> 
