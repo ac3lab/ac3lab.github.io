@@ -35,7 +35,7 @@ We can say that Flamengo's highlight in this championship was its defensive sect
 </p>
 
 <p align="justify">
-With Giorgian De Arrascaeta in midfield, Flamengo's offensive work was also impressive, the player is **above the 3rd quartile** in 6 of the 7 offensive categories we observed, being in the Top 10 of the championship in goals, assists and passes key. The rubro-negro likes to dictate the game and with that he managed to create many opportunities, he was 2nd with the most possession of the ball <b>(57.8%)</b>, 1st in the rate of successful crosses <b>(43.3%)</b> , 1st in goals scored <b>(23)</b> and 1st in shots <b>(178)</b>, with more than 20 shots ahead of 2nd place.
+With Giorgian De Arrascaeta in midfield, Flamengo's offensive work was also impressive, the player is **above the 3rd quartile** in 6 of the 7 offensive categories we observed, being in the Top 10 of the championship in goals, assists and key passes. The rubro-negro likes to dictate the game and with that he managed to create many opportunities, he was 2nd with the most possession of the ball <b>(57.8%)</b>, 1st in the rate of successful crosses <b>(43.3%)</b> , 1st in goals scored <b>(23)</b> and 1st in shots <b>(178)</b>, with more than 20 shots ahead of 2nd place.
 </p>
 
 <p align="justify">
