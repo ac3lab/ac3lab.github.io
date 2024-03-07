@@ -58,7 +58,7 @@ Midfielder Bill was the standout player for the team in the competition. The ath
 </p>
 
 <p align="justify">
-With 24 points, seven wins, three draws, and only one defeat, the "orange mechanical" team from the Baixada qualifies for the semifinals and eliminates one of the Rio giants. Just like in the league stage, Nova Iguaçu will need to capitalize on their chances to surprise Vasco and reach the final of the Carioca 2024.
+With 24 points, seven wins, three draws, and only one defeat, the "Clockwork Orange" team from the Baixada qualifies for the semifinals and eliminates one of the Rio giants. Just like in the league stage, Nova Iguaçu will need to capitalize on their chances to surprise Vasco and reach the final of the Carioca 2024.
 </p>
 </div>
 
