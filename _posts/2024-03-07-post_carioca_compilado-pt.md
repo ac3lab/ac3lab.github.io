@@ -1,16 +1,15 @@
 ---
 layout: post
 title: Campeonato Carioca 2024 - Uma análise compilada
-date: 2024-03-07 10:00:00
+date: 2024-03-07 12:20:00
 description: 
-tags: Football; Carioca; Analysis;
+tags: Football; Carioca; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
 
 <h2>Introdução</h2>
-
 <div style="text-align: justify"> 
 O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz uma análise compilada dos quatro grandes do Rio e do Nova Iguaçu que fez uma grande campanha e se classificou para a fase final da competição. O Flamengo, que liderou a fase de pontos corridos, o Nova Iguaçu, que surpreendeu a todos, o Vasco, que teve um meio campo de qualidade, o Fluminense, que teve uma defesa sólida, e o Botafo, que teve um desempenho abaixo do esperado. Vamos analisar o desempenho de cada um dos times e os destaques individuais da competição.
 </div>
@@ -19,8 +18,8 @@ O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz 
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<h2>Flamengo</h2>
 
+<h2>Flamengo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -39,7 +38,6 @@ Com isso vimos o domínio do Flamengo no Campeonato Carioca 2024, o time se most
 </div>
 
 <h2>Nova Iguaçu</h2>
-
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -60,8 +58,6 @@ Conquistando 24 pontos, com sete vitórias, três empates e apenas uma única de
 
 
 <h2>Vasco</h2>
-
-
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -101,7 +97,6 @@ Apesar da defesa de qualidade, o ataque tricolor não acompanhou o rendimento qu
 </div>
 
 <h2>Botafogo</h2>
-
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
