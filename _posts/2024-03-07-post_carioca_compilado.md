@@ -20,7 +20,7 @@ The 2024 Carioca Championship has reached the semifinal stage, and Ace Laborator
 </div>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
