@@ -6,6 +6,7 @@ description: Deployed! Construction of an API for querying and evaluating the le
 tags: Running; Python; MachineLearning
 categories: Running; Python; MachineLearning
 thumbnail: assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp
+author: Nathália Tito
 ---
 
 {% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp" class="img-fluid rounded z-depth-1" %}
