@@ -1,15 +1,14 @@
 ---
 layout: post
 title: "Carioca Championship 2024 - A compiled analysis"
-date: 2024-03-07 12:00:00
+date: 2024-03-07 12:20:00
 description: 
 tags: Football; Carioca; Analysis
-categories: Football; Analysis;
+categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
 
-<div style="width: 50%;">
 <h2>Introduction</h2>
 <div style="text-align: justify"> 
 The 2024 Carioca Championship has reached the semifinal stage, and Ace Laboratory brings a compiled analysis of the four Rio giants and Nova Iguaçu, which had an impressive campaign and qualified for the final phase of the competition. Flamengo, leading the league stage, Nova Iguaçu, surprising everyone, Vasco, boasting a quality midfield, Fluminense, with a solid defense, and Botafogo, underperforming. Let's analyze the performance of each team and the individual highlights of the competition.
@@ -24,6 +23,7 @@ The 2024 Carioca Championship has reached the semifinal stage, and Ace Laborator
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
+
 <div style="text-align: justify"> 
 <p align="justify">
 We can say that Flamengo's highlight in this championship was its defensive sector. The team conceded just 1 goal in the 11 matches of the competition, being the 3rd team with the best rate of duels won <b>(40.1%)</b> and the 2nd best if we only consider aerial duels <b>(49.4%)</b> . This security in duels, added to the quality of the players, made Flamengo the club that made the fewest mistakes that led to shots <b>(31)</b> and the one that took the least shots <b>(79)</b> from opponents, with more than 15 shots difference from 2nd place.
@@ -45,21 +45,20 @@ With this we saw Flamengo's dominance in the 2024 Carioca Championship, the team
 
 <div style="text-align: justify"> 
 <p align="justify">
-Vasco da Gama's championship was marked by its attack, ranking as the <b>2nd</b> highest-scoring team in the tournament with a total of 20 goals. With a team that maintains ball possession and precision in its passes, Vasco was the <b>3rd</b> team with the most possession <b>(55%)</b>, 3rd in passes <b>(5290)</b>, and 3rd in pass accuracy <b>(87.7%)</b>.
+The Nova Iguaçu team surprised many with the second-best performance in the league stage of the Carioca Championship. The team does not have a good average in overall defensive metrics, having the lowest possession average among the qualified teams <b>(7th in the entire league)</b>, the highest foul rate, and conceding a total of thirteen goals. The key factor for Nova Iguaçu's victories was capitalizing on their shots on goal and converting chances into goals.
 </p>
 
 <p align="justify">
-The standout player of the team is none other than the Frenchman Dimitri Payet. The midfielder was the team's <b>2nd</b> highest scorer, <b>1st</b> in assists, and <b>1st</b> in key passes. Looking at the radar chart, we can see that the player plays a crucial role in creating and finishing plays. Payet was a fundamental piece for Vasco during the league stage and will be essential for the team in the semifinal against Nova Iguaçu.
+Midfielder Bill was the standout player for the team in the competition. The athlete ranked <b>1st</b> in assists, key passes, and successful dribbles for the team, highlighting his importance throughout the championship. The radar chart below also illustrates the player's versatility in defense, playmaking, and finishing.
 </p>
 
 <p align="justify">
-For the semifinals, Vasco will need to maintain the quality that its midfield and attack have shown in the recent matches of the tournament to avoid surprises and secure a spot in the final of the Carioca 2024.
+With 24 points, seven wins, three draws, and only one defeat, the "orange mechanical" team from the Baixada qualifies for the semifinals and eliminates one of the Rio giants. Just like in the league stage, Nova Iguaçu will need to capitalize on their chances to surprise Vasco and reach the final of the Carioca 2024.
 </p>
 </div>
 
 
 <h2>Vasco</h2>
-
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -98,13 +97,11 @@ Despite the quality defense, the Tricolor attack did not keep up with the perfor
 
 </div>
 <h2>Botafogo</h2>
-
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify"> 
-
 <p align="justify">
 Botafogo had a good defense in the championship, with numbers of the G4, was the 2nd in duels won <b>(40.3%)</b>, the 3rd that committed the least errors that led to shots <b>(32)</b>, only 1 more than Flamengo and Fluminense, and also the 3rd that received the least shots <b>(101)</b>. And to complement the offensive sector, full-back Hugo did a great job creating the team's plays, being 1st in assists in the championship <b>(5)</b> and 7th in key passes <b>(18)</b>.
 </p>
@@ -118,7 +115,7 @@ The Carioca Championship is decided in detail, and analyzing the numbers, we saw
 </p>
 
 </div>
-<h2>Semifinais</h2>
+<h2>Semifinals</h2>
 <div style="text-align: justify">
 <p align="justify">
 The semifinals of the 2024 Carioca Championship promise to be exciting. Flamengo, the title favorite, faces Fluminense, which must overcome offensive deficiencies to surprise.
