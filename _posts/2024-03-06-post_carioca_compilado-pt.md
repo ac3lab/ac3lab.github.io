@@ -4,8 +4,8 @@ title: "Campeonato Carioca 2024 - Uma análise compilada"
 date: 2024-03-07 20:00:00
 description: 
 tags: Football; Carioca; Analysis
-categories: Football; Analysis; MachineLearning
-thumbnail: assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp
+categories: Football; Analysis
+thumbnail: assets/img/Posts_Images/2024-03-06-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
 ## Introdução
@@ -43,7 +43,7 @@ Conquistando 24 pontos, com sete vitórias, três empates e apenas uma única de
 ## Vasco
 <div style="text-align: justify"> 
 O campeonato do Gigante da Colina foi marcado por...
-Com um time que mantém a posse de bola e é preciso em seus passes, o Vasco foi o 3º time com mais posse de bola **(55%), o 3° em passes (3811) e o 3° em precisão dos passes (87.9%)**.
+Com um time que mantém a posse de bola e é preciso em seus passes, o Vasco foi o 3º time com mais posse de bola (**55%**), o 3° em passes (**3811**) e o 3° em precisão dos passes (**87.9%**).
 
 O destaque do time não poderia ser ninguém menos do que o francês Dimitri Payet. O meio campo foi o 2° do time em gols, 1º em assistências e 1º em passes chave. Ao observamos o gráfico de radar, podemos ver que o jogador apresenta uma grande importância na criação de jogadas e na finalização das mesmas. Payet foi uma peça fundamental para o Vasco durante os pontos corridos, e será essencial para o time na semifinal contra o Nova Iguaçu.
 
