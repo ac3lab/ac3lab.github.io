@@ -10,12 +10,17 @@ author: Ace Laboratory Football Team
 ---
 
 <h2>Introduction</h2>
+
+<div style="width: 65%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+</div>
+
 <div style="text-align: justify"> 
 The 2024 Carioca Championship has reached the semifinal stage, and Ace Laboratory brings a compiled analysis of the four Rio giants and Nova Iguaçu, which had an impressive campaign and qualified for the final phase of the competition. Flamengo, leading the league stage, Nova Iguaçu, surprising everyone, Vasco, boasting a quality midfield, Fluminense, with a solid defense, and Botafogo, underperforming. Let's analyze the performance of each team and the individual highlights of the competition.
 </div>
 
-<div style="width: 65%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 

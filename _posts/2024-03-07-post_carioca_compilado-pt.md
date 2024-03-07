@@ -10,12 +10,17 @@ author: Ace Laboratory Football Team
 ---
 
 <h2>Introdução</h2>
-<div style="text-align: justify"> 
-O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz uma análise compilada dos quatro grandes do Rio e do Nova Iguaçu que fez uma grande campanha e se classificou para a fase final da competição. O Flamengo, que liderou a fase de pontos corridos, o Nova Iguaçu, que surpreendeu a todos, o Vasco, que teve um meio campo de qualidade, o Fluminense, que teve uma defesa sólida, e o Botafo, que teve um desempenho abaixo do esperado. Vamos analisar o desempenho de cada um dos times e os destaques individuais da competição.
-</div>
 
 <div style="width: 65%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+</div>
+
+<div style="text-align: justify"> 
+O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz uma análise compilada dos quatro grandes do Rio e do Nova Iguaçu que fez uma grande campanha e se classificou para a fase final da competição. O Flamengo, que liderou a fase de pontos corridos, o Nova Iguaçu, que surpreendeu a todos, o Vasco, que teve um meio campo de qualidade, o Fluminense, que teve uma defesa sólida, e o Botafogo, que teve um desempenho abaixo do esperado. Vamos analisar o desempenho de cada um dos times e os destaques individuais da competição.
+</div>
+
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
