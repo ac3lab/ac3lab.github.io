@@ -21,16 +21,23 @@ O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz 
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 
 <div style="text-align: justify"> 
-Podemos afirmar que o destaque do Flamengo nesse campeonato foi o seu setor defensivo. O time tomou apenas 1 gol nas 11 partidas da competição, sendo o 3° time com melhor taxa de duelos ganhos (**40.1%**) e o 2° melhor se considerarmos  apenas os duelos aéreos (**49.4%**). Essa segurança nos duelos, somado à qualidade dos jogadores, fez o Flamengo ser o clube que menos cometeu erros que levaram a chutes (**31**) e o que menos levou chutes (**79**) dos adversários, com mais de 15 chutes de diferença do 2° colocado.
+<p align="justify">
+Podemos afirmar que o destaque do Flamengo nesse campeonato foi o seu setor defensivo. O time tomou apenas 1 gol nas 11 partidas da competição, sendo o 3° time com melhor taxa de duelos ganhos (*40.1%*) e o 2° melhor se considerarmos  apenas os duelos aéreos (*49.4%*). Essa segurança nos duelos, somado à qualidade dos jogadores, fez o Flamengo ser o clube que menos cometeu erros que levaram a chutes (*31*) e o que menos levou chutes (*79*) dos adversários, com mais de 15 chutes de diferença do 2° colocado.
+</p>
+<p align="justify">
 
 Com Giorgian De Arrascaeta no meio de campo, o trabalho ofensivo do Flamengo também impressionou, o jogador está **acima do 3° quartil** em 6 das 7 categorias ofensivas que observamos, estando no Top 10 do campeonato em gols, assistências e passes chave. O rubro-negro gosta de ditar o jogo e com isso conseguiu criar muitas oportunidades, foi 2° com mais posse de bola (**57.8%**), o 1° em taxa de cruzamentos certos (**43.3%**), o 1° em gols marcados (**23**) e o 1° em chutes (**178**), com mais de 20 chutes na frente do 2° lugar.
-
+</p>
+<p align="justify">
 Com isso vimos o domínio do Flamengo no Campeonato Carioca 2024, o time se mostrou sólido defensivamente, sendo o que menos tomou gols, e sólido ofensivamente, sendo o que mais marcou gols. Com a qualidade de seus jogadores, o Flamengo vai favorito para a semifinal contra o Fluminense, e vai em busca do título invicto.
+</p>
 </div>
 
 ## Nova Iguaçu
 <div style="text-align: justify"> 
+<p align="justify">
 O time do Nova Iguaçu surpreendeu a muitos com a segunda melhor campanha dos pontos corridos do Cariocão. O time não apresenta uma boa média das métricas defensivas no geral, apresentando **a menor média de posse de bola dos times classificados (8º em todo o campeonato), a maior taxa de faltas cometidas e sofrendo um total de treze gols**. O fator importante para as vitórias do Nova Iguaçu foi aproveitar os chutes a gol que tiveram e converter as chances em gols.
+
 
 O meio campista Bill foi o destaque do time na competição. O atleta foi o 1º do time em número de assistências, passes chave e dribles certos, deixando nítida a sua importância ao longo do campeonato. O gráfico de radar mostrado abaixo também demonstra a polivalencia do jogador na defesa, armação e conclusão das jogadas.
 
@@ -78,9 +85,9 @@ O Nova Iguaçu, que surpreendeu a todos, enfrenta o Vasco, que tem um meio campo
 Faremos o acompanhamento de todas as partidas e traremos as análises das semifinais e da final do Carioca 2024. Fiquem ligados!
 </div>
 
+<div>
 <iframe id="sofa-cupTree-embed-92-56974-52884" src="https://widgets.sofascore.com/embed/unique-tournament/92/season/56974/cuptree/52884?widgetTitle=Carioca, Serie A 2024, Playoffs&showCompetitionLogo=true&v=2" style=height:433px!important;max-width:700px!important;width:100%!important; frameborder="0" scrolling="yes"></iframe>
     <div style="font-size:12px;font-family:Arial,sans-serif;text-align:left">
       Cup tree provided by <a target="_blank" href="https://www.sofascore.com/">Sofascore</a>
     </div>
-
-
+</div>
