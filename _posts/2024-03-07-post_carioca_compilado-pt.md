@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Campeonato Carioca 2024 - Uma análise compilada
-date: 
+date: 2000-01-01 00:00:00
 description:
 tags: Football; Carioca; Analysis
 categories: Football; Analysis
