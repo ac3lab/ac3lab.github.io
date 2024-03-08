@@ -7,6 +7,7 @@ tags: Olympics; Women; PowerBI
 categories: Olympics; PowerBI
 thumbnail: assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/olympic_women.jpeg
 author: Amanda Azevedo
+have_related_posts: false
 ---
 
 ### The Historical March of Women's Olympic Aspirations
