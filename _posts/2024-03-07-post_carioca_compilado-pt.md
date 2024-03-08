@@ -2,11 +2,12 @@
 layout: post
 title: Campeonato Carioca 2024 - Uma análise compilada
 date: 2024-03-07 12:20:00
-description: 
+description:
 tags: Football; Carioca; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
+hidden: true
 ---
 
 <h2>Introdução</h2>
@@ -15,7 +16,7 @@ author: Ace Laboratory Football Team
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz uma análise compilada dos quatro grandes do Rio e do Nova Iguaçu que fez uma grande campanha e se classificou para a fase final da competição. O Flamengo, que liderou a fase de pontos corridos, o Nova Iguaçu, que surpreendeu a todos, o Vasco, que teve um meio campo de qualidade, o Fluminense, que teve uma defesa sólida, e o Botafogo, que teve um desempenho abaixo do esperado. Vamos analisar o desempenho de cada um dos times e os destaques individuais da competição.
 </div>
 
@@ -29,7 +30,7 @@ O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz 
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 Podemos afirmar que o destaque do Flamengo nesse campeonato foi o seu setor defensivo. O time tomou apenas 1 gol nas 11 partidas da competição, sendo o 3° time com melhor taxa de duelos ganhos <b>(40.1%)</b> e o 2° melhor se considerarmos  apenas os duelos aéreos <b>(49.4%)</b>. Essa segurança nos duelos, somado à qualidade dos jogadores, fez o Flamengo ser o clube que menos cometeu erros que levaram a chutes <b>(31)</b> e o que menos levou chutes <b>(79)</b> dos adversários, com mais de 15 chutes de diferença do 2° colocado.
 </p>
@@ -47,7 +48,7 @@ Com isso vimos o domínio do Flamengo no Campeonato Carioca 2024, o time se most
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 O time do Nova Iguaçu surpreendeu a muitos com a segunda melhor campanha dos pontos corridos do Cariocão. O time não apresenta uma boa média das métricas defensivas no geral, apresentando a menor média de posse de bola dos times classificados <b>(7º em todo o campeonato)</b>, a maior taxa de faltas cometidas e sofrendo um total de treze gols. O fator importante para as vitórias do Nova Iguaçu foi aproveitar os chutes a gol que tiveram e converter as chances em gols.
 </p>
@@ -86,7 +87,7 @@ Para as semifinais, o Vasco precisará manter a qualidade que o seu setor de mei
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 
 <p align="justify">
 O Fluminense teve uma defesa sólida na competição, junto com o Botafogo foi o <b>3°</b> time que menos levou gols no torneio <b>(11)</b>, foi líder nos duelos ganhos <b>(42.0%)</b> e nos duelos aéreos <b>(50.2%)</b>, ficou empatado com o Flamengo como o que menos cometeu erros que levaram a chutes <b>(31)</b> e o foi o 2° clube que menos levou chutes <b>(96)</b>.

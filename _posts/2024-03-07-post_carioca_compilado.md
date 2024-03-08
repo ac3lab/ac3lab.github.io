@@ -2,12 +2,14 @@
 layout: post
 title: "Carioca Championship 2024 - A compiled analysis"
 date: 2024-03-07 12:20:00
-description: 
+description:
 tags: Football; Carioca; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
+
+<p>If you want to read this text in pt-br, <a href = https://ac3lab.github.io/blog/2024/post_carioca_compilado-pt/> click here.</a></p>
 
 <h2>Introduction</h2>
 
@@ -15,7 +17,7 @@ author: Ace Laboratory Football Team
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 The 2024 Carioca Championship has reached the semifinal stage, and Ace Laboratory brings a compiled analysis of the four Rio giants and Nova Iguaçu, which had an impressive campaign and qualified for the final phase of the competition. Flamengo, leading the league stage, Nova Iguaçu, surprising everyone, Vasco, boasting a quality midfield, Fluminense, with a solid defense, and Botafogo, underperforming. Let's analyze the performance of each team and the individual highlights of the competition.
 </div>
 
@@ -29,7 +31,7 @@ The 2024 Carioca Championship has reached the semifinal stage, and Ace Laborator
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 We can say that Flamengo's highlight in this championship was its defensive sector. The team conceded just 1 goal in the 11 matches of the competition, being the 3rd team with the best rate of duels won <b>(40.1%)</b> and the 2nd best if we only consider aerial duels <b>(49.4%)</b> . This security in duels, added to the quality of the players, made Flamengo the club that made the fewest mistakes that led to shots <b>(31)</b> and the one that took the least shots <b>(79)</b> from opponents, with more than 15 shots difference from 2nd place.
 </p>
@@ -48,7 +50,7 @@ With this we saw Flamengo's dominance in the 2024 Carioca Championship, the team
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 The Nova Iguaçu team surprised many with the second-best performance in the league stage of the Carioca Championship. The team does not have a good average in overall defensive metrics, having the lowest possession average among the qualified teams <b>(7th in the entire league)</b>, the highest foul rate, and conceding a total of thirteen goals. The key factor for Nova Iguaçu's victories was capitalizing on their shots on goal and converting chances into goals.
 </p>
@@ -86,7 +88,7 @@ For the semifinals, Vasco will need to maintain the quality that its midfield an
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 Fluminense had a solid defense in the competition, together with Botafogo it was the 3rd team that conceded the least goals in the tournament <b>(11)</b>, was the leader in duels won <b>(42.0%)</b> and in aerial duels <b>(50.2%)</b>, was tied with Flamengo as the one that made the fewest errors that led to shots <b>(31)</b> and was the 2nd club that took the fewest shots <b>(96)</b>.
 </p>
@@ -106,7 +108,7 @@ Despite the quality defense, the Tricolor attack did not keep up with the perfor
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify"> 
+<div style="text-align: justify">
 <p align="justify">
 Botafogo had a good defense in the championship, with numbers of the G4, was the 2nd in duels won <b>(40.3%)</b>, the 3rd that committed the least errors that led to shots <b>(32)</b>, only 1 more than Flamengo and Fluminense, and also the 3rd that received the least shots <b>(101)</b>. And to complement the offensive sector, full-back Hugo did a great job creating the team's plays, being 1st in assists in the championship <b>(5)</b> and 7th in key passes <b>(18)</b>.
 </p>
