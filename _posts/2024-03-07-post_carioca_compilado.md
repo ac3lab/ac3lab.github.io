@@ -9,7 +9,9 @@ thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_202
 author: Ace Laboratory Football Team
 ---
 
-<p>If you want to read this text in pt-br, <a href = https://ac3lab.github.io/blog/2024/post_carioca_compilado-pt/> click here.</a></p>
+<p align="justify">
+If you want to read this text in pt-br, <a href = "https://ac3lab.github.io/blog/2024/post_carioca_compilado-pt/"> click here.</a>
+</p>
 
 <h2>Introduction</h2>
 

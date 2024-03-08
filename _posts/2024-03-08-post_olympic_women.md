@@ -65,5 +65,5 @@ In their honor, and in the spirit of fostering a future where every girl has the
 </p>
 
 <p align="justify">
-Explore our dashboard and witness the journey of women in the Olympics: <a href="https://app.powerbi.com/view?r=eyJrIjoiY2M3ZGNjNzctMzMxYS00MjJhLThkM2ItODU5ODcxOGQ5Zjg0IiwidCI6IjhlZWNhNDA0LWE0N2QtNDU1NS1hMmQ0LTBmMzYxOTA0MWM5YyJ9" target="_blank">statsbombpy</a>
+Explore our dashboard and witness the journey of women in the Olympics: <a href="https://app.powerbi.com/view?r=eyJrIjoiY2M3ZGNjNzctMzMxYS00MjJhLThkM2ItODU5ODcxOGQ5Zjg0IiwidCI6IjhlZWNhNDA0LWE0N2QtNDU1NS1hMmQ0LTBmMzYxOTA0MWM5YyJ9" target="_blank">Women in Olympics</a>
 </p>
