@@ -10,7 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 <p align="justify">
-If you want to read this text in pt-br, <a href = "https://ac3lab.github.io/blog/2024/post_carioca_compilado-pt/"> click here.</a>
+If you want to read this text in pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_compilado-pt/"> click here.</a>
 </p>
 
 <h2>Introduction</h2>
