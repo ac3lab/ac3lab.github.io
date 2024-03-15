@@ -28,7 +28,7 @@ O Campeonato Carioca continua a surpreender o futebol brasileiro, com Fluminense
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flaflugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 O Fluminense fez uma partida abaixo do esperado contra o Flamengo, sendo constantemente pressionado, e não conseguindo impor seu estilo de jogo. Esta foi 1° partida do Campeonato Carioca 2024 em que o time acabou a partida com menor posse de bola que seu adversário <b>(49% x 51%)</b>, com uma atuação fraca de seu ataque, que não realizou nenhuma finalização ao gol do goleiro Agustín Rossi. Além disso, o time cometeu um total de <b>11 erros que levaram à chutes</b> no jogo, sendo que até essa partida, tinha cometido <b>31 erros</b> em todo o campeonato.

@@ -31,7 +31,7 @@ The Carioca Championship continues to surprise the Brazilian football, with Flum
 <h3>Match Analysis</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flaflugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
