@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Campeonato Carioca 2024 - Semifinal parte 1
+title: Campeonato Carioca 2024 - Semifinal Parte 1
 date: 2000-01-01 00:00:00
 description:
 tags: Football; Carioca; Analysis

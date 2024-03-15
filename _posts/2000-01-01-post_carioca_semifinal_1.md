@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Carioca Championship 2024 - Semifinal part 1"
+title: "Carioca Championship 2024 - Semifinal Part 1"
 date: 2024-03-15 13:00:00
 description:
 tags: Football; Carioca; Analysis
