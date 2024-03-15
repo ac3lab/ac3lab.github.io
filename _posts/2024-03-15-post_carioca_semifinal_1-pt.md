@@ -108,5 +108,4 @@ Estes foram os dois primeiros jogos das semifinais. O Flamengo sai na vantagem e
 <p align="justify">
 A equipe do Laboratório Ace de Futebol continuará acompanhando o Campeonato Carioca, trazendo análises detalhadas sobre os jogos e os jogadores. Continuem ligados!
 </p>
-
 </div>
