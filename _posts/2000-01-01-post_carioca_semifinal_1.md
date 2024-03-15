@@ -9,6 +9,10 @@ thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_202
 author: Ace Laboratory Football Team
 ---
 
+<p align="justify">
+If you want to read this text in pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_semifinal_1-pt/"> click here.</a>
+</p>
+
 <h2>Introduction</h2>
 
 <div style="width: 65%; margin: 0 auto; text-align: center;">
@@ -17,7 +21,7 @@ author: Ace Laboratory Football Team
 
 <div style="text-align: justify">
 <p align="justify">
-...
+The Carioca Championship continues to surprise the Brazilian football, with Fluminense, Flamengo, Vasco, and Nova Iguaçu in the mix. The Ace Laboratory Football Team dives into the decisive matches, from Flamengo's dominance over Fluminense to Nova Iguaçu's unexpected offensive power trying to overcome the Vasco's "Wall", offering an exciting glimpse into the tournament's electrifying action
 </p>
 </div>
 
@@ -93,4 +97,13 @@ On Vasco’s side, with an incredible performance, the Frenchman Dimitri Payet s
 <p align="justify">
 In a game with many shots and above-average performances, attackers who had good performances like Carlinhos, who shot on goal 5 times, were overshadowed by the miraculous performances of both teams' goalkeepers. Léo Jardim made incredible 14 saves, with 9 of these shots from inside the box, representing a total of 93% of balls saved, and even conceding one goal was considered the MOTM. While Fabricio, Nova Iguaçu's goalkeeper, despite "only" making 6 saves, with 50% of them coming from shots from inside the box, successfully completed 80% of long balls launched for the team's possession in the field, a characteristic that is increasingly needed in today's goalkeepers.
 </p>
+
+<h2>Final Remarks</h2>
+
+<p align="justify">
+The first two games of the semifinals are in the books. Flamengo has the advantage, and Fluminense will need a much better performance to reverse the score. Vasco, despite being saved by Leo Jardim's great performance, will need at least a simple victory to guarantee their place in the final. Nova Iguaçu, on the other hand, has the advantage of a draw.
+
+<p align="justify">
+The Ace Football Laboratory team will continue to follow the Carioca Championship, bringing detailed analysis of the games and the players. Stay tuned!
+
 </div>
