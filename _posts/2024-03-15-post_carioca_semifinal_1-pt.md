@@ -12,7 +12,7 @@ hidden: true
 
 <h2>Introduction</h2>
 
-<div style="width: 65%; margin: 0 auto; text-align: center;">
+<div style="width: 55%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -23,13 +23,13 @@ O Campeonato Carioca continua a surpreender o futebol brasileiro, com Fluminense
 </div>
 
 <h2>Fluminense x Flamengo</h2>
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
-</div>
 
 <div style="text-align: justify">
 
 <h3>Análise da partida</h3>
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
+</div>
 <p align="justify">
 O Fluminense fez uma partida abaixo do esperado contra o Flamengo, sendo constantemente pressionado, e não conseguindo impor seu estilo de jogo. Esta foi 1° partida do Campeonato Carioca 2024 em que o time acabou a partida com menor posse de bola que seu adversário <b>(49% x 51%)</b>, com uma atuação fraca de seu ataque, que não realizou nenhuma finalização ao gol do goleiro Agustín Rossi. Além disso, o time cometeu um total de <b>11 erros que levaram à chutes</b> no jogo, sendo que até essa partida, tinha cometido <b>31 erros</b> em todo o campeonato.
 </p>
@@ -61,12 +61,12 @@ Também é preciso notar a atuação do atacante Pedro, que aproveitou bem as op
 </div>
 
 <h2>Vasco x Nova Iguaçu</h2>
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
-</div>
 
 <div style="text-align: justify">
 <h3>Análise da partida</h3>
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
+</div>
 <p align="justify">
 As duas equipes realizaram um confronto que, por mais que só tenha tido dois gols, foi marcado por um grande número de finalizações para ambos os times. O total de finalizações é impressionante para um confronto de semifinal, principalmente quando se observa que o confronto entre Flamengo e Fluminense teve apenas <b>31</b> finalizações, métrica quase <b>1,5x menor</b> do que o confronto do Gigante da Colina com o Gigante da Baixada, que contou com <b>45 finalizações</b> ao todo no final do jogo.
 </p>

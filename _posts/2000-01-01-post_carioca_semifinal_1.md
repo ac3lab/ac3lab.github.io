@@ -15,7 +15,7 @@ If you want to read this text in pt-br, <a href = "https://ac3lab.github.io/blog
 
 <h2>Introduction</h2>
 
-<div style="width: 65%; margin: 0 auto; text-align: center;">
+<div style="width: 55%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -26,13 +26,14 @@ The Carioca Championship continues to surprise the Brazilian football, with Flum
 </div>
 
 <h2>Fluminense x Flamengo</h2>
+<div style="text-align: justify">
+
+<h3>Match Analysis</h3>
+
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-<div style="text-align: justify">
-
-<h3>Match Analysis</h3>
 <p align="justify">
 Fluminense played a match below expectations against Flamengo, being constantly pressured, and failing to impose their style of play. This was the 1st match of the 2024 Carioca Championship in which the team ended the match with less ball possession than its opponent <b>(49% x 51%)</b>, with a weak performance from its attack, which did not make any shots to the goal by goalkeeper Agustín Rossi. Furthermore, the team committed a total of <b>11 errors that led to shots</b> in the game, and until this match, they had committed <b>31 errors</b> in the entire championship.
 </p>
@@ -64,12 +65,12 @@ It is also worth noting the performance of striker Pedro, who took advantage of 
 </div>
 
 <h2>Vasco x Nova Iguaçu</h2>
+<div style="text-align: justify">
+<h3>Match Analysis</h3>
+
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
-<div style="text-align: justify">
-<h3>Match Analysis</h3>
 <p align="justify">
 The two teams engaged in a match that, despite having only two goals, was marked by a large number of shots from both sides. The total number of shots is impressive for a semifinal match, especially when considering that the clash between Flamengo and Fluminense had only 31 shots, nearly 1.5 times fewer than the encounter between Vasco da Gama and Nova Iguaçu, which featured 45 shots total by the end of the game.
 </p>
