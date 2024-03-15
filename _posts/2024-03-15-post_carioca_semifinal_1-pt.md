@@ -96,8 +96,10 @@ Do lado do Vasco com um desempenho invejável, o francês Dimitri Payet se desta
 <p align="justify">
 Em um jogo com muitas finalizações e atuações acima da média, atacantes que tiveram boas atuações como Carlinhos, que finalizou para gol <b>5 vezes</b>, foram ofuscados pelas milagrosas performances dos goleiros dos dois times. Léo Jardim fez incríveis <b>14 defesas</b>, sendo 9 dessas finalizações de dentro da área, representando um total de <b>93%</b> de bolas defendidas, e ainda com um gol sofrido foi eleito o melhor jogador da partida. Enquanto Fabricio, goleiro do Nova Iguaçu, apesar de "só" ter feito 6 defesas, com 50% delas vindo de chutes de dentro da área, acertou <b>80% de bolas longas</b> lançadas para o domínio do time no campo, característica que é cada vez mais requisitada nos goleiros atuais.
 </p>
+</div>
 
 <h2>Considerações Finais</h2>
+<div style="text-align: justify">
 
 <p align="justify">
 Estes foram os dois primeiros jogos das semifinais. O Flamengo sai na vantagem e o Fluminense precisará de uma atuação muito melhor para reverter o placar. Já o Vasco, apesar de ter sido salvo pela grande atuação do Leo Jardim, precisará de no mínimo uma vitória simples para garantir sua vaga na final. O Nova Iguaçu, por sua vez, fica com a vantagem do empate.
