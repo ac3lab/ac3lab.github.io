@@ -21,7 +21,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <div style="text-align: justify">
 <p align="justify">
-The Carioca Championship continues to surprise the Brazilian football, with Fluminense, Flamengo, Vasco, and Nova Iguaçu in the mix. The Ace Laboratory Football Team dives into the decisive matches, from Flamengo's dominance over Fluminense to Nova Iguaçu's unexpected offensive power trying to overcome the Vasco's "Wall", offering an exciting glimpse into the tournament's electrifying action
+The Carioca Championship continues to surprise the Brazilian football, with Fluminense, Flamengo, Vasco, and Nova Iguaçu in the mix. The Ace Laboratory Football Team dives into the decisive matches, from Flamengo's dominance over Fluminense to Nova Iguaçu's unexpected offensive power trying to overcome the Vasco's "Wall", offering an exciting glimpse into the tournament's electrifying action.
 </p>
 </div>
 
