@@ -10,7 +10,7 @@ author: Ace Laboratory Football Team
 hidden: true
 ---
 
-<h2>Introduction</h2>
+<h2>Introdução</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
@@ -28,7 +28,7 @@ O Campeonato Carioca continua a surpreender o futebol brasileiro, com Fluminense
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flaflugamepng.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 O Fluminense fez uma partida abaixo do esperado contra o Flamengo, sendo constantemente pressionado, e não conseguindo impor seu estilo de jogo. Esta foi 1° partida do Campeonato Carioca 2024 em que o time acabou a partida com menor posse de bola que seu adversário <b>(49% x 51%)</b>, com uma atuação fraca de seu ataque, que não realizou nenhuma finalização ao gol do goleiro Agustín Rossi. Além disso, o time cometeu um total de <b>11 erros que levaram à chutes</b> no jogo, sendo que até essa partida, tinha cometido <b>31 erros</b> em todo o campeonato.
@@ -44,7 +44,7 @@ Os dados mostraram um domínio completo do time de Tite em campo, tanto no setor
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/flafluplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flafluplayers.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 Uma das formas de ver como o Fluminense jogou defensivamente foi o posicionamento de Jhon Arias, jogador que normalmente atua como um ponta de forma ofensiva, acabou ficando na maior parte do jogo no campo tricolor, atuando na lateral direita como um defensor e não conseguindo explorar suas melhores qualidades, os seus dribles e seus passes importantes.
@@ -65,7 +65,7 @@ Também é preciso notar a atuação do atacante Pedro, que aproveitou bem as op
 <div style="text-align: justify">
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 As duas equipes realizaram um confronto que, por mais que só tenha tido dois gols, foi marcado por um grande número de finalizações para ambos os times. O total de finalizações é impressionante para um confronto de semifinal, principalmente quando se observa que o confronto entre Flamengo e Fluminense teve apenas <b>31</b> finalizações, métrica quase <b>1,5x menor</b> do que o confronto do Gigante da Colina com o Gigante da Baixada, que contou com <b>45 finalizações</b> ao todo no final do jogo.
@@ -82,7 +82,7 @@ Para o Nova Iguaçu, por outro lado, foi um jogo não muito diferente do habitua
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-bt/vasconovaiguacuplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/vasconovaiguacuplayers.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
