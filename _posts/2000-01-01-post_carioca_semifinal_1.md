@@ -35,7 +35,7 @@ The Carioca Championship continues to surprise the Brazilian football, with Flum
 </div>
 
 <p align="justify">
-Fluminense played a match below expectations against Flamengo, being constantly pressured, and failing to impose their style of play. This was the 1st match of the 2024 Carioca Championship in which the team ended the match with less ball possession than its opponent <b>(49% x 51%)</b>, with a weak performance from its attack, which did not make any shots to the goal by goalkeeper Agustín Rossi. Furthermore, the team committed a total of <b>11 errors that led to shots</b> in the game, and until this match, they had committed <b>31 errors</b> in the entire championship.
+Fluminense played a match below expectations against Flamengo, being constantly pressured, and failing to impose their style of play. This was the 1st match of the 2024 Carioca Championship in which the team ended the match with less ball possession than its opponent <b>(49% x 51%)</b>, with a weak performance from its attack, which did not make any shots to the goal defended by goalkeeper Agustín Rossi. Furthermore, the team committed a total of <b>11 errors that led to shots</b> in the game, and until this match, they had committed <b>31 errors</b> in the entire championship.
 </p>
 <p align="justify">
 The rubro-negro, who had their greatest strength in the defensive sector, demonstrated that they also have high offensive capacity, making a total of <b>23 shots</b> in the match, with <b>9</b> of these shots being on Fábio's goal. If we consider the team's approximate time with the ball, we have a rate of <b>1 shot every 2 minutes</b> in possession of the ball.
@@ -59,7 +59,7 @@ Another point was the number of saves that goalkeeper Fábio had to make from sh
 </p>
 
 <p align="justify">
-It is also worth noting the performance of striker Pedro, who took advantage of his team's opportunities, scoring <b>1 goal</b> at the end of the match, and making a total of<b>6 shots</b>, with <b>3</b> in the goal, having the opportunity
+It is also worth noting the performance of striker Pedro, who took advantage of his team's opportunities, scoring <b>1 goal</b> at the end of the match, and making a total ofv<b>6 shots</b>, with <b>3</b> in the goal, having the opportunity to increase the score, if it weren't for the good performance of goalkeeper Fábio.
 </p>
 
 </div>
@@ -80,7 +80,7 @@ For Vasco, the offensive game was unusual, considering that the team has an aver
 </p>
 
 <p align="justify">
-For Nova Iguaçu, on the other hand, it was not a game much different from the usual experience in their last 5 games, as the team’s average number of shots in the Carioca Championship is 17 shots per game. The data observed in the match also shows the preference of Nova Iguaçu to shoot from outside the box, with more shots from outside <b>(13)</b> than from inside <b>(11)</b>, creating a lot of work,for the opposing goalkeeper.
+For Nova Iguaçu, on the other hand, it was not a game much different from the usual experience in their last 5 games, as the team’s average number of shots in the Carioca Championship is 17 shots per game. The data observed in the match also shows the preference of Nova Iguaçu to shoot from outside the box, with more shots from outside <b>(13)</b> than from inside <b>(11)</b>, creating a lot of work, for the opposing goalkeeper.
 </p>
 
 <h3>Highlights</h3>
@@ -106,5 +106,5 @@ The first two games of the semifinals are in the books. Flamengo has the advanta
 
 <p align="justify">
 The Ace Football Laboratory team will continue to follow the Carioca Championship, bringing detailed analysis of the games and the players. Stay tuned!
-
+</p>
 </div>
