@@ -72,7 +72,7 @@ As duas equipes realizaram um confronto que, por mais que só tenha tido dois go
 </p>
 
 <p align="justify">
-Para o Vasco, o jogo ofensivo se caracterizou como incomum, visto que o Cruz-Maltino possui uma média de </b>10,8 finalizações<b> nos últimos 5 jogos que disputou e nesse finalizou <b>21 vezes</b> com apenas <b>7 disparos</b> na direção do goleiro Fabrício. O meio campo do Vasco também demonstrou muita criatividade ao chegar no ataque, somando <b>16 passes-chave</b> ao longo dos 90 primeiros minutos da semifinal do Campeonato Carioca.
+Para o Vasco, o jogo ofensivo se caracterizou como incomum, visto que o Cruz-Maltino possui uma média de <b>10,8 finalizações</b> nos últimos 5 jogos que disputou e nesse finalizou <b>21 vezes</b> com apenas <b>7 disparos</b> na direção do goleiro Fabrício. O meio campo do Vasco também demonstrou muita criatividade ao chegar no ataque, somando <b>16 passes-chave</b> ao longo dos 90 primeiros minutos da semifinal do Campeonato Carioca.
 </p>
 
 <p align="justify">
@@ -88,11 +88,11 @@ Para o Nova Iguaçu, por outro lado, foi um jogo não muito diferente do habitua
 <p align="justify">
 Sem dúvidas, foi um confronto muito disputado com diversas chances para os dois times, e nesse contexto, é imprescindível colocar em pauta tanto os principais criadores de chance, quanto os principais defensores de cada time.
 </p>
+
 <p align="justify">
-
 Do lado do Vasco com um desempenho invejável, o francês Dimitri Payet se destacou com uma taxa de <b>88% de passes certos</b>, com <b>5 passes chaves</b> realizados pelo meia-atacante ex-Olympique Marselha. Paralelamente, no setor defensivo o meia-atacante também foi fundamental, contando com <b>12 duelos ganhos</b> pelo Cruz-Maltino e possuindo um mapa calor muito participativo na esquerda do terço defensivo do Gigante da Colina.
-
 </p>
+
 <p align="justify">
 Em um jogo com muitas finalizações e atuações acima da média, atacantes que tiveram boas atuações como Carlinhos, que finalizou para gol <b>5 vezes</b>, foram ofuscados pelas milagrosas performances dos goleiros dos dois times. Léo Jardim fez incríveis <b>14 defesas</b>, sendo 9 dessas finalizações de dentro da área, representando um total de <b>93%</b> de bolas defendidas, e ainda com um gol sofrido foi eleito o melhor jogador da partida. Enquanto Fabricio, goleiro do Nova Iguaçu, apesar de "só" ter feito 6 defesas, com 50% delas vindo de chutes de dentro da área, acertou <b>80% de bolas longas</b> lançadas para o domínio do time no campo, característica que é cada vez mais requisitada nos goleiros atuais.
 </p>
