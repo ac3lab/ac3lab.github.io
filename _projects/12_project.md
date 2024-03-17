@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Hugo Antuines
+title: Hugo Antunes
 description: Computer Engineering <br> UFRJ
 img: assets/img/ft_Hugo_Antunes.jpg
 importance: 3
