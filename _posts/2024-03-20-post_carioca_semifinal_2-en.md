@@ -8,6 +8,9 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
+<p align="justify">
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_semifinal_2-pt/"> clique aqui.</a>
+</p>
 
 <h2>Introduction</h2>
 
@@ -27,7 +30,7 @@ This past weekend we had the second leg of the semi-finals of the Carioca Champi
 
 <h3>Match Analysis</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flaflugame.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/en/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -43,7 +46,7 @@ Fluminense this time played the way they prefer, having the most time on the bal
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/flafluplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/en/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -62,7 +65,7 @@ As for the tricolor, we can highlight Lima, a key player in Fluminense's midfiel
 <div style="text-align: justify">
 <h3>Match Analysis</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/en/game2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 On the Vasco side, the situation became increasingly complicated for the team's fans, who witnessed their team being eliminated from the championship with no chance of playing in the derby against Flamengo in the finals. In the match, although Vasco had <b>66% possession</b> and <b>5 shots on goal</b>, they failed to convert any of their <b>11 shots</b> at the end of the 90 minutes.
@@ -77,7 +80,7 @@ On the Vasco side, the situation became increasingly complicated for the team's 
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/pt-br/vasconovaiguacuplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/en/players2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">Playing for Vasco, Dimitri Payet was the team's highlight in another of our analyses. The Frenchman, with his heat map fully registering his participation in the middle and especially on the left side of the pitch, had an <b>83% successful dribble rate</b> and <b>4 key passes</b>, which, even with Gary Medel's <b>80% accuracy on long balls</b>, were exceptionally not enough for the Cruzmaltino team to score.</p>
