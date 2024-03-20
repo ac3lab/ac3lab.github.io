@@ -20,7 +20,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <div style="text-align: justify">
 <p align="justify">
-This past weekend we had the second leg of the semi-finals of the Carioca Championship 2024. Flamengo held Fluminense to a draw and secured their place in the finals, and Nova Iguaçu, the big surprise of the competition, eliminated Vasco with a 1-0 win at the Maracanã. Now, let's analyze the data from these games and evaluate the teams' performances.
+This past weekend we had the second leg of the semi-finals of the Carioca Championship 2024. Flamengo held Fluminense to a draw and secured their place in the finals, and Nova Iguaçu, the big surprise of the competition, eliminated Vasco with a 1-0 win at Maracanã stadium. Now, let's analyze the data from these games and evaluate the teams' performances.
 </p>
 </div>
 
@@ -37,9 +37,9 @@ This past weekend we had the second leg of the semi-finals of the Carioca Champi
 Flamengo did their job and finished another game without conceding a goal. The club managed to prevent the tricolor from creating danger in their area, which is demonstrated by the fact that only <b>4 of Fluminense's 14 shots</b> came from inside the area, and none of them went towards goalkeeper Agustín Rossi. Playing on the counter-attack and without possession of the ball, Flamengo managed a higher xG than their opponent (<b>1.38 x 0.98</b>), having 5 fewer shots.
 </p>
 <p align="justify">
-Fluminense this time played the way they prefer, having the most time on the ball (<b>63%</b>) and exchanging more than twice as many passes as their opponent (<b>543 x 242</b>). However, we saw this possession not converted into real chances, Flamengo's defensive scheme nullifying Fluminense's attack, which had <b>0 shots on goal</b> in the 1st and 2nd leg, even though the tricolor improved their attacking performance for the second leg.
+Fluminense this time played the way they prefer, having the most time with the ball (<b>63%</b>) and exchanging more than twice as many passes as their opponent (<b>543 x 242</b>). However, we saw this possession not converted into real chances, Flamengo's defensive scheme nullifying Fluminense's attack, which had <b>0 shots on goal</b> in the 1st and 2nd leg, even though the tricolor improved their attacking performance for the second leg.
 </p>
-<p align="justify">As a result, we can see that even though Fernando Diniz's team dictated the game, they were unable to beat Flamengo's defense, which still only conceded 1 goal in the entire competition. Flamengo go into the finals as favorites, but they will face Nova Iguaçu, the only team to have managed to score a goal against them, and they will be hungry to win this cup as the underdogs of the championship.
+<p align="justify">As a result, we can see that even though Fernando Diniz's team dictated the game, they were unable to beat Flamengo's defense, which still only conceded 1 goal in the entire competition. Flamengo goes to the finals as favorites, but they will face Nova Iguaçu, the only team to have managed to score a goal against them, and they will be hungry to win this cup as the underdogs of the championship.
 </p>
 
 
@@ -68,10 +68,10 @@ As for the tricolor, we can highlight Lima, a key player in Fluminense's midfiel
 {% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/en/game2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
-On the Vasco side, the situation became increasingly complicated for the team's fans, who witnessed their team being eliminated from the championship with no chance of playing in the derby against Flamengo in the finals. In the match, although Vasco had <b>66% possession</b> and <b>5 shots on goal</b>, they failed to convert any of their <b>11 shots</b> at the end of the 90 minutes.
+On the Vasco side, the situation became increasingly complicated for the team's fans, who witnessed their team being eliminated from the championship with no chance of making the final a Clássico dos Milhões. In the match, although Vasco had <b>66% possession</b> and <b>5 shots on goal</b>, they failed to convert any of their <b>11 shots</b> at the end of the 90 minutes.
 </p>
 
-<p align="justify">On the other side, Nova Iguaçu, despite not dominating possession, posed more of a threat to Vasco's defense, attempting <b>14 shots</b>, <b>6 of them on target</b>, and converting one chance. Additionally, they intercepted two times more than Vasco (<b>42 vs. 18</b>) and regained possession within an average of <b>24 seconds</b> after losing it, almost half the time compared to Cruz Maltino's average (<b>42 seconds</b>).
+<p align="justify">On the other side, Nova Iguaçu, despite not dominating possession, posed more of a threat to Vasco's defense, attempting <b>14 shots</b>, <b>6 of them on target</b>, and converting one chance. Additionally, they intercepted two times more than Vasco (<b>42 vs. 18</b>) and regained possession within an average of <b>24 seconds</b> after losing it, almost half the time compared to the Cruz Maltino's average (<b>42 seconds</b>).
 </p>
 
 <p align="justify">Nova Iguaçu thus surpassed Vasco to reach the final of the Carioca Championship for the first time in their history. As a result, "A Laranja Mecânica da Baixada," as their fans call them, will face Flamengo on March 31st and April 7th for the title that crowns the King of Rio de Janeiro.
