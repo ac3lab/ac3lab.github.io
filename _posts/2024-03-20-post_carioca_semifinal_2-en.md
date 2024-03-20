@@ -87,7 +87,7 @@ On the Vasco side, the situation became increasingly complicated for the team's 
 <p align="justify">For the "Gigante da Baixada", two players are noteworthy: Bill, striker for the Nova Iguaçu team, had <b>3 out of 4 successful dribbles</b> in the game and scored a goal. And Fabricio, the goalkeeper who put up a real wall in front of the goal, with <b>4 crucial saves from inside the area</b> and an incredible <b>100% rate of shots saved</b> in the match that guarantees a historic milestone for the Nova Iguaçu's team.</p>
 </div>
 
-<h2>Considerações Finais</h2>
+<h2>Final Remarks</h2>
 <div style="text-align: justify">
 
 <p align="justify">
