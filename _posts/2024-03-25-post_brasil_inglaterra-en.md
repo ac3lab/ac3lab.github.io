@@ -55,6 +55,7 @@ On the other side, England, who have been working harder with a longer-serving c
 <div style="text-align: justify">
 
 <p align="justify">
+At 17 years and 246 days, Endrick is the youngest ever male player to score a senior international career goal at Wembley Stadium.
 </p>
 
 
