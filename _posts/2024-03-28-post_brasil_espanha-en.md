@@ -9,6 +9,10 @@ thumbnail: assets/img/Posts_Images/2024-03-25-brasil_inglaterra/cbf.jpeg
 author: Ace Laboratory Football Team
 ---
 
+<p align="justify">
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_brasil_espanha-pt/"> clique aqui.</a>
+</p>
+
 <h2>Introduction</h2>
 <p align="justify">
 Giving sequence to the friendly matches, Spain and Brazil faced each other at Santiago Bernabéu, playing a hard-fought match with lots of goals. Rodrygo, Endrick and Paquetá scored for Brazil, while Rodri with two penalty goals and Dani Olmo scored the Spanish national team’s goals in Tuesday's draw.
