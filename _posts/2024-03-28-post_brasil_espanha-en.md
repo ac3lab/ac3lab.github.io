@@ -11,13 +11,13 @@ author: Ace Laboratory Football Team
 
 <h2>Introduction</h2>
 <p align="justify">
-Giving sequence to the friendlies, Spain and Brazil faced each other at Santiago Bernabéu, playing a hard-fought match with lots of goals. Rodrygo, Endrick and Paquetá scored for Brazil, while Rodri with two penalty goals and Dani Olmo scored the Spanish national team’s goals in Tuesday's draw.
+Giving sequence to the friendly matches, Spain and Brazil faced each other at Santiago Bernabéu, playing a hard-fought match with lots of goals. Rodrygo, Endrick and Paquetá scored for Brazil, while Rodri with two penalty goals and Dani Olmo scored the Spanish national team’s goals in Tuesday's draw.
 </p>
 
 <h2>Spain x Brazil</h2>
 <div style="text-align: justify">
 <p align="justify">
-On team’s second match at the international break, Dorival Jr’s Brazil continued to excite fans, with an last minute 3x3 draw against Spain’s strong national team, but the defensive flaws of a team with little chemistry and small training period were shown on the first half of the match, where the Seleção suffered with constant pressure from the Spaniards. But with good subs on the second half things started to get better for the Brazilians, that managed to get the draw from a penalty kick.
+On team’s second match at the international break, Dorival Jr’s Brazil continued to excite fans, with a last minute 3x3 draw against Spain’s strong national team, but the defensive flaws of a team with little chemistry and small training period were shown on the first half of the match, where the Seleção suffered with constant pressure from the Spaniards. But with good subs on the second half things started to get better for the Brazilians, that managed to get the draw from a penalty kick.
 </p>
 <p align="justify">
 On the other side, Jose Luis’ Spain showed good options on the offensive side, like the young prospect Lamine Yamal, with only 16 years old, causing problems for Brazil’s defense, suffering a penalty and winning several duels. But the team also showed problems on the defensive side, with a failed pass crucial to Brazil’s first goal and a penalty conceded in the last minute of the game.
@@ -35,7 +35,7 @@ On the other side, Jose Luis’ Spain showed good options on the offensive side,
 In a match where both teams seemed very determined to win, we had one half to each team: Spain dominated the first 45 minutes, scoring two goals and pressuring Seleção’s ball possession. While Brazil got more freedom in the second half with half-time subs, scoring two goals at the last part of the game.
 </p>
 <p align="justify">
-Despite relatively equal 90 minutes to both sides -with 4 big chances for each team-, the ball possession was Spain’s (59% x 41%), and also shot more than Brazil (19 Spanish shots x 12 Brazilian shots). In defense, data are more similar, with little difference on duels won (54 x 49) and on interceptions (6 x 8).
+Despite relatively equal 90 minutes to both sides - with 4 big chances for each team - the ball possession was Spain’s (59% x 41%), and also shot more than Brazil (19 Spanish shots x 12 Brazilian shots). In defense, data are more similar, with little difference on duels won (54 x 49) and on interceptions (6 x 8).
 </p>
 
 </div>
