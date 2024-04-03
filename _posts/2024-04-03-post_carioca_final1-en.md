@@ -5,13 +5,13 @@ date: 2024-04-03 11:00:00
 description:
 tags: Football; Carioca; Analysis
 categories: Football; Analysis
-thumbnail: assets/img/Posts_Images/2024-03-25-brasil_inglaterra/cbf.jpeg
+thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
 
 ---
 <p align="justify">
-Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_semifinal_2-pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_final_1-pt/"> clique aqui.</a>
 </p>
 
 <h2>Introduction</h2>
