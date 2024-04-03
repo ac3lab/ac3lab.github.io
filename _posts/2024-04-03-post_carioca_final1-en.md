@@ -11,7 +11,7 @@ author: Ace Laboratory Football Team
 
 ---
 <p align="justify">
-Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_final_1-pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_final1-pt/"> clique aqui.</a>
 </p>
 
 <h2>Introduction</h2>
