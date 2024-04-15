@@ -22,7 +22,7 @@ One of the most competitive leagues in the world, Brasileirão started this week
 </p>
 </div>
 
-<h2>Athletico x Cuiaba</h2>
+<h2>Athletico x Cuiabá</h2>
 
 <div style="text-align: justify">
 
@@ -62,7 +62,7 @@ At the round’s most active match, Cruzeiro and Botafogo played a very interest
 </div>
 
 <p align="justify">
-Sunday Atlético-GO and Flamengo faced each other at Estádio Serra Dourada. In a match full of controversies by the referees, we can still highlight the great performance by Atlético, who played with 10 man for the entire second half, and still managed to offer more danger than their opponent (shown by the greater xG during all 90 minutes, specially during the second half). Though the less than expected performance, Tite’s men managed to win by 2x1.
+Sunday Atlético-GO and Flamengo faced each other at Estádio Serra Dourada. In a match full of controversies by the referees, we can still highlight the great performance by Atlético, who played with 10 men for the entire second half, and still managed to offer more danger than their opponent (shown by the greater xG during all 90 minutes, specially during the second half). Though the less than expected performance, Tite’s men managed to win by 2x1.
 
 </p>
 

@@ -19,7 +19,7 @@ Um dos campeonatos mais disputados do mundo, o Brasileirão teve seu início no 
 </p>
 </div>
 
-<h2>Athletico x Cuiaba</h2>
+<h2>Athletico x Cuiabá</h2>
 
 <div style="text-align: justify">
 
