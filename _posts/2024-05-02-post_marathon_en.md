@@ -6,6 +6,7 @@ description: Analyzing data from the 2023 Rio Marathon results and developing a 
 tags: Running; Rio Marathon; Python; MachineLearning
 categories: Running; Rio Marathon; Python; MachineLearning
 thumbnail: assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg
+author: Ace Laboratory Running Team
 ---
 
 <p align="justify">
@@ -35,7 +36,7 @@ In total, informations from 5799 athletes from the general group was analyzed, w
 {% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/1.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
-When we look at athlete frequency from the perspective of performance, we see a higher concentration of men with a finishing time of 3,5-4 hours. For the female gender, the highest concentration is in the 4-4,5 hour range. Five women completed the race in less than 3 hours.
+When we look at athlete frequency from the perspective of performance, we see a higher concentration of men with a finishing time of 3,5-4 hours. For the female gender, the highest concentration is in the 4-4,5 hours range. Five women completed the race in less than 3 hours.
 </p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/2.png" class="img-fluid rounded z-depth-1" %}

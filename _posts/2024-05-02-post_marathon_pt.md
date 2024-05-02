@@ -6,6 +6,8 @@ description: Analisando os dados dos resultados da Maratona do Rio 2023 e esboç
 tags: Running; Rio Marathon; Python; MachineLearning
 categories: Running; Rio Marathon; Python; MachineLearning
 thumbnail: assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg
+author: Ace Laboratory Running Team
+
 ---
 
 {% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg" class="img-fluid rounded z-depth-1" %}
