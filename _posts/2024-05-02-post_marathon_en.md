@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Rio Marathon 2023 – Exploratory with a bit of statistics and predictive estimation"
-date: 2024-05-02 11:00:00
+date: 2024-05-02 08:30:00
 description: Analyzing data from the 2023 Rio Marathon results and developing a simple performance prediction model
 tags: Running; Rio Marathon; Python; MachineLearning
 categories: Running; Rio Marathon; Python; MachineLearning
