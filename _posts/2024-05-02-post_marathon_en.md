@@ -5,10 +5,14 @@ date: 2024-05-02 11:00:00
 description: Analyzing data from the 2023 Rio Marathon results and developing a simple performance prediction model
 tags: Running; Rio Marathon; Python; MachineLearning
 categories: Running; Rio Marathon; Python; MachineLearning
-thumbnail: assets/img/Posts_Images/2024-01-01-post_running_model_Images/0.jpeg
+thumbnail: assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/0.jpeg" class="img-fluid rounded z-depth-1" %}
+<p align="justify">
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_marathon_pt/"> clique aqui.</a>
+</p>
+
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Convenience, practicality, and health benefits are some of the reasons that make running an attractive, democratic, and popular sport. That's why street running has been gaining prominence worldwide, and events like marathons already attract thousands of athletes, whether elite or amateur. In Rio de Janeiro, for example, the 21st edition of the Marathon took place over the Corpus Christi holiday in 2023, and had over 40 thousands registrations (considering all the routes), which also economically boosted the city.
@@ -28,27 +32,27 @@ Exploratory
 In total, informations from 5799 athletes from the general group was analyzed, with 30% being female. Among the registrants, when we look at the age groups, the age group with the highest concentration, both for men and women, is 40-44 years old. In the graph below, we can see how this frequency occurs in the different groups:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/1.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 When we look at athlete frequency from the perspective of performance, we see a higher concentration of men with a finishing time of 3,5-4 hours. For the female gender, the highest concentration is in the 4-4,5 hour range. Five women completed the race in less than 3 hours.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/2.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The shortest female time was 2h55min04s, while the shortest male time was 2h28min33s. The longest times were 6h39min23s and 6h42min59s, respectively, noting that we are looking at net time (time between crossing the start and finish lines). In the graph below, we can see the time distributions by gender:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/3.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 It is also possible to view the distribution of the final time by age group and for each declared gender:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/4.png" class="img-fluid rounded z-depth-1" %}
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/5.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/5.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 For both genders, the age group that stands out for having the fastest athletes is the 30-34 age group. Additionally, the male group had 2 registered athletes over 80 years old, which increasingly shows that there is truly no age limit for sports.
@@ -64,7 +68,7 @@ Using as reference the article Prediction Marathon Using Artificial Intelligence
 For this purpose, we used the python library <a href="https://www.statsmodels.org/stable/index.html">statsmodels</a>, after performing all the necessary data preprocessing and splitting it into training and testing sets. Below is the graph that compares the actual time versus what was predicted by the model:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/6.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/6.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 From the graph, one conclusion we can take is that the values predicted by the model don't follow the actual values as they increase. Additionally, evaluating the modeling statistics, the gender variable apparently doesn't have statistical significance in the prediction (p-value = 0.721). Therefore, there is a need to include other variables in the modeling. Some studies in the literature suggest the use of various information in prediction, such as anthropometric, physiological, biomechanical data, as well as training information like experience, step rhythm, and blood lactate concentration.
@@ -72,13 +76,13 @@ From the graph, one conclusion we can take is that the values predicted by the m
 
 Summary results:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/7.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/7.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Finally, the residual distribution graph, since one of the premises for a good adjustment of a linear regression model is that the residuals are normally distributed:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-01-post_running_model_Images/8.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/8.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The distribution resembles a normal distribution, but with a slight positive skewness (left-skewed concentration). There are several tests we can perform to verify this, and some of them are already included in the summary table of results provided above. The <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.skew.html">Skewness</a>, for example, already indicates the non-normality and skewness of the error distribution (the closer to 0, the more "normal" the distribution is), and the <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kurtosis.html">Kurtosis</a> as well, as it is associated with the flattening of the distribution (for values > 3, the distribution is "higher" than the normal distribution).
