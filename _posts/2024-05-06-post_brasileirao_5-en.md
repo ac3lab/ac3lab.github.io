@@ -30,7 +30,7 @@ Round 5 of the Campeonato Brasileiro has come to an end, and it was a shorter on
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-6-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
