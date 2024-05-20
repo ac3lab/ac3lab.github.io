@@ -37,6 +37,7 @@ The team also conceded the fewest goals in the entire Bundesliga, allowing only 
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 <h3>Bayer Leverkusen with possession</h3>
 
