@@ -18,11 +18,7 @@ author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
 
 Existe um time invicto em todos os campeonatos há exatamente um ano, desde maio de 2023. Campeão de sua liga nacional, finalista na Copa de seu país e na competição da UEFA. Em momentos que parece que esse time finalmente vai perder, ele retorna com uma vontade que parece ser inabalável, faz gols nos acréscimos e mantém sua invencibilidade e sequência nos campeonatos. Como um time que não chamava a atenção no futebol há alguns anos conseguiu se tornar uma potência no futebol europeu, tendo a maior sequência invicta da história? Nesse conjunto de posts, o ACE Laboratory vai analisar e identificar o estilo de jogo do Bayer Leverkusen e de seu técnico Xabi Alonso, tentando trazer os motivos dessa jornada magnífica que o time vem fazendo em 2024.<br/><br/>
 
-</div>
-
 <h3>Bayer Leverkusen sem a posse</h3>
-
-<div style="text-align: justify">
 
 
 No setor defensivo, o time de Alonso marca alto na saída de bola dos adversários em bloco médio, forçando ao máximo o erro do adversário para obter a posse da bola. Dependendo da partida, o campeão alemão pode ter duas formações diferentes ao se defender: um 5-2-2-1, pressionando a construção de jogadas do adversário com 5 jogadores, povoando o meio campo e forçando jogadas pelas pontas, onde os alas pressionam e roubam a bola; ou um 4-2-3-1, que permite uma saída de bola facilitada ao roubar a bola do oponente.<br/><br/>
@@ -39,12 +35,9 @@ O time também foi o que menos sofreu gols em toda a Bundesliga, sofrendo apenas
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-</div>
 
 
 <h3>Bayer Leverkusen com a posse</h3>
-
-<div style="text-align: justify">
 
 
 Classificado como um meio termo do estilo posicional de jogo de Pep Guardiola e o Relacionismo visto no Fluminense de Fernando Diniz, Xabi Alonso treina o time para uma saída de bola que depende do formato atual em campo. O estilo de jogo, que utiliza muitas trocas de passes, é evidenciado na rede de passes do time, onde é possível observar a formação de “triângulos” que permitem a um jogador diversas opções para trabalhar a bola.<br/><br/>
@@ -75,12 +68,7 @@ Ademais, não é só de movimentação e passes magistrais que o time Alemão pr
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
-</div>
-
 <h3>Último terço do campo</h3>
-
-<div style="text-align: justify">
 
 O último terço de ataque do time alemão é quase que imponderável. O avanço dos alas pelas laterais do campo misturado com os meias infiltrando na área com uma pitada de acerto em chutes de fora da área formam a fórmula mágica de Xabi Alonso para a incrível efetividade do time. Assim, uma estatística que mostra tal imprevisibilidade do time comandado pelo craque espanhol é a porcentagem de ataques por cada terço do campo ofensivamente, sendo esquerda, meio e direita com 33%, 34% e 33% respectivamente.<br/><br/>
 
