@@ -88,7 +88,7 @@ Moreover, the German team doesn't rely solely on movement and masterful passing 
 
 The final third of the German team's attack is almost unpredictable. The advance of the wing-backs through the flanks mixed with midfielders infiltrating the box, along with a bit of accurate long-range shooting, create Xabi Alonso's magical formula for the team's incredible effectiveness. Thus, a statistic that demonstrates the unpredictability of the team led by the Spanish maestro is the percentage of attacks from each offensive third of the field, with the left, middle, and right accounting for 33%, 34%, and 33% respectively.<br/><br/>
 
-Such offensive prowess not only leads to a flurry of goals and chances created for the German team but also contributes to the team's unbeaten streak, which, when being behind on the scoreboard, always finds a way, often through the tactics taught by Xabi Alonso, combined with a bit of luck, to score goals and maintain their unbeaten record intact for all season.<br/>
+Such offensive prowess not only leads to a flurry of goals and chances created for the German team but also contributes to the team's unbeaten streak, which, when being behind on the scoreboard, always finds a way, often through the tactics taught by Xabi Alonso, combined with a bit of luck, to score goals and maintain their unbeaten record intact for all season.<br/><br/>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Creating_Actions.png" class="img-fluid rounded z-depth-1" %}
@@ -113,7 +113,8 @@ Due to the relational play, if the team loses the ball in the attacking side and
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/possession_lost.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-But, as we can see by the team’s results in the season and their goal difference stats, the risk is worth taking.<br/><br/>
+But, as we can see by the team’s results in the season and their goal difference stats, the risk is worth taking.
+<br/><br/>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Difference.png" class="img-fluid rounded z-depth-1" %}
