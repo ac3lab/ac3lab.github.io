@@ -23,6 +23,8 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 90' vs Ottensen, 90'+4 vs FC Bayern, 90'+2 vs Sandhausen, 90'+4 vs Qarabag, 90'+4 vs Augsburg, 90'+1 vs Leipzig, 90'+5 vs FC Bayern, 90'+1 vs Stuttgart, 90'+2 vs Qarabag, 90'+3 & +7 vs Qarabag, 90'+1 vs Hoffenheim, 90'+1 vs West Ham, 90' vs Bremen, 90'+7 vs Dortmund, 90'+6 vs Stuttgart, 90'+7 vs Roma.  
 
+<br/>
+
 There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.
 
 </p>
@@ -34,7 +36,7 @@ There’s been one unbeaten team in all competitions for exactly one year, since
 
 <p align="justify">
 
-In the defensive sector, Alonso's team applies high pressure during the opponent's build-up in a mid-block, forcing errors to regain possession. Depending on the match, the German champion can adopt two different formations while defending: a 5-2-2-1, pressing the opponent's build-up with five players, crowding the midfield, and forcing plays to the sides of the field where the wing-backs press and win the ball; or a 4-2-3-1, which allows for an easier transition out of defense after stealing the ball.
+In the defensive sector, Alonso's team applies high pressure during the opponent's build-up in a mid-block, forcing errors to regain possession. Depending on the match, the German champion can adopt two different formations while defending: a 5-2-2-1, pressing the opponent's build-up with five players, crowding the midfield, and forcing plays to the sides of the field where the wing-backs press and win the ball; or a 4-2-3-1, which allows for an easier transition out of defense after stealing the ball.\
 
 Additionally, Leverkusen employs counter-pressing, commonly known as Gegenpressing. Xabi needed only a few months to shape and solidify this defensive tactic, establishing one of the most robust defenses in the league. By April 2024, they had achieved nearly 54 recoveries per match using this tactical approach.
 
@@ -67,7 +69,7 @@ Classified as a middle ground between Pep Guardiola's positional play and the re
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.
+Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.  
 
 The use of this tactic is evidenced by the number of passes made by Bayer, the highest in the Bundesliga in the 2023-24 season. Additionally, the four advanced players move a lot, preventing the opposing defenders from pushing up their defensive line.
 
