@@ -1,12 +1,16 @@
 ---
-layout: post
+layout: post2
 title: In-Depth Analysis of Bayer Leverkusen - Xabi Alonso's Playing Style 
 date: 2024-05-20 10:00:00
 description:
 tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
-author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
+authors:
+  - name: "Autor Um"
+    url: "https://exemplo.com/autor1"
+  - name: "Autor Dois"
+    url: "https://exemplo.com/autor2"
 
 ---
 
