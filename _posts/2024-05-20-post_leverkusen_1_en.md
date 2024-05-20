@@ -6,15 +6,8 @@ description:
 tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
-authors:
-  - name: Caio Santos
-    url: "https://www.linkedin.com/in/pedrosiqueiradasneves/"
-    affiliations:
-      name: CEFET - RJ
-  - name: Lucas Calmon
-    url: "https://www.linkedin.com/in/pedrosiqueiradasneves/"
-    affiliations:
-      name: IAS, Princeton
+author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
+
 ---
 
 ---
@@ -28,7 +21,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <p align="justify">
 
-90' vs Ottensen, 90'+4 vs FC Bayern, 90'+2 vs Sandhausen, 90'+4 vs Qarabag, 90'+4 vs Augsburg, 90'+1 vs Leipzig, 90'+5 vs FC Bayern, 90'+1 vs Stuttgart, 90'+2 vs Qarabag, 90'+3 & +7 vs Qarabag, 90'+1 vs Hoffenheim, 90'+1 vs West Ham, 90' vs Bremen, 90'+7 vs Dortmund, 90'+6 vs Stuttgart, 90'+7 vs Roma.
+90' vs Ottensen, 90'+4 vs FC Bayern, 90'+2 vs Sandhausen, 90'+4 vs Qarabag, 90'+4 vs Augsburg, 90'+1 vs Leipzig, 90'+5 vs FC Bayern, 90'+1 vs Stuttgart, 90'+2 vs Qarabag, 90'+3 & +7 vs Qarabag, 90'+1 vs Hoffenheim, 90'+1 vs West Ham, 90' vs Bremen, 90'+7 vs Dortmund, 90'+6 vs Stuttgart, 90'+7 vs Roma.  
 
 There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.
 
