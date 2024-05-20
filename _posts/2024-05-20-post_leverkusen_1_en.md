@@ -6,7 +6,15 @@ description:
 tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
-author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
+authors:
+  - name: Caio Santos
+    url: "https://www.linkedin.com/in/pedrosiqueiradasneves/"
+    affiliations:
+      name: CEFET - RJ
+  - name: Lucas Calmon
+    url: "https://www.linkedin.com/in/pedrosiqueiradasneves/"
+    affiliations:
+      name: IAS, Princeton
 ---
 
 ---
