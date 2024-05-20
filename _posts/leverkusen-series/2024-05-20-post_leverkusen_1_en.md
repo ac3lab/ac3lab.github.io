@@ -19,15 +19,23 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <div style="text-align: justify">
 
-90' vs Ottensen, 90'+4 vs FC Bayern, 90'+2 vs Sandhausen, 90'+4 vs Qarabag, 90'+4 vs Augsburg, 90'+1 vs Leipzig, 90'+5 vs FC Bayern, 90'+1 vs Stuttgart, 90'+2 vs Qarabag, 90'+3 & +7 vs Qarabag, 90'+1 vs Hoffenheim, 90'+1 vs West Ham, 90' vs Bremen, 90'+7 vs Dortmund, 90'+6 vs Stuttgart, 90'+7 vs Roma.<br/><br/>
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/last_minute.png" class="img-fluid rounded z-depth-1" %}
+</div>
+
 
 There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.<br/><br/>
+
+<h2>What is Xabi Alonso’s playing style?</h2>
+
+Xabi Alonso, a former player who has won every possible title and is known for being extremely technical and analytical, worked with gigantic teams and excellent coaches like Mourinho, Guardiola, and Ancelotti. Each with their different styles, Xabi managed to absorb the best qualities from each, becoming a great communicator, strategist, and football enthusiast. After completing the UEFA course, he started in Real Madrid's U-14 team and soon moved to Real Sociedad B. There, technical skills and ball control were the focus, and the club was promoted to the second division for the first time in 60 years. From there, Bayer Leverkusen saw in Xabi someone who could save the team from the critical situation of relegation, and history began to be made. But how does Bayer Leverkusen play now, having been led by Alonso for over a year?
+
 
 <h3>Bayer Leverkusen without possession</h3>
 
 In the defensive sector, Alonso's team applies high pressure during the opponent's build-up in a mid-block, forcing errors to regain possession. Depending on the match, the German champion can adopt two different formations while defending: a 5-2-2-1, pressing the opponent's build-up with five players, crowding the midfield, and forcing plays to the sides of the field where the wing-backs press and win the ball; or a 4-2-3-1, which allows for an easier transition out of defense after stealing the ball.<br/><br/>
 
-Additionally, Leverkusen employs counter-pressing, commonly known as Gegenpressing. Xabi needed only a few months to shape and solidify this defensive tactic, establishing one of the most robust defenses in the league. By April 2024, they had achieved nearly 54 recoveries per match using this tactical approach.<br/><br/>
+Additionally, Leverkusen employs counter-pressing, commonly known as Gegenpressing. Xabi needed only a few months to shape and solidify this defensive tactic, establishing one of the most robust defenses in the league. By the end of the Bundesliga, they had achieved nearly 54 recoveries per match using this tactical approach.<br/><br/>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/recoveries.png" class="img-fluid rounded z-depth-1" %}
@@ -48,6 +56,15 @@ Classified as a middle ground between Pep Guardiola's positional play and the re
 </div>
 
 Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.<br/><br/>  
+
+In that way, the wing-backs have a much more significant role in the game, both offensively and defensively, switching sides of the field while attacking and defending. This can be observed in the passing network from the match against Augsburg, where wing-back Frimpong appeared more advanced than any other Bayer player.<br/><br/>  
+
+By employing this tactic, Xabi Alonso has maximized the individual technical skills of his wide players, such as Frimpong and Grimaldo, who have contributed to 39 goals in the Bundesliga. In other words, nearly half of the team's goals have come through these two players.<br/><br/>  
+
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
+</div>
+
 
 The use of this tactic is evidenced by the number of passes made by Bayer, the highest in the Bundesliga in the 2023-24 season. Additionally, the four advanced players move a lot, preventing the opposing defenders from pushing up their defensive line.<br/><br/>
 
@@ -90,7 +107,7 @@ The team is so efficient that it ranks in the top 3 in chances created from open
 <h3>Weakness</h3>
 
 
-Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
+Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag in the UEFA Europa League, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/possession_lost.png" class="img-fluid rounded z-depth-1" %}
@@ -102,5 +119,9 @@ But, as we can see by the team’s results in the season and their goal differen
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Difference.png" class="img-fluid rounded z-depth-1" %}
 </div>
+
+<h2>Conclusion</h2>
+
+It is evident that Xabi Alonso has blended various influences and added his own product to create a team capable of an unbeaten performance in the Bundesliga. However, one of the key aspects of this team is the individuality of each player, who has fit into the Spanish coach's system while incorporating their own unique playing styles. When facing Xabi Alonso in tactical chess, one doesn't see his pieces as knights, towers, or pawns, but rather as twenty-four players with different characteristics that change the German team's playing style. These players are the reason behind the team's immense success this season and the singularity of this squad that has captivated the world. In the next post, we will analyze the evolution of these players and the team, leading to what is now known as the first team to win the first unbeaten Bundesliga title.
 
 </div>
