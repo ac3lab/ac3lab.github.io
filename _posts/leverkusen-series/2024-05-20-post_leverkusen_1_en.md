@@ -19,17 +19,11 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <div style="text-align: justify">
 
-
 90' vs Ottensen, 90'+4 vs FC Bayern, 90'+2 vs Sandhausen, 90'+4 vs Qarabag, 90'+4 vs Augsburg, 90'+1 vs Leipzig, 90'+5 vs FC Bayern, 90'+1 vs Stuttgart, 90'+2 vs Qarabag, 90'+3 & +7 vs Qarabag, 90'+1 vs Hoffenheim, 90'+1 vs West Ham, 90' vs Bremen, 90'+7 vs Dortmund, 90'+6 vs Stuttgart, 90'+7 vs Roma.<br/><br/>
 
 There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.<br/><br/>
 
-</div>
-
 <h3>Bayer Leverkusen without possession</h3>
-
-<div style="text-align: justify">
-
 
 In the defensive sector, Alonso's team applies high pressure during the opponent's build-up in a mid-block, forcing errors to regain possession. Depending on the match, the German champion can adopt two different formations while defending: a 5-2-2-1, pressing the opponent's build-up with five players, crowding the midfield, and forcing plays to the sides of the field where the wing-backs press and win the ball; or a 4-2-3-1, which allows for an easier transition out of defense after stealing the ball.<br/><br/>
 
@@ -44,13 +38,7 @@ The team also conceded the fewest goals in the entire Bundesliga, allowing only 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
 
-
-</div>
-
-
 <h3>Bayer Leverkusen with possession</h3>
-
-<div style="text-align: justify">
 
 Classified as a middle ground between Pep Guardiola's positional play and the relational play seen in Fernando Diniz's Fluminense, Xabi Alonso trains the team for a build-up that depends on the current formation on the field. The playing style, which involves many passing exchanges, is evident in the team's passing network, where we can see the formation of "triangles" that allow multiple options for a player to work the ball.<br/><br/>
 
@@ -80,11 +68,8 @@ Moreover, the German team doesn't rely solely on movement and masterful passing 
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-</div>
 
 <h3>Final third of the field</h3>
-
-<div style="text-align: justify">
 
 The final third of the German team's attack is almost unpredictable. The advance of the wing-backs through the flanks mixed with midfielders infiltrating the box, along with a bit of accurate long-range shooting, create Xabi Alonso's magical formula for the team's incredible effectiveness. Thus, a statistic that demonstrates the unpredictability of the team led by the Spanish maestro is the percentage of attacks from each offensive third of the field, with the left, middle, and right accounting for 33%, 34%, and 33% respectively.<br/><br/>
 
@@ -101,11 +86,8 @@ The team is so efficient that it ranks in the top 3 in chances created from open
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/live_dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-</div>
-
 <h3>Weakness</h3>
 
-<div style="text-align: justify">
 
 Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
 
