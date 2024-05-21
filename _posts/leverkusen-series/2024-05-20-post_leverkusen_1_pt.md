@@ -69,7 +69,7 @@ O uso dessa tática é evidenciado no número de passes realizados pelo Bayer, q
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Passes_per_match.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-Porém, também é comum visualizar o time saindo com 3 zagueiros, explorando tanto as laterais com os alas mais avançados (Grimaldo e Frimpong geralmente) e os meio-campistas e atacantes dando opções mais próximas e não posicionais quanto pelo meio do campo, com transições rápidas para o ataque geralmente arquitetadas por Wirtz ou com passes diretos da zaga para o ataque nos espaços vazios formados pela movimentação. Sendo um exemplo disso, o grandioso número de passes progressivos por partida.<br/><br/>
+Porém, também é comum visualizar o time saindo com 3 zagueiros, explorando tanto as laterais com os alas mais avançados (Grimaldo e Frimpong geralmente) e os meio-campistas e atacantes dando opções mais próximas e não posicionais quanto pelo meio do campo, com transições rápidas para o ataque geralmente arquitetadas por Wirtz ou com passes diretos da zaga para o ataque nos espaços vazios formados pela movimentação. Sendo um exemplo disso o grandioso número de passes progressivos por partida.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/progressive_passes.png" class="img-fluid rounded z-depth-1" %}
@@ -77,7 +77,7 @@ Porém, também é comum visualizar o time saindo com 3 zagueiros, explorando ta
 
 Caso os oponentes fiquem muito rígidos centralmente, o time começa a formar padrões de diamantes estreitos, o que permite que o Bayer continue praticando seus passes curtos e dinâmicos para chegar no último terço do campo. Outra possibilidade é que, caso os oponentes pressionem a troca de passes curtos do Leverkusen, a bola seja movida para o flanco oposto do campo, que terá bastante espaço livre.<br/><br/>
 
-Ademais, não é só de movimentação e passes magistrais que o time Alemão precisa para fazer gols na temporada, visto que cerca de 10% de todos os gols feitos pela equipe de Xabi foram de bola parada, além, é claro, dos gols vindos de contra-ataques, também comuns no time alemão quando forem necessários.<br/><br/>
+Ademais, não é só de movimentação e passes magistrais que o time Alemão precisa para fazer gols na temporada, visto que cerca de 10% de todos os gols feitos pela equipe de Xabi foram de bola parada, além, é claro, dos gols vindos de contra-ataques, também comuns no time alemão.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
@@ -95,7 +95,7 @@ Tal ofensividade provoca não só um enxame de gols e chances criadas para o tim
 
 Uma tática comum é a seguinte: ao chegar no último terço do campo os alas avançam e a formação do time vira um 3-2-5, com os jogadores centrais subindo para receber a bola e criar mais opções de jogadas, criando uma vantagem numérica que torna o time imprevisível e mata a zaga adversária. Durante esse avanço, outros jogadores sobem para ocupar o meio de campo.<br/><br/>
 
-O time é tão eficiente, que está no Top 3 em chances criadas por bola rolando, mas em comparação tem poucas chances criadas por bolas paradas.<br/><br/>
+O time é tão eficiente que está no Top 3 em chances criadas por bola rolando, mas em comparação tem poucas chances criadas por bolas paradas.<br/><br/>
 
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
