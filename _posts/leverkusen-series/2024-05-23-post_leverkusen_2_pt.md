@@ -33,7 +33,7 @@ Apesar das poucas mudanças no elenco de maneira geral, o Leverkusen vendeu algu
 
 Depois dessas pequenas alterações, o elenco continuou tendo 35 jogadores no plantel, o mesmo número da temporada de 21/22, e a média de idade decaiu um pouco para 24.2 anos. O valor médio de cada jogador manteve-se similar se comparado ao de 21/22.<br/><br/>
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
+<div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -48,7 +48,7 @@ As principais contratações feitas depois da chegada do Xabi Alonso foram a tra
 
 Apesar das contratações, os jogadores que já estavam no clube tiveram uma melhora incrível. Para analisar o crescimento dos jogadores, o valor de mercado de cada um é um parâmetro muito interessante. No gráfico abaixo, é possível ver os jogadores que mais valorizaram depois da chegada de Xabi Alonso. Importante notar que Boniface, adquirido na atual temporada pelo Leverkusen, já tem o valor de mercado quase que o dobro do que foi pago. Boniface e Grimaldo, este último que foi adquirido de graça, evidencia como as contratações foram muito bem executadas, aproveitando ao máximo as oportunidades no mercado.<br/><br/>
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
+<div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_squad.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
