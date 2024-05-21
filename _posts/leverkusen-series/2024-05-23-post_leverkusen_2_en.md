@@ -19,109 +19,72 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 
 <div style="text-align: justify">
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/last_minute.png" class="img-fluid rounded z-depth-1" %}
+Many aspects of Leverkusen have changed under Xabi Alonso. Some of the main changes have been the players and the way the squad has been managed. Therefore, in order to understand the success Leverkusen have enjoyed this season, it's important to analyze what happened to the squad before and after Xabi Alonso's arrival.<br/><br/>
+
+<h2>Players in the Squad</h2>
+
+One of the main changes made after the arrival of Xabi Alonso was the management of the players in the squad. To make this clearer, we analyze the players in the team over the last 3 seasons.<br/><br/>
+
+<h3>Season 2021/2022</h3>
+
+In 21/22, the team had a vast squad, with a total of 35 players and an average age of close to 24.5 years. In addition, the average value per player was around 13 million euros. In that season, the most estimated sector of the field on the market was the attack, with a value of approximately 170.70 million euros.<br/><br/>
+
+In 2021, Leverkusen hired a new coach, Swiss Gerardo Seone, who played his first game on August 7, 2021. Under the Swiss, Leverkusen played mostly in a 4-2-3-1 formation, very different from what happens today with Xabi Alonso. It's worth remembering that Xabi's style of play has already been discussed here on our blog!<br/><br/>
+
+It was in the 2021 season that the current seventh most valuable player in the world gained more prominence, being a player used frequently by Gerardo. In addition to the Leverkusen revelation, other players began to gain more prominence in the team too, such as striker Shick, who was the team's top scorer that season.<br/><br/>
+
+<h3>Season 2022/2023</h3>
+
+In 22/23, the squad didn't change much; it remained substantially the same as in 21/22. However, it was during this season that Xabi Alonso took over the team. To be more precise, Xabi took charge of Leverkusen on matchday 9 of the Bundesliga and matchday 4 of the Champions League.<br/><br/>
+
+Despite the few changes to the squad in general, Leverkusen sold some defenders and signed more midfielders. As a result, the most valued sector in 2022 was the midfield, which was valued at more than 185 million euros at the time.<br/><br/>
+
+After these small changes, the squad still had 35 players in it, the same number as in the 21/22 season, with the average age dropping slightly to 24.2 years. The average value of each player remained similar compared to 21/22.<br/><br/>
+
+<div style="width: 100%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_squad.png" class="img-fluid rounded z-depth-1" %}
+</div>
+
+<h3>Season 2023/2024 (current season)</h3>
+
+After the end of Xabi's first season at Leverkusen, the coach appeared to have more autonomy in assembling the squad for 23/24. The number of players has dropped considerably compared to previous years, and Leverkusen now have just 27 players, a reduction of 22%. At the moment, Leverkusen's average age is 24.8 and the average value of each player is 22 million euros. In other words, the average age has changed very little, but the value per player has increased by almost 70% compared to the 22/23 season.<br/><br/>
+
+However, even with the considerable reduction in the squad, Leverkusen have moved much more on the market than in recent seasons. In addition, the total value of the current squad has increased by 31% compared to last season. It is therefore essential to analyze Leverkusen's signings this season and how the players have increased in value since Xabi Alonso's arrival.<br/><br/>
+
+<h2>Hiring</h2>
+
+The main signings made after the arrival of Xabi Alonso were the transfer of midfielder Xhaka, who played for Arsenal, for 25 million euros; the arrival of striker Boniface, who played for Union Saint-Gilloise in Belgium; the transfer of winger Grimaldo, who played for Benfica, who arrived for free; and the arrival of goalkeeper Kovar, who was at Manchester United, who cost around 5 million euros. The one-off signings were extremely important for the Leverkusen team, with the five main players in the German team being Wirtz, Palacios, Xhaka, Grimaldo, Kovar, and Boniface.<br/><br/>
+
+Despite the signings, the players who were already at the club have improved incredibly. To analyze the growth of players, their market value is a very interesting parameter. In the graph below, you can see the players who have risen the most in value since Xabi Alonso's arrival. It's important to note that Boniface, acquired this season by Leverkusen, already has a market value almost double what he was paid. Boniface and Grimaldo, the latter of whom was acquired for free, show how well the signings have been executed, making the most of the opportunities on the market.<br/><br/>
+
+<div style="width: 100%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
-There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.<br/><br/>
+In terms of player valuations alone, the balance was positive and exceeded 90 million euros. The estimated value of the total squad is almost 595 million euros, of which only 80 million were invested this year. It's worth remembering that in 2023 many players were sold, loaned, or released by Leverkusen, and the devaluation of the squad due to these losses totals 119 million. As such, in addition to the amount invested, Xabi Alonso's work has been fundamental in valuing the players. Xabi qualified the players already in the squad, and Leverkusen took advantage of the opportunities of a very competitive market.<br/><br/>
 
-<h2>What is Xabi Alonso’s playing style?</h2>
+<h2>Team Performance</h2>
 
-Xabi Alonso, a former player who has won every possible title and is known for being extremely technical and analytical, worked with gigantic teams and excellent coaches like Mourinho, Guardiola, and Ancelotti. Each with their different styles, Xabi managed to absorb the best qualities from each, becoming a great communicator, strategist, and football enthusiast. After completing the UEFA course, he started in Real Madrid's U-14 team and soon moved to Real Sociedad B. There, technical skills and ball control were the focus, and the club was promoted to the second division for the first time in 60 years. From there, Bayer Leverkusen saw in Xabi someone who could save the team from the critical situation of relegation, and history began to be made. But how does Bayer Leverkusen play now, having been led by Alonso for over a year?<br/><br/>
+Finally, it's interesting to compare the development of the team over the three seasons mentioned above. In 2021/2022 before Xabi Alonso, in 2022/2023 before and after the arrival of the Spanish coach, and the 2023/2024 season when Xabi had more autonomy in the formation of the squad.<br/><br/>
 
+<h3>Season 2021/2022</h3>
 
-<h3>Bayer Leverkusen without possession</h3>
+In the 21/22 season, Leverkusen performed well in terms of results. Despite an early exit from the Europa League, beaten by Atalanta in the last 16, they finished 3rd in the Bundesliga and therefore qualified for the Champions League the following season. One of the reasons for the squad remaining very similar in the 22/23 season is precisely the good performance in 21/22.<br/><br/>
 
-In the defensive sector, Alonso's team applies high pressure during the opponent's build-up in a mid-block, forcing errors to regain possession. Depending on the match, the German champion can adopt two different formations while defending: a 5-2-2-1, pressing the opponent's build-up with five players, crowding the midfield, and forcing plays to the sides of the field where the wing-backs press and win the ball; or a 4-2-3-1, which allows for an easier transition out of defense after stealing the ball.<br/><br/>
+In 21/22, Leverkusen conceded 47 goals and scored 80, with a good offensive record, averaging 2.4 goals per game in the Bundesliga. In addition, the German team's main players this season were Wirtz, Shick, and Demirbay.<br/><br/>
 
-Additionally, Leverkusen employs counter-pressing, commonly known as Gegenpressing. Xabi needed only a few months to shape and solidify this defensive tactic, establishing one of the most robust defenses in the league. By the end of the Bundesliga, they had achieved nearly 54 recoveries per match using this tactical approach.<br/><br/>
+<h3>Season 2022/2023</h3>
+The start of the 22/23 season was very different from what was imagined. With the squad maintained and, therefore, the project continuing, it was expected that the team would at least achieve a performance similar to that of the 21/22 season. However, Leverkusen got off to a terrible start and by the 9th matchday of the Bundesliga were in 15th place, close to the relegation zone. At the same time, on Matchday 3 of the Champions League, they were bottom of their group, which included Club Brugge, Porto, and Atlético de Madrid.<br/><br/>
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/recoveries.png" class="img-fluid rounded z-depth-1" %}
-</div>
+After poor results, Xabi Alonso was invited to take over the team on October 8, 2022. After the arrival of the new coach, Leverkusen finished 3rd in the Champions League group stage and qualified for the Europa League, only to fall to Roma in the semi-finals. At the end of the season, Leverkusen finished 6th in the Bundesliga and secured a place in the 2023/2024 Europa League.<br/><br/>
 
-The team also conceded the fewest goals in the entire Bundesliga, allowing only 24 goals, proving the efficiency of their playing style.<br/><br/>
+Leverkusen's main players after Xabi Alonso took over were Wirtz, Demirbay, and Palácios. In other words, Leverkusen's highlights remained similar to the 2021 season, but Palácios was able to develop much more after the Spanish coach's arrival.<br/><br/>
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
-</div>
+<h3>Season 2023/2024</h3>
 
-<h3>Bayer Leverkusen with possession</h3>
+This season, Leverkusen need no introduction. They've won their first Bundesliga title in history and without losing a single game. Still in the Bundesliga, they've scored a total of 89 goals and conceded just 24, an average of 2.6 goals per game. Leverkusen have also conquered an average of 62% of possession per match in the Bundesliga.<br/><br/>
 
-Classified as a middle ground between Pep Guardiola's positional play and the relational play seen in Fernando Diniz's Fluminense, Xabi Alonso trains the team for a build-up that depends on the current formation on the field. The playing style, which involves many passing exchanges, is evident in the team's passing network, where we can see the formation of "triangles" that allow multiple options for a player to work the ball.<br/><br/>
+Apart from all the prominence the team had in the Bundesliga, Leverkusen is in the final of the Europa League and is considered by many to be the favorite to win the title. The final will be played between the German club and Atalanta.<br/><br/>
 
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.<br/><br/>  
-
-In that way, the wing-backs have a much more significant role in the game, both offensively and defensively, switching sides of the field while attacking and defending. This can be observed in the passing network from the match against Augsburg, where wing-back Frimpong appeared more advanced than any other Bayer player.<br/><br/>  
-
-By employing this tactic, Xabi Alonso has maximized the individual technical skills of his wide players, such as Frimpong and Grimaldo, who have contributed to 39 goals in the Bundesliga. In other words, nearly half of the team's goals have come through these two players.<br/><br/>  
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-
-The use of this tactic is evidenced by the number of passes made by Bayer, the highest in the Bundesliga in the 2023-24 season. Additionally, the four advanced players move a lot, preventing the opposing defenders from pushing up their defensive line.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Passes_per_match.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-However, it is also common to see the team building up play with three defenders, utilizing the flanks with advanced wing-backs (usually Grimaldo and Frimpong), midfielders and forwards giving closer non-positional options, through midfield with quick transitions to attack generally architected by Wirtz or with direct passes from the defense to the attack into the empty spaces created by the team’s movementation. This is exemplified by the high number of progressive passes per game.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/progressive_passes.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-If the opponents remain too rigid centrally, the team starts forming narrow diamond patterns, allowing Bayer to continue doing their short and dynamic passes to reach the final third of the field. Another possibility is that if the opponents press Leverkusen's short passing exchanges, the ball is moved to the opposite flank, which will have plenty of free space.<br/><br/>
-
-Moreover, the German team doesn't rely solely on movement and masterful passing to score goals this season, since approximately 10% of all goals scored by Xabi Alonso's team have come from set-pieces. Additionally, goals from counter-attacks are also common for the German side when necessary.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-
-<h3>Final third of the field</h3>
-
-The final third of the German team's attack is almost unpredictable. The advance of the wing-backs through the flanks mixed with midfielders infiltrating the box, along with a bit of accurate long-range shooting, create Xabi Alonso's magical formula for the team's incredible effectiveness. Thus, a statistic that demonstrates the unpredictability of the team led by the Spanish maestro is the percentage of attacks from each offensive third of the field, with the left, middle, and right accounting for 33%, 34%, and 33% respectively.<br/><br/>
-
-Such offensive prowess not only leads to a flurry of goals and chances created for the German team but also contributes to the team's unbeaten streak, which, when being behind on the scoreboard, always finds a way, often through the tactics taught by Xabi Alonso, combined with a bit of luck, to score goals and maintain their unbeaten record intact for all season.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Creating_Actions.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-A common tactic is as follows: when reaching the final third of the field, the wing-backs advance and the team's formation shifts to a 3-2-5, with the central players pushing up to receive the ball and create more options for playmaking, thus creating a numerical advantage that makes the team unpredictable and overwhelms the opposing defense. During this advancement, other players move up to occupy the midfield.
-The team is so efficient that it ranks in the top 3 in chances created from open play, but in comparison, has few chances from set-pieces.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/live_dead_balls.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-<h3>Weakness</h3>
-
-
-Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag in the UEFA Europa League, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/possession_lost.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-But, as we can see by the team’s results in the season and their goal difference stats, the risk is worth taking.
-<br/><br/>
-
-<div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Difference.png" class="img-fluid rounded z-depth-1" %}
-</div>
-
-<h2>Conclusion</h2>
-
-It is evident that Xabi Alonso has blended various influences and added his own product to create a team capable of an unbeaten performance in the Bundesliga. However, one of the key aspects of this team is the individuality of each player, who has fit into the Spanish coach's system while incorporating their own unique playing styles. When facing Xabi Alonso in tactical chess, one doesn't see his pieces as knights, towers, or pawns, but rather as twenty-four players with different characteristics that change the German team's playing style. These players are the reason behind the team's immense success this season and the singularity of this squad that has captivated the world. In the next post, we will analyze the evolution of these players and the team, leading to what is now known as the first team to win the first unbeaten Bundesliga title.
-
-</div>
+As for Leverkusen's highlights this season, the best players were Grimaldo, Wirtz, Palacios, Xhaka, Kovar, Hofmann, and Boniface. What's important to note is that the players signed were highlights of the team during the season, which demonstrates a clear efficiency when it comes to using players.<br/><br/>
