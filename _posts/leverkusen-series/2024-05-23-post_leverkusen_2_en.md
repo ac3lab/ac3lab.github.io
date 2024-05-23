@@ -12,7 +12,7 @@ author: Ace Laboratory Football Team - Hugo Antunes
 
 ---
 <p align="justify">
-Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_leverkusen_1_pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_leverkusen_2_pt/"> clique aqui.</a>
 </p>
 
 <h2>Introduction</h2>
@@ -88,3 +88,4 @@ This season, Leverkusen need no introduction. They've won their first Bundesliga
 Apart from all the prominence the team had in the Bundesliga, Leverkusen is in the final of the Europa League and is considered by many to be the favorite to win the title. The final will be played between the German club and Atalanta.<br/><br/>
 
 As for Leverkusen's highlights this season, the best players were Grimaldo, Wirtz, Palacios, Xhaka, Kovar, Hofmann, and Boniface. What's important to note is that the players signed were highlights of the team during the season, which demonstrates a clear efficiency when it comes to using players.<br/><br/>
+</div>
