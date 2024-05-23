@@ -88,4 +88,11 @@ This season, Leverkusen need no introduction. They've won their first Bundesliga
 Apart from all the prominence the team had in the Bundesliga, Leverkusen is in the final of the Europa League and is considered by many to be the favorite to win the title. The final will be played between the German club and Atalanta.<br/><br/>
 
 As for Leverkusen's highlights this season, the best players were Grimaldo, Wirtz, Palacios, Xhaka, Kovar, Hofmann, and Boniface. What's important to note is that the players signed were highlights of the team during the season, which demonstrates a clear efficiency when it comes to using players.<br/><br/>
+
+<h2>Conclusion</h2>
+
+Xabi Alonso's management has transformed Leverkusen into a highly competitive team, reflected by the unprecedented Bundesliga title win and the Europa League final. The reduction and qualification of the squad, with strategic signings and the valorization of the players already in the squad, significantly increased the team's market value. With an efficient style of play, Leverkusen not only improved their performance on the pitch, but also highlighted the ability of their players, such as Wirtz, Palacios, and new signings Xhaka, Grimaldo, Kovar, and Boniface, consolidating themselves as one of the strongest teams of the season.<br/><br/>
+
+Stay tuned to our social networks, as next week we'll be posting our final analysis of Xabi Alonso's brilliant season.<br/><br/>
+
 </div>

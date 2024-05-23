@@ -76,5 +76,12 @@ Na atual temporada, o Leverkusen dispensa qualquer apresentação. O time conqui
 Fora todo o destaque que o time teve na Bundesliga, o Leverkusen se encontra na final da Europa League e é considerado por muitos o favorito ao título. A final será protagonizada entre o clube alemão e a Atalanta.<br/><br/>
 
 Já sobre os destaques do Leverkusen na temporada, os melhores jogadores foram Grimaldo, Wirtz, Palacios, Xhaka, Kovar, Hofmann e Boniface. Algo importante de se notar é que os jogadores contratados foram destaques do time durante a temporada, o que demonstra uma clara eficiência na hora de utilizar os jogadores.<br/><br/>
-</div>
 
+<h2>Conclusão</h2>
+
+
+A gestão de Xabi Alonso transformou o Leverkusen em uma equipe altamente competitiva, refletida pela conquista inédita da Bundesliga e a final da Europa League. A redução e qualificação do plantel, com contratações estratégicas e valorização dos jogadores já presentes, aumentaram significativamente o valor de mercado da equipe. Com um estilo de jogo eficiente, o Leverkusen não só melhorou seu desempenho em campo, mas também destacou a capacidade de seus jogadores, como Wirtz, Palacios, e as novas contratações Xhaka, Grimaldo, Kovar, e Boniface, consolidando-se como um dos times mais fortes da temporada.<br/><br/>
+
+Fique atento em nossas redes, pois na próxima semana postaremos nosso último post analisando a brilhante temporada do time de Xabi Alonso.<br/><br/>
+
+</div>
