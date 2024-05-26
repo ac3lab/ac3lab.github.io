@@ -49,7 +49,7 @@ A evolução no desempenho está, claramente, ligada à mudança na função do 
 
 Analisando os números de Frimpong pré-Xabi e pós-Xabi, fica evidente o quanto o treinador foi determinante para o desenvolvimento do potencial ofensivo do holandês. Para mostrar isso com mais clareza, vimos os heatmaps de todos os jogos de Frimpong desde a temporada 21/22 até a atual, e os agrupamos em intervalos temporais com dados de 7 a 9 jogos diferentes. Assim, podemos visualizar melhor o processo de distanciamento do setor ofensivo e aproximação do setor ofensivo pelo holandês, especialmente após a estreia de Xabi Alonso como treinador, no dia 8 de outubro de 2022. É interessante observar, na temporada 23/24, uma ocupação intensa no lado direito da grande área do adversário.<br/><br/>
 
-[Frimpong Gif](/ac3lab.github.io/assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.gif)
+[Frimpong Gif](/assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.gif)
 
 Com as estatísticas dos jogadores nessa Bundesliga (temporada), ficou ainda mais claro o que queríamos dizer quando falamos que esse time é marcado pelas suas alas extremamente ofensivas.<br/><br/>
 
