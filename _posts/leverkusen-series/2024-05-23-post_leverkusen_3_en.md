@@ -55,9 +55,6 @@ The evolution in performance is clearly linked to the change in the player's rol
 
 Looking at Frimpong's numbers pre-Xabi and post-Xabi, it's clear how much the coach was a determining factor in the development of the Dutchman's offensive potential. To show this more clearly, we looked at the heatmaps of all Frimpong's games from the 21/22 season to the current one, and grouped them into time intervals with data from 7 to 9 different games. In this way, we can better visualize the process of the Dutchman moving away from the defensive sector and towards the offensive sector, especially after Xabi Alonso's debut as coach on October 8, 2022. It's interesting to see, in the 23/24 season, an intense occupation of the right side of the opponent's penalty area. <br/><br/>
 
-<div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.gif" class="img-fluid rounded z-depth-1" %}
-</div>
 
 Analyzing the statistics of these two players in the Bundesliga made it even clearer what we meant when we said that this team is marked by its extremely attacking wingbacks. <br/><br/>
 
