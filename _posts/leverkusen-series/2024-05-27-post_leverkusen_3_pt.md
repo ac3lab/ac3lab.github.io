@@ -20,7 +20,7 @@ Como já abordamos no primeiro post da série, o Bayer Leverkusen de Xabi Alonso
 
 Nesta seção, vamos falar sobre os jogadores mais importantes para o funcionamento do campeão da Bundesliga.<br/><br/>
 
-<h2>Os alas Grimaldo e Frimpong:</h2>
+<h3>Os alas Grimaldo e Frimpong:</h3>
 
 Uma das características mais interessantes e únicas desse time é a presença de duas alas extremamente ofensivas, que participam muito na construção de jogo e frequentemente estão no terço final do campo para a conclusão de jogadas.<br/><br/>
 
@@ -29,6 +29,7 @@ O responsável pelo lado esquerdo do campo é o espanhol <b>Alejandro Grimaldo</
 <div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Alejandro_Grimaldo.png" class="img-fluid rounded z-depth-1" %}
 </div>
+
 Na Bundesliga, Grimaldo foi o <b>6º jogador com mais participações em gols</b>, porém, acima dele só aparecem centroavantes de ofício, como Harry Kane, do Bayern de Munique, e Loïs Openda, do RB Leipzig. Além disso, o ala do Bayer Leverkusen foi <b>líder em assistências</b> e <b>vice-líder em grandes chances criadas da competição</b>. <br/><br/>
 
 Ocupando a ala-direita, está o holandês <b>Jeremie Frimpong</b>. O jovem jogador de apenas 23 anos foi contratado pelo Bayer Leverkusen na temporada 20/21, mas se firmou como titular apenas na temporada seguinte. Desde então, é possível ver uma grande evolução no desempenho de Frimpong, que ficou ainda mais clara com a chegada de Xabi Alonso ao comando do time. <br/><br/>
@@ -66,6 +67,7 @@ A seguir, mostraremos o “mapa de sonar” de passes de Granit Xhaka. O gráfic
 <div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/sonar_map.png" class="img-fluid rounded z-depth-1" %}
 </div>
+
 <h3>O craque Florian Wirtz:</h3>
 Não tem como falar de Bayer Leverkusen e não falar de <b>Florian Wirtz</b>. O alemão de apenas 20 anos é, ao lado de Grimaldo, considerado o principal jogador deste time. O jovem meia-atacante é quase impecável em todos os aspectos ofensivos: finalização, passe, drible, visão de jogo, pressão alta, etc. <br/><br/>
 
@@ -91,6 +93,7 @@ Também é importante destacar a <b>diferença sentida pelo Bayer Leverkusen no 
 </div>
 Apesar de quase 3 meses de ausência na liga, Boniface figurou como o <b>7º jogador com mais participações em gols na Bundesliga 23/24</b>. <br/><br/>
 
-<h3>Conclusão</h3>
+<h2>Conclusão</h2>
+
 No último post da nossa série sobre o Bayer Leverkusen, analisamos os dados relacionados a alguns dos jogadores mais importantes do campeão invicto da Bundesliga. A intenção foi mostrar o impacto que o jovem, porém já vencedor, treinador Xabi Alonso teve nos seus jogadores, principalmente ao longo dessa temporada tão especial para o elenco. Pode-se dizer que o espanhol foi responsável por “revelar” diversos jogadores desse time para o mundo, inclusive fazendo com que vários deles, como Grimaldo e Boniface, fossem convocados pela primeira vez para suas seleções nacionais. Também podemos afirmar que o mundo está ansioso para ver mais do Bayer Leverkusen na próxima temporada, que colocará o clube à prova na Liga dos Campeões e na defesa do título nacional.
 </div>

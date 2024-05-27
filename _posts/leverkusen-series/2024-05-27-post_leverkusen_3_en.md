@@ -11,6 +11,7 @@ author: Ace Laboratory Football Team - Daniel Barros
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_leverkusen_3_pt/"> clique aqui.</a>
 </p>
@@ -50,10 +51,9 @@ The evolution in performance is clearly linked to **the change in the player's r
 {% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/FrimpogGA.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
+It's important to note that Seoane was in charge of Leverkusen until the 8th round of the 22/23 Bundesliga season. In those 8 games, Frimpong scored two goals (an average of 0.25 goals per game). From matchday 9 onwards, with Xabi Alonso taking over as coach, Frimpong's number of goals per game rose to 0.5, showing that the period with the new coach had a much greater impact on his total number of goals and assists that season.<br/><br/>
 
-It's important to note that Seoane was in charge of Leverkusen until the 8th round of the 22/23 Bundesliga season. In those 8 games, Frimpong scored two goals (an average of 0.25 goals per game). From matchday 9 onwards, with Xabi Alonso taking over as coach, Frimpong's number of goals per game rose to 0.5, showing that the period with the new coach had a much greater impact on his total number of goals and assists that season. <br/><br/>
-
-Looking at Frimpong's numbers pre-Xabi and post-Xabi, it's clear how much **the coach was a determining factor in the development of the Dutchman's offensive potential**. To show this more clearly, we looked at the heatmaps of all Frimpong's games from the 21/22 season to the current one, and grouped them into time intervals with data from 7 to 9 different games. In this way, we can better visualize the process of the Dutchman moving away from the defensive sector and towards the offensive sector, especially after Xabi Alonso's debut as coach on October 8, 2022. It's interesting to see, in the 23/24 season, **an intense occupation of the right side of the opponent's penalty area**. <br/><br/>
+Looking at Frimpong's numbers pre-Xabi and post-Xabi, it's clear how much **the coach was a determining factor in the development of the Dutchman's offensive potential**. To show this more clearly, we looked at the heatmaps of all Frimpong's games from the 21/22 season to the current one, and grouped them into time intervals with data from 7 to 9 different games. In this way, we can better visualize the process of the Dutchman moving away from the defensive sector and towards the offensive sector, especially after Xabi Alonso's debut as coach on October 8, 2022. It's interesting to see, in the 23/24 season, **an intense occupation of the right side of the opponent's penalty area**.<br/><br/>
 
 {% include video.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
 
@@ -90,7 +90,6 @@ Since his arrival at Bayer Leverkusen in 2020, Wirtz has been considered **one o
 {% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Florian_Wirtz.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 Looking at the league as a whole, Wirtz is a standout in several statistics. The German is **8th in the ranking of goals scored** (behind only center forwards, except for teammate Alejandro Grimaldo) and **4th in right dribbles per game**. <br/><br/>
 
 <h3>The striker, Boniface:</h3> 
@@ -114,5 +113,4 @@ Despite almost 3 months out of the league, Boniface was **the 7th player with th
 <h2>Conclusion</h2>
 
 In the last post in our series on Bayer Leverkusen, we analyzed the data relating to some of the most important players in the undefeated Bundesliga champions. The intention was to show the impact that the young but already winning coach Xabi Alonso has had on his players, especially during this very special season for the squad. It's safe to say that the Spaniard has been responsible for “revealing” several of the team's players to the world, including getting several of them, like Grimaldo and Boniface, called up to their national teams for the first time. We can also say that the world is looking forward to seeing more of Bayer Leverkusen next season, which will put the club to the test in the Champions League and in the defense of the national title.
-
 </div>
