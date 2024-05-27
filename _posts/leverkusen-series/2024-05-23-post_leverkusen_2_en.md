@@ -29,7 +29,7 @@ One of the main changes made after the arrival of Xabi Alonso was the management
 
 In 21/22, the team had a vast squad, with a total of 35 players and an average age of close to 24.5 years. In addition, the average value per player was around 13 million euros. In that season, the most estimated sector of the field on the market was the attack, with a value of approximately 170.70 million euros.<br/><br/>
 
-In 2021, Leverkusen hired a new coach, Swiss Gerardo Seone, who played his first game on August 7, 2021. Under the Swiss, Leverkusen played mostly in a 4-2-3-1 formation, very different from what happens today with Xabi Alonso. It's worth remembering that Xabi's style of play has already been discussed here on our blog!<br/><br/>
+In 2021, Leverkusen hired a new coach, Swiss Gerardo Seone, who played his first game on August 7, 2021. Under the Swiss, Leverkusen played mostly in a 4-2-3-1 formation, very different from what happens today with Xabi Alonso. It's worth remembering that <a href = "https://ac3lab.github.io/blog/2024/post_leverkusen_1_en/"> Xabi's style of play</a> has already been discussed here on our blog!<br/><br/>
 
 It was in the 2021 season that the current seventh most valuable player in the world gained more prominence, being a player used frequently by Gerardo. In addition to the Leverkusen revelation, other players began to gain more prominence in the team too, such as striker Shick, who was the team's top scorer that season.<br/><br/>
 

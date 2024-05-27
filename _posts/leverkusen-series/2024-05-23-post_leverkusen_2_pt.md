@@ -22,7 +22,7 @@ Uma das principais modificações realizadas após a chegada de Xabi Alonso foi 
 <h3>Temporada 2021/2022</h3>
 Em 21/22, o time contava com um vasto plantel, tendo um total de 35 jogadores e uma média de idade perto de 24.5 anos. Além disso, a média de valor por jogador girava em torno de 13 milhões de euros. Nessa temporada, o setor do campo mais estimado no mercado era o ataque, tendo um valor de aproximadamente 170,70 milhões de euros.<br/><br/>
 
-Em 2021, o Leverkusen contratou um novo técnico, o suíço Gerardo Seone, que fez a sua primeira partida no comando do time alemão em 07/08/2021. Com o suíço, o Leverkusen jogou majoritariamente em um 4-2-3-1, muito diferente do que acontece hoje com o Xabi Alonso. Vale lembrar que o estilo de jogo do Leverkusen de Xabi já foi comentado aqui no nosso blog!<br/><br/>
+Em 2021, o Leverkusen contratou um novo técnico, o suíço Gerardo Seone, que fez a sua primeira partida no comando do time alemão em 07/08/2021. Com o suíço, o Leverkusen jogou majoritariamente em um 4-2-3-1, muito diferente do que acontece hoje com o Xabi Alonso. Vale lembrar que o <a href = "https://ac3lab.github.io/blog/2024/post_leverkusen_1_en/"> estilo de jogo do Leverkusen de Xabi</a> já foi comentado aqui no nosso blog!<br/><br/>
 
 Foi na temporada 2021 que o atual sétimo jogador mais valioso do mundo ganhou mais destaque, sendo um jogador utilizado frequentemente por Gerardo. Além da revelação do Leverkusen, outros jogadores começaram a ganhar mais destaque na equipe também, como o atacante Schick, sendo o artilheiro da equipe naquela temporada.<br/><br/>
 
