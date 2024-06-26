@@ -32,13 +32,20 @@ Sala: Auditório XYZ
 
 ### 08:00 - 09:00 | Abertura e Conversa com representante do Flamengo
 
+<br/>
+
 ### 09:00 - 09:30 | Apresentação do ACE
 **Palestrantes:** Glauco Amorim e Pedro Gonzalez
-**Tema:** Introdução ao Evento
+
+<br/>
 
 ### 09:30 - 10:00 | Coffee Break
 
+<br/>
+
 ### 10:00 - 11:00 | Apresentações de  Alunos do ACE
+
+<br/>
 
 #### 10:00 - 10:20 | Redes de Passe
 **Palestrante:** Lucas Gusti
@@ -48,6 +55,8 @@ Sala: Auditório XYZ
 
 #### 10:40 - 11:00 | Detecção de Sucesso
 **Palestrantes:** Caio Santos e Lucas Calmon
+
+<br/>
 
 ### 11:00 - 12:00 | Mesa Redonda - Interação entre Clubes e Universidades
 
@@ -59,8 +68,8 @@ Para participar do evento, por favor, registre-se através do [formulário de in
 
 ## Contato
 
-Para mais informações, entre em contato conosco:
-**Email:** ace@cos.ufrj.br
+Para mais informações, entre em contato conosco:<br/>
+**Email:** ace@cos.ufrj.br<br/>
 **Linkedin:** [ACE Lab](https://br.linkedin.com/company/ac3lab)
 
 
