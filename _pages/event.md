@@ -8,8 +8,6 @@ display_categories: ["Permanent Members", "PhD Students", "Master Students", "Un
 horizontal: false
 ---
 
-<div style="text-align: justify">
-
 # Workshop on Analytics for Football Excellence - 2024
 
 O Workshop on Analytics for Football Excellence (WAFE 2024), será um evento sediado na UFRJ focado em aproximar as Universidades aos profissionais da indústria do futebol. Participe para conhecer especialistas, aprender sobre os avanços na análise de futebol e explorar como o mundo acadêmico e o mercado podem trabalhar juntos para alcançar a excelência no esporte.
@@ -66,5 +64,4 @@ Para mais informações, entre em contato conosco:
 **Linkedin:** [ACE Lab](https://br.linkedin.com/company/ac3lab)
 
 
-</div>
 
