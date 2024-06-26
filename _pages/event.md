@@ -54,10 +54,7 @@ Sala: Auditório XYZ
 **Palestrante:** Letícia Maia
 
 #### 10:40 - 11:00 | Detecção de Sucesso
-**Palestrantes:** Caio Santos e Lucas Calmon
-
-<br/>
-
+**Palestrantes:** Caio Santos e Lucas Calmon<br/>
 ### 11:00 - 12:00 | Mesa Redonda - Interação entre Clubes e Universidades
 
 ---
