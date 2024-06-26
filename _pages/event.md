@@ -3,8 +3,7 @@ layout: page
 permalink: /event/
 title: Event
 description: Evento sediado na UFRJ
-nav: true
-nav_order: 5
+nav: false
 display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
 ---
