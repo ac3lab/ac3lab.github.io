@@ -35,17 +35,9 @@ Sala: Auditório XYZ
 <br/>
 
 ### 09:00 - 09:30 | Apresentação do ACE
-**Palestrantes:** Glauco Amorim e Pedro Gonzalez
-
-<br/>
-
-### 09:30 - 10:00 | Coffee Break
-
-<br/>
-
-### 10:00 - 11:00 | Apresentações de  Alunos do ACE
-
-<br/>
+**Palestrantes:** Glauco Amorim e Pedro Gonzalez<br/>
+### 09:30 - 10:00 | Coffee Break<br/>
+### 10:00 - 11:00 | Apresentações de  Alunos do ACE<br/>
 
 #### 10:00 - 10:20 | Redes de Passe
 **Palestrante:** Lucas Gusti
