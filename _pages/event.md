@@ -26,21 +26,24 @@ Sala: Auditório XYZ
 **Data:** 26 de Agosto de 2024  
 **Hora:** 08:00 - 12:00
 
+
+
 ---
 
 ## Programação
 
 | Horário        | Atividade                                                | Palestrantes                                   |
 |----------------|----------------------------------------------------------|-----------------------------------------------|
-| 08:00 - 09:00  | Abertura e Conversa com representante do Flamengo          | -                                              |
-| 09:00 - 09:30  | Apresentação do ACE Lab                                    | Glauco Amorim e Pedro Gonzalez                 |
-| 09:30 - 10:00  | Coffee Break                                               | -                                              |
-| 10:00 - 10:20  | Trabalho ACE: Redes de Passe                               | Lucas Gusti                                    |
-| 10:20 - 10:40  | Trabalho ACE: Cartola FC                                   | Letícia Maia                                   |
-| 10:40 - 11:00  | Trabalho ACE: Detecção de Sucesso                          | Caio Santos e Lucas Calmon                     |
-| 11:00 - 12:00  | Mesa Redonda - Interação entre Clubes e Universidades      | -                                              |
+| <span style="color: white;">08:00 - 09:00</span>  | <span style="color: white;">Abertura e Conversa com representante do Flamengo</span>         | <span style="color: white;">-</span>                                              |
+| <span style="color: white;">09:00 - 09:30</span>  | <span style="color: white;">Apresentação do ACE</span>                                       | <span style="color: white;">Glauco Amorim e Pedro Gonzalez</span>                 |
+| <span style="color: white;">09:30 - 10:00</span>  | <span style="color: white;">Coffee Break</span>                                              | <span style="color: white;">-</span>                                              |
+| <span style="color: white;">10:00 - 10:20</span>  | <span style="color: white;">Apresentação de trabalho de aluno do ACE: Redes de Passe</span>  | <span style="color: white;">Lucas Gusti</span>                                    |
+| <span style="color: white;">10:20 - 10:40</span>  | <span style="color: white;">Apresentação de trabalho de aluno do ACE: Cartola FC</span>      | <span style="color: white;">Letícia Maia</span>                                   |
+| <span style="color: white;">10:40 - 11:00</span>  | <span style="color: white;">Apresentação de trabalho de aluno do ACE: Detecção de Sucesso</span> | <span style="color: white;">Caio Santos e Lucas Calmon</span>                     |
+| <span style="color: white;">11:00 - 12:00</span>  | <span style="color: white;">Mesa Redonda - Interação entre Clubes e Universidades</span>     | <span style="color: white;">-</span>                                              |
 
 ---
+
 
 
 
