@@ -19,7 +19,7 @@ O Workshop on Analytics for Football Excellence (WAFE 2024), será um evento sed
 
 **Inovateca do Parque Tecnológico da UFRJ - Fundão** <br/>
 Rua Aloísio Teixeira, 564 - Parque Tecnológico da UFRJ<br/>
-Sala: Auditório XYZ
+Sala: Auditório da Inovateca - UFRJ
 
 ## Data e Hora
 
@@ -40,7 +40,7 @@ Sala: Auditório XYZ
 |<span style="color: white;">10:00 - 10:20</span>|<span style="color: white;">Trabalho ACE: Redes de Passe</span>| <span style="color: white;">Lucas Gusti</span> |
 |<span style="color: white;">10:20 - 10:40</span>|<span style="color: white;">Trabalho ACE: Cartola FC</span>| <span style="color: white;">Letícia Maia</span> |
 |<span style="color: white;">10:40 - 11:00</span>|<span style="color: white;">Trabalho ACE: Detecção de Sucesso</span>| <span style="color: white;">Caio Santos e Lucas Calmon</span> |
-|<span style="color: white;">11:00 - 12:00</span>|<span style="color: white;">Mesa Redonda - Interação entre Clubes e Universidades</span>| <span style="color: white;">-</span> |
+|<span style="color: white;">11:00 - 12:00</span>|<span style="color: white;">Mesa Redonda: Interação entre Clubes e Universidades</span>| <span style="color: white;">-</span> |
 
 ---
 
