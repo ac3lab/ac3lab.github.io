@@ -1,8 +1,8 @@
 ---
 layout: page
-permalink: /event/
+permalink: /wafe/
 title: WAFE 2024
-description: Evento sediado na UFRJ
+description: Workshop on Analytics for Football Excellence (WAFE 2024), o evento de Dados e Futebol do Rio de Janeiro
 nav: false
 display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
