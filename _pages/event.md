@@ -30,26 +30,19 @@ Sala: Auditório XYZ
 
 ## Programação
 
-### 08:00 - 09:00 | Abertura e Conversa com representante do Flamengo
-
-<br/>
-
-### 09:00 - 09:30 | Apresentação do ACE
-**Palestrantes:** Glauco Amorim e Pedro Gonzalez<br/>
-### 09:30 - 10:00 | Coffee Break<br/>
-### 10:00 - 11:00 | Apresentações de  Alunos do ACE<br/>
-
-#### 10:00 - 10:20 | Redes de Passe
-**Palestrante:** Lucas Gusti
-
-#### 10:20 - 10:40 | Cartola FC
-**Palestrante:** Letícia Maia
-
-#### 10:40 - 11:00 | Detecção de Sucesso
-**Palestrantes:** Caio Santos e Lucas Calmon<br/>
-### 11:00 - 12:00 | Mesa Redonda - Interação entre Clubes e Universidades
+| Horário        | Atividade                                                | Palestrantes                                   |
+|----------------|----------------------------------------------------------|-----------------------------------------------|
+| 08:00 - 09:00  | Abertura e Conversa com representante do Flamengo          | -                                              |
+| 09:00 - 09:30  | Apresentação do ACE Lab                                    | Glauco Amorim e Pedro Gonzalez                 |
+| 09:30 - 10:00  | Coffee Break                                               | -                                              |
+| 10:00 - 10:20  | Trabalho ACE: Redes de Passe                               | Lucas Gusti                                    |
+| 10:20 - 10:40  | Trabalho ACE: Cartola FC                                   | Letícia Maia                                   |
+| 10:40 - 11:00  | Trabalho ACE: Detecção de Sucesso                          | Caio Santos e Lucas Calmon                     |
+| 11:00 - 12:00  | Mesa Redonda - Interação entre Clubes e Universidades      | -                                              |
 
 ---
+
+
 
 ## Inscrição
 
