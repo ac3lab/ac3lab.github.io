@@ -17,8 +17,8 @@ O Workshop on Analytics for Football Excellence (WAFE 2024), será um evento sed
 
 ## Local
 
-**Inovateca do Parque Tecnológico da UFRJ - Fundão**
-Rua Aloísio Teixeira, 564 - Parque Tecnológico da UFRJ
+**Inovateca do Parque Tecnológico da UFRJ - Fundão** <br/>
+Rua Aloísio Teixeira, 564 - Parque Tecnológico da UFRJ<br/>
 Sala: Auditório XYZ
 
 ## Data e Hora
