@@ -12,16 +12,16 @@ author: Amanda Azevedo, Almir Júnior, Pedro Siqueira
 ## Introduction
 
 <p align="justify">
-As the Paris 2024 Olympic Games approach, we present the Olympics Planner 2024, an optimization model designed to craft personalized itineraries based on individual preferences. This tool leverages advanced algorithms to ensure that attendees can maximize their Olympic experience by  navigating events, attractions, and venues. In this post, we delve into the methodologies and technologies employed in the development of the Olympics Planner 2024.
+As the Paris 2024 Olympic Games approach, we present the Olympics Planner 2024, an optimization model designed to craft personalized itineraries based on individual preferences. This tool leverages advanced algorithms to ensure that attendees can maximize their Olympic experience by  navigating events, attractions, and venues. In this post, we delve into the methodologies and technologies employed in the development of the Olympics Planner 2024.<br/><br/>
 </p>
 
 
 ## Data Collection
 
 <p align="justify">
-The primary data for this study was obtained from the <a href = "https://tickets.paris2024.org/en/"> official releases of the Paris Olympic Committee</a>, which provided extensive details on event schedules, ticket prices, and venue locations. We gathered the start and end times for all Olympic events, the associated costs of attending each event, and the geographic coordinates and addresses of all event venues.
+The primary data for this study was obtained from the <a href = "https://tickets.paris2024.org/en/"> official releases of the Paris Olympic Committee</a>, which provided extensive details on event schedules, ticket prices, and venue locations. We gathered the start and end times for all Olympic events, the associated costs of attending each event, and the geographic coordinates and addresses of all event venues.<br/><br/>
 
-To collect this data, we developed scripts that extracted information directly from the official Olympics website. This process posed significant challenges due to the difficulty in accessing and organizing the information, which was not easily available or straightforward to manipulate. These complexities highlight the difficulties of applying this methodology to previous Olympics, where data availability is even more limited. Comprehensive data cleaning and organization were necessary to ensure the dataset's accuracy and usability.
+To collect this data, we developed scripts that extracted information directly from the official Olympics website. This process posed significant challenges due to the difficulty in accessing and organizing the information, which was not easily available or straightforward to manipulate. These complexities highlight the difficulties of applying this methodology to previous Olympics, where data availability is even more limited. Comprehensive data cleaning and organization were necessary to ensure the dataset's accuracy and usability.<br/><br/>
 </p>
 
 $$
@@ -36,17 +36,17 @@ Using the average travel cost, we incorporated a budget constraint into the opti
 
 <p align="justify">
 
-This section addresses the logistical challenge of optimizing Olympic Game-Watching Schedules. Given the diverse array of events spread across various venues and times, crafting an optimal viewing schedule is inherently complex. This study formulates the problem as a network flow optimization task, aiming to develop personalized schedules that maximize spectator preference scores while ensuring both travel feasibility and schedule coherence.
+This section addresses the logistical challenge of optimizing Olympic Game-Watching Schedules. Given the diverse array of events spread across various venues and times, crafting an optimal viewing schedule is inherently complex. This study formulates the problem as a network flow optimization task, aiming to develop personalized schedules that maximize spectator preference scores while ensuring both travel feasibility and schedule coherence.<br/><br/>
 
-Consider a directed graph \( G = (V, A) \), where \( V \) represents the set of vertices denoting Olympic events, and \( A \) represents the arcs denoting transitions between events.
+Consider a directed graph \( G = (V, A) \), where \( V \) represents the set of vertices denoting Olympic events, and \( A \) represents the arcs denoting transitions between events.<br/><br/>
 
-Each event \( i \in V \) is defined by its start time \( t^{\text{start}}_i \) and duration \( \text{duration}_i \), where \( t^{\text{end}}_i = t^{\text{start}}_i + \text{duration}_i \). The start time \( t^{\text{start}}_i \) denotes the minute within the total Olympic timeline when event \( i \) begins.
+Each event \( i \in V \) is defined by its start time \( t^{\text{start}}_i \) and duration \( \text{duration}_i \), where \( t^{\text{end}}_i = t^{\text{start}}_i + \text{duration}_i \). The start time \( t^{\text{start}}_i \) denotes the minute within the total Olympic timeline when event \( i \) begins.<br/><br/>
 
-Each event \( i \in V \) has an associated ticket price \( c_i \). Additionally, there is an average travel cost per minute \( c_{ij} \) for each arc \( (i, j) \in A \). The total travel cost between events \( i \) and \( j \) is given by \( c_{ij} \times t_{ij} \), where \( t_{ij} \) represents the travel time in minutes between the two events. Spectators have a maximum budget \( B \), which serves as an upper limit on total costs, covering both ticket prices and travel expenses.
+Each event \( i \in V \) has an associated ticket price \( c_i \). Additionally, there is an average travel cost per minute \( c_{ij} \) for each arc \( (i, j) \in A \). The total travel cost between events \( i \) and \( j \) is given by \( c_{ij} \times t_{ij} \), where \( t_{ij} \) represents the travel time in minutes between the two events. Spectators have a maximum budget \( B \), which serves as an upper limit on total costs, covering both ticket prices and travel expenses.<br/><br/>
 
-In addition to costs, each event \( i \in V \) is assigned a preference score \( p_i \), reflecting spectator interest in attending that event.
+In addition to costs, each event \( i \in V \) is assigned a preference score \( p_i \), reflecting spectator interest in attending that event.<br/><br/>
 
-Let \( x_{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where \( x_{ij} = 1 \) indicates a spectator travels from event \( i \) to event \( j \), and \( x_{ij} = 0 \) otherwise. Similarly, let \( w_i \) be a binary decision variable for vertex \( i \in V \), where \( w_i = 1 \) indicates attendance at event \( i \), and \( w_i = 0 \) otherwise.
+Let \( x_{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where \( x_{ij} = 1 \) indicates a spectator travels from event \( i \) to event \( j \), and \( x_{ij} = 0 \) otherwise. Similarly, let \( w_i \) be a binary decision variable for vertex \( i \in V \), where \( w_i = 1 \) indicates attendance at event \( i \), and \( w_i = 0 \) otherwise.<br/><br/>
 
 The optimization problem is formulated as follows:
 
@@ -91,11 +91,11 @@ The objective function \( Z \) aims to maximize the total preference score, ther
 
 <p align="justify">
 
-The implementation of the model involved three steps: creating a directed graph, calculating travel times, and assigning both preference scores and costs to each event.
+The implementation of the model involved three steps: creating a directed graph, calculating travel times, and assigning both preference scores and costs to each event.<br/><br/>
 
-We assigned a preference score to each event based on spectator interest, which was classified into five levels: Very Uninterested, Slightly Interested, Neutral, Interested, and Very Interested, with each level having an associated weight. Ticket prices were also factored in to reflect the cost of attending each event.
+We assigned a preference score to each event based on spectator interest, which was classified into five levels: Very Uninterested, Slightly Interested, Neutral, Interested, and Very Interested, with each level having an associated weight. Ticket prices were also factored in to reflect the cost of attending each event.<br/><br/>
 
-For on-site spectators, travel times between venues were computed using Geographic Information System (GIS) tools. These tools took into account real-world travel routes and car travel times to ensure that transitions between events were feasible within the given schedule.
+For on-site spectators, travel times between venues were computed using Geographic Information System (GIS) tools. These tools took into account real-world travel routes and car travel times to ensure that transitions between events were feasible within the given schedule.<br/><br/>
 
 </p>
 
@@ -103,15 +103,21 @@ For on-site spectators, travel times between venues were computed using Geograph
 
 
 <p align="justify">
-Travel costs were integrated into the model by estimating the average cost per minute for various transportation modes in Paris, each with unique pricing structures. According to the Régie Autonome des Transports Parisiens (RATP), a single metro or bus ticket costs approximately €1.90, with an average trip duration of 30 minutes, resulting in a cost of €0.063 per minute. Taxi fares in Paris vary: during the day, the rate is €0.53 per minute, and at night, it increases to €0.60 per minute. Uber services charge €0.30 per minute.
+Travel costs were integrated into the model by estimating the average cost per minute for various transportation modes in Paris, each with unique pricing structures. According to the Régie Autonome des Transports Parisiens (RATP), a single metro or bus ticket costs approximately €1.90, with an average trip duration of 30 minutes, resulting in a cost of €0.063 per minute. Taxi fares in Paris vary: during the day, the rate is €0.53 per minute, and at night, it increases to €0.60 per minute. Uber services charge €0.30 per minute.<br/><br/>
 
 To consolidate these diverse transportation costs into a unified average cost per minute, we employed a weighted average method. The calculation was structured as follows:
 
 </p>
 
+
 ## Conclusion
 
 <p align="justify">
-This study has tackled the  challenge of optimizing Olympic Game-Watching Schedules through a sophisticated network flow optimization approach. By formulating the problem within a directed graph framework and integrating factors such as event preferences, travel costs, and budget constraints, our model aims to tailor personalized viewing schedules that enhance spectator experience. The formulation not only prioritizes events based on spectator interest but also ensures practicality by considering feasible travel routes and cost-effective planning. This approach not only showcases the potential of operations research in large-scale event management but also sets a precedent for future applications in optimizing complex scheduling scenarios.
+This study has tackled the  challenge of optimizing Olympic Game-Watching Schedules through a sophisticated network flow optimization approach. By formulating the problem within a directed graph framework and integrating factors such as event preferences, travel costs, and budget constraints, our model aims to tailor personalized viewing schedules that enhance spectator experience. The formulation not only prioritizes events based on spectator interest but also ensures practicality by considering feasible travel routes and cost-effective planning. This approach not only showcases the potential of operations research in large-scale event management but also sets a precedent for future applications in optimizing complex scheduling scenarios.<br/><br/>
+
+To present our application to the public, we built a website that runs a version of the model for anyone who wants to create their own itinerary for the 2024 Paris Olympic Games.<br/><br/>
+
+To access, just click here: <a href = "https://olympicsplanner.ace.cos.ufrj.br/"> Olympics Planner 2024</a>
+
 </p>
 
