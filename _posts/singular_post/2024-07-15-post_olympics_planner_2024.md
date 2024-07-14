@@ -13,6 +13,8 @@ author: Amanda Azevedo, Almir Júnior, Pedro Siqueira
 
 <p align="justify">
 As the Paris 2024 Olympic Games approach, we present the Olympics Planner 2024, an optimization model designed to craft personalized itineraries based on individual preferences. This tool leverages advanced algorithms to ensure that attendees can maximize their Olympic experience by  navigating events, attractions, and venues. In this post, we delve into the methodologies and technologies employed in the development of the Olympics Planner 2024.
+</p>
+
 
 ## Data Collection
 
@@ -97,6 +99,7 @@ To consolidate these diverse transportation costs into a unified average cost pe
 </p>
 
 ## Conclusion
+
 <p align="justify">
 This study has tackled the  challenge of optimizing Olympic Game-Watching Schedules through a sophisticated network flow optimization approach. By formulating the problem within a directed graph framework and integrating factors such as event preferences, travel costs, and budget constraints, our model aims to tailor personalized viewing schedules that enhance spectator experience. The formulation not only prioritizes events based on spectator interest but also ensures practicality by considering feasible travel routes and cost-effective planning. This approach not only showcases the potential of operations research in large-scale event management but also sets a precedent for future applications in optimizing complex scheduling scenarios.
 </p>
