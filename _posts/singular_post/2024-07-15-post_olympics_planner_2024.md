@@ -50,9 +50,11 @@ Let \( x_{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where
 
 The optimization problem is formulated as follows:
 $$
-\begin{align}
     \text{Maximize} \quad & Z = \sum_{i \in V} p_i w_i \label{eq:objective}\\
     \text{subject to} \\
+$$
+$$
+\begin{align}
     & \sum_{j \in V \setminus \{i\}} x_{ij} = w_i, \quad \forall i \in V \setminus \{n+1\} \label{eq:sequence_1}\\
     & \sum_{i \in V \setminus \{j\}} x_{ij} = w_j, \quad \forall j \in V \setminus \{0\} \label{eq:sequence_2}\\
     & \sum_{i \in V} x_{0i} = 1 \label{eq:start}\\
