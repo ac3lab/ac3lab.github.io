@@ -67,7 +67,11 @@ $$
 $$
 
 
-where,
+
+<p align="justify">
+where, <br/><br/>
+</p>
+
 
 
 $$
