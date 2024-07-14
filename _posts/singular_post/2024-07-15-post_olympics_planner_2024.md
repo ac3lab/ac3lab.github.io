@@ -62,7 +62,8 @@ $$
     & x_{ij} \in \{0, 1\}, \quad \forall (i, j) \in A \label{eq:binary_x}\\
     & w_i \in \{0, 1\}, \quad \forall i \in V \label{eq:binary_y}
 \end{align}
-
+$$
+$$
 where,
 \begin{align}
     M_{ij} = \max\{0, t^{\text{end}}i + t{ij} - t^{\text{start}}_j\}
