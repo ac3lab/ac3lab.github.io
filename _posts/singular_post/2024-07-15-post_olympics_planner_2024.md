@@ -49,6 +49,8 @@ In addition to costs, each event \( i \in V \) is assigned a preference score \(
 Let \( x_{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where \( x_{ij} = 1 \) indicates a spectator travels from event \( i \) to event \( j \), and \( x_{ij} = 0 \) otherwise. Similarly, let \( w_i \) be a binary decision variable for vertex \( i \in V \), where \( w_i = 1 \) indicates attendance at event \( i \), and \( w_i = 0 \) otherwise.
 
 The optimization problem is formulated as follows:
+
+
 $$
 \begin{align}
     \text{Maximize} \quad & Z = \sum_{i \in V} p_i w_i \label{eq:objective}\\
@@ -63,8 +65,12 @@ $$
     & w_i \in \{0, 1\}, \quad \forall i \in V \label{eq:binary_y}
 \end{align}
 $$
-$$
+
+
 where,
+
+
+$$
 \begin{align}
     M_{ij} = \max\{0, t^{\text{end}}i + t{ij} - t^{\text{start}}_j\}
 \end{align}
