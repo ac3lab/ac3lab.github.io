@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "An Optimization Model for Personalized Itineraries: Insights from our Olympics Planner 2024"
-date: 2020-07-15 09:00:00
+date: 2024-07-15 10:00:00
 description: Discover how we developed the Olympics Planner 2024, an optimization model designed to create personalized itineraries for the Paris Olympic Games.
 tags: Olympics; Paris
 categories: Olympics; Paris
@@ -12,31 +12,28 @@ author: Amanda Azevedo, Almir Júnior, Pedro Siqueira
 ## Introduction
 
 <p align="justify">
-As the Paris 2024 Olympic Games approach, we present the Olympics Planner 2024, an optimization model designed to craft personalized itineraries based on individual preferences. This tool leverages advanced algorithms to ensure that attendees can maximize their Olympic experience by  navigating events, attractions, and venues. In this post, we delve into the methodologies and technologies employed in the development of the Olympics Planner 2024.<br/><br/>
+As the Paris 2024 Olympic Games draw near, we are pleased to introduce the Olympics Planner 2024. This tool is engineered to provide personalized itineraries that cater to individual preferences, using advanced algorithms to help attendees fully engage with the events, attractions, and venues. In this post, we will explore the methodologies and technologies behind the development of the Olympics Planner 2024.<br/><br/>
 </p>
 
 
 ## Data Collection
 
 <p align="justify">
-The primary data for this study was obtained from the <a href = "https://tickets.paris2024.org/en/"> official releases of the Paris Olympic Committee</a>, which provided extensive details on event schedules, ticket prices, and venue locations. We gathered the start and end times for all Olympic events, the associated costs of attending each event, and the geographic coordinates and addresses of all event venues.<br/><br/>
 
-To collect this data, we developed scripts that extracted information directly from the official Olympics website. This process posed significant challenges due to the difficulty in accessing and organizing the information, which was not easily available or straightforward to manipulate. These complexities highlight the difficulties of applying this methodology to previous Olympics, where data availability is even more limited. Comprehensive data cleaning and organization were necessary to ensure the dataset's accuracy and usability.<br/><br/>
-</p>
+We sourced our dataset from the official publications of<a href = "https://tickets.paris2024.org/en/"> the Paris Olympic Committee</a>, which provided details about event schedules, ticket pricing, and venue information. We gathered data on event timings, costs of tickets, and the exact locations of venues, documented with both addresses and geographic coordinates.<br/><br/>
 
-$$
-\text{Average cost per minute} = \frac{0.063 + 0.53 + 0.30}{3} \approx 0.298
-$$
+Scripts were crafted to extract this information from the official Olympic website, a process that presented challenges due to the complex presentation of the site's data and issues with data accessibility. These obstacles underscore the complexities of employing this methodology with historical Olympic data, which may be even harder to access.<br/><br/>
 
-<p align="justify">
-Using the average travel cost, we incorporated a budget constraint into the optimization model to ensure that the total expenditure—comprising event costs and travel costs did not exceed the allocated budget. The travel cost was calculated by multiplying the travel time between events by the average cost per minute.
+
+Additionally, we incorporated financial considerations into our model by including both the average travel costs between events and the ticket prices. To ensure total expenses remained within the allocated budget, we introduced a budget constraint. Travel costs were estimated by calculating the travel time between venues and multiplying it by the average cost per minute, providing a more realistic assessment of the financial implications of attending multiple events.
+
 </p>
 
 ## The Model
 
 <p align="justify">
 
-This section addresses the logistical challenge of optimizing Olympic Game-Watching Schedules. Given the diverse array of events spread across various venues and times, crafting an optimal viewing schedule is inherently complex. This study formulates the problem as a network flow optimization task, aiming to develop personalized schedules that maximize spectator preference scores while ensuring both travel feasibility and schedule coherence.<br/><br/>
+We approached the task of crafting optimal viewing schedules for the Olympic Games by formulating it as a network flow optimization model. Our goal was to develop personalized schedules that prioritized spectator preferences while ensuring the feasibility of travel and maintaining a coherent schedule. <br/><br/>
 
 Consider a directed graph \( G = (V, A) \), where \( V \) represents the set of vertices denoting Olympic events, and \( A \) represents the arcs denoting transitions between events.<br/><br/>
 
@@ -86,38 +83,26 @@ The objective function \( Z \) aims to maximize the total preference score, ther
 
 </p>
 
-## Model Implementation
-
 
 <p align="justify">
 
-The implementation of the model involved three steps: creating a directed graph, calculating travel times, and assigning both preference scores and costs to each event.<br/><br/>
+The model's implementation consisted of three key steps: constructing a directed graph, calculating travel times, and assigning preference scores and costs to each event.<br/><br/>
 
-We assigned a preference score to each event based on spectator interest, which was classified into five levels: Very Uninterested, Slightly Interested, Neutral, Interested, and Very Interested, with each level having an associated weight. Ticket prices were also factored in to reflect the cost of attending each event.<br/><br/>
-
-For on-site spectators, travel times between venues were computed using Geographic Information System (GIS) tools. These tools took into account real-world travel routes and car travel times to ensure that transitions between events were feasible within the given schedule.<br/><br/>
+Preference scores were allocated to each event based on spectator interest, categorized into five levels ranging from "Very Uninterested" to "Very Interested," each assigned a specific weight. Additionally, the cost of attending each event was incorporated into the model by including ticket prices. Travel times between venues for spectators attending in person were determined using Geographic Information System (GIS) tools. These tools accounted for actual travel routes and car travel durations to ensure feasible transitions between events within the planned schedule.<br/><br/>
 
 </p>
 
 {% include figure.html path="assets/img/Posts_Images/2024-07-15-olympics-planner/routejpg.jpg" class="img-fluid rounded z-depth-1" %}
 
 
-<p align="justify">
-Travel costs were integrated into the model by estimating the average cost per minute for various transportation modes in Paris, each with unique pricing structures. According to the Régie Autonome des Transports Parisiens (RATP), a single metro or bus ticket costs approximately €1.90, with an average trip duration of 30 minutes, resulting in a cost of €0.063 per minute. Taxi fares in Paris vary: during the day, the rate is €0.53 per minute, and at night, it increases to €0.60 per minute. Uber services charge €0.30 per minute.<br/><br/>
-
-To consolidate these diverse transportation costs into a unified average cost per minute, we employed a weighted average method. The calculation was structured as follows:
-
-</p>
-
-
 ## Conclusion
 
 <p align="justify">
-This study has tackled the  challenge of optimizing Olympic Game-Watching Schedules through a sophisticated network flow optimization approach. By formulating the problem within a directed graph framework and integrating factors such as event preferences, travel costs, and budget constraints, our model aims to tailor personalized viewing schedules that enhance spectator experience. The formulation not only prioritizes events based on spectator interest but also ensures practicality by considering feasible travel routes and cost-effective planning. This approach not only showcases the potential of operations research in large-scale event management but also sets a precedent for future applications in optimizing complex scheduling scenarios.<br/><br/>
+This research introduces a novel approach to optimizing Olympic Game-Watching Schedules using network flow optimization. Set within a directed graph, the model seamlessly integrates spectator preferences, travel logistics, and budget considerations to craft personalized viewing schedules that enhance the overall experience. This innovative use of operations research in large-scale event management sets a new benchmark for complex scheduling solutions.<br/><br/>
 
-To present our application to the public, we built a website that runs a version of the model for anyone who wants to create their own itinerary for the 2024 Paris Olympic Games.<br/><br/>
+To make this tool available to the public, we developed a website where users can create their own itinerary for the 2024 Paris Olympic Games.<br/><br/>
 
-To access, just click here: <a href = "https://olympicsplanner.ace.cos.ufrj.br/"> Olympics Planner 2024</a>
+Explore your custom Olympic schedule here:  <a href = "https://olympicsplanner.ace.cos.ufrj.br/"> Olympics Planner 2024</a>
 
 </p>
 
