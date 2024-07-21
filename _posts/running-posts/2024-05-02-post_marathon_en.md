@@ -20,7 +20,7 @@ Convenience, practicality, and health benefits are some of the reasons that make
 </p>
 
 <p align="justify">
-The 42k route, which passes through the city's main landmarks, crowned kenyan Josphat Kiprotich and ethiopian Zinash Debebe as the winners of the race, both from the elite male and female pelotons. Kiprotich finished the race in 2h13min29s – two seconds faster than the previous record, while Debebe completed it in 22h36min00s.
+The 42k route, which passes through the city's main landmarks, crowned kenyan Josphat Kiprotich and ethiopian Zinash Debebe as the winners of the race, both from the elite male and female pelotons. Kiprotich finished the race in 2h13min29s – two seconds faster than the previous record, while Debebe completed it in 2h36min00s.
 </p>
 
 <p align="justify">
