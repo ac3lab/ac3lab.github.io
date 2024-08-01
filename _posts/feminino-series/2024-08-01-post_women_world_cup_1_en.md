@@ -4,7 +4,7 @@ layout: post
 
 title: 2023 Women’s World Cup - Analyzing the finalists
 
-date: 2024-08-01 10:00:00
+date: 2024-07-31 00:00:00
 
 description:
 
