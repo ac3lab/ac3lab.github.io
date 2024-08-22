@@ -22,7 +22,7 @@ author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
 <p  align="justify">
 
-Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/post_women_world_cup_3_pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/post_women_world_cup_3_pt/"> clique aqui. </a>
 
 </p>
 
