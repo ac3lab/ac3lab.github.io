@@ -13,6 +13,11 @@ horizontal: false
 O Symposium on Analytics for Footbal Excellence 2024 será a primeira edição do simpósio focado em Data Science no esporte organizado pelo Analytics for Competitive Excellence (ACE) Laboratory. Esse evento terá palestras e painéis com especialistas focados na área de dados no futebol, além da oportunidade de se conectar com diversos profissionais de clubes brasileiros e entender na prática como esse tema é desenvolvido na atualidade e é a tendência para o futuro! 
 
 
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
+</div>
+
+
 ---
 
 ## Local
@@ -35,57 +40,58 @@ Sala: Auditório da Inovateca - UFRJ
 <table>
   <thead>
     <tr>
-      <th>Horário</th>
-      <th>Atividade</th>
-      <th>Palestrantes</th>
-      <th>Cargo</th>
+      <th style="color: white;">Horário</th>
+      <th style="color: white;">Atividade</th>
+      <th style="color: white;">Palestrantes</th>
+      <th style="color: white;">Cargo</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td>13:30 - 14:15</td>
-      <td>Abertura - Keynote</td>
-      <td>Téo Benjamin</td>
-      <td>Gerente de dados do Flamengo</td>
+      <td style="color: white;">13:30 - 14:15</td>
+      <td style="color: white;">Abertura - Keynote</td>
+      <td style="color: white;">Téo Benjamin</td>
+      <td style="color: white;">Gerente de dados do Flamengo</td>
     </tr>
     <tr>
-      <td>14:15 - 14:30</td>
-      <td>Apresentação do ACE Laboratory</td>
-      <td>Glauco Amorim e Pedro Gonzalez</td>
-      <td>Professores da UFRJ e fundadores do ACE Laboratory</td>
+      <td style="color: white;">14:15 - 14:30</td>
+      <td style="color: white;">Apresentação do ACE Laboratory</td>
+      <td style="color: white;">Glauco Amorim e Pedro Gonzalez</td>
+      <td style="color: white;">Pesquisadores do ACE Lab</td>
     </tr>
     <tr>
-      <td>14:30 - 14:45</td>
-      <td>Trabalho ACE: Redes de Passe</td>
-      <td>-</td>
-      <td>-</td>
+      <td style="color: white;">14:30 - 14:45</td>
+      <td style="color: white;">Trabalho ACE: Redes de Passe</td>
+      <td style="color: white;">-</td>
+      <td style="color: white;">-</td>
     </tr>
     <tr>
-      <td>14:45 - 15:00</td>
-      <td>Trabalho ACE: Cartola FC</td>
-      <td>Lucas Gusti</td>
-      <td>Aluno do ACE Lab</td>
+      <td style="color: white;">14:45 - 15:00</td>
+      <td style="color: white;">Trabalho ACE: Cartola FC</td>
+      <td style="color: white;">Lucas Gusti</td>
+      <td style="color: white;">Pesquisador do ACE Lab</td>
     </tr>
     <tr>
-      <td>15:00 - 15:15</td>
-      <td>Trabalho ACE: Detecção de Sucesso</td>
-      <td>Letícia Maia</td>
-      <td>Aluna do ACE Lab</td>
+      <td style="color: white;">15:00 - 15:15</td>
+      <td style="color: white;">Trabalho ACE: Detecção de Sucesso</td>
+      <td style="color: white;">Letícia Maia</td>
+      <td style="color: white;">Pesquisadora do ACE Lab</td>
     </tr>
     <tr>
-      <td>15:15 - 16:00</td>
-      <td>Mesa Redonda: Clubes, Universidades e Televisão</td>
-      <td>-</td>
-      <td>-</td>
+      <td style="color: white;">15:15 - 16:00</td>
+      <td style="color: white;">Mesa Redonda: Clubes, Universidades e Televisão</td>
+      <td style="color: white;">-</td>
+      <td style="color: white;">-</td>
     </tr>
     <tr>
-      <td>16:00 - 16:45</td>
-      <td>Encerramento - Keynote</td>
-      <td>Matheus Caminha</td>
-      <td>-</td>
+      <td style="color: white;">16:00 - 16:45</td>
+      <td style="color: white;">Encerramento - Keynote</td>
+      <td style="color: white;">Matheus Caminha</td>
+      <td style="color: white;">-</td>
     </tr>
   </tbody>
 </table>
+
 
 ---
 
