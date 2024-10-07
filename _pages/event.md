@@ -53,7 +53,7 @@ Sala: Auditório da Inovateca - UFRJ
       <td style="color: white;">14:15 - 14:30</td>
       <td style="color: white;">Apresentação do ACE Laboratory</td>
       <td style="color: white;">Glauco Amorim e Pedro Gonzalez</td>
-      <td style="color: white;">Pesquisadores do ACE Lab</td>
+      <td style="color: white;">Pesquisador do ACE Lab</td>
     </tr>
     <tr>
       <td style="color: white;">14:30 - 14:45</td>
