@@ -58,20 +58,20 @@ Sala: Auditório da Inovateca - UFRJ
     <tr>
       <td style="color: white;">14:30 - 14:45</td>
       <td style="color: white;">Trabalho ACE: Redes de Passe</td>
-      <td style="color: white;">-</td>
-      <td style="color: white;">-</td>
+      <td style="color: white;">Lucas Giusti</td>
+      <td style="color: white;">Pesquisadores do ACE Lab</td>
     </tr>
     <tr>
       <td style="color: white;">14:45 - 15:00</td>
       <td style="color: white;">Trabalho ACE: Cartola FC</td>
-      <td style="color: white;">Lucas Gusti</td>
+      <td style="color: white;">Lucas Giusti</td>
       <td style="color: white;">Pesquisador do ACE Lab</td>
     </tr>
     <tr>
       <td style="color: white;">15:00 - 15:15</td>
-      <td style="color: white;">Trabalho ACE: Detecção de Sucesso</td>
-      <td style="color: white;">Letícia Maia</td>
-      <td style="color: white;">Pesquisadora do ACE Lab</td>
+      <td style="color: white;">Trabalho ACE: Detecção de Lesão</td>
+      <td style="color: white;">Matheus Mello</td>
+      <td style="color: white;">Pesquisador do ACE Lab</td>
     </tr>
     <tr>
       <td style="color: white;">15:15 - 16:00</td>
@@ -83,7 +83,7 @@ Sala: Auditório da Inovateca - UFRJ
       <td style="color: white;">16:00 - 16:45</td>
       <td style="color: white;">Encerramento - Keynote</td>
       <td style="color: white;">Matheus Caminha</td>
-      <td style="color: white;">-</td>
+      <td style="color: white;">Gerente de Ciência de Dados na Globo</td>
     </tr>
   </tbody>
 </table>
