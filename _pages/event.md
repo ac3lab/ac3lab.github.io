@@ -1,12 +1,16 @@
 ---
 layout: page
 permalink: /safe2024/
-title: SAFE 2024 - Symposium on Analytics for Footbal Excellence
+title: SAFE 2024
 description:
-nav: true
+nav: false
 display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
 ---
+
+<div style="width: 80%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
+</div>
 
 O Symposium on Analytics for Footbal Excellence 2024 será a primeira edição do simpósio focado em Data Science no esporte organizado pelo Analytics for Competitive Excellence (ACE) Laboratory. Esse evento terá palestras e painéis com especialistas focados na área de dados no futebol, além da oportunidade de se conectar com diversos profissionais de clubes brasileiros e entender na prática como esse tema é desenvolvido na atualidade e é a tendência para o futuro! 
 
