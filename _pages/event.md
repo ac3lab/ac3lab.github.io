@@ -1,16 +1,16 @@
 ---
 layout: page
-permalink: /wafe/
-title: WAFE 2024
-description: Workshop on Analytics for Football Excellence (WAFE 2024), o evento de Dados e Futebol do Rio de Janeiro
+permalink: /safe2024/
+title: SAFE 2024
+description: Symposium on Analytics for Footbal Excellence (SAFE 2024), o evento de Dados e Futebol do Rio de Janeiro
 nav: false
 display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
 ---
 
-# Workshop on Analytics for Football Excellence - 2024
+# Symposium on Analytics for Footbal Excellence - 2024
 
-O Workshop on Analytics for Football Excellence (WAFE 2024), será um evento sediado na UFRJ focado em aproximar as Universidades aos profissionais da indústria do futebol. Participe para conhecer especialistas, aprender sobre os avanços na análise de futebol e explorar como o mundo acadêmico e o mercado podem trabalhar juntos para alcançar a excelência no esporte.
+O Symposium on Analytics for Footbal Excellence 2024 será a primeira edição do simpósio focado em Data Science no esporte organizado pelo Analytics for Competitive Excellence (ACE) Laboratory. Esse evento terá palestras e painéis com especialistas focados na área de dados no futebol, além da oportunidade de se conectar com diversos profissionais de clubes brasileiros e entender na prática como esse tema é desenvolvido na atualidade e é a tendência para o futuro! 
 
 
 ---
@@ -23,8 +23,8 @@ Sala: Auditório da Inovateca - UFRJ
 
 ## Data e Hora
 
-**Data:** 26 de Agosto de 2024  
-**Hora:** 08:00 - 12:00
+**Data:** 11 de Novembro de 2024  
+**Hora:** 13:30 - 16:45
 
 
 
@@ -32,15 +32,60 @@ Sala: Auditório da Inovateca - UFRJ
 
 ## Programação
 
-| Horário        | Atividade                                                | Palestrantes                                   |
-|----------------|----------------------------------------------------------|-----------------------------------------------|
-|<span style="color: white;">08:00 - 09:00</span>|<span style="color: white;">Abertura e Conversa com representante do Flamengo</span>| <span style="color: white;">-</span> |
-|<span style="color: white;">09:00 - 09:30</span>|<span style="color: white;">Apresentação do ACE Laboratory</span>| <span style="color: white;">Glauco Amorim e Pedro Gonzalez</span> |
-|<span style="color: white;">09:30 - 10:00</span>|<span style="color: white;">Coffee Break</span>| <span style="color: white;">-</span> |
-|<span style="color: white;">10:00 - 10:20</span>|<span style="color: white;">Trabalho ACE: Redes de Passe</span>| <span style="color: white;">Lucas Gusti</span> |
-|<span style="color: white;">10:20 - 10:40</span>|<span style="color: white;">Trabalho ACE: Cartola FC</span>| <span style="color: white;">Letícia Maia</span> |
-|<span style="color: white;">10:40 - 11:00</span>|<span style="color: white;">Trabalho ACE: Detecção de Sucesso</span>| <span style="color: white;">Caio Santos e Lucas Calmon</span> |
-|<span style="color: white;">11:00 - 12:00</span>|<span style="color: white;">Mesa Redonda: Interação entre Clubes e Universidades</span>| <span style="color: white;">-</span> |
+<table>
+  <thead>
+    <tr>
+      <th>Horário</th>
+      <th>Atividade</th>
+      <th>Palestrantes</th>
+      <th>Cargo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>13:30 - 14:15</td>
+      <td>Abertura - Keynote</td>
+      <td>Téo Benjamin</td>
+      <td>Gerente de dados do Flamengo</td>
+    </tr>
+    <tr>
+      <td>14:15 - 14:30</td>
+      <td>Apresentação do ACE Laboratory</td>
+      <td>Glauco Amorim e Pedro Gonzalez</td>
+      <td>Professores da UFRJ e fundadores do ACE Laboratory</td>
+    </tr>
+    <tr>
+      <td>14:30 - 14:45</td>
+      <td>Trabalho ACE: Redes de Passe</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>14:45 - 15:00</td>
+      <td>Trabalho ACE: Cartola FC</td>
+      <td>Lucas Gusti</td>
+      <td>Aluno do ACE Lab</td>
+    </tr>
+    <tr>
+      <td>15:00 - 15:15</td>
+      <td>Trabalho ACE: Detecção de Sucesso</td>
+      <td>Letícia Maia</td>
+      <td>Aluna do ACE Lab</td>
+    </tr>
+    <tr>
+      <td>15:15 - 16:00</td>
+      <td>Mesa Redonda: Clubes, Universidades e Televisão</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>16:00 - 16:45</td>
+      <td>Encerramento - Keynote</td>
+      <td>Matheus Caminha</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 ---
 
@@ -50,7 +95,7 @@ Sala: Auditório da Inovateca - UFRJ
 
 ## Inscrição
 
-Para participar do evento, por favor, registre-se através do [formulário de inscrição](#).
+Para participar do evento, por favor, registre-se no [Sympla](https://www.sympla.com.br/evento/symposium-on-analytics-for-footbal-excellence-safe-2024/2673929).
 
 ## Contato
 
