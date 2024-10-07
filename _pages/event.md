@@ -3,7 +3,7 @@ layout: page
 permalink: /safe2024/
 title: SAFE 2024
 description:
-nav: false
+nav: true
 display_categories: ["Permanent Members", "PhD Students", "Master Students", "Undergraduate Students"]
 horizontal: false
 ---
