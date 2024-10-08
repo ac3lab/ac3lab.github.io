@@ -67,7 +67,7 @@ Sala: Auditório da Inovateca - UFRJ
       <td style="color: white;">14:45 - 15:00</td>
       <td style="color: white;">Trabalho ACE: Cartola FC</td>
       <td style="color: white;">Letícia Maia</td>
-      <td style="color: white;">Pesquisador do ACE Lab</td>
+      <td style="color: white;">Pesquisadora do ACE Lab</td>
     </tr>
     <tr>
       <td style="color: white;">15:00 - 15:15</td>
@@ -78,8 +78,8 @@ Sala: Auditório da Inovateca - UFRJ
     <tr>
       <td style="color: white;">15:15 - 16:00</td>
       <td style="color: white;">Mesa Redonda: Clubes, Universidades e Televisão</td>
-      <td style="color: white;">-</td>
-      <td style="color: white;">-</td>
+      <td style="color: white;"> <b>Mediador:</b> Glauco Amorim <br/> Hugo Rios Neto <br/>  Participante 2</td>
+      <td style="color: white;">Professsor do CEFET/RJ e Co-Fundador do ACE Lab <br/> Pesquisador do SALab <br/>  Cargo do Participante 2</td>
     </tr>
     <tr>
       <td style="color: white;">16:00 - 16:45</td>
