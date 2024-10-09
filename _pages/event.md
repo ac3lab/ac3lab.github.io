@@ -92,7 +92,7 @@ Sala: Auditório da Inovateca - UFRJ
 </table>
 
 
-Se quiser conhecer melhor os participantes: [Página dos Palestrantes](https://ac3lab.github.io/safe2024_participants/)
+#### Para conhecer melhor os palestrantes: [Página dos Palestrantes](https://ac3lab.github.io/safe2024_participants/)
 
 ---
 
