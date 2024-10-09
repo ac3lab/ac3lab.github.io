@@ -24,12 +24,13 @@ O Symposium on Analytics for Footbal Excellence 2024 será a primeira edição d
 Rua Aloísio Teixeira, 564 - Parque Tecnológico da UFRJ<br/>
 Sala: Auditório da Inovateca - UFRJ
 
+---
+
+
 ## Data e Hora
 
 **Data:** 11 de Novembro de 2024  
 **Hora:** 13:30 - 16:45
-
-
 
 ---
 
@@ -49,43 +50,43 @@ Sala: Auditório da Inovateca - UFRJ
       <td style="color: white;">13:30 - 14:15</td>
       <td style="color: white;">Abertura - Keynote</td>
       <td style="color: white;">Téo Benjamin</td>
-      <td style="color: white;">Gerente de dados do Flamengo</td>
+      <td style="color: white;">Gerente de dados no <b>Clube de Regatas do Flamengo</b></td>
     </tr>
     <tr>
       <td style="color: white;">14:15 - 14:30</td>
       <td style="color: white;">Apresentação do ACE Laboratory</td>
       <td style="color: white;">Pedro Gonzalez</td>
-      <td style="color: white;">Professsor da UFRJ e Co-Fundador do ACE Lab</td>
+      <td style="color: white;">Professsor da <b>UFRJ</b> e Co-Fundador do <b>ACE Lab</b></td>
     </tr>
     <tr>
       <td style="color: white;">14:30 - 14:45</td>
       <td style="color: white;">Trabalho ACE: Redes de Passe</td>
       <td style="color: white;">Lucas Giusti</td>
-      <td style="color: white;">Pesquisador do ACE Lab</td>
+      <td style="color: white;">Pesquisador do <b>ACE Lab</b></td>
     </tr>
     <tr>
       <td style="color: white;">14:45 - 15:00</td>
       <td style="color: white;">Trabalho ACE: Cartola FC</td>
       <td style="color: white;">Letícia Maia</td>
-      <td style="color: white;">Pesquisadora do ACE Lab</td>
+      <td style="color: white;">Pesquisadora do <b>ACE Lab</b></td>
     </tr>
     <tr>
       <td style="color: white;">15:00 - 15:15</td>
       <td style="color: white;">Trabalho ACE: Detecção de Lesão</td>
       <td style="color: white;">Matheus Mello</td>
-      <td style="color: white;">Pesquisador do ACE Lab</td>
+      <td style="color: white;">Pesquisador do <b>ACE Lab</b></td>
     </tr>
     <tr>
       <td style="color: white;">15:15 - 16:00</td>
       <td style="color: white;">Mesa Redonda: Clubes, Universidades e Televisão</td>
-      <td style="color: white;"> <b>Mediador:</b> Glauco Amorim <br/> Hugo Rios Neto <br/>  Participante 2</td>
-      <td style="color: white;">Professsor do CEFET/RJ e Co-Fundador do ACE Lab <br/> Pesquisador do SALab <br/>  Cargo do Participante 2</td>
+      <td style="color: white;"><b>Mediador:</b> Glauco Amorim <br/><br/> Hugo Rios Neto <br/>  Martin Paré </td>
+      <td style="color: white;">Professsor do <b>CEFET/RJ</b> e Co-Fundador do <b>ACE Lab</b> <br/><br/>  Pesquisador do <b>SALab</b> <br/>  Analista de Dados no <b>Red Bull Bragantino</b></td>
     </tr>
     <tr>
       <td style="color: white;">16:00 - 16:45</td>
       <td style="color: white;">Encerramento - Keynote</td>
       <td style="color: white;">Matheus Caminha</td>
-      <td style="color: white;">Gerente de Ciência de Dados na Globo</td>
+      <td style="color: white;">Gerente de Ciência de Dados na <b>Globo</b></td>
     </tr>
   </tbody>
 </table>
