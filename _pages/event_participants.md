@@ -5,7 +5,7 @@ permalink: /safe2024_participants/
 description:
 nav: false
 nav_order: 3
-display_categories: ["Abertura - Keynote", "Apresentação do ACE Laboratory", "Trabalhos ACE Laboratory", "Mesa Redonda: Clubes, Universidades e Televisão", "Encerramento - Keynote	"]
+display_categories: ["Abertura - Keynote", "Apresentação do ACE Laboratory", "Trabalhos ACE Laboratory", "Mesa Redonda: Clubes, Universidades e Televisão", "Encerramento - Keynote"]
 horizontal: false
 ---
 
