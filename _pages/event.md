@@ -79,8 +79,8 @@ Sala: Auditório da Inovateca - UFRJ
     <tr>
       <td style="color: white;">15:15 - 16:00</td>
       <td style="color: white;">Mesa Redonda: Clubes, Universidades e Televisão</td>
-      <td style="color: white; vertical-align: top;"><b>Mediador:</b> Glauco Amorim<br/><br/> Hugo Rios Neto <br/><br/>Martin Paré </td>
-      <td style="color: white;">Professsor do <b>CEFET/RJ</b> e Co-Fundador do <b>ACE Lab</b> <br/><br/>  Pesquisador do <b>SALab</b><br/><br/>Analista de Dados no <b>Red Bull Bragantino</b></td>
+      <td style="color: white; vertical-align: top;"><b>Mediador:</b> Glauco Amorim<br/><br/> Hugo Rios Neto <br/><br/>Martin Paré <br/><br/> Lucas Carlos </td>
+      <td style="color: white;">Professsor do <b>CEFET/RJ</b> e Co-Fundador do <b>ACE Lab</b> <br/><br/>Pesquisador do <b>SALab</b><br/><br/>Analista de Dados no <b>Red Bull Bragantino</b> <br/><br/> Sports Rights Strategy Manager na <b>Globo</b></td>
     </tr>
     <tr>
       <td style="color: white;">16:00 - 16:45</td>
