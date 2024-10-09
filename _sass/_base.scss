@@ -620,6 +620,10 @@ footer.sticky-bottom {
     margin-bottom: 1rem;
     text-align: right;
   }
+
+  p.card-text {
+    color: var(--global-divider-color);
+  }
 }
 
 
