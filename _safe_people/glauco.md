@@ -5,7 +5,7 @@ description: Professor <br> Cefet/RJ
 img: assets/img/ft_Glauco_Fiorott_Amorim.jpg
 importance: 1
 category: "Mesa Redonda: Clubes, Universidades e Televisão"
-redirect: http://lattes.cnpq.br/6165050515463973
+redirect: https://www.linkedin.com/in/glauco-amorim-6908b44/
 
 ---
 
