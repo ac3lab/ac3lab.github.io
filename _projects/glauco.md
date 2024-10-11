@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Glauco Amorim
-description: Associate Professor <br> Cefet/RJ
+description: Full Professor <br> Cefet/RJ
 img: assets/img/ft_Glauco_Fiorott_Amorim.jpg
 importance: 2
 category: "Permanent Members"
