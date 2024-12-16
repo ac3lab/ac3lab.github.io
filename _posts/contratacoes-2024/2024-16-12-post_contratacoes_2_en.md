@@ -4,7 +4,7 @@ layout: post
 
 title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Part 2"
 
-date: 2024-16-10 00:00:00
+date: 2024-16-12 00:00:00
 
 description:
 
