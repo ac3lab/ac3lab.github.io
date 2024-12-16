@@ -4,7 +4,7 @@ layout: post
 
 title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Part 2"
 
-date: 2024-16-12 00:00:00
+date: 2024-12-16 00:00:00
 
 description:
 
@@ -44,7 +44,7 @@ In the following graph, the red bar represents the number of decisive goal parti
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/decisiveGoalsAssists.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisiveGoalsAssists.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -58,7 +58,7 @@ If we also take into account the number of minutes played, dividing the number o
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -77,7 +77,7 @@ In the graphs below, we have used the same model used in the first part of the s
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/totalShotsper90_vs_xGper90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/totalShotsper90_vs_xGper90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -89,7 +89,7 @@ In the graphs below, we have used the same model used in the first part of the s
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
