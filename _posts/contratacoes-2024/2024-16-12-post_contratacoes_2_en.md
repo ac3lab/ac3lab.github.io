@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Parte 2"
+title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Part 2"
 
 date: 2024-16-10 00:00:00
 
@@ -58,7 +58,7 @@ If we also take into account the number of minutes played, dividing the number o
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
