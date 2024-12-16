@@ -56,7 +56,7 @@ Se também levarmos em conta a quantidade de minutos jogados, dividindo a quanti
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2024-16-12-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
