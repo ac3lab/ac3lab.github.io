@@ -16,7 +16,7 @@ No dia 15 de dezembro de 2024 aconteceu a última edição da São Garrafa, corr
 </p>
 
 <p align="justify">
-No total, 1.973 corredores completaram a prova, sendo 1.010 no percurso de 5km e 963 no percurso de 15km. Aqui vale destacar uma curiosidade: no percurso de menor distância, a maioria do público foi feminina (cerca de 63%); já no de maior distância, o público foi majoritariamente masculinho, com participação 38% feminina.
+No total, 1.973 corredores completaram a prova, sendo 1.010 no percurso de 5km e 963 no percurso de 15km. Aqui vale destacar uma curiosidade: no percurso de menor distância, a maioria do público foi feminina (cerca de 63%); já no de maior distância, o público foi majoritariamente masculino, com participação 38% feminina.
 </p>
 
 <p align="justify">
