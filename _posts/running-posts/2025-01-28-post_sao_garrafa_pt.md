@@ -6,6 +6,7 @@ description: Analisando desempenho de 10 diferentes corredores da São Garrafa 2
 tags: Running; São Garrafa; Python; Analytics; Statistics
 categories: Running; São Garrafa; Python; Analytics; Statistics
 thumbnail: assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png
+author: Ace Laboratory Football Team - Nathália Tito
 
 ---
 
@@ -41,7 +42,7 @@ De modo geral, sobre os participantes:
     <li>9 dentre os 10 se prepararam para a prova de maneira mais abrangente.</li>
 </ul>
 
-Exploratória
+<h2>Exploratória</h2>
 
 <p align="justify">
 Os dados extraídos pelo Strava e cedidos pelos participantes foram levados para o Python para uma análise exploratória um pouco mais detalhada. Importante destacar que retiramos 2 corredores da análise, por conta de dados inconsistentes - muito possivelmente por conta de falha de captação dos dados de GPS durante a prova.
@@ -77,7 +78,7 @@ Também foi possível comparar o desempenho por faixa de elevação (em metros),
 
 {% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_3.png" class="img-fluid rounded z-depth-1" %}
 
-Discussão
+<h2>Discussão</h2>
 
 <p align="justify">
 Ao analisar o desempenho dos corredores monitorados pelo Strava, juntamente com as informações de preparo e experiência no esporte, foi possível validar algumas ideias já levantadas por outros estudos em um caso real de prova: preparo e treino estão fortemente correlacionados com um bom desempenho. 
@@ -93,7 +94,7 @@ Nosso objetivo foi ilustrar em um caso real como algumas dessas variáveis estã
 
 Qualquer sugestão é bem vinda!
 
-Referências
+<h2>Referências</h2>
 
 https://neorace.com.br/resultados/g-live.html?f=2024%2Fdez%2Fsgf%2Fsgf.clax
 

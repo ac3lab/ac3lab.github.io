@@ -6,6 +6,8 @@ description: Analyzing the performance of 10 different runners from São Garrafa
 tags: Running; São Garrafa; Python; Analytics; Statistics
 categories: Running; São Garrafa; Python; Analytics; Statistics
 thumbnail: assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png
+author: Ace Laboratory Football Team - Nathália Tito
+
 ---
 
 <p align="justify">
@@ -45,7 +47,7 @@ In general, regarding the participants:
     <li>9 out of the 10 participants prepared for the race in a more comprehensive manner.</li>
 </ul>
 
-Exploratory
+<h2>Exploratory</h2>
 
 <p align="justify">
 The data extracted from Strava and provided by the participants were imported into Python for a more detailed exploratory analysis. It is important to note that we removed 2 runners from the analysis due to inconsistent data — most likely caused by GPS data capture failures during the race.
@@ -81,7 +83,7 @@ It was also possible to compare performance by elevation range (in meters), as s
 
 {% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_3.png" class="img-fluid rounded z-depth-1" %}
 
-Discussion
+<h2>Discussion</h2>
 
 <p align="justify">
 By analyzing the performance of the runners monitored by Strava, along with the information on preparation and experience in the sport, it was possible to validate some ideas already raised by other studies in a real race scenario: preparation and training are strongly correlated with good performance. 
@@ -97,7 +99,7 @@ Our goal was to illustrate in a real case how some of these variables are connec
 
 Any suggestions are welcome!
 
-References
+<h2>References</h2>
 
 https://neorace.com.br/resultados/g-live.html?f=2024%2Fdez%2Fsgf%2Fsgf.clax
 
