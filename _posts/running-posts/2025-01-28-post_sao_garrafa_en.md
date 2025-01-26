@@ -8,6 +8,11 @@ categories: Running; São Garrafa; Python; Analytics; Statistics
 thumbnail: assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png
 ---
 
+<p align="justify">
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_sao_garrafa_pt/"> clique aqui.</a>
+</p>
+
+
 {% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
@@ -50,7 +55,7 @@ The data extracted from Strava and provided by the participants were imported in
 In the chart below, you can visualize the performance of each participant (average pace) by distance covered:
 </p>
 
-{% include figure.html path="imagens/imagem_2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_2.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Right from the start, runners 1, 5, 6, and 10 stand out for maintaining a low pace throughout the entire course — around 4'30" on average. Coincidence? Probably not, as these were the 4 runners who had trained on the race course before the event. To simplify the understanding from here on, we will refer to this group as the "course-savvy runners". This point highlights just how crucial preparation and knowledge of the course are before taking on a challenging race.
@@ -64,7 +69,7 @@ Notice that between kilometers 5 and 8, all athletes showed a decrease in their 
 In this other chart, it's also possible to visualize the performance of each participant, but now by race time. Once again, the course-savvy runners stand out for, unsurprisingly, being the ones to finish the race the fastest.
 </p>
 
-{% include figure.html path="imagens/imagem_1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_1.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 In general, the course-savvy runners were at a walking speed (established here as 5 km/h) less frequently compared to the non-savvy runners. Another point that reinforces the idea that "more trained" athletes naturally perform better is their experience time. The course-savvy runners have an average of 5 years of running experience each, while the non-savvy runners have an average of 1 year.
@@ -74,7 +79,7 @@ In general, the course-savvy runners were at a walking speed (established here a
 It was also possible to compare performance by elevation range (in meters), as shown in the chart below. Runners 1 and 5 stand out for their minimal pace fluctuations as the elevation level increases, demonstrating their ability to maintain a nearly constant pace, as shown above. A previous study delves deeper into this point, suggesting that more experienced runners show fewer fluctuations in their speed series, meaning fewer abrupt changes. The full article can be found <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30754">here</a>!
 </p>
 
-{% include figure.html path="imagens/imagem_3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_3.png" class="img-fluid rounded z-depth-1" %}
 
 Discussion
 
