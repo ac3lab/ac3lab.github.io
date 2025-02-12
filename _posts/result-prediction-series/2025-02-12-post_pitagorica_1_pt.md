@@ -16,6 +16,26 @@ thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jp
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
+leagues:
+  - name: Premier League
+    median: 20.78%
+    mean: 27.13%
+  - name: La Liga
+    median: 21.64%
+    mean: 36.83%
+  - name: Ligue 1
+    median: 23.25%
+    mean: 32.35%
+  - name: Série A
+    median: 18.61%
+    mean: 27.39%
+  - name: Bundesliga
+    median: 21.30%
+    mean: 26.35%
+  - name: Brasileirão
+    median: 32.14%
+    mean: 38.76%
+
 ---
 
 ---
@@ -47,7 +67,7 @@ Comparar a porcentagem de vitória de um time com a expectativa pitagórica pode
 
 <h3> <b> A Pesquisa</b> </h3>
 
-Os dados utilizados consistem em uma tabela com todos os resultados de partidas da temporada de cada liga, coletados no FBREF (https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios). <br/><br/>
+Os dados utilizados consistem em uma tabela com todos os resultados de partidas da temporada de cada liga, coletados no FBREF (<a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">). <br/><br/>
 
 <h3> <b> Preparação dos dados e definição das porcentagens </b> </h3>
 
@@ -62,7 +82,7 @@ Após extração dos dados e uma limpeza básica da tabela, o resultado é um Da
 <center>Esse é o formato dos dados extraídos do FBREF. <br/><br/></center>
 
 
-Separamos os gols de cada equipe e definimos qual time foi o vencedor de cada partida do campeonato. Assim, podemos calcular a porcentagem de vitória -vitória vale 1, empate vale 0.5 e derrota vale nada-, e a soma desses valores é dividida pelo número de partidas jogadas. (https://en.wikipedia.org/wiki/Winning_percentage). <br/><br/>
+Separamos os gols de cada equipe e definimos qual time foi o vencedor de cada partida do campeonato. Assim, podemos calcular a porcentagem de vitória -vitória vale 1, empate vale 0.5 e derrota vale nada-, e a soma desses valores é dividida pelo número de partidas jogadas. (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">). <br/><br/>
 
 Depois de ajustar a tabela e calcular a porcentagem de vitória das equipes, separamos os dados entre Primeiro Turno e Segundo Turno, ou seja, antes e depois da rodada 20. A tabela do Primeiro Turno do campeonato fica mais ou menos assim: <br/><br/>
 
@@ -86,10 +106,10 @@ Para finalizar nossa tabela, calculamos a expectativa pitagórica e juntamos as 
 
 Código do cálculo de wpc e pyth: <br/> <br/>
 
-```python
+{% highlight python linenos %}
 PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G']  # percentual de vitórias - (Vitórias) / (Jogos Jogados)  
 PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']**2)  # expectativa pitagórica - (Gols Pró)^2 / ((Gols Pró)^2 + (Gols Contra)^2)  
-```
+{% endhighlight %}
 <br/><br/>
 
 
@@ -170,20 +190,33 @@ Por enquanto, está tudo dentro do esperado. O interessante é quando começamos
 
 Na liga brasileira, além dos valores do Primeiro Turno terem menos de 30% de correlação com os resultados da segunda metade do campeonato, a porcentagem de vitória tem uma correlação maior que a expectativa pitagórica! É a única das 6 ligas estudadas onde esse fato é observado. <br/><br/>
 
-<h2> <b> Conclusion </b></h4>
+<h2> <b> Conclusion </b></h2>
 
 A partir do resultado do experimento, decidimos analisar quanto o rendimento difere de um turno para o outro de acordo com a liga para entendermos melhor as ligas mais ‘imprevisíveis’. Para isso, calculamos a média e a mediana dessa variação em todas as ligas estudadas. O Brasileirão se destacou como a competição com a maior oscilação entre turnos, superando as ligas europeias. A surpresa ficou por conta da La Liga, que apresentou uma variação relativamente alta para os padrões europeus. <br/><br/>
 
-| Ligas          | Mediana da Diferença de Aproveitamento | Média da Diferença de Aproveitamento |
-|---------------|------------------------------------|---------------------------------|
-| Premier League | 20,78% | 27,13% |
-| La Liga       | 21,64% | 36,83% |
-| Ligue 1       | 23,25% | 32,35% |
-| Série A       | 18,61% | 27,39% |
-| Bundesliga    | 21,30% | 26,35% |
-| Brasileirão   | 32,14% | 38,76% |
 
-**Cálculo da diferença de aproveitamento:**  
+<table>
+  <thead>
+    <tr>
+      <th>Ligas</th>
+      <th>Mediana da Diferença de Aproveitamento</th>
+      <th>Média da Diferença de Aproveitamento</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for league in page.leagues %}
+    <tr>
+      <td>{{ league.name }}</td>
+      <td>{{ league.median }}</td>
+      <td>{{ league.mean }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<br/><br/>
+<h4>Cálculo da diferença de aproveitamento:</h4>  
+
 \[
 \left( \frac{\text{Aproveitamento 2° Turno}}{\text{Aproveitamento 1° Turno}} - 1 \right) \times 100\%
 \]

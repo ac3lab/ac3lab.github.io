@@ -16,6 +16,26 @@ thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jp
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
+leagues:
+  - name: Premier League
+    median: 20.78%
+    mean: 27.13%
+  - name: La Liga
+    median: 21.64%
+    mean: 36.83%
+  - name: Ligue 1
+    median: 23.25%
+    mean: 32.35%
+  - name: Série A
+    median: 18.61%
+    mean: 27.39%
+  - name: Bundesliga
+    median: 21.30%
+    mean: 26.35%
+  - name: Brasileirão
+    median: 32.14%
+    mean: 38.76%
+
 ---
 
 ---
@@ -53,7 +73,7 @@ Comparing a team's winning percentage with its Pythagorean expectation can help 
 
 <h3> <b> The Research </b> </h3>
 
-The data used consists of a table with all match results from each league's season, collected from FBREF (https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios). <br/><br/>
+The data used consists of a table with all match results from each league's season, collected from FBREF (<a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">). <br/><br/>
 
 <h3> <b> Data Preparation and Defining Percentages </b> </h3>
 
@@ -68,7 +88,7 @@ After extracting the data and performing basic table cleaning, the result is a D
 <center>This is the way the data is extracted from FBREF. <br/><br/></center>
 
 
-We separated each team's goals and determined the winner of each match. This allows us to calculate the winning percentage—where a win is worth 1, a draw is worth 0.5, and a loss is worth 0. The sum of these values is then divided by the number of games played (https://en.wikipedia.org/wiki/Winning_percentage). <br/><br/>
+We separated each team's goals and determined the winner of each match. This allows us to calculate the winning percentage—where a win is worth 1, a draw is worth 0.5, and a loss is worth 0. The sum of these values is then divided by the number of games played (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">). <br/><br/>
 
 After adjusting the table and calculating the teams' winning percentages, we split the data into the First Half and Second Half of the season, meaning before and after matchday 20. The table for the First Half of the season looks like this: <br/><br/>
 
@@ -92,10 +112,10 @@ To finalize our table, we calculate the Pythagorean expectation and merge the Fi
 
 Code for Calculating wpc and pyth: <br/> <br/>
 
-```python
+{% highlight python linenos %}
 PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G']  # win percentage - (Win Value) / (Games Played)
 PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']**2)  # pythagorean expectation - (Goals For)^2 / ((Goals For)^2 + (Goals Against)^2)
-```
+{% endhighlight %}
 <br/><br/>
 
 
@@ -175,20 +195,34 @@ So far, everything aligns with expectations. However, things get interesting whe
 
 In the Brazilian league, not only do First Half values have less than 30% correlation with Second Half results, but the winning percentage also has a <b>higher correlation</b> than the Pythagorean expectation! This is the only one of the six leagues studied where this phenomenon occurs. <br/><br/>
 
-<h2> <b> Conclusion </b></h4>
+<h2> <b> Conclusion </b></h2>
 
 Based on the experiment’s results, we decided to analyze how much team performance fluctuates between the two halves of the season, depending on the league, to better understand the most ‘unpredictable’ leagues. To do this, we calculated the mean and median of this variation across all studied leagues. The <b>Brasileirão stood out as the competition with the highest fluctuation between halves</b>, surpassing European leagues. Surprisingly, La Liga showed a relatively high variation for European standards. <br/><br/>
 
-| Leagues          | Median Performance Difference | Mean Performance Difference |
-|---------------|------------------------------------|---------------------------------|
-| Premier League | 20,78% | 27,13% |
-| La Liga       | 21,64% | 36,83% |
-| Ligue 1       | 23,25% | 32,35% |
-| Série A       | 18,61% | 27,39% |
-| Bundesliga    | 21,30% | 26,35% |
-| Brasileirão   | 32,14% | 38,76% |
+<table>
+  <thead>
+    <tr>
+      <th>Leagues</th>
+      <th>Median Performance Difference</th>
+      <th>Mean Performance Difference</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for league in page.leagues %}
+    <tr>
+      <td>{{ league.name }}</td>
+      <td>{{ league.median }}</td>
+      <td>{{ league.mean }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
-**Performance Difference Calculation:**  
+
+<br/><br/>
+
+<h4>Performance Difference Calculation:</h4>
+
 \[
 \left( \frac{\text{Second Half Performance}}{\text{First Half Performance}} - 1 \right) \times 100\%
 \]
