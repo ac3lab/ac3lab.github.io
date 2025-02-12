@@ -16,26 +16,6 @@ thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jp
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
-leagues:
-  - name: Premier League
-    median: 20.78%
-    mean: 27.13%
-  - name: La Liga
-    median: 21.64%
-    mean: 36.83%
-  - name: Ligue 1
-    median: 23.25%
-    mean: 32.35%
-  - name: Série A
-    median: 18.61%
-    mean: 27.39%
-  - name: Bundesliga
-    median: 21.30%
-    mean: 26.35%
-  - name: Brasileirão
-    median: 32.14%
-    mean: 38.76%
-
 ---
 
 ---
@@ -67,7 +47,7 @@ Comparar a porcentagem de vitória de um time com a expectativa pitagórica pode
 
 <h3> <b> A Pesquisa</b> </h3>
 
-Os dados utilizados consistem em uma tabela com todos os resultados de partidas da temporada de cada liga, coletados no FBREF (<a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">). <br/><br/>
+Os dados utilizados consistem em uma tabela com todos os resultados de partidas da temporada de cada liga, coletados no <a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">FBREF</a>. <br/><br/>
 
 <h3> <b> Preparação dos dados e definição das porcentagens </b> </h3>
 
@@ -82,7 +62,7 @@ Após extração dos dados e uma limpeza básica da tabela, o resultado é um Da
 <center>Esse é o formato dos dados extraídos do FBREF. <br/><br/></center>
 
 
-Separamos os gols de cada equipe e definimos qual time foi o vencedor de cada partida do campeonato. Assim, podemos calcular a porcentagem de vitória -vitória vale 1, empate vale 0.5 e derrota vale nada-, e a soma desses valores é dividida pelo número de partidas jogadas. (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">). <br/><br/>
+Separamos os gols de cada equipe e definimos qual time foi o vencedor de cada partida do campeonato. Assim, podemos calcular a porcentagem de vitória -vitória vale 1, empate vale 0.5 e derrota vale nada-, e a soma desses valores é dividida pelo número de partidas jogadas. (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">Wikipedia</a>). <br/><br/>
 
 Depois de ajustar a tabela e calcular a porcentagem de vitória das equipes, separamos os dados entre Primeiro Turno e Segundo Turno, ou seja, antes e depois da rodada 20. A tabela do Primeiro Turno do campeonato fica mais ou menos assim: <br/><br/>
 
@@ -198,21 +178,45 @@ A partir do resultado do experimento, decidimos analisar quanto o rendimento dif
 <table>
   <thead>
     <tr>
-      <th>Ligas</th>
-      <th>Mediana da Diferença de Aproveitamento</th>
-      <th>Média da Diferença de Aproveitamento</th>
+      <th style="color: white;">Ligas</th>
+      <th style="color: white;">Mediana da Diferença de Aproveitamento</th>
+      <th style="color: white;">Média da Diferença de Aproveitamento</th>
     </tr>
   </thead>
   <tbody>
-    {% for league in page.leagues %}
     <tr>
-      <td>{{ league.name }}</td>
-      <td>{{ league.median }}</td>
-      <td>{{ league.mean }}</td>
+      <td style="color: white;">Premier League</td>
+      <td style="color: white;">20.78%</td>
+      <td style="color: white;">27.13%</td>
     </tr>
-    {% endfor %}
+    <tr>
+      <td style="color: white;">La Liga</td>
+      <td style="color: white;">21.64%</td>
+      <td style="color: white;">36.83%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Ligue 1</td>
+      <td style="color: white;">23.25%</td>
+      <td style="color: white;">32.35%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Série A</td>
+      <td style="color: white;">18.61%</td>
+      <td style="color: white;">27.39%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Bundesliga</td>
+      <td style="color: white;">21.30%</td>
+      <td style="color: white;">26.35%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Brasileirão</td>
+      <td style="color: white;">32.14%</td>
+      <td style="color: white;">38.76%</td>
+    </tr>
   </tbody>
 </table>
+
 
 <br/><br/>
 <h4>Cálculo da diferença de aproveitamento:</h4>  
