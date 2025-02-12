@@ -16,26 +16,6 @@ thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jp
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
-leagues:
-  - name: Premier League
-    median: 20.78%
-    mean: 27.13%
-  - name: La Liga
-    median: 21.64%
-    mean: 36.83%
-  - name: Ligue 1
-    median: 23.25%
-    mean: 32.35%
-  - name: Série A
-    median: 18.61%
-    mean: 27.39%
-  - name: Bundesliga
-    median: 21.30%
-    mean: 26.35%
-  - name: Brasileirão
-    median: 32.14%
-    mean: 38.76%
-
 ---
 
 ---
@@ -73,7 +53,7 @@ Comparing a team's winning percentage with its Pythagorean expectation can help 
 
 <h3> <b> The Research </b> </h3>
 
-The data used consists of a table with all match results from each league's season, collected from FBREF (<a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">). <br/><br/>
+The data used consists of a table with all match results from each league's season, collected from <a  href = "https://fbref.com/pt/comps/24/cronograma/Serie-A-Resultados-e-Calendarios">FBREF</a>. <br/><br/>
 
 <h3> <b> Data Preparation and Defining Percentages </b> </h3>
 
@@ -88,7 +68,7 @@ After extracting the data and performing basic table cleaning, the result is a D
 <center>This is the way the data is extracted from FBREF. <br/><br/></center>
 
 
-We separated each team's goals and determined the winner of each match. This allows us to calculate the winning percentage—where a win is worth 1, a draw is worth 0.5, and a loss is worth 0. The sum of these values is then divided by the number of games played (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">). <br/><br/>
+We separated each team's goals and determined the winner of each match. This allows us to calculate the winning percentage—where a win is worth 1, a draw is worth 0.5, and a loss is worth 0. The sum of these values is then divided by the number of games played (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">Wikipedia</a>). <br/><br/>
 
 After adjusting the table and calculating the teams' winning percentages, we split the data into the First Half and Second Half of the season, meaning before and after matchday 20. The table for the First Half of the season looks like this: <br/><br/>
 
@@ -202,21 +182,45 @@ Based on the experiment’s results, we decided to analyze how much team perform
 <table>
   <thead>
     <tr>
-      <th>Leagues</th>
-      <th>Median Performance Difference</th>
-      <th>Mean Performance Difference</th>
+      <th style="color: white;">Leagues</th>
+      <th style="color: white;">Median Performance Difference</th>
+      <th style="color: white;">Mean Performance Difference</th>
     </tr>
   </thead>
   <tbody>
-    {% for league in page.leagues %}
     <tr>
-      <td>{{ league.name }}</td>
-      <td>{{ league.median }}</td>
-      <td>{{ league.mean }}</td>
+      <td style="color: white;">Premier League</td>
+      <td style="color: white;">20.78%</td>
+      <td style="color: white;">27.13%</td>
     </tr>
-    {% endfor %}
+    <tr>
+      <td style="color: white;">La Liga</td>
+      <td style="color: white;">21.64%</td>
+      <td style="color: white;">36.83%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Ligue 1</td>
+      <td style="color: white;">23.25%</td>
+      <td style="color: white;">32.35%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Série A</td>
+      <td style="color: white;">18.61%</td>
+      <td style="color: white;">27.39%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Bundesliga</td>
+      <td style="color: white;">21.30%</td>
+      <td style="color: white;">26.35%</td>
+    </tr>
+    <tr>
+      <td style="color: white;">Brasileirão</td>
+      <td style="color: white;">32.14%</td>
+      <td style="color: white;">38.76%</td>
+    </tr>
   </tbody>
 </table>
+
 
 
 <br/><br/>
