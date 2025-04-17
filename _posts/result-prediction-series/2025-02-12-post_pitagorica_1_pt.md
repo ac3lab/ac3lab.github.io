@@ -20,7 +20,7 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
 ---
 
-<h2> <b> Inttrodução </b></h2>
+<h2> <b> Introdução </b></h2>
   
 <div  style="text-align: justify">
 

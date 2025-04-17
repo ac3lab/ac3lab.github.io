@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prevendo Resultados no Futebol - Parte 2"
-date: 2025-04-15 00:00:00
+date: 2000-01-01 00:00:00
 description:
 tags: Football; Analysis
 categories: Football; Analysis
@@ -17,9 +17,10 @@ Neste post, vamos apresentar mais um método para previsão de vitória. Desta v
 <h3> <b> Contextualização </b> </h3>
 <div style="text-align: justify">
 O dinheiro tem um grande papel no futebol moderno. Com o mercado de transferências cada vez mais inflacionado, mostra-se necessário gastar cada vez mais dinheiro nas janelas de transferências para manter a competitividade nas maiores ligas. A exponente profissionalização do esporte também possui grande influência no encarecimento do custo de manter um time, visto que atualmente são necessários mais gastos em estrutura e um ambiente de qualidade para se manter na frente dos demais.
-<br></br>
+<br> </br>
 Inclusive, estudos na Premier League e Championship (2011-2020) mostraram que existe uma correlação entre a folha salarial de um time e a posição que esse time alcança na tabela (Soccernomics, Simon Kuper e Stefan Szymansk). O dinheiro move o futebol. Por isso, vamos utilizar o valor de mercado dos clubes do Brasileirão para tentar prever o resultado final das partidas.
-<br></br>
+
+<br> </br>
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -41,7 +42,7 @@ O dataset tem duas partes principais:
 
 Vamos agora dar uma olhada no nosso dataset das partidas. Ele possui cerca de 19 campos, mas só os seguintes nos interessam:
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -49,14 +50,14 @@ Vamos agora dar uma olhada no nosso dataset das partidas. Ele possui cerca de 19
 <br><br>
 Iremos transformar odds em probabilidades. Para isso, não utilizamos apenas a fórmula (1/odds), pois a soma das probabilidades seria maior que 1. Esse excesso representa a margem de lucro das casas de apostas, então normalizamos as probabilidades para corrigi-la.
 
-<div  style="width: 50%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img3.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
 <h4>Vamos observar os dados de valor de mercado agora:</h4>
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -67,7 +68,7 @@ A coluna <code>TFM_Value</code> contém o valor de mercado em milhões de euros.
 
 Unimos os dois datasets, adicionando as colunas de valor de mercado do time da casa (<code>tmH</code>) e do visitante (<code>tmA</code>).
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -76,13 +77,13 @@ A variável que vamos utilizar para realizar a previsão de resultados é a raz�
 
 O motivo de utilizarmos o log é pelo fato de que a distribuição da razão entre <code>tmH</code> e <code>tmA</code> estar inclinada para a direita. A aplicação da função log leva a uma distribuição simétrica, o que melhora a performance. A imagem abaixo ajudam a visualizar isso.
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img6.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 </div>
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img7.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -97,7 +98,7 @@ Codificamos a coluna <code>res</code> com:
 </ul>
 Essa nova coluna será chamada de <code>winValue</code>.
 
-<div  style="width: 70%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img8.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -113,7 +114,7 @@ O modelo consiste em descobrirmos o \( \alpha_1 \) que é o ponto que divide a v
 Para uma melhor visualização dessa explicação, basta observar o gráfico abaixo, no qual o \( \alpha_1 \) é representado por \( \theta_1 \):
 
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -132,7 +133,7 @@ Agora que entendemos sobre o modelo, vamos preparar o seu treinamento. O dataset
 
 <br></br>
 
-<div  style="width: 100%; margin: 0 auto; text-align: center;">
+<div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
@@ -177,13 +178,17 @@ Uma coisa importante para se considerar ao analisar esses dados é o tamanho do 
 
 Vamos fazer duas tabelas cruzadas para entendermos melhor em quais tipos de jogos nosso modelo mais erra e acerta.
 
-<div  style="width: 50%; margin: 0 auto; text-align: center;">
+<br> </br>
+
+<div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Note que na coluna de empates o nosso modelo não previu empates, isso é causado pelo fato de que a razão entre o valor de mercado de dois times têm uma probabilidade muito baixa de se relacionar com empate, já que se imagina que os valores de mercados do times teriam que ser próximos entre si.
 
-<div  style="width: 50%; margin: 0 auto; text-align: center;">
+<br></br>
+
+<div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
