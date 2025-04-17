@@ -11,9 +11,8 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
 <p  align="justify">
 
-Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2025/post-value_market_2_pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/post-value_market_2_pt/"> clique aqui.</a>
 
-</p>
 
 <h2> <b> Introduction </b> </h2>
 <div style="text-align: justify">
@@ -24,7 +23,6 @@ In this post, we will present another method for predicting victory. This time, 
 <div style="text-align: justify">
 Money plays a significant role in modern football. With the transfer market becoming increasingly inflated, it is necessary to spend more money in the transfer windows to maintain competitiveness in the top leagues. The professionalization of the sport has also had a great influence on increasing the cost of maintaining a team, as more expenses are now needed for infrastructure and creating a quality environment to stay ahead of the competition.
 
-<br> </br>
 
 In fact, studies in the Premier League and Championship (2011-2020) have shown a correlation between a team's payroll and the position the team achieves in the table (Soccernomics, Simon Kuper and Stefan Szymanski). Money drives football. Therefore, we will use the market value of the clubs in the Brazilian league to try to predict the final result of the matches.
 
