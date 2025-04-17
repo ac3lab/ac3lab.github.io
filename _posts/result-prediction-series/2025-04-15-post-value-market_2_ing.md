@@ -26,7 +26,9 @@ Money plays a significant role in modern football. With the transfer market beco
 <br></br>
 In fact, studies in the Premier League and Championship (2011-2020) have shown a correlation between a team's payroll and the position the team achieves in the table (Soccernomics, Simon Kuper and Stefan Szymanski). Money drives football. Therefore, we will use the market value of the clubs in the Brazilian league to try to predict the final result of the matches.
 
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.png" class="img-fluid rounded z-depth-1" %}
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
+</div>
 </div>
 
 <h3> <b> Method </b> </h3>
@@ -34,7 +36,7 @@ In fact, studies in the Premier League and Championship (2011-2020) have shown a
 <h4><b>Data</b></h4>
 <div style="text-align: justify">
 We will use data from the 2023 season.
-<br></br>
+<b></b>
 The dataset has two main parts:
 <ul>
     <br>
@@ -44,35 +46,50 @@ The dataset has two main parts:
 
 Let’s take a look at our match dataset. It has about 19 fields, but only the following are relevant to us:
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img2.png" class="img-fluid rounded z-depth-1" %}
-<br><br>
+</div>
+
 <b>Legend:</b> home: Home team; away: Away team; res: Match result; oddHome: Home team's chance of victory; oddDraw: Chance of a draw; oddAway: Away team's chance of victory.
 <br><br>
 We will transform the odds into probabilities. To do this, we don't simply use the formula (1/odds), because the sum of the probabilities would exceed 1. This excess represents the bookmaker's margin, so we normalize the probabilities to correct it.
 
+<div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img3.png" class="img-fluid rounded z-depth-1" %}
+</div>
 </div>
 
 <h4>Now let's take a look at the market value data:</h4>
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
+</div>
+
 <div style="text-align: justify">
 The column <code>TFM_Value</code> contains the market value in millions of euros. For example, Palmeiras' market value is 138.4 million euros. These values represent the market values of the clubs as of July 20, 2024.
-<br></br>
+
+<b></b>
+
 We have merged the two datasets, adding the market value columns for the home team (<code>tmH</code>) and the away team (<code>tmA</code>).
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 
 The variable we will use to predict the results is the ratio between <code>tmH</code> (home team's market value) and <code>tmA</code> (away team's market value). More specifically, the <b>logarithm</b> of this ratio.
 
 The reason we use the log is that the distribution of the ratio between <code>tmH</code> and <code>tmA</code> is skewed to the right. Applying the log function makes the distribution symmetrical, which improves performance. The image below helps to visualize this.
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img6.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 </div>
 
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img7.pngg" class="img-fluid rounded z-depth-1" %}
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
+{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img7.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 So, the <code>logTmRatio</code> will be the variable we will use to predict the results. In other words, our independent variable.
 
@@ -85,7 +102,9 @@ We encoded the <code>res</code> column as:
 </ul>
 This new column will be called <code>winValue</code>.
 
+<div  style="width: 70%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img8.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 </div>
 
@@ -98,8 +117,9 @@ The model involves determining the \( \alpha_1 \), which is the point that separ
 
 For better visualization of this explanation, observe the graph below, where \( \alpha_1 \) is represented by \( \theta_1 \):
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
-
+</div>
 
 
 We used an Ordinal Logistic Regression model, which relates an ordinal response variable (<code>winValue</code>) to a continuous predictor (<code>logTmRatio</code>).
@@ -108,14 +128,15 @@ The model finds two cutoff points:
 <ul>
   <li><b>\( \alpha_1 \)</b>: separates home team victory from draw or away team victory</li>
   <li><b>\( \alpha_2 \)</b>: separates draw from away team victory</li>
+   <li><b>\( \beta \)</b>: tells us how this ratio influences the result of The coefficient of <code>logTmRatio</code></li>
 </ul>
-The coefficient of <code>logTmRatio</code> tells us how this ratio influences the result.
-<br></br>
+
 Now that we understand the model, let's prepare its training. The training dataset consists of the first 200 games of the season, and the remaining 180 games will be used as the test dataset.
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
-<br><br>
 <b>Model coefficients:</b><br>
 \(\beta \): -0.6309<br>
 \( \alpha_1 \): -0.1519<br>
@@ -128,23 +149,30 @@ Now that we understand the model, let's prepare its training. The training datas
 <div style="text-align: justify">
 From these coefficients, we calculate:
 <ul>
-  <li><b>Ph (home team victory)</b>: \( \frac{1}{1 + e^{-(( \alpha_1 - βx)}} \)</li>
-  <li><b>Pd (draw)</b>: \( \frac{1}{1 + e^{-(( \alpha_2 \) - βx)}} - Ph \)</li>
+  <li><b>Ph (home team victory)</b>: \( \frac{1}{1 + e^{-( \alpha_1 - βx)}} \)</li>
+  <li><b>Pd (draw)</b>: \( \frac{1}{1 + e^{-( \alpha_2  - βx)}} - Ph \)</li>
   <li><b>Pv (away team victory)</b>: \( 1 - Ph - Pd \)</li>
 </ul>
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img11.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 Let's add columns to compare the prediction results from Pinnacle and what we found.
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img12.png" class="img-fluid rounded z-depth-1" %}
+</div>
+
 </div>
 
 <h3> <b> Evaluation </b> </h3>
 <div style="text-align: justify">
 Remember that we used the first 200 games to train our model, so we will compare the prediction results from our test set.
 
+<div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img13.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 The most important value for us is highlighted: the average accuracy of results from both the bookmaker and our model. Notice that they are close, and even the bookmaker had less than 50% accuracy.
 
@@ -152,11 +180,15 @@ One important thing to consider when analyzing these data is the size of the tra
 
 Let’s create two cross tables to better understand in which types of games our model is most likely to make errors and succeed.
 
+<div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 Notice that in the draw column, our model did not predict draws, which is due to the fact that the market value ratio between two teams has a very low probability of resulting in a draw, since it is expected that the market values of the teams would need to be close to each other.
 
+<div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}
+</div>
 
 The numbers are quite scattered, but we can see that our model performs better than Pinnacle in predicting away team victories, while Pinnacle has most of its correct predictions in home team victories.
 
