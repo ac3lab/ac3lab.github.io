@@ -17,10 +17,10 @@ Neste post, vamos apresentar mais um método para previsão de vitória. Desta v
 <h3> <b> Contextualização </b> </h3>
 <div style="text-align: justify">
 O dinheiro tem um grande papel no futebol moderno. Com o mercado de transferências cada vez mais inflacionado, mostra-se necessário gastar cada vez mais dinheiro nas janelas de transferências para manter a competitividade nas maiores ligas. A exponente profissionalização do esporte também possui grande influência no encarecimento do custo de manter um time, visto que atualmente são necessários mais gastos em estrutura e um ambiente de qualidade para se manter na frente dos demais.
-<br> </br>
+
+
 Inclusive, estudos na Premier League e Championship (2011-2020) mostraram que existe uma correlação entre a folha salarial de um time e a posição que esse time alcança na tabela (Soccernomics, Simon Kuper e Stefan Szymansk). O dinheiro move o futebol. Por isso, vamos utilizar o valor de mercado dos clubes do Brasileirão para tentar prever o resultado final das partidas.
 
-<br> </br>
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -55,7 +55,7 @@ Iremos transformar odds em probabilidades. Para isso, não utilizamos apenas a f
 </div>
 </div>
 
-<h4>Vamos observar os dados de valor de mercado agora:</h4>
+<br>Vamos observar os dados de valor de mercado agora:</br>
 
 <div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
@@ -131,7 +131,7 @@ O modelo encontra dois pontos de corte:
 
 Agora que entendemos sobre o modelo, vamos preparar o seu treinamento. O dataset de treino consiste nos primeiros 200 jogos da temporada e os 180 jogos restantes serão usados como dataset de teste.
 
-<br></br>
+
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
@@ -178,7 +178,6 @@ Uma coisa importante para se considerar ao analisar esses dados é o tamanho do 
 
 Vamos fazer duas tabelas cruzadas para entendermos melhor em quais tipos de jogos nosso modelo mais erra e acerta.
 
-<br> </br>
 
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
@@ -186,7 +185,6 @@ Vamos fazer duas tabelas cruzadas para entendermos melhor em quais tipos de jogo
 
 Note que na coluna de empates o nosso modelo não previu empates, isso é causado pelo fato de que a razão entre o valor de mercado de dois times têm uma probabilidade muito baixa de se relacionar com empate, já que se imagina que os valores de mercados do times teriam que ser próximos entre si.
 
-<br></br>
 
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}

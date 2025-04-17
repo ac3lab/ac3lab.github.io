@@ -59,7 +59,7 @@ We will transform the odds into probabilities. To do this, we don't simply use t
 </div>
 </div>
 
-<h4>Now let's take a look at the market value data:</h4>
+<br>Now let's take a look at the market value data:</br>
 
 <div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
