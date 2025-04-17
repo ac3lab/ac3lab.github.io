@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Predicting Football Results - Part 2"
+title: "Predicting Match Results in Football - Part 2"
 date: 2025-04-15 00:00:00
 description:
 tags: Football; Analysis
