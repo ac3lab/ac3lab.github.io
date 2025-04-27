@@ -36,7 +36,7 @@ Nós iremos usar os dados da temporada 2023.
 O dataset tem duas partes principais:
 <ul>
     <br>
-  <li>Os dados das partidas: informações como time da casa, time visitante, resultado, data da partida e odds de vitória (casa, empate, visitante), extraídas do site <a  href = (https://football-data.co.uk/)">Footbal-data</a> e da casa de apostas Pinnacle.</li>
+  <li>Os dados das partidas: informações como time da casa, time visitante, resultado, data da partida e odds de vitória (casa, empate, visitante), extraídas do site <a  href = "(https://football-data.co.uk/)">Footbal-data</a> e da casa de apostas Pinnacle.</li>
   <li>O valor de mercado dos times do Brasileirão 2023, retirados do site <a  href = "(https://www.transfermarkt.com.br)">Transfermarkt</a>.</li>
 </ul>
 
@@ -55,7 +55,7 @@ Iremos transformar odds em probabilidades. Para isso, não utilizamos apenas a f
 </div>
 </div>
 
-<br>Vamos observar os dados de valor de mercado agora:</br>
+Vamos observar os dados de valor de mercado agora:
 
 <div  style="width: 50%; margin: 0 auto; text-align: center;">
 {% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
