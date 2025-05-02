@@ -1,0 +1,586 @@
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "About",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "Blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "Publications",
+          description: "Publications by categories in reversed chronological order.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-research-team",
+          title: "Research Team",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/profile/";
+          },
+        },{id: "post-predicting-match-results-in-football-part-2",
+        
+          title: "Predicting Match Results in Football - Part 2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post-value-market_2_ing/";
+          
+        },
+      },{id: "post-predicting-match-results-in-football-part-1",
+        
+          title: "Predicting Match Results in Football - Part 1",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post_pitagorica_1_en/";
+          
+        },
+      },{id: "post-são-garrafa-niterói-2024-analyzing-10-different-runners",
+        
+          title: "São Garrafa Niterói 2024 – Analyzing 10 different runners",
+        
+        description: "Analyzing the performance of 10 different runners from São Garrafa 2024",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post_sao_garrafa_en/";
+          
+        },
+      },{id: "post-analyzing-brazilian-football-signings-in-2024-offensive-sector-part-2",
+        
+          title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Part 2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_contratacoes_2_en/";
+          
+        },
+      },{id: "post-analyzing-brazilian-football-signings-in-2024-offensive-sector",
+        
+          title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_contratacoes_1_en/";
+          
+        },
+      },{id: "post-analysis-of-the-best-football-leagues",
+        
+          title: "Analysis of the Best Football Leagues",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_analise_ligas_en/";
+          
+        },
+      },{id: "post-2023-women-39-s-world-cup-analyzing-the-progress-of-the-brazilian-national-team",
+        
+          title: "2023 Women&#39;s World Cup - Analyzing the progress of the Brazilian national team...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_women_world_cup_4_en/";
+          
+        },
+      },{id: "post-2023-women-39-s-world-cup-analyzing-the-evolution-of-the-main-teams",
+        
+          title: "2023 Women&#39;s World Cup - Analyzing the evolution of the main teams",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_women_world_cup_3_en/";
+          
+        },
+      },{id: "post-2023-women-s-world-cup-promising-players",
+        
+          title: "2023 Women’s World Cup - Promising players",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_women_world_cup_2_en/";
+          
+        },
+      },{id: "post-2023-women-s-world-cup-analyzing-the-finalists",
+        
+          title: "2023 Women’s World Cup - Analyzing the finalists",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_women_world_cup_1_en/";
+          
+        },
+      },{id: "post-an-optimization-model-for-personalized-itineraries-insights-from-our-olympics-planner-2024",
+        
+          title: "An Optimization Model for Personalized Itineraries: Insights from our Olympics Planner 2024",
+        
+        description: "Discover how we developed the Olympics Planner 2024, an optimization model designed to create personalized itineraries for the Paris Olympic Games.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_olympics_planner_2024/";
+          
+        },
+      },{id: "post-in-depth-analysis-of-bayer-leverkusen-key-players",
+        
+          title: "In-Depth Analysis of Bayer Leverkusen - Key Players",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_leverkusen_3_en/";
+          
+        },
+      },{id: "post-in-depth-analysis-of-bayer-leverkusen-past-seasons-and-current-campaign",
+        
+          title: "In-Depth Analysis of Bayer Leverkusen - Past Seasons and Current Campaign",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_leverkusen_2_en/";
+          
+        },
+      },{id: "post-in-depth-analysis-of-bayer-leverkusen-xabi-alonso-39-s-playing-style",
+        
+          title: "In-Depth Analysis of Bayer Leverkusen - Xabi Alonso&#39;s Playing Style",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_leverkusen_1_en/";
+          
+        },
+      },{id: "post-brasileirão-2024-5rd-round",
+        
+          title: "Brasileirão 2024 - 5rd Round",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasileirao_5-en/";
+          
+        },
+      },{id: "post-rio-marathon-2023-exploratory-with-a-bit-of-statistics-and-predictive-estimation",
+        
+          title: "Rio Marathon 2023 – Exploratory with a bit of statistics and predictive estimation...",
+        
+        description: "Analyzing data from the 2023 Rio Marathon results and developing a simple performance prediction model",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_marathon_en/";
+          
+        },
+      },{id: "post-brasileirão-2024-4rd-round",
+        
+          title: "Brasileirão 2024 - 4rd Round",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasileirao_4-en/";
+          
+        },
+      },{id: "post-brasileirão-2024-3rd-round",
+        
+          title: "Brasileirão 2024 - 3rd Round",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasileirao_3-en/";
+          
+        },
+      },{id: "post-brasileirão-2024-2nd-round",
+        
+          title: "Brasileirão 2024 - 2nd Round",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasileirao_2-en/";
+          
+        },
+      },{id: "post-brasileirão-2024-first-round",
+        
+          title: "Brasileirão 2024 - First Round",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasileirao_1-en/";
+          
+        },
+      },{id: "post-carioca-championship-2024-final-second-leg",
+        
+          title: "Carioca Championship 2024 - Final - Second Leg",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_carioca_final2-en/";
+          
+        },
+      },{id: "post-carioca-championship-2024-final-first-leg",
+        
+          title: "Carioca Championship 2024 - Final - First Leg",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_carioca_final1-en/";
+          
+        },
+      },{id: "post-even-under-pressure-brazil-changes-the-game-with-substitutions-and-draw",
+        
+          title: "Even under pressure, Brazil changes the game with substitutions and draw",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasil_espanha-en/";
+          
+        },
+      },{id: "post-endrick-39-s-star-shines-and-brazil-beat-england",
+        
+          title: "Endrick&#39;s star shines and Brazil beat England",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_brasil_inglaterra-en/";
+          
+        },
+      },{id: "post-carioca-championship-2024-semifinal-second-leg",
+        
+          title: "Carioca Championship 2024 - Semifinal - Second Leg",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_carioca_semifinal_2-en/";
+          
+        },
+      },{id: "post-carioca-championship-2024-semifinal-first-leg",
+        
+          title: "Carioca Championship 2024 - Semifinal - First Leg",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_carioca_semifinal_1/";
+          
+        },
+      },{id: "post-the-odyssey-of-women-in-the-olympic-games-a-data-driven-tale",
+        
+          title: "The Odyssey of Women in the Olympic Games: A Data-Driven Tale",
+        
+        description: "A data-infused tribute on International Women&#39;s Day to female Olympians&#39; journey, showcased in our dashboard, from 1900 Paris to the 2024 Olympics, underlining ongoing strides towards sports gender equality.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_olympic_women/";
+          
+        },
+      },{id: "post-carioca-championship-2024-a-compiled-analysis",
+        
+          title: "Carioca Championship 2024 - A compiled analysis",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_carioca_compilado/";
+          
+        },
+      },{id: "post-running-part-2-how-a-machine-learning-model-allows-me-through-an-api-to-level-my-runs",
+        
+          title: "Running — Part 2: How a Machine Learning model allows me, through an...",
+        
+        description: "Deployed! Construction of an API for querying and evaluating the level of new races based on a previously trained clustering model",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_running_model/";
+          
+        },
+      },{id: "post-complex-networks-on-football",
+        
+          title: "Complex Networks on football",
+        
+        description: "Using Complex Networks to analyze and understand football matches.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_complex_network_football/";
+          
+        },
+      },{id: "post-analyzing-complex-network-metrics-from-the-1958-world-cup-final",
+        
+          title: "Analyzing Complex Network metrics from the 1958 World Cup final",
+        
+        description: "Investigating the 1958 World Cup final match between Brazil and Sweden using Complex Network metrics.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_58_worldcup_final/";
+          
+        },
+      },{id: "post-running-part-1-extracting-my-nike-run-club-data-and-exploring-in-python-to-evaluate-my-performance",
+        
+          title: "Running — Part 1: Extracting my Nike Run Club data and exploring in...",
+        
+        description: "How I used data science methods to evaluate my running performance",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/post_running/";
+          
+        },
+      },{id: "books-the-godfather",
+          title: 'The Godfather',
+          description: "",
+          section: "Books",handler: () => {
+              window.location.href = "/books/the_godfather/";
+            },},{id: "news-a-simple-inline-announcement",
+          title: 'A simple inline announcement.',
+          description: "",
+          section: "News",},{id: "news-a-long-announcement-with-details",
+          title: 'A long announcement with details',
+          description: "",
+          section: "News",handler: () => {
+              window.location.href = "/news/announcement_2/";
+            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+          description: "",
+          section: "News",},{id: "projects-almir-monteiro",
+          title: 'Almir Monteiro',
+          description: "Systems Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/almir/";
+            },},{id: "projects-amanda-azevedo",
+          title: 'Amanda Azevedo',
+          description: "Systems Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/amanda/";
+            },},{id: "projects-andre-schlaepfer",
+          title: 'Andre Schlaepfer',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/andre_schlaepfer/";
+            },},{id: "projects-balthazar-paixão",
+          title: 'Balthazar Paixão',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/balthazar/";
+            },},{id: "projects-daniel-barros",
+          title: 'Daniel Barros',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/daniel_barros/";
+            },},{id: "projects-eduardo-bezerra",
+          title: 'Eduardo Bezerra',
+          description: "Full Professor  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/eduardo_bezerra/";
+            },},{id: "projects-felipe-casalecchi",
+          title: 'Felipe Casalecchi',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/felipe_vilela/";
+            },},{id: "projects-glauco-amorim",
+          title: 'Glauco Amorim',
+          description: "Full Professor  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/glauco/";
+            },},{id: "projects-hugo-antunes",
+          title: 'Hugo Antunes',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/hugo/";
+            },},{id: "projects-jorge-soares",
+          title: 'Jorge Soares',
+          description: "Full Professor  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/jorge_soares/";
+            },},{id: "projects-letícia-maia",
+          title: 'Letícia Maia',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/leticia/";
+            },},{id: "projects-lucas-calmon",
+          title: 'Lucas Calmon',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/lucas_calmon/";
+            },},{id: "projects-lucas-tavares",
+          title: 'Lucas Tavares',
+          description: "Production Engineering  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/lucas_tavares/";
+            },},{id: "projects-matheus-melo",
+          title: 'Matheus Melo',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/matheus_melo/";
+            },},{id: "projects-claudio-miceli",
+          title: 'Claudio Miceli',
+          description: "Associate Professor  PESC/COPPE/UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/miceli/";
+            },},{id: "projects-nathália-tito",
+          title: 'Nathália Tito',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nathalia/";
+            },},{id: "projects-pedro-carvalho",
+          title: 'Pedro Carvalho',
+          description: "Eletronic Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pedro_carvalho/";
+            },},{id: "projects-pedro-gonzález",
+          title: 'Pedro González',
+          description: "Assistant Professor  PESC/COPPE/UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pedro_gonzalez/";
+            },},{id: "projects-pedro-siqueira",
+          title: 'Pedro Siqueira',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pedro_siqueira/";
+            },},{id: "safe_people-gabriel-reis",
+          title: 'Gabriel Reis',
+          description: "Pesquisador  SALab",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/gabrielReis/";
+            },},{id: "safe_people-glauco-amorim",
+          title: 'Glauco Amorim',
+          description: "Professor  Cefet/RJ",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/glauco/";
+            },},{id: "safe_people-letícia-maia",
+          title: 'Letícia Maia',
+          description: "Computer Science  Cefet/RJ",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/leticia_maia/";
+            },},{id: "safe_people-lucas-carlos",
+          title: 'Lucas Carlos',
+          description: "Sports Rights Strategy Manager  Globo",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/lucas_carlos/";
+            },},{id: "safe_people-lucas-tavares",
+          title: 'Lucas Tavares',
+          description: "Production Engineering  Cefet/RJ",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/lucas_giusti/";
+            },},{id: "safe_people-martin-paré",
+          title: 'Martin Paré',
+          description: "Analista de Dados  Red Bull Bragantino",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/martin/";
+            },},{id: "safe_people-matheus-caminha",
+          title: 'Matheus Caminha',
+          description: "Gerente de Ciência de Dados  Globo",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/matheus_caminha/";
+            },},{id: "safe_people-matheus-melo",
+          title: 'Matheus Melo',
+          description: "Computer Science  Cefet/RJ",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/matheus_mello/";
+            },},{id: "safe_people-pedro-gonzález",
+          title: 'Pedro González',
+          description: "Professor  PESC/COPPE/UFRJ",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/pedro_gonzalez/";
+            },},{id: "safe_people-téo-benjamin",
+          title: 'Téo Benjamin',
+          description: "Gerente de Dados  Clube de Regatas do Flamengo",
+          section: "Safe_people",handler: () => {
+              window.location.href = "/safe_people/teo_benjamin/";
+            },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%61%63%65@%63%6F%73.%75%66%72%6A.%62%72", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/company/ac3lab", "_blank");
+        },
+      },{
+      id: 'light-theme',
+      title: 'Change theme to light',
+      description: 'Change the theme of the site to Light',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("light");
+      },
+    },
+    {
+      id: 'dark-theme',
+      title: 'Change theme to dark',
+      description: 'Change the theme of the site to Dark',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("dark");
+      },
+    },
+    {
+      id: 'system-theme',
+      title: 'Use system default theme',
+      description: 'Change the theme of the site to System Default',
+      section: 'Theme',
+      handler: () => {
+        setThemeSetting("system");
+      },
+    },];
