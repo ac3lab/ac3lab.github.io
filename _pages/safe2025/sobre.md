@@ -23,7 +23,7 @@ O SAFE 2025 reafirma seu papel como um espaço essencial para discutir os rumos 
 
 **CEFET/RJ - Campus Maracanã** <br/>
 Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ<br/>
-Sala: Auditório CEFET
+Sala: Auditório V - CEFET/RJ
 
 ---
 
@@ -129,9 +129,9 @@ Garanta já o seu ingresso e participe de um dos maiores eventos sobre ciência 
 Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SAFE 2025 possível:
 
 <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <img src="/assets/img/safe/safe2025/apoio/cefet.png/" alt="CEFET-RJ" height="180">
-  <img src="/assets/img/safe/safe2025/apoio/ufrj.png/" alt="UFRJ" height="180">
-  <img src="/assets/img/safe/safe2025/apoio/sbc.jpeg" alt="SBC" height="150">
+  <img src="assets/img/safe/safe2025/apoio/cefet.png/" alt="CEFET-RJ" height="180">
+  <img src="assets/img/safe/safe2025/apoio/ufrj.png/" alt="UFRJ" height="180">
+  <img src="assets/img/safe/safe2025/apoio/sbc.jpeg" alt="SBC" height="150">
 </div>
 
 Quer ser um parceiro do SAFE 2025? Escreva para: **ace@cos.ufrj.br**
