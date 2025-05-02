@@ -551,11 +551,11 @@ ninja.data = [{
           window.open("mailto:%61%63%65@%63%6F%73.%75%66%72%6A.%62%72", "_blank");
         },
       },{
-        id: 'social-linkedin',
-        title: 'LinkedIn',
+        id: 'social-company_linkedin',
+        title: 'Company_linkedin',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.linkedin.com/in/company/ac3lab", "_blank");
+          window.open("https://www.linkedin.com/company/ac3lab", "_blank");
         },
       },{
       id: 'light-theme',
