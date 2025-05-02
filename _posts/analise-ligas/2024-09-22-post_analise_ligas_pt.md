@@ -16,7 +16,8 @@ thumbnail: assets/img/Posts_Images/2024-09-22-post_analise_ligas/ligas.png
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
-published: false
+hidden: true
+hidden_post: true
 
 ---
 

@@ -16,7 +16,8 @@ thumbnail: assets/img/Posts_Images/2024-04-15-post_brasileirao_1/Brasileirao_Ass
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
-published: false
+hidden: true
+hidden_post: true
 
 ---
 

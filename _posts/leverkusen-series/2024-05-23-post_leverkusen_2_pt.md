@@ -7,9 +7,8 @@ tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Hugo Antunes
-published: false
-
----
+hidden: true
+hidden_post: true
 
 ---
 <h2>Introdução</h2>
