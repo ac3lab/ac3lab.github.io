@@ -1,5 +1,8 @@
 "Journal":
   color: "#f51505"
 
-"Proceedings":
-    color: "#08b0bf"
+"PhysRev":
+  url: https://journals.aps.org/
+
+"Vision":
+  color: "#009f36"
