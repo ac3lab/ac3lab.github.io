@@ -1,8 +1,11 @@
-"Journal":
-  color: "#f51505"
+"SBPO":
+  color: "#214ea3"
+  url: https://www.sobrapo.org.br/sbpo-simposio-brasileiro-de-pesquisa-operacional
 
-"PhysRev":
-  url: https://journals.aps.org/
+"SBBD":
+  color: "#0DB46D"
+  url: https://sbbd.org.br/
 
-"Vision":
-  color: "#009f36"
+"FAME":
+  color: "grey"
+  url: https://salabufmg.github.io/FAME24/

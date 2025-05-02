@@ -1,12 +1,13 @@
 ---
 layout: post
 title: "Prevendo Resultados no Futebol - Parte 2"
-date: 2000-01-01 00:00:00
+date: 2025-04-15 00:00:00
 description:
 tags: Football; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jpg
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
+published: false
 ---
 
 <h2> <b> Introdução </b> </h2>

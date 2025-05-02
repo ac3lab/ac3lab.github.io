@@ -16,6 +16,9 @@ thumbnail: assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/thumb_women
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
+published: false
+
+
 ---
 
 ---

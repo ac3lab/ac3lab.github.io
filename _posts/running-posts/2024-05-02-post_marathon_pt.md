@@ -7,6 +7,8 @@ tags: Running; Rio Marathon; Python; MachineLearning
 categories: Running; Rio Marathon; Python; MachineLearning
 thumbnail: assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg
 author: Ace Laboratory Running Team
+published: false
+
 
 ---
 
