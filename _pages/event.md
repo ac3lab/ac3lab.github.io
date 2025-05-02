@@ -9,7 +9,7 @@ horizontal: false
 ---
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div  style="text-align: justify">
@@ -139,7 +139,7 @@ Alguns temas em destaque:
 A primeira edição do SAFE foi um sucesso! Com ingressos esgotados, o evento contou com palestras de profissionais da Globo, Red Bull Bragantino e Clube de Regatas do Flamengo, além de apresentações de nossos alunos e uma mesa redonda sobre futebol, ciência e mídia.
 
 <div style="width: 100%; text-align: center;">
-  {% include figure.html path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
+  {% include figure.liquid path="assets/img/Safe/safe2024.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Confira mais fotos e detalhes na nossa [galeria do SAFE 2024](#).

@@ -10,7 +10,7 @@ author: Ace Laboratory Football Team - Nathália Tito
 
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 No dia 15 de dezembro de 2024 aconteceu a última edição da São Garrafa, corrida bem tradicional da cidade de Niterói (RJ). O evento, que contou com os trajetos de 5km e 15km, é conhecido por ter grandes desafios no percurso de maior distância: são quase 4km de subida, e em determinados pontos fica bastante íngreme.
@@ -52,7 +52,7 @@ Os dados extraídos pelo Strava e cedidos pelos participantes foram levados para
 No gráfico abaixo, é possível visualizar o desempenho de cada participante (média do pace) por distância percorrida:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_2.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 De cara, os corredores 1, 5, 6 e 10 chamam atenção por manterem um baixo pace durante todo o trajeto - em média 4'30’'. Acaso? Provavelmente não, porque esses foram justamente os 4 corredores que treinaram o percurso da prova antes dela acontecer, e para simplificar o entendimento daqui pra frente, chamaremos esse grupo de “corredores conhecedores do percurso”. Esse ponto escancara o quão importante é a preparação e conhecimento do trajeto antes de uma prova desafiadora.
@@ -66,7 +66,7 @@ Notem, que entre os quilômetros 5 e 8, todos os atletas apresentaram uma diminu
 Neste outro gráfico, é possível visualizar também o desempenho de cada participante, mas agora por tempo de prova. Mais uma vez, destaque para os corredores conhecedores do percurso por, obviamente, serem os corredores a finalizarem a prova mais rápido.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_1.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 No geral, os corredores conhecedores do percurso estiveram a uma velocidade de caminhada (aqui foi estabelecido convenção de 5km/h) menos vezes quando comparados aos não conhecedores. Outro ponto que reforça a ideia de que atletas “mais treinados” naturalmente têm melhor desempenho, está no tempo de experiência. Os corredores conhecedores do percurso totalizam, em média, 5 anos de experiência na corrida cada, enquanto que os não conhecedores totalizam em média 1 ano.
@@ -76,7 +76,7 @@ No geral, os corredores conhecedores do percurso estiveram a uma velocidade de c
 Também foi possível comparar o desempenho por faixa de elevação (em metros), como mostra o gráfico abaixo. Os corredores 1 e 5 chamam a atenção por suas pequenas oscilações de ritmo, na medida que o patamar de elevação vai ficando mais alto, evidenciando capacidade de manter o ritmo quase que constante, como mostrado acima. Um estudo realizado anteriormente aborda esse ponto com um pouco mais de profundidade, sugerindo que corredores mais experientes apresentam menos pontos de mudança em suas séries de velocidade, ou seja, menos mudanças bruscas. O artigo completo encontra-se <a href="https://sol.sbc.org.br/index.php/sbbd/article/view/30754">aqui</a>!
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_3.png" class="img-fluid rounded z-depth-1" %}
 
 <h2>Discussão</h2>
 

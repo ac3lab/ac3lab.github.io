@@ -24,7 +24,7 @@ No último fim de semana (21 e 22 de abril), aconteceu a 3ª rodada do Campeonat
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/rbb_cor.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/rbb_cor.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -43,7 +43,7 @@ No sábado, RB Bragantino e Corinthians se enfrentaram no Estádio Nabi Abi Ched
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/pal_fla.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/pal_fla.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -59,7 +59,7 @@ No Allianz Parque, o Palmeiras recebeu o Flamengo em um jogo que entregou menos 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/bot_juv.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/bot_juv.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -76,7 +76,7 @@ No Nilton Santos, o Botafogo dominou o jogo completamente contra o Juventude. Al
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/gre_cui.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/gre_cui.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

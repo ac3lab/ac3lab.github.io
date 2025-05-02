@@ -64,7 +64,7 @@ In the graphs below, you can get a better idea of how the finalists played in th
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pass_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pass_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -74,7 +74,7 @@ In this second graph, we show in which areas of the pitch each team applies the 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pressure_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pressure_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -86,7 +86,7 @@ In the next section, we'll use shot maps to analyze the attacking performance of
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/spain_shot_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/spain_shot_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -94,7 +94,7 @@ In the next section, we'll use shot maps to analyze the attacking performance of
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/england_shot_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/england_shot_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

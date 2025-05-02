@@ -16,7 +16,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 <h2>Introduction</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -31,7 +31,7 @@ The Carioca Championship continues to surprise the Brazilian football, with Flum
 <h3>Match Analysis</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flaflugame.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flaflugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -48,7 +48,7 @@ The data showed complete dominance by Tite's team on the field, both in the defe
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flafluplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/flafluplayers.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 One of the ways to see how Fluminense played defensively was the positioning of Jhon Arias, a player who normally acts as a winger in an offensive way, ended up staying for most of the game on the tricolor field, playing on the right flank as a defender and unable to exploit his best qualities, his dribbling and his important passes.
@@ -69,7 +69,7 @@ It is also worth noting the performance of striker Pedro, who took advantage of 
 <h3>Match Analysis</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/vasconovaiguacugame.png" class="img-fluid rounded z-depth-1" %}
 </div>
 <p align="justify">
 The two teams engaged in a match that, despite having only two goals, was marked by a large number of shots from both sides. The total number of shots is impressive for a semifinal match, especially when considering that the clash between Flamengo and Fluminense had only 31 shots, nearly 1.5 times fewer than the encounter between Vasco da Gama and Nova Iguaçu, which featured 45 shots total by the end of the game.
@@ -86,7 +86,7 @@ For Nova Iguaçu, on the other hand, it was not a game much different from the u
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/vasconovaiguacuplayers.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-15-post_carioca_semifinal_1/en/vasconovaiguacuplayers.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

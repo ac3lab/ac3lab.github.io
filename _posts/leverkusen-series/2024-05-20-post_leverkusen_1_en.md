@@ -20,7 +20,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 <div style="text-align: justify">
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/last_minute.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/last_minute.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
@@ -38,13 +38,13 @@ In the defensive sector, Alonso's team applies high pressure during the opponent
 Additionally, Leverkusen employs counter-pressing, commonly known as Gegenpressing. Xabi needed only a few months to shape and solidify this defensive tactic, establishing one of the most robust defenses in the league. By the end of the Bundesliga, they had achieved nearly 54 recoveries per match using this tactical approach.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/recoveries.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/recoveries.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 The team also conceded the fewest goals in the entire Bundesliga, allowing only 24 goals, proving the efficiency of their playing style.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <h3>Bayer Leverkusen with possession</h3>
@@ -52,7 +52,7 @@ The team also conceded the fewest goals in the entire Bundesliga, allowing only 
 Classified as a middle ground between Pep Guardiola's positional play and the relational play seen in Fernando Diniz's Fluminense, Xabi Alonso trains the team for a build-up that depends on the current formation on the field. The playing style, which involves many passing exchanges, is evident in the team's passing network, where we can see the formation of "triangles" that allow multiple options for a player to work the ball.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.<br/><br/>  
@@ -62,20 +62,20 @@ In that way, the wing-backs have a much more significant role in the game, both 
 By employing this tactic, Xabi Alonso has maximized the individual technical skills of his wide players, such as Frimpong and Grimaldo, who have contributed to 39 goals in the Bundesliga. In other words, nearly half of the team's goals have come through these two players.<br/><br/>  
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
 The use of this tactic is evidenced by the number of passes made by Bayer, the highest in the Bundesliga in the 2023-24 season. Additionally, the four advanced players move a lot, preventing the opposing defenders from pushing up their defensive line.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Passes_per_match.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Passes_per_match.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 However, it is also common to see the team building up play with three defenders, utilizing the flanks with advanced wing-backs (usually Grimaldo and Frimpong), midfielders and forwards giving closer non-positional options, through midfield with quick transitions to attack generally architected by Wirtz or with direct passes from the defense to the attack into the empty spaces created by the team’s movementation. This is exemplified by the high number of progressive passes per game.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/progressive_passes.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/progressive_passes.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 If the opponents remain too rigid centrally, the team starts forming narrow diamond patterns, allowing Bayer to continue doing their short and dynamic passes to reach the final third of the field. Another possibility is that if the opponents press Leverkusen's short passing exchanges, the ball is moved to the opposite flank, which will have plenty of free space.<br/><br/>
@@ -83,7 +83,7 @@ If the opponents remain too rigid centrally, the team starts forming narrow diam
 Moreover, the German team doesn't rely solely on movement and masterful passing to score goals this season, since approximately 10% of all goals scored by Xabi Alonso's team have come from set-pieces. Additionally, goals from counter-attacks are also common for the German side when necessary.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
@@ -94,14 +94,14 @@ The final third of the German team's attack is almost unpredictable. The advance
 Such offensive prowess not only leads to a flurry of goals and chances created for the German team but also contributes to the team's unbeaten streak, which, when being behind on the scoreboard, always finds a way, often through the tactics taught by Xabi Alonso, combined with a bit of luck, to score goals and maintain their unbeaten record intact for all season.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Creating_Actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Creating_Actions.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 A common tactic is as follows: when reaching the final third of the field, the wing-backs advance and the team's formation shifts to a 3-2-5, with the central players pushing up to receive the ball and create more options for playmaking, thus creating a numerical advantage that makes the team unpredictable and overwhelms the opposing defense. During this advancement, other players move up to occupy the midfield.
 The team is so efficient that it ranks in the top 3 in chances created from open play, but in comparison, has few chances from set-pieces.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/live_dead_balls.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/live_dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <h3>Weakness</h3>
@@ -110,14 +110,14 @@ The team is so efficient that it ranks in the top 3 in chances created from open
 Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag in the UEFA Europa League, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/possession_lost.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/possession_lost.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 But, as we can see by the team’s results in the season and their goal difference stats, the risk is worth taking.
 <br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Difference.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goal_Difference.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <h2>Conclusion</h2>

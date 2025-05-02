@@ -13,7 +13,7 @@ hidden: true
 <h2>Introdução</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -30,7 +30,7 @@ Após muita espera, nesse sábado tivemos os jogos de ida da grande final do Cam
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-03-post_carioca_final1/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-03-post_carioca_final1/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -56,7 +56,7 @@ Além dos bons números já citados, o Rubro Negro realizou mais de 75% dos seus
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-03-post_carioca_final1/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-03-post_carioca_final1/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

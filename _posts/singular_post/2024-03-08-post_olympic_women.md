@@ -26,22 +26,22 @@ From the silken swimsuits of the 1912 British swim team to the defiant establish
 Our historical data shines a light on these formative years, displaying not just the numbers, but the narratives they represent—of initial hesitancy giving way to gradual acceptance.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/1.png" class="img-fluid rounded z-depth-1" %}
 
 
 <p align="justify">
 Fast forward to the present, and we see a remarkable transformation. The recent Olympiads (2020) underscore a record-breaking surge, with women constituting over 49% of competitors winning medals—a testament to the indomitable spirit of countless female Olympians.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/2.png" class="img-fluid rounded z-depth-1" %}
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/3.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 As we marvel at these visual testaments of progress, it's clear the journey is far from over. Even as we acknowledge the soaring participation rates and celebrate the barriers broken, our data reveals a patchwork of investment in female athletes across nations. Some countries lead with burgeoning enthusiasm, while others reveal a hesitance to embrace the full potential of their female contenders.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/4.png" class="img-fluid rounded z-depth-1" %}
 
 
 <p align="justify">

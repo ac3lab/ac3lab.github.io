@@ -58,7 +58,7 @@ Graph 1 shows all of Paralluelo's progressive actions during the competition. It
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -70,7 +70,7 @@ We also need to mention another important attribute of Paralluelo's for his team
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_defensive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_defensive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -90,7 +90,7 @@ In all, Linda had 47 progressive actions during the competition, making her the 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -100,7 +100,7 @@ In addition, her passing radar (graph 4) shows that Linda's touches are mostly d
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_sonar_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_sonar_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -118,7 +118,7 @@ In addition, there is a considerable discrepancy in passing accuracy between the
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/comparative_radar.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/comparative_radar.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

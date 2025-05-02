@@ -47,13 +47,13 @@ O primeiro gráfico exibe linhas médias em ambos os eixos, o que ajuda a identi
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
 <center>Gráfico 1. Gols Esperados em 90 minutos x Chutes em 90 minutos<br/><br/></center>
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -75,7 +75,7 @@ Por fim, escolhemos outro gráfico para visualizar a participação com bola e a
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/passes_vs_touches.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/passes_vs_touches.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

@@ -17,7 +17,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 <h2>Introduction</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -32,7 +32,7 @@ Last Sunday, Flamengo and Nova Iguaçu played the final match of the 2024 Carioc
 
 <h3>Match Analysis</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/en/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/en/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -48,7 +48,7 @@ Although the Gávea team followed the high defensive standard shown throughout t
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/en/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/en/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

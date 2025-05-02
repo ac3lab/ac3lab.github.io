@@ -9,7 +9,7 @@ author: Nathália Tito
 thumbnail: assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/1.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Anyone who knows me knows that I love sport. Since I was a kid, I always was influenced to practice something and never went long without it. Some sports I've played: swimming, futsal, handball (I still play) and now running, my most recent addiction.
@@ -38,7 +38,7 @@ I used a program called nrc-exporter (created by some curious programmer), and i
 2) Open Developer tools > Application. Then just copy the token like this image:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/2.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/2.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Now, back in the terminal, just run nrc-exporter with the token, like this:  
@@ -48,7 +48,7 @@ nrc-exporter -t token
 
 You will see this execution:  
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/3.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/3.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 It's ready! All data will be downloaded to a folder called activities and will be inside the folder where you run the script. The file's format will be .json.
@@ -68,11 +68,11 @@ I loaded the files in a jupyter notebook to do the analysis. As all files are .j
 After the preprocessing, creating, selecting and transforming the variables — as the average pace, for example, which comes in total minutes and not in minutes'seconds' how we normally use —, I wanted to analyze, my final dataframe looked like this:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/4.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/4.webp" class="img-fluid rounded z-depth-1" %}
 
 To contextualize, some descriptive statistics:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/5.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/5.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 I analyzed a sample of races in the period of 137 days (a little over 4 months). During this period, I ran 31 races totaling 180km! I also calculated the interval average in days between one race and another. Excluding the period that I was unable to run (20 days), that I understood as an outlier that shouldn't be taken in consideration, this interval was 4 days.
@@ -84,7 +84,7 @@ Considering these 31 races, the average distance was 5.81km and my average pace 
 
 Let's to the graphical analyses:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/6.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/6.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The graph above illustrates the evolution of my average pace throughout the runs and the overall average. We can observe that in my recent runs, my pace has been above this average.
@@ -94,17 +94,17 @@ The graph above illustrates the evolution of my average pace throughout the runs
 As I mentioned above, I created a variable called "days without running" to try to understand if my pace increased with many days without running. The peaks on the gray line follow the peaks on the purple line in the graph below, confirming what I already suspected: an extended period without exercise may be one of the variables affecting my time.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/7.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/7.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Something a little obvious, but it's also cool to visualize: the opposite trajectory of the average pace and average speed.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/8.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/8.webp" class="img-fluid rounded z-depth-1" %}
 
 Let's follow:  
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/9.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/9.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The graph above shows the progression of distances in my runs. The majority of my runs are in the range of 5km, and when I run more than that, I run the double. This is what pushes the average up.
@@ -112,7 +112,7 @@ The graph above shows the progression of distances in my runs. The majority of m
 
 When crossing the average pace data with the distance, we have:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/10.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/10.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The distribution of my pace in the 5km runs is varied, which doesn't surprise me. Another thing I confirmed looking the image above was the increase in my pace as I increase the distance. There's another aspect that I need to work on.
@@ -120,8 +120,8 @@ The distribution of my pace in the 5km runs is varied, which doesn't surprise me
 
 To analyze calories, I plotted two graphs:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/11.webp" class="img-fluid rounded z-depth-1" %}
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images//12.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/11.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images//12.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The first one makes clear the positive correlation between calories and distance, meaning if you want to burn more calories, run more (remembering that correlation doesn't imply causality, but in this case, I know it does). The second one doesn't show a correlation between calories and speed. Note that many times I burned almost the same amount of calories, running at different average speeds (probably during the many 5km runs).
@@ -131,11 +131,11 @@ The first one makes clear the positive correlation between calories and distance
 Another feeling I had was that on cloudy days, my performance was a bit better. No sun, and a little breeze, you know how it is... But that's not what the data showed me. The boxplot below suggests that on "clear days," the distribution of my speed is the "best":
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/13.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/13.webp" class="img-fluid rounded z-depth-1" %}
 
 Finally, the distribution of elevation and descent on my routes:
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-06-post_running-Images/14.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/14.webp" class="img-fluid rounded z-depth-1" %}
 
 Relevant insights
 

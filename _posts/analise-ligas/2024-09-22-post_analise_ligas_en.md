@@ -46,7 +46,7 @@ The following bar chart shows the total Market Value of the teams by league and 
 <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/marketvalue.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/marketvalue.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -68,7 +68,7 @@ Now that we understand what PUM is, let’s explain why it is useful. Our goal i
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/graficoACD.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/graficoACD.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -86,7 +86,7 @@ The following tables show the number of defeats of Brazilian clubs by stage in t
 Brazil's dominance in the biggest club competition in South America is undeniable. In the last five finals, all featured Brazilian teams, three were entirely Brazilian, and five titles went to Brazil. The technical level difference between Brazil's top clubs and other South American teams can be attributed to several factors. Besides other countries being smaller and poorer than Brazil, some are going through major economic crises, such as Argentina, the country with the most titles in the "Glória Eterna" tournament. But Brazil has dominated in recent years, and the trend is likely to continue. Another possible analysis is the large number of talents exported from "smaller" Latin American countries to high-level Brazilian football, weakening their leagues' competitiveness against Brazilian giants. <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaliba.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaliba.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -96,7 +96,7 @@ Brazil's dominance in the biggest club competition in South America is undeniabl
 In the Copa Sulamericana, the scenario is different: in the last five finals, Brazil has "only" one title and three participations (with one all-Brazilian final). Why is this different from Libertadores? Could the large number of spots given to Brasileirão teams mean that weaker and less experienced teams are playing and losing early? However, this scheme may be about to change. Since 2019, the number of Brazilian clubs dropping out in the group stage has significantly decreased, replaced by later-stage eliminations. Additionally, since the all-Brazilian final in 2021, Brazil has participated in every final, although without further titles. <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelasula.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelasula.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -111,7 +111,7 @@ Another interesting observation: Spain had a 100% success rate in finals, winnin
  <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelachamp.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelachamp.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -123,7 +123,7 @@ The biggest difference between the competitions is in England’s performance: i
  <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaeuro.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaeuro.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

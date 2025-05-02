@@ -39,7 +39,7 @@ The Pythagorean expectation is an analytical formula initially used in baseball.
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
 
 
 </div>
@@ -61,7 +61,7 @@ After extracting the data and performing basic table cleaning, the result is a D
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image2.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -74,7 +74,7 @@ After adjusting the table and calculating the teams' winning percentages, we spl
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image3.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -84,7 +84,7 @@ To finalize our table, we calculate the Pythagorean expectation and merge the Fi
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image4.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -106,7 +106,7 @@ As seen in the image below, the Pythagorean expectation in the first half of the
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image5.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image5.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -117,7 +117,7 @@ But what we really want to know is: which of these statistics has a stronger rel
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image6.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image6.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -128,7 +128,7 @@ As seen in the highlighted values, <b>pythagorean_x</b> has a stronger correlati
 <h4> <b> Bundesliga </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image7.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image7.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -137,7 +137,7 @@ As seen in the highlighted values, <b>pythagorean_x</b> has a stronger correlati
 <h4> <b> La Liga </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image8.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image8.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -146,7 +146,7 @@ As seen in the highlighted values, <b>pythagorean_x</b> has a stronger correlati
 <h4> <b> Serie A </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image9.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image9.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -155,7 +155,7 @@ As seen in the highlighted values, <b>pythagorean_x</b> has a stronger correlati
 <h4> <b> Ligue One </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image10.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image10.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -167,7 +167,7 @@ So far, everything aligns with expectations. However, things get interesting whe
 <h4> <b> Brasileirão </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image11.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image11.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -234,7 +234,7 @@ Based on the experiment’s results, we decided to analyze how much team perform
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image12.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image12.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

@@ -30,7 +30,7 @@ Round 5 of the Campeonato Brasileiro has come to an end, and it was a shorter on
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -46,7 +46,7 @@ At the Nilton Santos Stadium, Botafogo hosted Bahia in a very busy match. In the
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/cap_vas.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/cap_vas.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -60,7 +60,7 @@ At the Ligga Arena, Athletico Paranaense hosted Vasco in an almost one-sided mat
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/flu_cam.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/flu_cam.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

@@ -23,7 +23,7 @@ Inclusive, estudos na Premier League e Championship (2011-2020) mostraram que ex
 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
@@ -43,7 +43,7 @@ O dataset tem duas partes principais:
 Vamos agora dar uma olhada no nosso dataset das partidas. Ele possui cerca de 19 campos, mas só os seguintes nos interessam:
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <b>Legenda:</b> home: Time mandante; away: Time visitante; res: Resultado da partida; oddHome: Chance da vitória do time mandante; oddDraw: Chance do empate; oddAway: Chance da vitória do time visitante.
@@ -51,14 +51,14 @@ Vamos agora dar uma olhada no nosso dataset das partidas. Ele possui cerca de 19
 Iremos transformar odds em probabilidades. Para isso, não utilizamos apenas a fórmula (1/odds), pois a soma das probabilidades seria maior que 1. Esse excesso representa a margem de lucro das casas de apostas, então normalizamos as probabilidades para corrigi-la.
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img3.png" class="img-fluid rounded z-depth-1" %}
 </div>
 </div>
 
 Vamos observar os dados de valor de mercado agora:
 
 <div  style="width: 50%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img4.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -69,7 +69,7 @@ A coluna <code>TFM_Value</code> contém o valor de mercado em milhões de euros.
 Unimos os dois datasets, adicionando as colunas de valor de mercado do time da casa (<code>tmH</code>) e do visitante (<code>tmA</code>).
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
@@ -78,13 +78,13 @@ A variável que vamos utilizar para realizar a previsão de resultados é a raz�
 O motivo de utilizarmos o log é pelo fato de que a distribuição da razão entre <code>tmH</code> e <code>tmA</code> estar inclinada para a direita. A aplicação da função log leva a uma distribuição simétrica, o que melhora a performance. A imagem abaixo ajudam a visualizar isso.
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img6.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img6.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 </div>
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img7.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img7.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Então o <code>logTmRatio</code> será a variável que iremos utilizar para a previsão de resultados. Em outras palavras, a nossa variável independente.
@@ -99,7 +99,7 @@ Codificamos a coluna <code>res</code> com:
 Essa nova coluna será chamada de <code>winValue</code>.
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img8.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img8.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 </div>
@@ -115,7 +115,7 @@ Para uma melhor visualização dessa explicação, basta observar o gráfico aba
 
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
@@ -134,7 +134,7 @@ Agora que entendemos sobre o modelo, vamos preparar o seu treinamento. O dataset
 
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <b>Coeficientes do modelo:</b><br>
@@ -154,12 +154,12 @@ A partir desses coeficientes, calculamos:
 </ul>
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img11.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img11.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Vamos adicionar colunas que compare os resultados de previsão da Pinnacle e o que encontramos.
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img12.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img12.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 </div>
@@ -169,7 +169,7 @@ Vamos adicionar colunas que compare os resultados de previsão da Pinnacle e o q
 Lembrando que utilizamos os primeiros 200 jogos para treinar o nosso modelo, por isso vamos comparar os resultados de previsão do nosso conjunto de teste.
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img13.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img13.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 O valor que mais nos interessa está destacado que é a média de acertos de resultados da casa de apostas e do nosso modelo. Repare que são valores próximos e até mesmo a casa de apostas teve menos de 50% de acerto.
@@ -180,14 +180,14 @@ Vamos fazer duas tabelas cruzadas para entendermos melhor em quais tipos de jogo
 
 
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Note que na coluna de empates o nosso modelo não previu empates, isso é causado pelo fato de que a razão entre o valor de mercado de dois times têm uma probabilidade muito baixa de se relacionar com empate, já que se imagina que os valores de mercados do times teriam que ser próximos entre si.
 
 
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Os números estão bem dispersos, mas percebesse que o nosso modelo acerta mais do que o Pinnacle no quesito vitória do visitante, enquanto a Pinnacle tem a maioria dos seus acertos nas vitórias dos times da casa.

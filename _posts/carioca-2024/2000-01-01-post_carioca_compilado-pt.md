@@ -13,7 +13,7 @@ hidden: true
 <h2>Introdução</h2>
 
 <div style="width: 65%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -21,13 +21,13 @@ O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz 
 </div>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
 <h2>Flamengo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -45,7 +45,7 @@ Com isso vimos o domínio do Flamengo no Campeonato Carioca 2024, o time se most
 
 <h2>Nova Iguaçu</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -65,7 +65,7 @@ Conquistando 24 pontos, com sete vitórias, três empates e apenas uma única de
 
 <h2>Vasco</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -85,7 +85,7 @@ Para as semifinais, o Vasco precisará manter a qualidade que o seu setor de mei
 
 <h2>Fluminense</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 <div style="text-align: justify">
 
@@ -104,7 +104,7 @@ Apesar da defesa de qualidade, o ataque tricolor não acompanhou o rendimento qu
 
 <h2>Botafogo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

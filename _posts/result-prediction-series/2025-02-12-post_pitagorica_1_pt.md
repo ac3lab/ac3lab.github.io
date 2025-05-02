@@ -33,7 +33,7 @@ A expectativa pitagórica é uma fórmula analítica utilizada inicialmente no b
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
 
 
 </div>
@@ -55,7 +55,7 @@ Após extração dos dados e uma limpeza básica da tabela, o resultado é um Da
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image2.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -68,7 +68,7 @@ Depois de ajustar a tabela e calcular a porcentagem de vitória das equipes, sep
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image3.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -78,7 +78,7 @@ Para finalizar nossa tabela, calculamos a expectativa pitagórica e juntamos as 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image4.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -100,7 +100,7 @@ Como podemos ver na imagem abaixo, a expectativa pitagórica no primeiro turno d
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image5.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image5.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -111,7 +111,7 @@ Mas o que nós queremos saber é: qual das duas estatísticas têm uma relação
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image6.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image6.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -123,7 +123,7 @@ Esse é o resultado da Premier League. Qual seria o resultado em outras ligas? <
 <h4> <b> Bundesliga </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image7.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image7.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -132,7 +132,7 @@ Esse é o resultado da Premier League. Qual seria o resultado em outras ligas? <
 <h4> <b> La Liga </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image8.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image8.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -141,7 +141,7 @@ Esse é o resultado da Premier League. Qual seria o resultado em outras ligas? <
 <h4> <b> Serie A </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image9.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image9.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -150,7 +150,7 @@ Esse é o resultado da Premier League. Qual seria o resultado em outras ligas? <
 <h4> <b> Ligue One </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image10.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image10.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -162,7 +162,7 @@ Por enquanto, está tudo dentro do esperado. O interessante é quando começamos
 <h4> <b> Brasileirão </b></h4>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image11.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image11.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -229,7 +229,7 @@ A partir do resultado do experimento, decidimos analisar quanto o rendimento dif
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image12.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image12.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

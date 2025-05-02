@@ -9,7 +9,7 @@ thumbnail: assets/img/Posts_Images/2024-02-21-post_complex_network_football-Imag
 author: Balthazar Paixão
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-02-21-post_complex_network_football-Images/data-analysis-pass-network.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-02-21-post_complex_network_football-Images/data-analysis-pass-network.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Complex networks, or science networks, is a concept in computer science that study objects and their interactions. The objects are usually called nodes, and the interactions are edges. The area has been used to investigate various subjects, such as social networks, biological networks, and transportation networks. This post will show how to use this area to analyze football matches.

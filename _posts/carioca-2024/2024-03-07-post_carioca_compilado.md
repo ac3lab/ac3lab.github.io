@@ -16,7 +16,7 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 <h2>Introduction</h2>
 
 <div style="width: 65%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -24,13 +24,13 @@ The 2024 Carioca Championship has reached the semifinal stage, and Ace Laborator
 </div>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
 <h2>Flamengo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-en.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -49,7 +49,7 @@ With this we saw Flamengo's dominance in the 2024 Carioca Championship, the team
 
 <h2>Nova Iguaçu</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-en.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/nova-iguacu-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -69,7 +69,7 @@ With 24 points, seven wins, three draws, and only one defeat, the "Clockwork Ora
 
 <h2>Vasco</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-en.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -88,7 +88,7 @@ For the semifinals, Vasco will need to maintain the quality that its midfield an
 
 <h2>Fluminense</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-en.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/fluminense-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 <div style="text-align: justify">
 <p align="justify">
@@ -107,7 +107,7 @@ Despite the quality defense, the Tricolor attack did not keep up with the perfor
 </div>
 <h2>Botafogo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-en.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/botafogo-en.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

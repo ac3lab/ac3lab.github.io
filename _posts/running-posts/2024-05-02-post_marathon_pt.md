@@ -10,7 +10,7 @@ author: Ace Laboratory Running Team
 
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Conveniência, praticidade e benefícios para saúde são alguns dos motivos que tornam a corrida um esporte atrativo, democrático e popular. É por isso que a corrida de rua vem ganhando expressão no mundo inteiro e que eventos como maratona já atrai milhares de atletas, seja elite ou amador. No Rio de Janeiro, por exemplo, a 21ª edição da Maratona ocorreu no feriadão de Corpus Christ de 2023, e contou com mais de 40 mil inscrições (considerando todos os percursos), movimentando a cidade inclusive economicamente.
@@ -30,27 +30,27 @@ Exploratória
 Ao todo, foram analisadas informações de 5799 atletas do grupo geral, sendo 30% do gênero feminino. Dentre os inscritos, quando olhamos os grupos etários, a faixa com maior concentração, tanto de homens quanto de mulheres, é a de 40-44 anos. No gráfico abaixo conseguimos ver como se dá essa frequência nos diferentes grupos:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/1.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Quando olhamos a frequência de atletas pela ótica da performance, vemos que há uma maior concentração de homens com tempo final de 3,5-4 horas. Já para o gênero feminino a maior concentração está em 4-4,5 horas. 5 mulheres finalizaram a prova com menos de 3 horas.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/2.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 O menor tempo feminino foi de 2h55min04s enquanto que o masculino foi de 2h28min33s. Já os maiores tempos foram 6h39min23s e 6h42min59s respectivamente, lembrando que estamos olhando para o tempo líquido (tempo entre o cruzamento das linhas de largada e chegada). No gráfico abaixo conseguimos ver as distribuições de tempo por gênero:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/3.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/3.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Também é possível visualizar a distribuição do tempo final por faixa etária e para cada gênero declarado:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/4.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/4.png" class="img-fluid rounded z-depth-1" %}
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/5.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/5.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Para os dois gêneros, a faixa que chama atenção por ter os atletas mais rápidos é a de 30-34 anos. Além disso, o grupo masculino teve 2 atletas inscritos com mais de 80 anos, o que deixa cada vez mais claro que para o esporte realmente não existe idade.
@@ -66,7 +66,7 @@ Usando como referência o artigo Prediction Marathon Using Artificial Intelligen
 Para isso, usamos a biblioteca em python <a href="https://www.statsmodels.org/stable/index.html">statsmodels</a>, depois de realizar todo pré-processamento necessário nos dados e separá-los em treino e teste. Abaixo o gráfico que confronta o tempo real vs. o que foi predito pelo modelo:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/6.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/6.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Pelo gráfico, uma conclusão que podemos tirar é que os valores previstos pelo modelo não acompanham os valores reais, na medida que eles vão crescendo. Além disso, avaliando as estatísticas da modelagem, a variável gênero aparentemente não exerce significância estatística na predição (p-value = 0.721). Sendo assim, nota-se a necessidade de contemplar outras variáveis na modelagem. Alguns trabalhos na literatura sugerem o uso das mais diversas informações na predição, como dados antropométricos, fisiológicos, biomecânicos, além de informações de treinamento como experiência, ritmo de passada e concentração de lactato sanguíneo.
@@ -74,13 +74,13 @@ Pelo gráfico, uma conclusão que podemos tirar é que os valores previstos pelo
 
 Resultados resumidos:
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/7.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/7.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Por fim,  o gráfico de distribuição dos resíduos, já que uma das premissas para um bom ajuste de um modelo de regressão linear é que os resíduos sejam normalmente distribuídos:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-05-02-post_marathon/8.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/8.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 A distribuição se assemelha a normal, porém com uma tímida assimetria positiva (concentração à esquerda). Existem vários testes que podemos realizar pra fazer essa verificação, e alguns deles já constam no quadro de resumo dos resultados, exposto acima. A <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.skew.html">Skewness</a>, por exemplo, já aponta a não normalidade e a assimetria da distribuição do erro (quanto mais próximo de 0 mais “normal” é a distribuição) e a <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.kurtosis.html">Kurtosis</a> também, já que está associada ao achatamento da distribuição (para valores > 3 a distribuição é mais “alta” que a distribuição normal).

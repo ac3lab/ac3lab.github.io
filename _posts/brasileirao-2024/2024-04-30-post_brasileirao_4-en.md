@@ -29,7 +29,7 @@ Round 4 of the Campeonato Brasileiro 2024 has come to a close, in an exciting we
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/fla_bot.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/fla_bot.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -45,7 +45,7 @@ At the Maracanã, Flamengo hosted Botafogo in a match marked by two completely o
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/cui_cam.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/cui_cam.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -59,7 +59,7 @@ At the Arena Pantanal, Cuiabá hosted Atlético-MG in a match that was dominated
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/for_rbb.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/for_rbb.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -74,7 +74,7 @@ At the Castelão, Fortaleza and RB Bragantino played out an even contest, with b
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/juv_cap.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/juv_cap.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

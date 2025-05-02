@@ -49,7 +49,7 @@ When we say that the campaign was frustrating, it was not for nothing. On the fi
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shotmap.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shotmap.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -65,7 +65,7 @@ Before starting the analyses and comments section, we have to say that, because 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Passes.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Passes.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -81,7 +81,7 @@ Analysing the passes and progression of the 2019 Brazilian team, you can see the
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shots.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shots.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

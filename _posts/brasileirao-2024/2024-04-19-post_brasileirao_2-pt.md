@@ -23,7 +23,7 @@ Em uma semana com rodada dupla, que ocorreu entre os dias 16/04 e 18/04, ocorrer
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/fla_sao.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/fla_sao.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -41,7 +41,7 @@ Além da boa atuação no geral do Flamengo, vale destacar a impressionante part
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/pal_int.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/pal_int.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -57,7 +57,7 @@ Já na Arena Barueri, o Internacional bateu o Palmeiras por 1 a 0, com gol de We
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/juv_cor.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/juv_cor.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -72,7 +72,7 @@ O Juventude recebeu o Corinthians em sua casa, o Estádio Alfredo Jaconi. Apesar
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/rbr_vas.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/rbr_vas.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

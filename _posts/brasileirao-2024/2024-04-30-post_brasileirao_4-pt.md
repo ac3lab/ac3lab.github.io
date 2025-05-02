@@ -23,7 +23,7 @@ E foi encerrada a 4ª rodada do Campeonato Brasileiro 2024, em uma semana eletri
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/fla_bot.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/fla_bot.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -41,7 +41,7 @@ No Maracanã, o Flamengo recebeu o Botafogo em uma partida marcada por duas perf
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/cui_cam.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/cui_cam.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -58,7 +58,7 @@ Na Arena Pantanal, o Cuiabá recebeu o Atlético-MG, em uma partida que foi domi
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/for_rbb.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/for_rbb.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -75,7 +75,7 @@ No Castelão, Fortaleza e RB Bragantino se enfrentaram em um confronto equilibra
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/juv_cap.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-30-post_brasileirao_4/en/juv_cap.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

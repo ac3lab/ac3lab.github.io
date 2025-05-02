@@ -13,7 +13,7 @@ hidden: true
 <h2>Introdução</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -31,7 +31,7 @@ No último domingo, Flamengo e Nova Iguaçu realizaram o último jogo do Campeon
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -53,7 +53,7 @@ Apesar de na parte defensiva o time da Gávea ter seguido o alto padrão mostrad
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-12-post_carioca_final2/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

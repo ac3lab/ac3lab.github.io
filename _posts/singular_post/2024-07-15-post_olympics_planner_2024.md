@@ -92,7 +92,7 @@ Preference scores were allocated to each event based on spectator interest, cate
 
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-07-15-olympics-planner/routejpg.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-07-15-olympics-planner/routejpg.jpg" class="img-fluid rounded z-depth-1" %}
 
 
 ## Conclusion

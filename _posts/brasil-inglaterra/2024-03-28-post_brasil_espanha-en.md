@@ -30,7 +30,7 @@ On the other side, Jose Luis’ Spain showed good options on the offensive side,
 
 <h3>Match Analysis</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-28-brasil_espanha/en/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-28-brasil_espanha/en/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -46,7 +46,7 @@ Despite relatively equal 90 minutes to both sides - with 4 big chances for each 
 
 <h3>Highlights</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-28-brasil_espanha/en/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-28-brasil_espanha/en/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

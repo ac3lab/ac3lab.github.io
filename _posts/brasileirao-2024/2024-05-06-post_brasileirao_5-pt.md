@@ -25,7 +25,7 @@ Chegou ao fim a 5ª rodada do Campeonato Brasileiro, que foi mais curta, tendo 3
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/bot_bah.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -45,7 +45,7 @@ No Estádio Nilton Santos, o Botafogo recebeu o Bahia em uma partida bastante mo
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/cap_vas.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/cap_vas.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -63,7 +63,7 @@ Na Ligga Arena, o Athletico Paranaense recebeu o Vasco em uma partida quase unil
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/flu_cam.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-06-post_brasileirao_5/en/flu_cam.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

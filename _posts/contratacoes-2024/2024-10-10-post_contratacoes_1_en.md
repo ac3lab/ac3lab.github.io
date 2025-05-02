@@ -55,13 +55,13 @@ The first graph shows average lines on both axes, which helps to identify player
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
 <center>Graph 1. xG per 90 x Shots Per 90<br/><br/></center>
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -84,7 +84,7 @@ Finally, we chose another graph to visualize participation with the ball and the
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-10-10-post_contratacoes/passes_vs_touches.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-10-10-post_contratacoes/passes_vs_touches.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

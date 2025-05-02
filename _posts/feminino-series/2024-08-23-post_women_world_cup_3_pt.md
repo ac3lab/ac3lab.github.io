@@ -71,7 +71,7 @@ Primeiro, é importante falar que atualizamos a nossa definição de ação prog
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/passes_vs_progressive_passes.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/passes_vs_progressive_passes.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -87,7 +87,7 @@ Analisando os passes e a progressão dessas equipes, existem alguns tópicos a s
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

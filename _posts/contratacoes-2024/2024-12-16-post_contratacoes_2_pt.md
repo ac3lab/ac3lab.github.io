@@ -39,7 +39,7 @@ No gráfico a seguir, a barra vermelha representa a quantidade de participaçõe
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisiveGoalsAssists.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisiveGoalsAssists.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -53,7 +53,7 @@ Se também levarmos em conta a quantidade de minutos jogados, dividindo a quanti
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/decisivePer90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -71,7 +71,7 @@ Nos gráficos abaixo, repetimos o mesmo modelo utilizado na primeira parte da s�
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/totalShotsper90_vs_xGper90.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/totalShotsper90_vs_xGper90.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -83,7 +83,7 @@ Nos gráficos abaixo, repetimos o mesmo modelo utilizado na primeira parte da s�
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-12-16-post_contratacoes_2/xg_vs_goals.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

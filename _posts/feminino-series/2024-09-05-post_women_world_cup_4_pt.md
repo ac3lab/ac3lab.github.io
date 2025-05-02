@@ -43,7 +43,7 @@ Quando falamos que a campanha foi frustrante, não é para menos. Na última rod
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shotmap.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shotmap.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -59,7 +59,7 @@ Antes de começar a seção de análises e comentários, temos que dizer que, pe
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Passes.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Passes.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -75,7 +75,7 @@ Analisando os passes e a progressão da seleção brasileira de 2019, é possív
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shots.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shots.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

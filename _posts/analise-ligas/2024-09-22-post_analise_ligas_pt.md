@@ -42,7 +42,7 @@ O gráfico de barras a seguir mostra o Valor de Mercado somado dos times por lig
 <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/marketvalue.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/marketvalue.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -64,7 +64,7 @@ Agora que entendemos o que é o ACD, vamos explicar por que ele é útil. Nosso 
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/graficoACD.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/graficoACD.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -82,7 +82,7 @@ As tabelas a seguir mostram o número de derrotas dos clubes brasileiros por fas
 A dominância do Brasil na maior competição de clubes da América do Sul é incontestável. Das últimas cinco finais, todas tiveram times brasileiros, três foram completamente brasileiras e cinco títulos foram para o Brasil. A diferença de nível técnico entre os clubes brasileiros de alto escalão contra a dos outros times da América do Sul pode se dar por vários motivos. Além de outros países serem menores e mais pobres que o Brasil, alguns também passam por grandes crises econômicas, como é a Argentina, país com o maior número de títulos da Glória Eterna. Mas o Brasil dominou os últimos anos, e a tendência é continuar assim. Outra possível análise é o grande número de talentos exportados dos países “menores” da América Latina para o futebol brasileiro de alto nível, o que faz com que as ligas percam nível técnico e compitam cada vez menos com os gigantes brasileiros. <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaliba.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaliba.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -92,7 +92,7 @@ A dominância do Brasil na maior competição de clubes da América do Sul é in
 Já na Copa Sulamericana o cenário é outro: nas últimas cinco finais, o Brasil “só” tem um título e três participações (com uma final brasileira). Por que essa diferença em relação à Libertadores? Será que o grande número de vagas distribuídas para times do Brasileirão faz com que times mais fracos e menos experientes joguem e percam precocemente? Mas esse esquema pode estar prestes a mudar. De 2019 pra cá, o número de clubes brasileiros caindo na fase de grupos vem diminuindo bastante, em troca do aumento de quedas nas fases mais tardias do campeonato. Também, desde a final brasileira de 2021, o Brasil participou de todas as finais do campeonato, apesar de não ter conseguido mais títulos. <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelasula.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelasula.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -107,7 +107,7 @@ Outra coisa interessante que podemos notar: A Espanha teve 100% de aproveitament
  <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelachamp.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelachamp.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -119,7 +119,7 @@ A maior diferença entre os resultados das competições se encontra no desempen
  <br/><br/>
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaeuro.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/tabelaeuro.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

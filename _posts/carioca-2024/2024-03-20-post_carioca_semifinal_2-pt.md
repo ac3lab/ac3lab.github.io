@@ -13,7 +13,7 @@ hidden: true
 <h2>Introdução</h2>
 
 <div style="width: 55%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -30,7 +30,7 @@ Neste último fim de semana tivemos os jogos de volta das semifinais do Campeona
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -54,7 +54,7 @@ Com isso, podemos ver que mesmo ditando o jogo, o time de Fernando Diniz não fo
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -77,7 +77,7 @@ Já no tricolor, podemos destacar Lima, peça chave para o meio de campo do Flum
 <div style="text-align: justify">
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/game2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/game2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -100,7 +100,7 @@ Dessa forma, o Nova Iguaçu superou o Vasco e conseguiu pela primeira vez em sua
 <h3>Destaques</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/players2.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-20-post_carioca_semifinal_2/pt-br/players2.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
