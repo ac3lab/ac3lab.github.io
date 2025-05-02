@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-predicting-match-results-in-football-part-2",
+        },{id: "post-prevendo-resultados-no-futebol-parte-2",
+        
+          title: "Prevendo Resultados no Futebol - Parte 2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post-value_market_2_pt/";
+          
+        },
+      },{id: "post-predicting-match-results-in-football-part-2",
         
           title: "Predicting Match Results in Football - Part 2",
         
@@ -382,23 +393,282 @@ ninja.data = [{
             window.location.href = "/blog/2024/post_running/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "projects-almir-monteiro",
+      },{id: "post-analisando-contratações-do-futebol-brasileiro-em-2024-setor-ofensivo",
+        
+          title: "Analisando Contratações do Futebol Brasileiro em 2024 - Setor Ofensivo",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-são-garrafa-niterói-2024-analisando-10-diferentes-corredores",
+        
+          title: "São Garrafa Niterói 2024 – Analisando 10 diferentes corredores",
+        
+        description: "Analisando desempenho de 10 diferentes corredores da São Garrafa 2024",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_sao_garrafa_pt/";
+          
+        },
+      },{id: "post-maratona-do-rio-2023-exploratória-com-um-toque-de-estatística-e-modelagem-preditiva",
+        
+          title: "Maratona do Rio 2023 – Exploratória com um toque de estatística e modelagem...",
+        
+        description: "Analisando os dados dos resultados da Maratona do Rio 2023 e esboçando um simples modelo de predição de performance",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_marathon_pt/";
+          
+        },
+      },{id: "post-prevendo-resultados-no-futebol-parte-1",
+        
+          title: "Prevendo Resultados no Futebol - Parte 1",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_pitagorica_1_pt/";
+          
+        },
+      },{id: "post-análise-detalhada-do-bayer-leverkusen-jogadores-destaque",
+        
+          title: "Análise detalhada do Bayer Leverkusen - Jogadores Destaque",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_leverkusen_3_pt/";
+          
+        },
+      },{id: "post-análise-detalhada-do-bayer-leverkusen-temporadas-anteriores-e-campanha-atual",
+        
+          title: "Análise detalhada do Bayer Leverkusen - Temporadas anteriores e campanha atual",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_leverkusen_2_pt/";
+          
+        },
+      },{id: "post-análise-detalhada-do-bayer-leverkusen-estilo-de-jogo-de-xabi-alonso",
+        
+          title: "Análise detalhada do Bayer Leverkusen - Estilo de jogo de Xabi Alonso",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_leverkusen_1_pt/";
+          
+        },
+      },{id: "post-copa-do-mundo-feminina-de-2023-análise-da-evolução-da-seleção-brasileira",
+        
+          title: "Copa do Mundo Feminina de 2023 - Análise da Evolução da Seleção Brasileira...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_women_world_cup_4_pt/";
+          
+        },
+      },{id: "post-copa-do-mundo-feminina-de-2023-analisando-a-evolução-das-principais-equipes",
+        
+          title: "Copa do Mundo Feminina de 2023 - Analisando a evolução das principais equipes...",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_women_world_cup_3_pt/";
+          
+        },
+      },{id: "post-copa-do-mundo-feminina-de-2023-jogadoras-promissoras",
+        
+          title: "Copa do Mundo Feminina de 2023 - Jogadoras Promissoras",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_women_world_cup_2_pt/";
+          
+        },
+      },{id: "post-copa-do-mundo-feminina-de-2023-analisando-as-finalistas",
+        
+          title: "Copa do Mundo Feminina de 2023 - Analisando as finalistas",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_women_world_cup_1_pt/";
+          
+        },
+      },{id: "post-analisando-contratações-do-futebol-brasileiro-em-2024-setor-ofensivo-parte-2",
+        
+          title: "Analisando Contratações do Futebol Brasileiro em 2024 - Setor Ofensivo: Parte 2",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_contratacoes_2_pt/";
+          
+        },
+      },{id: "post-campeonato-carioca-2024-final-segundo-jogo",
+        
+          title: "Campeonato Carioca 2024 - Final - Segundo Jogo",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_carioca_final2-pt/";
+          
+        },
+      },{id: "post-campeonato-carioca-2024-final-primeiro-jogo",
+        
+          title: "Campeonato Carioca 2024 - Final - Primeiro Jogo",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_carioca_final1-pt/";
+          
+        },
+      },{id: "post-campeonato-carioca-2024-semifinal-segundo-jogo",
+        
+          title: "Campeonato Carioca 2024 - Semifinal - Segundo Jogo",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_carioca_semifinal_2-pt/";
+          
+        },
+      },{id: "post-campeonato-carioca-2024-semifinal-primeiro-jogo",
+        
+          title: "Campeonato Carioca 2024 - Semifinal - Primeiro Jogo",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_carioca_semifinal_1-pt-copy/";
+          
+        },
+      },{id: "post-campeonato-carioca-2024-uma-análise-compilada",
+        
+          title: "Campeonato Carioca 2024 - Uma análise compilada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_carioca_compilado-pt/";
+          
+        },
+      },{id: "post-brasileirão-2024-5a-rodada",
+        
+          title: "Brasileirão 2024 - 5a Rodada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasileirao_5-pt/";
+          
+        },
+      },{id: "post-brasileirão-2024-4a-rodada",
+        
+          title: "Brasileirão 2024 - 4a Rodada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasileirao_4-pt/";
+          
+        },
+      },{id: "post-brasileirão-2024-3a-rodada",
+        
+          title: "Brasileirão 2024 - 3a Rodada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasileirao_3-pt/";
+          
+        },
+      },{id: "post-brasileirão-2024-2a-rodada",
+        
+          title: "Brasileirão 2024 - 2a Rodada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasileirao_2-pt/";
+          
+        },
+      },{id: "post-brasileirão-2024-primeira-rodada",
+        
+          title: "Brasileirão 2024 - Primeira Rodada",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasileirao_1-pt/";
+          
+        },
+      },{id: "post-sob-pressão-brasil-muda-o-jogo-com-substituições-e-garante-empate",
+        
+          title: "Sob pressão, Brasil muda o jogo com substituições e garante empate",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasil_espanha-pt/";
+          
+        },
+      },{id: "post-estrela-do-menino-endrick-brilha-e-brasil-supera-a-inglaterra",
+        
+          title: "Estrela do menino Endrick brilha e Brasil supera a Inglaterra",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_brasil_inglaterra-pt/";
+          
+        },
+      },{id: "post-análise-das-melhores-ligas-de-futebol",
+        
+          title: "Análise das Melhores Ligas de Futebol",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_analise_ligas_pt/";
+          
+        },
+      },{id: "projects-almir-monteiro",
           title: 'Almir Monteiro',
           description: "Systems Engineering  UFRJ",
           section: "Projects",handler: () => {
