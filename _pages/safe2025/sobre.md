@@ -128,10 +128,16 @@ Garanta já o seu ingresso e participe de um dos maiores eventos sobre ciência 
 
 Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SAFE 2025 possível:
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <img src="assets/img/safe/safe2025/apoio/cefet.png/" alt="CEFET-RJ" height="180">
-  <img src="assets/img/safe/safe2025/apoio/ufrj.png/" alt="UFRJ" height="180">
-  <img src="assets/img/safe/safe2025/apoio/sbc.jpeg" alt="SBC" height="150">
+<div class="row">
+  <div class="col-sm-4 mt-3 mt-md-5">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/cefet.png" title="CEFET-RJ" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-3 mt-5 mt-md-5">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/sbc.jpeg" title="SBC" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 
 Quer ser um parceiro do SAFE 2025? Escreva para: **ace@cos.ufrj.br**
