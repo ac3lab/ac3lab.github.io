@@ -678,16 +678,21 @@ ninja.data = [{
           description: "Systems Engineering  UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/amanda/";
-            },},{id: "projects-andre-schlaepfer",
-          title: 'Andre Schlaepfer',
+            },},{id: "projects-antonio-magalhães",
+          title: 'Antonio Magalhães',
           description: "Computer Engineering  UFRJ",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/andre_schlaepfer/";
+              window.location.href = "/projects/antonio/";
             },},{id: "projects-balthazar-paixão",
           title: 'Balthazar Paixão',
           description: "Computer Science  Cefet/RJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/balthazar/";
+            },},{id: "projects-brenno-santos",
+          title: 'Brenno Santos',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/brenno_santos/";
             },},{id: "projects-daniel-barros",
           title: 'Daniel Barros',
           description: "Computer Engineering  UFRJ",
@@ -743,6 +748,16 @@ ninja.data = [{
           description: "Associate Professor  PESC/COPPE/UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/miceli/";
+            },},{id: "projects-miguel-angelo",
+          title: 'Miguel Angelo',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/miguel_angelo/";
+            },},{id: "projects-murilo-jorge",
+          title: 'Murilo Jorge',
+          description: "Computer Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/murilo/";
             },},{id: "projects-nathália-tito",
           title: 'Nathália Tito',
           description: "Computer Science  Cefet/RJ",
@@ -758,6 +773,11 @@ ninja.data = [{
           description: "Assistant Professor  PESC/COPPE/UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pedro_gonzalez/";
+            },},{id: "projects-pedro-lopes",
+          title: 'Pedro Lopes',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/pedro_lopes/";
             },},{id: "projects-pedro-siqueira",
           title: 'Pedro Siqueira',
           description: "Computer Engineering  UFRJ",
