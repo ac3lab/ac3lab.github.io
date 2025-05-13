@@ -30,10 +30,10 @@ Sala: Auditório V - CEFET/RJ
 
 ## Datas
 
-**Data:** 04 de Setembro de 2025  
+**Data:** 17 de Novembro de 2025  
 **Hora:** 08:00 - 16:00
 
-**Data:** 05 de Setembro de 2025  
+**Data:** 18 de Novembro de 2025  
 **Hora:** 09:00 - 16:00
 
 ---
@@ -42,7 +42,7 @@ Sala: Auditório V - CEFET/RJ
 
 <br />
 
-### Dia 04/09
+### Dia 17/11
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
@@ -59,7 +59,7 @@ Sala: Auditório V - CEFET/RJ
 
 <br />
 
-### Dia 05/09
+### Dia 18/11
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
@@ -87,9 +87,8 @@ As submissões podem abordar temas como:
 - Uso de dados em gestão esportiva
 
 **Datas importantes:**
-- Abertura das submissões: *a definir*
-- Prazo final: *a definir*
-- Notificação de aceite: *a definir*
+- Abertura das submissões: 14/07
+- Prazo final: 01/08
 
 **Formato:** artigos de até 4 páginas em PDF, conforme o [template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelo-paragrafo-sbc).
 
