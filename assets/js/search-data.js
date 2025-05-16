@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-prevendo-resultados-no-futebol-parte-2",
+        },{id: "post-predicting-match-results-in-football-part-3",
+        
+          title: "Predicting Match Results in Football - Part 3",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post_poisson_3_en/";
+          
+        },
+      },{id: "post-prevendo-resultados-no-futebol-parte-2",
         
           title: "Prevendo Resultados no Futebol - Parte 2",
         
@@ -424,6 +435,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_marathon_pt/";
+          
+        },
+      },{id: "post-prevendo-resultados-no-futebol-parte-13",
+        
+          title: "Prevendo Resultados no Futebol - Parte 13",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_poisson_3_pt/";
           
         },
       },{id: "post-prevendo-resultados-no-futebol-parte-1",
