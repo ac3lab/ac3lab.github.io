@@ -437,9 +437,9 @@ ninja.data = [{
             window.location.href = "/blog/2000/post_marathon_pt/";
           
         },
-      },{id: "post-prevendo-resultados-no-futebol-parte-13",
+      },{id: "post-prevendo-resultados-no-futebol-parte-3",
         
-          title: "Prevendo Resultados no Futebol - Parte 13",
+          title: "Prevendo Resultados no Futebol - Parte 3",
         
         description: "",
         section: "Posts",
