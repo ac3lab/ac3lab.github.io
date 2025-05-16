@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Prevendo Resultados no Futebol - Parte 13"
+title: "Prevendo Resultados no Futebol - Parte 3"
 
 date: 2000-01-01 00:00:00
 
@@ -40,7 +40,7 @@ A distribuição de Poisson é uma distribuição de probabilidade discreta que 
 
 </div>
 
-<center>The Poisson distribution formula. <br/><br/></center>
+<center>A fórmula da distribuição de Poisson. <br/><br/></center>
 
 O lado esquerdo da fórmula da distribuição de Poisson, P(X = k), representa a probabilidade de ocorrência de exatamente k eventos em um intervalo fixo. Aqui,  X é o número de eventos e k é o número específico no qual estamos interessados. <br/><br/>
 
@@ -105,7 +105,7 @@ Então, multiplicamos esses valores com a Média de Gols marcados Fora de Casa: 
 
 Podemos fazer isso facilmente com Python utilizando o comando:<br/><br/>
 {% highlight python linenos %}
-poisson.pmf(NumberOfOccurrences, ExpectedOccurrences)
+poisson.pmf(NumOcorrencias, OcorrenciasEsp)
 {% endhighlight %}
 <br/><br/>
 
@@ -126,7 +126,7 @@ Calculando isso 6 vezes para cada time, chegamos no seguinte vetor:
       <td style="color: white;">27.11%</td>
     </tr>
     <tr>
-      <td style="color: white;">1 goal</td>
+      <td style="color: white;">1 gols</td>
       <td style="color: white;">29.15%</td>
       <td style="color: white;">35.39%</td>
     </tr>
