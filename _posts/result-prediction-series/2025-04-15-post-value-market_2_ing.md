@@ -11,7 +11,7 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
 <p  align="justify">
 
-Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/post-value_market_2_pt/"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2025/post-value_market_2_pt/"> clique aqui.</a>
 
 
 <h2> <b> Introduction </b> </h2>

@@ -1,7 +1,7 @@
 name: Prettify gh-pages
 
-on:
-  workflow_dispatch:
+#on:
+#  workflow_dispatch:
 
 jobs:
   format:

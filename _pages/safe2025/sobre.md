@@ -23,17 +23,17 @@ O SAFE 2025 reafirma seu papel como um espaço essencial para discutir os rumos 
 
 **CEFET/RJ - Campus Maracanã** <br/>
 Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ<br/>
-Sala: Auditório CEFET
+Sala: Auditório V - CEFET/RJ
 
 ---
 
 
 ## Datas
 
-**Data:** 04 de Setembro de 2025  
+**Data:** 17 de Novembro de 2025  
 **Hora:** 08:00 - 16:00
 
-**Data:** 05 de Setembro de 2025  
+**Data:** 18 de Novembro de 2025  
 **Hora:** 09:00 - 16:00
 
 ---
@@ -42,7 +42,7 @@ Sala: Auditório CEFET
 
 <br />
 
-### Dia 04/09
+### Dia 17/11
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
@@ -59,7 +59,7 @@ Sala: Auditório CEFET
 
 <br />
 
-### Dia 05/09
+### Dia 18/11
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
@@ -87,9 +87,8 @@ As submissões podem abordar temas como:
 - Uso de dados em gestão esportiva
 
 **Datas importantes:**
-- Abertura das submissões: *a definir*
-- Prazo final: *a definir*
-- Notificação de aceite: *a definir*
+- Abertura das submissões: 14/07
+- Prazo final: 01/08
 
 **Formato:** artigos de até 4 páginas em PDF, conforme o [template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelo-paragrafo-sbc).
 
@@ -128,10 +127,16 @@ Garanta já o seu ingresso e participe de um dos maiores eventos sobre ciência 
 
 Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SAFE 2025 possível:
 
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-  <img src="/assets/img/Safe/Safe2025/Apoio/cefet.png/" alt="CEFET-RJ" height="180">
-  <img src="/assets/img/Safe/Safe2025/Apoio/ufrj.png/" alt="UFRJ" height="180">
-  <img src="/assets/img/Safe/Safe2025/Apoio/sbc.jpeg" alt="SBC" height="150">
+<div class="row">
+  <div class="col-sm-4 mt-3 mt-md-5">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/cefet.png" title="CEFET-RJ" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-3 mt-5 mt-md-5">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" %}
+  </div>
+  <div class="col-sm-3 mt-3 mt-md-0">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/sbc.jpeg" title="SBC" class="img-fluid rounded z-depth-1" %}
+  </div>
 </div>
 
 Quer ser um parceiro do SAFE 2025? Escreva para: **ace@cos.ufrj.br**

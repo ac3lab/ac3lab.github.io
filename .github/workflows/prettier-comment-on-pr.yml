@@ -1,8 +1,8 @@
 name: Comment on pull request
 
-on:
-  repository_dispatch:
-    types: [prettier-failed-on-pr]
+#on:
+#  repository_dispatch:
+#    types: [prettier-failed-on-pr]
 
 jobs:
   comment:

@@ -16,10 +16,9 @@ thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jp
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
-published: false
-
-
----
+hidden: true
+hidden_post: true
+giscus_comments: true
 
 ---
 

@@ -7,7 +7,10 @@ tags: Football; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jpg
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
-published: false
+hidden: true
+hidden_post: true
+giscus_comments: true
+
 ---
 
 <h2> <b> Introdução </b> </h2>
