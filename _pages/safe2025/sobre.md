@@ -139,7 +139,8 @@ Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SA
   </div>
 </div>
 
-Quer ser um parceiro do SAFE 2025? Escreva para: **ace@cos.ufrj.br**
+Quer ser um parceiro do SAFE 2025? [Clique aqui para saber mais sobre os planos de patrocínio](https://ac3lab.github.io/safe2025/patrocinio-safe2025/) ou escreva para: **ace@cos.ufrj.br**
+
 
 
 ---
