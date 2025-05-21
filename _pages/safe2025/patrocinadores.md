@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Planos de Patrocínio – SAFE 2025
-permalink: /patrocinio-safe2025/
+permalink: /safe2025/patrocinio-safe2025/
 nav: false
 horizontal: false
 
