@@ -30,7 +30,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-predicting-match-results-in-football-part-3",
+        },{id: "dropdown-sobre-o-evento",
+              title: "Sobre o Evento",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/safe2025/sobre/";
+              },
+            },{id: "dropdown-planos-de-patrocínio",
+              title: "Planos de Patrocínio",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/safe2025/patrocinio-safe2025/";
+              },
+            },{id: "post-predicting-match-results-in-football-part-3",
         
           title: "Predicting Match Results in Football - Part 3",
         
