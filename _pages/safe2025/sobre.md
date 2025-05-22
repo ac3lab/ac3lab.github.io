@@ -21,14 +21,14 @@ O SAFE 2025 reafirma seu papel como um espaço essencial para discutir os rumos 
 
 ## Local
 
-**CEFET/RJ - Campus Maracanã** <br/>
-Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ<br/>
-Sala: Auditório V - CEFET/RJ
+**Rio de Janeiro** <br/>
+Em breve mais informações.
+
 
 ---
 
 
-## Datas
+## Datas do Evento
 
 **Data:** 17 de Novembro de 2025  
 **Hora:** 08:00 - 16:00
@@ -78,21 +78,36 @@ Sala: Auditório V - CEFET/RJ
 
 ## Submissão de Trabalhos
 
-O SAFE 2025 contará com uma trilha de apresentação de trabalhos científicos voltados à aplicação de ciência de dados no futebol.
+O **SAFE 2025** contará com uma trilha dedicada à apresentação de trabalhos científicos voltados à aplicação de ciência de dados no futebol.
+
+
+#### Datas Importantes
+
+- **Período de Submissão:** _14 de julho a 01 de agosto de 2025_  
+- **Divulgação dos Resultados:** _a partir de 01 de setembro de 2025_  
+- **Envio da Versão Final:** _até 15 de setembro de 2025_
+
+> 🔗 **Link de Submissão:** *Em breve*
+
+
+#### Temas de Interesse
 
 As submissões podem abordar temas como:
-- Modelagem estatística e preditiva no futebol
-- Visualização de dados e dashboards
-- Análise de desempenho tático e físico
-- Uso de dados em gestão esportiva
 
-**Datas importantes:**
-- Abertura das submissões: 14/07
-- Prazo final: 01/08
+- Modelagem estatística e preditiva no futebol  
+- Visualização de dados e dashboards  
+- Análise de desempenho tático e físico  
+- Uso de dados em gestão esportiva  
 
-**Formato:** artigos de até 4 páginas em PDF, conforme o [template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelo-paragrafo-sbc).
 
-Para dúvidas e submissões: **ace@cos.ufrj.br**
+#### Formato
+
+Os artigos devem ter **até 4 páginas**, em **PDF**, conforme o [template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelo-paragrafo-sbc).
+
+
+#### Dúvidas e Submissões
+
+Entre em contato: **ace@cos.ufrj.br**
 
 --- 
 
@@ -114,7 +129,7 @@ Alguns temas em destaque:
 
 Os valores para participação no SAFE 2025 variam de acordo com a categoria do participante:
 
-- **Educação Básica/Técnico:** R$ 20  
+- **Alunos da Educação Básica/Técnológica:** R$ 20  
 - **Alunos de Graduação:** R$ 40  
 - **Alunos de Pós-graduação:** R$ 60  
 - **Efetivo/Profissional:** R$ 100  
@@ -134,9 +149,7 @@ Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SA
   <div class="col-sm-3 mt-5 mt-md-5">
     {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" %}
   </div>
-  <div class="col-sm-3 mt-3 mt-md-0">
-    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/sbc.jpeg" title="SBC" class="img-fluid rounded z-depth-1" %}
-  </div>
+
 </div>
 
 Quer ser um parceiro do SAFE 2025? [Clique aqui para saber mais sobre os planos de patrocínio](https://ac3lab.github.io/safe2025/patrocinio-safe2025/) ou escreva para: **ace@cos.ufrj.br**
@@ -144,9 +157,6 @@ Quer ser um parceiro do SAFE 2025? [Clique aqui para saber mais sobre os planos 
 
 
 ---
-
-
-## Inscrição
 
 
 ## Contato

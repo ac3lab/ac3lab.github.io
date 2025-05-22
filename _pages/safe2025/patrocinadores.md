@@ -10,7 +10,7 @@ horizontal: false
 ## Torne-se um Patrocinador do SAFE 2025
 
 📍 **Data:** Novembro de 2025  
-📍 **Local:** CEFET/RJ - Campus Maracanã
+📍 **Local:** Rio de Janeiro
 
 O **Symposium on Analytics for Football Excellence (SAFE 2025)** é um evento de destaque na interseção entre ciência de dados, otimização e futebol. Reunimos pesquisadores, profissionais da indústria e estudantes para discutir avanços na área. 
 
@@ -26,7 +26,7 @@ Sua empresa pode se tornar parte desse movimento e ganhar visibilidade exclusiva
 - ✅ Logo em destaque no site, banners e materiais promocionais  
 - ✅ Agradecimento especial na abertura e encerramento do evento  
 - ✅ Distribuição de material promocional nos kits dos participantes  
-- ✅ Exposição nas redes sociais e site do evento e dos laboratórios organizadores  
+- ✅ Exposição nas redes sociais e site do evento e do laboratório organizador  
 - ✅ 4 inscrições gratuitas para membros da empresa  
 - ✅ Possibilidade de realizar uma palestra relâmpago (5-10 min) sobre sua atuação na área  
 
