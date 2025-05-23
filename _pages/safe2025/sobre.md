@@ -49,7 +49,7 @@ Em breve mais informações.
 | 08:00 - 09:00   | Credenciamento                         | —                | —                          |
 | 09:00 - 10:00   | Palestra de Abertura                   | Palestrante 1    | Cargo do Palestrante 1     |
 | 10:00 - 10:30   | Coffee Break                           | —                | —                          |
-| 10:30 - 11:30   | Minicurso I                            | Palestrante 2    | Cargo do Palestrante 2     |
+| 10:30 - 11:30   | Minicurso                            | Palestrante 2    | Cargo do Palestrante 2     |
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
 | 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 3+  | Cargos dos Participantes   |
@@ -65,7 +65,7 @@ Em breve mais informações.
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
 | 09:00 - 10:00   | Palestra III                   | Palestrante 5    | Cargo do Palestrante 5     |
 | 10:00 - 10:30   | Coffee Break                           | —                | —                          |
-| 10:30 - 11:30   | Minicurso II                            | Palestrante 6    | Cargo do Palestrante 6     |
+| 10:30 - 11:30   | Minicurso                           | Palestrante 6    | Cargo do Palestrante 6     |
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
 | 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 7+  | Cargos dos Participantes   |
@@ -83,7 +83,7 @@ O **SAFE 2025** contará com uma trilha dedicada à apresentação de trabalhos 
 
 #### Datas Importantes
 
-- **Período de Submissão:** _14 de julho a 01 de agosto de 2025_  
+- **Período de Submissão:** _01 de julho a 01 de agosto de 2025_  
 - **Divulgação dos Resultados:** _a partir de 01 de setembro de 2025_  
 - **Envio da Versão Final:** _até 15 de setembro de 2025_
 
@@ -113,13 +113,11 @@ Entre em contato: **ace@cos.ufrj.br**
 
 ## Minicursos
 
-Durante os dois dias de evento, o SAFE 2025 oferecerá minicursos com foco prático e teórico sobre o uso de dados no futebol. 
+O SAFE 2025 oferecerá um minicurso com foco prático e teórico sobre o uso de dados no futebol, dividido nos dois dias de evento.
 
 Alguns temas em destaque:
 - Introdução à análise de desempenho no futebol
-- Machine learning aplicado a esportes
 - Visualização de redes de passe
-- Trabalhando com tracking data
 
 **Informações detalhadas dos minicursos serão divulgadas em breve.**
 

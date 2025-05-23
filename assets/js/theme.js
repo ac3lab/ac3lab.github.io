@@ -254,7 +254,7 @@ let transTheme = () => {
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
-  let themeSetting = localStorage.getItem("theme");
+  let themeSetting = "dark"
   if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
     themeSetting = "system";
   }
@@ -267,7 +267,7 @@ let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
   if (themeSetting == "system") {
     const userPref = window.matchMedia;
-    if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
+    if (userPref && (userPref('(prefers-color-scheme: dark)').matches || userPref('(max-width: 768px)').matches || true)) {
       return "dark";
     } else {
       return "light";
@@ -278,7 +278,7 @@ let determineComputedTheme = () => {
 };
 
 let initTheme = () => {
-  let themeSetting = determineThemeSetting();
+  let themeSetting = "dark"
 
   setThemeSetting(themeSetting);
 
