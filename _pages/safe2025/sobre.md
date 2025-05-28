@@ -132,7 +132,7 @@ Os valores para participação no SAFE 2025 variam de acordo com a categoria do 
 - **Alunos de Pós-graduação:** R$ 60  
 - **Efetivo/Profissional:** R$ 100  
 
-Garanta já o seu ingresso e participe de um dos maiores eventos sobre ciência de dados e futebol do país!
+> 🔗 **Link de Inscrição:** *Em breve*
 
 ---
 
