@@ -10,6 +10,12 @@ pretty_table: true
 
 ---
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="/assets/img/safe/safe2025/LogoSafe2025.png" title="Logo Safe 2025" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 <div  style="text-align: justify">
 O Symposium on Analytics for Football Excellence 2025 (SAFE 2025) chega à sua segunda edição. Organizado pelo Analytics for Competitive Excellence (ACE) Laboratory, o evento acontecerá ao longo de dois dias, reunindo pesquisadores e profissionais da ciência de dados aplicada ao futebol.
 
