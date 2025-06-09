@@ -14,7 +14,7 @@ categories: Basketball; Analysis
 
 thumbnail: assets/img/Posts_Images/2025-06-09-post-nba-playoffs/nba.jpeg
 
-author: Ace Laboratory Team - Brenno Santos, Antonio 
+author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
 ---
 
 ---
