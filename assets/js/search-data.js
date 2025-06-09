@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-predicting-match-results-in-football-part-3",
+            },{id: "post-nba-playoffs-the-mvps-duel",
+        
+          title: "NBA Playoffs : The MVPs Duel",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/nba-playoffs_en/";
+          
+        },
+      },{id: "post-predicting-match-results-in-football-part-3",
         
           title: "Predicting Match Results in Football - Part 3",
         
@@ -427,6 +438,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-nba-playoffs-o-duelo-dos-mvps",
+        
+          title: "NBA Playoffs : O Duelo dos MVPs",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/nba-playoffs_pt/";
           
         },
       },{id: "post-são-garrafa-niterói-2024-analisando-10-diferentes-corredores",
