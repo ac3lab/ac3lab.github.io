@@ -93,7 +93,7 @@ O **SAFE 2025** contará com uma trilha dedicada à apresentação de trabalhos 
 - **Divulgação dos Resultados:** _a partir de 01 de setembro de 2025_  
 - **Envio da Versão Final:** _até 15 de setembro de 2025_
 
-> 🔗 **Link de Submissão:** *Em breve*
+> 🔗 **Link de Submissão:** *Em breve via CMT*
 
 
 #### Temas de Interesse
