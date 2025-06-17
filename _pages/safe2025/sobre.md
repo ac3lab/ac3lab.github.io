@@ -115,8 +115,6 @@ Os artigos devem ter **até 4 páginas**, em **PDF**, conforme o [template da SB
 
 Entre em contato: **ace@cos.ufrj.br**
 
-#### 
-
 O serviço Microsoft CMT será utilizado para gerenciar o processo de revisão por pares desta conferência. Este serviço foi fornecido gratuitamente pela Microsoft e a Microsoft arcou com todas as despesas, incluindo os custos dos serviços de nuvem do Azure, bem como com o desenvolvimento e suporte de software.
 
 --- 
