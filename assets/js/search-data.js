@@ -832,6 +832,11 @@ ninja.data = [{
           description: "Computer Engineering  UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/felipe_vilela/";
+            },},{id: "projects-gabriel-madruga",
+          title: 'Gabriel Madruga',
+          description: "Systems Engineering  UFRJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/gabriel_madruga/";
             },},{id: "projects-glauco-amorim",
           title: 'Glauco Amorim',
           description: "Full Professor  Cefet/RJ",
