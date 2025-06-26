@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-fluminense-39-s-solid-group-stage-performance-at-the-club-world-cup",
+            },{id: "post-palmeiras-39-group-stage-performance-at-the-club-world-cup",
+        
+          title: "Palmeiras&#39; Group Stage Performance at the Club World Cup",
+        
+        description: "Palmeiras&#39; Group Stage Performance at the Club World Cup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/palmeiras_grupos_en/";
+          
+        },
+      },{id: "post-fluminense-39-s-solid-group-stage-performance-at-the-club-world-cup",
         
           title: "Fluminense&#39;s Solid Group Stage Performance at the Club World Cup",
         
@@ -460,6 +471,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-a-performance-do-palmeiras-na-fase-de-grupos-do-mundial-de-clubes",
+        
+          title: "A Performance do Palmeiras na Fase de Grupos do Mundial de Clubes",
+        
+        description: "A Performance do Palmeiras na Fase de Grupos do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/palmeiras_grupos_pt/";
           
         },
       },{id: "post-a-sólida-performance-do-fluminense-na-fase-de-grupos-do-mundial-de-clubes",
