@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-botafogo-39-s-surprising-club-world-cup-group-stage-performance",
+            },{id: "post-fluminense-39-s-solid-group-stage-performance-at-the-club-world-cup",
+        
+          title: "Fluminense&#39;s Solid Group Stage Performance at the Club World Cup",
+        
+        description: "Fluminense&#39;s Solid Group Stage Performance at the Club World Cup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fluminense_grupos_en/";
+          
+        },
+      },{id: "post-botafogo-39-s-surprising-club-world-cup-group-stage-performance",
         
           title: "Botafogo&#39;s Surprising Club World Cup Group Stage Performance",
         
@@ -449,6 +460,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-a-sólida-performance-do-fluminense-na-fase-de-grupos-do-mundial-de-clubes",
+        
+          title: "A Sólida Performance do Fluminense na Fase de Grupos do Mundial de Clubes...",
+        
+        description: "A Sólida Performance do Fluminense na Fase de Grupos do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/fluminense_grupos_pt/";
           
         },
       },{id: "post-a-surpreendente-performance-do-botafogo-na-fase-de-grupos-do-mundial-de-clubes",
