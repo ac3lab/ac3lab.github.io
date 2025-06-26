@@ -122,7 +122,7 @@ Também é importante destacar a performance defensiva da equipe. Barboza e Jair
 
 <div class="row">
     <div class="col-sm-6 offset-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Shot_accuracy.png" title="Comparação de precisão de chutes entre Botafogo e seus adversários" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Shot_accuracy.jpg" title="Comparação de precisão de chutes entre Botafogo e seus adversários" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -132,7 +132,7 @@ O Botafogo teve uma fase de grupos excepcional, com cada jogador demonstrando ex
 
 <div class="row">
     <div class="col-sm-6 offset-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Probabilities_GroupB.png" title="Probabilidades de classificação do Grupo B antes do torneio" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Probabilities_GroupB.jpg" title="Probabilidades de classificação do Grupo B antes do torneio" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

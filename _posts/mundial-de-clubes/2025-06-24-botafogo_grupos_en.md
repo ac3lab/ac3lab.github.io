@@ -128,7 +128,7 @@ It's also important to highlight the team's defensive performance. Barboza and J
 
 <div class="row">
     <div class="col-sm-6 offset-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Shot_accuracy.png" title="Botafogo's PPDA by zone against Atlético Madrid" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Shot_accuracy.jpg" title="Botafogo's PPDA by zone against Atlético Madrid" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -140,7 +140,7 @@ The standout player for Botafogo in this group stage was Alexander Barboza. He w
 
 <div class="row">
     <div class="col-sm-6 offset-sm-3 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Probabilities_GroupB.png" title="Botafogo's PPDA by zone against Atlético Madrid" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/fase_de_grupos/Probabilities_GroupB.jpg" title="Botafogo's PPDA by zone against Atlético Madrid" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
