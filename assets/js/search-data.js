@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-nba-playoffs-the-mvps-duel",
+            },{id: "post-botafogo-39-s-surprising-club-world-cup-group-stage-performance",
+        
+          title: "Botafogo&#39;s Surprising Club World Cup Group Stage Performance",
+        
+        description: "Botafogo&#39;s Surprising Club World Cup Group Stage Performance",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/botafogo_grupos_en/";
+          
+        },
+      },{id: "post-nba-playoffs-the-mvps-duel",
         
           title: "NBA Playoffs : The MVPs Duel",
         
@@ -438,6 +449,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-a-surpreendente-performance-do-botafogo-na-fase-de-grupos-do-mundial-de-clubes",
+        
+          title: "A Surpreendente Performance do Botafogo na Fase de Grupos do Mundial de Clubes...",
+        
+        description: "A Surpreendente Performance do Botafogo na Fase de Grupos do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/botafogo_grupos_pt/";
           
         },
       },{id: "post-nba-playoffs-o-duelo-dos-mvps",
