@@ -66,6 +66,17 @@ ninja.data = [{
             window.location.href = "/blog/2025/fluminense_grupos_en/";
           
         },
+      },{id: "post-flamengo-39-s-dominant-group-stage-performance-at-the-club-world-cup",
+        
+          title: "Flamengo&#39;s Dominant Group Stage Performance at the Club World Cup",
+        
+        description: "Flamengo&#39;s Dominant Group Stage Performance at the Club World Cup",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/flamengo_grupos_en/";
+          
+        },
       },{id: "post-botafogo-39-s-surprising-club-world-cup-group-stage-performance",
         
           title: "Botafogo&#39;s Surprising Club World Cup Group Stage Performance",
@@ -493,6 +504,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/fluminense_grupos_pt/";
+          
+        },
+      },{id: "post-a-dominante-performance-do-flamengo-na-fase-de-grupos-do-mundial-de-clubes",
+        
+          title: "A Dominante Performance do Flamengo na Fase de Grupos do Mundial de Clubes...",
+        
+        description: "A Dominante Performance do Flamengo na Fase de Grupos do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/flamengo_grupos_pt/";
           
         },
       },{id: "post-a-surpreendente-performance-do-botafogo-na-fase-de-grupos-do-mundial-de-clubes",
