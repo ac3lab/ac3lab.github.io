@@ -72,7 +72,7 @@ No ataque, o Botafogo dependeu muito dos laterais Alex Telles e Vitinho, que tiv
 
 <h3> <b> Jogo 2: Botafogo vs Paris Saint-Germain </b></h3>
 
-O Botafogo, apesar de ter menos de 15% de chance de vitória segundo o Globo Esporte, derrotou o campeão da Champions League por 1-0 em uma partida emocionante. <br/><br/>
+O Botafogo, apesar de ter menos de 15% de chance de vitória segundo a Opta Analyst, derrotou o campeão da Champions League por 1-0 em uma partida emocionante. <br/><br/>
 
 O clube carioca fez apenas uma mudança no time titular que enfrentou o Sounders na estreia do torneio. O atacante Mastriani foi substituído pelo meio-campo Allan. O técnico Renato Paiva optou por reforçar o meio-campo, já que enfrentariam um oponente muito forte nessa área. Paiva escolheu uma formação 4-3-3 em vez do 4-4-2 usado no jogo de estreia. <br/><br/>
 
@@ -114,7 +114,7 @@ A imagem mostra o PPDA do Botafogo (passes por ação defensiva) em diferentes �
 
 <h2> <b> Conclusão </b></h2>
 
-Para resumir a fase de grupos do Botafogo em uma palavra, seria <b>SURPREENDENTE</b>. O Botafogo acabou em um dos grupos mais difíceis do Mundial de Clubes e ainda assim conseguiu se classificar, em segundo lugar, à frente de duas das principais equipes da Europa, até mesmo vencendo o campeão da Champions League. Segundo o Globo Esporte, antes do início do Mundial de Clubes, o Botafogo tinha cerca de 70% de chance de ser eliminado na fase de grupos, o que sublinha o torneio impressionante que a equipe está fazendo ao garantir essa classificação. <br/><br/>
+Para resumir a fase de grupos do Botafogo em uma palavra, seria <b>SURPREENDENTE</b>. O Botafogo acabou em um dos grupos mais difíceis do Mundial de Clubes e ainda assim conseguiu se classificar, em segundo lugar, à frente de duas das principais equipes da Europa, até mesmo vencendo o campeão da Champions League. Segundo a Opta Analyst, antes do início do Mundial de Clubes, o Botafogo tinha cerca de 70% de chance de ser eliminado na fase de grupos, o que sublinha o torneio impressionante que a equipe está fazendo ao garantir essa classificação. <br/><br/>
 
 No geral, o Botafogo entregou uma performance excepcional, tanto ofensiva quanto defensivamente. No ataque, o destaque foi Igor Jesus, que marcou dois dos três gols da equipe no torneio até agora. Ele aproveitou ao máximo as chances que surgiram e foi crucial para a classificação do clube carioca. O jogador fez apenas 6 chutes na competição, registrando uma taxa de conversão de cerca de 33% — uma das mais altas do torneio até o momento. <br/><br/>
 

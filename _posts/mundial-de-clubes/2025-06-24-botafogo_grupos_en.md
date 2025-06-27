@@ -78,7 +78,7 @@ Offensively, Botafogo relied heavily on full-backs Alex Telles and Vitinho, who 
 
 <h3> <b> Game 2: Botafogo vs Paris Saint-Germain </b></h3>
 
-Botafogo, despite having less than a 15% chance of winning according to Globo Esporte, defeated the reigning Champions League champions 1-0 in a thrilling match. <br/><br/>
+Botafogo, despite having less than a 15% chance of winning according to Opta Analyst, defeated the reigning Champions League champions 1-0 in a thrilling match. <br/><br/>
 
 The Rio club only made one change to the starting eleven that faced the Sounders in the tournament opener. Striker Mastriani was replaced by midfielder Allan. Coach Renato Paiva opted to strengthen the midfield, given that they were up against a very strong opponent in that area. Paiva chose a 4-3-3 formation instead of the 4-4-2 used in the opening game. <br/><br/>
 
@@ -120,7 +120,7 @@ The image shows Botafogo's PPDA (passes per defensive action) across different a
 
 <h2> <b> Conclusion </b></h2>
 
-To sum up Botafogo's group stage in one word, it would be <b>SURPRISING</b>. Botafogo ended up in one of the toughest groups at the Club World Cup and still managed to qualify, in second place, ahead of two of Europe's top teams, even beating the reigning Champions League winner. According to Globo Esporte, before the start of the Club World Cup, Botafogo had about a 70% chance of being eliminated in the group stage, which underlines the impressive tournament the team is having by securing this qualification. <br/><br/>
+To sum up Botafogo's group stage in one word, it would be <b>SURPRISING</b>. Botafogo ended up in one of the toughest groups at the Club World Cup and still managed to qualify, in second place, ahead of two of Europe's top teams, even beating the reigning Champions League winner. According to Opta Analyst, before the start of the Club World Cup, Botafogo had about a 70% chance of being eliminated in the group stage, which underlines the impressive tournament the team is having by securing this qualification. <br/><br/>
 
 Overall, Botafogo delivered an outstanding performance, both offensively and defensively. Going forward, the standout was Igor Jesus, who scored two of the team's three goals in the tournament so far. He made the most of the chances that came his way and was crucial to the Rio club's qualification. The player took only 6 shots in the competition, posting a conversion rate of around 33% — one of the highest in the tournament to date. <br/><br/>
 
