@@ -20,11 +20,6 @@ author: Ace Laboratory Football Team - Miguel Angelo e Pedro Lopes
 
 ---
 
-<p align="justify">
-
-Se quiser ler este texto em inglês, <a href = "https://ac3lab.github.io/blog/2000/fluminense_grupos_en/"> clique aqui.</a>
-
-</p>
 
 <h2> <b> Introdução </b></h2>
 
