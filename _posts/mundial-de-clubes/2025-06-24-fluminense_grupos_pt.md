@@ -63,7 +63,4 @@ A fase de grupos do Fluminense não foi fácil. Fez uma partida de estreia surpr
 Ofensivamente, a falta de ritmo por conta da recuperação de Germán Cano é notória, visto que o argentino finalizou 5 ao gol e perdeu 3 chances. O atacante foi pegando ritmo ao longo dos 3 jogos, mas não foi o suficiente para vermos ele em sua melhor forma, o que é crucial para o Fluminense. Ainda assim, Cano contou com apenas menos finalizações que Jhon Arias (9), eleito duas vezes como melhor jogador da partida pela FIFA e obtendo a melhor nota Sofascore em todos os jogos da fase de grupos. Defensivamente, o time carioca teve falhas contra o Ulsan HD, mas no geral, teve boa atuação, com clean sheets nos dois outros jogos. A boa performance da zaga tricolor — com destaque para Freytes e Renê — resultou em poucas finalizações contra o Fluminense, especialmente no jogo contra o Mamelodi Sundowns e o Borussia Dortmund; em comparação, apenas o Ulsan HD teve menos finalizações na partida contra o time alemão. Com confronto marcado contra a Inter de Milão, não seria controverso afirmar que o Fluminense tem plenas chances de manter a sequência de classificações de times brasileiros nesta Copa do Mundo de Clubes. <br/><br/>
 
 
-
-<center>Principais estatísticas do Fluminense ao longo da fase de grupos. <br/><br/></center>
-
 </div> 
