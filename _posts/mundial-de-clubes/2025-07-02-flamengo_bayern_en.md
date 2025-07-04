@@ -14,7 +14,7 @@ categories: Football; Analysis
 
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
-author: Ace Laboratory Team
+author: Ace Laboratory Team - João Victor Gadelha
 
 ---
 
