@@ -44,7 +44,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-palmeiras-39-group-stage-performance-at-the-club-world-cup",
+            },{id: "post-fluminense-vs-inter-a-victory-that-surprised-everyone",
+        
+          title: "Fluminense vs Inter: A Victory that Surprised Everyone",
+        
+        description: "How Renato Gaúcho surprised Inter with tactical change and Fluminense secured qualification in the Round of 16",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/fluminense_inter_en/";
+          
+        },
+      },{id: "post-flamengo-vs-bayern-an-analysis-of-errors-and-tactical-differences",
+        
+          title: "Flamengo vs Bayern: An Analysis of Errors and Tactical Differences",
+        
+        description: "How Flamengo&#39;s errors and Bayern&#39;s pressure defined the result in the Club World Cup Round of 16",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/flamengo_bayern_en/";
+          
+        },
+      },{id: "post-palmeiras-vs-botafogo-a-tactical-battle-in-the-club-world-cup-round-of-16",
+        
+          title: "Palmeiras vs Botafogo: A Tactical Battle in the Club World Cup Round of...",
+        
+        description: "A thrilling tactical showdown between Brazilian giants Palmeiras and Botafogo in the Club World Cup Round of 16, featuring intense extra-time drama and strategic masterclass",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/botafogo_palmeiras_en/";
+          
+        },
+      },{id: "post-palmeiras-39-group-stage-performance-at-the-club-world-cup",
         
           title: "Palmeiras&#39; Group Stage Performance at the Club World Cup",
         
@@ -482,6 +515,39 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-fluminense-vs-inter-uma-vitória-que-surpreendeu-a-todos",
+        
+          title: "Fluminense vs Inter: Uma Vitória que Surpreendeu a Todos",
+        
+        description: "Como Renato Gaúcho surpreendeu a Inter com uma mudança tática e Fluminense garantiu classificação nas Oitavas de Final",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/fluminense_inter_pt/";
+          
+        },
+      },{id: "post-palmeiras-vs-botafogo-uma-batalha-tática-nas-oitavas-de-final-do-mundial-de-clubes",
+        
+          title: "Palmeiras vs Botafogo: Uma Batalha Tática nas Oitavas de Final do Mundial de...",
+        
+        description: "Batalha tática entre gigantes brasileiros nas Oitavas de Final do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/botafogo_palmeiras_pt/";
+          
+        },
+      },{id: "post-flamengo-vs-bayern-uma-análise-dos-erros-e-da-diferença-tática",
+        
+          title: "Flamengo vs Bayern: Uma Análise dos Erros e da Diferença Tática",
+        
+        description: "Como os erros do Flamengo e a pressão do Bayern definiram o resultado nas Oitavas de Final do Mundial de Clubes",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/flamengo_bayern_pt/";
           
         },
       },{id: "post-a-performance-do-palmeiras-na-fase-de-grupos-do-mundial-de-clubes",
