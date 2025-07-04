@@ -67,7 +67,7 @@ Quando na posse de bola — e não atacando em transição — a abordagem do t�
 
 <div class="row">
     <div class="col-sm-10 offset-sm-1 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/oitavas/formation1.png" title="Formação tática do Botafogo" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/oitavas/formation2.png" title="Formação tática do Botafogo" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -89,7 +89,7 @@ O Palmeiras se posicionou em uma formação 4-2-3-1, mas empregou uma tática de
 
 <div class="row">
     <div class="col-sm-10 offset-sm-1 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/oitavas/formation2.png" title="Formação defensiva do Palmeiras" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-26-post_world_cup/oitavas/formation1.png" title="Formação defensiva do Palmeiras" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
