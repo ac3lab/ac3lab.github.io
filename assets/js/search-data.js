@@ -44,7 +44,40 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-fluminense-vs-inter-a-victory-that-surprised-everyone",
+            },{id: "post-real-madrid-vs-borussia-dortmund-a-champions-league-rematch-on-the-world-stage",
+        
+          title: "Real Madrid vs Borussia Dortmund: A Champions League Rematch on the World Stage...",
+        
+        description: "A tactical analysis of the FIFA Club World Cup quarterfinal clash between Real Madrid and Borussia Dortmund, featuring a dramatic Champions League rematch",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/real_borussia_en/";
+          
+        },
+      },{id: "post-heartbreak-and-heroics-palmeiras-faces-chelsea-in-a-quarterfinal-thriller",
+        
+          title: "Heartbreak and Heroics: Palmeiras Faces Chelsea in a Quarterfinal Thriller",
+        
+        description: "A tactical analysis of the FIFA Club World Cup quarterfinal clash between Palmeiras and Chelsea, featuring strategic battles and individual performances",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/chelsea_palmeiras_en/";
+          
+        },
+      },{id: "post-fluminense-vs-al-hilal-brazilian-resilience-meets-saudi-power-in-quarterfinal-showdown",
+        
+          title: "Fluminense vs Al Hilal: Brazilian Resilience Meets Saudi Power in Quarterfinal Showdown",
+        
+        description: "A tactical analysis of the FIFA Club World Cup quarterfinal clash between Fluminense and Al Hilal, featuring defensive masterclass and strategic battles",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/alhilal_flu_en/";
+          
+        },
+      },{id: "post-fluminense-vs-inter-a-victory-that-surprised-everyone",
         
           title: "Fluminense vs Inter: A Victory that Surprised Everyone",
         
@@ -515,6 +548,39 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-real-madrid-vs-borussia-dortmund-uma-revanche-da-champions-league-no-palco-mundial",
+        
+          title: "Real Madrid vs Borussia Dortmund: Uma Revanche da Champions League no Palco Mundial...",
+        
+        description: "Uma análise tática do confronto entre Real Madrid e Borussia Dortmund nas quartas de final do Mundial de Clubes da FIFA, com uma dramática revanche da Champions League",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/real_borussia_pt/";
+          
+        },
+      },{id: "post-drama-e-heroísmo-palmeiras-enfrenta-chelsea-em-thriller-das-quartas-de-final",
+        
+          title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em Thriller das Quartas de Final",
+        
+        description: "Uma análise tática do confronto entre Palmeiras e Chelsea nas quartas de final do Mundial de Clubes da FIFA, com batalhas estratégicas e performances individuais",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/chelsea_palmeiras_pt/";
+          
+        },
+      },{id: "post-fluminense-vs-al-hilal-resiliência-brasileira-encontra-poder-saudita-em-confronto-das-quartas",
+        
+          title: "Fluminense vs Al Hilal: Resiliência Brasileira Encontra Poder Saudita em Confronto das Quartas...",
+        
+        description: "Uma análise tática do confronto entre Fluminense e Al Hilal nas quartas de final do Mundial de Clubes da FIFA, com aula de defesa e batalhas estratégicas",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/alhilal_flu_pt/";
           
         },
       },{id: "post-fluminense-vs-inter-uma-vitória-que-surpreendeu-a-todos",
