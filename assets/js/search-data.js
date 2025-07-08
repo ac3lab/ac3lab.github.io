@@ -561,9 +561,9 @@ ninja.data = [{
             window.location.href = "/blog/2000/real_borussia_pt/";
           
         },
-      },{id: "post-drama-e-heroísmo-palmeiras-enfrenta-chelsea-em-thriller-das-quartas-de-final",
+      },{id: "post-drama-e-heroísmo-palmeiras-enfrenta-chelsea-em-disputa-das-quartas-de-final",
         
-          title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em Thriller das Quartas de Final",
+          title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em disputa das Quartas de Final",
         
         description: "Uma análise tática do confronto entre Palmeiras e Chelsea nas quartas de final do Mundial de Clubes da FIFA, com batalhas estratégicas e performances individuais",
         section: "Posts",
