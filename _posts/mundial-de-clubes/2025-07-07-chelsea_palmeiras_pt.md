@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em Thriller das Quartas de Final"
+title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em disputa das Quartas de Final"
 
 date: 2000-07-07 00:00:00
 
