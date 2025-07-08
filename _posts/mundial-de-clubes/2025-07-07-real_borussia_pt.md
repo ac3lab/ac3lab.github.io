@@ -20,11 +20,6 @@ author: Ace Laboratory Team - Brenno Santos
 
 ---
 
-<p align="justify">
-
-If you want to read this text in English, <a href = "https://ac3lab.github.io/blog/2000/real_borussia_en/"> click here.</a>
-
-</p>
 
 <h2> <b> Introdução </b></h2>
 
