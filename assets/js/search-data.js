@@ -44,7 +44,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-real-madrid-vs-borussia-dortmund-a-champions-league-rematch-on-the-world-stage",
+            },{id: "post-real-madrid-vs-psg-french-dominance-secures-club-world-cup-final-spot",
+        
+          title: "Real Madrid vs PSG: French Dominance Secures Club World Cup Final Spot",
+        
+        description: "A tactical analysis of the Club World Cup semifinal between Real Madrid and Paris Saint-Germain, featuring absolute French dominance",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/real_psg_en/";
+          
+        },
+      },{id: "post-fluminense-vs-chelsea-brazilian-underdogs-39-fairytale-run-ends-in-semifinal",
+        
+          title: "Fluminense vs Chelsea: Brazilian Underdogs&#39; Fairytale Run Ends in Semifinal",
+        
+        description: "A tactical analysis of the FIFA Club World Cup semifinal between Fluminense and Chelsea, featuring the end of a remarkable underdog story",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/flu_chelsea_en/";
+          
+        },
+      },{id: "post-real-madrid-vs-borussia-dortmund-a-champions-league-rematch-on-the-world-stage",
         
           title: "Real Madrid vs Borussia Dortmund: A Champions League Rematch on the World Stage...",
         
@@ -548,6 +570,28 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-real-madrid-vs-psg-dominância-francesa-garante-vaga-na-final-do-mundial-de-clubes",
+        
+          title: "Real Madrid vs PSG: Dominância Francesa Garante Vaga na Final do Mundial de...",
+        
+        description: "Uma análise tática da semifinal do Mundial de Clubes entre Real Madrid e Paris Saint-Germain, com domínio absoluto do time francês",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/real_psg_pt/";
+          
+        },
+      },{id: "post-fluminense-vs-chelsea-a-saga-dos-azarões-brasileiros-termina-na-semifinal",
+        
+          title: "Fluminense vs Chelsea: A Saga dos Azarões Brasileiros Termina na Semifinal",
+        
+        description: "Uma análise tática da semifinal do Mundial de Clubes entre Fluminense e Chelsea, com o fim de uma notável história de azarões",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/flu_chelsea_pt/";
           
         },
       },{id: "post-real-madrid-vs-borussia-dortmund-uma-revanche-da-champions-league-no-palco-mundial",
