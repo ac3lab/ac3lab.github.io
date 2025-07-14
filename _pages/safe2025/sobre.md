@@ -93,7 +93,7 @@ O **SAFE 2025** contará com uma trilha dedicada à apresentação de trabalhos 
 - **Divulgação dos Resultados:** *Em breve* 
 - **Envio da Versão Final:** *Em breve*
 
-> 🔗 **Link de Submissão:** *Em breve via CMT*
+> 🔗 **Link de Submissão:** [Open Review](https://openreview.net/group?id=ac3lab.github.io/SAFE/2025/Symposium)
 
 
 #### Temas de Interesse
