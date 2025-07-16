@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-real-madrid-vs-psg-french-dominance-secures-club-world-cup-final-spot",
+            },{id: "post-chelsea-vs-psg-blues-stun-french-giants-to-claim-club-world-cup-crown",
+        
+          title: "Chelsea vs PSG: Blues Stun French Giants to Claim Club World Cup Crown...",
+        
+        description: "A tactical analysis of the historic Club World Cup final between Chelsea and Paris Saint-Germain, featuring an unexpected English triumph and tactical masterclass",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/chelsea_psg_en/";
+          
+        },
+      },{id: "post-real-madrid-vs-psg-french-dominance-secures-club-world-cup-final-spot",
         
           title: "Real Madrid vs PSG: French Dominance Secures Club World Cup Final Spot",
         
@@ -570,6 +581,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-chelsea-vs-psg-blues-surpreendem-gigantes-franceses-e-conquistam-a-coroa-do-mundial-de-clubes",
+        
+          title: "Chelsea vs PSG: Blues Surpreendem Gigantes Franceses e Conquistam a Coroa do Mundial...",
+        
+        description: "Uma análise tática da histórica final do Mundial de Clubes entre Chelsea e Paris Saint-Germain, com triunfo inesperado inglês e aula de tática",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/chelsea_psg_pt/";
           
         },
       },{id: "post-real-madrid-vs-psg-dominância-francesa-garante-vaga-na-final-do-mundial-de-clubes",
