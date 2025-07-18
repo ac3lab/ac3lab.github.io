@@ -140,7 +140,7 @@ Os valores para participação no SAFE 2025 variam de acordo com a categoria do 
 - **Alunos de Pós-graduação:** R$ 60  
 - **Efetivo/Profissional:** R$ 100  
 
-> 🔗 **Link de Inscrição:** *Em breve*
+> 🔗 **Link de Inscrição:** *[Even3](https://www.even3.com.br/safe2025/)*
 
 ---
 
