@@ -20,7 +20,7 @@ Sua empresa pode se tornar parte desse movimento e ganhar visibilidade exclusiva
 
 ## 🏆 Planos de Patrocínio
 
-### 1️⃣ Patrocinador Ouro – R$ 30.000  
+### 1️⃣ Patrocinador Ouro – R$ 15.000
 💡 *Máximo de 3 cotas disponíveis*
 
 - ✅ Logo em destaque no site, banners e materiais promocionais  
@@ -32,7 +32,7 @@ Sua empresa pode se tornar parte desse movimento e ganhar visibilidade exclusiva
 
 ---
 
-### 2️⃣ Patrocinador Prata – R$ 15.000  
+### 2️⃣ Patrocinador Prata – R$ 10.000
 💡 *Máximo de 3 cotas disponíveis*
 
 - ✅ Logo no site, banners e materiais promocionais  
