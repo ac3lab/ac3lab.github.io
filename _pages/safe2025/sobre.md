@@ -89,9 +89,9 @@ O **SAFE 2025** contará com uma trilha dedicada à apresentação de trabalhos 
 
 #### Datas Importantes
 
-- **Período de Submissão:** *14/07-31/08*
-- **Divulgação dos Resultados:** *15/09* 
-- **Envio da Versão Final:** *22/09*
+- **Período de Submissão:** *14/07-14/09*
+- **Divulgação dos Resultados:** *15/10* 
+- **Envio da Versão Final:** *22/10*
 
 > 🔗 **Link de Submissão:** [Open Review](https://openreview.net/group?id=ac3lab.github.io/SAFE/2025/Symposium)
 
