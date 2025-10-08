@@ -53,14 +53,14 @@ Em breve mais informações.
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
 | 08:00 - 09:00   | Credenciamento                         | —                | —                          |
-| 09:00 - 10:00   | Palestra de Abertura                   | Palestrante 1    | Cargo do Palestrante 1     |
+| 09:00 - 10:00   | Palestra de Abertura                   | Martin Paré    | Analista de Dados no Flamengo     |
 | 10:00 - 10:30   | Coffee Break                           | —                | —                          |
 | 10:30 - 11:30   | Minicurso                            | Palestrante 2    | Cargo do Palestrante 2     |
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
-| 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 3+  | Cargos dos Participantes   |
+| 13:30 - 14:30   | Mesa Redonda - Entre o campo, a ciencia e a mídia: Conectando saberes no futebol                           | Adriano <br /> Membro da Globo <br /> Lucas Pareto | Salab <br /> Analista da Globo <br /> Analista de Dados no Corinthias  |
 | 14:30 - 15:00   | Coffee Break      | —                | —                          |
-| 15:00 - 16:00   | Palestra II                            | Palestrante 4    | Cargo do Palestrante 4     |
+| 15:00 - 16:00   | Palestra II                            | Juliano Spineti    | Fisiologista Fluminense     |
 
 
 <br />
@@ -69,14 +69,14 @@ Em breve mais informações.
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
 | :-------------: | :------------------------------------: | :--------------: | :------------------------: |
-| 09:00 - 10:00   | Palestra III                   | Palestrante 5    | Cargo do Palestrante 5     |
+| 09:00 - 10:00   | Minicurso                  | Palestrante 5    | Cargo do Palestrante 5     |
 | 10:00 - 10:30   | Coffee Break                           | —                | —                          |
-| 10:30 - 11:30   | Minicurso                           | Palestrante 6    | Cargo do Palestrante 6     |
+| 10:30 - 11:30   | Palestra 3: Gradient e Gemini ou AceLab                           | Palestrante 6    | Cargo do Palestrante 6     |
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
-| 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 7+  | Cargos dos Participantes   |
+| 13:30 - 14:30   | Mesa Redonda - Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Cunha <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco da Gama |
 | 14:30 - 15:00   | Coffee Break       | —                | —                          |
-| 15:00 - 16:00   | Palestra de Encerramento                            | Palestrante 8    | Cargo do Palestrante 8     |
+| 15:00 - 16:00   | Palestra de Encerramento                            | Globo    | Cargo do Palestrante 8     |
 
 
 
