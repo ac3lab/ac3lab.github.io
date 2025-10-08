@@ -59,7 +59,7 @@ Em breve mais informações.
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
 | 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 3+  | Cargos dos Participantes   |
-| 14:30 - 15:00   | Coffee Break / Sessão de Pôsteres      | —                | —                          |
+| 14:30 - 15:00   | Coffee Break      | —                | —                          |
 | 15:00 - 16:00   | Palestra II                            | Palestrante 4    | Cargo do Palestrante 4     |
 
 
@@ -75,7 +75,7 @@ Em breve mais informações.
 | 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30 - 13:30   | Almoço                                 | —                | —                          |
 | 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 7+  | Cargos dos Participantes   |
-| 14:30 - 15:00   | Coffee Break / Sessão de Pôsteres      | —                | —                          |
+| 14:30 - 15:00   | Coffee Break       | —                | —                          |
 | 15:00 - 16:00   | Palestra de Encerramento                            | Palestrante 8    | Cargo do Palestrante 8     |
 
 
