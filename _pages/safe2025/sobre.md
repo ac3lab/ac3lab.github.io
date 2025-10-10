@@ -17,7 +17,7 @@ pretty_table: true
 </div>
 
 <div  style="text-align: justify">
-TESTESTESTEO Symposium on Analytics for Football Excellence 2025 (SAFE 2025) chega à sua segunda edição. Organizado pelo Analytics for Competitive Excellence (ACE) Laboratory, o evento acontecerá ao longo de dois dias, reunindo pesquisadores e profissionais da ciência de dados aplicada ao futebol.
+O Symposium on Analytics for Football Excellence 2025 (SAFE 2025) chega à sua segunda edição. Organizado pelo Analytics for Competitive Excellence (ACE) Laboratory, o evento acontecerá ao longo de dois dias, reunindo pesquisadores e profissionais da ciência de dados aplicada ao futebol.
 
 A programação contará com minicursos, palestras, mesa redonda, submissão de trabalhos científicos e, claro, um momento de integração com todos os participantes no coffee break. Será uma oportunidade única para aprofundar conhecimentos, compartilhar experiências e fortalecer as conexões entre clubes, universidades e empresas do setor.
 
