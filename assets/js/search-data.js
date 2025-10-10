@@ -44,7 +44,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/safe2025/patrocinio-safe2025/";
               },
-            },{id: "post-chelsea-vs-psg-blues-stun-french-giants-to-claim-club-world-cup-crown",
+            },{id: "post-fouls-in-sports-strategy-safety-and-game-control",
+        
+          title: "Fouls in Sports: Strategy, Safety and Game Control",
+        
+        description: "A comparative analysis of fouls in the NBA, NFL and football, exploring how they evolved from simple rule violations to essential strategic tools",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/post_faltas_en/";
+          
+        },
+      },{id: "post-chelsea-vs-psg-blues-stun-french-giants-to-claim-club-world-cup-crown",
         
           title: "Chelsea vs PSG: Blues Stun French Giants to Claim Club World Cup Crown...",
         
@@ -581,6 +592,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-faltas-nos-esportes-estratégia-segurança-e-controle-do-jogo",
+        
+          title: "Faltas nos Esportes: Estratégia, Segurança e Controle do Jogo",
+        
+        description: "Uma análise comparativa das faltas na NBA, NFL e futebol, explorando como elas evoluíram de simples infrações para ferramentas estratégicas essenciais",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_faltas_pt/";
           
         },
       },{id: "post-chelsea-vs-psg-blues-surpreendem-gigantes-franceses-e-conquistam-a-coroa-do-mundial-de-clubes",
