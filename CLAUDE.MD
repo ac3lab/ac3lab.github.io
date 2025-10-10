@@ -24,6 +24,14 @@ Após o front matter, sempre incluir:
 ---
 ```
 
+### **2.1. Link para Versão em Inglês**
+Após o separador, incluir o parágrafo com link para a versão em inglês:
+```html
+<p align="justify">
+If you want to read this text in en-us, <a href = "https://ac3lab.github.io/blog/2025/post_faltas_en/"> click here.</a>
+</p>
+```
+
 ### **3. Estrutura de Títulos HTML**
 - **Títulos principais**: `<h2> <b> Título </b></h2>`
 - **Subtítulos**: `<h3><b>Subtítulo</b></h3>`
@@ -63,6 +71,7 @@ Para cada imagem, usar o template Jekyll:
 ### **9. Elementos Obrigatórios**
 - Front matter completo
 - Separador `---` após front matter
+- Link para versão em inglês com `<p align="justify">`
 - Título principal com `<h2><b>`
 - Pelo menos uma imagem com template correto
 - Estilo de texto justificado
@@ -96,6 +105,9 @@ author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
 ```markdown
 ---
 
+<p align="justify">
+If you want to read this text in en-us, <a href = "https://ac3lab.github.io/blog/2025/post_faltas_en/"> click here.</a>
+</p>
 
 <style>body {text-align: justify}</style>
 [Conteúdo da introdução...]
