@@ -9,6 +9,11 @@ thumbnail: assets/img/Posts_Images/2025-10-09-faltas/foul-title.jpg
 author: Ace Laboratory Team - Gabriel Madruga, Antonio Magalhães e Miguel Angelo
 ---
 
+<p align="justify">
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_faltas_pt/"> clique aqui.</a>
+</p>
+
+
 <style>body {text-align: justify}</style>
 
 <h2><b>NBA</b></h2>
