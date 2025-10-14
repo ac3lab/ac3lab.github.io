@@ -23,13 +23,19 @@ A programação contará com minicursos, palestras, mesa redonda, submissão de 
 
 O SAFE 2025 reafirma seu papel como um espaço essencial para discutir os rumos da análise de dados no futebol brasileiro.
 </div>
+
+<div class="text-center mt-4 mb-4">
+  <a href="https://www.even3.com.br/safe2025/" class="btn btn-primary btn-lg" target="_blank" style="font-size: 1.2em; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; background-color: #007bff; color: white; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+    🎫 INSCREVA-SE AGORA
+  </a>
+</div>
+
 ---
 
 ## Local
 
-**Rio de Janeiro** <br/>
-Em breve mais informações.
-
+**CEFET-RJ, Campus Maracanã**<br/>
+Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 
 ---
 
@@ -46,21 +52,23 @@ Em breve mais informações.
 
 ## Programação
 
+> 📋 **Para ver a programação completa com detalhes de cada apresentação, [clique aqui](/safe2025/programacao/).**
+
 <br />
 
 ### Dia 17/11
 
-|    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
-| :-------------: | :------------------------------------: | :--------------: | :------------------------: |
-| 08:00 - 09:00   | Credenciamento                         | —                | —                          |
-| 09:00 - 10:00   | Palestra de Abertura                   | Palestrante 1    | Cargo do Palestrante 1     |
-| 10:00 - 10:30   | Coffee Break                           | —                | —                          |
-| 10:30 - 11:30   | Minicurso                            | Palestrante 2    | Cargo do Palestrante 2     |
-| 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
-| 12:30 - 13:30   | Almoço                                 | —                | —                          |
-| 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 3+  | Cargos dos Participantes   |
-| 14:30 - 15:00   | Coffee Break      | —                | —                          |
-| 15:00 - 16:00   | Palestra II                            | Palestrante 4    | Cargo do Palestrante 4     |
+|    Horário         |                  Atividade                              |   Palestrantes             | ​​​​          Cargo        |
+| :-------------: | :----------------------------------------: | :-----------------: | :-------------: |
+| 08:00-09:00   | Credenciamento                         | —                | —                          |
+| 09:00-10:00   | Ponderador de importância contextual                  | Martin Paré    | Analista de Dados no Flamengo     |
+| 10:00-10:30   | Coffee Break                           | —                | —                          |
+| 10:30-11:30   | Minicurso:<br /> Como prever o resultado de uma partida                           | Pedro Siqueira das Neves | Membro do ACE Lab e <br /> Engenheiro de Dados na Iplanrio     |
+| 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
+| 12:30-13:30   | Almoço                                 | —                | —                          |
+| 13:30-14:30   | Mesa Redonda:<br />  Entre o campo, a ciencia e a mídia <br /> Conectando saberes no futebol                           | Adriano Machado<br />Bernardo Aquino<br />Lucas Pareto | Professor do DCC na UFMG<br />Especialista em Estratégia de Ativos de Futebol na Globo<br />Analista de Dados no Corinthias  |
+| 14:30-15:00   | Coffee Break      | —                | —                          |
+| 15:00-16:00   | Aprendizado de máquina aplicado a <br /> gestão de carga de trabalho no Fluminense                            | Juliano Spineti    | Coordenador de Fisiologista <br /> no Fluminense     |
 
 
 <br />
@@ -68,15 +76,16 @@ Em breve mais informações.
 ### Dia 18/11
 
 |    Horário         |                  Atividade                              |   Palestrantes     | ​​​​          Cargo|
-| :-------------: | :------------------------------------: | :--------------: | :------------------------: |
-| 09:00 - 10:00   | Palestra III                   | Palestrante 5    | Cargo do Palestrante 5     |
-| 10:00 - 10:30   | Coffee Break                           | —                | —                          |
-| 10:30 - 11:30   | Minicurso                           | Palestrante 6    | Cargo do Palestrante 6     |
-| 11:30 - 12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
-| 12:30 - 13:30   | Almoço                                 | —                | —                          |
-| 13:30 - 14:30   | Mesa Redonda                           | Palestrantes 7+  | Cargos dos Participantes   |
-| 14:30 - 15:00   | Coffee Break       | —                | —                          |
-| 15:00 - 16:00   | Palestra de Encerramento                            | Palestrante 8    | Cargo do Palestrante 8     |
+| :-------------: | :------------------------------------: | :--------------: | :----------------: |
+| 09:00-10:00   | Minicurso:<br /> Como prever o resultado de uma partida                  | Felipe Vilela Casalecchi    | Membro do ACE Lab e Desenvolvedor Front-End na Radix     |
+| 10:00-10:30   | Coffee Break                           | —                | —                          |
+| 10:30-11:00   | Palestra: Gradient                           | Palestrante 6    | Cargo do Palestrante 6     |
+| 11:00-11:30   | Palestra: Gemini                           | Palestrante 7    | Cargo do Palestrante 7     |
+| 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
+| 12:30-13:30   | Almoço                                 | —                | —                          |
+| 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Cunha <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |
+| 14:30-15:00   | Coffee Break       | —                | —                          |
+| 15:00-16:00   | Palestra de Encerramento                            | Palestrante 8    | Cargo do Palestrante 8     |
 
 
 
@@ -121,13 +130,15 @@ O serviço Microsoft CMT será utilizado para gerenciar o processo de revisão p
 
 ## Minicursos
 
-O SAFE 2025 oferecerá um minicurso com foco prático e teórico sobre o uso de dados no futebol, dividido nos dois dias de evento.
+O SAFE 2025 oferecerá um minicurso com foco prático e teórico sobre **"Como prever o resultado de uma partida"**, dividido nos dois dias de evento.
 
-Alguns temas em destaque:
+O minicurso abordará:
 - Introdução à análise de desempenho no futebol
 - Visualização de redes de passe
+- Técnicas de modelagem preditiva
+- Análise estatística aplicada ao futebol
 
-**Informações detalhadas dos minicursos serão divulgadas em breve.**
+**Informações detalhadas do minicurso serão divulgadas em breve.**
 
 ---
 
@@ -140,22 +151,43 @@ Os valores para participação no SAFE 2025 variam de acordo com a categoria do 
 - **Alunos de Pós-graduação:** R$ 60  
 - **Efetivo/Profissional:** R$ 100  
 
-> 🔗 **Link de Inscrição:** *[Even3](https://www.even3.com.br/safe2025/)*
+<div class="text-center mt-4 mb-4">
+  <a href="https://www.even3.com.br/safe2025/" class="btn btn-primary btn-lg" target="_blank" style="font-size: 1.2em; padding: 15px 30px; border-radius: 8px; text-decoration: none; display: inline-block; background-color: #007bff; color: white; border: none; box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s ease;">
+    🎫 INSCREVA-SE AGORA
+  </a>
+</div>
 
 ---
 
 ## Apoio e Parcerias
 
-Agradecemos aos nossos parceiros institucionais e patrocinadores que tornam o SAFE 2025 possível:
+Agradecemos aos nossos parceiros institucionais e apoiadores que tornam o SAFE 2025 possível:
 
-<div class="row">
-  <div class="col-sm-4 mt-3 mt-md-5">
-    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/cefet.png" title="CEFET-RJ" class="img-fluid rounded z-depth-1" %}
+<div class="row text-center">
+  <div class="col-12 mb-4">
+    <strong>Patrocinadores</strong>
   </div>
-  <div class="col-sm-3 mt-5 mt-md-5">
-    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" %}
+  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/gradient.png" title="GRADIENT" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
   </div>
+  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/sporttv.png" title="SPORTV" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
+  </div>
+  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/gemini.png" title="GEMINI" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
+  </div>
+</div>
 
+<div class="row text-center">
+  <div class="col-12 mb-4">
+    <strong>Apoio</strong>
+  </div>
+  <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
+  </div>
+  <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/cefet.png" title="CEFET-RJ" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
+  </div>
 </div>
 
 Quer ser um parceiro do SAFE 2025? [Clique aqui para saber mais sobre os planos de patrocínio](https://ac3lab.github.io/safe2025/patrocinio-safe2025/) ou escreva para: **ace@cos.ufrj.br**
