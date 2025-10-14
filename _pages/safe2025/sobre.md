@@ -80,7 +80,7 @@ Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 | 09:00-10:00   | Minicurso:<br /> Como prever o resultado de uma partida                  | Felipe Vilela Casalecchi    | Membro do ACE Lab e Desenvolvedor Front-End na Radix     |
 | 10:00-10:30   | Coffee Break                           | —                | —                          |
 | 10:30-11:00   | Palestra: Gradient                           | Palestrante 6    | Cargo do Palestrante 6     |
-| 11:00-11:30   | Palestra: Gemini                           | Palestrante 7    | Cargo do Palestrante 7     |
+| 11:00-11:30   | Palestra: A definir                           | Palestrante 7    | Cargo do Palestrante 7     |
 | 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30-13:30   | Almoço                                 | —                | —                          |
 | 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Cunha <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |
@@ -167,15 +167,13 @@ Agradecemos aos nossos parceiros institucionais e apoiadores que tornam o SAFE 2
   <div class="col-12 mb-4">
     <strong>Patrocinadores</strong>
   </div>
-  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
+  <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/gradient.png" title="GRADIENT" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
   </div>
-  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
+  <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/sporttv.png" title="SPORTV" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
   </div>
-  <div class="col-sm-4 mb-4 d-flex align-items-center justify-content-center">
-    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/gemini.png" title="GEMINI" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
-  </div>
+
 </div>
 
 <div class="row text-center">

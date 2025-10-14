@@ -110,10 +110,10 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 
 ---
 
-#### 11:00 - 11:30 | Palestra: Gemini
+#### 11:00 - 11:30 | Palestra: A definir 
 **Palestrante:** A definir  
 **Cargo:** A definir  
-**Descrição:** Apresentação sobre as inovações e ferramentas da Gemini na área de análise de dados e inteligência artificial aplicada ao esporte.
+**Descrição:** 
 
 ---
 
