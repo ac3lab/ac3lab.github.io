@@ -66,9 +66,9 @@ Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 | 10:30-11:30   | Minicurso:<br /> Como prever o resultado de uma partida                           | Pedro Siqueira das Neves | Membro do ACE Lab e <br /> Engenheiro de Dados na Iplanrio     |
 | 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30-13:30   | Almoço                                 | —                | —                          |
-| 13:30-14:30   | Mesa Redonda:<br />  Entre o campo, a ciencia e a mídia <br /> Conectando saberes no futebol                           | Adriano Machado<br />Bernardo Aquino<br />Lucas Pareto | Professor do DCC na UFMG<br />Especialista em Estratégia de Ativos de Futebol na Globo<br />Analista de Dados no Corinthias  |
+| 13:30-14:30   | Mesa Redonda:<br />  Entre o campo, a ciencia e a mídia <br /> Conectando saberes no futebol                           | Adriano Machado<br />Bernardo Aquino<br />Lucas Pareto | Professor do DCC na UFMG<br />Especialista em Estratégia de Ativos de Futebol na Globo<br />Coordenador de Scout / Mercado no Corinthias  |
 | 14:30-15:00   | Coffee Break      | —                | —                          |
-| 15:00-16:00   | Aprendizado de máquina aplicado a <br /> gestão de carga de trabalho no Fluminense                            | Juliano Spineti    | Coordenador de Fisiologista <br /> no Fluminense     |
+| 15:00-16:00   | Aprendizado de máquina aplicado a <br /> gestão de carga de trabalho no Fluminense                            | Juliano Spineti    | Coordenador do Departamento de Fisiologia <br /> no Fluminense     |
 
 
 <br />
@@ -85,7 +85,7 @@ Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 | 12:30-13:30   | Almoço                                 | —                | —                          |
 | 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Cunha <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |
 | 14:30-15:00   | Coffee Break       | —                | —                          |
-| 15:00-16:00   | Palestra de Encerramento                            | Palestrante 8    | Cargo do Palestrante 8     |
+| 15:00-16:00   | Palestra de Encerramento                            | Victor Nicolau (Falso 9)    | Especialista em Análise de Desempenho e Scout     |
 
 
 

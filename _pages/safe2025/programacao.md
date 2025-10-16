@@ -67,7 +67,7 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 **Participantes:**
 - **Adriano Machado** - Professor do DCC na UFMG
 - **Bernardo Aquino** - Especialista em Estratégia de Ativos de Futebol na Globo
-- **Lucas Pareto** - Analista de Dados no Corinthians
+- **Lucas Pareto** - Coordenador de Scout / Mercado no Corinthias
 
 **Descrição:** Mesa redonda que discutirá a intersecção entre academia, mídia esportiva e clubes de futebol, explorando como a ciência de dados pode ser aplicada de forma prática e como a mídia pode comunicar essas informações de maneira acessível ao público.
 
@@ -81,7 +81,7 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 
 #### 15:00 - 16:00 | Aprendizado de máquina aplicado à gestão de carga de trabalho no Fluminense
 **Palestrante:** Juliano Spineti  
-**Cargo:** Coordenador de Fisiologista no Fluminense  
+**Cargo:** Coordenador do Departamento de Fisiologia no Fluminense
 **Descrição:** Apresentação sobre como o Fluminense utiliza técnicas de machine learning para otimizar a gestão da carga de trabalho dos atletas, prevenindo lesões e maximizando o desempenho.
 
 ---
@@ -150,8 +150,8 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 ---
 
 #### 15:00 - 16:00 | Palestra de Encerramento
-**Palestrante:** A definir  
-**Cargo:** A definir  
+**Palestrante:** Victor Nicolau (Falso 9)
+**Cargo:** Especialista em Análise de Desempenho e Scout
 **Descrição:** A definir
 
 
