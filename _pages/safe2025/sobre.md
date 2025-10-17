@@ -83,7 +83,7 @@ Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 | 11:00-11:30   | Palestra: A definir                           | Palestrante 7    | Cargo do Palestrante 7     |
 | 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30-13:30   | Almoço                                 | —                | —                          |
-| 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Cunha <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |
+| 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Moura <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |
 | 14:30-15:00   | Coffee Break       | —                | —                          |
 | 15:00-16:00   | Palestra de Encerramento                            | Victor Nicolau (Falso 9)    | Especialista em Análise de Desempenho e Scout     |
 
