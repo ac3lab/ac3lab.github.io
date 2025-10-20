@@ -80,7 +80,7 @@ Endereço: Av. Maracanã, 229 - Maracanã – Rio de Janeiro/RJ
 | 09:00-10:00   | Minicurso:<br /> Como prever o resultado de uma partida                  | Felipe Vilela Casalecchi    | Membro do ACE Lab e Desenvolvedor Front-End na Radix     |
 | 10:00-10:30   | Coffee Break                           | —                | —                          |
 | 10:30-11:00   | Palestra: Gradient                           | Palestrante 6    | Cargo do Palestrante 6     |
-| 11:00-11:30   | Palestra: A definir                           | Palestrante 7    | Cargo do Palestrante 7     |
+| 11:00-11:30   | Soluções e desafios da federação paulista para o futebol.                        | Pedro Caleffi Arantes    | Analista do Departamento de Competições     |
 | 11:30-12:30   | Apresentação dos Trabalhos Submetidos | -    | -     |
 | 12:30-13:30   | Almoço                                 | —                | —                          |
 | 13:30-14:30   | Mesa Redonda:<br /> Futuro do Futebol no Rio | Téo Benjamin <br> Pedro Pereira <br> Nilton Moura <br> Vinícius Mouzinho | Gerente de Análise de Dados no Flamengo <br> Cienstista de Dados no Fluminense <br> CTO da Botafogo SAF <br> Analista de Dados no Vasco |

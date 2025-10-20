@@ -110,10 +110,11 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 
 ---
 
-#### 11:00 - 11:30 | Palestra: A definir 
-**Palestrante:** A definir  
-**Cargo:** A definir  
+#### 11:00 - 11:30 | Soluções e desafios da federação paulista para o futebol.
+**Palestrante:** Pedro Caleffi Arantes  
+**Cargo:** Analista do Departamento de Competições  
 **Descrição:** 
+Apresentação sobre as soluções e tecnologias da federação paulista para o futebol, com foco em análise de dados e tecnologia.
 
 ---
 
