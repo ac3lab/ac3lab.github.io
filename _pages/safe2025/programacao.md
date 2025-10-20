@@ -82,7 +82,7 @@ Martin Paré é formado em Engenharia de Produção pela PUC-Rio, com mestrado e
 #### 15:00 - 16:00 | Aprendizado de máquina aplicado à gestão de carga de trabalho no Fluminense
 **Palestrante:** Juliano Spineti  
 **Cargo:** Coordenador do Departamento de Fisiologia no Fluminense
-**Descrição:** Apresentação sobre como o Fluminense utiliza técnicas de machine learning para otimizar a gestão da carga de trabalho dos atletas, prevenindo lesões e maximizando o desempenho.
+**Descrição:** A apresentação abordará como é realizada a Gestão de Controle de Carga Interna e Externa e os Ciclo de Monitoramento no Futebol Competitivo para aumento de performance e redução de lesões. Além disso, dois projetos desenvolvidos no FFC são cases de sucesso e serão apresentados. Primeiro, uma solução para prever fadiga durante o jogo e recomendar substituições. Em seguida, um modelo preditivo de lesões, para indicar quando atletas estão próximos de uma lesão e auxiliar diretamente no controle de carga.
 
 ---
 
