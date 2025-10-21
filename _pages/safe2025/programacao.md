@@ -137,7 +137,7 @@ Apresentação sobre as soluções e tecnologias da federação paulista para o 
 **Participantes:**
 - **Téo Benjamin** - Gerente de Análise de Dados no Flamengo
 - **Pedro Pereira** - Cientista de Dados no Fluminense
-- **Nilton Cunha** - CTO da Botafogo SAF
+- **Nilton Moura** - CTO da Botafogo SAF
 - **Vinícius Mouzinho** - Analista de Dados no Vasco
 
 **Descrição:** Mesa redonda exclusiva com representantes dos principais clubes do Rio de Janeiro, discutindo o presente e o futuro da análise de dados no futebol carioca, compartilhando experiências e visões sobre a evolução da área.
