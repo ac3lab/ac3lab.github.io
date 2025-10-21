@@ -120,6 +120,15 @@ As submissões podem abordar temas como:
 Os artigos devem ter **até 4 páginas**, em **PDF**, conforme o [template da SBC](https://www.sbc.org.br/documentos-da-sbc/summary/169-templates-para-artigos-e-capitulos-de-livros/878-modelo-paragrafo-sbc).
 
 
+#### Modelo de Apresentação
+
+Todos os trabalhos submetidos devem ser apresentados em formato de palestra e seguir o padrão que está no link abaixo:
+
+👉 **Baixe e utilize o modelo oficial de apresentação:**  
+[🌟 Acesse o Modelo de Apresentação do SAFE 2025](https://docs.google.com/presentation/d/1mArTZkUrusaGT8asQq01yK5Vmjg9nP9b/edit?usp=sharing&ouid=103942342058434357588&rtpof=true&sd=true)
+
+
+
 #### Dúvidas e Submissões
 
 Entre em contato: **ace@cos.ufrj.br**
