@@ -2,7 +2,7 @@
 layout: page
 title: Cristian Danner
 description: Computer Science <br> Cefet/RJ
-img: assets/img/team/master/ft_Cristian_Danner.jpg
+img: assets/img/team/master/ft_Cristian_Danner.jpeg
 importance: 1
 category: "Master Students"
 redirect: http://lattes.cnpq.br/6315227716996262
