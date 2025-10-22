@@ -1066,6 +1066,11 @@ ninja.data = [{
           description: "Computer Engineering  UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/brenno_santos/";
+            },},{id: "projects-cristian-danner",
+          title: 'Cristian Danner',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/cristian_danner/";
             },},{id: "projects-daniel-barros",
           title: 'Daniel Barros',
           description: "Computer Engineering  UFRJ",
@@ -1081,6 +1086,11 @@ ninja.data = [{
           description: "Computer Engineering  UFRJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/felipe_vilela/";
+            },},{id: "projects-francisco-do-amaral",
+          title: 'Francisco do Amaral',
+          description: "Computer Science  Cefet/RJ",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/francisco_amaral/";
             },},{id: "projects-gabriel-madruga",
           title: 'Gabriel Madruga',
           description: "Systems Engineering  UFRJ",
