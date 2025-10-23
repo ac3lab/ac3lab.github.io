@@ -190,7 +190,7 @@ Agradecemos aos nossos parceiros institucionais e apoiadores que tornam o SAFE 2
     <strong>Apoio</strong>
   </div>
   <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
-    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/ufrj.png" title="UFRJ" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
+    {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/Coppe.png" title="COPPE/UFRJ" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
   </div>
   <div class="col-sm-6 mb-4 d-flex align-items-center justify-content-center">
     {% include figure.liquid loading="eager" path="assets/img/safe/safe2025/apoio/cefet.png" title="CEFET-RJ" class="img-fluid rounded z-depth-1" style="max-width: 80%; height: auto;" %}
