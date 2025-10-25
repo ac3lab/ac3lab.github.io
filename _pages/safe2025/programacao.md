@@ -150,10 +150,10 @@ Apresentação sobre as soluções e tecnologias da federação paulista para o 
 
 ---
 
-#### 15:00 - 16:00 | Palestra de Encerramento
+#### 15:00 - 16:00 | Análise Geral de Partidas de Futebol
 **Palestrante:** Victor Nicolau (Falso 9)
 **Cargo:** Especialista em Análise de Desempenho e Scout
-**Descrição:** A definir
+**Descrição:** Apresentação detalhada sobre como correlacionar diferentes conjuntos de dados e explicação da metodologia de análise.
 
 
 ---
