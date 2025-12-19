@@ -30,28 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "dropdown-sobre-o-evento",
-              title: "Sobre o Evento",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/safe2025/sobre/";
-              },
-            },{id: "dropdown-planos-de-patrocínio",
-              title: "Planos de Patrocínio",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/safe2025/patrocinio-safe2025/";
-              },
-            },{id: "dropdown-programação",
-              title: "Programação",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/safe2025/programacao/";
-              },
-            },{id: "post-fouls-in-sports-strategy-safety-and-game-control",
+        },{id: "post-fouls-in-sports-strategy-safety-and-game-control",
         
           title: "Fouls in Sports: Strategy, Safety and Game Control",
         
