@@ -74,7 +74,7 @@ First, it's important to mention that we've updated our definition of progressiv
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/passes_vs_progressive_passes.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/passes_vs_progressive_passes.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -91,7 +91,7 @@ Looking at the passing and progression of these teams, there are a few points to
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/shots_vs_xg.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

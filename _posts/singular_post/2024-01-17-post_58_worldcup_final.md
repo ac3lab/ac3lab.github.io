@@ -9,7 +9,7 @@ thumbnail: assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/pele
 author: Balthazar Paixão
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/pele1958.jpg" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/pele1958.jpg" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The World Cup is the most important football competition in the world. It is held every four years and gathers the best national teams in the world. The first edition of the competition was held in 1930, in Uruguay, and since then, the competition has been held every four years, except in 1942 and 1946, due to World War II. The competition is organized by FIFA (Fédération Internationale de Football Association), the world's football governing body.
@@ -29,7 +29,7 @@ Data extraction
 The data extraction process can be considered the easiest one. It is because Statsbomb provides a Python package called <a href="https://github.com/statsbomb/statsbombpy" target="_blank">statsbombpy</a> that allows us to extract the data directly from the repository based on the match_id that they provide in the repository. The extraction would be as follows:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-extration-statsbombpy.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-extration-statsbombpy.png" class="img-fluid rounded z-depth-1" %}
 
 Data preparation (to the passes network)
 
@@ -37,7 +37,7 @@ Data preparation (to the passes network)
 With the DataFrame from avents loaded, we can begin creating a class for the players and a function to get all the Starting XI players from the match (the ones that we will use in the passes network). The class for the players is as follows:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-preparation-player-class.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-preparation-player-class.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Using our DataFrame we want to filter the data following some criteria, so:
@@ -58,13 +58,13 @@ Analysis
 <p align="justify">
 Now that we have our passes network, we can start the analysis. The first thing we can do is to plot the network. We can do this using the <a href="https://networkx.org/" target="_blank">NetworkX</a> package. The result will be like this:
 </p>
-{% include figure.html path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-analysis-pass-network-simple.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-analysis-pass-network-simple.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Yeah... It's not very informative. We can see that Pelé is the player who receives the most passes, but we can't extract much information from this plot. So, let's try to improve it...
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-analysis-pass-network.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-01-17-post_58_worldcup_final-Images/data-analysis-pass-network.png" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Much better! Now we can see that Pelé and Vavá are occupying almost the same average position in the field. We can also see some differences compared with modern football. For example, there is no player with an average position in the center of the field.

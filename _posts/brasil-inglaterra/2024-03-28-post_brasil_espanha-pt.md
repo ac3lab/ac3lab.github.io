@@ -8,6 +8,7 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-25-brazil_inglaterra/brasil_inglaterra.jpg
 author: Ace Laboratory Football Team
 hidden: true
+hidden_post: true
 ---
 
 <h2>Introdução</h2>
@@ -31,7 +32,7 @@ Já a Seleção Espanhola de José Luís mostrou ter boas opções de ataque à 
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-28-brasil_espanha/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-28-brasil_espanha/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -48,7 +49,7 @@ Apesar de 90 minutos relativamente parelhos -com 4 grandes chances para cada tim
 
 <h3>Destaques</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-28-brasil_espanha/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-28-brasil_espanha/pt-br/players1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

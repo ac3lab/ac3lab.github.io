@@ -27,7 +27,7 @@ On the other side, England, who have been working harder with a longer-serving c
 
 <h3>Match Analysis</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-25-brasil_inglaterra/en/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-25-brasil_inglaterra/en/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -44,7 +44,7 @@ Despite that parity, Brazil's dominance is shown by the 12 (!!!) shots from insi
 
 <h3>Highlights</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-25-brasil_inglaterra/en/highlights-player1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-25-brasil_inglaterra/en/highlights-player1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

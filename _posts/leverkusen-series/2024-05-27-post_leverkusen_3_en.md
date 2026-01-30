@@ -33,7 +33,7 @@ The man in charge on the left side of the pitch is <b>Alejandro Grimaldo</b>. Th
 After such impressive performances during the season, Grimaldo was called up to play for his national team for the first time. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Alejandro_Grimaldo.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Alejandro_Grimaldo.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 In the Bundesliga, Grimaldo was <b>the 6th player with the most goals scored</b>, but above him, there are only the center forwards, such as Bayern Munich's Harry Kane and RB Leipzig's Loïs Openda. The Bayer Leverkusen wingback was also the competition's <b>leader in assists</b> and <b>second in chances created</b>. <br/><br/>
@@ -41,21 +41,21 @@ In the Bundesliga, Grimaldo was <b>the 6th player with the most goals scored</b>
 On the right wingback is Dutchman <b>Jeremie Frimpong</b>. The 23-year-old was signed from Bayer Leverkusen in the 20/21 season, but only established himself as a first-team regular the following season. Since then, it's been possible to see a big improvement in Frimpong's performance, which has become even clearer with the arrival of Xabi Alonso at the helm. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Jeremie_Frimpong.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Jeremie_Frimpong.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 
 The evolution in performance is clearly linked to <b>the change in the player's role, which became more attacking</b> with the arrival of the Spanish coach. We can see that, comparing Frimpong's first season as a starter at Leverkusen (the only one managed entirely by Gerardo Seoane) and the following two seasons, <b>the Dutchman's number of goal-scoring involvements has doubled.</b> <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/FrimpogGA.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/FrimpogGA.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 It's important to note that Seoane was in charge of Leverkusen until the 8th round of the 22/23 Bundesliga season. In those 8 games, Frimpong scored two goals (an average of 0.25 goals per game). From matchday 9 onwards, with Xabi Alonso taking over as coach, Frimpong's number of goals per game rose to 0.5, showing that the period with the new coach had a much greater impact on his total number of goals and assists that season.<br/><br/>
 
 Looking at Frimpong's numbers pre-Xabi and post-Xabi, it's clear how much <b>the coach was a determining factor in the development of the Dutchman's offensive potential</b>. To show this more clearly, we looked at the heatmaps of all Frimpong's games from the 21/22 season to the current one, and grouped them into time intervals with data from 7 to 9 different games. In this way, we can better visualize the process of the Dutchman moving away from the defensive sector and towards the offensive sector, especially after Xabi Alonso's debut as coach on October 8, 2022. It's interesting to see, in the 23/24 season, <b>an intense occupation of the right side of the opponent's penalty area</b>. <br/><br/>
 
-{% include video.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
+{% include video.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
 
 
 Analyzing the statistics of these two players in the Bundesliga made it even clearer what we meant when we said that this team is marked by its extremely attacking wingbacks. <br/><br/>
@@ -71,13 +71,13 @@ On the other hand, one midfielder is unquestionable in the line-up. Swiss midfie
 As well as his regularity in terms of playing time, it's important to highlight the player's incredible regularity in passing. Xhaka is the Bundesliga's <b>leader in accurate passes</b>, and has made an impressive 15 appearances with more than 100 passes and 90% accuracy. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Granit_Xhaka.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Granit_Xhaka.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Next, we'll show the “sonar map” of Granit Xhaka's passes. The graph was created using data on the player's position, final position and the distance of the pass. From this, we were able to find out at which angle each pass comes from and, assuming 0º as the direction of the opponent's goal, group the passes by these angles. The number above each bar corresponds to the number of passes that occurred in that direction.<br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/sonar_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/sonar_map.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <h3>The star, Florian Wirtz:</h3>
@@ -87,7 +87,7 @@ You can't talk about Bayer Leverkusen without mentioning <b>Florian Wirtz</b>. A
 Since his arrival at Bayer Leverkusen in 2020, Wirtz has been considered <b>one of the great promises of German soccer</b>, and every season he shows more of his potential. But, like many others in this team, it was Xabi Alonso who was responsible for getting the most out of Wirtz, who is having his best season in 23/24. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Florian_Wirtz.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Florian_Wirtz.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Looking at the league as a whole, Wirtz is a standout in several statistics. The German is <b>8th in the ranking of goals scored</b> (behind only center forwards, except for teammate Alejandro Grimaldo) and <b>4th in right dribbles per game</b>. <br/><br/>
@@ -99,13 +99,13 @@ Finally, let's talk about the team's center forward: 23-year-old Nigerian <b>Vic
 Even though he is now seen as fundamental, Boniface's arrival at Leverkusen for 20 million euros seemed a risk, given that he came from the Belgian league and that, despite having had a good season, he wasn't that impressive. Fortunately for Xabi Alonso, the price quickly became too small for the excellent player he received. The Bayer Leverkusen striker's speed, physical strength, understanding of the game and repertoire have even led to him being <b>called up to the Nigerian national team for the first time</b>. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Victor_Boniface.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Victor_Boniface.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 It's also important to note <b>the difference felt by Bayer Leverkusen in the period without Boniface</b>. In the table below, we show the difference in the team's average goals per game in two different time intervals: the first 16 rounds, with Boniface available, and between rounds 17 and 27 (while Boniface was injured). We chose not to include the end of the championship in the comparison since, even if the player was available, his average minutes were much lower, a factor related to the period of greater caution with the player's health after injury. <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/BonifaceGoals.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/BonifaceGoals.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Despite almost 3 months out of the league, Boniface was <b>the 7th player with the most goal participations in Bundesliga 23/24</b>. <br/><br/>

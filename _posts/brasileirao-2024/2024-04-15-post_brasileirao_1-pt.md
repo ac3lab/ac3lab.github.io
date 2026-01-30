@@ -7,6 +7,8 @@ tags: Football; Brasileirao; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-04-15-post_brasileirao_1/Brasileirao_Assai_2022.png
 author: Ace Laboratory Football Team
+hidden: true
+hidden_post: true
 ---
 
 ---
@@ -24,7 +26,7 @@ Um dos campeonatos mais disputados do mundo, o Brasileirão teve seu início no 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cap_cui.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cap_cui.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -39,7 +41,7 @@ No encontro mais desequilibrado da rodada inicial, Athletico e Cuiabá se enfren
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cru_bot.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cru_bot.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -56,7 +58,7 @@ No confronto mais movimentado da rodada, Cruzeiro e Botafogo protagonizaram uma 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/fla_ago.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/fla_ago.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -72,7 +74,7 @@ Também no domingo, Atlético-GO e Flamengo se enfrentaram no Estádio Serra Dou
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/vas_gre.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/vas_gre.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

@@ -27,7 +27,7 @@ In a week with a double round that happened between 16/04 and 18/04, good games 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/fla_sao.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/fla_sao.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -44,7 +44,7 @@ On Wednesday, Flamengo and São Paulo faced each other at Maracanã in a rematch
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/pal_int.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/pal_int.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -59,7 +59,7 @@ At Barueri Arena, Internacional beat Palmeiras 1x0 with Wesley scoring. Palmeira
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/juv_cor.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/juv_cor.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -74,7 +74,7 @@ Juventude played Corinthians home at Alfredo Jaconi Stadium. Though having domin
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/rbr_vas.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-19-post_brasileirao_2/en/rbr_vas.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

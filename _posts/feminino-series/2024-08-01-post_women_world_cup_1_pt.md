@@ -16,6 +16,10 @@ thumbnail: assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/thumb_women
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
+hidden: true
+hidden_post: true
+
+
 ---
 
 ---
@@ -50,7 +54,7 @@ Nos gráficos a seguir, analisaremos alguns aspectos das duas equipes finalistas
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pass_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pass_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -60,7 +64,7 @@ No gráfico 2, mostramos em quais regiões do campo cada time exerce mais press�
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pressure_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/pressure_heatmap_comparison.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -72,7 +76,7 @@ Na próxima seção, usaremos mapas de chutes para analisar o desempenho ofensiv
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/spain_shot_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/spain_shot_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -80,7 +84,7 @@ Na próxima seção, usaremos mapas de chutes para analisar o desempenho ofensiv
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/england_shot_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-01-post_women_world_cup_1/england_shot_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

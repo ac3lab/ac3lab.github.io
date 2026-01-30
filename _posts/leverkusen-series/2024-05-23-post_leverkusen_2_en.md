@@ -42,7 +42,7 @@ Despite the few changes to the squad in general, Leverkusen sold some defenders 
 After these small changes, the squad still had 35 players in it, the same number as in the 21/22 season, with the average age dropping slightly to 24.2 years. The average value of each player remained similar compared to 21/22.<br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_squad.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_squad.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <h3>Season 2023/2024 (current season)</h3>
@@ -58,7 +58,7 @@ The main signings made after the arrival of Xabi Alonso were the transfer of mid
 Despite the signings, the players who were already at the club have improved incredibly. To analyze the growth of players, their market value is a very interesting parameter. In the graph below, you can see the players who have risen the most in value since Xabi Alonso's arrival. It's important to note that Boniface, acquired this season by Leverkusen, already has a market value almost double what he was paid. Boniface and Grimaldo, the latter of whom was acquired for free, show how well the signings have been executed, making the most of the opportunities on the market.<br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 

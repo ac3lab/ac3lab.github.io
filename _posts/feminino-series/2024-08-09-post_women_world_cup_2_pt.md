@@ -16,6 +16,10 @@ thumbnail: assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/thumb_women
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
+hidden: true
+hidden_post: true
+
+
 ---
 
 ---
@@ -45,7 +49,7 @@ No gráfico 1, podemos ver todas as ações progressivas de Paralluelo durante a
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -58,7 +62,7 @@ Além disso, precisamos mencionar mais uma importante característica de Salma p
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_defensive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/paralluelo_defensive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -80,7 +84,7 @@ Ao todo, Linda teve 47 ações progressivas durante a competição, sendo a <b>t
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_progressive_actions.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -91,7 +95,7 @@ Além disso, seu radar de passes (gráfico 4) mostra que os toques de Linda são
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_sonar_map.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/caicedo_sonar_map.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 
@@ -109,7 +113,7 @@ Além disso, existe uma considerável discrepância na precisão dos passes entr
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
-{% include figure.html path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/comparative_radar.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-08-09-post_women_world_cup_2/comparative_radar.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
 

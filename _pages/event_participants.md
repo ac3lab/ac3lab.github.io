@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Palestrantes SAFE 2024
-permalink: /safe2024_participants/
+title: Palestrantes SAFE 2025
+permalink: /safe2025_participants/
 description:
 nav: false
 nav_order: 3
@@ -29,7 +29,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for project in sorted_projects -%}
-      {% include projects.html %}
+      {% include projects.liquid %}
     {%- endfor %}
   </div>
   {%- endif -%}
@@ -50,7 +50,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for project in sorted_projects -%}
-      {% include projects.html %}
+      {% include projects.liquid %}
     {%- endfor %}
   </div>
   {%- endif -%}

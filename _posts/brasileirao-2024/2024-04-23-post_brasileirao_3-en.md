@@ -28,7 +28,7 @@ Last weekend (April 21st and 22nd), the 3rd round of the Brazilian Championship 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/rbb_cor.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/rbb_cor.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -45,7 +45,7 @@ On Saturday, RB Bragantino and Corinthians faced off at the Nabi Abi Chedid Stad
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/pal_fla.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/pal_fla.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -60,7 +60,7 @@ At Allianz Parque, Palmeiras hosted Flamengo in a match that delivered less than
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/bot_juv.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/bot_juv.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -76,7 +76,7 @@ At Nilton Santos Stadium, Botafogo completely dominated Juventude. In addition t
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/gre_cui.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-23-post_brasileirao_3/en/gre_cui.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

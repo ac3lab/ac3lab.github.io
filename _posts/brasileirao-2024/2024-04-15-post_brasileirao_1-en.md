@@ -27,7 +27,7 @@ One of the most competitive leagues in the world, Brasileirão started this week
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cap_cui.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cap_cui.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -42,7 +42,7 @@ In the most unbalanced encounter of the 1st round, Athletico and Cuiabá faced e
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cru_bot.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/cru_bot.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -58,7 +58,7 @@ At the round’s most active match, Cruzeiro and Botafogo played a very interest
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/fla_ago.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/fla_ago.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">
@@ -73,7 +73,7 @@ Sunday Atlético-GO and Flamengo faced each other at Estádio Serra Dourada. In 
 <div style="text-align: justify">
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/vas_gre.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-04-15-post_brasileirao_1/en/vas_gre.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <p align="justify">

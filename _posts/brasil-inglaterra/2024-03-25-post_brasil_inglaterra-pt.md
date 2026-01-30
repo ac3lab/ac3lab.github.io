@@ -8,6 +8,7 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-25-brazil_inglaterra/brasil_inglaterra.jpg
 author: Ace Laboratory Football Team
 hidden: true
+hidden_post: true
 ---
 
 <h2>Introdução</h2>
@@ -31,7 +32,7 @@ Do outro lado a Inglaterra que apresenta um trabalho mais sólido com um treinad
 
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-25-brazil_inglaterra/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-25-brazil_inglaterra/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">
@@ -47,7 +48,7 @@ Do outro lado a Inglaterra que apresenta um trabalho mais sólido com um treinad
 
 <h3>Destaques</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
-{% include figure.html path="assets/img/Posts_Images/2024-03-25-brazil_inglaterra/pt-br/player1.png" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-25-brazil_inglaterra/pt-br/player1.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div style="text-align: justify">

@@ -9,7 +9,7 @@ thumbnail: assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp
 author: Nathália Tito
 ---
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/15.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 Recently, I did an exploratory analysis of my runs using data exported from the Nike Run Club app, and it helped me make better decisions in sport. I ran more, now having a better understanding of my training performance. All of this provided me insights that I decided to do more: I trained a model that clusters my runs and built an API that allows me to, with each new run, query this model to understand the "level" this run is, based on all my other runs.
@@ -33,7 +33,7 @@ In this case, I was familiar with my data in space and believed that one of the 
 In short, the algorithm begins randomly generating k centroids (central points of clusters), to which each record is assigned based on the centroid with the smallest distance (forming a cluster). After that, the model calculates the average values of the points in each cluster and uses this value to reposition the centroids. This process is repeated until the positions of the centroids converge or a specified stopping criterion is met. In other words, as I wrote above, the goal of this task is to choose centroids that the inertia is minimized. It's important to note that as the initialization step is random (a non-deterministic algorithm), we should to execute multiple initializations with different centroid seeds to find the best result.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/16.gif" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/16.gif" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 As it's not the purpose of this post to address deeply about clustering algorithm, I take this opportunity to provide the entire <a href="https://scikit-learn.org/stable/modules/clustering.html">documentation</a> in scikit-learn. Additionally, you can find a great post on some of these algorithms in practice at this <a href="https://machinelearningmastery.com/clustering-algorithms-with-python/">link</a>.
@@ -53,7 +53,7 @@ Always remembering that in the preprocessing step, the features need to be resiz
 Regarding the algorithm, the K-Means doesn't "decide" the ideal number of clusters. We need to do that, and I used a simple technique: Elbow Method. When we increase the number of clusters, the inertia decreases, meaning the distance from each point to its nearest centroid becomes smaller. What we need is this distance as small as possible, as we need the optimal point that minimizes the number of clusters and the variance in each cluster.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/17.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/17.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 The plot above is a plot of inertia (within-clusters sum-of-squares - wcss) when we increase k. The "elbow" point indicates a kind of trade-off between error and the number of clusters, meaning when the wcss no longer significantly decreases with each iteration, and there aren't no substantial gains with an increase in k. For my problem, 5 would be the optimal number of k, but just to confirm, I used a package called kneed, that finds the point on the line where the curvature is maximum.
@@ -83,7 +83,7 @@ km.fit(X)
 With the trained model, I plotted a graph with the distance vs. pace of my races, already segmented in their respective interpreted clusters:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/18.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/18.webp" class="img-fluid rounded z-depth-1" %}
 
 Finally, I saved:
 
@@ -109,21 +109,21 @@ Creating the file.py
 5) Initializing the Flask that will receive requests on port 5000, running locally.
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/19.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/19.webp" class="img-fluid rounded z-depth-1" %}
 
 With file.py ready, just start it in the terminal:
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/20.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/20.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 To test it I will use Postman, a tool that allows to run API tests and make requests in general. To do this, I will take a data from some run that wasn't used in model training:
 </p>
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/21.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/21.webp" class="img-fluid rounded z-depth-1" %}
 
 On Postman:
 
-{% include figure.html path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/22.webp" class="img-fluid rounded z-depth-1" %}
+{% include figure.liquid path="assets/img/Posts_Images/2024-03-01-post_running_model_Images/22.webp" class="img-fluid rounded z-depth-1" %}
 
 <p align="justify">
 At this moment, the model's response wasn't a surprise to me, because I knew my information (my sample of runs was small). However, as my dataset grows, it becomes a bit out of control, and that's where modeling shortens the paths. Another example of how a machine learning model can help us in real life.
