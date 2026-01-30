@@ -212,6 +212,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _projects/leticia.md
+  - _projects/pedro_siqueira.md
+  - _projects/felipe_vilela.md
 keep_files:
   - CNAME
   - .nojekyll
