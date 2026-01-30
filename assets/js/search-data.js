@@ -1060,11 +1060,6 @@ ninja.data = [{
           description: "Full Professor  Cefet/RJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/eduardo_bezerra/";
-            },},{id: "projects-felipe-casalecchi",
-          title: 'Felipe Casalecchi',
-          description: "Computer Engineering  UFRJ",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/felipe_vilela/";
             },},{id: "projects-francisco-do-amaral",
           title: 'Francisco do Amaral',
           description: "Computer Science  Cefet/RJ",
@@ -1090,11 +1085,6 @@ ninja.data = [{
           description: "Full Professor  Cefet/RJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/jorge_soares/";
-            },},{id: "projects-letícia-maia",
-          title: 'Letícia Maia',
-          description: "Computer Science  Cefet/RJ",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/leticia/";
             },},{id: "projects-lucas-calmon",
           title: 'Lucas Calmon',
           description: "Computer Science  Cefet/RJ",
@@ -1145,11 +1135,6 @@ ninja.data = [{
           description: "Computer Science  Cefet/RJ",
           section: "Projects",handler: () => {
               window.location.href = "/projects/pedro_lopes/";
-            },},{id: "projects-pedro-siqueira",
-          title: 'Pedro Siqueira',
-          description: "Computer Engineering  UFRJ",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/pedro_siqueira/";
             },},{id: "safe_people-gabriel-reis",
           title: 'Gabriel Reis',
           description: "Pesquisador  SALab",
