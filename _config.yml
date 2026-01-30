@@ -206,9 +206,6 @@ exclude:
   - README.md
   - readme_preview/
   - vendor
-  - _projects/leticia.md
-  - _projects/pedro_siqueira.md
-  - _projects/felipe_vilela.md
 keep_files:
   - CNAME
   - .nojekyll
