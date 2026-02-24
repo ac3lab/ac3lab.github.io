@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Risk vs Reward: Strategic Analysis of Free Kick Takes"
-date: 2025-12-16 00:00:00:00
+date: 2026-02-24 00:00:00:00
 description: "Quantitative risk-reward analysis of free-kick taking using StatsBomb data."
 tags: Football; Analysis; Strategy;
 categories: Football; Analytics;
@@ -48,14 +48,24 @@ To visualize these results, we generated several types of heat maps. Let's go th
 These show which areas of the field offer greater or lesser danger in the direct shot strategy, compared to zones where the take more frequently results in counter-attacks. It is observed that the patterns found are quite close to what is intuitively expected: the most dangerous free kicks are generally concentrated in regions immediately close to the edge of the box, especially when positioned centrally in relation to the horizontal axis of the field.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" title="Net Goals Heatmap - Direct Free Kicks" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
+           title="Net Goals Heatmap - Direct Free Kicks" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" title="Risk-Reward Heatmap - Direct Free Kicks" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm mt-3 mt-md-0 text-center">
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
+           title="Risk-Reward Heatmap - Direct Free Kicks" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -65,13 +75,23 @@ These show the danger levels of crossed free kicks, compared to zones where the 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_xg_heatmap.png" title="Net Goals Heatmap - Crosses" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_xg_heatmap.png" 
+           title="Net Goals Heatmap - Crosses" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/cross_fk_net_xg_heatmap.png" title="Risk-Reward Heatmap - Crosses" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/cross_fk_net_xg_heatmap.png" 
+           title="Risk-Reward Heatmap - Crosses" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -82,24 +102,39 @@ These identify, at each field position, which type of take tends to be more adva
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_goals.png" title="Comparative Heatmap - Net Goals" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_goals.png" 
+           title="Comparative Heatmap - Net Goals" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_xg.png" title="Comparative Heatmap - xG" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_xg.png" 
+           title="Comparative Heatmap - xG" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 
 <h3><b>Comparative Efficiency Heatmap</b></h3>
 
-Complementing the bivariate comparative maps, the efficiency per attempt heatmap refines the analysis by considering the average quality of actions performed in each field region. The observed patterns reinforce previous results: direct shots show greater efficiency in central zones near the box, while crosses present relative advantage in lateral lanes and regions farther from goal.
+Complementing the bivariate comparative maps, the efficiency per attempt heatmap refines the analysis by considering the average quality of actions performed in each field region. The observed patterns reinforce previous results: direct shots show greater efficiency in central zones near the box, while crosses present relative advantage in lateral lanes and regions farther from the goal.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png" title="Comparative Heatmap - Efficiency per Attempt" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid 
+           loading="eager" 
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png" 
+           title="Comparative Heatmap - Efficiency per Attempt" 
+           class="img-fluid rounded z-depth-1" 
+           style="max-width: 500; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -112,4 +147,4 @@ The analysis of free kick takes, using StatsBomb data, allowed us to quantify th
 
 <b>Crosses:</b> Crosses present better reward and lower risk in the lateral lanes of the final third of the field. Crosses originating from more withdrawn areas tend to present lower offensive return and greater defensive risk.
 
-Therefore, based on this study, we can confirm that evidence points to direct shots as the best option in central regions near the box, while crosses are more effective in the lateral lanes of the offensive field.
+Therefore, based on this study, we can confirm that evidence points to direct shots as the best option in central regions near the box, while crosses are more effective in the lateral lanes of the offensive half.
