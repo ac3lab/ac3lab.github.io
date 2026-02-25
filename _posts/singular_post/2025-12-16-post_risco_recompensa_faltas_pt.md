@@ -130,7 +130,7 @@ Em complemento aos mapas comparativos bivariados, o heatmap de eficiência por t
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid 
-           loading="eager"s
+           loading="eager"
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png" 
            title="Heatmap Comparativo - Eficiência por Tentativa" 
            class="img-fluid rounded z-depth-1" 
