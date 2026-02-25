@@ -54,7 +54,7 @@ These show which areas of the field offer greater or lesser danger in the direct
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
            title="Net Goals Heatmap - Direct Free Kicks" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -65,7 +65,7 @@ These show which areas of the field offer greater or lesser danger in the direct
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
            title="Risk-Reward Heatmap - Direct Free Kicks" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -80,7 +80,7 @@ These show the danger levels of crossed free kicks, compared to zones where the 
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_xg_heatmap.png" 
            title="Net Goals Heatmap - Crosses" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -91,7 +91,7 @@ These show the danger levels of crossed free kicks, compared to zones where the 
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/cross_fk_net_xg_heatmap.png" 
            title="Risk-Reward Heatmap - Crosses" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -107,7 +107,7 @@ These identify, at each field position, which type of take tends to be more adva
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_goals.png" 
            title="Comparative Heatmap - Net Goals" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -118,7 +118,7 @@ These identify, at each field position, which type of take tends to be more adva
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_xg.png" 
            title="Comparative Heatmap - xG" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -134,7 +134,7 @@ Complementing the bivariate comparative maps, the efficiency per attempt heatmap
            path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png" 
            title="Comparative Heatmap - Efficiency per Attempt" 
            class="img-fluid rounded z-depth-1" 
-           style="max-width: 50%; margin: 0 auto; display: block;" %}
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 

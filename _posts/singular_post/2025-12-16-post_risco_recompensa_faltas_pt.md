@@ -23,7 +23,6 @@ FALTA! O camisa 10 do seu time é derrubado próximo à área, e aí você se pe
 
 Utilizando dados abertos da StatsBomb, decidimos fazer uma análise sobre as cobranças de falta para descobrir o verdadeiro custo-benefício de cada estratégia, avaliando o risco (chance de sofrer um contra-ataque perigoso) e a recompensa (chance de marcar um gol) associados tanto a faltas diretas, quanto cruzamentos.
 
-
 <h3><b>Metodologia: Como calcular o risco x recompensa?</b></h3>
 
 Mas então como realmente podemos calcular o risco x recompensa de uma cobrança?
@@ -38,7 +37,6 @@ Como recompensa, medimos pela primeira finalização do time na mesma posse de b
 
 Já para o cálculo do risco no cruzamento, olhamos para a posse de bola imediatamente seguinte. Se ela for do adversário e configurar um contra-ataque, calculamos o xG gerado por essa jogada contra e o resultado final (gol sofrido ou não).
 
-
 <h3><b>Visualização dos Resultados</b></h3>
 
 Para visualizarmos estes resultados, geramos alguns tipos de mapas de calor. Vamos passar por eles:
@@ -49,26 +47,25 @@ Evidenciam quais áreas do campo oferecem maior ou menor perigo na estratégia d
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
-           title="Heatmap Saldo de Gols - Faltas Diretas" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png"
+           title="Heatmap Saldo de Gols - Faltas Diretas"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0 text-center">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png" 
-           title="Heatmap Risco-Recompensa - Faltas Diretas" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_goal_heatmap.png"
+           title="Heatmap Risco-Recompensa - Faltas Diretas"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
-
 
 <h3><b>Heatmaps de Saldo de Gols e Risco-Recompensa (cruzamentos)</b></h3>
 
@@ -76,23 +73,23 @@ Evidenciam os níveis de perigo de faltas cruzadas, em comparação às zonas on
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_xg_heatmap.png" 
-           title="Heatmap Saldo de Gols - Cruzamentos" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/direct_fk_net_xg_heatmap.png"
+           title="Heatmap Saldo de Gols - Cruzamentos"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/cross_fk_net_xg_heatmap.png" 
-           title="Heatmap Risco-Recompensa - Cruzamentos" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/cross_fk_net_xg_heatmap.png"
+           title="Heatmap Risco-Recompensa - Cruzamentos"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
@@ -102,26 +99,25 @@ Identificam, em cada posição do campo, qual tipo de cobrança tende a ser mais
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_goals.png" 
-           title="Heatmap Comparativo - Saldo de Gols" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_goals.png"
+           title="Heatmap Comparativo - Saldo de Gols"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
-           loading="eager" 
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_xg.png" 
-           title="Heatmap Comparativo - xG" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+        {% include figure.liquid
+           loading="eager"
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_bivariate_xg.png"
+           title="Heatmap Comparativo - xG"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
-
 
 <h3><b>Heatmap Comparativo por Eficiência</b></h3>
 
@@ -129,15 +125,14 @@ Em complemento aos mapas comparativos bivariados, o heatmap de eficiência por t
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid 
+        {% include figure.liquid
            loading="eager"
-           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png" 
-           title="Heatmap Comparativo - Eficiência por Tentativa" 
-           class="img-fluid rounded z-depth-1" 
-           style="max-width: 500px; margin: 0 auto; display: block;" %}
+           path="assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/comparison_rate_xg.png"
+           title="Heatmap Comparativo - Eficiência por Tentativa"
+           class="img-fluid rounded z-depth-1"
+           style="max-width: 250px; margin: 0 auto; display: block;" %}
     </div>
 </div>
-
 
 <h2><b>Conclusões</b></h2>
 
