@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
+        },{id: "post-risco-x-recompensa-análise-estratégica-de-cobranças-de-falta",
+        
+          title: "Risco x Recompensa: Análise Estratégica de Cobranças de Falta",
+        
+        description: "Análise quantitativa do risco-recompensa em cobranças de falta utilizando dados da StatsBomb",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/post_risco_recompensa_faltas_pt/";
+          
+        },
+      },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
         
           title: "Risk vs Reward: Strategic Analysis of Free Kick Takes",
         
@@ -38,7 +49,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/post_risco_recompensa_faltas_en/";
+            window.location.href = "/blog/2026/post_risco_recompensa_faltas_en/";
           
         },
       },{id: "post-fouls-in-sports-strategy-safety-and-game-control",
@@ -578,17 +589,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2024/post_running/";
-          
-        },
-      },{id: "post-risco-x-recompensa-análise-estratégica-de-cobranças-de-falta",
-        
-          title: "Risco x Recompensa: Análise Estratégica de Cobranças de Falta",
-        
-        description: "Análise quantitativa do risco-recompensa em cobranças de falta utilizando dados da StatsBomb",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2000/post_risco_recompensa_faltas_pt/";
           
         },
       },{id: "post-analisando-contratações-do-futebol-brasileiro-em-2024-setor-ofensivo",
