@@ -12,7 +12,7 @@ author: Ace Laboratory Team - Murilo Jorge and Pedro Lopes
 ---
 
 <p align="justify">
-Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_risco_recompensa_faltas_pt"> clique aqui.</a>
+Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_risco_recompensa_faltas_pt/"> clique aqui.</a>
 </p>
 
 <style>body {text-align: justify}</style>
