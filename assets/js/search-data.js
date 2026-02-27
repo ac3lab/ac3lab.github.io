@@ -30,18 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-risco-x-recompensa-análise-estratégica-de-cobranças-de-falta",
-        
-          title: "Risco x Recompensa: Análise Estratégica de Cobranças de Falta",
-        
-        description: "Análise quantitativa do risco-recompensa em cobranças de falta utilizando dados da StatsBomb",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2026/post_risco_recompensa_faltas_pt/";
-          
-        },
-      },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
+        },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
         
           title: "Risk vs Reward: Strategic Analysis of Free Kick Takes",
         
@@ -600,6 +589,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_contratacoes_1_pt/";
+          
+        },
+      },{id: "post-risco-x-recompensa-análise-estratégica-de-cobranças-de-falta",
+        
+          title: "Risco x Recompensa: Análise Estratégica de Cobranças de Falta",
+        
+        description: "Análise quantitativa do risco-recompensa em cobranças de falta utilizando dados da StatsBomb",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/post_risco_recompensa_faltas_pt/";
           
         },
       },{id: "post-faltas-nos-esportes-estratégia-segurança-e-controle-do-jogo",
