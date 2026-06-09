@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACE Laboratory – Match Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Rajdhani',sans-serif;background:#0a0f14;color:#e8edf2;min-height:100vh}
+:root{--field:#237a35;--panel:#111820;--ace:#00e5a0;--bench-bg:rgba(255,255,255,.05)}
+#app{max-width:1380px;margin:0 auto;padding:12px;display:flex;gap:14px}
+#left-col{flex:1;min-width:0}
+#right-col{width:380px;flex-shrink:0}
+
+/* ── Header ── */
+.match-header{display:flex;align-items:center;justify-content:space-between;padding:10px 16px;background:rgba(255,255,255,.05);border-radius:10px;margin-bottom:10px}
+.team-label{font-size:18px;font-weight:700;letter-spacing:.5px}
+.score-box{font-family:'Orbitron',monospace;font-size:26px;font-weight:900;color:#fff;padding:4px 20px;background:rgba(0,0,0,.4);border-radius:8px;letter-spacing:4px}
+.formation-label{font-size:12px;color:rgba(255,255,255,.5);text-align:center}
+
+/* ── Banco ── */
+.bench-strip{display:flex;flex-wrap:wrap;gap:6px;padding:8px 10px;background:var(--bench-bg);border-radius:8px;margin:4px 0;min-height:52px;align-items:center}
+.bench-title{font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;width:100%}
+.bench-token{display:inline-flex;flex-direction:column;align-items:center;gap:2px;cursor:pointer;padding:2px 4px;border-radius:6px;transition:background .15s}
+.bench-token:hover{background:rgba(255,255,255,.1)}
+.bench-token.selected-bench{background:rgba(255,228,0,.15);outline:2px solid #ffd700}
+.bench-avatar{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:#fff;border:2px solid rgba(255,255,255,.3)}
+.bench-name{font-size:8.5px;color:rgba(255,255,255,.65);max-width:52px;text-align:center;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bench-ace{font-size:7.5px;font-weight:700;color:var(--ace)}
+.bench-token.no-data .bench-avatar{opacity:.4}
+.bench-token.no-data .bench-ace{color:rgba(255,255,255,.3)}
+
+/* ── Campo ── */
+.field-wrap{position:relative;background:var(--field);border-radius:10px;overflow:hidden;width:100%}
+.field-wrap::before{content:'';display:block;padding-bottom:105.9%}
+.field-svg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none}
+.players-layer{position:absolute;top:0;left:0;width:100%;height:100%}
+
+/* ── Tokens de jogador ── */
+.player-token{position:absolute;transform:translate(-50%,-50%);display:flex;flex-direction:column;align-items:center;gap:2px;cursor:grab;z-index:2;transition:transform .15s}
+.player-token:hover{transform:translate(-50%,-50%) scale(1.12)}
+.player-token.dragging{opacity:.5;cursor:grabbing;z-index:99}
+.player-token.drag-over .p-avatar{border-color:#00e5a0;box-shadow:0 0 0 4px rgba(0,229,160,.5)}
+.p-avatar{width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;border:2.5px solid rgba(255,255,255,.5);transition:box-shadow .15s,border-color .15s}
+.player-token.selected .p-avatar{border-color:#ffd700;box-shadow:0 0 0 3px rgba(255,215,0,.4)}
+.player-token.selected-bench-target .p-avatar{border-color:#00e5a0;box-shadow:0 0 0 3px rgba(0,229,160,.4)}
+.p-name{font-size:8.5px;font-weight:600;color:#fff;background:rgba(0,0,0,.6);padding:1px 5px;border-radius:3px;max-width:66px;text-align:center;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-ace{font-size:7.5px;font-weight:700;color:var(--ace);background:rgba(0,0,0,.6);padding:1px 4px;border-radius:2px}
+.line-label{position:absolute;font-size:9px;font-weight:600;color:rgba(255,255,255,.3);letter-spacing:.5px;pointer-events:none}
+.swap-mode-banner{position:absolute;top:8px;left:50%;transform:translateX(-50%);font-size:10px;font-weight:700;color:#ffd700;background:rgba(0,0,0,.7);padding:3px 12px;border-radius:10px;z-index:10;pointer-events:none}
+
+/* ── Painel de stats ── */
+#stats-panel{background:var(--panel);border-radius:12px;padding:0;height:fit-content;position:sticky;top:10px;border:1px solid rgba(255,255,255,.08);overflow:hidden}
+.stats-empty{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:60px 20px;color:rgba(255,255,255,.25);text-align:center;gap:8px;font-size:13px}
+.sp-header{padding:16px 18px 12px}
+.sp-team-badge{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:6px}
+.sp-name{font-size:20px;font-weight:700;line-height:1.1;margin-bottom:2px}
+.sp-meta{font-size:12px;color:rgba(255,255,255,.45)}
+.sp-ace-block{background:rgba(0,229,160,.08);border-top:1px solid rgba(0,229,160,.2);border-bottom:1px solid rgba(0,229,160,.15);padding:14px 18px;text-align:center}
+.sp-ace-label{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--ace);text-transform:uppercase;margin-bottom:4px}
+.sp-ace-val{font-family:'Orbitron',monospace;font-size:52px;font-weight:900;color:var(--ace);line-height:1}
+.sp-ace-sub{font-size:11px;color:rgba(0,229,160,.6);margin-top:2px}
+.sp-ratings{display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.sp-rat{background:var(--panel);padding:10px 12px;text-align:center}
+.sp-rat-lbl{font-size:9px;color:rgba(255,255,255,.35);text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px}
+.sp-rat-val{font-size:16px;font-weight:700;color:#fff}
+.sp-rat-val.good{color:#00e5a0}.sp-rat-val.mid{color:#ffc400}.sp-rat-val.low{color:#ff6b6b}
+.sp-stats{padding:12px 16px;display:flex;flex-direction:column;gap:10px;max-height:440px;overflow-y:auto}
+.sp-stats::-webkit-scrollbar{width:4px}
+.sp-stats::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px}
+.sp-sec-title{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:6px;padding-bottom:3px;border-bottom:1px solid rgba(255,255,255,.08)}
+.sp-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.sp-stat{display:flex;justify-content:space-between;align-items:center;padding:4px 8px;background:rgba(255,255,255,.04);border-radius:4px}
+.sp-stat-lbl{font-size:11px;color:rgba(255,255,255,.5)}
+.sp-stat-val{font-size:12px;font-weight:700;color:#fff}
+.minutes-bar{width:100%;height:3px;background:rgba(255,255,255,.1);border-radius:2px;margin-top:8px}
+.minutes-fill{height:100%;border-radius:2px;background:var(--ace)}
+.sp-evo{padding:12px 16px;border-top:1px solid rgba(255,255,255,.06)}
+.sp-evo-title{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px}
+#evo-canvas{width:100%;height:80px}
+
+/* ── Tabs do painel direito ── */
+.panel-tabs{display:flex;border-bottom:1px solid rgba(255,255,255,.1)}
+.panel-tab{flex:1;padding:10px 6px;font-size:11px;font-weight:700;text-align:center;cursor:pointer;letter-spacing:.5px;color:rgba(255,255,255,.4);border-bottom:2px solid transparent;transition:all .2s}
+.panel-tab.active{color:var(--ace);border-bottom-color:var(--ace)}
+.panel-tab:hover{color:rgba(255,255,255,.7)}
+.tab-content{display:none}
+.tab-content.active{display:block}
+
+/* ── MVP ── */
+.mvp-block{padding:20px 18px;text-align:center;background:linear-gradient(135deg,rgba(0,229,160,.08),rgba(255,196,0,.06));border-bottom:1px solid rgba(255,196,0,.15)}
+.mvp-crown{font-size:28px;margin-bottom:6px}
+.mvp-label{font-size:9px;font-weight:700;letter-spacing:2px;color:#ffd700;text-transform:uppercase;margin-bottom:8px}
+.mvp-name{font-size:22px;font-weight:700;color:#fff;margin-bottom:4px}
+.mvp-score{font-family:'Orbitron',monospace;font-size:36px;font-weight:900;color:#ffd700;line-height:1}
+.mvp-team{font-size:11px;color:rgba(255,255,255,.4);margin-bottom:10px}
+.mvp-motivo{font-size:11px;color:rgba(255,255,255,.55);background:rgba(255,255,255,.05);border-radius:6px;padding:8px 12px;line-height:1.5}
+
+/* ── Ranking ── */
+.ranking-list{padding:12px 16px;display:flex;flex-direction:column;gap:6px;max-height:480px;overflow-y:auto}
+.ranking-list::-webkit-scrollbar{width:4px}
+.ranking-list::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:2px}
+.rank-item{display:flex;align-items:center;gap:10px;padding:8px 10px;border-radius:8px;cursor:pointer;transition:background .15s}
+.rank-item:hover{background:rgba(255,255,255,.07)}
+.rank-item.rank-1{background:rgba(255,196,0,.12)}
+.rank-item.rank-2{background:rgba(192,192,192,.08)}
+.rank-item.rank-3{background:rgba(205,127,50,.08)}
+.rank-num{font-family:'Orbitron',monospace;font-size:13px;font-weight:700;width:24px;text-align:center;flex-shrink:0}
+.rank-1 .rank-num{color:#ffd700}
+.rank-2 .rank-num{color:#c0c0c0}
+.rank-3 .rank-num{color:#cd7f32}
+.rank-num-normal{color:rgba(255,255,255,.35)}
+.rank-avatar{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:#fff;flex-shrink:0}
+.rank-info{flex:1;min-width:0}
+.rank-name{font-size:13px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rank-team{font-size:10px;color:rgba(255,255,255,.4)}
+.rank-ace{font-family:'Orbitron',monospace;font-size:15px;font-weight:700;flex-shrink:0}
+
+/* ── Comparador ── */
+.compare-section{padding:14px 16px}
+.compare-selects{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.compare-selects select{background:#1a2430;color:#e8edf2;border:1px solid rgba(255,255,255,.15);border-radius:6px;padding:6px 8px;font-family:'Rajdhani',sans-serif;font-size:12px;font-weight:600;width:100%}
+.compare-table{width:100%;border-collapse:collapse;font-size:11px}
+.compare-table th{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:rgba(255,255,255,.35);padding:6px 8px;text-align:center;border-bottom:1px solid rgba(255,255,255,.08)}
+.compare-table th:first-child{text-align:left}
+.compare-table td{padding:5px 8px;border-bottom:1px solid rgba(255,255,255,.05)}
+.compare-table td:first-child{color:rgba(255,255,255,.5);font-size:10px}
+.compare-table td:not(:first-child){text-align:center;font-weight:700;font-size:12px}
+.compare-table tr td.winner{color:#00e5a0}
+.compare-table tr:hover td{background:rgba(255,255,255,.03)}
+
+/* ── Radar Chart ── */
+.radar-wrap{padding:12px 16px;border-top:1px solid rgba(255,255,255,.06)}
+.radar-title{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px}
+.radar-canvas-wrap{display:flex;justify-content:center}
+.radar-compare-wrap{padding:10px 16px;border-top:1px solid rgba(255,255,255,.06)}
+.radar-compare-title{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:8px}
+.radar-legend{display:flex;gap:14px;justify-content:center;margin-top:6px;font-size:10px}
+.radar-legend-dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:middle}
+
+/* ── Rede de Passes ── */
+.pass-net-toggle{position:absolute;bottom:10px;left:10px;z-index:20;display:flex;align-items:center;gap:8px;background:rgba(0,0,0,.72);border:1px solid rgba(255,255,255,.18);border-radius:20px;padding:6px 14px;cursor:pointer;user-select:none;transition:border-color .2s}
+.pass-net-toggle:hover{border-color:rgba(0,229,160,.5)}
+.pass-net-toggle input[type=checkbox]{display:none}
+.toggle-pill{width:30px;height:16px;border-radius:8px;background:rgba(255,255,255,.2);position:relative;transition:background .2s;flex-shrink:0}
+.toggle-pill::after{content:'';position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff;transition:transform .2s}
+.pass-net-toggle.active .toggle-pill{background:var(--ace)}
+.pass-net-toggle.active .toggle-pill::after{transform:translateX(14px)}
+.toggle-label{font-size:11px;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.7)}
+.pass-net-toggle.active .toggle-label{color:var(--ace)}
+#pass-net-svg{position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:3;display:none}
+#pass-net-svg.visible{display:block;pointer-events:all}
+/* Tooltip da rede */
+#pass-tooltip{position:fixed;background:rgba(10,15,20,.95);border:1px solid rgba(0,229,160,.4);border-radius:8px;padding:10px 14px;font-family:'Rajdhani',sans-serif;font-size:12px;color:#e8edf2;pointer-events:none;z-index:999;display:none;min-width:170px;box-shadow:0 4px 20px rgba(0,0,0,.5)}
+#pass-tooltip .pt-pair{font-size:13px;font-weight:700;color:#fff;margin-bottom:6px;line-height:1.3}
+#pass-tooltip .pt-row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;border-bottom:1px solid rgba(255,255,255,.07)}
+#pass-tooltip .pt-row:last-child{border-bottom:none}
+#pass-tooltip .pt-lbl{color:rgba(255,255,255,.5);font-size:11px}
+#pass-tooltip .pt-val{font-weight:700;color:var(--ace);font-size:13px}
+.tactic-section{padding:14px 16px}
+.tactic-title{font-size:9px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:10px}
+.formation-buttons{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+.formation-btn{padding:8px 6px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:6px;color:#e8edf2;font-family:'Orbitron',monospace;font-size:12px;font-weight:700;cursor:pointer;text-align:center;transition:all .2s}
+.formation-btn:hover{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.25)}
+.formation-btn.active-formation{background:rgba(0,229,160,.15);border-color:var(--ace);color:var(--ace)}
+.tactic-team-label{font-size:10px;font-weight:700;letter-spacing:.5px;color:rgba(255,255,255,.4);text-transform:uppercase;margin:10px 0 6px}
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="left-col">
+    <div class="match-header">
+      <div>
+        <div class="team-label" id="label-casa" style="color:#4caf78"></div>
+        <div class="formation-label" id="formacao-casa"></div>
+      </div>
+      <div style="text-align:center">
+        <div class="score-box" id="placar-box"></div>
+      </div>
+      <div style="text-align:right">
+        <div class="team-label" id="label-fora" style="color:#f5c842"></div>
+        <div class="formation-label" id="formacao-fora"></div>
+      </div>
+    </div>
+
+    <div class="bench-strip" id="bench-fora">
+      <div class="bench-title" id="bench-fora-title"></div>
+    </div>
+
+    <div class="field-wrap" id="field-wrap">
+      <svg class="field-svg" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg">
+        <!-- Borda externa -->
+        <rect x="10" y="10" width="660" height="700" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Linha do meio -->
+        <line x1="10" y1="360" x2="670" y2="360" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Círculo central -->
+        <circle cx="340" cy="360" r="65" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <circle cx="340" cy="360" r="3" fill="rgba(255,255,255,.5)" stroke="none"/>
+
+        <!-- Grande área TOPO — altura 100px (y=10..110) -->
+        <rect x="150" y="10" width="380" height="100" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Pequena área TOPO — altura 38px (y=10..48) -->
+        <rect x="240" y="10" width="200" height="38" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Pênalti TOPO -->
+        <circle cx="340" cy="80" r="3" fill="rgba(255,255,255,.5)" stroke="none"/>
+        <!-- Arco grande área TOPO: semicírculo perfeito r=60 centrado no pênalti (340,80), apenas parte abaixo de y=110 -->
+        <path d="M150,110 A60,60 0 0,0 530,110" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+
+        <!-- Grande área BASE — altura 100px (y=610..710) -->
+        <rect x="150" y="610" width="380" height="100" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Pequena área BASE — altura 38px (y=672..710) -->
+        <rect x="240" y="672" width="200" height="38" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+        <!-- Pênalti BASE -->
+        <circle cx="340" cy="640" r="3" fill="rgba(255,255,255,.5)" stroke="none"/>
+        <!-- Arco grande área BASE: semicírculo perfeito r=60 centrado no pênalti (340,640), apenas parte acima de y=610 -->
+        <path d="M150,610 A60,60 0 0,1 530,610" fill="none" stroke="rgba(255,255,255,.32)" stroke-width="1.5"/>
+
+        <!-- Gol TOPO -->
+        <line x1="295" y1="10" x2="385" y2="10" stroke="rgba(255,255,255,.65)" stroke-width="3.5"/>
+        <!-- Gol BASE -->
+        <line x1="295" y1="710" x2="385" y2="710" stroke="rgba(255,255,255,.65)" stroke-width="3.5"/>
+
+        <!-- Faixas de sombreamento -->
+        <rect x="10" y="10" width="660" height="165" fill="rgba(0,0,0,.10)"/>
+        <rect x="10" y="545" width="660" height="165" fill="rgba(0,0,0,.10)"/>
+
+        <!-- Labels dos times -->
+        <text x="24" y="30" fill="rgba(255,255,255,.18)" font-size="10" font-family="Rajdhani" id="svg-label-fora"></text>
+        <text x="24" y="706" fill="rgba(255,255,255,.18)" font-size="10" font-family="Rajdhani" id="svg-label-casa"></text>
+      </svg>
+      <div class="players-layer" id="players-layer">
+        <div class="swap-mode-banner" id="swap-banner" style="display:none">Selecionar alvo de troca</div>
+      </div>
+      <!-- Rede de passes (SVG sobreposto ao campo) -->
+      <svg id="pass-net-svg" viewBox="0 0 680 720" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet"></svg>
+      <!-- Toggle rede de passes -->
+      <div class="pass-net-toggle" id="pass-net-toggle" onclick="togglePassNet()">
+        <div class="toggle-pill"></div>
+        <span class="toggle-label">⬡ Rede de Passes</span>
+      </div>
+    </div>
+    <!-- Tooltip global da rede -->
+    <div id="pass-tooltip"></div>
+
+    <div class="bench-strip" id="bench-casa">
+      <div class="bench-title" id="bench-casa-title"></div>
+    </div>
+  </div>
+
+  <div id="right-col">
+    <!-- Tabs -->
+    <div style="background:var(--panel);border-radius:12px;border:1px solid rgba(255,255,255,.08);overflow:hidden;margin-bottom:10px">
+      <div class="panel-tabs">
+        <div class="panel-tab active" onclick="switchTab('mvp')">🏆 MVP</div>
+        <div class="panel-tab" onclick="switchTab('ranking')">📊 Ranking</div>
+        <div class="panel-tab" onclick="switchTab('compare')">⚔️ Comparar</div>
+        <div class="panel-tab" onclick="switchTab('tactic')">🔧 Tático</div>
+      </div>
+      <div id="tab-mvp" class="tab-content active"></div>
+      <div id="tab-ranking" class="tab-content"></div>
+      <div id="tab-compare" class="tab-content">
+        <div class="compare-section">
+          <div class="compare-selects">
+            <select id="cmp-a" onchange="renderCompare()"><option value="">Jogador A</option></select>
+            <select id="cmp-b" onchange="renderCompare()"><option value="">Jogador B</option></select>
+          </div>
+          <div id="compare-result"></div>
+        </div>
+      </div>
+      <div id="tab-tactic" class="tab-content">
+        <div class="tactic-section">
+          <div class="tactic-title" id="tactic-title-casa"></div>
+          <div class="formation-buttons" id="formation-btns-casa"></div>
+          <div class="tactic-title" id="tactic-title-fora"></div>
+          <div class="formation-buttons" id="formation-btns-fora"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats panel -->
+    <div id="stats-panel">
+      <div class="stats-empty">
+        <div style="font-size:32px;color:rgba(255,255,255,.15)">⬡</div>
+        <div>Clique em qualquer jogador</div>
+        <div style="font-size:11px">para ver as estatísticas</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── Dados injetados pelo Python ──────────────────────────────────────────────
+const RAW_DATA   = [{"Jogador": "Matvey Safonov", "Equipa": "PSG", "Status": "Titular", "Idade": 27, "Posicao": "Goleiro", "Nota WhoScored": 6.32, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 34, "Passes Certos": 16, "Precisao Passe (%)": 47.1, "Passes Curtos": 8, "Passes Longos": 26, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 61, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 4, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 2, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 2, "Saidas da Baliza (GR)": 15, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 9.8, "Posicao Media Y": 48.7, "nota_percentil": 0.3103448275862069, "nota_minmax": 0.1768301286718215, "playerank_partida_raw": 5.251552740850008, "Tempo_Total_min": 94.0}, {"Jogador": "Achraf Hakimi", "Equipa": "PSG", "Status": "Titular", "Idade": 27, "Posicao": "Lateral Direito", "Nota WhoScored": 6.75, "Golos": 0, "xG Acumulado": 0, "Assistencias": 1, "Participacao Golos": 1, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 50, "Passes Certos": 44, "Precisao Passe (%)": 88.0, "Passes Curtos": 48, "Passes Longos": 2, "Bolas Enfiadas": 0, "Cruzamentos Totais": 2, "Cruzamentos Certos": 0, "Passes Chave": 1, "Dribles Certos": 0, "Toques na Bola": 76, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 3, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 4, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 4, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 4, "Faltas Sofridas": 0, "Cartoes Amarelos": 1, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 43.0, "Posicao Media Y": 18.0, "nota_percentil": 0.6896551724137931, "nota_minmax": 0.5175775775402082, "playerank_partida_raw": 14.67469214687412, "Tempo_Total_min": 94.0}, {"Jogador": "Marquinhos", "Equipa": "PSG", "Status": "Titular", "Idade": 32, "Posicao": "Zagueiro", "Nota WhoScored": 6.52, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 49, "Passes Certos": 45, "Precisao Passe (%)": 91.8, "Passes Curtos": 42, "Passes Longos": 7, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 71, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 0, "Interceptacoes": 1, "Cortes": 3, "Recuperacoes de Bola": 5, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 1, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 1, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 26.6, "Posicao Media Y": 30.5, "nota_percentil": 0.5517241379310345, "nota_minmax": 0.3682118218648655, "playerank_partida_raw": 10.54408356010658, "Tempo_Total_min": 94.0}, {"Jogador": "Willian Pacho", "Equipa": "PSG", "Status": "Titular", "Idade": 24, "Posicao": "Zagueiro", "Nota WhoScored": 5.94, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 36, "Passes Certos": 32, "Precisao Passe (%)": 88.9, "Passes Curtos": 35, "Passes Longos": 1, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 57, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 1, "Cortes": 6, "Recuperacoes de Bola": 1, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 3, "Duelos Aereos Perdidos": 2, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 1, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 3, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 1, "Posicao Media X": 27.2, "Posicao Media Y": 62.9, "nota_percentil": 0.4827586206896552, "nota_minmax": 0.2752656687366498, "playerank_partida_raw": 7.973720785302258, "Tempo_Total_min": 94.0}, {"Jogador": "Nuno Mendes", "Equipa": "PSG", "Status": "Titular", "Idade": 23, "Posicao": "Lateral Esquerdo", "Nota WhoScored": 6.58, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 1, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 43, "Passes Certos": 35, "Precisao Passe (%)": 81.4, "Passes Curtos": 34, "Passes Longos": 9, "Bolas Enfiadas": 0, "Cruzamentos Totais": 1, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 4, "Toques na Bola": 73, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 1, "Interceptacoes": 2, "Cortes": 1, "Recuperacoes de Bola": 5, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 5, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 1, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 36.0, "Posicao Media Y": 81.9, "nota_percentil": 0.4482758620689655, "nota_minmax": 0.26114301980909, "playerank_partida_raw": 7.583168515377165, "Tempo_Total_min": 83.0}, {"Jogador": "Warren Zaïre-Emery", "Equipa": "PSG", "Status": "Titular", "Idade": 20, "Posicao": "Meio-Campo", "Nota WhoScored": 6.95, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 29, "Passes Certos": 26, "Precisao Passe (%)": 89.7, "Passes Curtos": 28, "Passes Longos": 1, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 1, "Dribles Certos": 0, "Toques na Bola": 43, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 1, "Interceptacoes": 2, "Cortes": 0, "Recuperacoes de Bola": 2, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 45.4, "Posicao Media Y": 69.8, "nota_percentil": 0.4137931034482759, "nota_minmax": 0.2244849396242334, "playerank_partida_raw": 6.569414190623475, "Tempo_Total_min": 63.0}, {"Jogador": "Vitinha", "Equipa": "PSG", "Status": "Titular", "Idade": 26, "Posicao": "Meio-Campo", "Nota WhoScored": 7.18, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 56, "Passes Certos": 48, "Precisao Passe (%)": 85.7, "Passes Curtos": 50, "Passes Longos": 6, "Bolas Enfiadas": 2, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 3, "Dribles Certos": 0, "Toques na Bola": 71, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 2, "Cortes": 3, "Recuperacoes de Bola": 6, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 41.2, "Posicao Media Y": 51.5, "nota_percentil": 0.5862068965517241, "nota_minmax": 0.4054741610293074, "playerank_partida_raw": 11.57454825678201, "Tempo_Total_min": 94.0}, {"Jogador": "João Neves", "Equipa": "PSG", "Status": "Titular", "Idade": 21, "Posicao": "Meio-Campo", "Nota WhoScored": 7.81, "Golos": 1, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 1, "Chutes Totais": 1, "Chutes no Alvo": 1, "Conversao Finalizacoes (%)": 100.0, "Passes Totais": 27, "Passes Certos": 24, "Precisao Passe (%)": 88.9, "Passes Curtos": 25, "Passes Longos": 2, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 62, "Perdas de Posse": 0, "Desarmes Feitos": 2, "Desarmes Sofridos": 3, "Interceptacoes": 3, "Cortes": 5, "Recuperacoes de Bola": 6, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 2, "Duelos Aereos Perdidos": 3, "Duelos no Chao Ganhos": 2, "Duelos no Chao Perdidos": 3, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 35.9, "Posicao Media Y": 54.0, "nota_percentil": 0.7586206896551724, "nota_minmax": 0.5831413943402556, "playerank_partida_raw": 16.48781499709538, "Tempo_Total_min": 94.0}, {"Jogador": "Désiré Doué", "Equipa": "PSG", "Status": "Titular", "Idade": 21, "Posicao": "FWR", "Nota WhoScored": 7.49, "Golos": 0, "xG Acumulado": 0, "Assistencias": 2, "Participacao Golos": 2, "Chutes Totais": 2, "Chutes no Alvo": 2, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 21, "Passes Certos": 18, "Precisao Passe (%)": 85.7, "Passes Curtos": 19, "Passes Longos": 2, "Bolas Enfiadas": 0, "Cruzamentos Totais": 2, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 3, "Toques na Bola": 48, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 3, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 4, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 3, "Duelos no Chao Perdidos": 5, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 1, "Posicao Media X": 56.1, "Posicao Media Y": 40.6, "nota_percentil": 0.7241379310344828, "nota_minmax": 0.5326337802888075, "playerank_partida_raw": 15.09106121404273, "Tempo_Total_min": 69.0}, {"Jogador": "Ousmane Dembélé", "Equipa": "PSG", "Status": "Titular", "Idade": 29, "Posicao": "Atacante", "Nota WhoScored": 8.99, "Golos": 2, "xG Acumulado": 0, "Assistencias": 1, "Participacao Golos": 3, "Chutes Totais": 5, "Chutes no Alvo": 4, "Conversao Finalizacoes (%)": 40.0, "Passes Totais": 11, "Passes Certos": 9, "Precisao Passe (%)": 81.8, "Passes Curtos": 11, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 3, "Cruzamentos Certos": 2, "Passes Chave": 0, "Dribles Certos": 1, "Toques na Bola": 33, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 2, "Interceptacoes": 0, "Cortes": 3, "Recuperacoes de Bola": 3, "Bloqueios": 1, "Recuperacoes Terco Final (Gegenpressing)": 2, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 2, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 67.8, "Posicao Media Y": 51.7, "nota_percentil": 1.0, "nota_minmax": 1.0, "playerank_partida_raw": 28.01575678148079, "Tempo_Total_min": 94.0}, {"Jogador": "Khvicha Kvaratskhelia", "Equipa": "PSG", "Status": "Titular", "Idade": 25, "Posicao": "FWL", "Nota WhoScored": 9.26, "Golos": 2, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 2, "Chutes Totais": 2, "Chutes no Alvo": 2, "Conversao Finalizacoes (%)": 100.0, "Passes Totais": 21, "Passes Certos": 18, "Precisao Passe (%)": 85.7, "Passes Curtos": 20, "Passes Longos": 1, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 4, "Toques na Bola": 42, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 4, "Interceptacoes": 1, "Cortes": 1, "Recuperacoes de Bola": 1, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 5, "Duelos no Chao Perdidos": 4, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 53.0, "Posicao Media Y": 77.2, "nota_percentil": 0.9655172413793104, "nota_minmax": 0.9090605411453493, "playerank_partida_raw": 25.50088777470869, "Tempo_Total_min": 83.0}, {"Jogador": "Lucas Hernández", "Equipa": "PSG", "Status": "Substituto", "Idade": 30, "Posicao": "Substituto", "Nota WhoScored": 6.11, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 4, "Passes Certos": 4, "Precisao Passe (%)": 100.0, "Passes Curtos": 4, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 8, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 1, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 19.9, "Posicao Media Y": 72.3, "nota_percentil": 0.1379310344827586, "nota_minmax": 0.02044838218033377, "playerank_partida_raw": 0.9269216903737061, "Tempo_Total_min": 11.0}, {"Jogador": "Bradley Barcola", "Equipa": "PSG", "Status": "Substituto", "Idade": 23, "Posicao": "Substituto", "Nota WhoScored": 5.9, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 4, "Passes Certos": 3, "Precisao Passe (%)": 75.0, "Passes Curtos": 4, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 9, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 1, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 47.0, "Posicao Media Y": 48.1, "nota_percentil": 0.1724137931034483, "nota_minmax": 0.0257476293489742, "playerank_partida_raw": 1.073468773801365, "Tempo_Total_min": 25.0}, {"Jogador": "Senny Mayulu", "Equipa": "PSG", "Status": "Substituto", "Idade": 20, "Posicao": "Substituto", "Nota WhoScored": 6.45, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 1, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 3, "Passes Certos": 2, "Precisao Passe (%)": 66.7, "Passes Curtos": 3, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 8, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 1, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 46.1, "Posicao Media Y": 23.9, "nota_percentil": 0.103448275862069, "nota_minmax": 0.01195574529991887, "playerank_partida_raw": 0.6920635820748474, "Tempo_Total_min": 11.0}, {"Jogador": "Fabián Ruiz", "Equipa": "PSG", "Status": "Substituto", "Idade": 30, "Posicao": "Substituto", "Nota WhoScored": 6.01, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 7, "Passes Certos": 7, "Precisao Passe (%)": 100.0, "Passes Curtos": 6, "Passes Longos": 1, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 22, "Perdas de Posse": 0, "Desarmes Feitos": 2, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 3, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 1, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 2, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 1, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 1, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 29.3, "Posicao Media Y": 71.9, "nota_percentil": 0.2068965517241379, "nota_minmax": 0.04872294083312195, "playerank_partida_raw": 1.708835417721782, "Tempo_Total_min": 31.0}, {"Jogador": "Lucas Chevalier", "Equipa": "PSG", "Status": "Substituto", "Idade": 24, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Ibrahim Mbaye", "Equipa": "PSG", "Status": "Substituto", "Idade": 18, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Renato Marin", "Equipa": "PSG", "Status": "Substituto", "Idade": 19, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Gonçalo Ramos", "Equipa": "PSG", "Status": "Substituto", "Idade": 24, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Dro Fernández", "Equipa": "PSG", "Status": "Substituto", "Idade": 18, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Illia Zabarnyi", "Equipa": "PSG", "Status": "Substituto", "Idade": 23, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Lee Kang-In", "Equipa": "PSG", "Status": "Substituto", "Idade": 25, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Beraldo", "Equipa": "PSG", "Status": "Substituto", "Idade": 22, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Manuel Neuer", "Equipa": "Bayern", "Status": "Titular", "Idade": 40, "Posicao": "Goleiro", "Nota WhoScored": 4.83, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 38, "Passes Certos": 17, "Precisao Passe (%)": 44.7, "Passes Curtos": 7, "Passes Longos": 31, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 45, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 1, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 3, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 14.1, "Posicao Media Y": 46.9, "nota_percentil": 0.2413793103448276, "nota_minmax": 0.1721288891961954, "playerank_partida_raw": 5.121543154257214, "Tempo_Total_min": 94.0}, {"Jogador": "Josip Stanisic", "Equipa": "Bayern", "Status": "Titular", "Idade": 26, "Posicao": "Lateral Direito", "Nota WhoScored": 6.13, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 1, "Chutes no Alvo": 1, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 52, "Passes Certos": 38, "Precisao Passe (%)": 73.1, "Passes Curtos": 40, "Passes Longos": 12, "Bolas Enfiadas": 0, "Cruzamentos Totais": 2, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 69, "Perdas de Posse": 0, "Desarmes Feitos": 3, "Desarmes Sofridos": 1, "Interceptacoes": 1, "Cortes": 0, "Recuperacoes de Bola": 6, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 2, "Duelos Aereos Ganhos": 2, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 3, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 54.3, "Posicao Media Y": 17.9, "nota_percentil": 0.5172413793103449, "nota_minmax": 0.2846077545013116, "playerank_partida_raw": 8.232069825906356, "Tempo_Total_min": 94.0}, {"Jogador": "Dayot Upamecano", "Equipa": "Bayern", "Status": "Titular", "Idade": 27, "Posicao": "Zagueiro", "Nota WhoScored": 6.85, "Golos": 1, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 1, "Chutes Totais": 1, "Chutes no Alvo": 1, "Conversao Finalizacoes (%)": 100.0, "Passes Totais": 46, "Passes Certos": 39, "Precisao Passe (%)": 84.8, "Passes Curtos": 39, "Passes Longos": 7, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 67, "Perdas de Posse": 0, "Desarmes Feitos": 3, "Desarmes Sofridos": 1, "Interceptacoes": 3, "Cortes": 1, "Recuperacoes de Bola": 5, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 3, "Duelos no Chao Perdidos": 1, "Foras de Jogo": 1, "Defesas (GR)": 1, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 36.9, "Posicao Media Y": 27.0, "nota_percentil": 0.8620689655172413, "nota_minmax": 0.7156810824179992, "playerank_partida_raw": 20.15311010564345, "Tempo_Total_min": 94.0}, {"Jogador": "Jonathan Tah", "Equipa": "Bayern", "Status": "Titular", "Idade": 30, "Posicao": "Zagueiro", "Nota WhoScored": 5.8, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 69, "Passes Certos": 65, "Precisao Passe (%)": 94.2, "Passes Curtos": 67, "Passes Longos": 2, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 82, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 3, "Recuperacoes de Bola": 5, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 2, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 1, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 39.4, "Posicao Media Y": 53.6, "nota_percentil": 0.6206896551724138, "nota_minmax": 0.5110178294701593, "playerank_partida_raw": 14.49328676662036, "Tempo_Total_min": 94.0}, {"Jogador": "Alphonso Davies", "Equipa": "Bayern", "Status": "Titular", "Idade": 25, "Posicao": "Lateral Esquerdo", "Nota WhoScored": 5.95, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 25, "Passes Certos": 24, "Precisao Passe (%)": 96.0, "Passes Curtos": 24, "Passes Longos": 1, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 1, "Toques na Bola": 42, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 1, "Interceptacoes": 1, "Cortes": 1, "Recuperacoes de Bola": 5, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 2, "Foras de Jogo": 1, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 36.1, "Posicao Media Y": 71.1, "nota_percentil": 0.2758620689655172, "nota_minmax": 0.1724309226958456, "playerank_partida_raw": 5.129895685675851, "Tempo_Total_min": 45.0}, {"Jogador": "Joshua Kimmich", "Equipa": "Bayern", "Status": "Titular", "Idade": 31, "Posicao": "Volante", "Nota WhoScored": 6.86, "Golos": 0, "xG Acumulado": 0, "Assistencias": 1, "Participacao Golos": 1, "Chutes Totais": 1, "Chutes no Alvo": 1, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 59, "Passes Certos": 51, "Precisao Passe (%)": 86.4, "Passes Curtos": 45, "Passes Longos": 14, "Bolas Enfiadas": 1, "Cruzamentos Totais": 4, "Cruzamentos Certos": 1, "Passes Chave": 0, "Dribles Certos": 1, "Toques na Bola": 74, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 4, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 3, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 53.1, "Posicao Media Y": 47.8, "nota_percentil": 0.6551724137931034, "nota_minmax": 0.5147836791372647, "playerank_partida_raw": 14.59742878298208, "Tempo_Total_min": 94.0}, {"Jogador": "Aleksandar Pavlovic", "Equipa": "Bayern", "Status": "Titular", "Idade": 22, "Posicao": "Volante", "Nota WhoScored": 6.71, "Golos": 0, "xG Acumulado": 0, "Assistencias": 1, "Participacao Golos": 1, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 65, "Passes Certos": 62, "Precisao Passe (%)": 95.4, "Passes Curtos": 62, "Passes Longos": 3, "Bolas Enfiadas": 1, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 1, "Dribles Certos": 0, "Toques na Bola": 95, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 1, "Interceptacoes": 0, "Cortes": 1, "Recuperacoes de Bola": 10, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 1, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 1, "Duelos no Chao Perdidos": 6, "Foras de Jogo": 0, "Defesas (GR)": 2, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 1, "Posicao Media X": 48.3, "Posicao Media Y": 54.4, "nota_percentil": 0.7931034482758621, "nota_minmax": 0.6698111499819979, "playerank_partida_raw": 18.88460825970212, "Tempo_Total_min": 92.0}, {"Jogador": "Michael Olise", "Equipa": "Bayern", "Status": "Titular", "Idade": 24, "Posicao": "Ponta Direita", "Nota WhoScored": 8.32, "Golos": 1, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 1, "Chutes Totais": 2, "Chutes no Alvo": 2, "Conversao Finalizacoes (%)": 50.0, "Passes Totais": 51, "Passes Certos": 37, "Precisao Passe (%)": 72.5, "Passes Curtos": 45, "Passes Longos": 6, "Bolas Enfiadas": 0, "Cruzamentos Totais": 4, "Cruzamentos Certos": 1, "Passes Chave": 1, "Dribles Certos": 8, "Toques na Bola": 86, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 2, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 3, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 1, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 9, "Duelos no Chao Perdidos": 2, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 70.0, "Posicao Media Y": 19.5, "nota_percentil": 0.896551724137931, "nota_minmax": 0.7384987900523007, "playerank_partida_raw": 20.78411832207465, "Tempo_Total_min": 94.0}, {"Jogador": "Jamal Musiala", "Equipa": "Bayern", "Status": "Titular", "Idade": 23, "Posicao": "Meia Atacante", "Nota WhoScored": 6.82, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 26, "Passes Certos": 23, "Precisao Passe (%)": 88.5, "Passes Curtos": 26, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 3, "Toques na Bola": 50, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 1, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 2, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 4, "Duelos no Chao Ganhos": 4, "Duelos no Chao Perdidos": 4, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 2, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 55.5, "Posicao Media Y": 49.1, "nota_percentil": 0.3793103448275862, "nota_minmax": 0.2145296325471317, "playerank_partida_raw": 6.294106930865995, "Tempo_Total_min": 78.0}, {"Jogador": "Luis Díaz", "Equipa": "Bayern", "Status": "Titular", "Idade": 29, "Posicao": "Ponta Esquerda", "Nota WhoScored": 8.97, "Golos": 1, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 1, "Chutes Totais": 1, "Chutes no Alvo": 1, "Conversao Finalizacoes (%)": 100.0, "Passes Totais": 45, "Passes Certos": 39, "Precisao Passe (%)": 86.7, "Passes Curtos": 42, "Passes Longos": 3, "Bolas Enfiadas": 0, "Cruzamentos Totais": 1, "Cruzamentos Certos": 0, "Passes Chave": 2, "Dribles Certos": 6, "Toques na Bola": 75, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 2, "Interceptacoes": 2, "Cortes": 0, "Recuperacoes de Bola": 4, "Bloqueios": 2, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 6, "Duelos no Chao Perdidos": 3, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 5, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 65.4, "Posicao Media Y": 69.3, "nota_percentil": 0.8275862068965517, "nota_minmax": 0.7134121719233143, "playerank_partida_raw": 20.09036492600319, "Tempo_Total_min": 94.0}, {"Jogador": "Harry Kane", "Equipa": "Bayern", "Status": "Titular", "Idade": 32, "Posicao": "Atacante", "Nota WhoScored": 8.74, "Golos": 1, "xG Acumulado": 0, "Assistencias": 1, "Participacao Golos": 2, "Chutes Totais": 3, "Chutes no Alvo": 3, "Conversao Finalizacoes (%)": 33.3, "Passes Totais": 28, "Passes Certos": 23, "Precisao Passe (%)": 82.1, "Passes Curtos": 24, "Passes Longos": 4, "Bolas Enfiadas": 3, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 1, "Dribles Certos": 1, "Toques na Bola": 52, "Perdas de Posse": 0, "Desarmes Feitos": 1, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 2, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 2, "Duelos Aereos Ganhos": 3, "Duelos Aereos Perdidos": 2, "Duelos no Chao Ganhos": 2, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 4, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 61.0, "Posicao Media Y": 48.2, "nota_percentil": 0.9310344827586207, "nota_minmax": 0.7421550856439226, "playerank_partida_raw": 20.88523069484195, "Tempo_Total_min": 94.0}, {"Jogador": "Konrad Laimer", "Equipa": "Bayern", "Status": "Substituto", "Idade": 29, "Posicao": "Substituto", "Nota WhoScored": 6.88, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 1, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 33, "Passes Certos": 26, "Precisao Passe (%)": 78.8, "Passes Curtos": 29, "Passes Longos": 4, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 2, "Toques na Bola": 49, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 1, "Cortes": 1, "Recuperacoes de Bola": 3, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 1, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 2, "Duelos no Chao Perdidos": 2, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 1, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 51.3, "Posicao Media Y": 72.5, "nota_percentil": 0.3448275862068966, "nota_minmax": 0.2122551714514924, "playerank_partida_raw": 6.231208253123977, "Tempo_Total_min": 49.0}, {"Jogador": "Leon Goretzka", "Equipa": "Bayern", "Status": "Substituto", "Idade": 31, "Posicao": "Substituto", "Nota WhoScored": 5.99, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 3, "Passes Certos": 3, "Precisao Passe (%)": 100.0, "Passes Curtos": 3, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 5, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 1, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 42.5, "Posicao Media Y": 28.0, "nota_percentil": 0.06896551724137931, "nota_minmax": 0.0094334841798038, "playerank_partida_raw": 0.6223121628575635, "Tempo_Total_min": 16.0}, {"Jogador": "Nicolas Jackson", "Equipa": "Bayern", "Status": "Substituto", "Idade": 24, "Posicao": "Substituto", "Nota WhoScored": 5.99, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 2, "Passes Certos": 1, "Precisao Passe (%)": 50.0, "Passes Curtos": 2, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 1, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 3, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 55.9, "Posicao Media Y": 44.5, "nota_percentil": 0.03448275862068965, "nota_minmax": 0.0, "playerank_partida_raw": 0.3614355611220973, "Tempo_Total_min": 2.0}, {"Jogador": "Sven Ulreich", "Equipa": "Bayern", "Status": "Substituto", "Idade": 37, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Jonas Urbig", "Equipa": "Bayern", "Status": "Substituto", "Idade": 22, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Hiroki Ito", "Equipa": "Bayern", "Status": "Substituto", "Idade": 27, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Kim Min-Jae", "Equipa": "Bayern", "Status": "Substituto", "Idade": 29, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Deniz Ofli", "Equipa": "Bayern", "Status": "Substituto", "Idade": 19, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}, {"Jogador": "Filip Pavic", "Equipa": "Bayern", "Status": "Substituto", "Idade": 16, "Posicao": "Substituto", "Nota WhoScored": null, "Golos": 0, "xG Acumulado": 0, "Assistencias": 0, "Participacao Golos": 0, "Chutes Totais": 0, "Chutes no Alvo": 0, "Conversao Finalizacoes (%)": 0.0, "Passes Totais": 0, "Passes Certos": 0, "Precisao Passe (%)": 0.0, "Passes Curtos": 0, "Passes Longos": 0, "Bolas Enfiadas": 0, "Cruzamentos Totais": 0, "Cruzamentos Certos": 0, "Passes Chave": 0, "Dribles Certos": 0, "Toques na Bola": 0, "Perdas de Posse": 0, "Desarmes Feitos": 0, "Desarmes Sofridos": 0, "Interceptacoes": 0, "Cortes": 0, "Recuperacoes de Bola": 0, "Bloqueios": 0, "Recuperacoes Terco Final (Gegenpressing)": 0, "Duelos Aereos Ganhos": 0, "Duelos Aereos Perdidos": 0, "Duelos no Chao Ganhos": 0, "Duelos no Chao Perdidos": 0, "Foras de Jogo": 0, "Defesas (GR)": 0, "Saidas da Baliza (GR)": 0, "Faltas Cometidas": 0, "Faltas Sofridas": 0, "Cartoes Amarelos": 0, "Cartoes Vermelhos": 0, "Erros que resultaram em perigo": 0, "Posicao Media X": 0.0, "Posicao Media Y": 0.0, "nota_percentil": null, "nota_minmax": null, "playerank_partida_raw": null, "Tempo_Total_min": null}];
+const INTERVALS  = {"Achraf Hakimi": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.4095}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 0.9915401785714284}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5416666666666666, "fatia_raw": 0.5525}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.59375, "fatia_raw": 0.9385606060606059}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.675, "fatia_raw": 0.8905}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.6458333333333334, "fatia_raw": 0.937421875}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6607142857142857, "fatia_raw": 0.3602083333333333}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.584555555555556}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.7098765432098766, "fatia_raw": 1.84775462962963}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.6888888888888889, "fatia_raw": 0.5083928571428572}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.7058080808080809, "fatia_raw": 1.711600877192982}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.7303240740740741, "fatia_raw": 1.296309523809524}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.7126068376068376, "fatia_raw": 0.6525}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.7152777777777778, "fatia_raw": 0.75}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.725925925925926, "fatia_raw": 1.4}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.7352430555555556, "fatia_raw": 1.1725}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.7434640522875817, "fatia_raw": 1.499751082251082}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7180335097001763, "fatia_raw": 0.75}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7178362573099415, "fatia_raw": 0.75}], "Aleksandar Pavlovic": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 1.159046296296296}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 1.214597222222222}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 0.5128774350649351}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.84375, "fatia_raw": 1.600805555555556}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.325}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.7083333333333334, "fatia_raw": 0.6174999999999999}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6785714285714286, "fatia_raw": 0.35625}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.703125, "fatia_raw": 2.1603085839599}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6805555555555556, "fatia_raw": 1.131875}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.205}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.6931818181818182, "fatia_raw": 1.999444444444445}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.27}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.702991452991453, "fatia_raw": 2.644285714285715}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.7083333333333333, "fatia_raw": 1.662166666666667}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.711111111111111, "fatia_raw": 1.248333333333334}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.7222222222222222, "fatia_raw": 2.810138888888889}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.7267973856209151, "fatia_raw": 1.437142857142857}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7419753086419754, "fatia_raw": 2.137779017857143}, {"tempo": "95 min", "min": 92, "em_campo": true, "percentil_acum": 0.7450292397660818, "fatia_raw": 0.9775}], "Alphonso Davies": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 1.273125}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.9375, "fatia_raw": 1.524660353535353}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.7916666666666666, "fatia_raw": 0.39}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 0.2925}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.55, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.5078125}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.5714285714285714, "fatia_raw": 0.5860833333333333}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.59375, "fatia_raw": 1.274851190476191}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5648148148148148, "fatia_raw": 0.52}], "Bradley Barcola": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 1, "em_campo": true, "percentil_acum": 0.1111111111111111, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 6, "em_campo": true, "percentil_acum": 0.1805555555555556, "fatia_raw": 0.2275}, {"tempo": "80 min", "min": 11, "em_campo": true, "percentil_acum": 0.2129629629629629, "fatia_raw": 0.0}, {"tempo": "85 min", "min": 16, "em_campo": true, "percentil_acum": 0.3097222222222222, "fatia_raw": 0.7459523809523809}, {"tempo": "90 min", "min": 21, "em_campo": true, "percentil_acum": 0.3144444444444444, "fatia_raw": 0.2925}, {"tempo": "95 min", "min": 25, "em_campo": true, "percentil_acum": 0.3287037037037037, "fatia_raw": 0.065}], "Dayot Upamecano": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 1.062268518518519}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5625, "fatia_raw": 0.9199305555555555}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.3598214285714285}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.585}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.5125, "fatia_raw": 0.2275}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.4895833333333333, "fatia_raw": 0.8960714285714287}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.4732142857142857, "fatia_raw": 0.1625}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.4609375, "fatia_raw": 0.8406666666666667}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.459104938271605, "fatia_raw": 0.6427777777777778}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.4881944444444445, "fatia_raw": 0.8775}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.4551767676767677, "fatia_raw": 0.3683333333333334}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.4797453703703704, "fatia_raw": 0.7619444444444443}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.5197649572649573, "fatia_raw": 2.094285714285714}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.5540674603174603, "fatia_raw": 2.2085}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.5837962962962963, "fatia_raw": 1.9225}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.6098090277777778, "fatia_raw": 2.449}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.6327614379084967, "fatia_raw": 2.440952380952381}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.6531635802469136, "fatia_raw": 2.0525}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.6714181286549707, "fatia_raw": 2.36125}], "Désiré Doué": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.125, "fatia_raw": 0.3575}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 0.8125}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.4166666666666667, "fatia_raw": 0.3575}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.453125, "fatia_raw": 0.585}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.5125, "fatia_raw": 0.88}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.5729166666666666, "fatia_raw": 1.465}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.5982142857142857, "fatia_raw": 1.14}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.6015625, "fatia_raw": 1.442430555555556}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6180555555555556, "fatia_raw": 1.439722222222222}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.58125, "fatia_raw": 0.75}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.5738636363636364, "fatia_raw": 1.403080065359477}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.5989583333333334, "fatia_raw": 2.125625}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6041666666666667, "fatia_raw": 1.5}, {"tempo": "70 min", "min": 69, "em_campo": true, "percentil_acum": 0.6046626984126985, "fatia_raw": 1.5}], "Fabián Ruiz": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 2, "em_campo": true, "percentil_acum": 0.3888888888888889, "fatia_raw": 0.39}, {"tempo": "70 min", "min": 7, "em_campo": true, "percentil_acum": 0.3055555555555556, "fatia_raw": 0.26}, {"tempo": "75 min", "min": 12, "em_campo": true, "percentil_acum": 0.3287037037037037, "fatia_raw": 0.26}, {"tempo": "80 min", "min": 17, "em_campo": true, "percentil_acum": 0.2743055555555556, "fatia_raw": -0.0975}, {"tempo": "85 min", "min": 22, "em_campo": true, "percentil_acum": 0.2494444444444444, "fatia_raw": 0.0}, {"tempo": "90 min", "min": 27, "em_campo": true, "percentil_acum": 0.3189814814814815, "fatia_raw": 1.253107142857143}, {"tempo": "95 min", "min": 31, "em_campo": true, "percentil_acum": 0.301984126984127, "fatia_raw": 0.0}], "Harry Kane": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.2925}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.1865}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5833333333333334, "fatia_raw": 0.2275}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 2.17275}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 1.6625}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.7916666666666666, "fatia_raw": 1.6746875}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.8214285714285714, "fatia_raw": 1.8965}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.8125, "fatia_raw": 1.5}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 2.085}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.825, "fatia_raw": 2.085}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.7954545454545454, "fatia_raw": 2.012261904761905}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.7916666666666666, "fatia_raw": 1.843055555555555}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.7692307692307693, "fatia_raw": 1.5975}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.7678571428571429, "fatia_raw": 2.9}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.7666666666666667, "fatia_raw": 2.5425}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.765625, "fatia_raw": 3.1275}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.7647058823529411, "fatia_raw": 2.38}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7638888888888888, "fatia_raw": 3.066071428571429}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7631578947368421, "fatia_raw": 2.25}], "Jamal Musiala": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.9099999999999999}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.6778055555555554}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.375, "fatia_raw": 0.2275}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.421875, "fatia_raw": 0.585}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.375, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.3333333333333333, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.3392857142857143, "fatia_raw": 0.13}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.359375, "fatia_raw": 1.115446428571429}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.3333333333333333, "fatia_raw": 0.274625}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.3125, "fatia_raw": 0.30875}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.3181818181818182, "fatia_raw": 1.047523148148148}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.3333333333333333, "fatia_raw": 0.5669444444444445}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.3376068376068376, "fatia_raw": 0.39}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.3452380952380952, "fatia_raw": 0.5525}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.3638888888888889, "fatia_raw": 0.66625}, {"tempo": "80 min", "min": 78, "em_campo": true, "percentil_acum": 0.3585069444444444, "fatia_raw": 0.0}], "Jonathan Tah": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 1.588166666666667}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 0.8558849206349207}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.7367633928571429}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.65625, "fatia_raw": 0.3634477124183007}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.575, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 1.133785714285714}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6607142857142857, "fatia_raw": 0.455}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.703125, "fatia_raw": 1.677619047619047}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6867283950617283, "fatia_raw": 0.9612777777777777}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.7180555555555556, "fatia_raw": 1.330333333333333}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.7436868686868686, "fatia_raw": 2.018912037037037}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.7181712962962963, "fatia_raw": 0.2925}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6917735042735043, "fatia_raw": 0.630267857142857}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.704861111111111, "fatia_raw": 1.005333333333333}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.6995370370370371, "fatia_raw": 0.7444047619047619}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.7026909722222222, "fatia_raw": 1.111190476190476}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.7054738562091503, "fatia_raw": 1.25202380952381}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7138999118165785, "fatia_raw": 1.355987394957983}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7064014202172096, "fatia_raw": 0.50375}], "Joshua Kimmich": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 0.9214351851851852}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 0.3435069444444444}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5833333333333334, "fatia_raw": 0.8931696428571428}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.515625, "fatia_raw": 0.52}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.45, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.4166666666666667, "fatia_raw": 0.13}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.3839285714285715, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.3671875, "fatia_raw": 0.7962907268170425}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.3680555555555556, "fatia_raw": 0.8590833333333331}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.39375, "fatia_raw": 1.191666666666667}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.3693181818181818, "fatia_raw": 0.585}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.3489583333333333, "fatia_raw": 0.27625}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.3648504273504273, "fatia_raw": 1.287244897959184}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.402281746031746, "fatia_raw": 1.746666666666667}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.4087962962962963, "fatia_raw": 0.6525}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.4249131944444444, "fatia_raw": 1.8225}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.4410947712418301, "fatia_raw": 1.1075}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.4597993827160494, "fatia_raw": 1.833526785714286}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.4882309941520468, "fatia_raw": 2.3425}], "Josip Stanisic": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 1.151222222222222}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 0.5247258454106281}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 1.010764508928572}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 0.9504444444444444}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.6625, "fatia_raw": 0.2275}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.5729166666666666, "fatia_raw": 0.3598214285714285}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.5625, "fatia_raw": 0.2275}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.5703125, "fatia_raw": 1.156323757763975}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5316358024691358, "fatia_raw": 0.273}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.4909722222222223, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.4690656565656566, "fatia_raw": 0.467337962962963}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.4508101851851852, "fatia_raw": 0.26}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.4738247863247863, "fatia_raw": 0.9814999999999999}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.4756944444444445, "fatia_raw": 0.195}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.4648148148148148, "fatia_raw": 0.1625}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.4670138888888889, "fatia_raw": 0.3575}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.4689542483660131, "fatia_raw": 1.085584415584416}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.4508377425044092, "fatia_raw": 0.5009374999999999}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.4496658312447787, "fatia_raw": 0.3412499999999999}], "João Neves": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.3770000000000001}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.3125, "fatia_raw": 0.5782589285714286}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.375, "fatia_raw": 0.4225}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.3125, "fatia_raw": 0.0975}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.35, "fatia_raw": 0.4224999999999999}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.3541666666666667, "fatia_raw": 0.5783088235294117}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.4464285714285715, "fatia_raw": 1.9875}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.515625, "fatia_raw": 2.704305555555556}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5694444444444444, "fatia_raw": 2.415513739545998}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.6, "fatia_raw": 1.565}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 2.085}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.6354166666666666, "fatia_raw": 1.5975}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6463675213675214, "fatia_raw": 1.63}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.6438492063492064, "fatia_raw": 1.5}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.6592592592592593, "fatia_raw": 1.5}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 2.225833333333333}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.6803921568627451, "fatia_raw": 2.1175}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.6919753086419753, "fatia_raw": 2.008973214285714}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7029239766081872, "fatia_raw": 1.5}], "Khvicha Kvaratskhelia": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.375, "fatia_raw": 0.5861607142857143}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.6825000000000001}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.4166666666666667, "fatia_raw": 0.2744444444444444}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.390625, "fatia_raw": 0.52}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.5125, "fatia_raw": 1.695}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.59375, "fatia_raw": 2.8853125}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6339285714285714, "fatia_raw": 1.5}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.6484375, "fatia_raw": 1.8575}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6736111111111112, "fatia_raw": 2.085}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.70625, "fatia_raw": 2.345}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.7329545454545454, "fatia_raw": 3.504291666666667}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.7552083333333334, "fatia_raw": 3.371428571428571}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.7740384615384616, "fatia_raw": 3.0}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.7901785714285714, "fatia_raw": 3.0975}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.8041666666666667, "fatia_raw": 3.1625}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.81640625, "fatia_raw": 3.0}, {"tempo": "85 min", "min": 83, "em_campo": true, "percentil_acum": 0.8272058823529411, "fatia_raw": 3.0}], "Konrad Laimer": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": true, "percentil_acum": 0.1111111111111111, "fatia_raw": 0.2275}, {"tempo": "50 min", "min": 5, "em_campo": true, "percentil_acum": 0.1805555555555556, "fatia_raw": 0.35425}, {"tempo": "55 min", "min": 10, "em_campo": true, "percentil_acum": 0.3287037037037037, "fatia_raw": 1.08700462962963}, {"tempo": "60 min", "min": 15, "em_campo": true, "percentil_acum": 0.4652777777777778, "fatia_raw": 0.86125}, {"tempo": "65 min", "min": 20, "em_campo": true, "percentil_acum": 0.4972222222222222, "fatia_raw": 0.8094957983193277}, {"tempo": "70 min", "min": 25, "em_campo": true, "percentil_acum": 0.5185185185185185, "fatia_raw": 0.284375}, {"tempo": "75 min", "min": 30, "em_campo": true, "percentil_acum": 0.5515873015873016, "fatia_raw": 0.8471666666666667}, {"tempo": "80 min", "min": 35, "em_campo": true, "percentil_acum": 0.5295138888888888, "fatia_raw": 0.1877777777777778}, {"tempo": "85 min", "min": 40, "em_campo": true, "percentil_acum": 0.4984567901234567, "fatia_raw": 0.1959285714285715}, {"tempo": "90 min", "min": 45, "em_campo": true, "percentil_acum": 0.5057539682539682, "fatia_raw": 1.218627819548872}, {"tempo": "95 min", "min": 49, "em_campo": true, "percentil_acum": 0.5376984126984127, "fatia_raw": 1.126666666666667}], "Leon Goretzka": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 2, "em_campo": true, "percentil_acum": 0.5555555555555556, "fatia_raw": 0.7102333333333334}, {"tempo": "85 min", "min": 7, "em_campo": true, "percentil_acum": 0.4277777777777778, "fatia_raw": 0.1625}, {"tempo": "90 min", "min": 12, "em_campo": true, "percentil_acum": 0.3222222222222222, "fatia_raw": 0.0}, {"tempo": "95 min", "min": 16, "em_campo": true, "percentil_acum": 0.2916666666666667, "fatia_raw": 0.0}], "Lucas Hernández": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "85 min", "min": 2, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.6933333333333334}, {"tempo": "90 min", "min": 7, "em_campo": true, "percentil_acum": 0.4722222222222222, "fatia_raw": 0.697782738095238}, {"tempo": "95 min", "min": 11, "em_campo": true, "percentil_acum": 0.3814814814814815, "fatia_raw": 0.0}], "Luis Díaz": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.4851449275362319}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.4822638888888889}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 0.0975}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.65625, "fatia_raw": 0.9165277777777777}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 0.2925}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.6458333333333334, "fatia_raw": 0.8125}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.5892857142857143, "fatia_raw": 0.52}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.578125, "fatia_raw": 1.495}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5416666666666666, "fatia_raw": 1.018694444444444}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.5125, "fatia_raw": 0.9099999999999998}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.4886363636363636, "fatia_raw": 0.8352995642701525}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.46875, "fatia_raw": 0.7474999999999999}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.4519230769230769, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.4553571428571428, "fatia_raw": 2.300583333333333}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.4416666666666667, "fatia_raw": 1.955}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.4296875, "fatia_raw": 2.085}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.4338235294117647, "fatia_raw": 1.986655844155844}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 1.7925}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.4407894736842105, "fatia_raw": 2.085}], "Manuel Neuer": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 1.097083333333333}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 0.580738888888889}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 0.4493965517241379}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 0.4589912280701754}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 0.47125}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.9166666666666666, "fatia_raw": 0.5778906250000001}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.9285714285714286, "fatia_raw": 0.5955625000000001}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 0.307125}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.85, "fatia_raw": 0.3290625}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.8181818181818182, "fatia_raw": 0.2275}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 0.3033333333333333}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.8076923076923077, "fatia_raw": 0.1877777777777778}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.8035714285714286, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.7833333333333333, "fatia_raw": 0.3563392857142857}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.765625, "fatia_raw": 0.3466666666666667}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.26}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7361111111111112, "fatia_raw": 0.2221448863636364}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7236842105263158, "fatia_raw": 0.0}], "Marquinhos": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.715}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.496741071428571}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5416666666666666, "fatia_raw": 0.2527777777777778}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.65625, "fatia_raw": 1.311220238095238}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.675, "fatia_raw": 0.5752500000000002}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 1.035779220779221}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6607142857142857, "fatia_raw": 0.2925}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.640625, "fatia_raw": 0.9425}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6805555555555556, "fatia_raw": 1.871236598440546}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.7, "fatia_raw": 1.305803571428571}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.6818181818181818, "fatia_raw": 0.8168333333333333}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.6770833333333334, "fatia_raw": 0.5447619047619048}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6394230769230769, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.6116071428571429, "fatia_raw": 0.13}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.6041666666666666, "fatia_raw": 0.2275}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.58203125, "fatia_raw": 0.065}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.5845588235294118, "fatia_raw": 1.15297619047619}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.5758928571428572, "fatia_raw": 0.756967075892857}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.5531015037593985, "fatia_raw": 0.0}], "Matvey Safonov": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.3046875}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.2275}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.3358333333333333}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.13}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.13}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.5833333333333334, "fatia_raw": 0.7055921052631577}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.5714285714285714, "fatia_raw": 0.316875}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 0.13}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 0.3575}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.65, "fatia_raw": 0.18078125}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.6818181818181818, "fatia_raw": 0.5994444444444444}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 0.1833928571428571}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6923076923076923, "fatia_raw": 0.195}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.6964285714285714, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.7166666666666667, "fatia_raw": 0.3575}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.734375, "fatia_raw": 0.455}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 0.6221428571428572}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.7638888888888888, "fatia_raw": 0.4225}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.7763157894736842, "fatia_raw": 0.195}], "Michael Olise": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 1.150138888888889}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 0.8382291666666668}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 1.293978794642857}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 0.5633333333333334}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.85, "fatia_raw": 0.325}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.7916666666666666, "fatia_raw": 0.4462946428571429}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 1.026638888888889}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.78125, "fatia_raw": 3.103488095238095}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.7777777777777778, "fatia_raw": 2.041883333333333}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 2.011875}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 2.085}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.7291666666666666, "fatia_raw": 1.745555555555556}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.7307692307692307, "fatia_raw": 2.02}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.6964285714285714, "fatia_raw": 2.1825}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.6833333333333333, "fatia_raw": 2.204785714285714}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.671875, "fatia_raw": 2.526157407407407}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.6470588235294118, "fatia_raw": 1.825}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.625, "fatia_raw": 1.5}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.6052631578947368, "fatia_raw": 2.02}], "Nicolas Jackson": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "85 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "90 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "95 min", "min": 2, "em_campo": true, "percentil_acum": 0.7, "fatia_raw": 0.4755833333333334}], "Nuno Mendes": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.125, "fatia_raw": 0.3484375}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.4375, "fatia_raw": 1.006339285714286}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.5190972222222222}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.53125, "fatia_raw": 0.7141558441558441}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.6, "fatia_raw": 0.8830714285714286}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 1.824915966386555}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6071428571428571, "fatia_raw": 0.065}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.5625, "fatia_raw": 0.6175}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5740740740740741, "fatia_raw": 1.392484567901234}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.5791666666666667, "fatia_raw": 0.8740178571428571}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.5606060606060607, "fatia_raw": 0.7124999999999999}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.5243055555555556, "fatia_raw": -0.0975}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.5512820512820513, "fatia_raw": 1.0725}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.5208333333333334, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.4944444444444445, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.4713541666666667, "fatia_raw": 0.0}, {"tempo": "85 min", "min": 83, "em_campo": true, "percentil_acum": 0.4509803921568628, "fatia_raw": -0.0975}], "Ousmane Dembélé": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.0975}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.2916666666666667, "fatia_raw": 0.0975}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.28125, "fatia_raw": 0.0975}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.275, "fatia_raw": 0.195}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.2708333333333333, "fatia_raw": 0.4224999999999999}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.3392857142857143, "fatia_raw": 1.0425}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.328125, "fatia_raw": 1.366597222222222}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.3472222222222222, "fatia_raw": 1.11455619412516}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.4125, "fatia_raw": 2.8894375}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.4659090909090909, "fatia_raw": 2.25}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.5104166666666666, "fatia_raw": 3.945}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.5480769230769231, "fatia_raw": 3.75}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.5803571428571429, "fatia_raw": 3.75}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.6083333333333333, "fatia_raw": 3.75}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.6328125, "fatia_raw": 3.75}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.6544117647058824, "fatia_raw": 3.6525}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.6736111111111112, "fatia_raw": 4.0425}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.6907894736842105, "fatia_raw": 3.945}], "Senny Mayulu": [{"tempo": "5 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "10 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "15 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "20 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "25 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "35 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "45 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "50 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "55 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "60 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "65 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "75 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 0, "em_campo": false, "percentil_acum": null, "fatia_raw": 0.0}, {"tempo": "85 min", "min": 2, "em_campo": true, "percentil_acum": 0.4, "fatia_raw": 0.455}, {"tempo": "90 min", "min": 7, "em_campo": true, "percentil_acum": 0.3111111111111111, "fatia_raw": 0.2396875}, {"tempo": "95 min", "min": 11, "em_campo": true, "percentil_acum": 0.3907407407407408, "fatia_raw": 0.0975}], "Vitinha": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 1.0, "fatia_raw": 1.429709821428571}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.9375, "fatia_raw": 1.00875}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 0.4405555555555556}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 1.857761904761905}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 0.9555}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.8333333333333334, "fatia_raw": 0.9736999999999999}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.8035714285714286, "fatia_raw": 0.52}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.75, "fatia_raw": 1.066}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.7361111111111112, "fatia_raw": 1.286157407407408}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.7, "fatia_raw": 0.7913749999999999}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.6931818181818182, "fatia_raw": 1.819277777777778}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.65625, "fatia_raw": 0.2878571428571429}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.6228632478632478, "fatia_raw": 0.13}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.6021825396825397, "fatia_raw": 0.3575}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.5703703703703703, "fatia_raw": 0.0}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.5625, "fatia_raw": 0.30875}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.538235294117647, "fatia_raw": 0.0}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.5391975308641975, "fatia_raw": 0.8775}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.5397660818713451, "fatia_raw": 0.0975}], "Warren Zaïre-Emery": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.875, "fatia_raw": 1.257779017857143}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.5, "fatia_raw": 0.1746875}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.6666666666666666, "fatia_raw": 0.929861111111111}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.245714285714286}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.675, "fatia_raw": 0.5281250000000001}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.6875, "fatia_raw": 1.17}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.6160714285714286, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.5546875, "fatia_raw": 0.351}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.5208333333333334, "fatia_raw": 0.52}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.51875, "fatia_raw": 0.8124999999999999}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.4943181818181818, "fatia_raw": 1.001426767676768}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.484375, "fatia_raw": 0.2925}, {"tempo": "65 min", "min": 63, "em_campo": true, "percentil_acum": 0.4556623931623932, "fatia_raw": 0.0}], "Willian Pacho": [{"tempo": "5 min", "min": 5, "em_campo": true, "percentil_acum": 0.375, "fatia_raw": 0.4811160714285715}, {"tempo": "10 min", "min": 10, "em_campo": true, "percentil_acum": 0.3125, "fatia_raw": 0.78}, {"tempo": "15 min", "min": 15, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.195}, {"tempo": "20 min", "min": 20, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.294125}, {"tempo": "25 min", "min": 25, "em_campo": true, "percentil_acum": 0.25, "fatia_raw": 0.0}, {"tempo": "30 min", "min": 30, "em_campo": true, "percentil_acum": 0.3333333333333333, "fatia_raw": 1.048125}, {"tempo": "35 min", "min": 35, "em_campo": true, "percentil_acum": 0.3035714285714285, "fatia_raw": 0.0}, {"tempo": "40 min", "min": 40, "em_campo": true, "percentil_acum": 0.28125, "fatia_raw": 0.609375}, {"tempo": "45 min", "min": 45, "em_campo": true, "percentil_acum": 0.3364197530864197, "fatia_raw": 1.667348484848485}, {"tempo": "50 min", "min": 50, "em_campo": true, "percentil_acum": 0.3402777777777778, "fatia_raw": 0.4224999999999999}, {"tempo": "55 min", "min": 55, "em_campo": true, "percentil_acum": 0.3775252525252525, "fatia_raw": 1.608055555555556}, {"tempo": "60 min", "min": 60, "em_campo": true, "percentil_acum": 0.3825231481481481, "fatia_raw": 0.2925}, {"tempo": "65 min", "min": 65, "em_campo": true, "percentil_acum": 0.3675213675213675, "fatia_raw": 0.0}, {"tempo": "70 min", "min": 70, "em_campo": true, "percentil_acum": 0.3680555555555555, "fatia_raw": 0.1625}, {"tempo": "75 min", "min": 75, "em_campo": true, "percentil_acum": 0.3643518518518519, "fatia_raw": 0.1625}, {"tempo": "80 min", "min": 80, "em_campo": true, "percentil_acum": 0.3806423611111111, "fatia_raw": 0.5741666666666667}, {"tempo": "85 min", "min": 85, "em_campo": true, "percentil_acum": 0.3803104575163399, "fatia_raw": 0.2925}, {"tempo": "90 min", "min": 90, "em_campo": true, "percentil_acum": 0.3988646384479718, "fatia_raw": 1.286941964285714}, {"tempo": "95 min", "min": 94, "em_campo": true, "percentil_acum": 0.3929093567251462, "fatia_raw": 0.26}]};
+const PASSES     = [{"origem": "Achraf Hakimi", "destino": "Désiré Doué", "count": 2}, {"origem": "Achraf Hakimi", "destino": "João Neves", "count": 2}, {"origem": "Achraf Hakimi", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Achraf Hakimi", "destino": "Marquinhos", "count": 7}, {"origem": "Achraf Hakimi", "destino": "Matvey Safonov", "count": 1}, {"origem": "Achraf Hakimi", "destino": "Vitinha", "count": 8}, {"origem": "Achraf Hakimi", "destino": "Warren Zaïre-Emery", "count": 1}, {"origem": "Aleksandar Pavlovic", "destino": "Alphonso Davies", "count": 3}, {"origem": "Aleksandar Pavlovic", "destino": "Dayot Upamecano", "count": 2}, {"origem": "Aleksandar Pavlovic", "destino": "Harry Kane", "count": 4}, {"origem": "Aleksandar Pavlovic", "destino": "Jamal Musiala", "count": 2}, {"origem": "Aleksandar Pavlovic", "destino": "Jonathan Tah", "count": 10}, {"origem": "Aleksandar Pavlovic", "destino": "Joshua Kimmich", "count": 2}, {"origem": "Aleksandar Pavlovic", "destino": "Josip Stanisic", "count": 2}, {"origem": "Aleksandar Pavlovic", "destino": "Konrad Laimer", "count": 2}, {"origem": "Aleksandar Pavlovic", "destino": "Luis Díaz", "count": 1}, {"origem": "Aleksandar Pavlovic", "destino": "Manuel Neuer", "count": 1}, {"origem": "Aleksandar Pavlovic", "destino": "Michael Olise", "count": 2}, {"origem": "Alphonso Davies", "destino": "Aleksandar Pavlovic", "count": 3}, {"origem": "Alphonso Davies", "destino": "Dayot Upamecano", "count": 1}, {"origem": "Alphonso Davies", "destino": "Jonathan Tah", "count": 1}, {"origem": "Alphonso Davies", "destino": "Joshua Kimmich", "count": 1}, {"origem": "Alphonso Davies", "destino": "Josip Stanisic", "count": 1}, {"origem": "Alphonso Davies", "destino": "Luis Díaz", "count": 1}, {"origem": "Alphonso Davies", "destino": "Manuel Neuer", "count": 3}, {"origem": "Alphonso Davies", "destino": "Michael Olise", "count": 1}, {"origem": "Bradley Barcola", "destino": "Fabián Ruiz", "count": 1}, {"origem": "Bradley Barcola", "destino": "Lucas Hernández", "count": 1}, {"origem": "Bradley Barcola", "destino": "Marquinhos", "count": 1}, {"origem": "Dayot Upamecano", "destino": "Aleksandar Pavlovic", "count": 3}, {"origem": "Dayot Upamecano", "destino": "Alphonso Davies", "count": 1}, {"origem": "Dayot Upamecano", "destino": "Harry Kane", "count": 1}, {"origem": "Dayot Upamecano", "destino": "Jonathan Tah", "count": 5}, {"origem": "Dayot Upamecano", "destino": "Josip Stanisic", "count": 5}, {"origem": "Dayot Upamecano", "destino": "Manuel Neuer", "count": 5}, {"origem": "Dayot Upamecano", "destino": "Michael Olise", "count": 4}, {"origem": "Désiré Doué", "destino": "Achraf Hakimi", "count": 3}, {"origem": "Désiré Doué", "destino": "Ousmane Dembélé", "count": 1}, {"origem": "Désiré Doué", "destino": "Vitinha", "count": 3}, {"origem": "Désiré Doué", "destino": "Warren Zaïre-Emery", "count": 3}, {"origem": "Fabián Ruiz", "destino": "Lucas Hernández", "count": 1}, {"origem": "Fabián Ruiz", "destino": "Nuno Mendes", "count": 1}, {"origem": "Harry Kane", "destino": "Aleksandar Pavlovic", "count": 1}, {"origem": "Harry Kane", "destino": "Dayot Upamecano", "count": 1}, {"origem": "Harry Kane", "destino": "Joshua Kimmich", "count": 2}, {"origem": "Harry Kane", "destino": "Josip Stanisic", "count": 1}, {"origem": "Harry Kane", "destino": "Konrad Laimer", "count": 1}, {"origem": "Harry Kane", "destino": "Luis Díaz", "count": 2}, {"origem": "Jamal Musiala", "destino": "Aleksandar Pavlovic", "count": 2}, {"origem": "Jamal Musiala", "destino": "Harry Kane", "count": 1}, {"origem": "Jamal Musiala", "destino": "Jonathan Tah", "count": 2}, {"origem": "Jamal Musiala", "destino": "Josip Stanisic", "count": 1}, {"origem": "Jamal Musiala", "destino": "Konrad Laimer", "count": 1}, {"origem": "Jamal Musiala", "destino": "Luis Díaz", "count": 2}, {"origem": "Jamal Musiala", "destino": "Michael Olise", "count": 2}, {"origem": "Jonathan Tah", "destino": "Aleksandar Pavlovic", "count": 10}, {"origem": "Jonathan Tah", "destino": "Alphonso Davies", "count": 3}, {"origem": "Jonathan Tah", "destino": "Dayot Upamecano", "count": 4}, {"origem": "Jonathan Tah", "destino": "Jamal Musiala", "count": 2}, {"origem": "Jonathan Tah", "destino": "Joshua Kimmich", "count": 4}, {"origem": "Jonathan Tah", "destino": "Josip Stanisic", "count": 2}, {"origem": "Jonathan Tah", "destino": "Konrad Laimer", "count": 4}, {"origem": "Jonathan Tah", "destino": "Luis Díaz", "count": 2}, {"origem": "Jonathan Tah", "destino": "Manuel Neuer", "count": 3}, {"origem": "Jonathan Tah", "destino": "Michael Olise", "count": 1}, {"origem": "Joshua Kimmich", "destino": "Aleksandar Pavlovic", "count": 2}, {"origem": "Joshua Kimmich", "destino": "Dayot Upamecano", "count": 7}, {"origem": "Joshua Kimmich", "destino": "Harry Kane", "count": 1}, {"origem": "Joshua Kimmich", "destino": "Jamal Musiala", "count": 1}, {"origem": "Joshua Kimmich", "destino": "Jonathan Tah", "count": 8}, {"origem": "Joshua Kimmich", "destino": "Josip Stanisic", "count": 2}, {"origem": "Joshua Kimmich", "destino": "Konrad Laimer", "count": 1}, {"origem": "Joshua Kimmich", "destino": "Luis Díaz", "count": 1}, {"origem": "Joshua Kimmich", "destino": "Manuel Neuer", "count": 2}, {"origem": "Joshua Kimmich", "destino": "Michael Olise", "count": 3}, {"origem": "Joshua Kimmich", "destino": "Nicolas Jackson", "count": 1}, {"origem": "Josip Stanisic", "destino": "Aleksandar Pavlovic", "count": 4}, {"origem": "Josip Stanisic", "destino": "Dayot Upamecano", "count": 1}, {"origem": "Josip Stanisic", "destino": "Harry Kane", "count": 1}, {"origem": "Josip Stanisic", "destino": "Jamal Musiala", "count": 1}, {"origem": "Josip Stanisic", "destino": "Jonathan Tah", "count": 2}, {"origem": "Josip Stanisic", "destino": "Manuel Neuer", "count": 4}, {"origem": "Josip Stanisic", "destino": "Michael Olise", "count": 2}, {"origem": "João Neves", "destino": "Achraf Hakimi", "count": 2}, {"origem": "João Neves", "destino": "Fabián Ruiz", "count": 1}, {"origem": "João Neves", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "João Neves", "destino": "Marquinhos", "count": 2}, {"origem": "João Neves", "destino": "Matvey Safonov", "count": 3}, {"origem": "João Neves", "destino": "Nuno Mendes", "count": 2}, {"origem": "João Neves", "destino": "Vitinha", "count": 1}, {"origem": "João Neves", "destino": "Willian Pacho", "count": 2}, {"origem": "Khvicha Kvaratskhelia", "destino": "Achraf Hakimi", "count": 1}, {"origem": "Khvicha Kvaratskhelia", "destino": "João Neves", "count": 2}, {"origem": "Khvicha Kvaratskhelia", "destino": "Marquinhos", "count": 1}, {"origem": "Khvicha Kvaratskhelia", "destino": "Nuno Mendes", "count": 4}, {"origem": "Khvicha Kvaratskhelia", "destino": "Vitinha", "count": 1}, {"origem": "Khvicha Kvaratskhelia", "destino": "Warren Zaïre-Emery", "count": 1}, {"origem": "Konrad Laimer", "destino": "Aleksandar Pavlovic", "count": 3}, {"origem": "Konrad Laimer", "destino": "Harry Kane", "count": 1}, {"origem": "Konrad Laimer", "destino": "Joshua Kimmich", "count": 1}, {"origem": "Konrad Laimer", "destino": "Manuel Neuer", "count": 2}, {"origem": "Leon Goretzka", "destino": "Aleksandar Pavlovic", "count": 1}, {"origem": "Leon Goretzka", "destino": "Michael Olise", "count": 2}, {"origem": "Lucas Hernández", "destino": "Bradley Barcola", "count": 1}, {"origem": "Lucas Hernández", "destino": "Matvey Safonov", "count": 1}, {"origem": "Lucas Hernández", "destino": "Willian Pacho", "count": 2}, {"origem": "Luis Díaz", "destino": "Aleksandar Pavlovic", "count": 4}, {"origem": "Luis Díaz", "destino": "Dayot Upamecano", "count": 1}, {"origem": "Luis Díaz", "destino": "Jamal Musiala", "count": 2}, {"origem": "Luis Díaz", "destino": "Joshua Kimmich", "count": 3}, {"origem": "Luis Díaz", "destino": "Josip Stanisic", "count": 2}, {"origem": "Luis Díaz", "destino": "Konrad Laimer", "count": 1}, {"origem": "Luis Díaz", "destino": "Manuel Neuer", "count": 3}, {"origem": "Luis Díaz", "destino": "Michael Olise", "count": 3}, {"origem": "Manuel Neuer", "destino": "Alphonso Davies", "count": 1}, {"origem": "Manuel Neuer", "destino": "Dayot Upamecano", "count": 1}, {"origem": "Manuel Neuer", "destino": "Harry Kane", "count": 2}, {"origem": "Manuel Neuer", "destino": "Jonathan Tah", "count": 1}, {"origem": "Manuel Neuer", "destino": "Josip Stanisic", "count": 2}, {"origem": "Manuel Neuer", "destino": "Luis Díaz", "count": 1}, {"origem": "Manuel Neuer", "destino": "Michael Olise", "count": 1}, {"origem": "Marquinhos", "destino": "Achraf Hakimi", "count": 10}, {"origem": "Marquinhos", "destino": "Désiré Doué", "count": 3}, {"origem": "Marquinhos", "destino": "João Neves", "count": 1}, {"origem": "Marquinhos", "destino": "Matvey Safonov", "count": 3}, {"origem": "Marquinhos", "destino": "Nuno Mendes", "count": 2}, {"origem": "Marquinhos", "destino": "Ousmane Dembélé", "count": 2}, {"origem": "Marquinhos", "destino": "Vitinha", "count": 2}, {"origem": "Marquinhos", "destino": "Willian Pacho", "count": 6}, {"origem": "Matvey Safonov", "destino": "Achraf Hakimi", "count": 1}, {"origem": "Matvey Safonov", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Matvey Safonov", "destino": "Nuno Mendes", "count": 1}, {"origem": "Michael Olise", "destino": "Aleksandar Pavlovic", "count": 4}, {"origem": "Michael Olise", "destino": "Alphonso Davies", "count": 1}, {"origem": "Michael Olise", "destino": "Dayot Upamecano", "count": 3}, {"origem": "Michael Olise", "destino": "Harry Kane", "count": 1}, {"origem": "Michael Olise", "destino": "Jamal Musiala", "count": 1}, {"origem": "Michael Olise", "destino": "Joshua Kimmich", "count": 3}, {"origem": "Michael Olise", "destino": "Josip Stanisic", "count": 3}, {"origem": "Michael Olise", "destino": "Leon Goretzka", "count": 1}, {"origem": "Nicolas Jackson", "destino": "Konrad Laimer", "count": 1}, {"origem": "Nuno Mendes", "destino": "Désiré Doué", "count": 1}, {"origem": "Nuno Mendes", "destino": "Fabián Ruiz", "count": 1}, {"origem": "Nuno Mendes", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Nuno Mendes", "destino": "Marquinhos", "count": 2}, {"origem": "Nuno Mendes", "destino": "Matvey Safonov", "count": 1}, {"origem": "Nuno Mendes", "destino": "Ousmane Dembélé", "count": 1}, {"origem": "Nuno Mendes", "destino": "Vitinha", "count": 4}, {"origem": "Nuno Mendes", "destino": "Warren Zaïre-Emery", "count": 2}, {"origem": "Nuno Mendes", "destino": "Willian Pacho", "count": 3}, {"origem": "Ousmane Dembélé", "destino": "Désiré Doué", "count": 1}, {"origem": "Ousmane Dembélé", "destino": "João Neves", "count": 2}, {"origem": "Ousmane Dembélé", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Senny Mayulu", "destino": "Achraf Hakimi", "count": 1}, {"origem": "Vitinha", "destino": "Achraf Hakimi", "count": 7}, {"origem": "Vitinha", "destino": "Fabián Ruiz", "count": 1}, {"origem": "Vitinha", "destino": "João Neves", "count": 1}, {"origem": "Vitinha", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Vitinha", "destino": "Lucas Hernández", "count": 1}, {"origem": "Vitinha", "destino": "Marquinhos", "count": 3}, {"origem": "Vitinha", "destino": "Matvey Safonov", "count": 1}, {"origem": "Vitinha", "destino": "Nuno Mendes", "count": 1}, {"origem": "Vitinha", "destino": "Senny Mayulu", "count": 1}, {"origem": "Vitinha", "destino": "Warren Zaïre-Emery", "count": 3}, {"origem": "Vitinha", "destino": "Willian Pacho", "count": 3}, {"origem": "Warren Zaïre-Emery", "destino": "Achraf Hakimi", "count": 2}, {"origem": "Warren Zaïre-Emery", "destino": "Khvicha Kvaratskhelia", "count": 3}, {"origem": "Warren Zaïre-Emery", "destino": "Nuno Mendes", "count": 4}, {"origem": "Warren Zaïre-Emery", "destino": "Vitinha", "count": 7}, {"origem": "Warren Zaïre-Emery", "destino": "Willian Pacho", "count": 1}, {"origem": "Willian Pacho", "destino": "Achraf Hakimi", "count": 1}, {"origem": "Willian Pacho", "destino": "João Neves", "count": 1}, {"origem": "Willian Pacho", "destino": "Khvicha Kvaratskhelia", "count": 1}, {"origem": "Willian Pacho", "destino": "Lucas Hernández", "count": 1}, {"origem": "Willian Pacho", "destino": "Marquinhos", "count": 6}, {"origem": "Willian Pacho", "destino": "Nuno Mendes", "count": 8}, {"origem": "Willian Pacho", "destino": "Vitinha", "count": 2}, {"origem": "Willian Pacho", "destino": "Warren Zaïre-Emery", "count": 1}];   // [{origem, destino, count}, ...]
+const MATCH_INFO = {"time_casa": "PSG", "time_fora": "Bayern", "placar_casa": 5, "placar_fora": 4};
+
+// ── Mapeamento de posição → linha ───────────────────────────────────────────
+const POS_TO_LINE = {
+  'Goleiro':'GK','Lateral Direito':'DEF','Lateral Esquerdo':'DEF',
+  'Zagueiro':'DEF','Volante':'MID','Meio-Campo':'MID','Meia':'MID',
+  'Meia-Atacante':'MID','FWR':'FWD','FWL':'FWD','Ponta':'FWD',
+  'Atacante':'FWD','Centroavante':'FWD','Substituto':'BENCH'
+};
+
+// ── Posições Y no campo (% da altura 720)
+// Campo dividido em dois espelhos simétricos em torno de y=50% (linha do meio).
+// FORA joga no topo (y cresce de cima pra baixo):
+//   GK  = 11.1%  (pênalti topo  80/720)
+//   DEF = 24.0%
+//   MID = 36.0%
+//   FWD = 46.5%   ← abaixo de 50% para não cruzar a linha
+// CASA joga na base, espelho exato:
+//   FWD = 53.5%   (100% - 46.5%)
+//   MID = 64.0%   (100% - 36.0%)
+//   DEF = 76.0%   (100% - 24.0%)
+//   GK  = 88.9%   (pênalti base 640/720)
+const LINE_Y_FORA = {
+  GK:  '11.1%',
+  DEF: '24.0%',
+  MID: '36.0%',
+  FWD: '46.5%'
+};
+const LINE_Y_CASA = {
+  FWD: '53.5%',
+  MID: '64.0%',
+  DEF: '76.0%',
+  GK:  '88.9%'
+};
+
+// Distribuição horizontal
+const LINE_X = {
+  1:['50%'],
+  2:['30%','70%'],
+  3:['20%','50%','80%'],
+  4:['12%','37%','63%','88%'],
+  5:['10%','27.5%','50%','72.5%','90%']
+};
+
+// Formações predefinidas: { DEF, MID, FWD }
+const FORMATION_DEFS = {
+  '4-3-3': {DEF:4,MID:3,FWD:3},
+  '4-2-3-1':{DEF:4,MID:5,FWD:1},  // 2+3 no MID, 1 FWD
+  '3-5-2': {DEF:3,MID:5,FWD:2},
+  '3-4-3': {DEF:3,MID:4,FWD:3},
+  '4-4-2': {DEF:4,MID:4,FWD:2},
+  '5-3-2': {DEF:5,MID:3,FWD:2},
+};
+
+// Cores dos times
+const TEAM_COLORS = {};
+TEAM_COLORS[MATCH_INFO.time_casa] = {main:'#1a6b30', accent:'#c8102e', text:'#fff'};
+TEAM_COLORS[MATCH_INFO.time_fora] = {main:'#c8102e', accent:'#ffc400', text:'#fff'};
+
+// ── Estado ──────────────────────────────────────────────────────────────────
+let formations = {};
+formations[MATCH_INFO.time_casa] = {GK:[],DEF:[],MID:[],FWD:[]};
+formations[MATCH_INFO.time_fora] = {GK:[],DEF:[],MID:[],FWD:[]};
+let bench = {};
+bench[MATCH_INFO.time_casa] = [];
+bench[MATCH_INFO.time_fora] = [];
+let selectedField = null;
+let selectedBench = null;
+let activeFormations = {};
+activeFormations[MATCH_INFO.time_casa] = null;
+activeFormations[MATCH_INFO.time_fora] = null;
+
+// drag state
+let dragSource = null;  // {type:'field'|'bench', team, line, idx, player}
+
+// ── Helpers ─────────────────────────────────────────────────────────────────
+function initials(name){
+  if(!name) return '?';
+  const p = name.split(' ');
+  return (p[0][0] + (p[p.length-1][0] || '')).toUpperCase();
+}
+function shortName(name){
+  if(!name) return '';
+  const p = name.split(' ');
+  return p.length > 2 ? p[0]+' '+p[p.length-1] : name;
+}
+function aceScore(pct){ return pct == null ? null : (pct*5)+5; }
+function aceColor(a){
+  if(a == null) return '#888';
+  if(a >= 8)   return '#00e5a0';
+  if(a >= 7)   return '#ffc400';
+  return '#ff8c69';
+}
+function ratClass(v, hi, mid){
+  if(v == null) return '';
+  return v >= hi ? 'good' : v >= mid ? 'mid' : 'low';
+}
+function fmtVal(v){
+  if(v == null || v === '' || (typeof v === 'number' && isNaN(v))) return '—';
+  const n = +v;
+  return isNaN(n) ? v : (n % 1 === 0 ? n : n.toFixed(1));
+}
+
+function allPlayers(){
+  return RAW_DATA;
+}
+function playerByName(name){
+  return RAW_DATA.find(p => p.Jogador === name);
+}
+
+// ── Tabs ───────────────────────────────────────────────────────────────────
+function switchTab(tab){
+  document.querySelectorAll('.panel-tab').forEach((t,i) => {
+    const ids = ['mvp','ranking','compare','tactic'];
+    t.classList.toggle('active', ids[i] === tab);
+  });
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.getElementById('tab-'+tab).classList.add('active');
+}
+
+// ── Boot ─────────────────────────────────────────────────────────────────────
+function init(){
+  document.getElementById('label-casa').textContent = MATCH_INFO.time_casa;
+  document.getElementById('label-fora').textContent = MATCH_INFO.time_fora;
+  document.getElementById('placar-box').textContent =
+    MATCH_INFO.placar_casa + ' × ' + MATCH_INFO.placar_fora;
+  document.getElementById('svg-label-fora').textContent = MATCH_INFO.time_fora.toUpperCase();
+  document.getElementById('svg-label-casa').textContent = MATCH_INFO.time_casa.toUpperCase();
+  document.getElementById('bench-fora-title').textContent = MATCH_INFO.time_fora + ' — banco';
+  document.getElementById('bench-casa-title').textContent = MATCH_INFO.time_casa + ' — banco';
+
+  buildFormations();
+  renderBench();
+  renderField();
+  renderMVP();
+  renderRanking();
+  populateCompareSelects();
+  renderTacticPanel();
+}
+
+function buildFormations(){
+  RAW_DATA.forEach(p => {
+    const line = POS_TO_LINE[p.Posicao] || 'BENCH';
+    if(p.Status === 'Titular' && line !== 'BENCH'){
+      formations[p.Equipa][line].push(p);
+    } else {
+      bench[p.Equipa].push(p);
+    }
+  });
+  ['DEF','MID','FWD'].forEach(l => {
+    [MATCH_INFO.time_casa, MATCH_INFO.time_fora].forEach(t => {
+      if(formations[t] && formations[t][l])
+        formations[t][l].sort((a,b)=>(a['Posicao Media Y']||0)-(b['Posicao Media Y']||0));
+    });
+  });
+  updateFormationLabels();
+}
+
+function updateFormationLabels(){
+  [
+    [MATCH_INFO.time_casa, 'formacao-casa'],
+    [MATCH_INFO.time_fora, 'formacao-fora'],
+  ].forEach(([t, id]) => {
+    const f = formations[t];
+    if(!f) return;
+    document.getElementById(id).textContent =
+      [f.DEF.length, f.MID.length, f.FWD.length].join('-');
+  });
+}
+
+// ── MVP ──────────────────────────────────────────────────────────────────────
+function gerarMotivo(p, ace){
+  const bits = [];
+  if(p.Golos > 0) bits.push(`${p.Golos} gol${p.Golos>1?'s':''}`);
+  if(p.Assistencias > 0) bits.push(`${p.Assistencias} assist.`);
+  if(p['Passes Certos'] > 50) bits.push(`${p['Passes Certos']} passes certos`);
+  if(p['Recuperacoes de Bola'] > 8) bits.push(`${p['Recuperacoes de Bola']} recuperações`);
+  if(p['Desarmes Feitos'] > 5) bits.push(`${p['Desarmes Feitos']} desarmes`);
+  if(p['Interceptacoes'] > 4) bits.push(`${p['Interceptacoes']} interceptações`);
+  if(p['Defesas (GR)'] > 3) bits.push(`${p['Defesas (GR)']} defesas`);
+  if(bits.length === 0) bits.push('desempenho sólido em múltiplas métricas');
+  return 'Destaque pela equipa: ' + bits.join(', ') + '.';
+}
+
+function renderMVP(){
+  const ranked = RAW_DATA
+    .filter(p => p.nota_percentil != null)
+    .map(p => ({p, ace: aceScore(p.nota_percentil)}))
+    .sort((a,b) => b.ace - a.ace);
+
+  const el = document.getElementById('tab-mvp');
+  if(!ranked.length){ el.innerHTML = '<div class="stats-empty">Sem dados ACE disponíveis</div>'; return; }
+
+  const {p, ace} = ranked[0];
+  const tc = TEAM_COLORS[p.Equipa] || {main:'#444', accent:'#888'};
+  el.innerHTML = `
+  <div class="mvp-block">
+    <div class="mvp-crown">🏆</div>
+    <div class="mvp-label">MVP da Partida</div>
+    <div class="mvp-name">${p.Jogador}</div>
+    <div class="mvp-team" style="color:${tc.accent}">${p.Equipa} · ${p.Posicao||'—'}</div>
+    <div class="mvp-score" style="color:${aceColor(ace)}">${ace.toFixed(2)}</div>
+    <div style="font-size:9px;color:rgba(255,255,255,.3);margin-bottom:8px">ACE Score</div>
+    <div class="mvp-motivo">${gerarMotivo(p, ace)}</div>
+  </div>`;
+}
+
+// ── Ranking ──────────────────────────────────────────────────────────────────
+function renderRanking(){
+  const ranked = RAW_DATA
+    .filter(p => p.nota_percentil != null)
+    .map(p => ({p, ace: aceScore(p.nota_percentil)}))
+    .sort((a,b) => b.ace - a.ace);
+
+  const el = document.getElementById('tab-ranking');
+  if(!ranked.length){ el.innerHTML = '<div class="stats-empty">Sem dados ACE</div>'; return; }
+
+  let html = '<div class="ranking-list">';
+  ranked.forEach(({p, ace}, i) => {
+    const rank = i+1;
+    const tc = TEAM_COLORS[p.Equipa] || {main:'#444',accent:'#888'};
+    const medals = {1:'🥇',2:'🥈',3:'🥉'};
+    const numStr = rank <= 3 ? medals[rank] : `<span class="rank-num-normal">${rank}</span>`;
+    html += `
+    <div class="rank-item rank-${rank}" onclick="showStatsFromRank('${p.Jogador.replace(/'/g,"\\'")}')">
+      <div class="rank-num">${numStr}</div>
+      <div class="rank-avatar" style="background:${tc.main};border:2px solid ${tc.accent}">${initials(p.Jogador)}</div>
+      <div class="rank-info">
+        <div class="rank-name">${shortName(p.Jogador)}</div>
+        <div class="rank-team">${p.Equipa}</div>
+      </div>
+      <div class="rank-ace" style="color:${aceColor(ace)}">${ace.toFixed(2)}</div>
+    </div>`;
+  });
+  html += '</div>';
+  el.innerHTML = html;
+}
+
+function showStatsFromRank(name){
+  const p = playerByName(name);
+  if(p){ showStats(p); switchTab('mvp'); /* show stats panel */ }
+}
+
+// ── Comparador ───────────────────────────────────────────────────────────────
+function populateCompareSelects(){
+  const players = RAW_DATA.filter(p => p.nota_percentil != null)
+    .sort((a,b) => (aceScore(b.nota_percentil)||0) - (aceScore(a.nota_percentil)||0));
+  ['cmp-a','cmp-b'].forEach(id => {
+    const sel = document.getElementById(id);
+    players.forEach(p => {
+      const opt = document.createElement('option');
+      opt.value = p.Jogador;
+      opt.textContent = shortName(p.Jogador) + ' (' + p.Equipa + ')';
+      sel.appendChild(opt);
+    });
+  });
+}
+
+const COMPARE_METRICS = [
+  ['ACE Score',      p => aceScore(p.nota_percentil), true],
+  ['Nota WhoScored', p => p['Nota WhoScored'], true],
+  ['Passes Certos',  p => p['Passes Certos'], true],
+  ['Precisão Passe (%)', p => p['Precisao Passe (%)'], true],
+  ['Passes Chave',   p => p['Passes Chave'], true],
+  ['Golos',          p => p.Golos, true],
+  ['Assistências',   p => p.Assistencias, true],
+  ['Chutes no Alvo', p => p['Chutes no Alvo'], true],
+  ['Desarmes',       p => p['Desarmes Feitos'], true],
+  ['Interceptações', p => p['Interceptacoes'], true],
+  ['Recuperações',   p => p['Recuperacoes de Bola'], true],
+  ['Dribles',        p => p['Dribles Certos'], true],
+  ['Toques',         p => p['Toques na Bola'], true],
+  ['Perdas de Posse',p => p['Perdas de Posse'], false],
+  ['Faltas Cometidas',p=>p['Faltas Cometidas'], false],
+  ['Minutos',        p => p.Tempo_Total_min, true],
+];
+
+function renderCompare(){
+  const nameA = document.getElementById('cmp-a').value;
+  const nameB = document.getElementById('cmp-b').value;
+  const div   = document.getElementById('compare-result');
+  if(!nameA || !nameB){ div.innerHTML = ''; return; }
+  const pA = playerByName(nameA);
+  const pB = playerByName(nameB);
+  if(!pA || !pB){ div.innerHTML = ''; return; }
+  const tcA = TEAM_COLORS[pA.Equipa]||{main:'#444',accent:'#888'};
+  const tcB = TEAM_COLORS[pB.Equipa]||{main:'#444',accent:'#888'};
+
+  let rows = '';
+  COMPARE_METRICS.forEach(([label, fn, higherBetter]) => {
+    const vA = fn(pA);
+    const vB = fn(pB);
+    const nA = vA == null ? null : +vA;
+    const nB = vB == null ? null : +vB;
+    let clA = '', clB = '';
+    if(nA != null && nB != null && nA !== nB){
+      const aWins = higherBetter ? nA > nB : nA < nB;
+      clA = aWins ? 'winner' : '';
+      clB = aWins ? '' : 'winner';
+    }
+    rows += `<tr>
+      <td>${label}</td>
+      <td class="${clA}">${fmtVal(vA)}</td>
+      <td class="${clB}">${fmtVal(vB)}</td>
+    </tr>`;
+  });
+
+  div.innerHTML = `
+  <div class="radar-compare-wrap">
+    <div class="radar-compare-title">Radar Comparativo</div>
+    <div class="radar-canvas-wrap">
+      <canvas id="radar-cmp-canvas" width="280" height="280"></canvas>
+    </div>
+    <div class="radar-legend">
+      <span><span class="radar-legend-dot" style="background:${tcA.accent}"></span>${shortName(nameA)}</span>
+      <span><span class="radar-legend-dot" style="background:${tcB.accent}"></span>${shortName(nameB)}</span>
+    </div>
+  </div>
+  <table class="compare-table">
+    <thead><tr>
+      <th>Métrica</th>
+      <th style="color:${tcA.accent}">${shortName(nameA)}</th>
+      <th style="color:${tcB.accent}">${shortName(nameB)}</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+  requestAnimationFrame(() => drawRadar('radar-cmp-canvas', pA, pB, tcA.accent, tcB.accent));
+}
+
+// ── Tático ───────────────────────────────────────────────────────────────────
+function renderTacticPanel(){
+  [MATCH_INFO.time_casa, MATCH_INFO.time_fora].forEach(team => {
+    const suffix = team === MATCH_INFO.time_casa ? 'casa' : 'fora';
+    const tc = TEAM_COLORS[team] || {main:'#444',accent:'#888'};
+    document.getElementById('tactic-title-'+suffix).textContent = team + ' — Formação';
+    const btns = document.getElementById('formation-btns-'+suffix);
+    btns.innerHTML = '';
+    Object.keys(FORMATION_DEFS).forEach(fname => {
+      const btn = document.createElement('button');
+      btn.className = 'formation-btn' + (activeFormations[team] === fname ? ' active-formation':'');
+      btn.textContent = fname;
+      btn.style.borderColor = tc.accent + '44';
+      btn.onclick = () => applyFormation(team, fname);
+      btns.appendChild(btn);
+    });
+  });
+}
+
+function applyFormation(team, fname){
+  const def = FORMATION_DEFS[fname];
+  if(!def) return;
+
+  // Junta todos os jogadores de campo (exceto GK) com o banco do time
+  const allField = [...formations[team].DEF, ...formations[team].MID, ...formations[team].FWD];
+  const allBench = [...bench[team]];
+  const pool = [...allField, ...allBench];
+
+  // Separa GK
+  const gk = formations[team].GK.slice();
+
+  // Jogadores sem GK ordenados por ACE decrescente para preencher linhas
+  const nonGK = pool.filter(p => (POS_TO_LINE[p.Posicao]||'BENCH') !== 'GK')
+    .sort((a,b) => (aceScore(b.nota_percentil)||0) - (aceScore(a.nota_percentil)||0));
+
+  const newDEF = nonGK.splice(0, def.DEF);
+  const newMID = nonGK.splice(0, def.MID);
+  const newFWD = nonGK.splice(0, def.FWD);
+  const newBench = nonGK;  // restantes vão pro banco
+
+  formations[team].GK  = gk;
+  formations[team].DEF = newDEF;
+  formations[team].MID = newMID;
+  formations[team].FWD = newFWD;
+  bench[team] = newBench;
+
+  activeFormations[team] = fname;
+  updateFormationLabels();
+  renderTacticPanel();
+  renderBench();
+  renderField();
+}
+
+// ── Banco ───────────────────────────────────────────────────────────────────
+function renderBench(){
+  [
+    [MATCH_INFO.time_casa, 'bench-casa'],
+    [MATCH_INFO.time_fora, 'bench-fora'],
+  ].forEach(([t, elId]) => {
+    const el    = document.getElementById(elId);
+    const title = el.querySelector('.bench-title');
+    el.innerHTML = '';
+    el.appendChild(title);
+    (bench[t] || []).forEach((p,i) => {
+      const ace    = aceScore(p.nota_percentil);
+      const hasData = p.nota_percentil != null;
+      const tc     = TEAM_COLORS[t] || {main:'#444', accent:'#888'};
+      const div    = document.createElement('div');
+      div.className = 'bench-token' + (hasData ? '' : ' no-data');
+      div.dataset.name = p.Jogador;
+      div.dataset.team = p.Equipa;
+      div.draggable = true;
+      div.innerHTML = `
+        <div class="bench-avatar" style="background:${tc.main};border-color:${tc.accent}">
+          ${initials(p.Jogador)}</div>
+        <div class="bench-name">${shortName(p.Jogador)}</div>
+        <div class="bench-ace">${ace != null ? ace.toFixed(2) : '—'}</div>`;
+      div.onclick = () => onBenchClick(p, div);
+
+      // Drag from bench
+      div.addEventListener('dragstart', e => {
+        dragSource = {type:'bench', team:t, idx:i, player:p};
+        e.dataTransfer.effectAllowed = 'move';
+      });
+      div.addEventListener('dragend', () => { dragSource = null; });
+      el.appendChild(div);
+    });
+  });
+}
+
+// ── Campo ───────────────────────────────────────────────────────────────────
+function renderField(){
+  const layer = document.getElementById('players-layer');
+  layer.querySelectorAll('.player-token,.line-label').forEach(e => e.remove());
+
+  [MATCH_INFO.time_fora, MATCH_INFO.time_casa].forEach(team => {
+    const isTop  = (team === MATCH_INFO.time_fora);
+    const LINE_Y = isTop ? LINE_Y_FORA : LINE_Y_CASA;
+    const tc     = TEAM_COLORS[team] || {main:'#444', accent:'#888'};
+
+    ['GK','DEF','MID','FWD'].forEach(line => {
+      const players    = (formations[team] || {})[line] || [];
+      if(!players.length) return;
+      const yPos       = LINE_Y[line];
+      const xPositions = LINE_X[Math.min(players.length, 5)] || LINE_X[4];
+
+      const lbl = document.createElement('div');
+      lbl.className = 'line-label';
+      lbl.style.cssText = `top:${yPos};left:2px;transform:translateY(-50%)`;
+      lbl.textContent = line;
+      layer.appendChild(lbl);
+
+      players.forEach((p, i) => {
+        const xPos      = xPositions[i] || '50%';
+        const ace       = aceScore(p.nota_percentil);
+        const isSelected     = selectedField && selectedField.name === p.Jogador;
+        const isBenchTarget  = selectedBench && selectedBench.team === team;
+
+        const div = document.createElement('div');
+        div.className = 'player-token'
+          + (isSelected    ? ' selected'            : '')
+          + (isBenchTarget ? ' selected-bench-target' : '');
+        div.style.cssText = `left:${xPos};top:${yPos}`;
+        div.dataset.name  = p.Jogador;
+        div.dataset.team  = team;
+        div.dataset.line  = line;
+        div.dataset.idx   = i;
+        div.draggable     = true;
+
+        div.innerHTML = `
+          <div class="p-avatar" style="background:${tc.main};border-color:${tc.accent}">
+            ${initials(p.Jogador)}</div>
+          <div class="p-name">${shortName(p.Jogador)}</div>
+          <div class="p-ace">${ace != null ? ace.toFixed(2) : '—'}</div>`;
+
+        div.addEventListener('click', () => onFieldClick(p, team, line, i));
+
+        // Drag & Drop
+        div.addEventListener('dragstart', e => {
+          dragSource = {type:'field', team, line, idx:i, player:p};
+          div.classList.add('dragging');
+          e.dataTransfer.effectAllowed = 'move';
+        });
+        div.addEventListener('dragend', () => {
+          div.classList.remove('dragging');
+          dragSource = null;
+          layer.querySelectorAll('.drag-over').forEach(el => el.classList.remove('drag-over'));
+        });
+        div.addEventListener('dragover', e => {
+          e.preventDefault();
+          if(dragSource && dragSource.player.Jogador !== p.Jogador)
+            div.classList.add('drag-over');
+        });
+        div.addEventListener('dragleave', () => div.classList.remove('drag-over'));
+        div.addEventListener('drop', e => {
+          e.preventDefault();
+          div.classList.remove('drag-over');
+          if(!dragSource) return;
+          const src = dragSource;
+
+          if(src.type === 'field'){
+            // Troca dois jogadores de campo (mesmo time ou diferente — só swapa posições)
+            const srcArr = formations[src.team][src.line];
+            const dstArr = formations[team][line];
+            const srcP   = srcArr[src.idx];
+            const dstP   = dstArr[i];
+            if(src.team === team && src.line === line){
+              [srcArr[src.idx], dstArr[i]] = [dstArr[i], srcArr[src.idx]];
+            } else {
+              srcArr[src.idx] = dstP;
+              dstArr[i]       = srcP;
+            }
+          } else if(src.type === 'bench'){
+            // Substitui jogador em campo pelo do banco
+            const benchArr = bench[src.team];
+            const fieldArr = formations[team][line];
+            const temp     = fieldArr[i];
+            fieldArr[i]    = benchArr[src.idx];
+            benchArr[src.idx] = temp;
+          }
+
+          dragSource = null;
+          renderBench();
+          renderField();
+        });
+
+        layer.appendChild(div);
+      });
+    });
+  });
+
+  // Atualiza rede de passes se estiver ativa
+  refreshPassNet();
+
+  // Bench tokens também recebem drop (para devolver jogador)
+  document.querySelectorAll('.bench-token').forEach((el, _) => {
+    el.addEventListener('dragover', e => { e.preventDefault(); el.style.outline='2px solid #00e5a0'; });
+    el.addEventListener('dragleave', () => el.style.outline = '');
+    el.addEventListener('drop', e => {
+      e.preventDefault();
+      el.style.outline = '';
+      if(!dragSource || dragSource.type !== 'field') return;
+      const src = dragSource;
+      const dstName = el.dataset.name;
+      const dstTeam = el.dataset.team;
+      if(src.team !== dstTeam){ dragSource=null; return; }
+      const bi = bench[dstTeam].findIndex(p => p.Jogador === dstName);
+      if(bi === -1){ dragSource=null; return; }
+      const temp = bench[dstTeam][bi];
+      bench[dstTeam][bi] = formations[src.team][src.line][src.idx];
+      formations[src.team][src.line][src.idx] = temp;
+      dragSource = null;
+      renderBench();
+      renderField();
+    });
+  });
+}
+
+// ── Interações por clique ─────────────────────────────────────────────────────
+function onBenchClick(player, el){
+  document.querySelectorAll('.bench-token').forEach(e => e.classList.remove('selected-bench'));
+  if(selectedBench && selectedBench.name === player.Jogador){
+    selectedBench = null;
+    document.getElementById('swap-banner').style.display = 'none';
+    return;
+  }
+  selectedBench = {name:player.Jogador, team:player.Equipa, player};
+  selectedField = null;
+  el.classList.add('selected-bench');
+  document.getElementById('swap-banner').style.display = 'block';
+  showStats(player);
+  renderField();
+}
+
+function onFieldClick(player, team, line, idx){
+  if(selectedBench){
+    if(selectedBench.team === team){
+      doSubstitution(selectedBench.player, player, team, line, idx);
+      return;
+    }
+  }
+  if(selectedField && selectedField.team === team && selectedField.line === line){
+    if(selectedField.name === player.Jogador){
+      selectedField = null;
+    } else {
+      const arr = formations[team][line];
+      [arr[selectedField.idx], arr[idx]] = [arr[idx], arr[selectedField.idx]];
+      selectedField = null;
+    }
+    renderField();
+    return;
+  }
+  selectedField = {name:player.Jogador, team, line, idx};
+  selectedBench = null;
+  document.querySelectorAll('.bench-token').forEach(e => e.classList.remove('selected-bench'));
+  document.getElementById('swap-banner').style.display = 'none';
+  showStats(player);
+  renderField();
+}
+
+function doSubstitution(benchPlayer, fieldPlayer, team, line, idx){
+  formations[team][line][idx] = benchPlayer;
+  const bi = bench[team].findIndex(p => p.Jogador === benchPlayer.Jogador);
+  bench[team][bi] = fieldPlayer;
+  selectedBench = null;
+  selectedField = null;
+  document.querySelectorAll('.bench-token').forEach(e => e.classList.remove('selected-bench'));
+  document.getElementById('swap-banner').style.display = 'none';
+  renderBench();
+  renderField();
+}
+
+// ── Painel de stats ──────────────────────────────────────────────────────────
+function showStats(p){
+  const panel = document.getElementById('stats-panel');
+  const ace   = aceScore(p.nota_percentil);
+  const tc    = TEAM_COLORS[p.Equipa] || {main:'#444', accent:'#888', text:'#fff'};
+  const mins  = p.Tempo_Total_min || 0;
+  const isGK  = p.Posicao === 'Goleiro';
+
+  const sr = (lbl, val, sfx='') =>
+    `<div class="sp-stat">
+       <span class="sp-stat-lbl">${lbl}</span>
+       <span class="sp-stat-val">${fmtVal(val)}${(val!=null&&val!==''&&!isNaN(+val)?sfx:'')}</span>
+     </div>`;
+
+  const evoPoints = INTERVALS[p.Jogador] || [];
+  const evoHTML   = evoPoints.length
+    ? `<div class="sp-evo">
+         <div class="sp-evo-title">Evolução Playerank</div>
+         <canvas id="evo-canvas" width="320" height="80"></canvas>
+       </div>` : '';
+
+  const radarHTML = `
+    <div class="radar-wrap">
+      <div class="radar-title">Perfil de Desempenho</div>
+      <div class="radar-canvas-wrap">
+        <canvas id="radar-canvas" width="260" height="260"></canvas>
+      </div>
+    </div>`;
+
+  panel.innerHTML = `
+  <div class="sp-header">
+    <div class="sp-team-badge"
+         style="background:${tc.main};color:${tc.text};border:1px solid ${tc.accent}">
+      ${p.Equipa.toUpperCase()} · ${p.Posicao || '—'}
+    </div>
+    <div class="sp-name">${p.Jogador || '—'}</div>
+    <div class="sp-meta">${p.Idade || '—'} anos · ${mins > 0 ? mins+"'" : 'Não entrou'}</div>
+    <div class="minutes-bar">
+      <div class="minutes-fill" style="width:${Math.min(100, mins/120*100)}%"></div>
+    </div>
+  </div>
+  <div class="sp-ace-block">
+    <div class="sp-ace-label">⬡ Nota ACE Laboratory</div>
+    <div class="sp-ace-val" style="color:${aceColor(ace)}">
+      ${ace != null ? ace.toFixed(2) : 'N/D'}
+    </div>
+    <div class="sp-ace-sub">Fórmula: (Percentil × 5) + 5</div>
+  </div>
+  <div class="sp-ratings">
+    <div class="sp-rat"><div class="sp-rat-lbl">Percentil</div>
+      <div class="sp-rat-val ${ratClass(p.nota_percentil,0.75,0.4)}">
+        ${p.nota_percentil != null ? (p.nota_percentil*100).toFixed(1)+'%' : '—'}</div></div>
+    <div class="sp-rat"><div class="sp-rat-lbl">Min-Max</div>
+      <div class="sp-rat-val ${ratClass(p.nota_minmax,0.7,0.35)}">
+        ${p.nota_minmax != null ? (+p.nota_minmax).toFixed(3) : '—'}</div></div>
+    <div class="sp-rat"><div class="sp-rat-lbl">WhoScored</div>
+      <div class="sp-rat-val ${ratClass(p['Nota WhoScored'],7.5,6.5)}">
+        ${p['Nota WhoScored'] != null ? (+p['Nota WhoScored']).toFixed(2) : '—'}</div></div>
+  </div>
+  <div class="sp-stats">
+    <div><div class="sp-sec-title">Ataque</div><div class="sp-grid">
+      ${sr('Golos',p.Golos)} ${sr('Assistências',p.Assistencias)}
+      ${sr('Part. Golos',p['Participacao Golos'])}
+      ${sr('Chutes',p['Chutes Totais'])} ${sr('No alvo',p['Chutes no Alvo'])}
+      ${sr('Conversão',p['Conversao Finalizacoes (%)'],'%')}
+    </div></div>
+    <div><div class="sp-sec-title">Passe</div><div class="sp-grid">
+      ${sr('Total',p['Passes Totais'])} ${sr('Certos',p['Passes Certos'])}
+      ${sr('Precisão',p['Precisao Passe (%)'],'%')} ${sr('Chave',p['Passes Chave'])}
+      ${sr('Curtos',p['Passes Curtos'])} ${sr('Longos',p['Passes Longos'])}
+      ${sr('Cruzamentos',p['Cruzamentos Totais'])} ${sr('Cruz. certos',p['Cruzamentos Certos'])}
+      ${sr('Enfiadas',p['Bolas Enfiadas'])} ${sr('Toques',p['Toques na Bola'])}
+      ${sr('Perdas',p['Perdas de Posse'])}
+    </div></div>
+    <div><div class="sp-sec-title">Defesa</div><div class="sp-grid">
+      ${sr('Desarmes',p['Desarmes Feitos'])} ${sr('Sofridos',p['Desarmes Sofridos'])}
+      ${sr('Intercept.',p['Interceptacoes'])} ${sr('Cortes',p['Cortes'])}
+      ${sr('Bloqueios',p['Bloqueios'])} ${sr('Recuperações',p['Recuperacoes de Bola'])}
+      ${sr('Gegenpressing',p['Recuperacoes Terco Final (Gegenpressing)'])}
+    </div></div>
+    <div><div class="sp-sec-title">Duelos</div><div class="sp-grid">
+      ${sr('Aéreos G',p['Duelos Aereos Ganhos'])} ${sr('Aéreos P',p['Duelos Aereos Perdidos'])}
+      ${sr('Chão G',p['Duelos no Chao Ganhos'])} ${sr('Chão P',p['Duelos no Chao Perdidos'])}
+      ${sr('Dribles',p['Dribles Certos'])} ${sr('Fora de jogo',p['Foras de Jogo'])}
+    </div></div>
+    ${isGK ? `<div><div class="sp-sec-title">Guarda-Redes</div><div class="sp-grid">
+      ${sr('Defesas',p['Defesas (GR)'])} ${sr('Saídas',p['Saidas da Baliza (GR)'])}
+    </div></div>` : ''}
+    <div><div class="sp-sec-title">Disciplina</div><div class="sp-grid">
+      ${sr('Faltas feitas',p['Faltas Cometidas'])} ${sr('Faltas sofridas',p['Faltas Sofridas'])}
+      ${sr('Amarelos',p['Cartoes Amarelos'])} ${sr('Vermelhos',p['Cartoes Vermelhos'])}
+      ${sr('Erros c/ perigo',p['Erros que resultaram em perigo'])}
+    </div></div>
+  </div>
+  ${evoHTML}
+  ${radarHTML}`;
+
+  if(evoPoints.length){
+    requestAnimationFrame(() => drawEvo(evoPoints));
+  }
+  requestAnimationFrame(() => drawRadar('radar-canvas', p, null, null, null));
+}
+
+function drawEvo(points){
+  const canvas = document.getElementById('evo-canvas');
+  if(!canvas) return;
+  const ctx = canvas.getContext('2d');
+  const W = canvas.width, H = canvas.height;
+  ctx.clearRect(0, 0, W, H);
+
+  const valid = points.filter(pt => pt.em_campo && pt.percentil_acum != null && pt.min > 0);
+  if(valid.length < 2) return;
+
+  const maxMin = Math.max(...valid.map(pt => pt.min), 1);
+  const toX = m  => Math.round((m / maxMin) * (W-20)) + 10;
+  const toY = v  => Math.round(H - 4 - v * (H-8));
+
+  ctx.strokeStyle = 'rgba(255,255,255,.08)';
+  ctx.lineWidth = 1;
+  [0, 0.5, 1].forEach(v => {
+    ctx.beginPath(); ctx.moveTo(0, toY(v)); ctx.lineTo(W, toY(v)); ctx.stroke();
+  });
+
+  ctx.beginPath();
+  ctx.moveTo(toX(valid[0].min), toY(valid[0].percentil_acum));
+  valid.slice(1).forEach(pt => ctx.lineTo(toX(pt.min), toY(pt.percentil_acum)));
+  ctx.lineTo(toX(valid[valid.length-1].min), H);
+  ctx.lineTo(toX(valid[0].min), H);
+  ctx.closePath();
+  const grad = ctx.createLinearGradient(0, 0, 0, H);
+  grad.addColorStop(0, 'rgba(0,229,160,.3)');
+  grad.addColorStop(1, 'rgba(0,229,160,0)');
+  ctx.fillStyle = grad;
+  ctx.fill();
+
+  ctx.beginPath();
+  ctx.strokeStyle = '#00e5a0'; ctx.lineWidth = 2;
+  ctx.moveTo(toX(valid[0].min), toY(valid[0].percentil_acum));
+  valid.slice(1).forEach(pt => ctx.lineTo(toX(pt.min), toY(pt.percentil_acum)));
+  ctx.stroke();
+
+  const last = valid[valid.length-1];
+  ctx.beginPath();
+  ctx.arc(toX(last.min), toY(last.percentil_acum), 3, 0, Math.PI*2);
+  ctx.fillStyle = '#00e5a0'; ctx.fill();
+}
+
+// ── Radar Chart ──────────────────────────────────────────────────────────────
+// Eixos do radar: 8 dimensões cobrindo ataque, passe, defesa, duelos
+const RADAR_AXES = [
+  { label: 'Finalização', fn: p => {
+      const c = p['Chutes no Alvo'], t = p['Chutes Totais'];
+      return (t > 0) ? (c||0)/t : 0;
+    }, max: 1 },
+  { label: 'Criação',     fn: p => Math.min((p['Passes Chave']||0)/8, 1),    max: 1 },
+  { label: 'Passe (%)',   fn: p => Math.min((p['Precisao Passe (%)']||0)/100, 1), max: 1 },
+  { label: 'Dribles',     fn: p => Math.min((p['Dribles Certos']||0)/8, 1),  max: 1 },
+  { label: 'Recuperação', fn: p => Math.min((p['Recuperacoes de Bola']||0)/15, 1), max: 1 },
+  { label: 'Desarmes',    fn: p => Math.min((p['Desarmes Feitos']||0)/10, 1), max: 1 },
+  { label: 'Aéreos',      fn: p => {
+      const g = p['Duelos Aereos Ganhos']||0, pe = p['Duelos Aereos Perdidos']||0;
+      return (g+pe>0) ? g/(g+pe) : 0;
+    }, max: 1 },
+  { label: 'Disciplina',  fn: p => {
+      // inverte: menos faltas/cartões = melhor
+      const f = (p['Faltas Cometidas']||0) + (p['Cartoes Amarelos']||0)*2 + (p['Cartoes Vermelhos']||0)*4;
+      return Math.max(0, 1 - Math.min(f/12, 1));
+    }, max: 1 },
+];
+
+function drawRadar(canvasId, pA, pB, colorA, colorB){
+  const canvas = document.getElementById(canvasId);
+  if(!canvas) return;
+  const ctx  = canvas.getContext('2d');
+  const W    = canvas.width;
+  const H    = canvas.height;
+  const cx   = W / 2;
+  const cy   = H / 2;
+  const R    = Math.min(W, H) / 2 - 36;  // raio do radar
+  const N    = RADAR_AXES.length;
+  const step = (Math.PI * 2) / N;
+  const startAngle = -Math.PI / 2;       // começa no topo
+
+  ctx.clearRect(0, 0, W, H);
+
+  // ── Grade de fundo ──────────────────────────────────────────────────────
+  const gridLevels = 4;
+  for(let lvl = 1; lvl <= gridLevels; lvl++){
+    const r = R * (lvl / gridLevels);
+    ctx.beginPath();
+    for(let i = 0; i < N; i++){
+      const ang = startAngle + i * step;
+      const x   = cx + r * Math.cos(ang);
+      const y   = cy + r * Math.sin(ang);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    }
+    ctx.closePath();
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth   = 1;
+    ctx.stroke();
+    if(lvl === gridLevels){
+      ctx.fillStyle = 'rgba(255,255,255,0.02)';
+      ctx.fill();
+    }
+  }
+
+  // ── Eixos ──────────────────────────────────────────────────────────────
+  for(let i = 0; i < N; i++){
+    const ang = startAngle + i * step;
+    ctx.beginPath();
+    ctx.moveTo(cx, cy);
+    ctx.lineTo(cx + R * Math.cos(ang), cy + R * Math.sin(ang));
+    ctx.strokeStyle = 'rgba(255,255,255,0.12)';
+    ctx.lineWidth   = 1;
+    ctx.stroke();
+  }
+
+  // ── Labels ─────────────────────────────────────────────────────────────
+  ctx.fillStyle  = 'rgba(255,255,255,0.55)';
+  ctx.font       = 'bold 9px Rajdhani,sans-serif';
+  ctx.textAlign  = 'center';
+  ctx.textBaseline = 'middle';
+  for(let i = 0; i < N; i++){
+    const ang  = startAngle + i * step;
+    const lx   = cx + (R + 20) * Math.cos(ang);
+    const ly   = cy + (R + 20) * Math.sin(ang);
+    ctx.fillText(RADAR_AXES[i].label, lx, ly);
+  }
+
+  // ── Polígono helper ────────────────────────────────────────────────────
+  function drawPoly(player, fillColor, strokeColor){
+    const vals = RADAR_AXES.map(ax => Math.max(0, Math.min(1, ax.fn(player) || 0)));
+    ctx.beginPath();
+    vals.forEach((v, i) => {
+      const ang = startAngle + i * step;
+      const r   = R * v;
+      const x   = cx + r * Math.cos(ang);
+      const y   = cy + r * Math.sin(ang);
+      i === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+    });
+    ctx.closePath();
+    ctx.fillStyle   = fillColor;
+    ctx.fill();
+    ctx.strokeStyle = strokeColor;
+    ctx.lineWidth   = 1.8;
+    ctx.stroke();
+    // Pontos nos vértices
+    vals.forEach((v, i) => {
+      const ang = startAngle + i * step;
+      const r   = R * v;
+      ctx.beginPath();
+      ctx.arc(cx + r*Math.cos(ang), cy + r*Math.sin(ang), 2.5, 0, Math.PI*2);
+      ctx.fillStyle = strokeColor;
+      ctx.fill();
+    });
+  }
+
+  // Jogador A sempre existe
+  const cA = colorA || '#00e5a0';
+  drawPoly(pA, hexToRgba(cA, 0.18), cA);
+
+  // Jogador B opcional (comparação)
+  if(pB){
+    const cB = colorB || '#ffc400';
+    drawPoly(pB, hexToRgba(cB, 0.14), cB);
+  }
+}
+
+function hexToRgba(hex, alpha){
+  const r = parseInt(hex.slice(1,3),16);
+  const g = parseInt(hex.slice(3,5),16);
+  const b = parseInt(hex.slice(5,7),16);
+  return `rgba(${r},${g},${b},${alpha})`;
+}
+
+// ── Rede de Passes ──────────────────────────────────────────────────────────
+let passNetActive  = false;
+let passNetBuilt   = null;  // cache do resultado de buildPassNet()
+
+function togglePassNet(){
+  passNetActive = !passNetActive;
+  const toggle = document.getElementById('pass-net-toggle');
+  const svg    = document.getElementById('pass-net-svg');
+  toggle.classList.toggle('active', passNetActive);
+  if(passNetActive){
+    svg.classList.add('visible');
+    renderPassNet();
+  } else {
+    svg.classList.remove('visible');
+    svg.innerHTML = '';
+    passNetBuilt  = null;
+    document.getElementById('pass-tooltip').style.display = 'none';
+  }
+}
+
+function refreshPassNet(){
+  if(passNetActive){
+    passNetBuilt = null;   // invalida cache quando formação muda
+    renderPassNet();
+  }
+}
+
+function getPlayerFieldPos(name){
+  for(const team of [MATCH_INFO.time_fora, MATCH_INFO.time_casa]){
+    const isTop  = (team === MATCH_INFO.time_fora);
+    const LINE_Y = isTop ? LINE_Y_FORA : LINE_Y_CASA;
+    for(const line of ['GK','DEF','MID','FWD']){
+      const players    = (formations[team]||{})[line]||[];
+      const xPositions = LINE_X[Math.min(players.length,5)]||LINE_X[4];
+      const idx        = players.findIndex(p => p.Jogador === name);
+      if(idx !== -1){
+        return {xPct: parseFloat(xPositions[idx]), yPct: parseFloat(LINE_Y[line])};
+      }
+    }
+  }
+  return null;
+}
+
+function pctToVB(xPct, yPct){
+  return { x: (xPct/100)*680, y: (yPct/100)*720 };
+}
+
+// ── buildPassNet: calcula geometria uma vez, devolve estrutura completa ──────
+function buildPassNet(){
+  if(!PASSES || PASSES.length === 0) return null;
+
+  // 1. Lookup bidirecional
+  const lookup = {};
+  PASSES.forEach(({origem, destino, count}) => {
+    const key = [origem, destino].sort().join('|');
+    if(!lookup[key]) lookup[key] = {a: origem, b: destino, ab:0, ba:0};
+    if(lookup[key].a === origem) lookup[key].ab += count;
+    else                         lookup[key].ba += count;
+  });
+
+  // 2. Filtra pares em campo
+  const pairs = Object.values(lookup).filter(pair =>
+    getPlayerFieldPos(pair.a) && getPlayerFieldPos(pair.b)
+  );
+  if(pairs.length === 0) return null;
+
+  const totalMax = Math.max(...pairs.map(p => p.ab + p.ba), 1);
+
+  // 3. Geometria base por par
+  const geoMap = {};
+  pairs.forEach(pair => {
+    const posA = getPlayerFieldPos(pair.a);
+    const posB = getPlayerFieldPos(pair.b);
+    const vA   = pctToVB(posA.xPct, posA.yPct);
+    const vB   = pctToVB(posB.xPct, posB.yPct);
+    const dx   = vB.x - vA.x;
+    const dy   = vB.y - vA.y;
+    const len  = Math.sqrt(dx*dx + dy*dy) || 1;
+    const nx   = -dy / len;   // perpendicular normalizado
+    const ny   =  dx / len;
+    const key  = [pair.a, pair.b].sort().join('|');
+    geoMap[key] = {vA, vB, nx, ny, len, dx, dy};
+  });
+
+  // 4. Anti-sobreposição: offset perpendicular por cluster
+  const ANGLE_THRESH = Math.cos((25 * Math.PI) / 180);
+  const DIST_THRESH  = 60;
+  const BASE_OFFSET  = 18;
+
+  const keys      = pairs.map(p => [p.a, p.b].sort().join('|'));
+  const assigned  = {};
+  const processed = new Set();
+
+  keys.forEach(keyA => {
+    if(processed.has(keyA)) return;
+    const gA   = geoMap[keyA];
+    const cxA  = (gA.vA.x + gA.vB.x) / 2;
+    const cyA  = (gA.vA.y + gA.vB.y) / 2;
+    const cluster = [keyA];
+    keys.forEach(keyB => {
+      if(keyB === keyA) return;
+      const gB  = geoMap[keyB];
+      const dot = Math.abs((gA.dx*gB.dx + gA.dy*gB.dy) / (gA.len*gB.len));
+      if(dot < ANGLE_THRESH) return;
+      const cxB   = (gB.vA.x + gB.vB.x) / 2;
+      const cyB   = (gB.vA.y + gB.vB.y) / 2;
+      const perpD = Math.abs((cxB - cxA)*gA.nx + (cyB - cyA)*gA.ny);
+      if(perpD < DIST_THRESH) cluster.push(keyB);
+    });
+    const N = cluster.length;
+    cluster.forEach((k, i) => {
+      const slot  = i - (N - 1) / 2;
+      const scale = Math.min(1, geoMap[k].len / 200);
+      assigned[k] = slot * BASE_OFFSET * (0.5 + 0.5 * scale);
+      processed.add(k);
+    });
+  });
+
+  // 5. Monta array de edges com toda a info necessária para o render
+  const edges = pairs.map(pair => {
+    const key    = [pair.a, pair.b].sort().join('|');
+    const geo    = geoMap[key];
+    const offset = assigned[key] ?? 0;
+    const {vA, vB, nx, ny} = geo;
+
+    // Ponto de controle Bézier Q
+    const ctrlX = (vA.x + vB.x) / 2 + nx * offset;
+    const ctrlY = (vA.y + vB.y) / 2 + ny * offset;
+
+    // Ponto médio real em t=0.5: 0.25·A + 0.5·ctrl + 0.25·B
+    const curveMx = 0.25*vA.x + 0.5*ctrlX + 0.25*vB.x;
+    const curveMy = 0.25*vA.y + 0.5*ctrlY + 0.25*vB.y;
+
+    const d     = `M ${vA.x.toFixed(1)} ${vA.y.toFixed(1)} Q ${ctrlX.toFixed(1)} ${ctrlY.toFixed(1)} ${vB.x.toFixed(1)} ${vB.y.toFixed(1)}`;
+    const total = pair.ab + pair.ba;
+    const alpha = 0.10 + (total / totalMax) * 0.80;
+
+    return {pair, key, vA, vB, d, curveMx, curveMy, total, alpha};
+  });
+
+  // 6. Índice: jogador → lista de keys de arestas conectadas
+  const playerEdges = {};
+  edges.forEach(({pair, key}) => {
+    [pair.a, pair.b].forEach(name => {
+      if(!playerEdges[name]) playerEdges[name] = [];
+      playerEdges[name].push(key);
+    });
+  });
+
+  // 7. Nós (jogadores únicos em campo)
+  const seenPlayers = new Set();
+  pairs.forEach(pair => { seenPlayers.add(pair.a); seenPlayers.add(pair.b); });
+  const nodes = [];
+  seenPlayers.forEach(name => {
+    const pos = getPlayerFieldPos(name);
+    if(!pos) return;
+    const vp          = pctToVB(pos.xPct, pos.yPct);
+    const totalPasses = PASSES
+      .filter(p => p.origem === name || p.destino === name)
+      .reduce((s, p) => s + p.count, 0);
+    const nodeR = 4 + (totalPasses / totalMax) * 6;
+    nodes.push({name, vp, nodeR, totalPasses});
+  });
+
+  return {edges, nodes, playerEdges, totalMax};
+}
+
+// ── renderPassNet: usa buildPassNet e monta o SVG ───────────────────────────
+function renderPassNet(){
+  const svg = document.getElementById('pass-net-svg');
+  svg.innerHTML = '';
+
+  const data = buildPassNet();
+  if(!data) return;
+  passNetBuilt = data;
+
+  const {edges, nodes, playerEdges} = data;
+
+  // Estado de interação
+  let selectedNode = null;   // nome do jogador selecionado via nó
+  let hoveredEdge  = null;   // key da aresta em hover (só quando nó selecionado)
+  const tip        = document.getElementById('pass-tooltip');
+
+  // Fecha tudo ao clicar fora
+  if(!svg._tipListenerAdded){
+    svg._tipListenerAdded = true;
+    document.addEventListener('click', e => {
+      if(!e.target.closest('#pass-net-svg') && !e.target.closest('#pass-tooltip')){
+        clearSelection();
+      }
+    });
+  }
+
+  // ── Camada de arestas ──────────────────────────────────────────────────────
+  const edgeLayer = document.createElementNS('http://www.w3.org/2000/svg','g');
+  edgeLayer.setAttribute('id', 'pn-edges');
+  svg.appendChild(edgeLayer);
+
+  // ── Camada de nós (acima das arestas) ─────────────────────────────────────
+  const nodeLayer = document.createElementNS('http://www.w3.org/2000/svg','g');
+  nodeLayer.setAttribute('id', 'pn-nodes');
+  svg.appendChild(nodeLayer);
+
+  // Mapa key → elemento SVG para update rápido
+  const edgeElems = {};   // key → {vis, hit}
+  const nodeElems = {};   // name → {circle, ring}
+
+  // ── Desenha arestas ────────────────────────────────────────────────────────
+  edges.forEach(({pair, key, d, alpha}) => {
+    // Visual
+    const vis = document.createElementNS('http://www.w3.org/2000/svg','path');
+    vis.setAttribute('d', d);
+    vis.setAttribute('fill', 'none');
+    vis.setAttribute('stroke', '#e8f4ff');
+    vis.setAttribute('stroke-width', '1.5');
+    vis.setAttribute('stroke-opacity', alpha.toFixed(3));
+    vis.setAttribute('stroke-linecap', 'round');
+    vis.style.pointerEvents = 'none';
+    vis.style.transition    = 'stroke-opacity 0.15s, stroke 0.1s';
+
+    // Hit — exatamente sobre a visual, stroke-width = 1.5 + tolerância mínima de 4px
+    // para garantir que o click caia na linha sem ampliar demais
+    const hit = document.createElementNS('http://www.w3.org/2000/svg','path');
+    hit.setAttribute('d', d);
+    hit.setAttribute('fill', 'none');
+    hit.setAttribute('stroke', 'transparent');
+    hit.setAttribute('stroke-width', '5');   // tolerância justa: ±2.5px da linha
+    hit.style.cursor        = 'default';
+    hit.style.pointerEvents = 'none';        // desabilitado até nó ser selecionado
+
+    edgeLayer.appendChild(vis);
+    edgeLayer.appendChild(hit);
+    edgeElems[key] = {vis, hit, pair};
+  });
+
+  // ── Desenha nós ───────────────────────────────────────────────────────────
+  nodes.forEach(({name, vp, nodeR}) => {
+    // Anel externo pulsante (visível após seleção)
+    const ring = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    ring.setAttribute('cx', vp.x.toFixed(1));
+    ring.setAttribute('cy', vp.y.toFixed(1));
+    ring.setAttribute('r',  (nodeR + 5).toFixed(1));
+    ring.setAttribute('fill',         'none');
+    ring.setAttribute('stroke',       '#00e5a0');
+    ring.setAttribute('stroke-width', '1.5');
+    ring.setAttribute('stroke-opacity', '0');
+    ring.style.pointerEvents = 'none';
+    ring.style.transition    = 'stroke-opacity 0.15s';
+
+    // Círculo do nó
+    const circle = document.createElementNS('http://www.w3.org/2000/svg','circle');
+    circle.setAttribute('cx', vp.x.toFixed(1));
+    circle.setAttribute('cy', vp.y.toFixed(1));
+    circle.setAttribute('r',  nodeR.toFixed(1));
+    circle.setAttribute('fill',         'rgba(232,244,255,0.15)');
+    circle.setAttribute('stroke',       'rgba(232,244,255,0.55)');
+    circle.setAttribute('stroke-width', '1.5');
+    circle.style.cursor     = 'pointer';
+    circle.style.transition = 'fill 0.12s, stroke 0.12s, stroke-opacity 0.12s';
+
+    nodeLayer.appendChild(ring);
+    nodeLayer.appendChild(circle);
+    nodeElems[name] = {circle, ring, vp, nodeR};
+
+    // ── Clique no nó: seleciona / deseleciona ─────────────────────────────
+    circle.addEventListener('click', e => {
+      e.stopPropagation();
+      if(selectedNode === name){
+        clearSelection();
+      } else {
+        selectNode(name);
+      }
+    });
+  });
+
+  // ── selectNode: destaca arestas do jogador, habilita hover/click nas linhas
+  function selectNode(name){
+    selectedNode = name;
+    hoveredEdge  = null;
+    tip.style.display = 'none';
+
+    const myKeys = new Set(playerEdges[name] || []);
+
+    // Nós: destaca o selecionado, escurece os outros
+    Object.entries(nodeElems).forEach(([n, el]) => {
+      if(n === name){
+        el.circle.setAttribute('fill',           'rgba(0,229,160,0.25)');
+        el.circle.setAttribute('stroke',         '#00e5a0');
+        el.circle.setAttribute('stroke-width',   '2');
+        el.ring.setAttribute('stroke-opacity',   '0.7');
+      } else {
+        el.circle.setAttribute('fill',           'rgba(232,244,255,0.05)');
+        el.circle.setAttribute('stroke',         'rgba(232,244,255,0.20)');
+        el.circle.setAttribute('stroke-width',   '1.5');
+        el.ring.setAttribute('stroke-opacity',   '0');
+      }
+    });
+
+    // Arestas: destaca as do jogador, apaga as outras; habilita interação
+    Object.entries(edgeElems).forEach(([key, {vis, hit, pair}]) => {
+      if(myKeys.has(key)){
+        vis.setAttribute('stroke',         '#00e5a0');
+        vis.setAttribute('stroke-opacity', '0.70');
+        vis.setAttribute('stroke-width',   '1.8');
+        // Habilita hit área exatamente na linha
+        hit.style.pointerEvents = 'stroke';
+
+        // Hover na aresta — só quando selecionada
+        hit.onmouseenter = () => {
+          if(hoveredEdge === key) return;
+          hoveredEdge = key;
+          vis.setAttribute('stroke',         '#ffffff');
+          vis.setAttribute('stroke-opacity', '1');
+          vis.setAttribute('stroke-width',   '2.5');
+          hit.style.cursor = 'pointer';
+        };
+        hit.onmouseleave = () => {
+          if(hoveredEdge === key) hoveredEdge = null;
+          vis.setAttribute('stroke',         '#00e5a0');
+          vis.setAttribute('stroke-opacity', '0.70');
+          vis.setAttribute('stroke-width',   '1.8');
+          hit.style.cursor = 'default';
+        };
+        hit.onclick = e => {
+          e.stopPropagation();
+          showEdgeTip(key);
+        };
+      } else {
+        vis.setAttribute('stroke',         '#e8f4ff');
+        vis.setAttribute('stroke-opacity', '0.04');
+        vis.setAttribute('stroke-width',   '1.5');
+        hit.style.pointerEvents = 'none';
+        hit.onmouseenter = null;
+        hit.onmouseleave = null;
+        hit.onclick      = null;
+      }
+    });
+  }
+
+  function clearSelection(){
+    selectedNode = null;
+    hoveredEdge  = null;
+    tip.style.display = 'none';
+
+    // Restaura visual padrão de todos os nós
+    Object.entries(nodeElems).forEach(([, el]) => {
+      el.circle.setAttribute('fill',           'rgba(232,244,255,0.15)');
+      el.circle.setAttribute('stroke',         'rgba(232,244,255,0.55)');
+      el.circle.setAttribute('stroke-width',   '1.5');
+      el.ring.setAttribute('stroke-opacity',   '0');
+    });
+
+    // Restaura visual padrão de todas as arestas, desabilita interação
+    Object.entries(edgeElems).forEach(([key, {vis, hit}]) => {
+      const {alpha} = edges.find(e => e.key === key) || {alpha: 0.3};
+      vis.setAttribute('stroke',         '#e8f4ff');
+      vis.setAttribute('stroke-opacity', alpha.toFixed(3));
+      vis.setAttribute('stroke-width',   '1.5');
+      hit.style.pointerEvents = 'none';
+      hit.onmouseenter = null;
+      hit.onmouseleave = null;
+      hit.onclick      = null;
+      hit.style.cursor = 'default';
+    });
+  }
+
+  function showEdgeTip(key){
+    const edge = edges.find(e => e.key === key);
+    if(!edge) return;
+    const {pair, curveMx, curveMy, total} = edge;
+    const shortN = n => { const pts = n.split(' '); return pts.length > 2 ? pts[0]+' '+pts[pts.length-1] : n; };
+
+    tip.innerHTML = `
+      <div class="pt-pair">${shortN(pair.a)} ↔ ${shortN(pair.b)}</div>
+      <div class="pt-row">
+        <span class="pt-lbl">${shortN(pair.a)} → ${shortN(pair.b)}</span>
+        <span class="pt-val">${pair.ab}</span>
+      </div>
+      <div class="pt-row">
+        <span class="pt-lbl">${shortN(pair.b)} → ${shortN(pair.a)}</span>
+        <span class="pt-val">${pair.ba}</span>
+      </div>
+      <div class="pt-row" style="border-top:1px solid rgba(0,229,160,.25);margin-top:4px;padding-top:4px">
+        <span class="pt-lbl">Total</span>
+        <span class="pt-val">${total} passes</span>
+      </div>`;
+
+    // Posição baseada no ponto médio real da Bézier (em coordenadas de tela)
+    const rect   = svg.getBoundingClientRect();
+    const scaleX = rect.width  / 680;
+    const scaleY = rect.height / 720;
+    const sx     = rect.left + curveMx * scaleX;
+    const sy     = rect.top  + curveMy * scaleY;
+
+    tip.style.display = 'block';
+    tip.style.left    = (sx + 14) + 'px';
+    tip.style.top     = (sy - 10) + 'px';
+
+    requestAnimationFrame(() => {
+      const tr = tip.getBoundingClientRect();
+      if(tr.right  > window.innerWidth  - 8) tip.style.left = (sx - tr.width  - 14) + 'px';
+      if(tr.bottom > window.innerHeight - 8) tip.style.top  = (sy - tr.height + 10) + 'px';
+    });
+  }
+}
+
+init();
+
+
+
+</script>
+</body>
+</html>
