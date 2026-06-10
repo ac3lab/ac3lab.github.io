@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
+        },{id: "post-ace-laboratory-39-s-predictions-for-the-2026-world-cup",
+        
+          title: "ACE Laboratory&#39;s Predictions for the 2026 World Cup",
+        
+        description: "Discover ACE Laboratory&#39;s mathematical model and official projections for the big favorites, surprises, and Brazil&#39;s path in the World Cup.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_predictions_en/";
+          
+        },
+      },{id: "post-risk-vs-reward-strategic-analysis-of-free-kick-takes",
         
           title: "Risk vs Reward: Strategic Analysis of Free Kick Takes",
         
@@ -765,6 +776,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/nba-playoffs_pt/";
+          
+        },
+      },{id: "post-as-previsões-do-ace-laboratory-para-a-copa-do-mundo-de-2026",
+        
+          title: "As previsões do ACE Laboratory para a Copa do Mundo de 2026",
+        
+        description: "Conheça o modelo matemático e as projeções oficiais do ACE Laboratory para os grandes favoritos, as surpresas e o caminho do Brasil na Copa do Mundo.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/ace_lab_predictions_pt/";
           
         },
       },{id: "post-são-garrafa-niterói-2024-analisando-10-diferentes-corredores",
