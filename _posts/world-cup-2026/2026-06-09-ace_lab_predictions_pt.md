@@ -103,3 +103,8 @@ Seguindo o nosso modelo, temos a seleção espanhola como a mais cotada para o t
 Entretanto, por ser um torneio curto, dinâmico e que valoriza muito o atual momento de cada equipe, a Copa do Mundo é, por si só, um evento extremamente imprevisível e é exatamente esse aspecto que a torna um dos eventos mais aguardados do esporte mundial. 
 
 Com as simulações estabelecidas, voltaremos nossas atenções para o campo, publicando análises detalhadas das partidas da seleção brasileira e, posteriormente, dos confrontos eliminatórios em uma série de posts exclusivos para a Copa do Mundo de 2026.
+
+<br><br>
+
+<h2><b>⚠️ Atenção</b></h2>
+Este estudo foi desenvolvido exclusivamente para fins acadêmicos e de pesquisa, com o objetivo de testar e aperfeiçoar modelos de ciência de dados. O futebol é imprevisível, e os resultados apresentados representam estimativas probabilísticas, não previsões definitivas. As análises não constituem recomendação, incentivo ou orientação para apostas de qualquer natureza.

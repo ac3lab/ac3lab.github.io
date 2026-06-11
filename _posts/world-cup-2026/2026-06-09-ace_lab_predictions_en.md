@@ -100,3 +100,8 @@ Following our model, we have the Spanish national team as the top favorite for t
 However, because it is a short, dynamic tournament that highly values the current momentum of each team, the World Cup is inherently an extremely unpredictable event, and it is exactly this aspect that makes it one of the most anticipated events in the world of sports.
 
 With the simulations established, we will turn our attention to the pitch, publishing detailed analyses of the Brazilian national team's matches and, subsequently, the knockout stage matchups in a series of exclusive posts for the 2026 World Cup.
+
+<br><br>
+
+<h2><b>⚠️ Disclaimer</b></h2>
+This study was developed exclusively for academic and research purposes, with the aim of testing and refining data science models. Football is unpredictable, and the results presented here represent probabilistic estimates, not definitive predictions. The analyses do not constitute a recommendation, encouragement, or guidance for betting of any kind.
