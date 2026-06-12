@@ -5,6 +5,6 @@ nav: false
 nav_order: 8
 dropdown: true
 children:
-  - title: PSG x Bayern
-    permalink: /dashboards/psg_bayern/
+  - title: Canadá x Bósnia 
+    permalink: /dashboards/canada_bosnia/
 ---
