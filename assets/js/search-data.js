@@ -30,7 +30,14 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-ace-laboratory-39-s-predictions-for-the-2026-world-cup",
+        },{id: "dropdown-brasil-x-marrocos",
+              title: "Brasil x Marrocos",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/dashboards/brasil_marrocos/";
+              },
+            },{id: "post-ace-laboratory-39-s-predictions-for-the-2026-world-cup",
         
           title: "ACE Laboratory&#39;s Predictions for the 2026 World Cup",
         
