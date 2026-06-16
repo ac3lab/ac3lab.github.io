@@ -37,7 +37,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_marrocos/";
               },
-            },{id: "post-ace-laboratory-39-s-predictions-for-the-2026-world-cup",
+            },{id: "post-análise-brasil-1x1-marrocos-copa-do-mundo-2026",
+        
+          title: "Análise: Brasil 1x1 Marrocos - Copa do Mundo 2026",
+        
+        description: "Análise tática do empate entre Brasil e Marrocos na fase de grupos da Copa do Mundo de 2026.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_marrocos_pt/";
+          
+        },
+      },{id: "post-analysis-brazil-1x1-morocco-2026-world-cup",
+        
+          title: "Analysis: Brazil 1x1 Morocco - 2026 World Cup",
+        
+        description: "Tactical analysis of the draw between Brazil and Morocco in the group stage of the 2026 World Cup.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_marrocos_en/";
+          
+        },
+      },{id: "post-ace-laboratory-39-s-predictions-for-the-2026-world-cup",
         
           title: "ACE Laboratory&#39;s Predictions for the 2026 World Cup",
         
