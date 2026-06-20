@@ -37,6 +37,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_marrocos/";
               },
+            },{id: "dropdown-brasil-x-haiti",
+              title: "Brasil x Haiti",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/dashboards/brasil_haiti/";
+              },
             },{id: "post-análise-brasil-1x1-marrocos-copa-do-mundo-2026",
         
           title: "Análise: Brasil 1x1 Marrocos - Copa do Mundo 2026",
