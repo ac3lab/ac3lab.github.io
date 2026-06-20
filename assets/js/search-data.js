@@ -44,7 +44,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_haiti/";
               },
-            },{id: "post-análise-brasil-1x1-marrocos-copa-do-mundo-2026",
+            },{id: "post-análise-brasil-3x0-haiti-copa-do-mundo-2026",
+        
+          title: "Análise: Brasil 3x0 Haiti - Copa do Mundo 2026",
+        
+        description: "Análise tática da vitória do Brasil sobre o Haiti na fase de grupos da Copa do Mundo de 2026.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_haiti_pt/";
+          
+        },
+      },{id: "post-analysis-brazil-3x0-haiti-2026-world-cup",
+        
+          title: "Analysis: Brazil 3x0 Haiti - 2026 World Cup",
+        
+        description: "Tactical analysis of Brazil&#39;s victory over Haiti in the 2026 World Cup group stage.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_haiti_en/";
+          
+        },
+      },{id: "post-análise-brasil-1x1-marrocos-copa-do-mundo-2026",
         
           title: "Análise: Brasil 1x1 Marrocos - Copa do Mundo 2026",
         
