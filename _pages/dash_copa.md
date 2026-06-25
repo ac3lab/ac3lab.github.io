@@ -9,4 +9,6 @@ children:
     permalink: /dashboards/brasil_marrocos/
   - title: Brasil x Haiti 
     permalink: /dashboards/brasil_haiti/
+  - title: Escócia x Brasil
+    permalink: /dashboards/escocia_brasil/
 ---
