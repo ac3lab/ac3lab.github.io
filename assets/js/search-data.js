@@ -51,7 +51,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/escocia_brasil/";
               },
-            },{id: "post-análise-brasil-3x0-haiti-copa-do-mundo-2026",
+            },{id: "post-análise-brasil-3x0-escócia-copa-do-mundo-2026",
+        
+          title: "Análise: Brasil 3x0 Escócia - Copa do Mundo 2026",
+        
+        description: "Análise tática da vitória do Brasil sobre a Escócia na fase de grupos da Copa do Mundo de 2026.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_escocia_pt/";
+          
+        },
+      },{id: "post-analysis-brazil-3x0-scotland-world-cup-2026",
+        
+          title: "Analysis: Brazil 3x0 Scotland - World Cup 2026",
+        
+        description: "Tactical analysis of Brazil&#39;s victory over Scotland in the 2026 World Cup group stage.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_escocia_en/";
+          
+        },
+      },{id: "post-análise-brasil-3x0-haiti-copa-do-mundo-2026",
         
           title: "Análise: Brasil 3x0 Haiti - Copa do Mundo 2026",
         
