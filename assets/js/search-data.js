@@ -44,6 +44,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_haiti/";
               },
+            },{id: "dropdown-escócia-x-brasil",
+              title: "Escócia x Brasil",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/dashboards/escocia_brasil/";
+              },
             },{id: "post-análise-brasil-3x0-haiti-copa-do-mundo-2026",
         
           title: "Análise: Brasil 3x0 Haiti - Copa do Mundo 2026",
