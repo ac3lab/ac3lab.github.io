@@ -12,7 +12,7 @@ author: Ace Laboratory Team - Pedro Martins, Pedro Lopes e Hugo Antunes
 ---
 
 <p align="justify">
-Se você quiser ler este texto em português, <a href="https://ac3lab.github.io/blog/2026/ace_lab_brasil_escocia_pt/">clique aqui.</a>
+Se você quiser ler este texto em pt-br, <a href="https://ac3lab.github.io/blog/2026/ace_lab_brasil_escocia_pt/">clique aqui.</a>
 </p>
 
 <style>body {text-align: justify}</style>
