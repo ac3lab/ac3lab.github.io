@@ -51,6 +51,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/escocia_brasil/";
               },
+            },{id: "dropdown-brasil-x-japão",
+              title: "Brasil x Japão",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/dashboards/brasil_japao/";
+              },
             },{id: "post-análise-brasil-3x0-escócia-copa-do-mundo-2026",
         
           title: "Análise: Brasil 3x0 Escócia - Copa do Mundo 2026",
