@@ -58,7 +58,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_japao/";
               },
-            },{id: "post-análise-brasil-3x0-escócia-copa-do-mundo-2026",
+            },{id: "post-análise-brasil-2x1-japão-copa-do-mundo-2026",
+        
+          title: "Análise: Brasil 2x1 Japão - Copa do Mundo 2026",
+        
+        description: "Análise tática da vitória do Brasil sobre o Japão nas oitavas de final da Copa do Mundo de 2026.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_japao_pt/";
+          
+        },
+      },{id: "post-analysis-brazil-2x1-japan-world-cup-2026",
+        
+          title: "Analysis: Brazil 2x1 Japan - World Cup 2026",
+        
+        description: "Tactical analysis of Brazil&#39;s victory over Japan in the World Cup 2026 round of 16.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/ace_lab_brasil_japao_en/";
+          
+        },
+      },{id: "post-análise-brasil-3x0-escócia-copa-do-mundo-2026",
         
           title: "Análise: Brasil 3x0 Escócia - Copa do Mundo 2026",
         
