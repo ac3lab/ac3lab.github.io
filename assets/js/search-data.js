@@ -58,7 +58,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_japao/";
               },
-            },{id: "post-análise-brasil-2x1-japão-copa-do-mundo-2026",
+            },{id: "post-revisitando-as-nossas-previsões-e-projetando-o-caminho-a-partir-das-oitavas-de-final",
+        
+          title: "Revisitando as nossas previsões e projetando o caminho a partir das oitavas de...",
+        
+        description: "Confira o balanço das nossas projeções iniciais para a Copa do Mundo de 2026 e veja as previsões matemáticas atualizadas a partir das oitavas de final.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/updated_predictions_pt/";
+          
+        },
+      },{id: "post-revisiting-our-predictions-and-projecting-the-path-from-the-round-of-16-onwards",
+        
+          title: "Revisiting our predictions and projecting the path from the Round of 16 onwards...",
+        
+        description: "Check out the review of our initial projections for the 2026 World Cup and see the updated mathematical predictions from the Round of 16 onwards.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/updated_predictions_en/";
+          
+        },
+      },{id: "post-análise-brasil-2x1-japão-copa-do-mundo-2026",
         
           title: "Análise: Brasil 2x1 Japão - Copa do Mundo 2026",
         
