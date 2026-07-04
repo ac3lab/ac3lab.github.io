@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Revisitando as nossas previsões e projetando o caminho a partir das oitavas de final"
-date: 2026-07-04 09:00:00
+date: 2026-07-04 00:00:00
 description: "Confira o balanço das nossas projeções iniciais para a Copa do Mundo de 2026 e veja as previsões matemáticas atualizadas a partir das oitavas de final."
 tags: Football; Predictions;
 categories: Sports; Analysis

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Revisiting our predictions and projecting the path from the Round of 16 onwards"
-date: 2026-07-04 09:00:00
+date: 2026-07-04 00:00:00
 description: "Check out the review of our initial projections for the 2026 World Cup and see the updated mathematical predictions from the Round of 16 onwards."
 tags: Football; Predictions;
 categories: Sports; Analysis
