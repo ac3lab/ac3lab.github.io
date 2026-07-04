@@ -18,7 +18,7 @@ Se quiser ler esse texto em pt-br, <a href="https://ac3lab.github.io/blog/2026/u
 
 <style>body {text-align: justify}</style>
 
-With the Round of 16 of the 2026 World Cup defined, we present our updated predictions for the remainder of the competition. However, before projecting the future, we evaluate the performance of our original model in the previous stages, comparing the initial Monte Carlo simulations of the ACE Laboratory with the reality on the pitch so far (our initial predictions are <a href="https://ac3lab.github.io/blog/2000/ace_lab_predictions_en/">here</a>).
+With the Round of 16 of the 2026 World Cup defined, we present our updated predictions for the remainder of the competition. However, before projecting the future, we evaluate the performance of our original model in the previous stages, comparing the initial Monte Carlo simulations of the ACE Laboratory with the reality on the pitch so far (our initial predictions are <a href="https://ac3lab.github.io/blog/2026/ace_lab_predictions_en/">here</a>).
 
 <h3><b>What we predicted (and what happened)</b></h3>
 
