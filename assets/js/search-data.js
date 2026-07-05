@@ -58,7 +58,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_japao/";
               },
-            },{id: "post-revisitando-as-nossas-previsões-e-projetando-o-caminho-a-partir-das-oitavas-de-final",
+            },{id: "post-análise-canadá-x-marrocos-e-paraguai-x-frança-copa-do-mundo-2026",
+        
+          title: "Análise: Canadá x Marrocos e Paraguai x França - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das oitavas de final: a vitória de Marrocos sobre o Canadá por 3 a 0 e o triunfo da França sobre o Paraguai por 1 a 0.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/canada_marocco-france_paraguay_pt/";
+          
+        },
+      },{id: "post-analysis-canada-x-morocco-and-paraguay-x-france-world-cup-2026",
+        
+          title: "Analysis: Canada x Morocco and Paraguay x France - World Cup 2026",
+        
+        description: "Tactical analysis of the Round of 16 matches: Morocco&#39;s 3-0 victory over Canada and France&#39;s 1-0 triumph over Paraguay.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/canada_marocco-france_paraguay_en/";
+          
+        },
+      },{id: "post-revisitando-as-nossas-previsões-e-projetando-o-caminho-a-partir-das-oitavas-de-final",
         
           title: "Revisitando as nossas previsões e projetando o caminho a partir das oitavas de...",
         
