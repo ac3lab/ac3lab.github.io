@@ -58,6 +58,13 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_japao/";
               },
+            },{id: "dropdown-brasil-x-noruega",
+              title: "Brasil x Noruega",
+              description: "",
+              section: "Dropdown",
+              handler: () => {
+                window.location.href = "/dashboards/brasil_noruega/";
+              },
             },{id: "post-análise-brasil-x-noruega-e-méxico-x-inglaterra-copa-do-mundo-2026",
         
           title: "Análise: Brasil x Noruega e México x Inglaterra - Copa do Mundo 2026...",
