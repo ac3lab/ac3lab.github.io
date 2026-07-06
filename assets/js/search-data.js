@@ -58,7 +58,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_japao/";
               },
-            },{id: "post-análise-canadá-x-marrocos-e-paraguai-x-frança-copa-do-mundo-2026",
+            },{id: "post-análise-brasil-x-noruega-e-méxico-x-inglaterra-copa-do-mundo-2026",
+        
+          title: "Análise: Brasil x Noruega e México x Inglaterra - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das oitavas de final: a derrota do Brasil para a Noruega e a batalha do México contra a Inglaterra.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/brasil_noruega-mexico_inglaterra_pt/";
+          
+        },
+      },{id: "post-analysis-brazil-x-norway-and-mexico-x-england-2026-world-cup",
+        
+          title: "Analysis: Brazil x Norway and Mexico x England - 2026 World Cup",
+        
+        description: "Tactical analysis of the Round of 16 matches: Brazil&#39;s defeat to Norway and Mexico&#39;s battle against England.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/brasil_noruega-mexico_inglaterra_en/";
+          
+        },
+      },{id: "post-análise-canadá-x-marrocos-e-paraguai-x-frança-copa-do-mundo-2026",
         
           title: "Análise: Canadá x Marrocos e Paraguai x França - Copa do Mundo 2026...",
         
