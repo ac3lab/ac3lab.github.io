@@ -13,4 +13,6 @@ children:
     permalink: /dashboards/escocia_brasil/
   - title: Brasil x Japão
     permalink: /dashboards/brasil_japao/
+  - title: Brasil x Noruega
+    permalink: /dashboards/brasil_noruega/
 ---
