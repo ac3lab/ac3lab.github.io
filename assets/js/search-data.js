@@ -65,7 +65,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-análise-brasil-x-noruega-e-méxico-x-inglaterra-copa-do-mundo-2026",
+            },{id: "post-análise-portugal-x-espanha-e-bélgica-x-eua-copa-do-mundo-2026",
+        
+          title: "Análise: Portugal x Espanha e Bélgica x EUA - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das oitavas de final: a vitória da Espanha sobre Portugal e a goleada da Bélgica sobre os Estados Unidos.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/portugal_espanha-belgica_EUA_pt/";
+          
+        },
+      },{id: "post-analysis-portugal-x-spain-and-belgium-x-usa-2026-world-cup",
+        
+          title: "Analysis: Portugal x Spain and Belgium x USA - 2026 World Cup",
+        
+        description: "Tactical analysis of the Round of 16 matches: Spain&#39;s victory over Portugal and Belgium&#39;s commanding win against the USA.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/portugal_espanha-belgica_EUA_en/";
+          
+        },
+      },{id: "post-análise-brasil-x-noruega-e-méxico-x-inglaterra-copa-do-mundo-2026",
         
           title: "Análise: Brasil x Noruega e México x Inglaterra - Copa do Mundo 2026...",
         
