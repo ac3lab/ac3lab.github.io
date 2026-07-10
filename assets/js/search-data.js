@@ -65,7 +65,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-análise-portugal-x-espanha-e-bélgica-x-eua-copa-do-mundo-2026",
+            },{id: "post-análise-argentina-x-egito-e-suíça-x-colômbia-copa-do-mundo-2026",
+        
+          title: "Análise: Argentina x Egito e Suíça x Colômbia - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das oitavas de final: a virada heroica da Argentina sobre o Egito e o duelo decidido nos pênaltis entre Suíça e Colômbia.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/argentina_egito-suica_colombia_pt/";
+          
+        },
+      },{id: "post-analysis-argentina-x-egypt-and-switzerland-x-colombia-2026-world-cup",
+        
+          title: "Analysis: Argentina x Egypt and Switzerland x Colombia - 2026 World Cup",
+        
+        description: "Tactical analysis of the Round of 16 matches: Argentina&#39;s heroic comeback against Egypt and the penalty shootout between Switzerland and Colombia.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/argentina_egito-suica_colombia_en/";
+          
+        },
+      },{id: "post-análise-portugal-x-espanha-e-bélgica-x-eua-copa-do-mundo-2026",
         
           title: "Análise: Portugal x Espanha e Bélgica x EUA - Copa do Mundo 2026...",
         
