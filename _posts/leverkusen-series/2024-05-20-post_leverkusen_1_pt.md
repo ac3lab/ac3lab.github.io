@@ -9,10 +9,10 @@ thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
 hidden: true
 hidden_post: true
-
 ---
 
 ---
+
 <h2>Introdução</h2>
 
 <div style="text-align: justify">
@@ -27,9 +27,7 @@ Existe um time invicto em todos os campeonatos há exatamente um ano, desde maio
 
 Xabi Alonso, ex-jogador campeão de tudo possível e conhecido por ser um jogador extremamente técnico e analista, trabalhou em times gigantescos com treinadores excelentes, como Mourinho, Guardiola e Ancelotti. Cada um com seus estilos diferentes, Xabi conseguiu absorver as melhores qualidade de cada um, e com isso se tornou um grande comunicador, estrategista e apreciador do futebol. Após terminar o curso da UEFA, ele começou no Real Madrid sub-14, e logo depois foi para o Real Sociedad B. Lá, habilidades técnicas e controle de bola foram o foco, e o clube foi promovido para a segunda divisão pela primeira vez em 60 anos. De lá, o Bayer Leverkusen enxergou em Xabi alguém que poderia salvar o time da situação crítica do rebaixamento, e a história começou a ser feita. Mas então, como joga o Bayer Leverkusen, agora comandado por Alonso por mais de um ano?<br/><br/>
 
-
 <h3>Bayer Leverkusen sem a posse</h3>
-
 
 No setor defensivo, o time de Alonso marca alto na saída de bola dos adversários em bloco médio, forçando ao máximo o erro do adversário para obter a posse da bola. Dependendo da partida, o campeão alemão pode ter duas formações diferentes ao se defender: um 5-2-2-1, pressionando a construção de jogadas do adversário com 5 jogadores, povoando o meio campo e forçando jogadas pelas pontas, onde os alas pressionam e roubam a bola; ou um 4-2-3-1, que permite uma saída de bola facilitada ao roubar a bola do oponente.<br/><br/>
 
@@ -45,9 +43,7 @@ O time também foi o que menos sofreu gols em toda a Bundesliga, sofrendo apenas
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/Goals_Against.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h3>Bayer Leverkusen com a posse</h3>
-
 
 Classificado como um meio termo do estilo posicional de jogo de Pep Guardiola e o Relacionismo visto no Fluminense de Fernando Diniz, Xabi Alonso treina o time para uma saída de bola que depende do formato atual em campo. O estilo de jogo, que utiliza muitas trocas de passes, é evidenciado na rede de passes do time, onde é possível observar a formação de “triângulos” que permitem a um jogador diversas opções para trabalhar a bola.<br/><br/>
 
@@ -55,16 +51,15 @@ Classificado como um meio termo do estilo posicional de jogo de Pep Guardiola e 
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-Muitas vezes, o ala Grimaldo atua defensivamente na esquerda, deixando dois zagueiros no meio e um lateral na direita para abrir espaços no campo e permitir as “third man combinations”, onde 2 jogadores (geralmente Xhaka e Palacios) passam rapidamente entre si para chamar marcadores e criando espaço para um terceiro jogador (geralmente Wirtz) receber a bola, algo característico do Relacionismo.<br/><br/> 
+Muitas vezes, o ala Grimaldo atua defensivamente na esquerda, deixando dois zagueiros no meio e um lateral na direita para abrir espaços no campo e permitir as “third man combinations”, onde 2 jogadores (geralmente Xhaka e Palacios) passam rapidamente entre si para chamar marcadores e criando espaço para um terceiro jogador (geralmente Wirtz) receber a bola, algo característico do Relacionismo.<br/><br/>
 
-Assim, os alas têm uma participação muito mais significativa no jogo, tanto ofensiva quanto defensivamente, podendo alternar entre os lados do campo para atacar e defender. O que pode ser notado na rede de passes da partida contra o Augsburg, onde o ala Frimpong aparece mais avançado do que todos os outros jogadores do Bayer.<br/><br/> 
+Assim, os alas têm uma participação muito mais significativa no jogo, tanto ofensiva quanto defensivamente, podendo alternar entre os lados do campo para atacar e defender. O que pode ser notado na rede de passes da partida contra o Augsburg, onde o ala Frimpong aparece mais avançado do que todos os outros jogadores do Bayer.<br/><br/>
 
-Ao empregar essa tática, Xabi maximizou  as habilidades técnicas individuais de seus jogadores de lado do campo, como Frimpong e Grimaldo, com esses contribuindo para 39 gols na Bundesliga. Em outras palavras, quase metade dos gols marcados pela equipe passou pelos pés desses dois jogadores.<br/><br/>
+Ao empregar essa tática, Xabi maximizou as habilidades técnicas individuais de seus jogadores de lado do campo, como Frimpong e Grimaldo, com esses contribuindo para 39 gols na Bundesliga. Em outras palavras, quase metade dos gols marcados pela equipe passou pelos pés desses dois jogadores.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
 
 O uso dessa tática é evidenciado no número de passes realizados pelo Bayer, que é o maior da Bundesliga em 23-24. Além disso, os 4 jogadores avançados se movimentam bastante, de forma que impedem os zagueiros adversários de subirem a marcação.<br/><br/>
 
@@ -100,14 +95,11 @@ Uma tática comum é a seguinte: ao chegar no último terço do campo os alas av
 
 O time é tão eficiente que está no Top 3 em chances criadas por bola rolando, mas em comparação tem poucas chances criadas por bolas paradas.<br/><br/>
 
-
 <div style="width: 90%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/live_dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h3>Fraquezas</h3>
-
 
 Em função do relacionismo, se o time perde a bola na área de ataque e não consegue pressionar rapidamente, o oponente tem muito espaço nos cantos do campo (onde os laterais deveriam estar), visto que os jogadores se concentram de forma comprimida para as tabelas e triangulações efetivas. No entanto, caso os meio-campistas em recomposição forem cobrir os flancos, a área central fica muito enfraquecida e abre oportunidades. O sistema depende completamente da perfeição e de poucos erros dos jogadores. Um exemplo disso é observado no jogo contra o Qarabag fora de casa pela UEFA Europa League, no qual os dois gols sofridos foram em perdas de posse e contra-ataques efetivos por parte do time do Azerbaijão.<br/><br/>
 

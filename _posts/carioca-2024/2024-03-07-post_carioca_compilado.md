@@ -27,7 +27,6 @@ The 2024 Carioca Championship has reached the semifinal stage, and Ace Laborator
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h2>Flamengo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-en.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -66,7 +65,6 @@ With 24 points, seven wins, three draws, and only one defeat, the "Clockwork Ora
 </p>
 </div>
 
-
 <h2>Vasco</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/vasco-en.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -102,7 +100,6 @@ Fernando Diniz's style was present in the championship, with Fluminense being th
 <p align="justify">
 Despite the quality defense, the Tricolor attack did not keep up with the performance that its midfield created. This became more evident in the classics, where Fluminense scored just 1 point from the 9 played, scoring 2 goals and conceding 6, more than half of what they conceded in the entire championship. Recopa champions, Fluminense will have work to do if they want to guarantee their third Carioca 2024 championship.
 </p>
-
 
 </div>
 <h2>Botafogo</h2>

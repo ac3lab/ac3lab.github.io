@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Palmeiras vs Botafogo: Uma Batalha Tática nas Oitavas de Final do Mundial de Clubes"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 
@@ -118,5 +115,3 @@ Em uma partida definida por margens finas e intensas batalhas estratégicas, a c
 Tendo garantido uma vaga nas quartas de final, o Palmeiras agora enfrenta um encontro de alto risco com o Chelsea — o mesmo adversário com quem batalharam na final do Mundial de Clubes de 2022. O confronto não apenas revive a história recente, mas também adiciona outro capítulo à busca do Palmeiras pelo sonho há muito aguardado da glória eterna no cenário mundial. <br/><br/>
 
 </div>
-
-

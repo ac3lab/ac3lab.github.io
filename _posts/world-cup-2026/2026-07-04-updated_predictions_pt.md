@@ -10,7 +10,6 @@ author: ACE Laboratory Team
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -29,7 +28,7 @@ De maneira geral, as grandes potências confirmaram seu favoritismo inicial. Sel
 
 <h3><b>Zebras e decepções</b></h3>
 
-A imprevisibilidade do futebol, no entanto, produziu zebras memoráveis. Cabo Verde (34% de chance de avançar) e África do Sul (33%) superaram as adversidades matemáticas e alcançaram os 16-avos de final, embora tenham sido eliminadas no início da fase de mata-mata. 
+A imprevisibilidade do futebol, no entanto, produziu zebras memoráveis. Cabo Verde (34% de chance de avançar) e África do Sul (33%) superaram as adversidades matemáticas e alcançaram os 16-avos de final, embora tenham sido eliminadas no início da fase de mata-mata.
 
 Em contrapartida, equipes com altas projeções decepcionaram. O Equador (90% de chance no grupo, mostrando um certo favoritismo mesmo em um grupo complicado) caiu precocemente diante do México, enquanto Portugal (94%) avançou, mas sem a liderança esperada. Surpresas ainda maiores envolveram o Uruguai (87% de chance de avançar para os 16-avos) e a Turquia (cotada para ser líder do grupo D), que sequer passaram da fase de grupos, quebrando suas expressivas probabilidades.
 
@@ -59,7 +58,7 @@ Também podemos ver, a partir das probabilidades de vencer cada confronto, o cha
 
 Observando o chaveamento atualizado, a mudança mais notável em relação à nossa primeira matriz de probabilidades é a alteração do grande favorito ao título. Antes da bola rolar, a Espanha despontava como a principal candidata geral. Agora, após a definição dos cruzamentos, a França assume o posto de provável campeã, com uma leve vantagem de 53% em uma hipotética final contra a Inglaterra (47%). Essa troca de protagonismo ocorre justamente por conta do chaveamento: o modelo aponta um embate muito precoce e equilibrado na semifinal, onde os franceses superariam os espanhóis por uma margem mínima (51% a 49%).
 
-Do outro lado da chave, a disputa promete ser igualmente acirrada. A Inglaterra desponta como a favorita para chegar à decisão, mas terá um caminho bastante complicado. Segundo as projeções, os ingleses devem eliminar o Brasil nas quartas de final em um duelo extremamente apertado (52% a 48%) e, na sequência, superar a atual campeã Argentina na semifinal por uma margem idêntica (51% a 49%). 
+Do outro lado da chave, a disputa promete ser igualmente acirrada. A Inglaterra desponta como a favorita para chegar à decisão, mas terá um caminho bastante complicado. Segundo as projeções, os ingleses devem eliminar o Brasil nas quartas de final em um duelo extremamente apertado (52% a 48%) e, na sequência, superar a atual campeã Argentina na semifinal por uma margem idêntica (51% a 49%).
 
 <h3><b>Considerações Finais</b></h3>
 

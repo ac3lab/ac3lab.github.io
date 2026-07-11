@@ -10,7 +10,6 @@ author: Ace Laboratory Team - Pedro Martins e Pedro Lopes
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -72,7 +71,7 @@ O mapa de PPDA do Haiti corrobora a passividade tática da equipe. Mesmo tentand
 
 <h3><b>Segundo Tempo: Administração de Vantagem e Gestão Física</b></h3>
 
-Com a vitória encaminhada, os primeiros 15 minutos da segunda etapa foram de administração posicional por parte do Brasil, visando a preservação física dos atletas. A rotação caiu drasticamente: a Seleção passou quase 30 minutos sem finalizar e, conforme ilustrado pelo mapa de pressão a seguir, concentrou suas ações em zonas mais recuadas do campo, forçando o adversário a correr atrás da bola. 
+Com a vitória encaminhada, os primeiros 15 minutos da segunda etapa foram de administração posicional por parte do Brasil, visando a preservação física dos atletas. A rotação caiu drasticamente: a Seleção passou quase 30 minutos sem finalizar e, conforme ilustrado pelo mapa de pressão a seguir, concentrou suas ações em zonas mais recuadas do campo, forçando o adversário a correr atrás da bola.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -92,6 +91,3 @@ Contrastando com as dificuldades da estreia, a vitória por 3 a 0 sobre o Haiti 
 Ainda que o adversário não sirva de parâmetro técnico definitivo, o resultado foi vital para a confiança da equipe, especialmente para Vinícius Júnior, que demonstrou muita segurança na tomada de decisão. O principal ponto de preocupação recai no departamento médico, que precisará reavaliar a lesão de Raphinha a poucos dias do início do mata-mata.
 
 No próximo jogo, contra a Escócia, o Brasil busca garantir o primeiro lugar do grupo C. A expectativa é enfrentar uma seleção muito mais fechada e reativa, o que exigirá novamente paciência para quebrar linhas defensivas, mas sob a vantagem de atuar com a classificação já encaminhada e um ambiente menos pressionado.
-
-
-

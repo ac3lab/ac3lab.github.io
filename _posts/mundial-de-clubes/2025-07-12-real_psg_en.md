@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Real Madrid vs PSG: French Dominance Secures Club World Cup Final Spot"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Gabriel Madruga, Miguel Angelo
-
 ---
 
 ---

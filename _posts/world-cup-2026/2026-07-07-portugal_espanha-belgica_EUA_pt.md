@@ -10,7 +10,6 @@ author: ACE Laboratory Team
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -101,7 +100,7 @@ Nas escalações iniciais, os Estados Unidos foram a campo estruturados em um 3-
 
 <h3><b>Primeiro Tempo: Domínio belga e respostas imediatas</b></h3>
 
-A etapa inicial foi marcada por uma ampla superioridade da Bélgica, que se impôs através de um encaixe defensivo muito sólido e de uma posse de bola paciente. Em vez de subir as linhas desesperadamente, a equipe ditava o ritmo controlando os espaços e bloqueando o avanço dos Estados Unidos. 
+A etapa inicial foi marcada por uma ampla superioridade da Bélgica, que se impôs através de um encaixe defensivo muito sólido e de uma posse de bola paciente. Em vez de subir as linhas desesperadamente, a equipe ditava o ritmo controlando os espaços e bloqueando o avanço dos Estados Unidos.
 
 Conforme indica o mapa de PPDA (Passes por Ação Defensiva), a seleção belga abdicou de morder a saída de bola adversária, mantendo o terço de ataque (zona em tons frios) com pouca pressão. O verdadeiro comportamento da equipe foi de paciência e encaixe: o bloco defensivo esperava os EUA avançarem para ativar uma marcação agressiva no próprio campo, recuperando a bola com segurança e iniciando suas transições de forma veloz.
 
@@ -112,9 +111,9 @@ Conforme indica o mapa de PPDA (Passes por Ação Defensiva), a seleção belga 
 </div>
 <center>Figura 5: Mapa de PPDA da Bélgica<br/><br/></center>
 
-Os EUA até tentavam sair pelos lados do campo, acionando alas como Tillman e Dest para cadenciar o jogo. No entanto, o excesso de erros de passe no meio-campo era um convite para as transições rápidas da Bélgica, que explorava com facilidade o lado esquerdo, sobretudo com as subidas de Tielemans. 
+Os EUA até tentavam sair pelos lados do campo, acionando alas como Tillman e Dest para cadenciar o jogo. No entanto, o excesso de erros de passe no meio-campo era um convite para as transições rápidas da Bélgica, que explorava com facilidade o lado esquerdo, sobretudo com as subidas de Tielemans.
 
-O domínio territorial finalmente se converteu no primeiro gol belga após um cruzamento perigoso de Trossard, abrindo o placar contra os estadunidenses. Atrás no placar, os EUA tentaram reagir, mas esbarravam na forte marcação europeia constantemente. 
+O domínio territorial finalmente se converteu no primeiro gol belga após um cruzamento perigoso de Trossard, abrindo o placar contra os estadunidenses. Atrás no placar, os EUA tentaram reagir, mas esbarravam na forte marcação europeia constantemente.
 
 A oportunidade norte-americana surgiu somente após a pausa para hidratação, quando a equipe melhorou o controle central e conseguiu uma falta perigosa. Confirmando a força de sua bola parada no torneio, os EUA empataram em uma cobrança que desviou na barreira.
 

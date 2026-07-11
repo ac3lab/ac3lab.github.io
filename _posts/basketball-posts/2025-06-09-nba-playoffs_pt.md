@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "NBA Playoffs : O Duelo dos MVPs"
@@ -19,12 +18,9 @@ author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
 
 ---
 
-
 <h2> <b> Introdução </b></h2>
 
 <style>body {text-align: justify}</style>
-
-
 
 A NBA, principal liga de basquete do mundo, é dividida em duas conferências: Leste e Oeste. Cada temporada começa com uma fase regular, em que todas as equipes se enfrentam, e termina com os playoffs, nos quais os times competem apenas contra adversários da mesma conferência até as finais da NBA, onde os campeões de cada conferência disputam o título da liga.
 
@@ -122,4 +118,3 @@ Por fim, o candidato a MVP Shai Gilgeous-Alexander teve uma atuação espetacula
 Embora o Thunder tenha encerrado a temporada regular com uma das melhores campanhas da história da NBA (68–14), encontrou enorme dificuldade diante do Denver Nuggets — que foi responsável por 29% das derrotas do OKC antes das finais da conferência, somando cinco dos 17 reveses no ano (incluindo dois na temporada regular e três nos playoffs). A série se tornou uma verdadeira batalha física e mental: os candidatos a MVP elevaram seus jogos, enquanto a defesa do Thunder forçou impressionantes 124 turnovers ao longo dos sete confrontos.
 
 No fim, Shai Gilgeous-Alexander foi coroado MVP da série, liderando todos os jogadores com um aproveitamento de 52,9% nos arremessos e média de 29,7 pontos por jogo — consolidando-se como o grande nome da franquia. Nikola Jokić também brilhou, com média de 28,4 pontos e 13,9 rebotes, reforçando o quão equilibrado foi o duelo entre essas duas superestrelas.
-

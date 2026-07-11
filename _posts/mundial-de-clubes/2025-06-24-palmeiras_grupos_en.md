@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Palmeiras' Group Stage Performance at the Club World Cup"
@@ -14,8 +13,7 @@ categories: Football; Analysis
 
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
-author: Ace Laboratory Football Team - Gabriel Madruga e João Victor	
-
+author: Ace Laboratory Football Team - Gabriel Madruga e João Victor
 ---
 
 ---

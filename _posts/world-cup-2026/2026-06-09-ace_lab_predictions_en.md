@@ -21,7 +21,6 @@ As the World Cup approaches, various prediction models for the results of the wo
 
 In this post, we present our official projections for the World Cup, revealing what our mathematical modeling has to say about the big favorites, potential surprises, and, of course, the path of the Brazilian national team in the competition.
 
-
 <h2><b>The model</b></h2>
 
 The architecture underpinning our predictions departs from single-algorithm approaches. We opted to develop a combined model (also called an ensemble model), which distributes equal weights (33.3%) across three distinct machine learning methodologies. The goal of this architecture is to mitigate the individual biases of each specific model and ensure a more robust and conservative inference.
@@ -33,7 +32,6 @@ The architecture underpinning our predictions departs from single-algorithm appr
 </div>
 
 <center>Figure 1: Diagram of the model used<br/><br/></center>
-
 
 Our model's workflow operates in three fundamental stages:
 
@@ -50,7 +48,6 @@ Our model's workflow operates in three fundamental stages:
     <b>Tournament Simulation (Monte Carlo):</b> For a World Cup, knowing whether a team is strong or weak is not enough. Success in this competition is highly influenced by the bracket in the knockout stages. To calculate the probability of a team becoming the world champion, it is necessary to project its path. To do this, we input the probabilities of each match into a Monte Carlo simulation engine, which runs through the official bracket for this World Cup edition 20,000 times. The probabilities we present reflect the aggregation of these tens of thousands of simulations.
   </li>
 </ul>
-
 
 <h2><b>Results</b></h2>
 
@@ -89,7 +86,6 @@ Another analysis we can perform is regarding the probable matchups in the early 
     Germany vs. France, Brazil vs. Norway, and Spain vs. Croatia in the Round of 16.
   </li>
 </ul>
-
 
 <h2><b>Conclusion</b></h2>
 

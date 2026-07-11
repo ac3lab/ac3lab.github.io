@@ -9,10 +9,10 @@ thumbnail: assets/img/Posts_Images/2024-04-15-post_brasileirao_1/Brasileirao_Ass
 author: Ace Laboratory Football Team
 hidden: true
 hidden_post: true
-
 ---
 
 ---
+
 <h2>Introdução</h2>
 
 <div style="text-align: justify">
@@ -37,7 +37,6 @@ Além da boa atuação no geral do Flamengo, vale destacar a impressionante part
 </p>
 
 </div>
-
 
 <h2>Palmeiras x Internacional</h2>
 
@@ -80,7 +79,6 @@ O Juventude recebeu o Corinthians em sua casa, o Estádio Alfredo Jaconi. Apesar
 
 <p align="justify">
 O Red Bull Bragantino enfrentou o Vasco em uma partida muito equilibrada no Campeonato Brasileiro. O jogo ocorreu no Estádio Nabi Abi Chedid e terminou com a vitória do Massa Bruta por 2 a 1 diante sua torcida. Os gols do Bragantino foram marcados por Laquintana e Vitinha, enquanto o Vegetti marcou para o Gigante da Colina. O RB Bragantino, apesar da vitória, teve certa linearidade no xG ao longo da partida, enquanto o Vasco perdeu pelo menos uma chance clara, ficando com um xG maior e perdendo a partida.
-
 
 </p>
 

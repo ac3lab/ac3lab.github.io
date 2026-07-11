@@ -10,7 +10,6 @@ author: ACE Laboratory Team
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -23,7 +22,7 @@ If you want to read this text in en-us, <a href="https://ac3lab.github.io/blog/2
 
 <h2><b>Introdução</b></h2>
 
-Embora as oitavas de final tenham selado a eliminação precoce tanto do Brasil quanto do México, a forma como as duas seleções se despediram do torneio ilustra um contraste de posturas em campo. Nesse post, faremos uma análise tática e comportamental desses dois confrontos marcantes: a queda apática da Seleção Brasileira diante de uma pragmática Noruega e a batalha incansável dos mexicanos contra a letalidade da Inglaterra. Exploraremos, através de dados e mapas das partidas, como a reatividade custou o sonho do hexa ao Brasil, enquanto a postura do México demonstrou um modelo consistente de enfrentamento e resiliência diante de um adversário de alto nível. 
+Embora as oitavas de final tenham selado a eliminação precoce tanto do Brasil quanto do México, a forma como as duas seleções se despediram do torneio ilustra um contraste de posturas em campo. Nesse post, faremos uma análise tática e comportamental desses dois confrontos marcantes: a queda apática da Seleção Brasileira diante de uma pragmática Noruega e a batalha incansável dos mexicanos contra a letalidade da Inglaterra. Exploraremos, através de dados e mapas das partidas, como a reatividade custou o sonho do hexa ao Brasil, enquanto a postura do México demonstrou um modelo consistente de enfrentamento e resiliência diante de um adversário de alto nível.
 
 <h2><b>Brasil x Noruega: Estratégia Reativa, Falta de Efetividade e o Fim do Sonho do Hexa</b></h2>
 
@@ -39,7 +38,7 @@ Os minutos iniciais do confronto ditaram um ritmo caótico. As duas equipes entr
 
 Após esse susto, o Brasil ajustou sua postura e passou a marcar em um bloco médio-baixo. A estratégia era atrair os europeus e utilizar "gatilhos de pressão" muito bem definidos para tentar recuperar a bola e castigar em transições rápidas. Essa dinâmica gerou as principais jogadas de perigo da Seleção no primeiro tempo e foi a origem do lance mais crucial da etapa: em um bote preciso no meio-campo, o Brasil roubou a bola e disparou. Matheus Cunha chegou antes da marcação e sofreu o pênalti. No entanto, Bruno Guimarães desperdiçou a cobrança.
 
-A execução dessa postura reativa fica evidente ao observarmos o mapa de ações defensivas da Seleção Brasileira. 
+A execução dessa postura reativa fica evidente ao observarmos o mapa de ações defensivas da Seleção Brasileira.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -110,7 +109,7 @@ Do outro lado, a Noruega provou o valor de um meio-campo capaz de controlar as a
 
 <h3><b>Introdução</b></h3>
 
-Em confronto válido pelas oitavas de final, a Inglaterra superou o México por 3 a 2 e impôs a primeira derrota da seleção anfitriã na história das Copas dentro do Estádio Azteca. Apesar da eliminação, a equipe mandante caiu aplaudida de pé por sua torcida após entregar absolutamente tudo em campo. 
+Em confronto válido pelas oitavas de final, a Inglaterra superou o México por 3 a 2 e impôs a primeira derrota da seleção anfitriã na história das Copas dentro do Estádio Azteca. Apesar da eliminação, a equipe mandante caiu aplaudida de pé por sua torcida após entregar absolutamente tudo em campo.
 
 Taticamente, o México iniciou em um 4-1-2-3, variando de forma agressiva para um 3-4-3 ou até 3-3-4 com a posse, defendendo-se em um 4-4-2. A Inglaterra respondeu com um 4-2-3-1 inicial, atacando em 3-4-3 e montando um ferrolho muito sólido no 5-3-2 para conter o ímpeto dos anfitriões.
 
@@ -140,7 +139,7 @@ A cadeia de posse do primeiro gol inglês revela a verticalidade da equipe, que 
 </div>
 <center>Figura 7: Cadeia de Posse - 1º Gol da Inglaterra<br/><br/></center>
 
-Diferente de outras seleções, o 2 a 0 não nocauteou os donos da casa. Sem sentir o baque, o México continuou lutando e, explorando as bolas paradas, conseguiu diminuir com Quiñones, que aproveitou uma deixada de cabeça de um companheiro após um cruzamento na área para descontar no placar. 
+Diferente de outras seleções, o 2 a 0 não nocauteou os donos da casa. Sem sentir o baque, o México continuou lutando e, explorando as bolas paradas, conseguiu diminuir com Quiñones, que aproveitou uma deixada de cabeça de um companheiro após um cruzamento na área para descontar no placar.
 
 <h3><b>Segundo Tempo: Expulsão, Pênaltis e a "Blitz" Final</b></h3>
 

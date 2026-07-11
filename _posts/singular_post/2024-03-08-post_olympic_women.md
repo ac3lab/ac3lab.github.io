@@ -28,7 +28,6 @@ Our historical data shines a light on these formative years, displaying not just
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/1.png" class="img-fluid rounded z-depth-1" %}
 
-
 <p align="justify">
 Fast forward to the present, and we see a remarkable transformation. The recent Olympiads (2020) underscore a record-breaking surge, with women constituting over 49% of competitors winning medals—a testament to the indomitable spirit of countless female Olympians.
 </p>
@@ -43,7 +42,6 @@ As we marvel at these visual testaments of progress, it's clear the journey is f
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-08-post_olympic_women-Images/4.png" class="img-fluid rounded z-depth-1" %}
 
-
 <p align="justify">
 The dashed line of ideal equality on our charts is more than a benchmark—it's a call to action. A call to support and elevate the role of women in sports, ensuring that the future of the Olympics is not just gender-balanced in participation but also in recognition, support, and celebration.
 </p>
@@ -54,11 +52,9 @@ The dashed line of ideal equality on our charts is more than a benchmark—it's 
 On this day, as we celebrate the monumental achievements of women across the globe, we turn our admiration towards the Olympians who've not only competed but have rewritten the history of sports. In the spirit of International Women's Day, we pay homage to trailblazers like Larisa Latynina, Birgit Fischer-Schmidt and Jenny Thompson, whose medal counts stand as towering testaments to female prowess and resilience in the face of adversity.
 </p>
 
-
 <p align="justify">
 Their victories are not just etched in gold, silver, or bronze but are imprinted in the hearts of countless young girls who dare to dream bigger because of them. It is in their footsteps that the next generation will tread, inspired to leap higher, run faster, and push harder.
 </p>
-
 
 <p align="justify">
 In their honor, and in the spirit of fostering a future where every girl has the opportunity to chase her Olympic dreams, we invite you to delve deeper into the evolution of women's participation in the Olympics. Our dashboard provides a comprehensive look at the strides made over the years, showcasing participation by National Olympic Committees (NOC) and by each Olympic Game.

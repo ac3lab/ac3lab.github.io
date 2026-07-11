@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Fluminense vs Inter: A Victory that Surprised Everyone"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team
-
 ---
 
 ---
@@ -78,4 +76,4 @@ After this victory, fans may have been excited about the possibility of revenge 
 
 The performance against Inter demonstrates that Fluminense is growing in the tournament and could be a surprise in the next phases. The combination of defensive solidity, offensive efficiency, and tactical adaptability makes the tricolor a fearsome opponent for any team. <br/><br/>
 
-</div> 
+</div>

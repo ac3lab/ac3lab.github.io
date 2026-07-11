@@ -5,7 +5,14 @@ permalink: /safe2025_participants/
 description:
 nav: false
 nav_order: 3
-display_categories: ["Abertura - Keynote", "Apresentação do ACE Laboratory", "Trabalhos ACE Laboratory", "Mesa Redonda: Clubes, Universidades e Televisão", "Encerramento - Keynote"]
+display_categories:
+  [
+    "Abertura - Keynote",
+    "Apresentação do ACE Laboratory",
+    "Trabalhos ACE Laboratory",
+    "Mesa Redonda: Clubes, Universidades e Televisão",
+    "Encerramento - Keynote",
+  ]
 horizontal: false
 ---
 
@@ -36,10 +43,15 @@ horizontal: false
   {% endfor %}
 
 {%- else -%}
+
 <!-- Display projects without categories -->
-  {%- assign sorted_projects = site.safe_people | sort: "importance" -%}
+
+{%- assign sorted_projects = site.safe_people | sort: "importance" -%}
+
   <!-- Generate cards for each project -->
-  {% if page.horizontal -%}
+
+{% if page.horizontal -%}
+
   <div class="container">
     <div class="row row-cols-2">
     {%- for project in sorted_projects -%}

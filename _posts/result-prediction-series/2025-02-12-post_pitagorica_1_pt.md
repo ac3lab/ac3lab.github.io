@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Prevendo Resultados no Futebol - Parte 1"
@@ -19,33 +18,27 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 hidden: true
 hidden_post: true
 giscus_comments: true
-
 ---
 
 <h2> <b> Introdução </b></h2>
   
 <div  style="text-align: justify">
 
-Nessa série de posts nós vamos estudar alguns métodos para tentar prever a porcentagem de vitória dos clubes de futebol. Neste primeiro post iremos falar sobre duas estatísticas: a porcentagem de vitória e uma variação dela chamada de expectativa pitagórica. Serão utilizados dados das últimas temporadas de algumas das grandes ligas europeias (23-24) e do Brasileirão (24), extraídos no site FBREF.  <br/><br/>
+Nessa série de posts nós vamos estudar alguns métodos para tentar prever a porcentagem de vitória dos clubes de futebol. Neste primeiro post iremos falar sobre duas estatísticas: a porcentagem de vitória e uma variação dela chamada de expectativa pitagórica. Serão utilizados dados das últimas temporadas de algumas das grandes ligas europeias (23-24) e do Brasileirão (24), extraídos no site FBREF. <br/><br/>
 
 <h3> <b> O que é a Expectativa Pitagórica </b> </h3>
 
 A expectativa pitagórica é uma fórmula analítica utilizada inicialmente no beisebol. Ela foi criada pelo Bill James, um famoso estatístico pioneiro na área de dados esportivos que criou dúzias de livros com o objetivo de estudar o beisebol por meio de dados estatísticos, tentando determinar o porquê times ganham e perdem. Enfim, essa expectativa pitagórica tem o objetivo de estimar a porcentagem de jogos que um time deveria ter vencido baseado no número de corridas que eles completaram e concederam. No cenário do futebol, o utilizado seria gols feitos e gols concedidos. <br/><br/>
 
-
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
-
 
 </div>
 
 <center>O nome da estatística se dá a semelhança da fórmula ao teorema de pitágoras. <br/><br/></center>
 
-
 Comparar a porcentagem de vitória de um time com a expectativa pitagórica pode ser usado para avaliar quais times estão performando acima do esperado e quais estão piores do que se espera deles. <br/><br/>
-
-
 
 <h3> <b> A Pesquisa</b> </h3>
 
@@ -62,7 +55,6 @@ Após extração dos dados e uma limpeza básica da tabela, o resultado é um Da
 </div>
 
 <center>Esse é o formato dos dados extraídos do FBREF. <br/><br/></center>
-
 
 Separamos os gols de cada equipe e definimos qual time foi o vencedor de cada partida do campeonato. Assim, podemos calcular a porcentagem de vitória -vitória vale 1, empate vale 0.5 e derrota vale nada-, e a soma desses valores é dividida pelo número de partidas jogadas. (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">Wikipedia</a>). <br/><br/>
 
@@ -89,12 +81,10 @@ Para finalizar nossa tabela, calculamos a expectativa pitagórica e juntamos as 
 Código do cálculo de wpc e pyth: <br/> <br/>
 
 {% highlight python linenos %}
-PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G']  # percentual de vitórias - (Vitórias) / (Jogos Jogados)  
-PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']**2)  # expectativa pitagórica - (Gols Pró)^2 / ((Gols Pró)^2 + (Gols Contra)^2)  
+PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G'] # percentual de vitórias - (Vitórias) / (Jogos Jogados)  
+PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']\*\*2) # expectativa pitagórica - (Gols Pró)^2 / ((Gols Pró)^2 + (Gols Contra)^2)  
 {% endhighlight %}
 <br/><br/>
-
-
 
 <h3> <b> Falando dos gráficos de regressão e da correlação </b></h3>
 
@@ -108,8 +98,7 @@ Como podemos ver na imagem abaixo, a expectativa pitagórica no primeiro turno d
 
 <center> Relação entre a <b>pythagorean_x</b> e a <b>win_percentage_x</b> no Primeiro Turno. A linha no gráfico é uma regressão linear ajustada aos dados, que representa a relação entre as duas variáveis. <br/><br/></center>
 
-
-Mas o que nós queremos saber é: qual das duas estatísticas têm uma relação maior com a porcentagem de vitória da equipe ao final do campeonato? Para analisar isso, podemos gerar uma tabela de correlação entre essas estatísticas no Primeiro Turno do campeonato e no Segundo Turno.  <br/><br/>
+Mas o que nós queremos saber é: qual das duas estatísticas têm uma relação maior com a porcentagem de vitória da equipe ao final do campeonato? Para analisar isso, podemos gerar uma tabela de correlação entre essas estatísticas no Primeiro Turno do campeonato e no Segundo Turno. <br/><br/>
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -119,7 +108,7 @@ Mas o que nós queremos saber é: qual das duas estatísticas têm uma relação
 
 <center> Tabela de Correlação da Premier League. <br/><br/></center>
 
-Como podemos ver pelos valores marcados na imagem, existe uma correlação maior entre <b>pythagorean_x</b> e <b>win_percentage_y</b> (0.80) do que entre <b>win_percentage_x</b> e <b>win_percentage_y</b> (0.75). Apesar de ser uma diferença pequena, isso mostra que a expectativa pitagórica tem um poder preditivo melhor que a porcentagem de vitória. 
+Como podemos ver pelos valores marcados na imagem, existe uma correlação maior entre <b>pythagorean_x</b> e <b>win_percentage_y</b> (0.80) do que entre <b>win_percentage_x</b> e <b>win_percentage_y</b> (0.75). Apesar de ser uma diferença pequena, isso mostra que a expectativa pitagórica tem um poder preditivo melhor que a porcentagem de vitória.
 Esse é o resultado da Premier League. Qual seria o resultado em outras ligas? <br/><br/>
 
 <h4> <b> Bundesliga </b></h4>
@@ -176,7 +165,6 @@ Na liga brasileira, além dos valores do Primeiro Turno terem menos de 30% de co
 
 A partir do resultado do experimento, decidimos analisar quanto o rendimento difere de um turno para o outro de acordo com a liga para entendermos melhor as ligas mais ‘imprevisíveis’. Para isso, calculamos a média e a mediana dessa variação em todas as ligas estudadas. O Brasileirão se destacou como a competição com a maior oscilação entre turnos, superando as ligas europeias. A surpresa ficou por conta da La Liga, que apresentou uma variação relativamente alta para os padrões europeus. <br/><br/>
 
-
 <table>
   <thead>
     <tr>
@@ -219,15 +207,13 @@ A partir do resultado do experimento, decidimos analisar quanto o rendimento dif
   </tbody>
 </table>
 
-
 <br/><br/>
-<h4>Cálculo da diferença de aproveitamento:</h4>  
+
+<h4>Cálculo da diferença de aproveitamento:</h4>
 
 \[
 \left( \frac{\text{Aproveitamento 2° Turno}}{\text{Aproveitamento 1° Turno}} - 1 \right) \times 100\%
 \]
-
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -242,6 +228,5 @@ O gráfico acima mostra a alta variação entre os aproveitamentos dos clubes br
 Podemos supor alguns motivos, como aumento do investimento com o passar do tempo, a constante troca de técnicos ou a pressão da torcida após resultados ruins, forçando diretorias a investir mais em reforços; mas o motivo real necessitaria de uma pesquisa mais aprofundada sobre o tema. <br/><br/>
 
 No próximo post, abordaremos a previsão de resultados com base no valor de mercado dos clubes, que será nossa variável principal. Fique atento às nossas redes sociais para não perder nenhuma novidade do blog! <br/><br/>
-
 
 <div>

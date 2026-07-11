@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "A Performance do Palmeiras na Fase de Grupos do Mundial de Clubes"
@@ -14,12 +13,10 @@ categories: Futebol; Análise
 
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
-author: Ace Laboratory Football Team - Gabriel Madruga e João Victor	
-
+author: Ace Laboratory Football Team - Gabriel Madruga e João Victor
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 

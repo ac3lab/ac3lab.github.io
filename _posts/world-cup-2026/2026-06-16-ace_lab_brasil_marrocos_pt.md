@@ -10,7 +10,6 @@ author: ACE Laboratory Team
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -35,7 +34,7 @@ As escalações iniciais criaram um confronto espalhado no 4-2-3-1. O Brasil apo
 
 Diferente da intensidade mostrada no início do jogo contra o Egito, a Seleção Brasileira começou a partida apagada, demonstrando nervosismo. Com dificuldades para manter a posse de bola, a equipe errava constantemente domínios e passes, recorrendo frequentemente a bolas longas na saída de bola, sofrendo forte pressão da seleção de Marrocos.
 
-A estratégia marroquina fica clara ao observarmos o seu mapa de PPDA. A métrica ilustra que, na faixa ofensiva (defesa do Brasil), o Marrocos não efetuou muitas marcações agressivas, se resguardando do desgaste físico da marcação intensa. A equipe apostou mais no jogo rápido e no contra-ataque, algo evidente no gol marroquino. 
+A estratégia marroquina fica clara ao observarmos o seu mapa de PPDA. A métrica ilustra que, na faixa ofensiva (defesa do Brasil), o Marrocos não efetuou muitas marcações agressivas, se resguardando do desgaste físico da marcação intensa. A equipe apostou mais no jogo rápido e no contra-ataque, algo evidente no gol marroquino.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -90,7 +89,6 @@ O Brasil passou a apostar nas transições rápidas e protagonizou, aos 77 minut
 Aos 80 minutos, o grande desgaste físico obrigou a saída de Bruno Guimarães para a entrada de Danilo Santos, fechando o limite de cinco substituições do Brasil. O jogo se manteve tenso até os instantes finais. Já nos acréscimos, aos 92 minutos, o Brasil teve sua última grande chance: após a cobrança de um escanteio, a bola sobrou para Raphinha, que abriu na direita para Luiz Henrique. Ele enfiou a bola para Danilo Santos, que finalizou forte, mas parou nas mãos do goleiro.
 
 O susto final veio aos 98 minutos. O lateral Hakimi tentou avançar pela direita e foi desarmado, mas a bola espirrou e sobrou limpa para um meio-campista marroquino finalizar com perigo. Alisson espalmou, deu o rebote, mas mostrou reflexo para consertar o lance e finalizar a defesa em dois tempos, cedendo apenas o escanteio e marcando o fim do confronto.
-
 
 <h2><b>Análise de Sentimento: A Reação da Torcida</b></h2>
 

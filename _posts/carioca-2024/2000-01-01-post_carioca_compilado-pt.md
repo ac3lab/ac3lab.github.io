@@ -25,7 +25,6 @@ O Campeonato Carioca 2024 chegou à fase de semifinais, e o Ace Laboratory traz 
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/table.jpeg" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h2>Flamengo</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-07-post_carioca_compilado/flamengo-pt.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -62,7 +61,6 @@ O meio campista Bill foi o destaque do time na competição. O atleta foi o <b>1
 Conquistando 24 pontos, com sete vitórias, três empates e apenas uma única derrota, a laranja mecânica da baixada se classifica para as semifinais e deixa um dos grandes do Rio para fora. Assim como nos pontos corridos, o Nova Iguaçu terá que aproveitar as chances que tiver para surpreender o Vasco e chegar a final do Carioca 2024.
 </p>
 </div>
-
 
 <h2>Vasco</h2>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
@@ -121,8 +119,6 @@ Tomando menos controle do jogo, o Botafogo preferiu deixar a bola com o adversá
 O Campeonato Carioca se decide em detalhes, e analisando os números, vimos que o Botafogo teve um rendimento até melhor que o Fluminense <b>(4° lugar)</b> em algumas estatísticas, no entanto, a derrota para o Boavista na 3° rodada foi decisiva para o clube não se classificar para as semifinais do torneio, abrindo espaço para o Nova Iguaçu, a surpresa da competição.
 </p>
 </div>
-
-
 
 <h2>Semifinais</h2>
 <div style="text-align: justify">

@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: 2023 Women's World Cup - Analyzing the evolution of the main teams
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/thumb_women_world_cup.png
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
-
 ---
 
 ---
@@ -26,9 +24,8 @@ Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/200
 
 </p>
 
-
 <h2><b>Introduction</b></h2>
-  
+
 
 <div  style="text-align: justify">
 
@@ -42,13 +39,11 @@ After winning the 2023 World Cup, Spain have established themselves as one of th
 
 In 2019, though, Spain's situation was very different. <b>With fewer established players and without several of the young players who made a difference in 2023</b>, such as Salma Paralluelo, Spain got through the group stage via goal difference, with a below-average campaign (1W, 1D, 1L). In the round of 16, <b>they were eliminated by the United States</b>, winners of that edition. <br/><br/>
 
- 
 <h3> <b>England</b> </h3>
 
 <b>England have performed well in the last two World Cups</b>. In 2019, they finished in fourth place, losing to Sweden after losing in the semi-finals to the United States, who won that edition. In addition, as we mentioned, England are the current vice-champions of the world, defeated in the final by Spain. <br/><br/>
 
 In 2019, despite falling into a tough group with Japan, Argentina and Scotland, they didn't face much difficulty and came out on top with 3 wins in 3 games. In the knockout stage, they were only defeated in the semi-finals 2-1 in a match against the United States. <br/><br/>
-
 
 <h3> <b>United States</b> </h3>
 
@@ -80,14 +75,12 @@ First, it's important to mention that we've updated our definition of progressiv
 
 <center>Graph showing passes per match and progressive passes per match<br/><br/></center>
 
-
 Looking at the passing and progression of these teams, there are a few points to highlight: <br/><br/>
 
 - It's important to highlight the difference in the amount of passes per game made by Spain in the two campaigns, with Spain 2023 being by far the <b>team with the most passes and progressive passes out of all the teams that played in the two World Cups</b>. This is a clear consolidation of the style of play based on <b>passing, possession and pressing</b> that is implemented in both the women's and men's national teams. <br/><br/>
 - All of these teams (consolidated on the national team scene) began to pass more in the transition from one World Cup to the next, with the exception of the United States. This may be a trend in women's international football: <b>passing and proposing the game are key factors for success</b>. <br/><br/>
 
 <h3> <b>Shots and Expected Goals </b></h3>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -98,11 +91,10 @@ Looking at the passing and progression of these teams, there are a few points to
 <center> Graph showing shots per match and expected goals per match <br/><br/></center>
 
 In this graph relating the number of shots per match to the xG accumulated per match ( excluding penalties), we have the following observations: <br/><br/>
- 
+
 - Once again, Spain's evolution deserves to be highlighted. The team has made considerable improvements in attack, becoming the <b>team with the most shots and expected goals of all teams in the last two World Cups</b>. <br/><br/>
 - Despite a reasonable increase in shots, the United States had a decrease in their xG compared to 2019, indicating that the <b>team has, on average, decreased the quality of its scoring opportunities</b>. In addition, the team's attacking efficiency has also decreased dramatically. Disregarding penalties, the 2019 United States had a <b>positive balance of +8.63 (!!!) </b>in the difference between goals and xG. In 2023, the balance was<b> -3.01</b>. <br/><br/>
 - The England team of 2023, despite being a <b>highlight in terms of the number of passes and progressive passes</b>, doesn't have the same impact when it comes to finishing moves. Among the teams compared, they have the <b>fewest xG per game (1.26)</b>, reinforcing what we said in our first post when we commented that England 2023 had a very <b>methodical style of play</b>. Even with a good capacity for progression, the team doesn't take many shots and, consequently, doesn't accumulate many expected goals compared to the other top teams. <br/><br/>
-
 
 <h2> <b>Final Considerations and Conclusion</b></h2>
 
@@ -110,7 +102,4 @@ Throughout this post, we've focused on comparing teams that are well-established
 
 This concludes another post in our series on the 2023 Women's World Cup, and the fourth post will be the last in the series. Stay tuned for future posts! <br/><br/>
 
-
-
 <div>
-

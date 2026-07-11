@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Analisando Contratações do Futebol Brasileiro em 2024 - Setor Ofensivo: Parte 2"
@@ -18,8 +17,6 @@ author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
 hidden: true
 hidden_post: true
-
-
 ---
 
 ---
@@ -33,7 +30,7 @@ No último post da nossa série sobre as contratações do setor ofensivo do Cam
 
 Vale destacar que continuaremos direcionando a análise para os jogadores selecionados com o critério explicado no <a  href = "https://ac3lab.github.io/blog/2000/post_contratacoes_1_pt/"> último post</a>, que são: <b> Luiz Henrique </b> (Botafogo), <b> Felipe Anderson </b> (Palmeiras), <b> Gustavo Scarpa </b> (Atlético-MG), <b> Breno Lopes </b> (Fortaleza), <b> André Silva </b> (São Paulo), <b> Everton Ribeiro </b> (Bahia), <b> Gabriel Veron </b> (Cruzeiro), <b> David </b> (Vasco), <b> Soteldo </b> (Grêmio), <b> Wesley </b> (Internacional), <b> Rodrigo Garro </b> (Corinthians), <b> Yannick Bolasie </b> (Criciúma), <b> Lucas Barbosa </b> (Juventude) e <b> Gonzalo Mastriani </b> (Athletico). <br/><br/>
 
-Além disso, decidimos incluir e focar a análise em mais três jogadores que se destacaram no ano e se adequam aos critérios utilizados: <b> Alerrandro </b> (Vitória), <b> Memphis Depay </b> (Corinthians) e <b> Kevin Serna </b> (Fluminense). Por fim, os jogadores utilizados para comparação também serão os mesmos do último post e estarão representados em amarelo, enquanto as contratações estarão representadas em azul.  <br/><br/>
+Além disso, decidimos incluir e focar a análise em mais três jogadores que se destacaram no ano e se adequam aos critérios utilizados: <b> Alerrandro </b> (Vitória), <b> Memphis Depay </b> (Corinthians) e <b> Kevin Serna </b> (Fluminense). Por fim, os jogadores utilizados para comparação também serão os mesmos do último post e estarão representados em amarelo, enquanto as contratações estarão representadas em azul. <br/><br/>
 
 <h3> <b> Participações em gol decisivas </b> </h3>
 
@@ -97,14 +94,10 @@ Nos gráficos abaixo, repetimos o mesmo modelo utilizado na primeira parte da s�
 
 - Novamente, <b> André Silva </b>, do São Paulo, merece destaque. Apesar de ser contratado, inicialmente, como um reserva do já consolidado <b> Jonathan Calleri </b>, o brasileiro terminou o campeonato com mais participações em gols, mesmo tendo menos gols esperados (levando em conta a minutagem dos jogadores), mostrando, pelo menos em uma análise rápida, que foi um atacante mais eficiente do que o argentino. <br/><br/>
 
-
 <h2> <b> Conclusão </b></h2>
 
 Em resumo, essa segunda parte do post mostra um pouco mais do impacto de algumas contratações para o setor ofensivo do futebol brasileiro. Enquanto alguns se destacaram de forma extremamente positiva, como <b> Memphis Depay </b> e <b> Alerrandro </b>, sendo decisivos e essenciais para as campanhas de seus respectivos times, outros jogadores não tiveram o efeito esperado, como <b> Felipe Anderson </b>, do Palmeiras. <br/><br/>
 
 Além disso, nossa análise mostrou que as métricas mais simples que utilizamos, embora úteis em muitos contextos, têm limitações para capturar a totalidade do impacto de certos jogadores. Para entender o real impacto de atletas como <b> Everton Ribeiro </b> e <b> Luiz Henrique </b>, por exemplo, que foram essenciais para suas equipes, é necessário combinar diferentes tipos de métricas que considerem contextos variados, também sendo recomendado utilizar outros tipos de dados, como dados de evento. Assim, podemos avaliar não apenas a produção direta em números brutos, mas também contribuições menos evidentes (mas não menos importantes), como a construção de jogadas e a influência tática. <br/><br/>
 
-
-
 <div>
-

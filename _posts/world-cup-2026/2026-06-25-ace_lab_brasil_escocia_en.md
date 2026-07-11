@@ -86,5 +86,3 @@ The commanding 3-0 victory attests to the clear tactical and emotional evolution
 The absolute highlight goes to Vinícius Júnior's starring role, the synergy of the central engine room featuring Bruno Guimarães and Matheus Cunha, and a solid performance by Rayan, who earned his first start for the national team, proving vital in tracking back defensively and pressing the attack. Furthermore, Neymar's return, so highly anticipated by Brazilian fans, brings a more technical and experienced leadership to the squad.
 
 Qualifying in 1st place, Brazil reaches the Round of 32 presenting a physical and tactical performance vastly superior to their start in the competition. The next challenge is already scheduled for June 29th at the NRG Stadium in Houston. Looking ahead to the knockout stages, Brazil awaits the runner-up of Group F. This spot will be decided between Sweden, Japan, and the Netherlands, who play this Thursday (06/25) to determine who advances in second place from the group.
-
-

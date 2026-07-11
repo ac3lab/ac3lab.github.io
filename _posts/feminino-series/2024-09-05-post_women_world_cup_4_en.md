@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: 2023 Women's World Cup - Analyzing the progress of the Brazilian national team
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-08-23-post_women_world_cup_3/thumb_women_world_cup.png
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
-
 ---
 
 ---
@@ -25,7 +23,6 @@ author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/post_women_world_cup_4_pt/"> clique aqui. </a>
 
 </p>
-
 
 <div  style="text-align: justify">
 
@@ -39,20 +36,17 @@ At the 2019 World Cup, the Brazilian team was seeded in a group with Australia, 
 
 In the Round of 16, Brazil faced France in a very tight game. Despite a balance in possession during regulation time, the Brazilians had 12 shots, while the French had 5. The match was only decided in the second half of overtime, when France scored the winning goal and ended Brazil's participation in the competition.<br/><br/>
 
- 
 <h3> <b>2023 World Cup</b> </h3>
 
 At the 2023 World Cup, Brazil had an even shorter and more frustrating campaign. Once again, the Brazilian team finished third, now in Group F, which included France, Jamaica and Panama. The Brazilians won one and drew one in three games, but in this edition, only the top two teams in the group qualified for the knockout stage.<br/><br/>
 
 When we say that the campaign was frustrating, it was not for nothing. On the final matchday of the group stage, Brazil only needed a simple win against Jamaica, an opponent who qualified with a single goal against Panama (who conceded 11 in the competition). In theory, qualification seemed on course. In practice, Brazil, despite a giant dominance when we analyse possession, the number of passes and shots, were unable to make satisfactory use of the many chances that were created. The result could not have been any other: 0-0, and the Brazilian team was eliminated in the first phase of the competition.<br/><br/>
 
-
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-09-05-post_women_world_cup_4/Shotmap.png" class="img-fluid rounded z-depth-1" %}
 
 </div>
-
 
 <h2> <b>Statistics between Cups</b> </h2>
 
@@ -61,7 +55,6 @@ In this section, we're going to analyse Brazil's participation using different s
 Before starting the analyses and comments section, we have to say that, because the World Cup is a short tournament (and, unfortunately, the Brazilian team's campaigns even shorter), some matches end up having a big impact on the metrics shown below. This context must be taken into account when analysing.<br/><br/>
 
 <h2> <b>Passes and Progression</b> </h2>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -75,9 +68,7 @@ Analysing the passes and progression of the 2019 Brazilian team, you can see the
 
 - In 2023, Brazil improved in both aspects, with around 30 progressive drives and almost 70 progressive passes per game, revealing a significant evolution, with the team assuming a more aggressive and progressive profile on the pitch compared to the much less offensive behaviour of the team in 2019. In the 2019 campaign, Brazil made approximately 20% fewer progressive passes than the average of the other teams.<br/><br/>
 
-
 <h2> <b>Shots and xG per shot</b> </h2>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -85,13 +76,11 @@ Analysing the passes and progression of the 2019 Brazilian team, you can see the
 
 </div>
 
-
 To analyse the quality of the teams' shots, we'll use the graph of shots per match vs. xG per shot.<br/><br/>
 
 - Once again, Brazil are better placed than their South American opponents, indicating that there is a big advantage for the Brazilian national team on their continent.<br/><br/>
 - Despite a much higher number of shots per match in 2023, Brazil have not seen a considerable improvement in the quality of their chances (expected goals per shot). The lack of progress in this area was, as we said, a determining factor in Brazil's elimination in the group stage.<br/><br/>
 - As we've already mentioned, the fact that the World Cup is a short tournament means that some matches have a big impact on the statistics. In this graph, we have a clear example of this in the number of shots that the Brazilian national team produced. In the second round of the group stage, against Panama, Brazil shot 33 times, scoring 4 goals on the occasion. This number of shots is greater than the sum of the shots in the other two matches, showing that the match against Panama creates a false impression that the Brazilian team had the characteristic of shooting often, but that this was an isolated episode in the competition.<br/><br/>
-
 
 <h2> <b>Final considerations and conclusion</b></h2>
 
@@ -101,7 +90,4 @@ Even though the campaigns analysed were short and, in some ways, disappointing, 
 
 And so ends our series of posts analysing the 2023 Women's World Cup. Stay tuned, there's lots more to come!<br/><br/>
 
-
 <div>
-
-

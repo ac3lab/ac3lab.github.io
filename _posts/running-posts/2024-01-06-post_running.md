@@ -46,7 +46,7 @@ Now, back in the terminal, just run nrc-exporter with the token, like this:
 
 nrc-exporter -t token
 
-You will see this execution:  
+You will see this execution:
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/3.webp" class="img-fluid rounded z-depth-1" %}
 
@@ -102,7 +102,7 @@ Something a little obvious, but it's also cool to visualize: the opposite trajec
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/8.webp" class="img-fluid rounded z-depth-1" %}
 
-Let's follow:  
+Let's follow:
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-01-06-post_running-Images/9.webp" class="img-fluid rounded z-depth-1" %}
 
@@ -147,6 +147,7 @@ Relevant insights
 </p>
 
 Some observations for who want to replicate the analysis:
+
 <p align="justify">
 1) It's possible to find the latitude and longitude of the routes in the data, making it possible to georeference the races. In my case I didn't think it was relevant to use, since I almost always run in the same place.<br>
 2) As wrote above, the average pace data comes in total minutes, so if like me, you want to look at this more friendly and usual — minutes'seconds'' — it is necessary to treat this variable.<br>

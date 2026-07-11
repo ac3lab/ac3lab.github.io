@@ -15,7 +15,6 @@ author: Amanda Azevedo, Almir Júnior, Pedro Siqueira
 As the Paris 2024 Olympic Games draw near, we are pleased to introduce the Olympics Planner 2024. This tool is engineered to provide personalized itineraries that cater to individual preferences, using advanced algorithms to help attendees fully engage with the events, attractions, and venues. In this post, we will explore the methodologies and technologies behind the development of the Olympics Planner 2024.<br/><br/>
 </p>
 
-
 ## Data Collection
 
 <p align="justify">
@@ -23,7 +22,6 @@ As the Paris 2024 Olympic Games draw near, we are pleased to introduce the Olymp
 We sourced our dataset from the official publications of<a href = "https://tickets.paris2024.org/en/"> the Paris Olympic Committee</a>, which provided details about event schedules, ticket pricing, and venue information. We gathered data on event timings, costs of tickets, and the exact locations of venues, documented with both addresses and geographic coordinates.<br/><br/>
 
 Scripts were crafted to extract this information from the official Olympic website, a process that presented challenges due to the complex presentation of the site's data and issues with data accessibility. These obstacles underscore the complexities of employing this methodology with historical Olympic data, which may be even harder to access.<br/><br/>
-
 
 Additionally, we incorporated financial considerations into our model by including both the average travel costs between events and the ticket prices. To ensure total expenses remained within the allocated budget, we introduced a budget constraint. Travel costs were estimated by calculating the travel time between venues and multiplying it by the average cost per minute, providing a more realistic assessment of the financial implications of attending multiple events.
 
@@ -37,16 +35,15 @@ We approached the task of crafting optimal viewing schedules for the Olympic Gam
 
 Consider a directed graph \( G = (V, A) \), where \( V \) represents the set of vertices denoting Olympic events, and \( A \) represents the arcs denoting transitions between events.<br/><br/>
 
-Each event \( i \in V \) is defined by its start time \( t^{\text{start}}_i \) and duration \( \text{duration}_i \), where \( t^{\text{end}}_i = t^{\text{start}}_i + \text{duration}_i \). The start time \( t^{\text{start}}_i \) denotes the minute within the total Olympic timeline when event \( i \) begins.<br/><br/>
+Each event \( i \in V \) is defined by its start time \( t^{\text{start}}\_i \) and duration \( \text{duration}\_i \), where \( t^{\text{end}}\_i = t^{\text{start}}\_i + \text{duration}\_i \). The start time \( t^{\text{start}}\_i \) denotes the minute within the total Olympic timeline when event \( i \) begins.<br/><br/>
 
-Each event \( i \in V \) has an associated ticket price \( c_i \). Additionally, there is an average travel cost per minute \( c_{ij} \) for each arc \( (i, j) \in A \). The total travel cost between events \( i \) and \( j \) is given by \( c_{ij} \times t_{ij} \), where \( t_{ij} \) represents the travel time in minutes between the two events. Spectators have a maximum budget \( B \), which serves as an upper limit on total costs, covering both ticket prices and travel expenses.<br/><br/>
+Each event \( i \in V \) has an associated ticket price \( c*i \). Additionally, there is an average travel cost per minute \( c*{ij} \) for each arc \( (i, j) \in A \). The total travel cost between events \( i \) and \( j \) is given by \( c*{ij} \times t*{ij} \), where \( t\_{ij} \) represents the travel time in minutes between the two events. Spectators have a maximum budget \( B \), which serves as an upper limit on total costs, covering both ticket prices and travel expenses.<br/><br/>
 
 In addition to costs, each event \( i \in V \) is assigned a preference score \( p_i \), reflecting spectator interest in attending that event.<br/><br/>
 
-Let \( x_{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where \( x_{ij} = 1 \) indicates a spectator travels from event \( i \) to event \( j \), and \( x_{ij} = 0 \) otherwise. Similarly, let \( w_i \) be a binary decision variable for vertex \( i \in V \), where \( w_i = 1 \) indicates attendance at event \( i \), and \( w_i = 0 \) otherwise.<br/><br/>
+Let \( x*{ij} \) be a binary decision variable for arc \( (i, j) \in A \), where \( x*{ij} = 1 \) indicates a spectator travels from event \( i \) to event \( j \), and \( x\_{ij} = 0 \) otherwise. Similarly, let \( w_i \) be a binary decision variable for vertex \( i \in V \), where \( w_i = 1 \) indicates attendance at event \( i \), and \( w_i = 0 \) otherwise.<br/><br/>
 
 The optimization problem is formulated as follows:
-
 
 $$
 \begin{align}
@@ -63,13 +60,9 @@ $$
 \end{align}
 $$
 
-
-
 <p align="justify">
 where, <br/><br/>
 </p>
-
-
 
 $$
 \begin{align}
@@ -77,12 +70,9 @@ $$
 \end{align}
 $$
 
-
-The objective function \( Z \) aims to maximize the total preference score, thereby prioritizing events that spectators are highly interested in attending. Constraints ensure logical sequencing of events (\( \ref{eq:sequence_1} \) and \( \ref{eq:sequence_2} \)), define the start (\( \ref{eq:start} \)) and end (\( \ref{eq:end} \)) of the viewing schedule, enforce feasible travel times (\( \ref{eq:travel_time} \)), and maintain budget constraints (\( \ref{eq:budget} \)). Variables \( x_{ij} \) and \( w_i \) are binary, ensuring the model's feasibility and practical application.
-
+The objective function \( Z \) aims to maximize the total preference score, thereby prioritizing events that spectators are highly interested in attending. Constraints ensure logical sequencing of events (\( \ref{eq:sequence*1} \) and \( \ref{eq:sequence_2} \)), define the start (\( \ref{eq:start} \)) and end (\( \ref{eq:end} \)) of the viewing schedule, enforce feasible travel times (\( \ref{eq:travel_time} \)), and maintain budget constraints (\( \ref{eq:budget} \)). Variables \( x*{ij} \) and \( w_i \) are binary, ensuring the model's feasibility and practical application.
 
 </p>
-
 
 <p align="justify">
 
@@ -94,7 +84,6 @@ Preference scores were allocated to each event based on spectator interest, cate
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-07-15-olympics-planner/routejpg.jpg" class="img-fluid rounded z-depth-1" %}
 
-
 ## Conclusion
 
 <p align="justify">
@@ -102,7 +91,6 @@ This research introduces a novel approach to optimizing Olympic Game-Watching Sc
 
 To make this tool available to the public, we developed a website where users can create their own itinerary for the 2024 Paris Olympic Games.<br/><br/>
 
-Explore your custom Olympic schedule here:  <a href = "https://olympicsplanner.ace.cos.ufrj.br/"> Olympics Planner 2024</a>
+Explore your custom Olympic schedule here: <a href = "https://olympicsplanner.ace.cos.ufrj.br/"> Olympics Planner 2024</a>
 
 </p>
-

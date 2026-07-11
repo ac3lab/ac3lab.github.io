@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Predicting Match Results in Football - Part 1"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jpg
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
-
 ---
 
 ---
@@ -30,26 +28,21 @@ Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/200
   
 <div  style="text-align: justify">
 
-In this series of posts, we will explore some methods to predict football clubs' winning percentage. In this first post, we will discuss two statistics: the winning percentage and a variation of it called the Pythagorean expectation. The data used will be from the latest seasons of major European leagues (23-24) and the Brazilian league (24), extracted from the FBREF website.  <br/><br/>
+In this series of posts, we will explore some methods to predict football clubs' winning percentage. In this first post, we will discuss two statistics: the winning percentage and a variation of it called the Pythagorean expectation. The data used will be from the latest seasons of major European leagues (23-24) and the Brazilian league (24), extracted from the FBREF website. <br/><br/>
 
 <h3> <b> What is the Pythagorean Expectation? </b> </h3>
 
 The Pythagorean expectation is an analytical formula initially used in baseball. It was created by Bill James, a renowned statistician and pioneer in sports data analysis, who wrote dozens of books studying baseball through statistics to determine why teams win or lose. This formula aims to estimate the percentage of games a team should have won based on the number of runs they scored and allowed. In football, the equivalent would be goals scored and goals conceded. <br/><br/>
 
-
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-02-12-post_pitagorica_1/image1.png" class="img-fluid rounded z-depth-1" %}
-
 
 </div>
 
 <center>The name of the statistic comes from the similarity of its formula to the Pythagorean theorem. <br/><br/></center>
 
-
 Comparing a team's winning percentage with its Pythagorean expectation can help evaluate which teams are performing above expectations and which are underperforming. <br/><br/>
-
-
 
 <h3> <b> The Research </b> </h3>
 
@@ -66,7 +59,6 @@ After extracting the data and performing basic table cleaning, the result is a D
 </div>
 
 <center>This is the way the data is extracted from FBREF. <br/><br/></center>
-
 
 We separated each team's goals and determined the winner of each match. This allows us to calculate the winning percentage—where a win is worth 1, a draw is worth 0.5, and a loss is worth 0. The sum of these values is then divided by the number of games played (<a  href = "https://en.wikipedia.org/wiki/Winning_percentage">Wikipedia</a>). <br/><br/>
 
@@ -93,12 +85,10 @@ To finalize our table, we calculate the Pythagorean expectation and merge the Fi
 Code for Calculating wpc and pyth: <br/> <br/>
 
 {% highlight python linenos %}
-PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G']  # win percentage - (Win Value) / (Games Played)
-PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']**2)  # pythagorean expectation - (Goals For)^2 / ((Goals For)^2 + (Goals Against)^2)
+PrimeiroTurno['win_percentage'] = PrimeiroTurno['W'] / PrimeiroTurno['G'] # win percentage - (Win Value) / (Games Played)
+PrimeiroTurno['pythagorean'] = PrimeiroTurno['GF']**2 / (PrimeiroTurno['GF']**2 + PrimeiroTurno['GA']\*\*2) # pythagorean expectation - (Goals For)^2 / ((Goals For)^2 + (Goals Against)^2)
 {% endhighlight %}
 <br/><br/>
-
-
 
 <h3> <b> Discussing Regression Graphs and Correlation </b></h3>
 
@@ -111,7 +101,6 @@ As seen in the image below, the Pythagorean expectation in the first half of the
 </div>
 
 <center> The relationship between <b>pythagorean_x</b> and <b>win_percentage_x</b> in the First Half is represented in the graph. The line represents a linear regression fitted to the data, showing the relationship between the two variables. <br/><br/></center>
-
 
 But what we really want to know is: which of these statistics has a stronger relationship with a team’s winning percentage at the end of the season? To analyze this, we can generate a correlation table comparing these statistics between the First Half and Second Half of the season. <br/><br/>
 
@@ -221,8 +210,6 @@ Based on the experiment’s results, we decided to analyze how much team perform
   </tbody>
 </table>
 
-
-
 <br/><br/>
 
 <h4>Performance Difference Calculation:</h4>
@@ -230,7 +217,6 @@ Based on the experiment’s results, we decided to analyze how much team perform
 \[
 \left( \frac{\text{Second Half Performance}}{\text{First Half Performance}} - 1 \right) \times 100\%
 \]
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 

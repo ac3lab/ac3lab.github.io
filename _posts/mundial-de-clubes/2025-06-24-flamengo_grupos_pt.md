@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "A Dominante Performance do Flamengo na Fase de Grupos do Mundial de Clubes"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Football Team - Murilo Jorge
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 

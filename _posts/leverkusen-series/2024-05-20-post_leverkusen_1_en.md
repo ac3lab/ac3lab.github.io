@@ -1,16 +1,16 @@
 ---
 layout: post
-title: In-Depth Analysis of Bayer Leverkusen - Xabi Alonso's Playing Style 
+title: In-Depth Analysis of Bayer Leverkusen - Xabi Alonso's Playing Style
 date: 2024-05-20 10:00:00
 description:
 tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Caio Santos e Lucas Calmon
-
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_leverkusen_1_pt/"> clique aqui.</a>
 </p>
@@ -23,13 +23,11 @@ Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/last_minute.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 There’s been one unbeaten team in all competitions for exactly one year, since May 2023. Champions of their national league, finalists in their country’s cup and in the UEFA competition. In moments when it seems like this team is finally going to lose, they come back with an unshakeable determination, score goals in added time and maintain their unbeaten streak and sequence in championships. How did a team that hadn't attracted attention in soccer for a few years manage to become a top power in European soccer, with the longest unbeaten streak in history? In this series of posts, ACE Laboratory will analyze and identify the playing style of Bayer Leverkusen and their coach Xabi Alonso, aiming to uncover the reasons behind the magnificent run the team has done in 2024.<br/><br/>
 
 <h2>What is Xabi Alonso’s playing style?</h2>
 
 Xabi Alonso, a former player who has won every possible title and is known for being extremely technical and analytical, worked with gigantic teams and excellent coaches like Mourinho, Guardiola, and Ancelotti. Each with their different styles, Xabi managed to absorb the best qualities from each, becoming a great communicator, strategist, and football enthusiast. After completing the UEFA course, he started in Real Madrid's U-14 team and soon moved to Real Sociedad B. There, technical skills and ball control were the focus, and the club was promoted to the second division for the first time in 60 years. From there, Bayer Leverkusen saw in Xabi someone who could save the team from the critical situation of relegation, and history began to be made. But how does Bayer Leverkusen play now, having been led by Alonso for over a year?<br/><br/>
-
 
 <h3>Bayer Leverkusen without possession</h3>
 
@@ -55,16 +53,15 @@ Classified as a middle ground between Pep Guardiola's positional play and the re
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/passing_networks.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.<br/><br/>  
+Often, the wing-back Grimaldo operates defensively on the left, leaving two central defenders and a right-back to create space on the field and allow for "third man combinations." In these combinations, two players (usually Xhaka and Palacios) quickly pass the ball between themselves to draw defenders, creating space for a third player (usually Wirtz) to receive the ball. This tactic is characteristic of the relational play style.<br/><br/>
 
-In that way, the wing-backs have a much more significant role in the game, both offensively and defensively, switching sides of the field while attacking and defending. This can be observed in the passing network from the match against Augsburg, where wing-back Frimpong appeared more advanced than any other Bayer player.<br/><br/>  
+In that way, the wing-backs have a much more significant role in the game, both offensively and defensively, switching sides of the field while attacking and defending. This can be observed in the passing network from the match against Augsburg, where wing-back Frimpong appeared more advanced than any other Bayer player.<br/><br/>
 
-By employing this tactic, Xabi Alonso has maximized the individual technical skills of his wide players, such as Frimpong and Grimaldo, who have contributed to 39 goals in the Bundesliga. In other words, nearly half of the team's goals have come through these two players.<br/><br/>  
+By employing this tactic, Xabi Alonso has maximized the individual technical skills of his wide players, such as Frimpong and Grimaldo, who have contributed to 39 goals in the Bundesliga. In other words, nearly half of the team's goals have come through these two players.<br/><br/>
 
 <div style="width: 90%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/augsburg.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
 
 The use of this tactic is evidenced by the number of passes made by Bayer, the highest in the Bundesliga in the 2023-24 season. Additionally, the four advanced players move a lot, preventing the opposing defenders from pushing up their defensive line.<br/><br/>
 
@@ -86,7 +83,6 @@ Moreover, the German team doesn't rely solely on movement and masterful passing 
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-20-post_leverkusen_1/dead_balls.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h3>Final third of the field</h3>
 
 The final third of the German team's attack is almost unpredictable. The advance of the wing-backs through the flanks mixed with midfielders infiltrating the box, along with a bit of accurate long-range shooting, create Xabi Alonso's magical formula for the team's incredible effectiveness. Thus, a statistic that demonstrates the unpredictability of the team led by the Spanish maestro is the percentage of attacks from each offensive third of the field, with the left, middle, and right accounting for 33%, 34%, and 33% respectively.<br/><br/>
@@ -105,7 +101,6 @@ The team is so efficient that it ranks in the top 3 in chances created from open
 </div>
 
 <h3>Weakness</h3>
-
 
 Due to the relational play, if the team loses the ball in the attacking side and fails apply quick pressure, the opponent has a lot of space on the flanks of the field (where the full-backs should be), since the players concentrate in a compressed manner for effective passing combinations and triangles. However, if the midfielders in transition cover the flanks, the central area becomes weakened and opportunities arise for the opponent. The system relies entirely on the players' perfection and minimizing errors. An example of this was observed in the away game against Qarabag in the UEFA Europa League, where both goals conceded were due to possession losses and effective counter-attacks by the Azerbaijani team.<br/><br/>
 

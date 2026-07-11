@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Drama e Heroísmo: Palmeiras Enfrenta Chelsea em disputa das Quartas de Final"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 
@@ -81,4 +78,4 @@ O Chelsea saiu vitorioso nesta partida, como previsto pelas probabilidades da Op
 
 Em resumo, foi uma partida que mostrou a importância da disciplina tática, profundidade do elenco e compostura sob pressão — áreas onde o Chelsea manteve a vantagem e a converteu em uma vitória difícil, mas clara. <br/><br/>
 
-</div> 
+</div>

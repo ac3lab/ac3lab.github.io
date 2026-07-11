@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: Copa do Mundo Feminina de 2023 - Analisando a evolução das principais equipes
@@ -18,14 +17,12 @@ author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
 hidden: true
 hidden_post: true
-
-
 ---
 
 ---
 
 <h2><b>Introdução</b></h2>
-  
+
 
 <div  style="text-align: justify">
 
@@ -35,23 +32,17 @@ Neste post, iremos fazer uma análise sobre a evolução das seleções na Copa 
 
 <h3><b>Espanha</b></h3>
 
-A Espanha se afirmou, após vencer a Copa do Mundo de 2023, como uma das <b>melhores equipes do futebol mundial</b>. Com uma excelente campanha na última edição, venceu o título em uma final contra a Inglaterra (essas duas equipes foram o assunto do <a  href = "https://ac3lab.github.io/blog/2024/post_women_world_cup_1_en/"> primeiro post da nossa série</a>.  <br/><br/>
-
-
+A Espanha se afirmou, após vencer a Copa do Mundo de 2023, como uma das <b>melhores equipes do futebol mundial</b>. Com uma excelente campanha na última edição, venceu o título em uma final contra a Inglaterra (essas duas equipes foram o assunto do <a  href = "https://ac3lab.github.io/blog/2024/post_women_world_cup_1_en/"> primeiro post da nossa série</a>. <br/><br/>
 
 Porém, em 2019, a situação da Espanha era bem diferente. <b>Com menos jogadoras consolidadas e sem várias das jogadoras jovens que fizeram a diferença em 2023</b>, como Salma Paralluelo, a Espanha passou na fase de grupos pelo critério do saldo de gols, com uma campanha abaixo da média (1V, 1E, 1D). Nas oitavas, <b>foram eliminadas pelos Estados Unidos</b>, vencedores daquela edição. <br/><br/>
 
-
- 
 <h3> <b>Inglaterra</b> </h3>
 
 <b>A Inglaterra apresentou boas campanhas nos últimos dois mundiais</b>. Em 2019 terminou em quarto lugar, perdendo para a Suécia logo depois de perder nas semifinais para os Estados Unidos, que foram campeões daquela edição. Além disso, como falamos, a seleção inglesa é a atual vice-campeã do mundo, derrotada na final contra a Espanha. <br/><br/>
 
 Em 2019, apesar de ter caído em um grupo difícil, com Japão, Argentina e Escócia, não enfrentou dificuldades e passou em primeiro com 3 vitórias em 3 jogos. No mata-mata, foram derrotadas apenas nas semifinais por 2x1 em uma partida contra os Estados Unidos. <br/><br/>
 
-
 <h3> <b>Estados Unidos</b> </h3>
-
 
 Na Copa de 2019, <b>os Estados Unidos conquistaram seu quarto título mundial</b> (venceram também 1991, 1999 e 2015), sendo o segundo consecutivo, em uma final contra a Holanda. Nesta edição, as campeãs bateram um recorde que é mantido até hoje: <b>equipe com mais gols em uma edição (26!)</b>. <br/><br/>
 
@@ -84,10 +75,9 @@ Primeiro, é importante falar que atualizamos a nossa definição de ação prog
 Analisando os passes e a progressão dessas equipes, existem alguns tópicos a ser destacados: <br/><br/>
 
 - É importante destacar a diferença na quantidade de passes por partida da Espanha nas duas campanhas, com a Espanha de 2023 sendo, com sobras, a <b> equipe com mais passes e passes progressivos entre todas que disputaram as duas copas</b>. Essa é uma clara consolidação do estilo de jogo fundamentado em <b> troca de passes, posse de bola e pressão </b> que é implementado tanto na seleção feminina quanto na masculina. <br/><br/>
-- Todas essas equipes (consolidadas no cenário de seleções) <b> passaram a realizar mais passes na transição de uma Copa para a outra</b>, exceto a seleção dos Estados Unidos. Talvez seja uma tendência evolutiva do futebol de seleções feminino: <b> a troca de passes e a proposição do jogo são fatores-chave para o sucesso.</b>  <br/><br/>
+- Todas essas equipes (consolidadas no cenário de seleções) <b> passaram a realizar mais passes na transição de uma Copa para a outra</b>, exceto a seleção dos Estados Unidos. Talvez seja uma tendência evolutiva do futebol de seleções feminino: <b> a troca de passes e a proposição do jogo são fatores-chave para o sucesso.</b> <br/><br/>
 
 <h3> <b>Chutes e Gols Esperados</b> </h3>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -98,12 +88,10 @@ Analisando os passes e a progressão dessas equipes, existem alguns tópicos a s
 <center> Gráfico relacionando chutes por partida e xG por partida<br/><br/></center>
 
 Nessa gráfico relacionando a quantidade de chutes por partida ao xG acumulado por partida (desconsiderando pênaltis), temos as seguintes observações: <br/><br/>
- 
-- Novamente, a evolução da Espanha merece destaque. A equipe teve melhorias consideráveis no ataque, se tornando o <b> time com mais chutes e gols esperados entre todas as equipes nas últimas duas edições de Copa do Mundo</b>.  <br/><br/>
+
+- Novamente, a evolução da Espanha merece destaque. A equipe teve melhorias consideráveis no ataque, se tornando o <b> time com mais chutes e gols esperados entre todas as equipes nas últimas duas edições de Copa do Mundo</b>. <br/><br/>
 - Apesar de um aumento razoável nos chutes, os Estados Unidos tiveram uma diminuição no seu xG se comparados a 2019, indicando que a <b> equipe diminuiu, na média, a qualidade das suas chances de gol</b>. Além disso, a eficiência ofensiva da equipe também diminuiu drasticamente. Desconsiderando os pênaltis, os Estados Unidos de 2019 tiveram um <b> saldo positivo de 8.63 (!!!) </b> na diferença entre gols e xG. Em 2023, o saldo foi de <b> -3.01</b> . <br/><br/>
 - A Inglaterra de 2023, mesmo sendo um <b> destaque na quantidade de passes e passes progressivos</b> , não tem o mesmo impacto quando estamos falando da finalização das jogadas. Entre as equipes comparadas, é a que tem <b> menos xG por partida (1.26)</b>, corroborando o que falamos no nosso primeiro post quando comentamos que a Inglaterra de 2023 tinha um <b> estilo de jogo bastante metódico</b>. Mesmo com uma capacidade boa de progressão, a equipe não arrisca muitos chutes e, consequentemente, não acumula muitos gols esperados se comparada às outras seleções de ponta. <br/><br/>
-
-
 
 <h2><b>Considerações finais e conclusão</b></h2>
 
@@ -111,6 +99,4 @@ Durante todo o post, focamos a comparação entre seleções consolidadas no cen
 
 Assim, finalizamos mais um post da nossa série sobre a Copa do Mundo Feminina de 2023, e o quarto post será o último da série. Fiquem ligados para os próximos posts! <br/><br/>
 
-
 <div>
-

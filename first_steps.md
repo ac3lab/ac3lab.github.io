@@ -126,6 +126,7 @@ make setup
 ```
 
 Esse comando irá:
+
 - Instalar as gems Ruby (`bundle install`)
 - Instalar pacotes Node (`npm install`)
 - Instalar `nbconvert` e `jupyter` via pip3 (necessários para renderizar notebooks)
@@ -151,20 +152,20 @@ O servidor inicia em [http://127.0.0.1:4000](http://127.0.0.1:4000) com live rel
 make help   # lista todos os targets com descrição
 ```
 
-| Comando | Descrição |
-|---|---|
-| `make` | Serve o site com live reload (padrão) |
-| `make serve-open` | Serve e abre o navegador automaticamente |
-| `make serve-drafts` | Serve incluindo posts em rascunho |
+| Comando                  | Descrição                                   |
+| ------------------------ | ------------------------------------------- |
+| `make`                   | Serve o site com live reload (padrão)       |
+| `make serve-open`        | Serve e abre o navegador automaticamente    |
+| `make serve-drafts`      | Serve incluindo posts em rascunho           |
 | `make serve-incremental` | Serve com rebuild incremental (mais rápido) |
-| `make build` | Build de produção (gera `_site/`) |
-| `make build-dev` | Build de desenvolvimento |
-| `make clean` | Remove artefatos gerados (`_site/`, caches) |
-| `make lint` | Roda verificações do pre-commit |
-| `make links` | Verifica links quebrados com `lychee` |
-| `make ruby-setup` | Instala rbenv + Ruby 3.3.5 (detecta o SO) |
-| `make install` | Instala gems + npm + pip |
-| `make setup` | Instala tudo + configura git hooks |
+| `make build`             | Build de produção (gera `_site/`)           |
+| `make build-dev`         | Build de desenvolvimento                    |
+| `make clean`             | Remove artefatos gerados (`_site/`, caches) |
+| `make lint`              | Roda verificações do pre-commit             |
+| `make links`             | Verifica links quebrados com `lychee`       |
+| `make ruby-setup`        | Instala rbenv + Ruby 3.3.5 (detecta o SO)   |
+| `make install`           | Instala gems + npm + pip                    |
+| `make setup`             | Instala tudo + configura git hooks          |
 
 ---
 

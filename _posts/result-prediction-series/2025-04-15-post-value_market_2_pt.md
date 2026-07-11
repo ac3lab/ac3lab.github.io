@@ -10,7 +10,6 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 hidden: true
 hidden_post: true
 giscus_comments: true
-
 ---
 
 <h2> <b> Introdução </b> </h2>
@@ -22,9 +21,7 @@ Neste post, vamos apresentar mais um método para previsão de vitória. Desta v
 <div style="text-align: justify">
 O dinheiro tem um grande papel no futebol moderno. Com o mercado de transferências cada vez mais inflacionado, mostra-se necessário gastar cada vez mais dinheiro nas janelas de transferências para manter a competitividade nas maiores ligas. A exponente profissionalização do esporte também possui grande influência no encarecimento do custo de manter um time, visto que atualmente são necessários mais gastos em estrutura e um ambiente de qualidade para se manter na frente dos demais.
 
-
 Inclusive, estudos na Premier League e Championship (2011-2020) mostraram que existe uma correlação entre a folha salarial de um time e a posição que esse time alcança na tabela (Soccernomics, Simon Kuper e Stefan Szymansk). O dinheiro move o futebol. Por isso, vamos utilizar o valor de mercado dos clubes do Brasileirão para tentar prever o resultado final das partidas.
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img1.jpeg" class="img-fluid rounded z-depth-1" %}
@@ -40,8 +37,8 @@ Nós iremos usar os dados da temporada 2023.
 O dataset tem duas partes principais:
 <ul>
     <br>
-  <li>Os dados das partidas: informações como time da casa, time visitante, resultado, data da partida e odds de vitória (casa, empate, visitante), extraídas do site <a  href = "(https://football-data.co.uk/)">Footbal-data</a> e da casa de apostas Pinnacle.</li>
-  <li>O valor de mercado dos times do Brasileirão 2023, retirados do site <a  href = "(https://www.transfermarkt.com.br)">Transfermarkt</a>.</li>
+  <li>Os dados das partidas: informações como time da casa, time visitante, resultado, data da partida e odds de vitória (casa, empate, visitante), extraídas do site <a  href="https://football-data.co.uk/">Footbal-data</a> e da casa de apostas Pinnacle.</li>
+  <li>O valor de mercado dos times do Brasileirão 2023, retirados do site <a  href="https://www.transfermarkt.com.br">Transfermarkt</a>.</li>
 </ul>
 
 Vamos agora dar uma olhada no nosso dataset das partidas. Ele possui cerca de 19 campos, mas só os seguintes nos interessam:
@@ -75,7 +72,6 @@ Unimos os dois datasets, adicionando as colunas de valor de mercado do time da c
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
 
 A variável que vamos utilizar para realizar a previsão de resultados é a razão entre o <code>tmH</code> (valor de mercado do time da casa) e <code>tmA</code> (valor de mercado do time da visitante). Mais especificamente o <b>logaritmo</b> dessa razão.
 
@@ -117,16 +113,14 @@ O modelo consiste em descobrirmos o \( \alpha_1 \) que é o ponto que divide a v
 
 Para uma melhor visualização dessa explicação, basta observar o gráfico abaixo, no qual o \( \alpha_1 \) é representado por \( \theta_1 \):
 
-
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
-
 Usamos um modelo de Regressão Logística Ordinal, que relaciona uma variável resposta ordinal (<code>winValue</code>) a uma preditora contínua (<code>logTmRatio</code>).
 
 O modelo encontra dois pontos de corte:
+
 <ul>
   <li><b>\( \alpha_1 \)</b>: separa vitória do mandante de empate ou vitória do visitante</li>
   <li><b>\( \alpha_2 \)</b>: separa empate de vitória do visitante</li>
@@ -134,8 +128,6 @@ O modelo encontra dois pontos de corte:
 </ul>
 
 Agora que entendemos sobre o modelo, vamos preparar o seu treinamento. O dataset de treino consiste nos primeiros 200 jogos da temporada e os 180 jogos restantes serão usados como dataset de teste.
-
-
 
 <div  style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img10.png" class="img-fluid rounded z-depth-1" %}
@@ -145,8 +137,8 @@ Agora que entendemos sobre o modelo, vamos preparar o seu treinamento. O dataset
 \(\beta \): -0.6309<br>
 \( \alpha_1 \): -0.1519<br>
 \( \alpha_2 \): 0.0533
-</div>
 
+</div>
 
 <h4><b>Cálculo das probabilidades</b></h4>
 <div style="text-align: justify">
@@ -162,6 +154,7 @@ A partir desses coeficientes, calculamos:
 </div>
 
 Vamos adicionar colunas que compare os resultados de previsão da Pinnacle e o que encontramos.
+
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img12.png" class="img-fluid rounded z-depth-1" %}
 </div>
@@ -182,13 +175,11 @@ Uma coisa importante para se considerar ao analisar esses dados é o tamanho do 
 
 Vamos fazer duas tabelas cruzadas para entendermos melhor em quais tipos de jogos nosso modelo mais erra e acerta.
 
-
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img14.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
 Note que na coluna de empates o nosso modelo não previu empates, isso é causado pelo fato de que a razão entre o valor de mercado de dois times têm uma probabilidade muito baixa de se relacionar com empate, já que se imagina que os valores de mercados do times teriam que ser próximos entre si.
-
 
 <div  style="width: 40%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img15.png" class="img-fluid rounded z-depth-1" %}
