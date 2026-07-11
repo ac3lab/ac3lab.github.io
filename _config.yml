@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: ACE Laboratory # the website title (if blank, full name will be used instead)
 first_name: ACE
 middle_name:
 last_name: Laboratory
@@ -64,9 +64,9 @@ max_width: 930px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: assets/img/ACE_Logo.jpg # The site-wide (default for all links) Open Graph preview image
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -116,7 +116,7 @@ giscus:
   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: # put your disqus shortname (DEPRECATED — use giscus above)
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # External sources.
@@ -196,9 +196,11 @@ exclude:
   - FAQ.md
   - Gemfile
   - Gemfile.lock
+  - first_steps.md
   - INSTALL.md
   - LICENSE
   - lighthouse_results/
+  - Makefile
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
@@ -278,8 +280,8 @@ display_tags: ["Football", "Analysis", "Running"] # these tags will be displayed
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [González, Amorim]
+  first_name: [Pedro, Glauco]
 
   style: apa
   locale: en

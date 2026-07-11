@@ -14,6 +14,12 @@ categories: Categoria1; Categoria2
 thumbnail: assets/img/Posts_Images/pasta-do-post/imagem-principal.extensão
 author: Nome do Autor ou Equipe
 ---
+
+**ATENÇÃO**: Tags e categorias são separadas por `;` mas NUNCA devem terminar com `;` no final. Um ponto-e-vírgula no final gera um slug vazio (`Warning: Empty slug generated`) durante o build.
+
+```
+✅ Correto:  tags: Football; Analysis; Strategy
+❌ Errado:   tags: Football; Analysis; Strategy;
 ```
 
 **IMPORTANTE**: A data deve SEMPRE ser definida como `2000-MM-DD 00:00:00` para posts em português. Isso garante que apenas os posts em inglês apareçam na página principal do site, mantendo o português oculto mas acessível via URL direta.

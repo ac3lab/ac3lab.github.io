@@ -3,8 +3,8 @@ layout: post
 title: "Risk vs Reward: Strategic Analysis of Free Kick Takes"
 date: 2026-02-24 00:00:00:00
 description: "Quantitative risk-reward analysis of free-kick taking using StatsBomb data."
-tags: Football; Analysis; Strategy;
-categories: Football; Analytics;
+tags: Football; Analysis; Strategy
+categories: Football; Analytics
 thumbnail: assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/thumbnail.jpg
 author: Ace Laboratory Team - Murilo Jorge and Pedro Lopes
 ---

@@ -1,6 +1,6 @@
 ---
-layout: post
-title: "Dashboard: Escócia x Brasil"
+layout: page
+title: Escócia x Brasil
 date: 2026-06-24 00:00:00
 description: "Visualização interativa dos dados da Partida"
 permalink: /dashboards/escocia_brasil/
@@ -28,9 +28,9 @@ author: Ace Laboratory Team
     /* 3. Ajusta o container do iframe para colar nas bordas e ocupar a altura restante da tela */
     .dashboard-container {
         width: 100%;
-        /* Calcula a altura da tela menos o espaço estimado do header. 
+        /* Calcula a altura da tela menos o espaço estimado do header.
            Se o seu header for muito alto, aumente o valor de 80px (ex: 100px) */
-        height: calc(100vh - 80px); 
+        height: calc(100vh - 80px);
         margin: 0;
         padding: 0;
         overflow: hidden;
@@ -45,7 +45,7 @@ author: Ace Laboratory Team
 </style>
 
 <div class="dashboard-container">
-    <iframe src="{{ '/assets/dashboards/dashboard_brasil_scotland.html' | relative_url }}" 
+    <iframe src="{{ '/assets/dashboards/dashboard_brasil_scotland.html' | relative_url }}"
             scrolling="yes"
             class="dashboard-frame">
     </iframe>
