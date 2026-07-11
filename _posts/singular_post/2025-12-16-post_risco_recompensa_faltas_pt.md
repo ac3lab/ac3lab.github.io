@@ -3,8 +3,8 @@ layout: post
 title: "Risco x Recompensa: Análise Estratégica de Cobranças de Falta"
 date: 2000-10-09 00:00:00
 description: "Análise quantitativa do risco-recompensa em cobranças de falta utilizando dados da StatsBomb"
-tags: Football; Analysis; Strategy;
-categories: Football; Analytics;
+tags: Football; Analysis; Strategy
+categories: Football; Analytics
 thumbnail: assets/img/Posts_Images/2025-12-16-post_risco_recompensa_faltas/thumbnail.jpg
 author: Ace Laboratory Team - Murilo Jorge e Pedro Lopes
 ---
