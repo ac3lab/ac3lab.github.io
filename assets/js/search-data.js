@@ -1470,6 +1470,13 @@ ninja.data = [{
           window.open("mailto:%61%63%65@%63%6F%73.%75%66%72%6A.%62%72", "_blank");
         },
       },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/ac3lab", "_blank");
+        },
+      },{
         id: 'social-company_linkedin',
         title: 'Company_linkedin',
         section: 'Socials',
