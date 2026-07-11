@@ -1,0 +1,17 @@
+#!/bin/sh
+# pre-commit hook: impede commits diretos na branch 'master'
+
+BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+if [ "$BRANCH" = "master" ]; then
+  echo ""
+  echo "❌  Commits diretos na branch 'master' não são permitidos."
+  echo "    Por favor, crie uma branch de feature e abra um pull request."
+  echo ""
+  echo "    Exemplo:"
+  echo "      git checkout -b feat/nome-da-sua-feature"
+  echo ""
+  exit 1
+fi
+
+exit 0
