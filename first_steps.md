@@ -267,3 +267,4 @@ ac3lab.github.io/
 - Tags e categorias são separadas por `;` e **nunca** devem terminar com `;`.
 - Veja [`CLAUDE.txt`](../CLAUDE.txt) para o template completo de posts.
 - Veja [`CONTRIBUTING.md`](../CONTRIBUTING.md) para o fluxo de contribuição via Pull Request.
+
