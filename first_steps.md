@@ -265,5 +265,5 @@ ac3lab.github.io/
 - **Posts em inglês** usam a data real (ex.: `2025-10-09`).
 - **Posts em português** usam `2000-MM-DD` como data para ficarem ocultos da página principal mas acessíveis por URL direta.
 - Tags e categorias são separadas por `;` e **nunca** devem terminar com `;`.
-- Veja [`CLAUDE.txt`](../CLAUDE.txt) para o template completo de posts.
-- Veja [`CONTRIBUTING.md`](../CONTRIBUTING.md) para o fluxo de contribuição via Pull Request.
+- Veja [`CLAUDE.txt`](./CLAUDE.txt) para o template completo de posts.
+- Veja [`CONTRIBUTING.md`](./CONTRIBUTING.md) para o fluxo de contribuição via Pull Request.
