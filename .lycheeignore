@@ -2,7 +2,7 @@
 http://127\.0\.0\.1.*
 http://localhost.*
 
-# Ignore external sites that block bots (403 Forbidden / CAPTCHA)
+# Ignore external sites that block bots (403 Forbidden / CAPTCHA / 999 / HandshakeFailure)
 .*transfermarkt\.com\.br.*
 .*fbref\.com.*
 .*nba\.com.*
@@ -10,6 +10,8 @@ http://localhost.*
 .*folhavitoria\.com\.br.*
 .*realpython\.com.*
 .*tickets\.paris2024\.org.*
+.*linkedin\.com.*
+.*lattes\.cnpq\.br.*
 
 # Ignore temporarily down or internal lab URLs
 .*olympicsplanner\.ace\.cos\.ufrj\.br.*
