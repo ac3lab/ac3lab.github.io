@@ -1,2 +1,18 @@
-linkedin.com
-reddit.com
+# Ignore localhost and local dev URLs
+http://127.0.0.1*
+http://localhost*
+
+# Ignore external sites that block bots (403 Forbidden / CAPTCHA)
+*transfermarkt.com.br*
+*fbref.com*
+*nba.com*
+*neorace.com.br*
+*folhavitoria.com.br*
+*realpython.com*
+*tickets.paris2024.org*
+
+# Ignore temporarily down or internal lab URLs
+*olympicsplanner.ace.cos.ufrj.br*
+
+# Ignore old template URLs from al-folio docs that no longer exist
+*github.com/alshedivat/al-folio*
