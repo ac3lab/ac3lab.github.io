@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Fluminense vs Chelsea: A Saga dos Azarões Brasileiros Termina na Semifinal"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 

@@ -15,7 +15,6 @@ author: Ace Laboratory Team - Gabriel Madruga, Antonio Magalhães e Miguel Angel
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_faltas_pt/"> clique aqui.</a>
 </p>
 
-
 <style>body {text-align: justify}</style>
 
 <h2><b>NBA</b></h2>
@@ -30,15 +29,11 @@ Free throws are an essential component of scoring and can reflect the offensive 
     </div>
 </div>
 
-
-
 A peculiarity of fouls in basketball is that they can be strategically exploited, as in the case of Hack-a-Shaq, a tactic that emerged in 1978 and became popular when Don Nelson, coach of the Dallas Mavericks, applied it against Shaquille O'Neal, giving rise to the strategy's name. The goal of Hack-a-Shaq consists of committing intentional fouls on an opposing player with low free throw efficiency, forcing them to shoot free throws instead of allowing normal offensive flow. Although Shaq is the most famous example, the strategy has been applied to other great players, such as Dennis Rodman, Ben Simmons and, in the recent playoffs, Mitchell Robinson, center for the New York Knicks, who converted only 45.2% of his free throws, well below the NBA average of 77.7% in the 2024-25 season.
 
 In the series between New York Knicks and Boston Celtics, won by the Knicks 4-2, center Mitchell Robinson became the central target of the intentional foul strategy. Despite his low free throw efficiency, Robinson recorded an offensive rating of 116 — a statistic that measures how many points a player generates for the team per 100 possessions. However, if he were forced to go to the free throw line on every possession, the Knicks would have an offensive rating of only 90.4 in the series, which shows how the strategy could, in theory, significantly reduce the team's offensive efficiency. On the other hand, applying Hack-a-Shaq has trade-offs: besides eliminating transition attack opportunities, it forces defenders to accumulate fouls, running the risk of being eliminated when they reach the limit of six personal fouls. Even so, the Celtics coach took this tactic to the extreme, committing intentional fouls even before the team was in the bonus, just to reach the five collective fouls faster and force Robinson to go to the free throw line.
 
 In conclusion, fouls in NBA basketball go far beyond simple game interruptions: they shape strategies, define the pace of games and can be both a defensive resource and a weakness exploited by the opponent. Between the impact of personal fouls on bonus accumulation, the discipline required to avoid technical fouls and the severity of flagrant fouls, to the application of tactics like Hack-a-Shaq, it becomes clear how this element of the rules is central to the league's identity. More than punishments, fouls represent strategic choices that directly influence the outcome of a season.
-
-
 
 <h2><b>NFL</b></h2>
 
@@ -96,7 +91,6 @@ Each type of these fouls has its specific markings and penalties:
 
 Not all fouls will result in loss of yards, they can result in nullification/replay of the play, automatic first downs. Roughing the Passer and Targeting fouls are considered serious, and in addition to penalizing, they are reviewed by the league. These fouls have become much stricter, due to injuries and protection of the Quarterback (the passer, and generally, the team's main player).
 
-
 A difference compared to other sports is how foul dynamics work: The team that suffered the foul chooses to accept or reject the foul. Let's imagine the following scenario:
 
 Team A is on third down (third attempt to advance out of four total), needing 4 yards to achieve the necessary 10. The play begins and they manage to score a touchdown from that play, but there was a false start foul by team B. Team A has two options:
@@ -105,14 +99,9 @@ Option A: Accept the foul. Since they accepted the foul, the penalty is applied 
 
 Option B: Reject the foul. If they reject the foul, what counts is the play that occurred as a result, regardless of whether team A advanced or not. In this case, if they reject it, the score that counts is the touchdown, since that was the result of the play.
 
-
-
 Unlike tactical fouls made in football and basketball, American football does not have this type of foul, because of the nature of the sport; a more static and less fluid and continuous sport like football and basketball. However, fouls can cause psychological impacts on players and affect their performance on the field.
 
-
-
 NFL fouls were much less restrictive than they are today. As it was a sport with less equipment, fouls were much more violent than they are today, and this made the image that was propagated of the sport be that of a brutal and violent sport. Between 2015-2024, only 3 seasons have less than 200 injuries and concussions, including Preseason and Regular Season (2020, 2021 and 2024). The NFL today is protecting its players and athletes more, so that more people with college dreams and adults can play without having to worry about a permanent injury in the future, and so that spectators can be captivated, not by violence, but by the beauty of the sport.
-
 
 <h2><b>FOOTBALL</b></h2>
 

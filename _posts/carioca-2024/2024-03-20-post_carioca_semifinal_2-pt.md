@@ -70,7 +70,6 @@ Já no tricolor, podemos destacar Lima, peça chave para o meio de campo do Flum
 
 </p>
 
-
 </div>
 
 <h2>Nova Iguaçu x Vasco</h2>
@@ -96,6 +95,7 @@ Já do lado do time da baixada fluminense, o Nova Iguaçu, mesmo sem a dominânc
 <p align="justify">
 
 Dessa forma, o Nova Iguaçu superou o Vasco e conseguiu pela primeira vez em sua história, uma vaga na final do Campeonato Carioca. Assim, a Laranja Mecânica da Baixada, como chamada pelos seus fãs, enfrentará o Flamengo nos dias <b>31/03</b> e <b>07/04</b> na disputa do título que consagra o Rei do Rio de Janeiro.
+
 </p>
 
 <h3>Destaques</h3>

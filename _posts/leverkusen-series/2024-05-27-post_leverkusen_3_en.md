@@ -7,7 +7,6 @@ tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Daniel Barros
-
 ---
 
 ---
@@ -24,7 +23,7 @@ As we covered in the first post in this series, Xabi Alonso's Bayer Leverkusen p
 
 In this post, we'll talk about the most important players for the Bundesliga champion's functioning. <br/><br/>
 
-<h3>The wingbacks, Grimaldo and Frimpong:</h3> 
+<h3>The wingbacks, Grimaldo and Frimpong:</h3>
 
 One of the most interesting and unique features of this team is the presence of two extremely attacking wing-backs, who play a big part in the build-up play and are often in the final third of the pitch to complete plays. <br/><br/>
 
@@ -44,7 +43,6 @@ On the right wingback is Dutchman <b>Jeremie Frimpong</b>. The 23-year-old was s
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/Jeremie_Frimpong.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 The evolution in performance is clearly linked to <b>the change in the player's role, which became more attacking</b> with the arrival of the Spanish coach. We can see that, comparing Frimpong's first season as a starter at Leverkusen (the only one managed entirely by Gerardo Seoane) and the following two seasons, <b>the Dutchman's number of goal-scoring involvements has doubled.</b> <br/><br/>
 
 <div style="width: 100%; margin: 0 auto; text-align: center;">
@@ -57,10 +55,9 @@ Looking at Frimpong's numbers pre-Xabi and post-Xabi, it's clear how much <b>the
 
 {% include video.liquid path="assets/img/Posts_Images/2024-05-27-post_leverkusen_3/gif_frimpong_time_final.mp4" class="img-fluid rounded z-depth-1" controls=true autoplay=true %}
 
-
 Analyzing the statistics of these two players in the Bundesliga made it even clearer what we meant when we said that this team is marked by its extremely attacking wingbacks. <br/><br/>
 
-<h3>The midfielder, Xhaka:</h3> 
+<h3>The midfielder, Xhaka:</h3>
 
 The silent highlights of Xabi Alonso's team are in the more defensive part of midfield. In this area of the pitch, there are players who, despite their great importance to the team's functioning, are little remembered because they don't have inflated offensive numbers. <br/><br/>
 
@@ -92,7 +89,7 @@ Since his arrival at Bayer Leverkusen in 2020, Wirtz has been considered <b>one 
 
 Looking at the league as a whole, Wirtz is a standout in several statistics. The German is <b>8th in the ranking of goals scored</b> (behind only center forwards, except for teammate Alejandro Grimaldo) and <b>4th in right dribbles per game</b>. <br/><br/>
 
-<h3>The striker, Boniface:</h3> 
+<h3>The striker, Boniface:</h3>
 
 Finally, let's talk about the team's center forward: 23-year-old Nigerian <b>Victor Okoh Boniface</b>. Unfortunately, Boniface was out from round 17 to round 27 due to a serious injury he suffered in January. Despite this factor reducing the sample size, it is important to talk about the striker, as he is essential to the model of play that has enchanted Europe since the start of the season. <br/><br/>
 
@@ -113,4 +110,5 @@ Despite almost 3 months out of the league, Boniface was <b>the 7th player with t
 <h2>Conclusion</h2>
 
 In the last post in our series on Bayer Leverkusen, we analyzed the data relating to some of the most important players in the undefeated Bundesliga champions. The intention was to show the impact that the young but already winning coach Xabi Alonso has had on his players, especially during this very special season for the squad. It's safe to say that the Spaniard has been responsible for “revealing” several of the team's players to the world, including getting several of them, like Grimaldo and Boniface, called up to their national teams for the first time. We can also say that the world is looking forward to seeing more of Bayer Leverkusen next season, which will put the club to the test in the Champions League and in the defense of the national title.
+
 </div>

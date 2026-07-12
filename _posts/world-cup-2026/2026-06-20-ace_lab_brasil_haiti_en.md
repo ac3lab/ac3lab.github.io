@@ -88,4 +88,3 @@ Contrasting with the difficulties of their debut, the 3-0 victory over Haiti was
 Even though the opponent may not serve as a definitive technical benchmark, the result was vital for the team's confidence, especially for Vinícius Júnior, who showed great assurance in his decision-making. The main point of concern lies with the medical department, which will need to reassess Raphinha's injury just days before the start of the knockout stage.
 
 In their next match, against Scotland, Brazil seeks to secure the top spot in Group C. The expectation is to face a much more closed and reactive side, which will once again require patience to break down defensive lines, but with the advantage of playing with their qualification already on track and in a less pressured environment.
-

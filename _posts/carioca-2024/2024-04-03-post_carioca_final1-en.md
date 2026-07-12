@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_final1-pt/"> clique aqui.</a>
 </p>
@@ -46,7 +47,6 @@ If on one side Nova Iguaçu’s attack wasn’t efficient, lots of shots were ma
 In addition to the already good numbers, Flamengo made more than 75% of its shots from inside the opponent’s box. But it was evident that the goal difference could’ve been bigger, which makes it important to say that Flamengo has less goals than Expected Goals in the last two matches. On the second leg of the semifinal, Rubro-Negro’s attack didn’t reach expectations, and against Nova Iguaçu it wasn’t different. Considering the match’s one own goal, Flamengo just scored two times, with at least 3 being expected.
 </p>
 
-
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
@@ -59,7 +59,7 @@ Scoring two goals, we have to mention Pedro when talking about this match. In ad
 </p>
 
 <p align="justify">
-Besides having few opportunities, Nova Iguaçu’s attack can be highlighted through Bill. The attacker contributed alone to almost 40% of the team’s Expected Goals, plus 5 successful dribbles and 3 key passes. Another player that we should praise is Fabricio, the goalkeeper, making 6 saves and 4 from inside the zone. 
+Besides having few opportunities, Nova Iguaçu’s attack can be highlighted through Bill. The attacker contributed alone to almost 40% of the team’s Expected Goals, plus 5 successful dribbles and 3 key passes. Another player that we should praise is Fabricio, the goalkeeper, making 6 saves and 4 from inside the zone.
 
 </p>
 

@@ -8,6 +8,7 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-03-07-post_carioca_compilado/Carioca_2024_FERJ.jpg
 author: Ace Laboratory Football Team
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_semifinal_2-pt/"> clique aqui.</a>
 </p>
@@ -41,7 +42,6 @@ Fluminense this time played the way they prefer, having the most time with the b
 </p>
 <p align="justify">As a result, we can see that even though Fernando Diniz's team dictated the game, they were unable to beat Flamengo's defense, which still only conceded 1 goal in the entire competition. Flamengo goes to the finals as favorites, but they will face Nova Iguaçu, the only team to have managed to score a goal against them, and they will be hungry to win this cup as the underdogs of the championship.
 </p>
-
 
 <h3>Highlights</h3>
 

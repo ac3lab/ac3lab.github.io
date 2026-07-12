@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: Copa do Mundo Feminina de 2023 - Análise da Evolução da Seleção Brasileira
@@ -18,13 +17,9 @@ author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
 
 hidden: true
 hidden_post: true
-
-
 ---
 
 ---
-
-  
 
 <div  style="text-align: justify">
 
@@ -38,7 +33,6 @@ Na Copa de 2019, a seleção brasileira caiu em um grupo com Austrália, Itália
 
 Nas oitavas de final, o Brasil enfrentou a França em um jogo muito disputado. Apesar de um equilíbrio na posse de bola durante o tempo regulamentar, as brasileiras fizeram 12 finalizações, enquanto as francesas 5. A partida foi decidida apenas no segundo tempo da prorrogação, quando a França marcou o gol da vitória e encerrou a participação do Brasil na competição.<br/><br/>
 
- 
 <h3> <b>Copa de 2023</b> </h3>
 
 Na Copa de 2023, o Brasil teve uma campanha ainda mais curta e frustrante. Mais uma vez, a seleção brasileira terminou em terceiro lugar, agora do Grupo F, que contava com França, Jamaica e Panamá. As brasileiras conquistaram uma vitória e um empate em 3 jogos, mas, nessa edição, apenas os dois primeiros colocados do grupo se classificavam para o mata-mata.<br/><br/>
@@ -51,7 +45,6 @@ Quando falamos que a campanha foi frustrante, não é para menos. Na última rod
 
 </div>
 
-
 <h2> <b>Estatísticas entre Copas </b> </h2>
 
 Nessa seção, vamos analisar as participações brasileiras através de diferentes gráficos de dispersão. A ideia é conseguir comparar tanto a evolução (ou involução) de uma Copa para a outra, além de uma comparação geral entre campanhas de outras equipes.<br/><br/>
@@ -59,7 +52,6 @@ Nessa seção, vamos analisar as participações brasileiras através de diferen
 Antes de começar a seção de análises e comentários, temos que dizer que, pelo fato da Copa do Mundo ser um torneio curto (e, infelizmente, as campanhas da seleção brasileira mais curtas ainda), algumas partidas acabam tendo um impacto grande nas métricas mostradas a seguir. Esse contexto deve ser levado em conta durante as análises. <br/><br/>
 
 <h2> <b>Passes e Progressão</b> </h2>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -73,9 +65,7 @@ Analisando os passes e a progressão da seleção brasileira de 2019, é possív
 
 - Em 2023, o Brasil melhorou em ambos os aspectos, com cerca de 30 conduções progressivas e quase 70 passes progressivos por jogo, revelando uma evolução significativa, com a equipe assumindo um perfil mais agressivo e progressivo em campo se comparado ao comportamento bem menos ofensivo da equipe em 2019. Na campanha de 2019, o Brasil realizava aproximadamente 20% menos passes progressivos do que a média das outras seleções.<br/><br/>
 
-
 <h2> <b>Chutes e xG por chute</b> </h2>
-
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
@@ -83,13 +73,11 @@ Analisando os passes e a progressão da seleção brasileira de 2019, é possív
 
 </div>
 
-
 Para analisar a qualidade das finalizações das seleções, iremos utilizar o gráfico de chutes por partida vs. xG por chute. <br/><br/>
 
 - Novamente, o Brasil está melhor colocado do que seus adversários da América do Sul, indicando que existe uma grande vantagem por parte da Seleção Brasileira no seu continente.<br/><br/>
 - Apesar de uma quantidade muito maior de chutes por partida em 2023, o Brasil não teve uma melhoria considerável na qualidade das suas chances (gols esperados por chute). A estagnação nesse quesito foi, como falamos, determinante para a eliminação do Brasil ainda na fase de grupos.<br/><br/>
 - Como já comentamos, o fato da Copa do Mundo ser um torneio curto faz com que algumas partidas impactem muito as estatísticas. Nesse gráfico, temos um exemplo claro disso na quantidade de finalizações da Seleção Brasileira. Na segunda rodada da fase de grupos, contra o Panamá, o Brasil finalizou 33 vezes, marcando 4 gols na ocasião. Esse número de finalizações é maior do que a soma das finalizações nas outras duas partidas, mostrando que o confronto com o Panamá gera uma falsa sensação de que a equipe brasileira tinha a característica de chutar muitas vezes, sendo que isso foi um episódio isolado na competição.<br/><br/>
-
 
 <h2> <b>Considerações finais e conclusão</b></h2>
 
@@ -99,6 +87,4 @@ Mesmo que as campanhas analisadas tenham sido curtas e, de certa forma, decepcio
 
 E assim, chega ao fim a nossa série de posts analisando a Copa do Mundo Feminina de 2023. Fiquem ligados, vem muito mais por aí!<br/><br/>
 
-
 <div>
-

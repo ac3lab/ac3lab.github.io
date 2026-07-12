@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_brasileirao_3-pt/"> clique aqui.</a>
 </p>
@@ -39,7 +40,6 @@ On Saturday, RB Bragantino and Corinthians faced off at the Nabi Abi Chedid Stad
 
 </div>
 
-
 <h2>Palmeiras x Flamengo</h2>
 
 <div style="text-align: justify">
@@ -66,7 +66,6 @@ At Allianz Parque, Palmeiras hosted Flamengo in a match that delivered less than
 <p align="justify">
 At Nilton Santos Stadium, Botafogo completely dominated Juventude. In addition to their convincing 5-1 victory, Botafogo scored more than double the expected goals for the match (2.38). However, Botafogo's defense has been one of the weaknesses of the squad, conceding 4 goals so far in the championship and allowing one goal to Juventude, who had less than 0.5 expected goals throughout the match.
 
-
 </p>
 
 </div>
@@ -81,7 +80,6 @@ At Nilton Santos Stadium, Botafogo completely dominated Juventude. In addition t
 
 <p align="justify">
 At Arena Grêmio, the Tricolor Gaúcho faced Cuiabá and secured a narrow 1-0 victory. Despite the low-scoring affair, the game was highly eventful, with a total of 21 shots. The Dourado, despite not finding the back of the net, had a much higher xG than Grêmio, indicating efficiency in creation but also hinting at inefficiency in attack. Another statistic that highlights this is shot accuracy; Cuiabá attempted 14 shots, but only 3 were on target, while Grêmio had 7 shots, 4 of which were accurate.
-
 
 </p>
 

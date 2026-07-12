@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Fluminense vs Al Hilal: Resiliência Brasileira Encontra Poder Saudita em Confronto das Quartas"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Antonio Magalhães
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 
@@ -92,7 +89,3 @@ Foi sua segunda vitória consecutiva como azarão — primeiro contra a Inter de
 Nas semifinais, o Fluminense enfrentará o Chelsea, que já eliminou Benfica e Palmeiras. Será outro grande desafio contra a elite da competição europeia, mas baseado em sua campanha até agora, o Fluminense provou que está pronto para competir com os melhores do mundo. <br/><br/>
 
 </div>
-
-
-
-

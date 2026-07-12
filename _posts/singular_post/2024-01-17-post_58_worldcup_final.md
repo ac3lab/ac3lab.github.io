@@ -76,39 +76,44 @@ Complex Network metrics
 As could be noted, we explore the creation of a pass network where our graph is a DiGraph, i.e., a directed graph. This is because we are interested in the direction of the passes. Given that, we can explore some Complex Network metrics to investigate the Brazilian team's passing network in the final match and their behavior.
 </p>
 
-
 Degrees
+
 <p align="justify">
 The degree of a node is the number of edges incident to the node, the passes between the players. The player that showed the lowest degree was, unexpectedly, Bellini; and the player that showed the highest degree was Waldir. This could indicate how Brazil was exploiting spaces on the right side of the field. The average degree was 14.2. One interesting thing is that Pelé is not the player that received the most passes, the player is Garrincha.
 </p>
 
 Clustering Coefficient
+
 <p align="justify">
 Clustering indicates how close a node and its neighbors are to being a clique. In our case, it indicates how close a player and his teammates are to being a clique (a group of players that pass the ball between them). The player that showed the highest clustering coefficient was Pelé. This could indicate that Pelé was the player that was more involved in the passing game. The lowest clustering coefficient was shown by Gylmar, the goalkeeper, which is expected.
 </p>
 
 Closeness Centrality
+
 <p align="justify">
 Closeness centrality indicates how close a node is to all other nodes in the network. In our case, it indicates how close a player is to all other players in the network. The player that showed the highest closeness centrality was Garrincha, one of the most important players regarding dribbling and creating chances. The lowest closeness centrality was shown by Bellini, as the game was not being explored on his side of the field based on our theory.
 </p>
 
 Betweenness Centrality
+
 <p align="justify">
 Betweenness centrality indicates how often a node appears on a shortest path between two other nodes. In our case, it indicates how often a player appears on a shortest path between two other players. The player that showed the highest betweenness centrality was Waldir, while the lowest betweenness centrality was shown by Bellini, which indicates that our beliefs are correct.
 </p>
 
 Hubs and Authorities
+
 <p align="justify">
 Hubs and Authorities are two metrics that are used to identify how the degrees are distributed between the nodes in a network. The Hubs metric identifies the nodes that passed the ball the most, while the Authorities metric identifies the nodes that received the ball the most. The player that showed the highest Hubs metric was Waldir, and the player that showed the highest Authorities metric was Pelé. This indicates that Waldir was the player who passed the ball the most, while Pelé was the player who received the ball the most.
 </p>
 
 Pagerank
+
 <p align="justify">
 Pagerank is a metric that is used to identify the nodes that are more important in a network. The player that showed the highest Pagerank was Pelé, and the player that showed the lowest Pagerank was Bellini. This indicates that Pelé was the player that was more important in the network, while Bellini was the player that was less important in the network.
 </p>
 
-
 Conclusion
+
 <p align="justify">
 In this post, we analyzed the 1958 World Cup final passes network between the Brazilian players. We explored some Complex Network metrics to investigate the Brazilian team's passing network in the final match and their behavior. We found that Pelé, Garrincha and Waldir showed a great importance in the network, while Bellini and Gylmar showed a low importance in the network. We also found that Brazil was exploiting spaces on the right side of the field.
 </p>

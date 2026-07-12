@@ -9,8 +9,8 @@ thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Hugo Antunes
 hidden: true
 hidden_post: true
-
 ---
+
 <h2>Introdução</h2>
 
 <div style="text-align: justify">
@@ -38,7 +38,6 @@ Depois dessas pequenas alterações, o elenco continuou tendo 35 jogadores no pl
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_squad.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 <h3>Temporada 2023/2024 (atual temporada)</h3>
 Após o fim da primeira temporada de Xabi no Leverkusen, o técnico aparentou ter mais autonomia na montagem do elenco para 23/24. O número de jogadores decaiu consideravelmente se comparado ao dos anos anteriores, agora o Leverkusen conta com apenas 27 jogadores, uma redução de 22%. No atual momento, a média de idade do Leverkusen é de 24.8 anos e o valor médio de cada jogador é de 22 milhões de euros. Ou seja, a média de idade variou muito pouco, mas o valor por jogador aumentou em quase 70% quando comparado à temporada de 22/23.<br/><br/>
 
@@ -52,7 +51,6 @@ Apesar das contratações, os jogadores que já estavam no clube tiveram uma mel
 <div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
 
 Apenas com valorização de jogadores, o balanço foi positivo e superior a 90 milhões de euros. O valor estimado do elenco total é de quase 595 milhões de euros, sendo que apenas 80 milhões foram investidos neste ano. Vale lembrar que em 2023 muitos jogadores foram vendidos, emprestados ou liberados pelo Leverkusen, a desvalorização do elenco por conta dessas perdas totaliza 119 milhões. Sendo assim, além do valor investido, o trabalho de Xabi Alonso foi fundamental para a valorização dos jogadores. Xabi qualificou os jogadores que já estavam no plantel e o Leverkusen aproveitou as oportunidades de um mercado super competitivo.<br/><br/>
 
@@ -79,7 +77,6 @@ Fora todo o destaque que o time teve na Bundesliga, o Leverkusen se encontra na 
 Já sobre os destaques do Leverkusen na temporada, os melhores jogadores foram Grimaldo, Wirtz, Palacios, Xhaka, Kovar, Hofmann e Boniface. Algo importante de se notar é que os jogadores contratados foram destaques do time durante a temporada, o que demonstra uma clara eficiência na hora de utilizar os jogadores.<br/><br/>
 
 <h2>Conclusão</h2>
-
 
 A gestão de Xabi Alonso transformou o Leverkusen em uma equipe altamente competitiva, refletida pela conquista inédita da Bundesliga e a final da Europa League. A redução e qualificação do plantel, com contratações estratégicas e valorização dos jogadores já presentes, aumentaram significativamente o valor de mercado da equipe. Com um estilo de jogo eficiente, o Leverkusen não só melhorou seu desempenho em campo, mas também destacou a capacidade de seus jogadores, como Wirtz, Palacios, e as novas contratações Xhaka, Grimaldo, Kovar, e Boniface, consolidando-se como um dos times mais fortes da temporada.<br/><br/>
 

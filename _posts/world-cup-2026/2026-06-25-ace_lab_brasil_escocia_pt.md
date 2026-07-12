@@ -10,7 +10,6 @@ author: Ace Laboratory Team - Pedro Martins, Pedro Lopes e Hugo Antunes
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -81,7 +80,7 @@ A postura brasileira após o terceiro gol pode ser analisada através do seu pr�
 </div>
 <center>Figura 4: Mapa de PPDA do Brasil<br/><br/></center>
 
-Com a vitória assegurada, o técnico promoveu as entradas de Endrick, Alex Sandro, Fabinho e Martinelli. Contudo, o grande marco anímico da partida estava reservado para o minuto 31: o retorno de Neymar aos gramados após três anos sem jogar pela seleção. Atuando por cerca de 20 minutos de forma cadenciada, o camisa 10 foi bastante acionado pelos companheiros, que buscavam envolvê-lo nas jogadas de forma natural, ajudando-o a readquirir ritmo de jogo. 
+Com a vitória assegurada, o técnico promoveu as entradas de Endrick, Alex Sandro, Fabinho e Martinelli. Contudo, o grande marco anímico da partida estava reservado para o minuto 31: o retorno de Neymar aos gramados após três anos sem jogar pela seleção. Atuando por cerca de 20 minutos de forma cadenciada, o camisa 10 foi bastante acionado pelos companheiros, que buscavam envolvê-lo nas jogadas de forma natural, ajudando-o a readquirir ritmo de jogo.
 
 <h2><b>Conclusão</b></h2>
 
@@ -89,5 +88,4 @@ A imponente vitória por 3 a 0 atesta a franca evolução tática e emocional da
 
 O destaque absoluto fica para o protagonismo de Vinícius Júnior, para a sintonia da engrenagem central com Bruno Guimarães e Matheus Cunha, além da boa atuação de Rayan, que teve o seu primeiro jogo pela seleção como titular, sendo importante na recomposição defensiva e na pressão no ataque. Ademais, o retorno de Neymar, tão aguardado pelos torcedores brasileiros, traz uma liderança mais técnica e experiente no elenco brasilero.
 
-Classificado em 1º lugar, o Brasil chega aos 16 avos apresentando um desempenho físico e tático superior ao seu início na competição. O próximo desafio já está marcado para o dia 29, no estádio NRG em Houston. Projetando o mata-mata, o Brasil aguarda o segundo colocado do Grupo F, esta definição acontece entre Suécia, Japão e Holanda, seleções que jogam nesta quinta-feira (25/06) decidindo quem avança em segundo lugar no grupo. 
-
+Classificado em 1º lugar, o Brasil chega aos 16 avos apresentando um desempenho físico e tático superior ao seu início na competição. O próximo desafio já está marcado para o dia 29, no estádio NRG em Houston. Projetando o mata-mata, o Brasil aguarda o segundo colocado do Grupo F, esta definição acontece entre Suécia, Japão e Holanda, seleções que jogam nesta quinta-feira (25/06) decidindo quem avança em segundo lugar no grupo.

@@ -29,7 +29,6 @@ Já a Seleção Espanhola de José Luís mostrou ter boas opções de ataque à 
 </p>
 </div>
 
-
 <h3>Análise da partida</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-03-28-brasil_espanha/pt-br/game1.png" class="img-fluid rounded z-depth-1" %}
@@ -45,7 +44,6 @@ Apesar de 90 minutos relativamente parelhos -com 4 grandes chances para cada tim
 </p>
 
 </div>
-
 
 <h3>Destaques</h3>
 <div style="width: 80%; margin: 0 auto; text-align: center;">

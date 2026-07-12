@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Fluminense vs Chelsea: Brazilian Underdogs' Fairytale Run Ends in Semifinal"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
@@ -97,6 +95,3 @@ In a match filled with tactical battles and high-level execution, Chelsea's clin
 Even in defeat, Fluminense can hold their heads high. After eliminating giants like Inter Milan and Al Hilal, the Brazilian side proved they belong on the world stage. With three wins, two draws, and just one loss — against one of the strongest squads in Europe — the underdog campaign of Fluminense will be remembered as one of the most surprising and admirable stories of the tournament. <br/><br/>
 
 </div>
-
-
- 

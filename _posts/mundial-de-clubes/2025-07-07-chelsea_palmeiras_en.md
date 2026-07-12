@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Heartbreak and Heroics: Palmeiras Faces Chelsea in a Quarterfinal Thriller"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos
-
 ---
 
 ---
@@ -87,6 +85,3 @@ Chelsea came out on top in this match, as predicted by Opta's probabilities, and
 In summary, it was a match that showcased the importance of tactical discipline, squad depth, and composure under pressure — areas where Chelsea held the advantage and converted it into a hard-fought, yet clear, win. <br/><br/>
 
 </div>
-
-
-

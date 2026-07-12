@@ -27,15 +27,11 @@ Os lances livres são um componente essencial da pontuação e podem refletir o 
     </div>
 </div>
 
-
-
 Uma peculiaridade das faltas no basquete é que elas podem ser exploradas estrategicamente, como no caso do Hack-a-Shaq, uma tática que surgiu em 1978 e se popularizou quando Don Nelson, técnico do Dallas Mavericks, a aplicou contra Shaquille O’Neal, dando origem ao nome da estratégia. O objetivo do Hack-a-Shaq consiste em cometer faltas intencionais em um jogador adversário com baixo aproveitamento em lances livres, forçando-o a cobrar lances livres em vez de permitir o andamento normal do ataque. Embora Shaq seja o exemplo mais famoso, a estratégia já foi aplicada em outros grandes jogadores, como Dennis Rodman, Ben Simmons e, nos últimos playoffs, em Mitchell Robinson, pivô do New York Knicks, que converteu apenas 45,2% de seus lances livres, muito abaixo da média da NBA, que foi 77,7% na temporada 2024-25.
 
 Na série entre New York Knicks e Boston Celtics, vencida pelos Knicks por 4 a 2, o pivô Mitchell Robinson se tornou alvo central da estratégia de faltas intencionais. Apesar de seu baixo aproveitamento de lances livres, Robinson registrou um offensive rating de 116 — estatística que mede quantos pontos um jogador gera para o time a cada 100 posses de bola. No entanto, se ele fosse forçado a ir à linha de lance livre em todas as posses, os Knicks teriam um offensive rating de apenas 90,4 na série, o que mostra como a estratégia poderia, em teoria, reduzir bastante a eficiência ofensiva da equipe. Por outro lado, aplicar o Hack-a-Shaq traz contrapartidas: além de eliminar as oportunidades de ataque em transição, força os defensores a acumularem faltas, correndo risco de serem eliminados ao atingirem o limite de seis faltas pessoais. Mesmo assim, o técnico do Celtics levou essa tática ao extremo, cometendo faltas intencionais antes mesmo de o time estar no bônus, apenas para alcançar as cinco faltas coletivas mais rápido e obrigar Robinson a ir para a linha de lances livres.
 
 Em conclusão, as faltas no basquete da NBA vão muito além de simples interrupções do jogo: elas moldam estratégias, definem o ritmo das partidas e podem ser tanto um recurso defensivo quanto uma fragilidade explorada pelo adversário. Entre o impacto das faltas pessoais no acúmulo de bônus, a disciplina exigida para evitar faltas técnicas e a severidade das faltas flagrantes, até a aplicação de táticas como o Hack-a-Shaq, percebe-se como esse elemento do regulamento é parte central da identidade da liga. Mais do que punições, as faltas representam escolhas estratégicas que influenciam diretamente o resultado de uma temporada.
-
-
 
 <h2><b>NFL</b></h2>
 
@@ -49,7 +45,6 @@ As faltas na NFL, por conta de sua intensidade, receberam inúmeras mudanças ao
 
 A imagem mostra o número de concussões por ano, contando pré-temporada e temporada regular.
 
-
 Hoje a NFL tem 3 tipos principais de faltas:
 
 <ul>
@@ -58,7 +53,7 @@ Hoje a NFL tem 3 tipos principais de faltas:
   <li><b>Faltas de procedimento:</b> Saída falsa (sair antes da bola), offside (estar à frente da linha da bola).</li>
 </ul>
 
-Cada tipo dessas faltas possui suas marcações específicas e suas penalidades: 
+Cada tipo dessas faltas possui suas marcações específicas e suas penalidades:
 
 <ul>
   <li>
@@ -92,21 +87,19 @@ Cada tipo dessas faltas possui suas marcações específicas e suas penalidades:
   </li>
 </ul>
 
-Nem sempre as faltas darão perda de jardas, elas podem resultar em anulação/repetição da jogada, primeiras descidas automáticas. As faltas Roughing the Passer e Targeting são consideradas graves, e além de penalizar, ela é analisada pela liga. Essas faltas ficaram bem mais rigorosas, por conta de lesões e da proteção ao Quarterback (o lançador, e geralmente, o jogador principal da equipe). 
+Nem sempre as faltas darão perda de jardas, elas podem resultar em anulação/repetição da jogada, primeiras descidas automáticas. As faltas Roughing the Passer e Targeting são consideradas graves, e além de penalizar, ela é analisada pela liga. Essas faltas ficaram bem mais rigorosas, por conta de lesões e da proteção ao Quarterback (o lançador, e geralmente, o jogador principal da equipe).
 
+Um diferencial em relação aos outros esportes, é como funcionam as dinâmicas de falta: O time que sofreu a falta escolhe aceitar ou rejeitar a falta. Vamos imaginar o seguinte cenário:
 
-Um diferencial em relação aos outros esportes, é como funcionam as dinâmicas de falta: O time que sofreu a falta escolhe aceitar ou rejeitar a falta. Vamos imaginar o seguinte cenário: 
+O time A está no terceiro down (terceira tentativa de avanço de quatro no total), faltando 4 jardas para conseguir avançar as 10 necessárias. A jogada se inicia e eles conseguem um touchdown a partir dessa jogada, mas houve uma falta de false start do time B. O time A tem duas opções:
 
-O time A está no terceiro down (terceira tentativa de avanço de quatro no total), faltando 4 jardas para conseguir avançar as 10 necessárias. A jogada se inicia e eles conseguem um touchdown a partir dessa jogada, mas houve uma falta de false start do time B. O time A tem duas opções: 
+Opção A: Aceitar a falta. Como eles aceitaram a falta, a penalidade é aplicada em relação a linha de scrimmage. Como faltavam 4 jardas para a primeira descida (first down) e false start equivale a 5 jardas, eles conseguem automaticamente a primeira descida.
 
-Opção A: Aceitar a falta. Como eles aceitaram a falta, a penalidade é aplicada em relação a linha de scrimmage. Como faltavam 4 jardas para a primeira descida (first down) e false start equivale a 5 jardas, eles conseguem automaticamente a primeira descida. 
+Opção B: Recusar a falta. Se eles recusam a falta, o que vale é a jogada que foi ocasionada em relação a isso, não importando se o time A avançou ou não. Nesse caso, se eles recusarem, a pontuação que vale é o touchdown, já que esse foi o resultado da jogada.
 
-Opção B: Recusar a falta. Se eles recusam a falta, o que vale é a jogada que foi ocasionada em relação a isso, não importando se o time A avançou ou não. Nesse caso, se eles recusarem, a pontuação que vale é o touchdown, já que esse foi o resultado da jogada. 
-
-Diferente das faltas táticas feitas no futebol e no basquete, o futebol americano não possui esse tipo de falta, por causa da natureza do esporte; um esporte mais parado e menos fluido e contínuo como o futebol e o basquete. Porém, faltas podem causar impactos psicológicos em jogadores e afetar seus desempenhos em campo. 
+Diferente das faltas táticas feitas no futebol e no basquete, o futebol americano não possui esse tipo de falta, por causa da natureza do esporte; um esporte mais parado e menos fluido e contínuo como o futebol e o basquete. Porém, faltas podem causar impactos psicológicos em jogadores e afetar seus desempenhos em campo.
 
 Faltas na NFL eram bem menos restritas como eram hoje. Como era um esporte com menos equipamentos, as faltas eram muito mais violentas do que são hoje, e isso fez com que a imagem que se propagasse do esporte, fosse um esporte brutal e violento. Entre 2015-2024, apenas 3 anos de temporada têm menos de 200 lesões e concussões, somando Pré-Temporada e Temporada Regular (2020,2021 e 2024). A NFL hoje, está protegendo mais seus jogadores e atletas, para que mais pessoas com sonhos universitários e adultos consigam jogar sem terem que se preocupar com uma lesão permanente no futuro, e para que espectadores consigam se cativar, não pela violência, mas pela beleza do esporte.
-
 
 <h2><b>FUTEBOL</b></h2>
 
@@ -124,6 +117,6 @@ Nota-se então que o futebol se torna cada vez mais complexo, onde cada falta é
 
 <h2><b>CONCLUSÃO</b></h2>
 
-Em suma, a análise comparativa das faltas na NBA, NFL e no futebol revela que, muito além de meras infrações às regras, elas são elementos estratégicos profundamente integrados à identidade de cada esporte. No basquete e no futebol, esportes "mais fluidos", as faltas moldam o ritmo e o desfecho das partidas, sendo usadas de forma calculada em táticas como a "falta tática" ou até mesmo o  "Hack-a-Shaq". Na NFL, as penalidades evoluíram para priorizar a segurança dos atletas, criando um complexo sistema de escolhas que pode alterar o curso de uma partida.  
+Em suma, a análise comparativa das faltas na NBA, NFL e no futebol revela que, muito além de meras infrações às regras, elas são elementos estratégicos profundamente integrados à identidade de cada esporte. No basquete e no futebol, esportes "mais fluidos", as faltas moldam o ritmo e o desfecho das partidas, sendo usadas de forma calculada em táticas como a "falta tática" ou até mesmo o "Hack-a-Shaq". Na NFL, as penalidades evoluíram para priorizar a segurança dos atletas, criando um complexo sistema de escolhas que pode alterar o curso de uma partida.
 
 Dessa forma, percebe-se que as regras de falta transcendem sua função punitiva original. Elas se tornaram ferramentas dinâmicas que as equipes dominam para ganhar vantagem competitiva. Seja para controlar o ritmo, explorar uma fraqueza adversária ou proteger os jogadores, o manejo estratégico das faltas é um reflexo da sofisticação tática e da evolução constante que definem o esporte de alto rendimento na atualidade.

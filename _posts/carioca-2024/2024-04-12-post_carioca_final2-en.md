@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_carioca_final2-pt/"> clique aqui.</a>
 </p>
@@ -43,8 +44,6 @@ Although the Gávea team followed the high defensive standard shown throughout t
 
 </p>
 
-
-
 <h3>Highlights</h3>
 
 <div style="width: 80%; margin: 0 auto; text-align: center;">
@@ -54,12 +53,10 @@ Although the Gávea team followed the high defensive standard shown throughout t
 <p align="justify">
 Despite a relatively uneventful game, there were players with performances worth highlighting. On Flamengo's side, defender Léo Pereira kept up his high standards and was instrumental in stopping the Baixada side's attack, with 4 tackles won and only 1 dribble conceded. It's also worth highlighting the player's role in creating plays, as he had 14 successful long balls (82% success rate). In addition to him, left winger Bruno Henrique came on in the second half and scored the winning goal for his team, with an impressive finish of just 0.05 xG.
 
-
 </p>
 
 <p align="justify">
 For the team from Baixada, right-winger Xandinho put in a great attacking performance, with 5 shots, 100% of his dribbles correct and adding 0.60 xG to Nova Iguaçu's 0.70 total. Another highlight was goalkeeper Fabrício, who made 5 saves from inside the area.
-
 
 </p>
 

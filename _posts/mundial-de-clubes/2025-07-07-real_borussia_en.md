@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Real Madrid vs Borussia Dortmund: A Champions League Rematch on the World Stage"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos
-
 ---
 
 ---
@@ -25,7 +23,6 @@ author: Ace Laboratory Team - Brenno Santos
 If you want to read this text in Portuguese, <a href = "https://ac3lab.github.io/blog/2000/real_borussia_pt/"> click here.</a>
 
 </p>
-
 
 <h2> <b> Introduction </b></h2>
 
@@ -86,7 +83,3 @@ Despite being the underdog in this particular matchup, Real Madrid holds a 24.67
 As they prepare for a blockbuster semifinal, Real Madrid will be banking on the momentum gained in the quarterfinals, the growth of their young stars, and the leadership of their seasoned veterans. The road ahead is difficult — but if there's one team that knows how to navigate elite competitions, it's Real Madrid! <br/><br/>
 
 </div>
-
-
-
-

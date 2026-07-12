@@ -7,7 +7,6 @@ tags: Football; Predictions;
 categories: Sports; Analysis
 thumbnail: assets/img/Posts_Images/2026-06-09-world-cup-2026/thumbnail.png
 author: ACE Laboratory Team
-
 ---
 
 ---
@@ -26,7 +25,7 @@ In general, the major powerhouses confirmed their initial favoritism. National t
 
 <h3><b>Upsets and disappointments</b></h3>
 
-The unpredictability of football, however, produced memorable upsets. Cape Verde (34% chance to advance) and South Africa (33%) overcame mathematical adversities and reached the Round of 32, although they were eliminated at the beginning of the knockout stage. 
+The unpredictability of football, however, produced memorable upsets. Cape Verde (34% chance to advance) and South Africa (33%) overcame mathematical adversities and reached the Round of 32, although they were eliminated at the beginning of the knockout stage.
 
 On the other hand, teams with high projections disappointed. Ecuador (90% chance in the group, showing a certain favoritism even in a complicated group) fell early to Mexico, while Portugal (94%) advanced, but without the expected leadership. Even bigger surprises involved Uruguay (87% chance of advancing to the Round of 32) and Turkey (quoted to be the leader of Group D), who did not even make it past the group stage, shattering their significant probabilities.
 
@@ -54,7 +53,7 @@ We can also see, based on the probabilities of winning each matchup, the most li
 
 <center>Figure 2: World Cup bracket up to the final, considering the most likely results.<br/><br/></center>
 
-Analyzing the updated bracket, the most notable shift from our initial probability matrix is the change in the overall title favorite. Before the tournament began, Spain stood out as the primary candidate to lift the trophy. Now, following the definition of the knockout paths, France takes over as the predicted champion, holding a slight 53% edge in a hypothetical final against England (47%). This shift in leadership occurs largely due to the bracket layout: the model projects an early and highly balanced semifinal clash, where the French would edge past the Spaniards by the narrowest of margins (51% to 49%).  
+Analyzing the updated bracket, the most notable shift from our initial probability matrix is the change in the overall title favorite. Before the tournament began, Spain stood out as the primary candidate to lift the trophy. Now, following the definition of the knockout paths, France takes over as the predicted champion, holding a slight 53% edge in a hypothetical final against England (47%). This shift in leadership occurs largely due to the bracket layout: the model projects an early and highly balanced semifinal clash, where the French would edge past the Spaniards by the narrowest of margins (51% to 49%).
 
 On the other side of the bracket, the race promises to be just as fierce. England emerges as the favorite to reach the final, but they will face a grueling path. According to the projections, the English squad is expected to eliminate Brazil in the quarterfinals in an extremely tight duel (52% to 48%), and subsequently overcome the defending champions, Argentina, in the semifinals by an identical margin (51% to 49%). The numbers from the new matrix clearly show that, at this crucial stage of the World Cup, the statistical and technical gap between the surviving powerhouses has become minimal, promising matches decided by the smallest of details.
 

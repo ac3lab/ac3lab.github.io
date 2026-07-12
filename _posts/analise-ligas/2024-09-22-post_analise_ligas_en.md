@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: Analysis of the Best Football Leagues
@@ -25,25 +24,23 @@ Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/200
 
 </p>
 
-
 <div  style="text-align: justify">
 <h2>Introduction</h2>
 
 In today’s post, we decided to touch on a topic that is discussed every year: What is the best league in the world? Does the Brasileirão belong among these leagues?
 We will analyze everything from the total Market Value to each league's performance in international competitions. The leagues studied were: Premier League (England), La Liga (Spain), Ligue 1 (France), Bundesliga (Germany), Serie A (Italy), and Brasileirão (Brazil). The international tournaments studied were the Copa Libertadores (CONMEBOL), Copa Sulamericana (CONMEBOL), Champions League (UEFA) and Europa League (UEFA).
- <br/><br/>
+<br/><br/>
 
 <h2> <b>Research</b> </h2>
-
 
 The data used in this research were collected from Transfermarkt, which provides market values for each team in the leagues studied per season; Sofascore, with the final standings of each season; UEFA, with the results from the Champions League and Europa League; and CONMEBOL, with the results from the Copa Libertadores and Copa Sulamericana. The last five years were taken into consideration: for European teams, the seasons from 2019-2020 to 2023-2024, and for Brazilian teams, from 2019 to 2023. Scripts were used to extract data from Transfermarkt and Sofascore.
 <br/><br/>
 
- 
 <h2> <b>Market Value</b> </h2>
 
 The following bar chart shows the total Market Value of the teams by league and by season. In the case of the Brasileirão, 19-20 refers to the 2019 season, 20-21 refers to the 2020 season, and so on.
 <br/><br/>
+
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-09-22-post_analise_ligas/marketvalue.png" class="img-fluid rounded z-depth-1" %}
@@ -56,8 +53,6 @@ The difference between the Premier League and the other leagues is enormous, and
 <br/><br/>
 Among the other European leagues, there isn’t much variation between seasons or among them. When comparing the European leagues to the Brasileirão, the colossal difference can be explained by various factors, from the weakness of the Brazilian Real compared to the Euro to the early sale of promising Brazilian players to European teams, often motivated by poor management of Brazilian clubs, forcing teams to sell promising players to pay off large debts.
 <br/><br/>
-
-
 
 <h2> <b>Performance in Unequal Matches</b> </h2>
 
@@ -76,7 +71,6 @@ Now that we understand what PUM is, let’s explain why it is useful. Our goal i
 
 Based on the chart showing the average PUM per season in each analyzed championship, we notice that, in the Brasileirão, performance in unequal matches is the lowest among the six leagues. This indicates that teams with lower market value can compete more evenly against the top national clubs. In the Premier League and Bundesliga, the trend is the opposite, with higher market value teams having a significantly higher average performance compared to the other leagues.
 <br/><br/>
-
 
 <h2> <b>International Competitions</b> </h2>
 
@@ -105,6 +99,7 @@ In the Copa Sulamericana, the scenario is different: in the last five finals, Br
 The fact is: in the last five seasons, Brazil has won six titles in South America’s main international competitions. But what is the situation in Europe?
 <br/><br/>
 The following tables show the number of defeats of European clubs from the mentioned leagues by stage in the Champions League and Europa League over the last 5 seasons.
+
 <h3> <b>Champions League</b></h3>
 In the Champions League, France and Italy did not win titles, but had two runner-up finishes. What differentiates them from the winning leagues? France had the fewest teams reaching the round of 16 and fewer total participations, with only two teams making the semifinals: Lyon and PSG (twice). Italy had the most eliminations in the round of 16, with poor performance overall.
 Another interesting observation: Spain had a 100% success rate in finals, winning both in which they participated. England, however, had an extraordinary performance: two titles and two runner-up finishes, with one all-English final. In other words, they had the best performance, appearing in 3 out of 5 finals.
@@ -129,7 +124,6 @@ The biggest difference between the competitions is in England’s performance: i
 
 <center>Image 6. Number of teams from each country by stage in the UEL in the last 5 years<br/><br/></center>
 
-
 <br/><br/>
 
 <h2> <b>Discussion</b> </h2>
@@ -139,12 +133,11 @@ Looking at the most valuable league in the world, the choice would be the Premie
  <br/><br/>
 
 In terms of Performance in Unequal Matches, the Brazilian league shows a low average PUM, indicating that lower market value teams can compete more equally and win more points against richer clubs. This results in more unpredictable championships and, consequently, more competitiveness.
- <br/><br/>
+<br/><br/>
 When observing the performance of countries in international competitions, it becomes more subjective. In South America, Brazil is dominant, with 6 titles won in the last five years, 5 of them in the toughest competition in the Americas. In Europe, there is a greater variety of champions: only France failed to win a title. Spain won the most titles (5), and England ties with Spain in finals appearances (5 out of 10).
- <br/><br/>
+<br/><br/>
 
 <h2> <b>Conclusion</b> </h2>
-
 
 Which is the best league in the world?
 It depends on the point of view. European leagues have a higher market value, meaning they have the best players and coaches, resulting in higher-quality matches. However, the unpredictability of the matches is lower and, in a way, less exciting. In the Brazilian league, we can see that the lower average PUM provides greater unpredictability, which brings excitement to the championship. This unpredictability is likely related to player quality, which affects the quality of the games. Therefore, answering the question about which league is the best depends on the fan’s perspective.
@@ -152,6 +145,4 @@ It depends on the point of view. European leagues have a higher market value, me
 Thank you for reading and stay tuned for future posts!
 <br/><br/>
 
-
 <div>
-

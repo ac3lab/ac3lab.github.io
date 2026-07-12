@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Real Madrid vs Borussia Dortmund: Uma Revanche da Champions League no Palco Mundial"
@@ -15,11 +14,9 @@ categories: Futebol; Análise
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos
-
 ---
 
 ---
-
 
 <h2> <b> Introdução </b></h2>
 
@@ -80,6 +77,3 @@ Apesar de ser o azarão neste confronto específico, o Real Madrid detém 24,67%
 Enquanto se preparam para uma semifinal bombástica, o Real Madrid estará apostando no momentum ganho nas quartas de final, no crescimento de suas jovens estrelas e na liderança de seus veteranos experientes. O caminho à frente é difícil — mas se há um time que sabe navegar competições de elite, é o Real Madrid! <br/><br/>
 
 </div>
-
-
-

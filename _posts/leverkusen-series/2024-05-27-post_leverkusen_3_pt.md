@@ -9,7 +9,6 @@ thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Daniel Barros
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -98,4 +97,5 @@ Apesar de quase 3 meses de ausência na liga, Boniface figurou como o <b>7º jog
 <h2>Conclusão</h2>
 
 No último post da nossa série sobre o Bayer Leverkusen, analisamos os dados relacionados a alguns dos jogadores mais importantes do campeão invicto da Bundesliga. A intenção foi mostrar o impacto que o jovem, porém já vencedor, treinador Xabi Alonso teve nos seus jogadores, principalmente ao longo dessa temporada tão especial para o elenco. Pode-se dizer que o espanhol foi responsável por “revelar” diversos jogadores desse time para o mundo, inclusive fazendo com que vários deles, como Grimaldo e Boniface, fossem convocados pela primeira vez para suas seleções nacionais. Também podemos afirmar que o mundo está ansioso para ver mais do Bayer Leverkusen na próxima temporada, que colocará o clube à prova na Liga dos Campeões e na defesa do título nacional.
+
 </div>

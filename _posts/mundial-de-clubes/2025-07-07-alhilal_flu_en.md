@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Fluminense vs Al Hilal: Brazilian Resilience Meets Saudi Power in Quarterfinal Showdown"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Antonio Magalhães
-
 ---
 
 ---
@@ -97,4 +95,3 @@ It was their second consecutive victory as underdogs — first against Inter Mil
 In the semifinals, Fluminense will face Chelsea, who have already eliminated Benfica and Palmeiras. It will be another major challenge against top European competition, but based on their campaign so far, Fluminense have proven they are ready to compete with the best in the world. <br/><br/>
 
 </div>
-

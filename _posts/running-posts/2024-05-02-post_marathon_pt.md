@@ -9,8 +9,6 @@ thumbnail: assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg
 author: Ace Laboratory Running Team
 hidden: true
 hidden_post: true
-
-
 ---
 
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-02-post_marathon/0.jpeg" class="img-fluid rounded z-depth-1" %}

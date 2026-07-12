@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Predicting Match Results in Football - Part 3"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-02-12-post_pitagorica_1/thumbprevisao.jpg
 
 author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
-
 ---
 
 ---
@@ -34,13 +32,11 @@ In this final post of the Results Prediction series, we’ll introduce the Poiss
 
 <h3> <b> The Poisson Distribution </b> </h3>
 
-
 The Poisson distribution is a discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time or space. It assumes these events occur with a known average rate and independently of the time since the last event. <br/><br/>
 
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-05-16-post_poisson_3/image1.png" class="img-fluid rounded z-depth-1" %}
-
 
 </div>
 
@@ -94,6 +90,7 @@ Now we can compute the expected number of goals for Fluminense by multiplying: F
 <h3> <b> Predicting Flamengo’s Goals </b> </h3>
 
 To calculate the number of goals Flamengo might score, we use the same formulas, but replace the average home goals with average away goals.<br/><br/>
+
 <ul>
 <li>Flamengo’s Offensive Strength: (23/19) / 0.976 = 1.239</li>
 <li>Fluminense’s Defensive Strength: (20/19) / 0.976 = 1.078</li>
@@ -104,7 +101,7 @@ Now, multiply these values with the average away goals: <br/><br/>
 
 <h3> <b> Using the Poisson Distribution </b> </h3>
 
- Since no match ends in a score of 1.845 to 1.305, we use these values with the Poisson Distribution to spread 100% of the probability across possible goal outcomes for each team. We want to estimate the chance of each team scoring a specific number of goals (in our case, 0 to 5) — the number of occurrences of the event — using the expected goals (1.845 for Flu, 1.305 for Fla) - the expected occurencies.  <br/><br/>
+Since no match ends in a score of 1.845 to 1.305, we use these values with the Poisson Distribution to spread 100% of the probability across possible goal outcomes for each team. We want to estimate the chance of each team scoring a specific number of goals (in our case, 0 to 5) — the number of occurrences of the event — using the expected goals (1.845 for Flu, 1.305 for Fla) - the expected occurencies. <br/><br/>
 
 We can do this easily in Python using the command:<br/><br/>
 {% highlight python linenos %}
@@ -156,15 +153,14 @@ Calculating this 6 times for each team, we get the following vectors:
   </tbody>
 </table>
 
-
 Since these results are independent, the most likely result of the match is 1-1, as both teams are most likely to score 1 goal. Multiplying the probabilities of each team scoring 1 goal gives the probability of a 1-1 draw: <br/><br/>
- <b>0.2915 × 0.3539 = 0.1031</b><br/><br/>
+<b>0.2915 × 0.3539 = 0.1031</b><br/><br/>
 
 Using the np.outer command with these two vectors, we can generate the full probability matrix of all possible score combinations.<br/><br/>
+
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-05-16-post_poisson_3/image2.png" class="img-fluid rounded z-depth-1" %}
-
 
 </div>
 
@@ -175,11 +171,9 @@ Below the diagonal (Flamengo wins): 26.91%
 
  <h2> <b> Conclusion </b> </h2>
 
-
 <div  style="width: 100%; margin: 0 auto; text-align: center;">
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-05-16-post_poisson_3/image3.png" class="img-fluid rounded z-depth-1" %}
-
 
 </div>
 
@@ -187,11 +181,8 @@ Below the diagonal (Flamengo wins): 26.91%
  When Fluminense played at home, there were two draws and one win for Fluminense.
  <br/><br/></center>
 
-From this result, we can compare it with the first encounter between the teams in 2023, which took place in the final round of the Taça Guanabara and ended in a 2-1 win for Fluminense. That result was the second most likely according to our model, indicating that the match followed the expected trend based on the teams’ offensive and defensive performance from the previous season.  <br/><br/>
-Moreover, we didn’t use data from earlier 2023 Campeonato Carioca matches, which could provide more up-to-date offensive and defensive strength values — and thus a different probability distribution.  <br/><br/>
+From this result, we can compare it with the first encounter between the teams in 2023, which took place in the final round of the Taça Guanabara and ended in a 2-1 win for Fluminense. That result was the second most likely according to our model, indicating that the match followed the expected trend based on the teams’ offensive and defensive performance from the previous season. <br/><br/>
+Moreover, we didn’t use data from earlier 2023 Campeonato Carioca matches, which could provide more up-to-date offensive and defensive strength values — and thus a different probability distribution. <br/><br/>
 With this analysis, we wrap up our series of posts, where we’ve explored some predictive models applied to football and how we can use them to better understand the sport.
-
-
-
 
 <div>

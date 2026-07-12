@@ -7,10 +7,10 @@ tags: Football; Bundesliga; Analysis
 categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-05-20-post_leverkusen_1/thumb_bayer.png
 author: Ace Laboratory Football Team - Hugo Antunes
-
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_leverkusen_2_pt/"> clique aqui.</a>
 </p>
@@ -60,7 +60,6 @@ Despite the signings, the players who were already at the club have improved inc
 <div style="width: 100%; margin: 0 auto; text-align: center;">
 {% include figure.liquid path="assets/img/Posts_Images/2024-05-23-post_leverkusen_2/player_market.png" class="img-fluid rounded z-depth-1" %}
 </div>
-
 
 In terms of player valuations alone, the balance was positive and exceeded 90 million euros. The estimated value of the total squad is almost 595 million euros, of which only 80 million were invested this year. It's worth remembering that in 2023 many players were sold, loaned, or released by Leverkusen, and the devaluation of the squad due to these losses totals 119 million. As such, in addition to the amount invested, Xabi Alonso's work has been fundamental in valuing the players. Xabi qualified the players already in the squad, and Leverkusen took advantage of the opportunities of a very competitive market.<br/><br/>
 

@@ -13,7 +13,6 @@ author: Ace Laboratory Football Team - Lucas Calmon, Pedro Carvalho
 
 Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2025/post-value_market_2_pt/"> clique aqui.</a>
 
-
 <h2> <b> Introduction </b> </h2>
 <div style="text-align: justify">
 In this post, we will present another method for predicting victory. This time, we will use the market value of the teams as the main variable, which corresponds to the sum of the individual market values of all players on the team. We will explore how this metric can influence the performance of clubs and their chances of winning a match.
@@ -22,7 +21,6 @@ In this post, we will present another method for predicting victory. This time, 
 <h3> <b> Context </b> </h3>
 <div style="text-align: justify">
 Money plays a significant role in modern football. With the transfer market becoming increasingly inflated, it is necessary to spend more money in the transfer windows to maintain competitiveness in the top leagues. The professionalization of the sport has also had a great influence on increasing the cost of maintaining a team, as more expenses are now needed for infrastructure and creating a quality environment to stay ahead of the competition.
-
 
 In fact, studies in the Premier League and Championship (2011-2020) have shown a correlation between a team's payroll and the position the team achieves in the table (Soccernomics, Simon Kuper and Stefan Szymanski). Money drives football. Therefore, we will use the market value of the clubs in the Brazilian league to try to predict the final result of the matches.
 
@@ -76,7 +74,6 @@ We have merged the two datasets, adding the market value columns for the home te
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img5.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 The variable we will use to predict the results is the ratio between <code>tmH</code> (home team's market value) and <code>tmA</code> (away team's market value). More specifically, the <b>logarithm</b> of this ratio.
 
 The reason we use the log is that the distribution of the ratio between <code>tmH</code> and <code>tmA</code> is skewed to the right. Applying the log function makes the distribution symmetrical, which improves performance. The image below helps to visualize this.
@@ -121,10 +118,10 @@ For better visualization of this explanation, observe the graph below, where \( 
 {% include figure.liquid path="assets/img/Posts_Images/2025-04-15-post-value-market-2/img9.png" class="img-fluid rounded z-depth-1" %}
 </div>
 
-
 We used an Ordinal Logistic Regression model, which relates an ordinal response variable (<code>winValue</code>) to a continuous predictor (<code>logTmRatio</code>).
 
 The model finds two cutoff points:
+
 <ul>
   <li><b>\( \alpha_1 \)</b>: separates home team victory from draw or away team victory</li>
   <li><b>\( \alpha_2 \)</b>: separates draw from away team victory</li>
@@ -141,7 +138,6 @@ Now that we understand the model, let's prepare its training. The training datas
 \(\beta \): -0.6309<br>
 \( \alpha_1 \): -0.1519<br>
 \( \alpha_2 \): 0.0533
-
 
 </div>
 

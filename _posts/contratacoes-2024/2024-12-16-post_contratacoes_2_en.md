@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Analyzing Brazilian Football Signings in 2024 - Offensive Sector: Part 2"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2024-04-15-post_brasileirao_1/Brasileirao_Assai_2022.png
 
 author: Ace Laboratory Football Team - Daniel Barros, Hugo Antunes
-
 ---
 
 ---
@@ -66,7 +64,6 @@ If we also take into account the number of minutes played, dividing the number o
 
 - From this graph, you can see the impact of <b> Memphis Depay </b>, from Corinthians, much more clearly. He was the signing with the most decisive appearances per game, as well as having an impressive 0.9 goals per game. It's worth noting that, after round 27 (<b> Memphis </b>' debut), Corinthians had won 28 out of a possible 33 points (84% points!). <br/><br/>
 
-
 - Even taking into account the ratio of decisive goals to minutes on the field, <b> Alerrandro </b> (24!) continues to lead the statistics among the selected signings, scoring approximately 1 decisive goal every two matches. <br/><br/>
 
 - Another player worth mentioning is <b> Kevin Serna </b>, from Fluminense. The Colombian arrived in the mid-year transfer window and was essential to his team's escape from relegation, scoring an average of one decisive goal every two matches. It's also worth mentioning that all of the Colombian's goal participations were decisive. <br/><br/>
@@ -99,14 +96,10 @@ In the graphs below, we have used the same model used in the first part of the s
 
 - <b> André Silva </b>, from São Paulo, also deserves a mention. Despite initially being signed as a backup for the already established <b> Jonathan Calleri </b>, the Brazilian finished the league with more goals, even though he had fewer expected goals (taking into account the players' minutes), showing, at least in a quick analysis, that he was a more efficient striker than the Argentine. <br/><br/>
 
-
-
 <h2> <b> Conclusion </b></h2>
 
 In summary, this second part of the post shows a little more about the impact of some signings in the attacking sector of Brazilian soccer. While some stood out in an extremely positive way, such as <b> Memphis Depay </b> and <b> Alerrandro </b>, being decisive and essential to their respective teams' campaigns, other players didn't have the expected effect, such as <b> Felipe Anderson </b>, from Palmeiras. <br/><br/>
 
 Furthermore, our analysis showed that the simplest metrics we used, although useful in many contexts, have limitations in capturing the full impact of certain players. In order to understand the real impact of players like <b> Everton Ribeiro </b> and <b> Luiz Henrique </b>, for example, who have been essential to their teams, it is necessary to combine different types of metrics that consider different contexts, and it is also recommended to use other types of data, such as event data. In this way, we can evaluate not only direct production in raw numbers, but also less obvious (but no less important) contributions, such as playmaking and tactical influence. <br/><br/>
-
-
 
 <div>

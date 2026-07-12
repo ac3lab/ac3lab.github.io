@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Botafogo's Surprising Club World Cup Group Stage Performance"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Football Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
@@ -147,5 +145,3 @@ The standout player for Botafogo in this group stage was Alexander Barboza. He w
 <center>Group B qualification probabilities before the tournament. <br/><br/></center>
 
 </div>
-
-

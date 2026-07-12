@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Palmeiras vs Botafogo: A Tactical Battle in the Club World Cup Round of 16"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
@@ -122,4 +120,4 @@ In a match defined by fine margins and intense strategic battles, Palmeiras' abi
 
 Having secured a spot in the quarterfinals, Palmeiras now faces a high-stakes encounter with Chelsea — the same opponent they battled in the 2022 Club World Cup final. The matchup not only revives recent history but also adds another chapter to Palmeiras' pursuit of the long-awaited dream of eternal glory on the world stage. <br/><br/>
 
-</div> 
+</div>

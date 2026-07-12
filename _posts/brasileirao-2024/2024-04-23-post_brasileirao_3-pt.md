@@ -9,10 +9,10 @@ thumbnail: assets/img/Posts_Images/2024-04-15-post_brasileirao_1/Brasileirao_Ass
 author: Ace Laboratory Football Team
 hidden: true
 hidden_post: true
-
 ---
 
 ---
+
 <h2>Introdução</h2>
 
 <div style="text-align: justify">
@@ -34,12 +34,9 @@ No último fim de semana (21 e 22 de abril), aconteceu a 3ª rodada do Campeonat
 
 No sábado, RB Bragantino e Corinthians se enfrentaram no Estádio Nabi Abi Chedid. O Massa Bruta conseguiu abrir o placar aos 5 minutos e administrou sua vantagem durante a partida, contando com mais uma atuação com pouca objetividade por parte do Corinthians, que apesar de dominar boa parte da partida no quesito posse de bola, não conseguiu transformar esse volume em chances claras de gols.
 
-
-
 </p>
 
 </div>
-
 
 <h2>Palmeiras x Flamengo</h2>
 
@@ -68,8 +65,6 @@ No Allianz Parque, o Palmeiras recebeu o Flamengo em um jogo que entregou menos 
 <p align="justify">
 No Nilton Santos, o Botafogo dominou o jogo completamente contra o Juventude. Além do placar elástico, 5 a 1, o Botafogo marcou mais que o dobro dos gols esperados para a partida (2.38). Entretanto, a defesa do Botafogo tem sido uma das fraquezas do elenco, sofreu 4 gols até agora no campeonato e cedeu um gol ao Juventude, que teve menos de 0.5 gols esperados em toda a partida.
 
-
-
 </p>
 
 </div>
@@ -85,7 +80,6 @@ No Nilton Santos, o Botafogo dominou o jogo completamente contra o Juventude. Al
 <p align="justify">
 
 Na Arena do Grêmio, o tricolor gaúcho enfrentou o Cuiabá e conseguiu uma vitória simples por 1 a 0. Apesar do placar com poucos gols, o jogo foi muito movimentado, tendo um total de 21 chutes. O Dourado, que não balançou as redes no confronto, teve um xG muito superior ao do Grêmio, o que mostra eficiência na criação, mas também insinua uma ineficiência no ataque. Outra estatística que deixa isso claro é a precisão dos chutes, o Cuiabá finalizou 14 vezes, mas apenas 3 foram no gol, enquanto o Grêmio finalizou 7 e 4 foram precisas.
-
 
 </p>
 

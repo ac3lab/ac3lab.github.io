@@ -7,7 +7,6 @@ tags: Football; World Cup; Brazil; Norway; Mexico; England;
 categories: Sports; Analysis
 thumbnail: assets/img/Posts_Images/2026-06-09-world-cup-2026/thumbnail.png
 author: ACE Laboratory Team
-
 ---
 
 ---
@@ -20,7 +19,7 @@ Se quiser ler este texto em pt-br, <a href="https://ac3lab.github.io/blog/2026/b
 
 <h2><b>Introduction</b></h2>
 
-The Round of 16 of the World Cup culminated in the eliminations of Brazil and Mexico, highlighting significant contrasts in the tactical approaches and on-pitch behavior of both teams. In this post, we will conduct an analysis of the technical and objective aspects of these two matches: the Brazilian National Team's defeat to Norway's structured system, and the Mexican team's match against England's offensive efficiency. We will examine how the adoption of an excessively reactive strategy compromised the Brazilian advancement in the tournament, whereas Mexico's proactive stance demonstrated a consistent model of resilience and engagement against a high-level opponent. 
+The Round of 16 of the World Cup culminated in the eliminations of Brazil and Mexico, highlighting significant contrasts in the tactical approaches and on-pitch behavior of both teams. In this post, we will conduct an analysis of the technical and objective aspects of these two matches: the Brazilian National Team's defeat to Norway's structured system, and the Mexican team's match against England's offensive efficiency. We will examine how the adoption of an excessively reactive strategy compromised the Brazilian advancement in the tournament, whereas Mexico's proactive stance demonstrated a consistent model of resilience and engagement against a high-level opponent.
 
 <h2><b>Brazil vs. Norway: Reactive Strategy, Lack of Effectiveness, and the End of the Dream for the Hexa</b></h2>
 

@@ -9,8 +9,6 @@ thumbnail: assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png
 author: Ace Laboratory Football Team - Nathália Tito
 hidden: true
 hidden_post: true
-
-
 ---
 
 {% include figure.liquid path="assets/img/Posts_Images/2025-01-28-post_sao_garrafa/imagem_0.png" class="img-fluid rounded z-depth-1" %}

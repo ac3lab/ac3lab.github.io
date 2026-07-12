@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "NBA Playoffs : The MVPs Duel"
@@ -20,7 +19,6 @@ author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
 ---
 
 <style>body {text-align: justify}</style>
-
 
 Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/2000/nba-playoffs_pt"> clique aqui.</a>
 
@@ -118,7 +116,6 @@ On Denver’s side, key role players Jamal Murray, Michael Porter Jr., and Aaron
 
 Finally, MVP candidate Shai Gilgeous-Alexander delivered an outstanding performance, scoring 35 points on 12 of 19 shooting and knocking down 75 percent of his three-point attempts.
 
-
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2025-06-09-post-nba-playoffs/Game_7.jpg" title="Game7" class="img-fluid rounded z-depth-1" %}
@@ -130,4 +127,3 @@ Finally, MVP candidate Shai Gilgeous-Alexander delivered an outstanding performa
 Though the Thunder finished the regular season with one of the greatest records in NBA history (68–14), they struggled mightily against the Denver Nuggets—Denver accounted for 29 percent of Oklahoma City’s defeats until the western conference finals, handing them five of their 17 total losses on the year (including two regular-season setbacks and three in the playoffs). The championship series itself became a war of attrition: MVP candidates on both sides raised their games, while the Thunder’s tenacious defense forced an astonishing 124 turnovers over seven hard-fought contests.
 
 In the end, Shai Gilgeous-Alexander captured MVP honors, leading all scorers with a blistering 52.9 percent field-goal rate and averaging 29,7 points per game in the series to cement his reputation as a franchise cornerstone. Nikola Jokić was hardly far behind—he posted a series-long double-double, averaging 28.4 points and 13.9 rebounds per contest—underscoring just how razor-thin the margin was between these two superstars.
-

@@ -15,7 +15,7 @@ author: Nathália Tito
 Recently, I did an exploratory analysis of my runs using data exported from the Nike Run Club app, and it helped me make better decisions in sport. I ran more, now having a better understanding of my training performance. All of this provided me insights that I decided to do more: I trained a model that clusters my runs and built an API that allows me to, with each new run, query this model to understand the "level" this run is, based on all my other runs.
 </p>
 
-Introducing  
+Introducing
 
 <p align="justify">
 As I already knew my data because the EDA I had done, the first step was to train the model. My goal was to find patterns in my runs, and once I found these patterns, I wanted to segment them in groups with different characteristics, so that, with each new run, I could identify which of these groups it would be included in.
@@ -63,6 +63,7 @@ The plot above is a plot of inertia (within-clusters sum-of-squares - wcss) when
 knl = KneeLocator(n_cluster, wcss, curve="convex", direction="decreasing")
 knl.elbow
 ```
+
 <p align="justify">
 According to the documentation, inertia can be recognized as a measure of how internally cohesive the clusters are, but it has some disadvantages:
 </p>
@@ -71,6 +72,7 @@ According to the documentation, inertia can be recognized as a measure of how in
     Inertia makes the assumption that clusters are convex and isotropic, which is not always the case. It responds poorly to elongated clusters, or manifolds with irregular shapes.<br><br>
 
     Inertia is not a normalized metric: we just know that lower values are better and zero is optimal. But in very high-dimensional spaces, Euclidean distances tend to become inflated (this is an instance of the so-called “curse of dimensionality”). Running a dimensionality reduction algorithm such as Principal component analysis (PCA) prior to k-means clustering can alleviate this problem and speed up the computations.
+
 </blockquote>
 
 Knowing the optimal number of clusters, I can adjust the model to the data:
@@ -79,6 +81,7 @@ Knowing the optimal number of clusters, I can adjust the model to the data:
 km = KMeans(n_clusters=5, n_init=30, random_state=1)
 km.fit(X)
 ```
+
 <p align="justify">
 With the trained model, I plotted a graph with the distance vs. pace of my races, already segmented in their respective interpreted clusters:
 </p>

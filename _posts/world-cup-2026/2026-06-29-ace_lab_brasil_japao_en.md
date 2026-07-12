@@ -7,7 +7,6 @@ tags: Football; World Cup; Brazil; Japan;
 categories: Sports; Analysis
 thumbnail: assets/img/Posts_Images/2026-06-09-world-cup-2026/thumbnail.png
 author: Ace Laboratory Team - Pedro Martins, Pedro Lopes e Hugo Antunes
-
 ---
 
 ---

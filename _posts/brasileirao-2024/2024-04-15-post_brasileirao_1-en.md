@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_brasileirao_1-pt/"> clique aqui.</a>
 </p>
@@ -35,7 +36,6 @@ In the most unbalanced encounter of the 1st round, Athletico and Cuiabá faced e
 </p>
 
 </div>
-
 
 <h2>Cruzeiro x Botafogo</h2>
 

@@ -7,7 +7,6 @@ tags: Football; World Cup; Morocco; Canada; France; Paraguay;
 categories: Sports; Analysis
 thumbnail: assets/img/Posts_Images/2026-06-09-world-cup-2026/thumbnail.png
 author: ACE Laboratory Team
-
 ---
 
 ---

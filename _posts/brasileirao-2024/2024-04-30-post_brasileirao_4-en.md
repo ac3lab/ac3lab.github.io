@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_brasileirao_4-pt/"> clique aqui.</a>
 </p>
@@ -35,10 +36,10 @@ Round 4 of the Campeonato Brasileiro 2024 has come to a close, in an exciting we
 <p align="justify">
 
 At the Maracanã, Flamengo hosted Botafogo in a match marked by two completely opposite performances. Flamengo, despite having more possession, found it very difficult to finish their chances in a favorable way. This can be seen by comparing the number of shots (15) and shots on goal (0) by the rubro-negro team. On the other hand, Botafogo defended well without the ball and were much more efficient in attack, managing to have the best chances of the match and scoring two goals to claim another victory in the Brasileirão.
+
 </p>
 
 </div>
-
 
 <h2>Cuiabá vs Atlético-MG</h2>
 
@@ -63,7 +64,7 @@ At the Arena Pantanal, Cuiabá hosted Atlético-MG in a match that was dominated
 </div>
 
 <p align="justify">
-At the Castelão, Fortaleza and RB Bragantino played out an even contest, with both teams switching their moments of superiority. Despite the balance in possession and moments of pressure, Fortaleza managed to create more chances throughout the match, as shown by the almost constant increase in the tricolor's xG in the score line. 
+At the Castelão, Fortaleza and RB Bragantino played out an even contest, with both teams switching their moments of superiority. Despite the balance in possession and moments of pressure, Fortaleza managed to create more chances throughout the match, as shown by the almost constant increase in the tricolor's xG in the score line.
 
 </p>
 
@@ -79,7 +80,6 @@ At the Castelão, Fortaleza and RB Bragantino played out an even contest, with b
 
 <p align="justify">
 Finally, Athletico visited Juventude at the Alfredo Jaconi Stadium. Despite conceding an early goal, Athletico had the best chances, and even with a great performance from goalkeeper Gabriel Vasconcelos, they managed to tie the match. At the end of the game, Juventude applied great pressure on their opponents, taking 8 shots after 80 minutes of play, but were unable to change the outcome of the match.
-
 
 </p>
 

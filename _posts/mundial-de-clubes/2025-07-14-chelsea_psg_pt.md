@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Chelsea vs PSG: Blues Surpreendem Gigantes Franceses e Conquistam a Coroa do Mundial de Clubes"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---

@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Chelsea vs PSG: Blues Stun French Giants to Claim Club World Cup Crown"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Team - Brenno Santos, Antonio Magalhães
-
 ---
 
 ---
@@ -143,17 +141,3 @@ PSG, despite their strong campaign and statistical dominance in possession and p
 Chelsea's unexpected triumph reinforces the unpredictability of football and highlights the importance of strategy, efficiency, and seizing key moments. In this historic first edition of the revamped Club World Cup, the Blues stand alone at the top of the world. <br/><br/>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

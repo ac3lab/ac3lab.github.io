@@ -10,6 +10,7 @@ author: Ace Laboratory Football Team
 ---
 
 ---
+
 <p align="justify">
 Se quiser ler este texto em pt-br, <a href = "https://ac3lab.github.io/blog/2000/post_brasileirao_2-pt/"> clique aqui.</a>
 </p>
@@ -37,7 +38,6 @@ On Wednesday, Flamengo and São Paulo faced each other at Maracanã in a rematch
 </p>
 
 </div>
-
 
 <h2>Palmeiras x Internacional</h2>
 
@@ -79,7 +79,6 @@ Juventude played Corinthians home at Alfredo Jaconi Stadium. Though having domin
 
 <p align="justify">
 Red Bull Bragantino faced Vasco in a very even match at Nabi Abi Chedid, winning 2x1 home. Bragantino’s goals were scored by Laquintana and Vitinha, while Vegetti lowered for the Gigante da Colina. RB Bragantino, though having won the match, had certain linearity in xGoals during the game. On the other side, Vasco lost at least one clear chance, losing the match even though they had more xG than their opponent.
-
 
 </p>
 

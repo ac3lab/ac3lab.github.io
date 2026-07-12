@@ -3,7 +3,7 @@ layout: post
 title: "Complex Networks on football"
 date: 2024-02-21 08:00:00
 description: Using Complex Networks to analyze and understand football matches.
-tags: Football; Complex_Networks; 
+tags: Football; Complex_Networks;
 categories: Football; Complex_Networks
 thumbnail: assets/img/Posts_Images/2024-02-21-post_complex_network_football-Images/data-analysis-pass-network.png
 author: Balthazar Paixão
@@ -24,12 +24,13 @@ This post will focus on the theoretical aspects of Complex Networks and how to u
 </p>
 
 ## The Data
+
 <p align="justify">
 To model your network, you must have an event dataset from the match. The event dataset is a dataset that contains all the events that occurred during the match, such as passes, shots, and fouls. Some sources for this type of dataset are StatsBomb, Wyscout, and Opta. Statsbomb provides these datasets for free in their <a href="https://github.com/statsbomb/open-data" target="_blank">github repository</a>.
 </p>
 
-
 ## Modeling the network
+
 <p align="justify">
 To model a pass network, you must follow some steps:
 <ol>
@@ -41,6 +42,7 @@ To model a pass network, you must follow some steps:
 </ol>
 
 The two last steps are optional because you may want to analyze the set pieces separately, and you may wish to filter meaningless passes. After this filtering, you must aggregate the data by the player that made the pass and the player that received the pass. This will give you the information necessary to prepare your network.
+
 </p>
 
 <p align="justify">
@@ -52,6 +54,7 @@ After you have the data for your network, you can use a package like NetworkX to
 </p>
 
 ## Analyzing the network
+
 <p align="justify">
 With these steps done, you can start the analysis of your network. After that, one thing you can do is plot the network to observe how the objects (players) are connected. After that, you can use some metrics to understand some concepts of the match and team you are analyzing. The metrics we will describe here are:
 <ol>
@@ -73,12 +76,12 @@ So, let's go!
 </p>
 
 ## Metrics
+
 <p align="justify">
 Before everything, it is essential to realize that when analyzing a game, you must bring some subjectives of the team to have a complete understanding of the match. The metrics can give you some insights, but the final analysis must consider how the team plays, the players' characteristics, and the match context.
 </p>
 <p align="justify">
 Having a high or low value in a metric can mean different things depending on the team's strategy and the players' behaviour. You should explore the differences between the players, compare with the players' positions, and compare with the team's performance. Remember, it is a network, everything is connected.
-
 
 <h4>Degree</h4>
 <p align="justify">
@@ -155,6 +158,7 @@ To sum things up, the Pagerank can give you information about the importance of 
 </p>
 
 ## Conclusion
+
 <p align="justify">
 In this post, we showed how to use Complex Networks to analyze football matches. We showed the steps to model the network and the metrics you can use to analyze the network. The metrics can give you information about the players' involvement in the match, the team's strategy, and the players' importance in the network. The analysis can give you insights that could be clearer just by looking at the match. In a future post, we will show how to analyze a football match using Complex Networks.
 </p>

@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "Flamengo's Dominant Group Stage Performance at the Club World Cup"
@@ -15,7 +14,6 @@ categories: Football; Analysis
 thumbnail: assets/img/Posts_Images/2025-06-26-post_world_cup/logo.jpg
 
 author: Ace Laboratory Football Team - Murilo Jorge
-
 ---
 
 ---
@@ -94,9 +92,8 @@ The game model remained consistent even with an alternative team, with defenders
     Statistics of the Flamengo x Los Angeles FC match. <br/><br/>
 </div>
 
-
 <h2> <b> Conclusion </b></h2>
 
 Flamengo demonstrated a dominant and consistent performance throughout the entire group stage, maintaining their characteristic game model even in the face of different opponent strategies. The red and black team not only remained unbeaten but was also superior in all important metrics, consolidating their position as one of the tournament's main forces. <br/><br/>
 
-</div> 
+</div>

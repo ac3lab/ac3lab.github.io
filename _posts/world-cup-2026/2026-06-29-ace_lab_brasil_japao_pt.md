@@ -10,7 +10,6 @@ author: Ace Laboratory Team - Pedro Martins, Pedro Lopes e Hugo Antunes
 
 hidden: true
 hidden_post: true
-
 ---
 
 ---
@@ -44,7 +43,7 @@ A postura ultradefensiva do Japão fica evidente ao analisarmos o seu mapa de PP
 </div>
 <center>Figura 1: Mapa de PPDA do Japão<br/><br/></center>
 
-A punição pelo volume de jogo estéril e pela falta de criatividade do Brasil veio aos 28 minutos, explorando justamente uma falha na transição defensiva. Danilo forçou um passe por dentro buscando quebrar as linhas, mas a bola foi interceptada, gerando um contra-ataque letal. Casemiro, que já estava amarelado, não conseguiu acompanhar a transição veloz dos meias japoneses, permitindo que Sano finalizasse com liberdade de fora da área. O golpe foi sentido de imediato: o Japão assumiu o controle anímico da partida, esfriou o ritmo, passou a trocar mais passes e encerrou o primeiro tempo como o “vencedor tático” do confronto. 
+A punição pelo volume de jogo estéril e pela falta de criatividade do Brasil veio aos 28 minutos, explorando justamente uma falha na transição defensiva. Danilo forçou um passe por dentro buscando quebrar as linhas, mas a bola foi interceptada, gerando um contra-ataque letal. Casemiro, que já estava amarelado, não conseguiu acompanhar a transição veloz dos meias japoneses, permitindo que Sano finalizasse com liberdade de fora da área. O golpe foi sentido de imediato: o Japão assumiu o controle anímico da partida, esfriou o ritmo, passou a trocar mais passes e encerrou o primeiro tempo como o “vencedor tático” do confronto.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -53,7 +52,7 @@ A punição pelo volume de jogo estéril e pela falta de criatividade do Brasil 
 </div>
 <center>Figura 2: Rede de Passes do Japão<br/><br/></center>
 
-Na rede de passes japonesa, as conexões evidenciam ainda mais a estrutura sólida da seleção, que manteve uma formação defensiva com linhas curtas e compactas após abrir o placar contra o Brasil. 
+Na rede de passes japonesa, as conexões evidenciam ainda mais a estrutura sólida da seleção, que manteve uma formação defensiva com linhas curtas e compactas após abrir o placar contra o Brasil.
 
 <h3><b>Segundo Tempo: O Plano B, jogo aéreo e a redenção no fim</b></h3>
 
@@ -87,7 +86,7 @@ O roteiro se concretizou no final da partida, aos 51 minutos (96'). Ironicamente
 
 <h2><b>Conclusão</b></h2>
 
-Embora a virada no último lance injete uma carga de confiança e reforce o poder de resiliência do elenco, o sinal de alerta está ligado na comissão técnica. A partida provou que o "Plano A" de Carlo Ancelotti pode sofrer contra defesas que se estruturam em blocos baixos e organizados. 
+Embora a virada no último lance injete uma carga de confiança e reforce o poder de resiliência do elenco, o sinal de alerta está ligado na comissão técnica. A partida provou que o "Plano A" de Carlo Ancelotti pode sofrer contra defesas que se estruturam em blocos baixos e organizados.
 
 As preocupações se estendem ao departamento médico, que precisará avaliar a gravidade da lesão de Paquetá e as dores na coxa de Casemiro. Por outro lado, a imposição de Bruno Guimarães como o motor criativo do time foi a grande notícia da noite. Além disso, a capacidade do treinador de tomar as decisões certas e corrigir o comportamento da equipe no intervalo foi testada e aprovada, sendo uma grande vantagem para os próximos confrontos.
 
