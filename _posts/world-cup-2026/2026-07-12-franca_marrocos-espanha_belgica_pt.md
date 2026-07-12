@@ -22,13 +22,13 @@ If you want to read this text in en-us, <a href="https://ac3lab.github.io/blog/2
 
 <h2><b>Análise: França 2x0 Marrocos</b></h2>
 
-O confronto eliminatório colocou à prova a resiliência africana, desfalcada do seu principal destaque e artilheiro Ismael Saibari, contra o favoritismo europeu, terminando com uma vitória por 2 a 0 da França. O desfecho da partida confirmou a tendência de superioridade e a capacidade francesa de sufocar o adversário e criar oportunidades em espaços curtos. 
+O confronto eliminatório colocou à prova a resiliência africana, desfalcada do seu principal destaque e artilheiro Ismael Saibari, contra o favoritismo europeu, terminando com uma vitória por 2 a 0 da França. O desfecho da partida confirmou a tendência de superioridade e a capacidade francesa de sufocar o adversário e criar oportunidades em espaços curtos.
 
-Ambas as seleções iniciaram com um esquema 4-2-3-1, porém as dinâmicas táticas logo se distanciaram. A França adotou uma postura fluida e agressiva com a posse de bola, atacando frequentemente em blocos altos, com muitos jogadores no campo de ataque, o que concedeu total liberdade para Doué, Mbappé e Olise dominarem as entrelinhas. Do outro lado, o Marrocos tentava congestionar o meio em um 4-4-2 defensivo que, sob pressão, rapidamente afundava para uma retranca de 5-4-1. 
+Ambas as seleções iniciaram com um esquema 4-2-3-1, porém as dinâmicas táticas logo se distanciaram. A França adotou uma postura fluida e agressiva com a posse de bola, atacando frequentemente em blocos altos, com muitos jogadores no campo de ataque, o que concedeu total liberdade para Doué, Mbappé e Olise dominarem as entrelinhas. Do outro lado, o Marrocos tentava congestionar o meio em um 4-4-2 defensivo que, sob pressão, rapidamente afundava para uma retranca de 5-4-1.
 
 <h3><b>Primeiro Tempo: Asfixia Francesa e o Ferrolho Marroquino</b></h3>
 
-A etapa inicial foi um monólogo ditado pela intensidade europeia. A França apostou em adiantar suas linhas de forma extremamente agressiva, pressionando com intensidade o adversário no campo de defesa. 
+A etapa inicial foi um monólogo ditado pela intensidade europeia. A França apostou em adiantar suas linhas de forma extremamente agressiva, pressionando com intensidade o adversário no campo de defesa.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -37,7 +37,7 @@ A etapa inicial foi um monólogo ditado pela intensidade europeia. A França apo
 </div>
 <center>Figura 1: Mapa de Ações Defensivas da França<br/><br/></center>
 
-Como ilustrado na Figura 1, a forte concentração de recuperações de bola e passes bloqueados no campo de ataque comprova a estratégia de asfixiar qualquer tentativa de transição marroquina com uma marcação vigorosa após a perda da posse. Forçado a operar contra essa "blitz", o Marrocos não teve alternativa a não ser recuar todas as suas peças, tentando sobreviver ao fechar os acessos à própria área. A equipe abdicou de atacar e se compactou ao extremo.  
+Como ilustrado na Figura 1, a forte concentração de recuperações de bola e passes bloqueados no campo de ataque comprova a estratégia de asfixiar qualquer tentativa de transição marroquina com uma marcação vigorosa após a perda da posse. Forçado a operar contra essa "blitz", o Marrocos não teve alternativa a não ser recuar todas as suas peças, tentando sobreviver ao fechar os acessos à própria área. A equipe abdicou de atacar e se compactou ao extremo.
 
 <div style="display: flex; justify-content: center;">
     <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
@@ -46,7 +46,7 @@ Como ilustrado na Figura 1, a forte concentração de recuperações de bola e p
 </div>
 <center>Figura 2: Rede de Passes do Marrocos<br/><br/></center>
 
-A visualização da Figura 2 evidencia o quão compacta a equipe africana foi forçada a jogar, com suas conexões limitadas quase que inteiramente ao próprio terço defensivo. O bloco baixíssimo e denso evitou o gol imediato, mas convidou o perigo constante. Apesar do bombardeio inicial, que incluiu grandes defesas de Bounou, um travessão de Digne e um pênalti desperdiçado por Mbappé, a muralha de cinco defensores conseguiu levar o 0 a 0 para o vestiário à base de muito sacrifício. 
+A visualização da Figura 2 evidencia o quão compacta a equipe africana foi forçada a jogar, com suas conexões limitadas quase que inteiramente ao próprio terço defensivo. O bloco baixíssimo e denso evitou o gol imediato, mas convidou o perigo constante. Apesar do bombardeio inicial, que incluiu grandes defesas de Bounou, um travessão de Digne e um pênalti desperdiçado por Mbappé, a muralha de cinco defensores conseguiu levar o 0 a 0 para o vestiário à base de muito sacrifício.
 
 <h3><b>Segundo Tempo: A Resolução no Espaço Curto</b></h3>
 
@@ -61,13 +61,13 @@ O clímax ocorreu em uma letal janela de seis minutos. Aos 59, a França provou 
 </div>
 <center>Figura 3: Mapa de Finalizações da França<br/><br/></center>
 
-O retrato numérico desse domínio absoluto pode ser observado na Figura 3, que traduz o volume ofensivo europeu em 22 finalizações totais, concentrando o grande perigo e os dois gols nas imediações da marca do pênalti. 
+O retrato numérico desse domínio absoluto pode ser observado na Figura 3, que traduz o volume ofensivo europeu em 22 finalizações totais, concentrando o grande perigo e os dois gols nas imediações da marca do pênalti.
 
 <h2><b>Conclusão</b></h2>
 
 A vitória francesa justifica-se pelo ótimo desempenho e não por acaso, escancarando a disparidade de produção ofensiva entre as equipes ao longo dos 90 minutos.
 
-A seleção europeia entregou um "jogo perfeito". A equipe anulou o adversário na origem das jogadas e desarticulou o robusto sistema defensivo utilizando criatividade nos espaços curtos. Para o Marrocos, a eliminação encerra a jornada e revela os limites ofensivos do time quando desfalcado no ataque diante de uma potência global. 
+A seleção europeia entregou um "jogo perfeito". A equipe anulou o adversário na origem das jogadas e desarticulou o robusto sistema defensivo utilizando criatividade nos espaços curtos. Para o Marrocos, a eliminação encerra a jornada e revela os limites ofensivos do time quando desfalcado no ataque diante de uma potência global.
 
 A França avança à semifinal consolidada como a principal força do torneio. O único ajuste necessário envolve o departamento médico: Mbappé foi substituído por Mateta após sofrer uma pancada no pé. No entanto, os sorrisos no banco de reservas ao fim do jogo indicam ter sido apenas uma precaução para o próximo, e decisivo, passo na competição.
 
@@ -77,9 +77,9 @@ A França avança à semifinal consolidada como a principal força do torneio. O
 
 <h3><b>Introdução</b></h3>
 
-A Espanha venceu a Bélgica por 2 a 1 e garantiu vaga nas semifinais da Copa do Mundo. A equipe espanhola controlou grande parte da posse de bola e das ações ofensivas, mas encontrou dificuldades para transformar esse domínio em gols. Mesmo criando diversas oportunidades, desperdiçou chances importantes ao longo da partida. Do outro lado, a Bélgica adotou uma postura mais reativa, defendendo em bloco baixo e buscando explorar os espaços deixados pela Espanha através de contra-ataques rápidos.  
+A Espanha venceu a Bélgica por 2 a 1 e garantiu vaga nas semifinais da Copa do Mundo. A equipe espanhola controlou grande parte da posse de bola e das ações ofensivas, mas encontrou dificuldades para transformar esse domínio em gols. Mesmo criando diversas oportunidades, desperdiçou chances importantes ao longo da partida. Do outro lado, a Bélgica adotou uma postura mais reativa, defendendo em bloco baixo e buscando explorar os espaços deixados pela Espanha através de contra-ataques rápidos.
 
-A Espanha priorizou a posse de bola, jogando em 4-2-3-1 com Rodri e Fabián Ruiz dando equilíbrio ao meio-campo, além de Lamine Yamal e Álex Baena abertos pelos lados. Pelo lado da Bélgica, uma formação 4-2-3-1, Onana e Raskin protegeram a defesa no meio-campo, permitindo maior liberdade para De Bruyne organizar as jogadas. Doku e Trossard atuaram pelos corredores, buscando velocidade nas transições para servir De Ketelaere no comando do ataque. 
+A Espanha priorizou a posse de bola, jogando em 4-2-3-1 com Rodri e Fabián Ruiz dando equilíbrio ao meio-campo, além de Lamine Yamal e Álex Baena abertos pelos lados. Pelo lado da Bélgica, uma formação 4-2-3-1, Onana e Raskin protegeram a defesa no meio-campo, permitindo maior liberdade para De Bruyne organizar as jogadas. Doku e Trossard atuaram pelos corredores, buscando velocidade nas transições para servir De Ketelaere no comando do ataque.
 
 <h3><b>Primeiro Tempo</b></h3>
 
