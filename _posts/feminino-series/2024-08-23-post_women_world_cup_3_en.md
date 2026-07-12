@@ -26,7 +26,6 @@ Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/200
 
 <h2><b>Introduction</b></h2>
 
-
 <div  style="text-align: justify">
 
 In this post, we will analyze the evolution of the teams in the Women's World Cup, comparing the performance of the main teams in the 2019 and 2023 World Cups. The teams analyzed will be: <b>Spain</b>, the current champions; <b>England</b>, the current vice-champions; the <b>United States</b>, champions in 2019 and <b>Sweden</b>, who finished third in the last two editions. <br/><br/>

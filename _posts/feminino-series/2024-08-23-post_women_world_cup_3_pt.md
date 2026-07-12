@@ -23,7 +23,6 @@ hidden_post: true
 
 <h2><b>Introdução</b></h2>
 
-
 <div  style="text-align: justify">
 
 Neste post, iremos fazer uma análise sobre a evolução das seleções na Copa do Mundo Feminina, comparando o desempenho das principais seleções na Copa de 2019 e 2023. As seleções analisadas serão: <b>Espanha</b>, atual campeã; a <b>Inglaterra</b>, atual vice-campeã; os <b>Estados Unidos</b>, campeões em 2019 e a <b>Suécia</b>, que ficou na terceira posição nas duas últimas edições. <br/><br/>

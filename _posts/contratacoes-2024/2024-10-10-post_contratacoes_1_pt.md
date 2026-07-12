@@ -23,7 +23,6 @@ hidden_post: true
 
 <h2> <b> Introdução </b></h2>
 
-
 <div  style="text-align: justify">
 
 Nessa série de posts, traremos estatísticas acerca das principais contratações dos times da Série A do futebol brasileiro! Para isso, separamos os atletas em setores: ataque, meio-campo e defesa. Nesse primeiro post, falaremos sobre os <b>atacantes</b> que os clubes brasileiros investiram (alguns deles muito) dinheiro. Para um efeito de comparação melhor, também optamos por exibir alguns jogadores que não são contratações de 2024, justamente para comparar os novos atletas com outros já consolidados no futebol brasileiro.<br/><br/>

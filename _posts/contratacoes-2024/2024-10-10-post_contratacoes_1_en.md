@@ -26,7 +26,6 @@ Se quiser ler este texto em pt-br, <a  href = "https://ac3lab.github.io/blog/200
 
 <h2><b>Introduction  </b></h2>
 
-
 <div  style="text-align: justify">
 
 In this series of posts, we'll bring you statistics on the main signings made by teams in Brazil's Serie A! To do this, we've separated the players into sectors: attack, midfield and defense. In this first post, we'll talk about the attackers that Brazilian clubs have invested (some of them a lot of) money in. For a better comparison, we've also chosen to showcase some players who aren't 2024 signings, precisely to compare the new players with others already established in Brazilian soccer. <br/><br/>

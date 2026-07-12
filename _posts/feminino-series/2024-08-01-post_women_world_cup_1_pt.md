@@ -23,7 +23,6 @@ hidden_post: true
 
 <h2>Introdução</h2>
 
-
 <div  style="text-align: justify">
 
 Nessa série de posts, iremos fazer uma análise geral sobre Copa do Mundo Feminina de 2023, sediada simultaneamente na Austrália e na Nova Zelândia. Iremos trazer comparações gerais entre todos os times, e em seguida, nos aprofundarmos nas quatro seleções semifinalistas e nos destaques da competição. <br/><br/>
