@@ -41,8 +41,7 @@ on:
 jobs:
   link-checker:
     runs-on: ubuntu-latest
-    # only run on the main repo
-    if: github.repository == 'alshedivat/al-folio'
+    # run on all repos
     steps:
       - uses: actions/checkout@v4
 
