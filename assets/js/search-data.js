@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-análise-argentina-x-egito-e-suíça-x-colômbia-copa-do-mundo-2026",
+            },{id: "post-analysis-france-vs-morocco-and-spain-vs-belgium-world-cup-2026",
+        
+          title: "Analysis: France vs Morocco and Spain vs Belgium - World Cup 2026",
+        
+        description: "Tactical analysis of France vs Morocco and Spain vs Belgium in the 2026 World Cup knockout stage.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/franca_marrocos-espanha_belgica_en/";
+          
+        },
+      },{id: "post-análise-argentina-x-egito-e-suíça-x-colômbia-copa-do-mundo-2026",
         
           title: "Análise: Argentina x Egito e Suíça x Colômbia - Copa do Mundo 2026...",
         
@@ -866,6 +877,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/chelsea_psg_pt/";
+          
+        },
+      },{id: "post-análise-frança-x-marrocos-e-espanha-x-bélgica-copa-do-mundo-2026",
+        
+          title: "Análise: França x Marrocos e Espanha x Bélgica - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das oitavas de final: a vitória sufocante da França contra o Marrocos e a pressão espanhola que superou a Bélgica.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/franca_marrocos-espanha_belgica_pt/";
           
         },
       },{id: "post-real-madrid-vs-psg-dominância-francesa-garante-vaga-na-final-do-mundial-de-clubes",
