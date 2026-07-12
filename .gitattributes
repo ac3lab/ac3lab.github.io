@@ -1,2 +1,5 @@
 # Force LF line endings, needed for Docker to work on Windows
 *.sh text eol=lf
+
+# Ignore third-party vendored JS from CodeQL scanning
+assets/js/distillpub/* linguist-vendored=true
