@@ -1297,12 +1297,7 @@ ninja.data = [{
             window.location.href = "/blog/2000/post_analise_ligas_pt/";
           
         },
-      },{id: "projects-project-10",
-          title: 'project 10',
-          description: "A project with an introduction section",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/10_project/";
-            },},{id: "projects-almir-monteiro",
+      },{id: "projects-almir-monteiro",
           title: 'Almir Monteiro',
           description: "Systems Engineering  UFRJ",
           section: "Projects",handler: () => {
