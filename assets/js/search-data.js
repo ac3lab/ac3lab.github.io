@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-analysis-france-vs-morocco-and-spain-vs-belgium-world-cup-2026",
+            },{id: "post-analysis-england-vs-norway-and-argentina-vs-switzerland-world-cup-2026",
+        
+          title: "Analysis: England vs Norway and Argentina vs Switzerland - World Cup 2026",
+        
+        description: "Tactical analysis of England vs Norway and Argentina vs Switzerland in the 2026 World Cup quarterfinals.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/inglaterra_noruega-argentina_suica_en/";
+          
+        },
+      },{id: "post-analysis-france-vs-morocco-and-spain-vs-belgium-world-cup-2026",
         
           title: "Analysis: France vs Morocco and Spain vs Belgium - World Cup 2026",
         
@@ -866,6 +877,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-análise-inglaterra-x-noruega-e-argentina-x-suíça-copa-do-mundo-2026",
+        
+          title: "Análise: Inglaterra x Noruega e Argentina x Suíça - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das quartas de final: a resiliência inglesa contra a Noruega na prorrogação e a classificação argentina contra a Suíça.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/inglaterra_noruega-argentina_suica_pt/";
           
         },
       },{id: "post-chelsea-vs-psg-blues-surpreendem-gigantes-franceses-e-conquistam-a-coroa-do-mundial-de-clubes",
