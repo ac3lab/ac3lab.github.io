@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-analysis-england-vs-norway-and-argentina-vs-switzerland-world-cup-2026",
+            },{id: "post-analysis-france-vs-spain-and-england-vs-argentina-world-cup-2026",
+        
+          title: "Analysis: France vs Spain and England vs Argentina - World Cup 2026",
+        
+        description: "Tactical analysis of France vs Spain and England vs Argentina in the 2026 World Cup semifinal stage.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/espanha_franca-argentina_inglaterra_en/";
+          
+        },
+      },{id: "post-analysis-england-vs-norway-and-argentina-vs-switzerland-world-cup-2026",
         
           title: "Analysis: England vs Norway and Argentina vs Switzerland - World Cup 2026",
         
@@ -877,6 +888,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-análise-frança-x-espanha-e-inglaterra-x-argentina-copa-do-mundo-2026",
+        
+          title: "Análise: França x Espanha e Inglaterra x Argentina - Copa do Mundo 2026...",
+        
+        description: "Análise tática dos jogos das semifinais: a superioridade coletiva da Espanha sobre a França e a virada épica da Argentina contra a Inglaterra.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/espanha_franca-argentina_inglaterra_pt/";
           
         },
       },{id: "post-análise-inglaterra-x-noruega-e-argentina-x-suíça-copa-do-mundo-2026",
