@@ -65,7 +65,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/dashboards/brasil_noruega/";
               },
-            },{id: "post-analysis-france-vs-spain-and-england-vs-argentina-world-cup-2026",
+            },{id: "post-analysis-argentina-vs-spain-2026-world-cup-final",
+        
+          title: "Analysis: Argentina vs Spain - 2026 World Cup Final",
+        
+        description: "Tactical analysis of the 2026 World Cup Final between Argentina and Spain. Spain&#39;s collective dominance over Argentina&#39;s defensive block.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/argentina_espanha_final_en/";
+          
+        },
+      },{id: "post-analysis-france-vs-spain-and-england-vs-argentina-world-cup-2026",
         
           title: "Analysis: France vs Spain and England vs Argentina - World Cup 2026",
         
@@ -888,6 +899,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-análise-argentina-x-espanha-final-da-copa-do-mundo-2026",
+        
+          title: "Análise: Argentina x Espanha - Final da Copa do Mundo 2026",
+        
+        description: "Análise tática da final da Copa do Mundo 2026 entre Argentina e Espanha. O domínio coletivo espanhol sobre o bloco defensivo argentino.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/argentina_espanha_final_pt/";
           
         },
       },{id: "post-análise-frança-x-espanha-e-inglaterra-x-argentina-copa-do-mundo-2026",
