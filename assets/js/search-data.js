@@ -30,42 +30,7 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "dropdown-brasil-x-marrocos",
-              title: "Brasil x Marrocos",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/dashboards/brasil_marrocos/";
-              },
-            },{id: "dropdown-brasil-x-haiti",
-              title: "Brasil x Haiti",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/dashboards/brasil_haiti/";
-              },
-            },{id: "dropdown-escócia-x-brasil",
-              title: "Escócia x Brasil",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/dashboards/escocia_brasil/";
-              },
-            },{id: "dropdown-brasil-x-japão",
-              title: "Brasil x Japão",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/dashboards/brasil_japao/";
-              },
-            },{id: "dropdown-brasil-x-noruega",
-              title: "Brasil x Noruega",
-              description: "",
-              section: "Dropdown",
-              handler: () => {
-                window.location.href = "/dashboards/brasil_noruega/";
-              },
-            },{id: "post-analysis-argentina-vs-spain-2026-world-cup-final",
+        },{id: "post-analysis-argentina-vs-spain-2026-world-cup-final",
         
           title: "Analysis: Argentina vs Spain - 2026 World Cup Final",
         
