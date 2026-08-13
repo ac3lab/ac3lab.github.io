@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-analysis-argentina-vs-spain-2026-world-cup-final",
+        },{id: "post-comparing-the-performance-of-predictive-models-2026-world-cup",
+        
+          title: "Comparing the Performance of Predictive Models – 2026 World Cup",
+        
+        description: "We evaluate the performance of ACE Laboratory&#39;s predictive models for the 2026 World Cup, comparing them against one another and against other public benchmarks.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/model_comparison_en/";
+          
+        },
+      },{id: "post-analysis-argentina-vs-spain-2026-world-cup-final",
         
           title: "Analysis: Argentina vs Spain - 2026 World Cup Final",
         
@@ -864,6 +875,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-comparação-do-desempenho-de-modelos-preditivos-copa-do-mundo-2026",
+        
+          title: "Comparação do desempenho de modelos preditivos - Copa do Mundo 2026",
+        
+        description: "Avaliamos o desempenho dos modelos preditivos do ACE Laboratory na Copa do Mundo de 2026, comparando-os entre si e com outras referências públicas do mercado.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/model_comparison_pt/";
           
         },
       },{id: "post-análise-argentina-x-espanha-final-da-copa-do-mundo-2026",
