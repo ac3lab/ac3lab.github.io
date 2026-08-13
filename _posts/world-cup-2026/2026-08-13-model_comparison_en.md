@@ -75,7 +75,7 @@ The RPS and the Brier Score, on their own, only indicate which model made fewer 
 
 <h3><b>Log-Loss</b></h3>
 
-$$\left[ y \ln p + (1-y) \ln(1-p) \right]$$
+$$-\frac{1}{N}\sum \left[ y \ln p + (1-y) \ln(1-p) \right]$$
 
 Log-Loss follows the same logic as the Brier Score, but penalizes mistakes made with high confidence much more severely. Here, p is the probability assigned by the model and y is the actual outcome (1 if the event occurred, 0 otherwise). Assigning a 99% probability to an event that does not happen sharply raises the score; an error around 55%, on the other hand, is penalized much more mildly. This is the metric that most rewards sharp, well-calibrated models, and the one that most heavily penalizes overconfidence.
 
