@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-comparing-the-performance-of-predictive-models-2026-world-cup",
+        },{id: "post-the-impact-of-the-scoreline-on-physical-performance",
+        
+          title: "The Impact of the Scoreline on Physical Performance",
+        
+        description: "What really changes when a goal is scored?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/scoreline-physical-performance_en/";
+          
+        },
+      },{id: "post-comparing-the-performance-of-predictive-models-2026-world-cup",
         
           title: "Comparing the Performance of Predictive Models – 2026 World Cup",
         
@@ -875,6 +886,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-o-impacto-do-placar-na-performance-física",
+        
+          title: "O Impacto do Placar na Performance Física",
+        
+        description: "O que realmente muda quando sai um gol?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/scoreline-physical-performance_pt/";
           
         },
       },{id: "post-comparação-do-desempenho-de-modelos-preditivos-copa-do-mundo-2026",
