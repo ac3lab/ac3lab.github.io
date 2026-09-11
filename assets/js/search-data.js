@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-the-impact-of-the-scoreline-on-physical-performance",
+        },{id: "post-does-the-playing-style-of-brazilian-teams-leave-a-signature-in-their-match-data",
+        
+          title: "Does the Playing Style of Brazilian Teams Leave a Signature in Their Match...",
+        
+        description: "Can you tell which club it is just from the numbers of a match, with no scoreline, no crest and no players on the pitch?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/playing-style-signature_en/";
+          
+        },
+      },{id: "post-the-impact-of-the-scoreline-on-physical-performance",
         
           title: "The Impact of the Scoreline on Physical Performance",
         
@@ -886,6 +897,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-o-estilo-de-jogo-dos-times-brasileiros-deixa-uma-assinatura-nos-seus-dados-de-jogo",
+        
+          title: "O estilo de jogo dos times brasileiros deixa uma assinatura nos seus dados...",
+        
+        description: "Dá para dizer de qual clube se trata olhando só para os números de uma partida, sem placar, escudos ou jogadores em campo?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/playing-style-signature_pt/";
           
         },
       },{id: "post-o-impacto-do-placar-na-performance-física",
