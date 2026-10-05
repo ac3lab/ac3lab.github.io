@@ -1,0 +1,122 @@
+---
+layout: post
+title: "What the Data Says About Relegated Teams"
+date: 2026-10-04 00:00:00
+description: "How do relegated clubs behave in the Brazilian Série A and the major European leagues between 2005 and 2015?"
+tags: Football; Analysis; Relegation
+categories: Sports; Analysis
+thumbnail: assets/img/Posts_Images/2026-10-04-relegated-teams/en/image1.png
+author: ACE Laboratory Team
+---
+
+---
+
+<p align="justify">
+Se quiser ler esse texto em pt-br, <a href="https://ac3lab.github.io/blog/2000/relegated-teams_pt/">clique aqui.</a>
+</p>
+
+<style>body {text-align: justify}</style>
+
+<h2><b>Introduction</b></h2>
+
+<p>In football, most national leagues around the world use a system of relegation and promotion: the teams with the worst performances at the end of the season are replaced by newly promoted teams in the following championship. For the clubs that go down, this change often represents not only failed sporting planning, but also the need to readjust, both financially and competitively, for the next season.</p>
+
+<p>In this post, the goal is to better understand the performance of clubs that are relegated. The study compares these clubs in 3 different ways:</p>
+
+<ul>
+  <li>Clubs: analyze the differences between relegated clubs and the other clubs in the same league, in the same year.</li>
+  <li>League: analyze the differences between the relegated clubs of one league and those relegated in other leagues.</li>
+  <li>Time: analyze the turnover of clubs that were relegated or promoted in different leagues.</li>
+</ul>
+
+<p>Through this comparison, we seek to better understand how these teams perform in different aspects.</p>
+
+<h2><b>Data</b></h2>
+
+<p>This study used simple match data from the top divisions of Brazil, England, Spain, Germany and France between the 2005 and 2015 seasons.</p>
+
+<h2><b>Quintile Split</b></h2>
+
+<p>To make the comparisons, we split the clubs of each season into 5 groups (quintiles) based on their final league position. Q1 represents the best teams, while Q5 represents the worst. Based on these groups, we carried out the comparisons described below.</p>
+
+<p>Before the results, two notes on the scope of the analysis. In the Brazilian Série A, which relegates four clubs per season, Q5 practically matches the relegation zone. In the European leagues, which relegate fewer clubs, Q5 also includes teams that narrowly escaped the drop. Throughout the text, we treat Q5 as the group of relegated teams, and this approximation should be kept in mind. In addition, the analysis uses only match results and is exploratory: the goal is to describe patterns across leagues and groups of teams, and the explanations discussed for these patterns, such as revenue distribution, are interpretations that were not directly tested in the data.</p>
+
+<h2><b>Results</b></h2>
+
+<p>The first two analyses, points percentage and home advantage, compare the quintiles within each league and across leagues, covering the Clubs and League axes. The turnover analysis covers the Time axis.</p>
+
+<h3><b>Points Percentage</b></h3>
+
+<p>Points percentage (labeled <i>efficiency</i> in the charts) is the share of available points that a team won. The results below (Figures 1 and 2) show that the average points percentage of teams at the bottom of the table is similar regardless of the league or season: on average, Q5 sits between <b>28% and 33%</b> in every league. At the top, on the other hand, the gap between Q1 and Q2 shows how far the "elite" teams in the European leagues are from the rest. This gap is around <b>9 percentage points</b> in the Brazilian Série A, compared with somewhere between <b>12 and 18</b> in the European leagues.</p>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image1.png" title="Figure 1: Average points percentage by quintile in the Brazilian Série A (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 1: Average points percentage by quintile in the Brazilian Série A (2005–2015).<br/><br/></center>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 800px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image2.png" title="Figure 2: Average points percentage by quintile in the Premier League, La Liga, Bundesliga and Ligue 1 (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 2: Average points percentage by quintile in the Premier League, La Liga, Bundesliga and Ligue 1 (2005–2015).<br/><br/></center>
+
+<p>The same picture appears in the head-to-head matrices between quintiles (Figures 3 and 4). The structure is identical in every league: a team's points percentage drops as the opponent belongs to a better quintile. The intensity, however, varies. Against Q1, Q5 teams won <b>21%</b> of the points in the Brazilian Série A, compared with <b>11% to 17%</b> in the European leagues; in the opposite direction, Q1 won <b>71%</b> of the points against Q5 in Brazil and between <b>75% and 84%</b> in Europe. Matchups between the top and the bottom of the table are therefore more balanced in Brazil.</p>
+
+<p>On the diagonal of the matrices, where teams from the same quintile meet, the points percentage is close to 45% in every league, a little below the 50% one might expect. The difference comes from draws: in balanced matchups, wins and losses cancel out, but each draw hands out only 2 of the 3 points at stake.</p>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image3.png" title="Figure 3: Points percentage by quintile matchup in the Brazilian Série A (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 3: Points percentage (%) by quintile matchup in the Brazilian Série A (2005–2015). Each cell shows the points percentage of teams in the row quintile against opponents in the column quintile.<br/><br/></center>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 800px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image4.png" title="Figure 4: Points percentage by quintile matchup in the European leagues (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 4: Points percentage (%) by quintile matchup in the Premier League, La Liga, Bundesliga and Ligue 1 (2005–2015), read the same way as Figure 3.<br/><br/></center>
+
+<h3><b>Home Advantage</b></h3>
+
+<p>For teams at the bottom of the table (Q4 and Q5), home advantage carries less weight than for the other competitors (Figure 5). In the Brazilian Série A, the Bundesliga and the Premier League, Q5 has the smallest bonus; in La Liga and Ligue 1, Q4 sits slightly below it. Struggling to dominate at home is therefore a characteristic of teams fighting relegation. This pattern is especially significant in the Brazilian Série A, a league where home advantage tends to matter more: the bonus of Brazil's Q5, around <b>23 percentage points</b>, is practically equal to the largest bonus observed in the European leagues.</p>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image5.png" title="Figure 5: Home advantage bonus by quintile and league (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 5: Home advantage bonus by quintile and league (2005–2015), in percentage points of points percentage gained at home.<br/><br/></center>
+
+<h3><b>Promotion and Relegation Turnover</b></h3>
+
+<p>Finally, the comparison across leagues shows that the Brazilian Série A has greater turnover between divisions than the European championships (Figure 6), which means newly promoted Brazilian teams face significant obstacles to establish themselves. The difficulty shows up after the first year: <b>71%</b> of promoted teams in Brazil are still in the top flight after one season, compared with <b>around 60%</b> in the Premier League, the Bundesliga and Ligue 1. The drop comes in the following years, and by the third year the Brazilian Série A already has the lowest retention rate among the five leagues (<b>22%</b>).</p>
+
+<div style="display: flex; justify-content: center;">
+    <div class="col-sm mt-3 mt-md-0" style="max-width: 600px; width: 100%;">
+        {% include figure.liquid loading="eager" path="assets/img/Posts_Images/2026-10-04-relegated-teams/en/image6.png" title="Figure 6: Divisional turnover (2005–2015)" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<center>Figure 6: Divisional turnover (2005–2015). Left: percentage of newly promoted teams that remain in the 1st division without interruption. Right: cumulative percentage of relegated teams that returned to the 1st division.<br/><br/></center>
+
+<p>This phenomenon is likely associated with the unequal distribution of revenues (sponsorship, TV rights). Leagues that concentrate resources tend to sustain budget gaps over time. The Premier League, despite its fairer distribution, still illustrates this: promoted teams face a high risk of going straight back down because of the gap between divisions, but if they survive the first years, they gradually catch up with their rivals. The Brazilian Série A shows a different dynamic, in which the notoriously unequal distribution of revenues among clubs holds back newly promoted teams and keeps their risk of relegation high even after they get through the first years.</p>
+
+<p>Going the other way, the right panel of Figure 6 shows that, in every league, between <b>44% and 56%</b> of relegated teams return to the top division within five years. None of them returns in the first year, since the season after relegation is necessarily played in the lower division.</p>
+
+<h2><b>Conclusion</b></h2>
+
+<p>At the end of this study, we can conclude that relegated teams do face different realities depending on the league. In Brazil, newly promoted teams usually get through their first season, but few manage to stay in the top flight in the following years. In Europe, although newly promoted teams run a greater risk in their first seasons, they are more likely to establish themselves in the top division over the years.</p>
+
+<p>Looking more closely at what happens on the pitch, a defining trait of relegated teams was their difficulty in imposing themselves at home. Once again, this stands out in the Brazilian Série A, where home advantage proves even more relevant than in the other leagues.</p>
+
+<p>For future research, one possible path is to analyze the players and coaches of these teams, looking for trends in the makeup of their squads and coaching staffs.</p>
