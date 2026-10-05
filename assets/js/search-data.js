@@ -30,7 +30,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/profile/";
           },
-        },{id: "post-does-the-playing-style-of-brazilian-teams-leave-a-signature-in-their-match-data",
+        },{id: "post-what-the-data-says-about-relegated-teams",
+        
+          title: "What the Data Says About Relegated Teams",
+        
+        description: "How do relegated clubs behave in the Brazilian Série A and the major European leagues between 2005 and 2015?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/relegated-teams_en/";
+          
+        },
+      },{id: "post-does-the-playing-style-of-brazilian-teams-leave-a-signature-in-their-match-data",
         
           title: "Does the Playing Style of Brazilian Teams Leave a Signature in Their Match...",
         
@@ -897,6 +908,17 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2000/post_faltas_pt/";
+          
+        },
+      },{id: "post-o-que-os-dados-dizem-sobre-os-times-rebaixados",
+        
+          title: "O que os dados dizem sobre os times rebaixados",
+        
+        description: "Como se comportam os clubes rebaixados no Brasileirão e nas principais ligas europeias entre 2005 e 2015?",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2000/relegated-teams_pt/";
           
         },
       },{id: "post-o-estilo-de-jogo-dos-times-brasileiros-deixa-uma-assinatura-nos-seus-dados-de-jogo",
